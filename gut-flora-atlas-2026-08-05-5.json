@@ -1,0 +1,2944 @@
+{
+  "version": 1,
+  "conditions": [
+    {
+      "id": "esxj2ct",
+      "name": "Depression",
+      "abbr": "DEP",
+      "color": "#5B8DEF",
+      "note": "Caveat: a 44-study meta-analysis (2,091 patients, 2,792 controls) found no significant difference in α-diversity, Firmicutes or Bacteroidetes vs controls — the phylum-level story is weaker than often claimed. The genus-level up/down calls here come from the MGBA review and are less settled than the count suggests.",
+      "links": [
+        {
+          "id": "qfmolx1",
+          "label": "MGBA review (PMID 42532353)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42532353/"
+        },
+        {
+          "id": "c7188e3",
+          "label": "Valles-Colomer 2019 (Nat Microbiol; Coprococcus & Dialister ↓, Faecalibacterium & QoL)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30718848/"
+        },
+        {
+          "id": "94c7ab4",
+          "label": "Jiang 2015 (Brain Behav Immun; Enterobacteriaceae & Alistipes ↑, Faecalibacterium ↓ in MDD)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25882912/"
+        },
+        {
+          "id": "e314dfb",
+          "label": "Naseribafrouei 2014 (Neurogastroenterol Motil; Bacteroidales, Alistipes, Oscillibacter in depression)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24888394/"
+        },
+        {
+          "id": "2x06zhg",
+          "label": "Meta-analysis 2023 (44 studies, 2091 patients: no sig. α-diversity / Firmicutes / Bacteroidetes difference)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10709466/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "nd44jey",
+          "name": "Enterobacteriaceae",
+          "dir": "up",
+          "refs": "19,22",
+          "note": "",
+          "links": [
+            {
+              "id": "94c7ab4",
+              "label": "Jiang 2015 (Brain Behav Immun; Enterobacteriaceae & Alistipes ↑, Faecalibacterium ↓ in MDD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25882912/"
+            }
+          ]
+        },
+        {
+          "id": "rhu203z",
+          "name": "Alistipes",
+          "dir": "up",
+          "refs": "19,22",
+          "note": "",
+          "links": [
+            {
+              "id": "94c7ab4",
+              "label": "Jiang 2015 (Brain Behav Immun; Enterobacteriaceae & Alistipes ↑, Faecalibacterium ↓ in MDD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25882912/"
+            },
+            {
+              "id": "e314dfb",
+              "label": "Naseribafrouei 2014 (Neurogastroenterol Motil; Bacteroidales, Alistipes, Oscillibacter in depression)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24888394/"
+            }
+          ]
+        },
+        {
+          "id": "c9382mp",
+          "name": "Anaerostipes",
+          "dir": "up",
+          "refs": "19,22",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "8evzdy8",
+          "name": "Blautia",
+          "dir": "up",
+          "refs": "19,22",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "sb88tvf",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "19–22",
+          "note": "",
+          "links": [
+            {
+              "id": "c7188e3",
+              "label": "Valles-Colomer 2019 (Nat Microbiol; Coprococcus & Dialister ↓, Faecalibacterium & QoL)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30718848/"
+            },
+            {
+              "id": "94c7ab4",
+              "label": "Jiang 2015 (Brain Behav Immun; Enterobacteriaceae & Alistipes ↑, Faecalibacterium ↓ in MDD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25882912/"
+            }
+          ]
+        },
+        {
+          "id": "smthnqg",
+          "name": "Prevotellaceae",
+          "dir": "down",
+          "refs": "20–22",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "nssph24",
+          "name": "Coprococcus",
+          "dir": "down",
+          "refs": "20–22",
+          "note": "",
+          "links": [
+            {
+              "id": "c7188e3",
+              "label": "Valles-Colomer 2019 (Nat Microbiol; Coprococcus & Dialister ↓, Faecalibacterium & QoL)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30718848/"
+            }
+          ]
+        },
+        {
+          "id": "9t8gaai",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "20–22",
+          "note": "",
+          "links": [
+            {
+              "id": "c7188e3",
+              "label": "Valles-Colomer 2019 (Nat Microbiol; Coprococcus & Dialister ↓, Faecalibacterium & QoL)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30718848/"
+            }
+          ]
+        },
+        {
+          "id": "552vk44",
+          "name": "Bacteroidetes",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": []
+        },
+        {
+          "id": "5yyja0y",
+          "name": "Gammaproteobacteria",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": []
+        },
+        {
+          "id": "82hysl5",
+          "name": "Bacteroidales",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "e314dfb",
+              "label": "Naseribafrouei 2014 (Neurogastroenterol Motil; Bacteroidales, Alistipes, Oscillibacter in depression)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24888394/"
+            }
+          ]
+        },
+        {
+          "id": "uz9rcy6",
+          "name": "Clostridia",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": []
+        },
+        {
+          "id": "l00kyug",
+          "name": "Ruminococcaceae",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": []
+        },
+        {
+          "id": "1h7zmk7",
+          "name": "Christensenellaceae",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "rkuk8z9",
+      "name": "Autism (ASD)",
+      "abbr": "ASD",
+      "color": "#B57BFF",
+      "note": "Morton 2023 reframed the ASD signal away from single taxa toward a gut-brain metabolic architecture — amino-acid / carbohydrate / lipid profiles encoded largely by Prevotella, Bifidobacterium, Desulfovibrio and Bacteroides, with glutamate the strongest metabolite signal. Counterweight (Neuron 2025): classifiers cannot separate autistic children from their own siblings, and stool consistency (constipation/diarrhoea) confounds many case-control ASD taxa findings — so treat the single-taxon directions below cautiously.",
+      "links": [
+        {
+          "id": "93ils0u",
+          "label": "MGBA review (PMID 42532353)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42532353/"
+        },
+        {
+          "id": "48d9785",
+          "label": "Kang 2013 (PLoS ONE; ↓Prevotella, Coprococcus, unclassified Veillonellaceae in ASD)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+        },
+        {
+          "id": "d9bc436",
+          "label": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+        },
+        {
+          "id": "afcd7c5",
+          "label": "Kang 2017 (Microbiome; MTT alters gut ecosystem & ASD symptoms)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28122648/"
+        },
+        {
+          "id": "0277592",
+          "label": "Kang 2019 (Sci Rep; long-term MTT benefit, Bifidobacterium & Prevotella recovery)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30967657/"
+        },
+        {
+          "id": "ihyo1en",
+          "label": "Morton 2023 (Nat Neurosci; 25-dataset reanalysis, 528 vs 528; metabolic architecture, glutamate top signal)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10322709/"
+        },
+        {
+          "id": "03wbrmb",
+          "label": "Critique 2025 (Neuron; classifiers fail vs siblings, stool-consistency confound)",
+          "url": "https://www.cell.com/neuron/fulltext/S0896-6273(25)00785-8"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "m73esas",
+          "name": "Clostridium",
+          "dir": "up",
+          "refs": "56,57",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "63d2joa",
+          "name": "Clostridiales",
+          "dir": "up",
+          "refs": "56,57",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "643v6mo",
+          "name": "Veillonellaceae",
+          "dir": "up",
+          "refs": "58",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "h6n5w4i",
+          "name": "Ruminococcaceae",
+          "dir": "up",
+          "refs": "58",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": [
+            {
+              "id": "19b7l0h",
+              "label": "Ruminococcaceae ↔ OCD severity",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0165032725003167"
+            }
+          ]
+        },
+        {
+          "id": "i286mos",
+          "name": "Dorea",
+          "dir": "up",
+          "refs": "57",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "7e26a22",
+          "name": "Collinsella",
+          "dir": "up",
+          "refs": "57",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "bttjlrn",
+          "name": "Lachnoclostridium",
+          "dir": "up",
+          "refs": "57",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "qdkczdk",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "56,57",
+          "note": "",
+          "links": [
+            {
+              "id": "48d9785",
+              "label": "Kang 2013 (PLoS ONE; ↓Prevotella, Coprococcus, unclassified Veillonellaceae in ASD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+            }
+          ]
+        },
+        {
+          "id": "8gerf2r",
+          "name": "Prevotella",
+          "dir": "down",
+          "refs": "57,58",
+          "note": "",
+          "links": [
+            {
+              "id": "48d9785",
+              "label": "Kang 2013 (PLoS ONE; ↓Prevotella, Coprococcus, unclassified Veillonellaceae in ASD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+            }
+          ]
+        },
+        {
+          "id": "4mnxghc",
+          "name": "Parasutterella",
+          "dir": "down",
+          "refs": "57",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "hn022si",
+          "name": "Lactobacillus Corynebacterium",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": []
+        },
+        {
+          "id": "tkrj82q",
+          "name": "Alistipes",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "d9bc436",
+              "label": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+            }
+          ]
+        },
+        {
+          "id": "3fylkvm",
+          "name": "Bilophila",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "d9bc436",
+              "label": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+            }
+          ]
+        },
+        {
+          "id": "cfpwzes",
+          "name": "Veillonella",
+          "dir": "down",
+          "refs": "https://pubmed.ncbi.nlm.nih.gov/28222761/",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "d9bc436",
+              "label": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+            }
+          ]
+        },
+        {
+          "id": "gkudd07",
+          "name": "Dialister",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/28222761/",
+          "links": [
+            {
+              "id": "d9bc436",
+              "label": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+            }
+          ]
+        },
+        {
+          "id": "d09nqc8",
+          "name": "Parabacteroides",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/28222761/",
+          "links": [
+            {
+              "id": "d9bc436",
+              "label": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+            }
+          ]
+        },
+        {
+          "id": "nz5umcc",
+          "name": "Escherichia-Shigella",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/28222761/",
+          "links": [
+            {
+              "id": "d9bc436",
+              "label": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+            }
+          ]
+        },
+        {
+          "id": "fa6fiwp",
+          "name": "Firmicutes",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/38068995/",
+          "links": []
+        },
+        {
+          "id": "k7yfxg8",
+          "name": "Pseudomonadota",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/38068995/",
+          "links": []
+        },
+        {
+          "id": "pfrbkq9",
+          "name": "Bacteroidetes",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/38068995/",
+          "links": []
+        },
+        {
+          "id": "inpz1sg",
+          "name": "Ruminococcus gnavus",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/",
+          "links": []
+        },
+        {
+          "id": "wv39el3",
+          "name": "Blautia",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        },
+        {
+          "id": "5903z96",
+          "name": "Collinsella",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        },
+        {
+          "id": "jkkciu2",
+          "name": "Tyzzerella",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        },
+        {
+          "id": "y9ayqlv",
+          "name": "Lachnoclostridium",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        },
+        {
+          "id": "ttqexq0",
+          "name": "Fusobacterium",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        },
+        {
+          "id": "mtm2dp7",
+          "name": "Bacteroides",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        },
+        {
+          "id": "5pju5jh",
+          "name": "Streptococcus",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        },
+        {
+          "id": "os51eiz",
+          "name": "Erysipelatoclostridium",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        },
+        {
+          "id": "1n9q7mf",
+          "name": "unclassified_Lachnospiraceae",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "5ukh8bg",
+      "name": "ADHD",
+      "abbr": "ADHD",
+      "color": "#FFA62B",
+      "note": "",
+      "links": [
+        {
+          "id": "7lkgc6c",
+          "label": "MGBA review (PMID 42532353)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42532353/"
+        },
+        {
+          "id": "cb57907",
+          "label": "Aarts 2017 (PLoS ONE; ADHD microbiome & reward anticipation, Bifidobacterium ↑)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28863139/"
+        },
+        {
+          "id": "d5f0b70",
+          "label": "Wan 2020 (Front Neurosci; ↓Faecalibacterium & Veillonellaceae in pediatric ADHD)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
+        },
+        {
+          "id": "a5f6139",
+          "label": "Jiang 2018 (Behav Brain Res; ↓Faecalibacterium correlates with ADHD symptoms)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29580894/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "87cokf4",
+          "name": "Blautia",
+          "dir": "up",
+          "refs": "80",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "agm4h6d",
+          "name": "Lachnospiraceae",
+          "dir": "up",
+          "refs": "80",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "vtf5wf4",
+          "name": "Anaerostipes",
+          "dir": "up",
+          "refs": "80",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "047zi8z",
+          "name": "Bacteroides",
+          "dir": "down",
+          "refs": "63",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "38z05kq",
+          "name": "Prevotella",
+          "dir": "down",
+          "refs": "63",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "9bmv4qi",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "63",
+          "note": "",
+          "links": [
+            {
+              "id": "d5f0b70",
+              "label": "Wan 2020 (Front Neurosci; ↓Faecalibacterium & Veillonellaceae in pediatric ADHD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
+            },
+            {
+              "id": "a5f6139",
+              "label": "Jiang 2018 (Behav Brain Res; ↓Faecalibacterium correlates with ADHD symptoms)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29580894/"
+            }
+          ]
+        },
+        {
+          "id": "b3ozd01",
+          "name": "Lactobacillus",
+          "dir": "down",
+          "refs": "63",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "o8am0cf",
+          "name": "Verrucomicrobia",
+          "dir": "down",
+          "refs": "80",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "5dhati5",
+          "name": "Christensenellaceae",
+          "dir": "down",
+          "refs": "80",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "7kgigwh",
+          "name": "Ruminococcaceae",
+          "dir": "down",
+          "refs": "80",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "2ha0wud",
+          "name": "Anaerococcus",
+          "dir": "down",
+          "refs": "80",
+          "note": "",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "tzitk6p",
+      "name": "Alzheimer's",
+      "abbr": "AD",
+      "color": "#FF6B6B",
+      "note": "",
+      "links": [
+        {
+          "id": "t6ua9p4",
+          "label": "MGBA review (PMID 42532353)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42532353/"
+        },
+        {
+          "id": "ac4f055",
+          "label": "Vogt 2017 (Sci Rep; ↓Firmicutes, ↑Bacteroidetes, ↓Bifidobacterium in AD)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29051531/"
+        },
+        {
+          "id": "2ee3732",
+          "label": "Cattaneo 2017 (Neurobiol Aging; ↑Escherichia/Shigella, ↓Eubacterium rectale in amyloid+)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27776263/"
+        },
+        {
+          "id": "a597207",
+          "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "0ml4kl3",
+          "name": "Escherichia",
+          "dir": "up",
+          "refs": "116",
+          "note": "",
+          "links": [
+            {
+              "id": "2ee3732",
+              "label": "Cattaneo 2017 (Neurobiol Aging; ↑Escherichia/Shigella, ↓Eubacterium rectale in amyloid+)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27776263/"
+            }
+          ]
+        },
+        {
+          "id": "371n1sz",
+          "name": "Shigella",
+          "dir": "up",
+          "refs": "116",
+          "note": "",
+          "links": [
+            {
+              "id": "2ee3732",
+              "label": "Cattaneo 2017 (Neurobiol Aging; ↑Escherichia/Shigella, ↓Eubacterium rectale in amyloid+)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27776263/"
+            }
+          ]
+        },
+        {
+          "id": "uafr27g",
+          "name": "Phascolarctobacterium",
+          "dir": "up",
+          "refs": "115",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "7ane8m1",
+          "name": "Lactobacillus",
+          "dir": "up",
+          "refs": "115",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "1q75zxo",
+          "name": "Akkermansia muciniphila",
+          "dir": "up",
+          "refs": "115",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "xainqj2",
+          "name": "Eubacterium",
+          "dir": "down",
+          "refs": "116",
+          "note": "",
+          "links": [
+            {
+              "id": "2ee3732",
+              "label": "Cattaneo 2017 (Neurobiol Aging; ↑Escherichia/Shigella, ↓Eubacterium rectale in amyloid+)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27776263/"
+            }
+          ]
+        },
+        {
+          "id": "ip2n9z0",
+          "name": "Lachnospiraceae",
+          "dir": "down",
+          "refs": "117",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "hmohng2",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "115",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "3xxxese",
+          "name": "Dialister",
+          "dir": "down",
+          "refs": "115",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "8dmq571",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "115",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "rm7vch3",
+          "name": "Lachnospira",
+          "dir": "down",
+          "refs": "115",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "umsl8aq",
+          "name": "Lachnoclostridium",
+          "dir": "down",
+          "refs": "115",
+          "note": "",
+          "links": [
+            {
+              "id": "a597207",
+              "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jy8lkt5",
+      "name": "Schizophrenia",
+      "abbr": "SCZ",
+      "color": "#3DDC97",
+      "note": "",
+      "links": [
+        {
+          "id": "cvctc8s",
+          "label": "MGBA review (PMID 42532353)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42532353/"
+        },
+        {
+          "id": "08d94ed",
+          "label": "Zheng 2019 (Sci Adv; SCZ microbiome → glutamate-glutamine-GABA cycle in mice; Veillonellaceae/Lachnospiraceae signatures)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30775438/"
+        },
+        {
+          "id": "7ec4113",
+          "label": "Zhu 2020 (Mol Psychiatry; drug-free SCZ FMT → SCZ-like behavior & kynurenine dysregulation)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31391545/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "9e5jtmh",
+          "name": "Actinobacteria",
+          "dir": "up",
+          "refs": "150–153",
+          "note": "",
+          "links": [
+            {
+              "id": "08d94ed",
+              "label": "Zheng 2019 (Sci Adv; SCZ microbiome → glutamate-glutamine-GABA cycle in mice; Veillonellaceae/Lachnospiraceae signatures)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30775438/"
+            }
+          ]
+        },
+        {
+          "id": "l2jir37",
+          "name": "Collinsella",
+          "dir": "up",
+          "refs": "150,153",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "v598wuw",
+          "name": "Succinivibrio",
+          "dir": "up",
+          "refs": "150,153",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "4hepkrw",
+          "name": "Lactobacillus",
+          "dir": "up",
+          "refs": "150,153",
+          "note": "",
+          "links": [
+            {
+              "id": "08d94ed",
+              "label": "Zheng 2019 (Sci Adv; SCZ microbiome → glutamate-glutamine-GABA cycle in mice; Veillonellaceae/Lachnospiraceae signatures)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30775438/"
+            }
+          ]
+        },
+        {
+          "id": "36scipr",
+          "name": "Megasphaera",
+          "dir": "up",
+          "refs": "153",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "mpusmi5",
+          "name": "Enterobacteriaceae",
+          "dir": "up",
+          "refs": "153",
+          "note": "",
+          "links": [
+            {
+              "id": "08d94ed",
+              "label": "Zheng 2019 (Sci Adv; SCZ microbiome → glutamate-glutamine-GABA cycle in mice; Veillonellaceae/Lachnospiraceae signatures)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30775438/"
+            }
+          ]
+        },
+        {
+          "id": "vl0nw98",
+          "name": "Firmicutes",
+          "dir": "down",
+          "refs": "150–153",
+          "note": "",
+          "links": [
+            {
+              "id": "08d94ed",
+              "label": "Zheng 2019 (Sci Adv; SCZ microbiome → glutamate-glutamine-GABA cycle in mice; Veillonellaceae/Lachnospiraceae signatures)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30775438/"
+            }
+          ]
+        },
+        {
+          "id": "1abxfk7",
+          "name": "Blautia",
+          "dir": "down",
+          "refs": "153",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "o4akty5",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "153",
+          "note": "",
+          "links": [
+            {
+              "id": "08d94ed",
+              "label": "Zheng 2019 (Sci Adv; SCZ microbiome → glutamate-glutamine-GABA cycle in mice; Veillonellaceae/Lachnospiraceae signatures)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30775438/"
+            }
+          ]
+        },
+        {
+          "id": "8vbadmt",
+          "name": "Coprococcus",
+          "dir": "down",
+          "refs": "153",
+          "note": "",
+          "links": [
+            {
+              "id": "08d94ed",
+              "label": "Zheng 2019 (Sci Adv; SCZ microbiome → glutamate-glutamine-GABA cycle in mice; Veillonellaceae/Lachnospiraceae signatures)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30775438/"
+            }
+          ]
+        },
+        {
+          "id": "h3n75ws",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "150",
+          "note": "",
+          "links": [
+            {
+              "id": "08d94ed",
+              "label": "Zheng 2019 (Sci Adv; SCZ microbiome → glutamate-glutamine-GABA cycle in mice; Veillonellaceae/Lachnospiraceae signatures)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30775438/"
+            }
+          ]
+        },
+        {
+          "id": "br5tw60",
+          "name": "Ruminococcus",
+          "dir": "down",
+          "refs": "150",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "5chlrst",
+          "name": "Haemophilus",
+          "dir": "down",
+          "refs": "152",
+          "note": "",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "5h2fpww",
+      "name": "Anxiety",
+      "abbr": "ANX",
+      "color": "#F45BAF",
+      "note": "",
+      "links": [
+        {
+          "id": "19jvypa",
+          "label": "MGBA review (PMID 42532353)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42532353/"
+        },
+        {
+          "id": "de75731",
+          "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+        },
+        {
+          "id": "c4b315e",
+          "label": "Chen 2019 (J Affect Disord; GAD severity: ↓Bifidobacterium, Prevotella, Roseburia)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "kx0lmrg",
+          "name": "Actinobacteria",
+          "dir": "up",
+          "refs": "169",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "hzsukbl",
+          "name": "Bacteroidetes",
+          "dir": "up",
+          "refs": "169",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "9z8fnns",
+          "name": "Escherichia-Shigella",
+          "dir": "up",
+          "refs": "168,169",
+          "note": "",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "xhzx1s6",
+          "name": "Hungatella",
+          "dir": "up",
+          "refs": "168",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "w6c78yy",
+          "name": "Firmicutes",
+          "dir": "down",
+          "refs": "168,169",
+          "note": "",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "zsf1wnz",
+          "name": "Tenericutes",
+          "dir": "down",
+          "refs": "168",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "pfu7cox",
+          "name": "Prevotella 9",
+          "dir": "down",
+          "refs": "168",
+          "note": "",
+          "links": [
+            {
+              "id": "c4b315e",
+              "label": "Chen 2019 (J Affect Disord; GAD severity: ↓Bifidobacterium, Prevotella, Roseburia)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+            }
+          ]
+        },
+        {
+          "id": "o55fxku",
+          "name": "Dialister",
+          "dir": "down",
+          "refs": "168",
+          "note": "",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "qupqktg",
+          "name": "Subdoligranulum",
+          "dir": "down",
+          "refs": "168",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "q75ucbj",
+          "name": "Agathobacter",
+          "dir": "down",
+          "refs": "168",
+          "note": "",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "i3883w1",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "169",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "c4b315e",
+              "label": "Chen 2019 (J Affect Disord; GAD severity: ↓Bifidobacterium, Prevotella, Roseburia)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+            }
+          ]
+        },
+        {
+          "id": "b2ygchz",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "169",
+          "note": "",
+          "links": [
+            {
+              "id": "c4b315e",
+              "label": "Chen 2019 (J Affect Disord; GAD severity: ↓Bifidobacterium, Prevotella, Roseburia)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+            }
+          ]
+        },
+        {
+          "id": "2k3hhxn",
+          "name": "Lactobacillus",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": []
+        },
+        {
+          "id": "vgtpjtd",
+          "name": "Fusobacterium",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "6b7oog7",
+          "name": "Ruminococcus gnavus",
+          "dir": "up",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "mqhv1ki",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "6kr07ir",
+          "name": "Eubacterium rectale",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        },
+        {
+          "id": "9rp509v",
+          "name": "Lachnospira",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
+          "links": [
+            {
+              "id": "de75731",
+              "label": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qqpg28i",
+      "name": "OCD",
+      "abbr": "OCD",
+      "color": "#33C7E8",
+      "note": "",
+      "links": [
+        {
+          "id": "0z0867j",
+          "label": "MGBA review (PMID 42532353)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42532353/"
+        },
+        {
+          "id": "hr5c3dt",
+          "label": "Ruminococcaceae ↔ OCD severity",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0165032725003167"
+        },
+        {
+          "id": "15713f6",
+          "label": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
+        },
+        {
+          "id": "cfa086d",
+          "label": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "g60u8c7",
+          "name": "Rikenellaceae",
+          "dir": "up",
+          "refs": "220",
+          "note": "",
+          "links": [
+            {
+              "id": "cfa086d",
+              "label": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+            }
+          ]
+        },
+        {
+          "id": "4h5ca93",
+          "name": "Alistipes",
+          "dir": "up",
+          "refs": "220",
+          "note": "",
+          "links": [
+            {
+              "id": "cfa086d",
+              "label": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+            }
+          ]
+        },
+        {
+          "id": "kl3kd4b",
+          "name": "Oscillospira",
+          "dir": "down",
+          "refs": "219",
+          "note": "",
+          "links": [
+            {
+              "id": "15713f6",
+              "label": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
+            }
+          ]
+        },
+        {
+          "id": "262xjy2",
+          "name": "Odoribacter",
+          "dir": "down",
+          "refs": "219",
+          "note": "",
+          "links": [
+            {
+              "id": "15713f6",
+              "label": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
+            }
+          ]
+        },
+        {
+          "id": "duexrk9",
+          "name": "Anaerostipes",
+          "dir": "down",
+          "refs": "219",
+          "note": "",
+          "links": [
+            {
+              "id": "15713f6",
+              "label": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
+            }
+          ]
+        },
+        {
+          "id": "gy1w1ck",
+          "name": "Prevotellaceae",
+          "dir": "down",
+          "refs": "220",
+          "note": "",
+          "links": [
+            {
+              "id": "cfa086d",
+              "label": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+            }
+          ]
+        },
+        {
+          "id": "6mu3yza",
+          "name": "Lachnospiraceae",
+          "dir": "down",
+          "refs": "220",
+          "note": "",
+          "links": [
+            {
+              "id": "cfa086d",
+              "label": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+            }
+          ]
+        },
+        {
+          "id": "ba6g5kg",
+          "name": "Agathobacter",
+          "dir": "down",
+          "refs": "220",
+          "note": "",
+          "links": [
+            {
+              "id": "cfa086d",
+              "label": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+            }
+          ]
+        },
+        {
+          "id": "glj8mml",
+          "name": "Coprococcus",
+          "dir": "down",
+          "refs": "220",
+          "note": "",
+          "links": [
+            {
+              "id": "cfa086d",
+              "label": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "at7jgy9",
+      "name": "Non-secretor (FUT2)",
+      "abbr": "FUT2",
+      "color": "#C3E88D",
+      "note": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on — so Bifido runs low, and with it GABA.",
+      "links": [
+        {
+          "id": "b1f7271",
+          "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "vint7iu",
+          "name": "Bacteroidetes",
+          "dir": "up",
+          "refs": "derived",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "bfxn41s",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "derived",
+          "note": "Source: Wacklin, P., et al. (2011). Secretor genotype (FUT2 gene) is strongly associated with the composition of bifidobacteria in the human intestine. PLoS ONE, 6(5), e20113.\nFinding: Demonstrated that bifidobacterial diversity, richness, and overall abundance are significantly reduced in non-secretors, specifically noting a lack of or rare colonization by Bifidobacterium bifidum, Bifidobacterium adolescentis, and Bifidobacterium catenulatum/pseudocatenulatum.\n\nhttps://journals.plos.org/plosone/article?id=10.1371/journal.pone.0020113",
+          "links": [
+            {
+              "id": "b1f7271",
+              "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+            }
+          ]
+        },
+        {
+          "id": "ljzvfa8",
+          "name": "Firmicutes",
+          "dir": "down",
+          "refs": "derived",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "nro80pn",
+          "name": "Lachnospiraceae",
+          "dir": "down",
+          "refs": "derived",
+          "note": "Source: Gampa, A., et al. (2017). Relationships between gastrointestinal microbiota and blood group antigens. Physiological Genomics, 49(9), 473–483.\n\nFinding: Highlighted that both secretor status and blood group antigen expression notably impact the Lachnospiraceae family, showing consistent lower abundances in non-secretors.",
+          "links": []
+        },
+        {
+          "id": "spicshl",
+          "name": "Proteobacteria",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5463037/",
+          "links": []
+        },
+        {
+          "id": "62xhfg8",
+          "name": "Bifidobacterium adolescentis",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/21625510/",
+          "links": [
+            {
+              "id": "b1f7271",
+              "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+            }
+          ]
+        },
+        {
+          "id": "d7t9a1t",
+          "name": "Bifidobacterium Pseudocatenulatum",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/21625510/",
+          "links": [
+            {
+              "id": "b1f7271",
+              "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+            }
+          ]
+        },
+        {
+          "id": "4yhfpxa",
+          "name": "Bifidobacterium Bifidum",
+          "dir": "down",
+          "refs": "",
+          "note": "https://pubmed.ncbi.nlm.nih.gov/21625510/",
+          "links": [
+            {
+              "id": "b1f7271",
+              "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fcbe95d",
+      "name": "Bipolar Disorder",
+      "abbr": "BD",
+      "color": "#F0B429",
+      "note": "Evidence base is smaller than for MDD; findings vary by mood state (depressed vs manic vs euthymic), by subtype (BD-I vs BD-II), and by medication (especially atypical antipsychotics, which independently shift the microbiome). Most primary cohorts sampled during a depressive episode. Common thread across studies: reduced α-diversity that scales with illness duration, and depletion of butyrate-producing Faecalibacterium/Roseburia/Coprococcus.",
+      "links": [
+        {
+          "id": "1fcba57",
+          "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+        },
+        {
+          "id": "af64f04",
+          "label": "McIntyre 2021 (Nutr Neurosci; BD pilot: ↑Clostridiaceae vs HC; ↑Collinsella in BD-II vs BD-I)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31132957/"
+        },
+        {
+          "id": "1b734fb",
+          "label": "Coello 2019 (Brain Behav Immun; newly diagnosed BD: ↑Flavonifractor, partly smoking-confounded)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30261302/"
+        },
+        {
+          "id": "1888d12",
+          "label": "Evans 2017 (J Psychiatr Res; ↓Faecalibacterium in BD, correlates with SF12/PHQ9/PSQI/GAD7/ASRM)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27988330/"
+        },
+        {
+          "id": "db16f1d",
+          "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+        },
+        {
+          "id": "e0818ae",
+          "label": "Aizawa 2019 (Front Psychiatry; Bifidobacterium & Lactobacillus counts in BD, direction inconsistent across cohorts)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30713509/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "a4e754a",
+          "name": "Actinobacteria",
+          "dir": "up",
+          "refs": "",
+          "note": "Phylum-level LEfSe increase in BD depressive episode (Painold 2019).",
+          "links": [
+            {
+              "id": "1fcba57",
+              "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+            }
+          ]
+        },
+        {
+          "id": "4ea0250",
+          "name": "Coriobacteriia",
+          "dir": "up",
+          "refs": "",
+          "note": "Class-level LEfSe increase; parent of Collinsella. Painold 2019.",
+          "links": [
+            {
+              "id": "1fcba57",
+              "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+            }
+          ]
+        },
+        {
+          "id": "3f4edd6",
+          "name": "Clostridiaceae",
+          "dir": "up",
+          "refs": "",
+          "note": "~4× higher OTU abundance in BD vs HC (McIntyre 2021 pilot, n=23 vs 23).",
+          "links": [
+            {
+              "id": "af64f04",
+              "label": "McIntyre 2021 (Nutr Neurosci; BD pilot: ↑Clostridiaceae vs HC; ↑Collinsella in BD-II vs BD-I)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31132957/"
+            }
+          ]
+        },
+        {
+          "id": "fff51b8",
+          "name": "Collinsella",
+          "dir": "up",
+          "refs": "",
+          "note": "Enriched specifically in BD-II vs BD-I; small sample — needs replication (McIntyre 2021).",
+          "links": [
+            {
+              "id": "af64f04",
+              "label": "McIntyre 2021 (Nutr Neurosci; BD pilot: ↑Clostridiaceae vs HC; ↑Collinsella in BD-II vs BD-I)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31132957/"
+            }
+          ]
+        },
+        {
+          "id": "6d2d952",
+          "name": "Flavonifractor",
+          "dir": "up",
+          "refs": "",
+          "note": "Present in 61% of newly diagnosed BD vs 39% HC (OR 2.9). Association attenuates in non-smokers (Coello 2019).",
+          "links": [
+            {
+              "id": "1b734fb",
+              "label": "Coello 2019 (Brain Behav Immun; newly diagnosed BD: ↑Flavonifractor, partly smoking-confounded)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30261302/"
+            }
+          ]
+        },
+        {
+          "id": "b45fba3",
+          "name": "Bacteroidetes",
+          "dir": "up",
+          "refs": "",
+          "note": "Enriched in untreated BD depression vs HC (Hu 2019 shotgun).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "ee4d82a",
+          "name": "Bacteroides",
+          "dir": "up",
+          "refs": "",
+          "note": "Higher in untreated BD depression (Hu 2019).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "8cfafd7",
+          "name": "Parabacteroides",
+          "dir": "up",
+          "refs": "",
+          "note": "Higher in untreated BD depression (Hu 2019).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "4009200",
+          "name": "Enterobacteriaceae",
+          "dir": "up",
+          "refs": "",
+          "note": "Correlates with severity of depressive symptoms within BD (Painold 2019).",
+          "links": [
+            {
+              "id": "1fcba57",
+              "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+            }
+          ]
+        },
+        {
+          "id": "7d4d843",
+          "name": "Eubacterium",
+          "dir": "up",
+          "refs": "",
+          "note": "Associated with markers of oxidative stress within BD (Painold 2019).",
+          "links": [
+            {
+              "id": "1fcba57",
+              "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+            }
+          ]
+        },
+        {
+          "id": "6a0fdfe",
+          "name": "Lactobacillales",
+          "dir": "up",
+          "refs": "",
+          "note": "Elevated in BD subjects with elevated IL-6 (Painold 2019).",
+          "links": [
+            {
+              "id": "1fcba57",
+              "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+            }
+          ]
+        },
+        {
+          "id": "3118b63",
+          "name": "Streptococcaceae",
+          "dir": "up",
+          "refs": "",
+          "note": "Elevated in BD subjects with elevated IL-6 (Painold 2019).",
+          "links": [
+            {
+              "id": "1fcba57",
+              "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+            }
+          ]
+        },
+        {
+          "id": "d1d261c",
+          "name": "Firmicutes",
+          "dir": "down",
+          "refs": "",
+          "note": "Depleted at phylum level in untreated BD depression vs HC (Hu 2019).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "ceb3b54",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "",
+          "note": "Robust across cohorts; Evans 2017 shows F. prausnitzii inversely correlates with SF12/PHQ9/PSQI/GAD7/ASRM within BD.",
+          "links": [
+            {
+              "id": "1fcba57",
+              "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+            },
+            {
+              "id": "1888d12",
+              "label": "Evans 2017 (J Psychiatr Res; ↓Faecalibacterium in BD, correlates with SF12/PHQ9/PSQI/GAD7/ASRM)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27988330/"
+            },
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "e6ba176",
+          "name": "Ruminococcaceae",
+          "dir": "down",
+          "refs": "",
+          "note": "Family-level LEfSe decrease in BD (Painold 2019).",
+          "links": [
+            {
+              "id": "1fcba57",
+              "label": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+            }
+          ]
+        },
+        {
+          "id": "41182d6",
+          "name": "Ruminococcus",
+          "dir": "down",
+          "refs": "",
+          "note": "Depleted in untreated BD (Hu 2019).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "000c017",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "",
+          "note": "Butyrate-producer, depleted in untreated BD (Hu 2019).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "1bbb50c",
+          "name": "Coprococcus",
+          "dir": "down",
+          "refs": "",
+          "note": "Butyrate-producer, depleted in untreated BD (Hu 2019).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "1ec6fc5",
+          "name": "Parasutterella",
+          "dir": "down",
+          "refs": "",
+          "note": "Depleted in untreated BD depression (Hu 2019).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        },
+        {
+          "id": "1987e1b",
+          "name": "Gemmiger",
+          "dir": "down",
+          "refs": "",
+          "note": "Depleted in untreated BD depression (Hu 2019).",
+          "links": [
+            {
+              "id": "db16f1d",
+              "label": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ce17aec",
+      "name": "Borderline Personality Disorder",
+      "abbr": "BPD",
+      "color": "#E36AA6",
+      "note": "EVIDENCE BASE IS THIN. As of 2026, exactly one primary 16S study exists (Rössler 2022, n = 24 unmedicated BPD women vs 21 HC women — all-female cohort). Alpha- and beta-diversity did not differ between groups; the signal is at species level, in bacteria that produce or feed short-chain-fatty-acid pathways. Findings correlated with psychometric severity but have not yet been independently replicated. Male BPD, medicated BPD, and BPD with comorbidities (MDD, PTSD, eating disorders) are essentially unstudied. Treat everything here as directional, not established. The SCFA-depletion pattern is directionally consistent with what's seen in MDD, BD, and anxiety, which is unsurprising given the high comorbidity.",
+      "links": [
+        {
+          "id": "63fe41d",
+          "label": "Rössler 2022 (J Psychosom Res; 24 unmedicated BPD women vs 21 HC: ↑Bacteroidetes/Firmicutes ratio; ↓Pseudoflavonifractor phocaensis, Eubacterium coprostanoligenes, Anaerotaenia torta, Parabacteroides chongii)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35594813/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "12cf36f",
+          "name": "Bacteroidetes",
+          "dir": "up",
+          "refs": "",
+          "note": "B/F ratio elevated in BPD; approached but did not cross p < 0.05 (p = 0.06, r = 0.23). Directional finding — replication needed.",
+          "links": [
+            {
+              "id": "63fe41d",
+              "label": "Rössler 2022 (J Psychosom Res; 24 unmedicated BPD women vs 21 HC: ↑Bacteroidetes/Firmicutes ratio; ↓Pseudoflavonifractor phocaensis, Eubacterium coprostanoligenes, Anaerotaenia torta, Parabacteroides chongii)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35594813/"
+            }
+          ]
+        },
+        {
+          "id": "adb3f85",
+          "name": "Firmicutes",
+          "dir": "down",
+          "refs": "",
+          "note": "Depleted as the denominator of the elevated Bacteroidetes/Firmicutes ratio (p = 0.06). Also parent phylum of the four significantly-depleted species below.",
+          "links": [
+            {
+              "id": "63fe41d",
+              "label": "Rössler 2022 (J Psychosom Res; 24 unmedicated BPD women vs 21 HC: ↑Bacteroidetes/Firmicutes ratio; ↓Pseudoflavonifractor phocaensis, Eubacterium coprostanoligenes, Anaerotaenia torta, Parabacteroides chongii)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35594813/"
+            }
+          ]
+        },
+        {
+          "id": "cb12cb8",
+          "name": "Pseudoflavonifractor phocaensis",
+          "dir": "down",
+          "refs": "",
+          "note": "Strongest species-level finding: p = 0.003, r = 0.41. SCFA-producing Firmicute. Correlated with BPD psychometric severity.",
+          "links": [
+            {
+              "id": "63fe41d",
+              "label": "Rössler 2022 (J Psychosom Res; 24 unmedicated BPD women vs 21 HC: ↑Bacteroidetes/Firmicutes ratio; ↓Pseudoflavonifractor phocaensis, Eubacterium coprostanoligenes, Anaerotaenia torta, Parabacteroides chongii)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35594813/"
+            }
+          ]
+        },
+        {
+          "id": "79c72fa",
+          "name": "Eubacterium coprostanoligenes",
+          "dir": "down",
+          "refs": "",
+          "note": "p = 0.01, r = 0.34. Cholesterol-metabolizing commensal in the Firmicutes phylum.",
+          "links": [
+            {
+              "id": "63fe41d",
+              "label": "Rössler 2022 (J Psychosom Res; 24 unmedicated BPD women vs 21 HC: ↑Bacteroidetes/Firmicutes ratio; ↓Pseudoflavonifractor phocaensis, Eubacterium coprostanoligenes, Anaerotaenia torta, Parabacteroides chongii)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35594813/"
+            }
+          ]
+        },
+        {
+          "id": "28d18d4",
+          "name": "Anaerotaenia torta",
+          "dir": "down",
+          "refs": "",
+          "note": "p = 0.01, r = 0.35. Butyrate-producing Lachnospiraceae member.",
+          "links": [
+            {
+              "id": "63fe41d",
+              "label": "Rössler 2022 (J Psychosom Res; 24 unmedicated BPD women vs 21 HC: ↑Bacteroidetes/Firmicutes ratio; ↓Pseudoflavonifractor phocaensis, Eubacterium coprostanoligenes, Anaerotaenia torta, Parabacteroides chongii)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35594813/"
+            }
+          ]
+        },
+        {
+          "id": "22c4894",
+          "name": "Parabacteroides chongii",
+          "dir": "down",
+          "refs": "",
+          "note": "p = 0.046, r = 0.26. Weaker but significant. Note: species-level finding within a genus (Parabacteroides) that shows mixed directions across psychiatric conditions.",
+          "links": [
+            {
+              "id": "63fe41d",
+              "label": "Rössler 2022 (J Psychosom Res; 24 unmedicated BPD women vs 21 HC: ↑Bacteroidetes/Firmicutes ratio; ↓Pseudoflavonifractor phocaensis, Eubacterium coprostanoligenes, Anaerotaenia torta, Parabacteroides chongii)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35594813/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ozhcuxn",
+      "name": "Parkinson's disease",
+      "abbr": "PD",
+      "color": "#2DD4BF",
+      "note": "The most robust, best-replicated gut-microbiome signal in neurology. The recurring pattern: mucin-layer-degrading Akkermansia up, SCFA/butyrate producers (Roseburia, Faecalibacterium, Lachnospiraceae, Blautia, Fusicatenibacter) down. Nishiwaki showed this holds across countries and is independent of constipation, BMI, sex, age and COMT-inhibitor use. Mechanistic throughline: butyrate loss + mucus-layer degradation → barrier permeability → enteric α-synuclein. Caveats: directions are for established PD; COMT inhibitors independently raise Lactobacillaceae, and disease stage shifts the picture (Faecalibacterium/Fusicatenibacter depletion predicts faster progression).",
+      "links": [
+        {
+          "id": "k1336kf",
+          "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia ↑, Roseburia & Faecalibacterium ↓)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
+        },
+        {
+          "id": "wcy8zsm",
+          "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+        },
+        {
+          "id": "an0j1ni",
+          "label": "Wang 2022 (npj Biofilms Microbiomes; largest meta-analysis, 2269+236 samples: 5 up / 5 down genera)",
+          "url": "https://www.nature.com/articles/s41522-022-00367-z"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "vrlails",
+          "name": "Akkermansia",
+          "dir": "up",
+          "refs": "Nishiwaki 2020; Romano 2021",
+          "note": "Mucin-layer degrader; the single most consistent PD enrichment.",
+          "links": [
+            {
+              "id": "ntl54hs",
+              "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia ↑, Roseburia & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
+            }
+          ]
+        },
+        {
+          "id": "xv07e6d",
+          "name": "Akkermansia muciniphila",
+          "dir": "up",
+          "refs": "shotgun meta",
+          "note": "",
+          "links": [
+            {
+              "id": "vmd2eox",
+              "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia ↑, Roseburia & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
+            }
+          ]
+        },
+        {
+          "id": "ywqq0u8",
+          "name": "Bifidobacterium",
+          "dir": "up",
+          "refs": "Romano 2021",
+          "note": "",
+          "links": [
+            {
+              "id": "yuda2ow",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "a56yxs9",
+          "name": "Lactobacillus",
+          "dir": "up",
+          "refs": "Romano 2021",
+          "note": "Also driven up independently by COMT-inhibitor intake.",
+          "links": [
+            {
+              "id": "401t4yo",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "mclia2z",
+          "name": "Streptococcus",
+          "dir": "up",
+          "refs": "Wang 2022",
+          "note": "",
+          "links": [
+            {
+              "id": "km1wmoc",
+              "label": "Wang 2022 (npj Biofilms Microbiomes; largest meta-analysis, 2269+236 samples: 5 up / 5 down genera)",
+              "url": "https://www.nature.com/articles/s41522-022-00367-z"
+            }
+          ]
+        },
+        {
+          "id": "kgr9q1a",
+          "name": "Hungatella",
+          "dir": "up",
+          "refs": "Romano 2021",
+          "note": "",
+          "links": [
+            {
+              "id": "3lhg3de",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "1600jik",
+          "name": "Christensenella",
+          "dir": "up",
+          "refs": "Romano 2021",
+          "note": "Christensenellaceae R-7 group.",
+          "links": [
+            {
+              "id": "q9ehl1t",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "30sw6us",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "Nishiwaki 2020; Romano 2021",
+          "note": "Butyrate producer; depletion predicts rapid progression.",
+          "links": [
+            {
+              "id": "9snnr5k",
+              "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia ↑, Roseburia & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
+            },
+            {
+              "id": "0daooy6",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "gmtvpub",
+          "name": "Faecalibacterium prausnitzii",
+          "dir": "down",
+          "refs": "shotgun meta",
+          "note": "",
+          "links": [
+            {
+              "id": "zte6ats",
+              "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia ↑, Roseburia & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
+            }
+          ]
+        },
+        {
+          "id": "j664yi0",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "Nishiwaki 2020",
+          "note": "Butyrate producer, depleted across countries.",
+          "links": [
+            {
+              "id": "v1bu6g6",
+              "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia ↑, Roseburia & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
+            }
+          ]
+        },
+        {
+          "id": "fe681m2",
+          "name": "Roseburia intestinalis",
+          "dir": "down",
+          "refs": "shotgun meta",
+          "note": "",
+          "links": [
+            {
+              "id": "yn6sv1m",
+              "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia ↑, Roseburia & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
+            }
+          ]
+        },
+        {
+          "id": "58m1r7d",
+          "name": "Lachnospiraceae",
+          "dir": "down",
+          "refs": "Romano 2021",
+          "note": "Family-level butyrate producers.",
+          "links": [
+            {
+              "id": "ah80eeq",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "4c4c0wh",
+          "name": "Blautia",
+          "dir": "down",
+          "refs": "Romano 2021",
+          "note": "",
+          "links": [
+            {
+              "id": "2ss4qyb",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "n5p71fi",
+          "name": "Fusicatenibacter",
+          "dir": "down",
+          "refs": "Romano 2021",
+          "note": "Depletion predicts rapid 2-yr progression.",
+          "links": [
+            {
+              "id": "q4m7ygt",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "3nzavil",
+          "name": "Anaerostipes",
+          "dir": "down",
+          "refs": "Romano 2021",
+          "note": "",
+          "links": [
+            {
+              "id": "fk761lc",
+              "label": "Romano 2021 (npj Parkinsons Dis; meta-analysis: Lactobacillus/Akkermansia/Bifidobacterium ↑, Lachnospiraceae & Faecalibacterium ↓)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33692356/"
+            }
+          ]
+        },
+        {
+          "id": "6e8hllc",
+          "name": "Prevotella",
+          "dir": "down",
+          "refs": "Wang 2022",
+          "note": "Decreased Prevotella linked to faster progression (Aho).",
+          "links": [
+            {
+              "id": "4ubzsp8",
+              "label": "Wang 2022 (npj Biofilms Microbiomes; largest meta-analysis, 2269+236 samples: 5 up / 5 down genera)",
+              "url": "https://www.nature.com/articles/s41522-022-00367-z"
+            }
+          ]
+        },
+        {
+          "id": "e43ku78",
+          "name": "Lachnospira",
+          "dir": "down",
+          "refs": "Wang 2022",
+          "note": "",
+          "links": [
+            {
+              "id": "y4khxw3",
+              "label": "Wang 2022 (npj Biofilms Microbiomes; largest meta-analysis, 2269+236 samples: 5 up / 5 down genera)",
+              "url": "https://www.nature.com/articles/s41522-022-00367-z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "km13zs9",
+      "name": "ME/CFS",
+      "abbr": "MECFS",
+      "color": "#9D8DF1",
+      "note": "Two simultaneous 2023 Cell Host & Microbe cohorts (Guo n=106/91; Xiong short- vs long-term). Core signal: loss of butyrate-producing capacity — F. prausnitzii and E. rectale depleted, with F. prausnitzii abundance inversely tracking fatigue severity, confirmed functionally by metagenomics, qPCR and fecal SCFA metabolomics. Xiong found dysbiosis pronounced in short-term (<4 y) disease but largely resolved in long-term (>10 y) patients who retained metabolic/clinical aberrations — so disease duration matters. Opportunistic species (R. gnavus, Enterocloster, Hungatella, Eggerthella) enriched.",
+      "links": [
+        {
+          "id": "1tr2kyq",
+          "label": "Guo 2023 (Cell Host Microbe; n=106/91: F. prausnitzii & E. rectale ↓, butyrate deficit, F. prausnitzii inversely ∝ fatigue severity)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+        },
+        {
+          "id": "3nub8id",
+          "label": "Xiong 2023 (Cell Host Microbe; short- vs long-term ME/CFS multi-omics)",
+          "url": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(23)00021-5"
+        },
+        {
+          "id": "0vzeg9c",
+          "label": "Retrospective review 2024 (Eur J Med Res; phylum-level: Bacteroidetes ↑, Firmicutes ↓)",
+          "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "dfmvryk",
+          "name": "Faecalibacterium prausnitzii",
+          "dir": "down",
+          "refs": "Guo 2023",
+          "note": "Inversely correlated with fatigue severity; candidate diagnostic biomarker.",
+          "links": [
+            {
+              "id": "40d4kan",
+              "label": "Guo 2023 (Cell Host Microbe; n=106/91: F. prausnitzii & E. rectale ↓, butyrate deficit, F. prausnitzii inversely ∝ fatigue severity)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+            }
+          ]
+        },
+        {
+          "id": "9xvh4zd",
+          "name": "Eubacterium rectale",
+          "dir": "down",
+          "refs": "Guo 2023",
+          "note": "Butyrate producer, depleted alongside F. prausnitzii.",
+          "links": [
+            {
+              "id": "34v3bmn",
+              "label": "Guo 2023 (Cell Host Microbe; n=106/91: F. prausnitzii & E. rectale ↓, butyrate deficit, F. prausnitzii inversely ∝ fatigue severity)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+            }
+          ]
+        },
+        {
+          "id": "pggv594",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "Guo 2023",
+          "note": "",
+          "links": [
+            {
+              "id": "nqx8rmx",
+              "label": "Guo 2023 (Cell Host Microbe; n=106/91: F. prausnitzii & E. rectale ↓, butyrate deficit, F. prausnitzii inversely ∝ fatigue severity)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+            }
+          ]
+        },
+        {
+          "id": "wasftl1",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "Xiong 2023",
+          "note": "SCFA producer.",
+          "links": [
+            {
+              "id": "veazft5",
+              "label": "Xiong 2023 (Cell Host Microbe; short- vs long-term ME/CFS multi-omics)",
+              "url": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(23)00021-5"
+            }
+          ]
+        },
+        {
+          "id": "8ed343x",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "review 2024",
+          "note": "",
+          "links": [
+            {
+              "id": "rs60j32",
+              "label": "Retrospective review 2024 (Eur J Med Res; phylum-level: Bacteroidetes ↑, Firmicutes ↓)",
+              "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
+            }
+          ]
+        },
+        {
+          "id": "iehgeax",
+          "name": "Firmicutes",
+          "dir": "down",
+          "refs": "review 2024",
+          "note": "Phylum-level reduction.",
+          "links": [
+            {
+              "id": "g70pm82",
+              "label": "Retrospective review 2024 (Eur J Med Res; phylum-level: Bacteroidetes ↑, Firmicutes ↓)",
+              "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
+            }
+          ]
+        },
+        {
+          "id": "2pi5d60",
+          "name": "Bacteroidetes",
+          "dir": "up",
+          "refs": "review 2024",
+          "note": "Phylum-level increase.",
+          "links": [
+            {
+              "id": "2vz6byr",
+              "label": "Retrospective review 2024 (Eur J Med Res; phylum-level: Bacteroidetes ↑, Firmicutes ↓)",
+              "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
+            }
+          ]
+        },
+        {
+          "id": "lyhhltu",
+          "name": "Ruminococcus gnavus",
+          "dir": "up",
+          "refs": "Guo 2023",
+          "note": "IBD-associated.",
+          "links": [
+            {
+              "id": "f6icwp3",
+              "label": "Guo 2023 (Cell Host Microbe; n=106/91: F. prausnitzii & E. rectale ↓, butyrate deficit, F. prausnitzii inversely ∝ fatigue severity)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+            }
+          ]
+        },
+        {
+          "id": "6bxehb5",
+          "name": "Enterocloster bolteae",
+          "dir": "up",
+          "refs": "Guo 2023",
+          "note": "Correlated with fatigue in multiple sclerosis.",
+          "links": [
+            {
+              "id": "02mf7vp",
+              "label": "Guo 2023 (Cell Host Microbe; n=106/91: F. prausnitzii & E. rectale ↓, butyrate deficit, F. prausnitzii inversely ∝ fatigue severity)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+            }
+          ]
+        },
+        {
+          "id": "rpmi3bq",
+          "name": "Hungatella hathewayi",
+          "dir": "up",
+          "refs": "review 2024",
+          "note": "Opportunistic pathobiont.",
+          "links": [
+            {
+              "id": "1a1nw5k",
+              "label": "Retrospective review 2024 (Eur J Med Res; phylum-level: Bacteroidetes ↑, Firmicutes ↓)",
+              "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
+            }
+          ]
+        },
+        {
+          "id": "571r61l",
+          "name": "Eggerthella lenta",
+          "dir": "up",
+          "refs": "review 2024",
+          "note": "",
+          "links": [
+            {
+              "id": "janpcx0",
+              "label": "Retrospective review 2024 (Eur J Med Res; phylum-level: Bacteroidetes ↑, Firmicutes ↓)",
+              "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
+            }
+          ]
+        },
+        {
+          "id": "goa1y0o",
+          "name": "Erysipelatoclostridium ramosum",
+          "dir": "up",
+          "refs": "review 2024",
+          "note": "",
+          "links": [
+            {
+              "id": "z97amuu",
+              "label": "Retrospective review 2024 (Eur J Med Res; phylum-level: Bacteroidetes ↑, Firmicutes ↓)",
+              "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0eqhd9w",
+      "name": "Fibromyalgia",
+      "abbr": "FM",
+      "color": "#FF7A6B",
+      "note": "Well-controlled case-control (Minerbi 2019): 77 women with FM vs matched controls, with differences independent of diet, physical activity, medication and comorbid IBS, and taxa abundance tracking symptom severity. Signature is a reshuffle of the butyrate-producing community — the well-characterised 'healthy' producers (F. prausnitzii, B. uniformis, P. copri, Blautia faecis) depleted while less-characterised producers (Intestinimonas, Flavonifractor, Eisenbergiella, Butyricicoccus) rise, mirrored by altered serum SCFAs. Bifidobacterium and Eubacterium (neurotransmitter-metabolising genera) reduced — a plausible tie to the low-GABA / high-glutamate axis reported in FM.",
+      "links": [
+        {
+          "id": "dltxf9r",
+          "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+        },
+        {
+          "id": "1kkpsl7",
+          "label": "Minerbi review 2025 (PAIN Reports; FM microbiome synthesis)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11671092/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "cqefzeh",
+          "name": "Faecalibacterium prausnitzii",
+          "dir": "down",
+          "refs": "Minerbi 2019",
+          "note": "Butyrate producer; depletion reflected in circulating SCFAs.",
+          "links": [
+            {
+              "id": "vo9rais",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "0rrj82m",
+          "name": "Bacteroides uniformis",
+          "dir": "down",
+          "refs": "Minerbi 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "lt6lee4",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "vqs9nan",
+          "name": "Prevotella copri",
+          "dir": "down",
+          "refs": "Minerbi 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "pn0pbtz",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "yz017he",
+          "name": "Blautia faecis",
+          "dir": "down",
+          "refs": "Minerbi 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "tuxbv56",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "c2it0a6",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "Clos-Garcia 2019",
+          "note": "Neurotransmitter-metabolising genus.",
+          "links": []
+        },
+        {
+          "id": "ramwy1y",
+          "name": "Eubacterium",
+          "dir": "down",
+          "refs": "review",
+          "note": "Neurotransmitter-metabolising genus.",
+          "links": []
+        },
+        {
+          "id": "4os5q9m",
+          "name": "Intestinimonas butyriciproducens",
+          "dir": "up",
+          "refs": "Minerbi 2019",
+          "note": "Less-characterised butyrate producer.",
+          "links": [
+            {
+              "id": "52ydx5n",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "0or66pp",
+          "name": "Flavonifractor plautii",
+          "dir": "up",
+          "refs": "Minerbi 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "7t9c3vd",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "aesx7nb",
+          "name": "Butyricicoccus desmolans",
+          "dir": "up",
+          "refs": "Minerbi 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "5vnn0oi",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "fa82mzp",
+          "name": "Eisenbergiella tayi",
+          "dir": "up",
+          "refs": "Minerbi 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "8jngbwh",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "ifj9x3a",
+          "name": "Eisenbergiella massiliensis",
+          "dir": "up",
+          "refs": "Minerbi 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "wapg8tf",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "8xvj3ju",
+          "name": "Parabacteroides merdae",
+          "dir": "up",
+          "refs": "Minerbi 2019",
+          "note": "Also a ketogenic-diet mediator (Olson).",
+          "links": [
+            {
+              "id": "g3rucla",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        },
+        {
+          "id": "1mp4qfg",
+          "name": "Firmicutes",
+          "dir": "up",
+          "refs": "Minerbi 2019",
+          "note": "High relative prevalence of Firmicutes phylum.",
+          "links": [
+            {
+              "id": "640u4mo",
+              "label": "Minerbi 2019 (PAIN; 77 women vs matched controls; species-level, ∝ symptom severity, independent of diet/activity/meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s0zmjo3",
+      "name": "Migraine",
+      "abbr": "MIG",
+      "color": "#D4A15A",
+      "note": "EVIDENCE IS ON MIGRAINE BROADLY, NOT VESTIBULAR MIGRAINE — no vestibular-migraine-specific microbiome study exists yet, so read this as an adjacent-population proxy. Recurring signal: lower α-diversity, Veillonella (lactate metabolism) up, and anti-inflammatory Faecalibacterium & Roseburia down in chronic migraine. Direction varies by age (Roseburia reportedly UP in paediatric cases) and prophylactic medication shifts several genera — so treat these directional calls as tentative.",
+      "links": [
+        {
+          "id": "lp00a61",
+          "label": "Yong 2023 (Sci Rep; episodic + chronic migraine; altered taxa independent of prophylactic meds)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36635330/"
+        },
+        {
+          "id": "b928tdo",
+          "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes ↑, Faecalibacterium & F. prausnitzii ↓)",
+          "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
+        },
+        {
+          "id": "fz7kir9",
+          "label": "Systematic review 2025 (Acta Neurol Belg; Veillonella ↑, Faecalibacterium & Roseburia ↓ in chronic migraine)",
+          "url": "https://link.springer.com/article/10.1007/s13760-025-02779-y"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "x2ea2h1",
+          "name": "Veillonella",
+          "dir": "up",
+          "refs": "review 2025",
+          "note": "Consistently elevated across studies; lactate metabolism.",
+          "links": [
+            {
+              "id": "wzrf50a",
+              "label": "Systematic review 2025 (Acta Neurol Belg; Veillonella ↑, Faecalibacterium & Roseburia ↓ in chronic migraine)",
+              "url": "https://link.springer.com/article/10.1007/s13760-025-02779-y"
+            }
+          ]
+        },
+        {
+          "id": "izwbzt7",
+          "name": "Firmicutes",
+          "dir": "up",
+          "refs": "Chen 2019",
+          "note": "Phylum elevated in elderly-women cohort.",
+          "links": [
+            {
+              "id": "88338gv",
+              "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes ↑, Faecalibacterium & F. prausnitzii ↓)",
+              "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
+            }
+          ]
+        },
+        {
+          "id": "zyp1nlz",
+          "name": "Clostridium",
+          "dir": "up",
+          "refs": "Chen 2019",
+          "note": "'Unfriendly' Clostridium spp. enriched.",
+          "links": [
+            {
+              "id": "ekavo1i",
+              "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes ↑, Faecalibacterium & F. prausnitzii ↓)",
+              "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
+            }
+          ]
+        },
+        {
+          "id": "l9uycct",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "review 2025; Chen 2019",
+          "note": "Anti-inflammatory; reduced in chronic migraine.",
+          "links": [
+            {
+              "id": "j5rqsfe",
+              "label": "Systematic review 2025 (Acta Neurol Belg; Veillonella ↑, Faecalibacterium & Roseburia ↓ in chronic migraine)",
+              "url": "https://link.springer.com/article/10.1007/s13760-025-02779-y"
+            },
+            {
+              "id": "hk5cslq",
+              "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes ↑, Faecalibacterium & F. prausnitzii ↓)",
+              "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
+            }
+          ]
+        },
+        {
+          "id": "ri2tu1e",
+          "name": "Faecalibacterium prausnitzii",
+          "dir": "down",
+          "refs": "Chen 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "6y72l7t",
+              "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes ↑, Faecalibacterium & F. prausnitzii ↓)",
+              "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
+            }
+          ]
+        },
+        {
+          "id": "q3et30f",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "Yong 2023",
+          "note": "Reduced in chronic migraine (but reportedly up in paediatric cases).",
+          "links": [
+            {
+              "id": "fv65htd",
+              "label": "Yong 2023 (Sci Rep; episodic + chronic migraine; altered taxa independent of prophylactic meds)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36635330/"
+            }
+          ]
+        },
+        {
+          "id": "9v5yyrb",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "review 2025",
+          "note": "Higher Bifidobacterium associated with decreased migraine risk.",
+          "links": [
+            {
+              "id": "5ty1t5z",
+              "label": "Systematic review 2025 (Acta Neurol Belg; Veillonella ↑, Faecalibacterium & Roseburia ↓ in chronic migraine)",
+              "url": "https://link.springer.com/article/10.1007/s13760-025-02779-y"
+            }
+          ]
+        },
+        {
+          "id": "svjlj5x",
+          "name": "Bifidobacterium adolescentis",
+          "dir": "down",
+          "refs": "Chen 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "yo5hk2y",
+              "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes ↑, Faecalibacterium & F. prausnitzii ↓)",
+              "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
+            }
+          ]
+        },
+        {
+          "id": "ymw9w6o",
+          "name": "Methanobrevibacter smithii",
+          "dir": "down",
+          "refs": "Chen 2019",
+          "note": "",
+          "links": [
+            {
+              "id": "ted1csm",
+              "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes ↑, Faecalibacterium & F. prausnitzii ↓)",
+              "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
+            }
+          ]
+        },
+        {
+          "id": "q8kxsax",
+          "name": "Prevotellaceae",
+          "dir": "down",
+          "refs": "review 2025",
+          "note": "Higher Prevotellaceae associated with decreased risk.",
+          "links": [
+            {
+              "id": "lvlcoxk",
+              "label": "Systematic review 2025 (Acta Neurol Belg; Veillonella ↑, Faecalibacterium & Roseburia ↓ in chronic migraine)",
+              "url": "https://link.springer.com/article/10.1007/s13760-025-02779-y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fvt30x7",
+      "name": "PTSD",
+      "abbr": "PTSD",
+      "color": "#94A3B8",
+      "note": "EVIDENCE BASE IS THIN — small, heterogeneous, mostly phylum-level, with no consistent α/β-diversity difference. Anchored by one exploratory study (Hemmings 2017, n=18 PTSD + 12 trauma-exposed controls). The recurring finding is depletion of Actinobacteria, Lentisphaerae and Verrucomicrobia (the last includes barrier-supporting Akkermansia), with depletion tracking CAPS-5 symptom severity. Later cohorts (Malan-Müller 2022, Zeamer 2023) add genus-level signals but overlap poorly, and several cohorts are veteran/occupational, limiting generalisation.",
+      "links": [
+        {
+          "id": "9cf104h",
+          "label": "Hemmings 2017 (Psychosom Med; n=18 PTSD + 12 trauma-exposed controls; 3 phyla distinguish PTSD, no α/β-diversity difference)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
+        },
+        {
+          "id": "cov2rm4",
+          "label": "Malan-Müller 2022 / Zeamer 2023 (later PTSD cohorts; genus-level signals, poor overlap)",
+          "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2025.1540180/full"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "hkitv8o",
+          "name": "Actinobacteria",
+          "dir": "down",
+          "refs": "Hemmings 2017",
+          "note": "Phylum; depletion ∝ higher CAPS-5 severity.",
+          "links": [
+            {
+              "id": "tlfpqu7",
+              "label": "Hemmings 2017 (Psychosom Med; n=18 PTSD + 12 trauma-exposed controls; 3 phyla distinguish PTSD, no α/β-diversity difference)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
+            }
+          ]
+        },
+        {
+          "id": "1ehwrzf",
+          "name": "Lentisphaerae",
+          "dir": "down",
+          "refs": "Hemmings 2017",
+          "note": "Phylum.",
+          "links": [
+            {
+              "id": "8wcw6od",
+              "label": "Hemmings 2017 (Psychosom Med; n=18 PTSD + 12 trauma-exposed controls; 3 phyla distinguish PTSD, no α/β-diversity difference)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
+            }
+          ]
+        },
+        {
+          "id": "a22rdhg",
+          "name": "Verrucomicrobia",
+          "dir": "down",
+          "refs": "Hemmings 2017",
+          "note": "Phylum; includes barrier-supporting Akkermansia.",
+          "links": [
+            {
+              "id": "l4gqc1q",
+              "label": "Hemmings 2017 (Psychosom Med; n=18 PTSD + 12 trauma-exposed controls; 3 phyla distinguish PTSD, no α/β-diversity difference)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
+            }
+          ]
+        },
+        {
+          "id": "5zpqqiy",
+          "name": "Akkermansia",
+          "dir": "down",
+          "refs": "Zeamer 2023",
+          "note": "Barrier integrity / mucosal immunoregulation.",
+          "links": []
+        },
+        {
+          "id": "anqbeic",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "Zeamer 2023",
+          "note": "",
+          "links": []
+        },
+        {
+          "id": "9p8gst9",
+          "name": "Mitsuokella",
+          "dir": "up",
+          "refs": "Malan-Müller 2022",
+          "note": "Positively correlated with CAPS-5.",
+          "links": []
+        },
+        {
+          "id": "vnrinhw",
+          "name": "Odoribacter",
+          "dir": "up",
+          "refs": "Malan-Müller 2022",
+          "note": "Positively correlated with CAPS-5.",
+          "links": []
+        },
+        {
+          "id": "aa4lac7",
+          "name": "Catenibacterium",
+          "dir": "up",
+          "refs": "Malan-Müller 2022",
+          "note": "Positively correlated with CAPS-5.",
+          "links": []
+        },
+        {
+          "id": "ky3tc0e",
+          "name": "Olsenella",
+          "dir": "up",
+          "refs": "Malan-Müller 2022",
+          "note": "Positively correlated with CAPS-5.",
+          "links": []
+        },
+        {
+          "id": "bqqui9e",
+          "name": "Escherichia-Shigella",
+          "dir": "up",
+          "refs": "Hemmings 2017",
+          "note": "'Unhealthy' microbes reported higher in PTSD.",
+          "links": [
+            {
+              "id": "b9kfq6m",
+              "label": "Hemmings 2017 (Psychosom Med; n=18 PTSD + 12 trauma-exposed controls; 3 phyla distinguish PTSD, no α/β-diversity difference)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
+            }
+          ]
+        },
+        {
+          "id": "nqktsbh",
+          "name": "Enterococcus",
+          "dir": "up",
+          "refs": "Hemmings 2017",
+          "note": "",
+          "links": [
+            {
+              "id": "86afsrn",
+              "label": "Hemmings 2017 (Psychosom Med; n=18 PTSD + 12 trauma-exposed controls; 3 phyla distinguish PTSD, no α/β-diversity difference)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
