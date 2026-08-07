@@ -49,7 +49,7 @@ function GFA_buildMap(host,tip,conds,mode){
   var NS="http://www.w3.org/2000/svg";
   var W=1000,H=820,upC="#FF5C86",downC="#4FC3F7";
   host.innerHTML="";
-  // ---- build graph model ----
+  
   var nodes=[],condIdx=[];
   (conds||[]).forEach(function(c,ci){
     var n={type:"cond",name:c.name,label:(c.abbr||c.name.slice(0,4)),color:c.color||"#A08FC7",deg:(c.taxa||[]).length,i:nodes.length,pin:true};
@@ -66,14 +66,14 @@ function GFA_buildMap(host,tip,conds,mode){
       edges.push({s:cI,t:bi,dir:t.dir});
     });
   });
-  // ---- filter (shared = bacteria in >=2 conditions) ----
+  
   var vis=function(n){return n.type==="cond"||mode==="all"||n.deg>=2;};
   var V=nodes.filter(vis),rm={};
   V.forEach(function(n,i){rm[n.i]=i;});
   var E=edges.filter(function(e){return rm[e.s]!=null&&rm[e.t]!=null;}).map(function(e){return{s:rm[e.s],t:rm[e.t],dir:e.dir};});
   V.forEach(function(n){n.adj=[];n.adjE=[];});
   E.forEach(function(e,ei){V[e.s].adj.push(e.t);V[e.t].adj.push(e.s);V[e.s].adjE.push(ei);V[e.t].adjE.push(ei);});
-  // ---- initial positions: conditions pinned on a ring, bacteria inside ----
+  
   var condV=V.filter(function(n){return n.type==="cond";});
   condV.forEach(function(n,k){
     var a=2*Math.PI*k/Math.max(condV.length,1)-Math.PI/2;
@@ -81,7 +81,6 @@ function GFA_buildMap(host,tip,conds,mode){
   });
   V.forEach(function(n){
     if(n.type==="bact"){
-      // seed near the average of its conditions so layout converges fast
       var sx=0,sy=0,c=0;
       n.adj.forEach(function(j){if(V[j].type==="cond"){sx+=V[j].x;sy+=V[j].y;c++;}});
       if(c){n.x=W/2+(sx/c-W/2)*0.7+(Math.random()-0.5)*40;n.y=H/2+(sy/c-H/2)*0.7+(Math.random()-0.5)*40;}
@@ -89,12 +88,14 @@ function GFA_buildMap(host,tip,conds,mode){
       n.vx=0;n.vy=0;
     }
   });
-  // ---- svg scaffold ----
+  
   var svg=document.createElementNS(NS,"svg");
   svg.setAttribute("viewBox","0 0 "+W+" "+H);
   svg.setAttribute("width","100%");
   svg.setAttribute("preserveAspectRatio","xMidYMid meet");
-  svg.style.display="block";svg.style.height="auto";svg.style.touchAction="pan-y";
+  svg.style.display="block";svg.style.height="auto";
+  svg.style.touchAction="none"; 
+  
   var gE=document.createElementNS(NS,"g"),gN=document.createElementNS(NS,"g");
   svg.appendChild(gE);svg.appendChild(gN);host.appendChild(svg);
   var eEls=E.map(function(e){
@@ -135,10 +136,16 @@ function GFA_buildMap(host,tip,conds,mode){
     }
     gN.appendChild(g);return{g:g,node:n};
   });
-  // ---- force simulation (conditions pinned) ----
+
   var alpha=1,tick=0,raf=0,stopped=false;
   var maxTick=V.length>150?300:360;
   var kRep=mode==="all"?230:420,linkLen=mode==="all"?52:92,kLink=0.04,cx=W/2,cy=H/2;
+
+  var curr = null;
+  var dragNode = null;
+  var isDragging = false;
+  var selectedNodes = new Set();
+
   function step(){
     tick++;
     for(var i=0;i<V.length;i++){
@@ -160,7 +167,7 @@ function GFA_buildMap(host,tip,conds,mode){
     }
     for(var m=0;m<V.length;m++){
       var n=V[m];
-      if(n.pin){n.vx=0;n.vy=0;continue;}
+      if(n.pin || n === dragNode){n.vx=0;n.vy=0;continue;}
       n.vx+=(cx-n.x)*0.006*alpha;n.vy+=(cy-n.y)*0.006*alpha;
       n.vx*=0.85;n.vy*=0.85;
       n.x+=Math.max(-9,Math.min(9,n.vx));n.y+=Math.max(-9,Math.min(9,n.vy));
@@ -168,28 +175,41 @@ function GFA_buildMap(host,tip,conds,mode){
     }
     render();alpha*=0.985;
     if(tick<maxTick&&!stopped)raf=requestAnimationFrame(step);
+    else raf=0; 
   }
+
   function render(){
     for(var i=0;i<E.length;i++){var e=E[i],l=eEls[i],a=V[e.s],b=V[e.t];
       l.setAttribute("x1",a.x);l.setAttribute("y1",a.y);l.setAttribute("x2",b.x);l.setAttribute("y2",b.y);}
     for(var q=0;q<nEls.length;q++){var ne=nEls[q];ne.g.setAttribute("transform","translate("+ne.node.x+","+ne.node.y+")");}
   }
+  
   raf=requestAnimationFrame(step);
-  // ---- hover interaction ----
+
   function setHi(idx){
-    if(idx==null){
+    var active = new Set(selectedNodes);
+    if (idx != null) active.add(idx);
+
+    if (active.size === 0) {
       for(var i=0;i<eEls.length;i++){eEls[i].setAttribute("stroke-opacity","0.5");eEls[i].setAttribute("stroke-width","1.15");}
       for(var q=0;q<nEls.length;q++)nEls[q].g.style.opacity="1";
       return;
     }
-    var node=V[idx],hiE={},hiN={};hiN[idx]=1;
-    node.adjE.forEach(function(x){hiE[x]=1;});node.adj.forEach(function(x){hiN[x]=1;});
+    
+    var hiE={}, hiN={};
+    active.forEach(function(nodeIdx){
+      hiN[nodeIdx] = 1;
+      V[nodeIdx].adjE.forEach(function(x){hiE[x]=1;});
+      V[nodeIdx].adj.forEach(function(x){hiN[x]=1;});
+    });
+
     for(var i=0;i<eEls.length;i++){
       if(hiE[i]){eEls[i].setAttribute("stroke-opacity","0.98");eEls[i].setAttribute("stroke-width","2.1");}
       else{eEls[i].setAttribute("stroke-opacity","0.09");eEls[i].setAttribute("stroke-width","0.7");}
     }
     for(var q=0;q<nEls.length;q++)nEls[q].g.style.opacity=hiN[q]?"1":"0.13";
   }
+
   function showTip(idx,ev){
     var node=V[idx],html;
     if(node.type==="cond"){
@@ -208,17 +228,89 @@ function GFA_buildMap(host,tip,conds,mode){
     if(y+th>rect.height)y=Math.max(6,ev.clientY-rect.top-th-12);
     tip.style.left=x+"px";tip.style.top=y+"px";
   }
-  var curr=null;
-  function onMove(ev){
-    var el=ev.target;
-    while(el&&el!==svg&&!(el.dataset&&el.dataset.i!=null))el=el.parentNode;
-    if(el&&el.dataset&&el.dataset.i!=null){var idx=+el.dataset.i;if(idx!==curr){curr=idx;setHi(idx);}showTip(idx,ev);}
-    else{if(curr!=null){curr=null;setHi(null);}tip.style.opacity="0";}
+
+  function onPointerDown(ev) {
+    var el = ev.target;
+    while (el && el !== svg && !(el.dataset && el.dataset.i != null)) el = el.parentNode;
+    if (el && el.dataset && el.dataset.i != null) {
+      var idx = +el.dataset.i;
+      dragNode = V[idx];
+      isDragging = false;
+      svg.setPointerCapture(ev.pointerId);
+    }
   }
-  function onLeave(){curr=null;setHi(null);tip.style.opacity="0";}
-  svg.addEventListener("pointermove",onMove);
-  svg.addEventListener("pointerleave",onLeave);
-  return function(){stopped=true;cancelAnimationFrame(raf);svg.removeEventListener("pointermove",onMove);svg.removeEventListener("pointerleave",onLeave);host.innerHTML="";if(tip)tip.style.opacity="0";};
+
+  function onPointerMove(ev) {
+    if (dragNode) {
+      isDragging = true;
+      var pt = svg.createSVGPoint();
+      pt.x = ev.clientX;
+      pt.y = ev.clientY;
+      var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
+      dragNode.x = svgP.x;
+      dragNode.y = svgP.y;
+      dragNode.vx = 0;
+      dragNode.vy = 0;
+
+      alpha = 1;
+      tick = 0;
+      stopped = false;
+      if (!raf) raf = requestAnimationFrame(step);
+
+      if (curr === dragNode.i) showTip(curr, ev);
+      return;
+    }
+
+    var el = ev.target;
+    while (el && el !== svg && !(el.dataset && el.dataset.i != null)) el = el.parentNode;
+    if (el && el.dataset && el.dataset.i != null) {
+      var idx = +el.dataset.i;
+      if (idx !== curr) { curr = idx; setHi(curr); }
+      showTip(idx, ev);
+    } else {
+      if (curr != null) { curr = null; setHi(null); }
+      tip.style.opacity = "0";
+    }
+  }
+
+  function onPointerUp(ev) {
+    if (dragNode) {
+      svg.releasePointerCapture(ev.pointerId);
+      if (!isDragging) {
+        if (selectedNodes.has(dragNode.i)) selectedNodes.delete(dragNode.i);
+        else selectedNodes.add(dragNode.i);
+        setHi(curr);
+      }
+      dragNode = null;
+      isDragging = false;
+    }
+  }
+
+  function onPointerLeave(ev) {
+    if (!dragNode) {
+      curr = null;
+      setHi(null);
+      tip.style.opacity = "0";
+    }
+  }
+
+  svg.addEventListener("pointerdown", onPointerDown);
+  svg.addEventListener("pointermove", onPointerMove);
+  svg.addEventListener("pointerup", onPointerUp);
+  svg.addEventListener("pointercancel", onPointerUp);
+  svg.addEventListener("pointerleave", onPointerLeave);
+
+  return function(){
+    stopped=true;
+    cancelAnimationFrame(raf);
+    svg.removeEventListener("pointerdown", onPointerDown);
+    svg.removeEventListener("pointermove", onPointerMove);
+    svg.removeEventListener("pointerup", onPointerUp);
+    svg.removeEventListener("pointercancel", onPointerUp);
+    svg.removeEventListener("pointerleave", onPointerLeave);
+    host.innerHTML="";
+    if(tip)tip.style.opacity="0";
+  };
 }
 function Gfx(props){
   var conds=props.conditions;
