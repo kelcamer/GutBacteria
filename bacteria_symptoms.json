@@ -94,6 +94,11 @@
         },
         {
           "taxon": "Christensenellaceae[cite: 1]"
+        },
+        {
+          "taxon": "Dialister",
+          "refs": "",
+          "note": "Valles-Colomer 2019 (Nat Microbiol): Dialister depleted alongside Coprococcus, tracking quality of life."
         }
       ]
     },
@@ -241,6 +246,11 @@
           "taxon": "Phascolarctobacterium[cite: 1]",
           "refs": "Lewandowska-Pietruszka 2023[cite: 1]",
           "note": "Smaller amount in ASD children with GI symptoms (2023 review). Cross-ref: opposite to the Phascolarctobacterium ↑ reported in fibromyalgia.[cite: 1]"
+        },
+        {
+          "taxon": "Coprococcus",
+          "refs": "",
+          "note": "Kang 2013 (PLoS ONE): Coprococcus depleted alongside Prevotella and unclassified Veillonellaceae in ASD."
         }
       ]
     },
@@ -314,6 +324,11 @@
         {
           "taxon": "Anaerococcus[cite: 1]",
           "refs": "80[cite: 1]"
+        },
+        {
+          "taxon": "Veillonellaceae",
+          "refs": "",
+          "note": "Wan 2020 (Front Neurosci): Veillonellaceae depleted alongside Faecalibacterium in pediatric ADHD."
         }
       ]
     },
@@ -346,6 +361,11 @@
         {
           "taxon": "Akkermansia muciniphila[cite: 1]",
           "refs": "115[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroidetes",
+          "refs": "",
+          "note": "Vogt 2017 (Sci Rep): Bacteroidetes raised in AD alongside Firmicutes depletion."
         }
       ],
       "down": [
@@ -386,6 +406,11 @@
         {
           "taxon": "Lachnoclostridium[cite: 1]",
           "refs": "115[cite: 1]"
+        },
+        {
+          "taxon": "Firmicutes",
+          "refs": "",
+          "note": "Vogt 2017 (Sci Rep): Firmicutes depleted in AD alongside Bacteroidetes rise."
         }
       ]
     },
@@ -593,6 +618,16 @@
           "taxon": "Lachnospira[cite: 1]",
           "refs": "Domenech 2022; Law 2023[cite: 1]",
           "note": "Depletion of Lachnospira pectinoschiza correlated with OCD obsession-subscale severity (Domenech 2022); ↓ in the Law 2023 synthesis.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcaceae",
+          "refs": "",
+          "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD."
+        },
+        {
+          "taxon": "Bilophila",
+          "refs": "",
+          "note": "Same 2025 MR study found Bilophila (Proteobacteria) also has a protective causal effect against OCD."
         }
       ]
     },
