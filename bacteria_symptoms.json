@@ -1,0 +1,1630 @@
+{
+  "version": 2,
+  "lastUpdated": "2026-08-07",
+  "conditions": [
+    {
+      "id": "seed_1[cite: 1]",
+      "name": "Depression[cite: 1]",
+      "abbr": "DEP[cite: 1]",
+      "description": "Caveat: a 44-study meta-analysis (2,091 patients, 2,792 controls) found no significant difference in α-diversity, Firmicutes or Bacteroidetes vs controls — the phylum-level story is weaker than often claimed. The genus-level up/down calls here come from the MGBA review and are less settled than the count suggests.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Eggerthella[cite: 1]",
+          "refs": "Nature[cite: 1]",
+          "note": "Standout. Came up independently in 12/12 reporting studies and Rotterdam/HELIUS GWAS.[cite: 1]"
+        },
+        {
+          "taxon": "Flavonifractor[cite: 1]",
+          "refs": "PMC10709466[cite: 1]",
+          "note": "2023 meta-analysis consistent increase.[cite: 1]"
+        },
+        {
+          "taxon": "Streptococcus[cite: 1]",
+          "refs": "PMC10709466[cite: 1]",
+          "note": "2023 meta-analysis consistent increase.[cite: 1]"
+        },
+        {
+          "taxon": "Enterococcus[cite: 1]",
+          "refs": "PMC10709466[cite: 1]",
+          "note": "2023 meta-analysis consistent increase.[cite: 1]"
+        },
+        {
+          "taxon": "Enterobacteriaceae[cite: 1]",
+          "refs": "19,22[cite: 1]"
+        },
+        {
+          "taxon": "Alistipes[cite: 1]",
+          "refs": "19,22[cite: 1]"
+        },
+        {
+          "taxon": "Anaerostipes[cite: 1]",
+          "refs": "19,22[cite: 1]"
+        },
+        {
+          "taxon": "Blautia[cite: 1]",
+          "refs": "19,22[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroidetes[cite: 1]"
+        },
+        {
+          "taxon": "Gammaproteobacteria[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroidales[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Subdoligranulum[cite: 1]",
+          "refs": "PMC10709466[cite: 1]",
+          "note": "2023 meta-analysis consistent decrease.[cite: 1]"
+        },
+        {
+          "taxon": "Fusicatenibacter[cite: 1]",
+          "refs": "PMC10709466[cite: 1]",
+          "note": "2023 meta-analysis consistent decrease.[cite: 1]"
+        },
+        {
+          "taxon": "Butyricicoccus[cite: 1]",
+          "refs": "PMC10709466[cite: 1]",
+          "note": "2023 meta-analysis consistent decrease.[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]",
+          "refs": "19–22[cite: 1]"
+        },
+        {
+          "taxon": "Prevotellaceae[cite: 1]",
+          "refs": "20–22[cite: 1]"
+        },
+        {
+          "taxon": "Coprococcus[cite: 1]",
+          "refs": "20–22[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "20–22[cite: 1]"
+        },
+        {
+          "taxon": "Clostridia[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcaceae[cite: 1]"
+        },
+        {
+          "taxon": "Christensenellaceae[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_29[cite: 1]",
+      "name": "Autism (ASD)[cite: 1]",
+      "abbr": "ASD[cite: 1]",
+      "description": "Morton 2023 reframed the ASD signal away from single taxa toward a gut-brain metabolic architecture — amino-acid / carbohydrate / lipid profiles encoded largely by Prevotella, Bifidobacterium, Desulfovibrio and Bacteroides, with glutamate the strongest metabolite signal. Counterweight (Neuron 2025): classifiers cannot separate autistic children from their own siblings, and stool consistency (constipation/diarrhoea) confounds many case-control ASD taxa findings — so treat the single-taxon directions below cautiously.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Desulfovibrio[cite: 1]",
+          "refs": "Nature[cite: 1]",
+          "note": "Sulfate-reducer.[cite: 1]"
+        },
+        {
+          "taxon": "Clostridium[cite: 1]",
+          "refs": "56,57[cite: 1]"
+        },
+        {
+          "taxon": "Clostridiales[cite: 1]",
+          "refs": "56,57[cite: 1]"
+        },
+        {
+          "taxon": "Veillonellaceae[cite: 1]",
+          "refs": "58[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcaceae[cite: 1]",
+          "refs": "58[cite: 1]"
+        },
+        {
+          "taxon": "Dorea[cite: 1]",
+          "refs": "57[cite: 1]"
+        },
+        {
+          "taxon": "Collinsella[cite: 1]",
+          "refs": "57[cite: 1]"
+        },
+        {
+          "taxon": "Lachnoclostridium[cite: 1]",
+          "refs": "57[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillus Corynebacterium[cite: 1]"
+        },
+        {
+          "taxon": "Escherichia-Shigella[cite: 1]"
+        },
+        {
+          "taxon": "Firmicutes[cite: 1]"
+        },
+        {
+          "taxon": "Pseudomonadota[cite: 1]"
+        },
+        {
+          "taxon": "Turicibacter[cite: 1]",
+          "refs": "Lewandowska-Pietruszka 2023[cite: 1]",
+          "note": "Larger amount in ASD children with GI symptoms in the 2023 systematic review. Caveat: Liu 2019's meta reports Turicibacter ↓ vs controls, so the vs-control direction is contested — this entry reflects the GI-symptom association.[cite: 1]"
+        },
+        {
+          "taxon": "Fusicatenibacter[cite: 1]",
+          "refs": "Lewandowska-Pietruszka 2023[cite: 1]",
+          "note": "Elevated (with Dialister and Turicibacter) in ASD children who have GI functional disorders (2023 review).[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "Liu 2019 (De Angelis)[cite: 1]",
+          "note": "Reported increased in autism / PDD-NOS subtypes (De Angelis, via Liu 2019), and further raised by microbiota-transfer therapy (2023 review). Note: Roseburia is a butyrate producer usually ↓ in dysbiosis, so this ASD-subtype ↑ is unusual and study-dependent.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Akkermansia muciniphila[cite: 1]",
+          "refs": "Frontiers[cite: 1]",
+          "note": "Among the most consistent ASD signatures.[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "56,57[cite: 1]"
+        },
+        {
+          "taxon": "Prevotella[cite: 1]",
+          "refs": "57,58[cite: 1]"
+        },
+        {
+          "taxon": "Parasutterella[cite: 1]",
+          "refs": "57[cite: 1]",
+          "note": "Genuinely split, reported increased in some ASD studies but decreased in another.[cite: 1]"
+        },
+        {
+          "taxon": "Alistipes[cite: 1]"
+        },
+        {
+          "taxon": "Bilophila[cite: 1]"
+        },
+        {
+          "taxon": "Veillonella[cite: 1]",
+          "refs": "https://pubmed.ncbi.nlm.nih.gov/28222761/[cite: 1]"
+        },
+        {
+          "taxon": "Dialister[cite: 1]"
+        },
+        {
+          "taxon": "Parabacteroides[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroidetes[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus gnavus[cite: 1]"
+        },
+        {
+          "taxon": "Blautia[cite: 1]"
+        },
+        {
+          "taxon": "Collinsella[cite: 1]"
+        },
+        {
+          "taxon": "Tyzzerella[cite: 1]"
+        },
+        {
+          "taxon": "Lachnoclostridium[cite: 1]"
+        },
+        {
+          "taxon": "Fusobacterium[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroides[cite: 1]"
+        },
+        {
+          "taxon": "Streptococcus[cite: 1]"
+        },
+        {
+          "taxon": "Erysipelatoclostridium[cite: 1]"
+        },
+        {
+          "taxon": "unclassified_Lachnospiraceae[cite: 1]"
+        },
+        {
+          "taxon": "Gemmiger[cite: 1]",
+          "refs": "Lewandowska-Pietruszka 2023[cite: 1]",
+          "note": "Constipation occurrence in ASD was negatively correlated with Gemmiger abundance (2023 review).[cite: 1]"
+        },
+        {
+          "taxon": "Phascolarctobacterium[cite: 1]",
+          "refs": "Lewandowska-Pietruszka 2023[cite: 1]",
+          "note": "Smaller amount in ASD children with GI symptoms (2023 review). Cross-ref: opposite to the Phascolarctobacterium ↑ reported in fibromyalgia.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_76[cite: 1]",
+      "name": "ADHD[cite: 1]",
+      "abbr": "ADHD[cite: 1]",
+      "up": [
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "Frontiers[cite: 1]",
+          "note": "Mechanistically interesting dopamine-precursor story, though treatment-sensitive.[cite: 1]"
+        },
+        {
+          "taxon": "Eisenbergiella[cite: 1]",
+          "refs": "ScienceDirect[cite: 1]",
+          "note": "Flagged higher in adult ADHD.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus torques group[cite: 1]",
+          "refs": "ScienceDirect[cite: 1]",
+          "note": "Flagged higher in adult ADHD.[cite: 1]"
+        },
+        {
+          "taxon": "Blautia[cite: 1]",
+          "refs": "80[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospiraceae[cite: 1]",
+          "refs": "80[cite: 1]"
+        },
+        {
+          "taxon": "Anaerostipes[cite: 1]",
+          "refs": "80[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Eubacterium xylanophilum group[cite: 1]",
+          "refs": "ScienceDirect[cite: 1]",
+          "note": "Flagged lower in adult ADHD.[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroides[cite: 1]",
+          "refs": "63[cite: 1]"
+        },
+        {
+          "taxon": "Prevotella[cite: 1]",
+          "refs": "63[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]",
+          "refs": "63[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillus[cite: 1]",
+          "refs": "63[cite: 1]"
+        },
+        {
+          "taxon": "Verrucomicrobia[cite: 1]",
+          "refs": "80[cite: 1]"
+        },
+        {
+          "taxon": "Christensenellaceae[cite: 1]",
+          "refs": "80[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcaceae[cite: 1]",
+          "refs": "80[cite: 1]"
+        },
+        {
+          "taxon": "Anaerococcus[cite: 1]",
+          "refs": "80[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_94[cite: 1]",
+      "name": "Alzheimer's[cite: 1]",
+      "abbr": "AD[cite: 1]",
+      "up": [
+        {
+          "taxon": "Bacteroides / Bacteroidetes[cite: 1]",
+          "refs": "Vogt 2017[cite: 1]",
+          "note": "Hallmark finding (Vogt 2017); consistently higher in US cohorts.[cite: 1]"
+        },
+        {
+          "taxon": "Escherichia[cite: 1]",
+          "refs": "116[cite: 1]"
+        },
+        {
+          "taxon": "Shigella[cite: 1]",
+          "refs": "116[cite: 1]"
+        },
+        {
+          "taxon": "Phascolarctobacterium[cite: 1]",
+          "refs": "115[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillus[cite: 1]",
+          "refs": "115[cite: 1]"
+        },
+        {
+          "taxon": "Akkermansia muciniphila[cite: 1]",
+          "refs": "115[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Ruminococcus[cite: 1]",
+          "refs": "PMC[cite: 1]",
+          "note": "Decreased across 2024 meta-analysis.[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "Vogt 2017[cite: 1]",
+          "note": "Conflicted direction. Direction flips across meta-analyses.[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium[cite: 1]",
+          "refs": "116[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospiraceae[cite: 1]",
+          "refs": "117[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]",
+          "refs": "115[cite: 1]"
+        },
+        {
+          "taxon": "Dialister[cite: 1]",
+          "refs": "115[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "115[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospira[cite: 1]",
+          "refs": "115[cite: 1]"
+        },
+        {
+          "taxon": "Lachnoclostridium[cite: 1]",
+          "refs": "115[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_123[cite: 1]",
+      "name": "Schizophrenia[cite: 1]",
+      "abbr": "SCZ[cite: 1]",
+      "up": [
+        {
+          "taxon": "Prevotella[cite: 1]",
+          "refs": "PMC[cite: 1]",
+          "note": "Notable cross-condition contrast.[cite: 1]"
+        },
+        {
+          "taxon": "Actinobacteria[cite: 1]",
+          "refs": "150–153[cite: 1]"
+        },
+        {
+          "taxon": "Collinsella[cite: 1]",
+          "refs": "150,153[cite: 1]"
+        },
+        {
+          "taxon": "Succinivibrio[cite: 1]",
+          "refs": "150,153[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillus[cite: 1]",
+          "refs": "150,153[cite: 1]"
+        },
+        {
+          "taxon": "Megasphaera[cite: 1]",
+          "refs": "153[cite: 1]"
+        },
+        {
+          "taxon": "Enterobacteriaceae[cite: 1]",
+          "refs": "153[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Fusicatenibacter[cite: 1]",
+          "refs": "ScienceDirect[cite: 1]"
+        },
+        {
+          "taxon": "Anaerostipes[cite: 1]"
+        },
+        {
+          "taxon": "Firmicutes[cite: 1]",
+          "refs": "150–153[cite: 1]"
+        },
+        {
+          "taxon": "Blautia[cite: 1]",
+          "refs": "153[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "153[cite: 1]"
+        },
+        {
+          "taxon": "Coprococcus[cite: 1]",
+          "refs": "153[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]",
+          "refs": "150[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus[cite: 1]",
+          "refs": "150[cite: 1]"
+        },
+        {
+          "taxon": "Haemophilus[cite: 1]",
+          "refs": "152[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_147[cite: 1]",
+      "name": "Anxiety[cite: 1]",
+      "abbr": "ANX[cite: 1]",
+      "up": [
+        {
+          "taxon": "Actinobacteria[cite: 1]",
+          "refs": "169[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroidetes[cite: 1]",
+          "refs": "169[cite: 1]"
+        },
+        {
+          "taxon": "Escherichia-Shigella[cite: 1]",
+          "refs": "168,169[cite: 1]"
+        },
+        {
+          "taxon": "Hungatella[cite: 1]",
+          "refs": "168[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillus[cite: 1]"
+        },
+        {
+          "taxon": "Fusobacterium[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus gnavus[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Fusicatenibacter[cite: 1]",
+          "refs": "BioMed[cite: 1]"
+        },
+        {
+          "taxon": "Butyricicoccus[cite: 1]",
+          "refs": "BioMed[cite: 1]"
+        },
+        {
+          "taxon": "Firmicutes[cite: 1]",
+          "refs": "168,169[cite: 1]"
+        },
+        {
+          "taxon": "Tenericutes[cite: 1]",
+          "refs": "168[cite: 1]"
+        },
+        {
+          "taxon": "Prevotella 9[cite: 1]",
+          "refs": "168[cite: 1]"
+        },
+        {
+          "taxon": "Dialister[cite: 1]",
+          "refs": "168[cite: 1]"
+        },
+        {
+          "taxon": "Subdoligranulum[cite: 1]",
+          "refs": "168[cite: 1]"
+        },
+        {
+          "taxon": "Agathobacter[cite: 1]",
+          "refs": "168[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "169[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "169[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium rectale[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospira[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_182[cite: 1]",
+      "name": "OCD[cite: 1]",
+      "abbr": "OCD[cite: 1]",
+      "description": "A 2023 systematic review (Law et al.) and a dysbiosis-centred review (Bendriss et al.) corroborate this profile: OCD shows LOWER gut α-diversity (species richness/evenness) and the recurring pattern of increased Alistipes (Rikenellaceae) alongside depletion of Prevotellaceae and butyrate producers (Oscillospira, Odoribacter, Anaerostipes, Agathobacter, Coprococcus, Lachnospira) — with Lachnospira pectinoschiza depletion tracking obsession-subscale severity. Direction isn't settled: a saliva/blood study found Actinobacteria and Firmicutes raised, and a natural-OCD deer-mouse model showed increased Desulfovermiculus, Aestuariispira, Peptococcus, Holdemanella and families Lachnospiraceae/Ruminococcaceae (animal — and opposite to the human Lachnospiraceae depletion). Probiotic signal: Lactobacillus rhamnosus GG and L. casei attenuate OCD-like behaviour in rodents; no human RCT yet.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Rikenellaceae[cite: 1]",
+          "refs": "220[cite: 1]"
+        },
+        {
+          "taxon": "Alistipes[cite: 1]",
+          "refs": "220[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Oscillospira[cite: 1]",
+          "refs": "219[cite: 1]"
+        },
+        {
+          "taxon": "Odoribacter[cite: 1]",
+          "refs": "219[cite: 1]"
+        },
+        {
+          "taxon": "Anaerostipes[cite: 1]",
+          "refs": "219[cite: 1]"
+        },
+        {
+          "taxon": "Prevotellaceae[cite: 1]",
+          "refs": "220[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospiraceae[cite: 1]",
+          "refs": "220[cite: 1]"
+        },
+        {
+          "taxon": "Agathobacter[cite: 1]",
+          "refs": "220[cite: 1]"
+        },
+        {
+          "taxon": "Coprococcus[cite: 1]",
+          "refs": "220[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospira[cite: 1]",
+          "refs": "Domenech 2022; Law 2023[cite: 1]",
+          "note": "Depletion of Lachnospira pectinoschiza correlated with OCD obsession-subscale severity (Domenech 2022); ↓ in the Law 2023 synthesis.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_209[cite: 1]",
+      "name": "Non-secretor (FUT2)[cite: 1]",
+      "abbr": "FUT2[cite: 1]",
+      "description": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on — so Bifido runs low, and with it GABA.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Bacteroidetes[cite: 1]",
+          "refs": "derived[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "derived[cite: 1]",
+          "note": "Demonstrated reduced bifidobacterial diversity, richness, and overall abundance.[cite: 1]"
+        },
+        {
+          "taxon": "Firmicutes[cite: 1]",
+          "refs": "derived[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospiraceae[cite: 1]",
+          "refs": "derived[cite: 1]",
+          "note": "Highlighted lower abundances in non-secretors.[cite: 1]"
+        },
+        {
+          "taxon": "Proteobacteria[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium adolescentis[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium Pseudocatenulatum[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium Bifidum[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_223[cite: 1]",
+      "name": "Bipolar Disorder[cite: 1]",
+      "abbr": "BD[cite: 1]",
+      "description": "Evidence base is smaller than for MDD; findings vary by mood state (depressed vs manic vs euthymic), by subtype (BD-I vs BD-II), and by medication (especially atypical antipsychotics, which independently shift the microbiome). Most primary cohorts sampled during a depressive episode. Common thread across studies: reduced α-diversity that scales with illness duration, and depletion of butyrate-producing Faecalibacterium/Roseburia/Coprococcus.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Actinobacteria[cite: 1]",
+          "note": "Phylum-level LEfSe increase in BD depressive episode (Painold 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Coriobacteriia[cite: 1]",
+          "note": "Class-level LEfSe increase; parent of Collinsella. Painold 2019.[cite: 1]"
+        },
+        {
+          "taxon": "Clostridiaceae[cite: 1]",
+          "note": "~4× higher OTU abundance in BD vs HC (McIntyre 2021 pilot, n=23 vs 23).[cite: 1]"
+        },
+        {
+          "taxon": "Collinsella[cite: 1]",
+          "note": "Enriched specifically in BD-II vs BD-I; small sample — needs replication (McIntyre 2021).[cite: 1]"
+        },
+        {
+          "taxon": "Flavonifractor[cite: 1]",
+          "note": "Present in 61% of newly diagnosed BD vs 39% HC (OR 2.9). Association attenuates in non-smokers (Coello 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroidetes[cite: 1]",
+          "note": "Enriched in untreated BD depression vs HC (Hu 2019 shotgun).[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroides[cite: 1]",
+          "note": "Higher in untreated BD depression (Hu 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Parabacteroides[cite: 1]",
+          "note": "Higher in untreated BD depression (Hu 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Enterobacteriaceae[cite: 1]",
+          "note": "Correlates with severity of depressive symptoms within BD (Painold 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium[cite: 1]",
+          "note": "Associated with markers of oxidative stress within BD (Painold 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillales[cite: 1]",
+          "note": "Elevated in BD subjects with elevated IL-6 (Painold 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Streptococcaceae[cite: 1]",
+          "note": "Elevated in BD subjects with elevated IL-6 (Painold 2019).[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Firmicutes[cite: 1]",
+          "note": "Depleted at phylum level in untreated BD depression vs HC (Hu 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]",
+          "note": "Robust across cohorts; Evans 2017 shows F. prausnitzii inversely correlates with SF12/PHQ9/PSQI/GAD7/ASRM within BD.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcaceae[cite: 1]",
+          "note": "Family-level LEfSe decrease in BD (Painold 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus[cite: 1]",
+          "note": "Depleted in untreated BD (Hu 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "note": "Butyrate-producer, depleted in untreated BD (Hu 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Coprococcus[cite: 1]",
+          "note": "Butyrate-producer, depleted in untreated BD (Hu 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Parasutterella[cite: 1]",
+          "note": "Depleted in untreated BD depression (Hu 2019).[cite: 1]"
+        },
+        {
+          "taxon": "Gemmiger[cite: 1]",
+          "note": "Depleted in untreated BD depression (Hu 2019).[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_272[cite: 1]",
+      "name": "Borderline Personality Disorder[cite: 1]",
+      "abbr": "BPD[cite: 1]",
+      "description": "EVIDENCE BASE IS THIN. As of 2026, exactly one primary 16S study exists (Rössler 2022, n = 24 unmedicated BPD women vs 21 HC women — all-female cohort). Alpha- and beta-diversity did not differ between groups; the signal is at species level, in bacteria that produce or feed short-chain-fatty-acid pathways. Findings correlated with psychometric severity but have not yet been independently replicated. Male BPD, medicated BPD, and BPD with comorbidities (MDD, PTSD, eating disorders) are essentially unstudied. Treat everything here as directional, not established. The SCFA-depletion pattern is directionally consistent with what's seen in MDD, BD, and anxiety, which is unsurprising given the high comorbidity.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Bacteroidetes[cite: 1]",
+          "note": "B/F ratio elevated in BPD; approached but did not cross p < 0.05 (p = 0.06, r = 0.23). Directional finding — replication needed.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Firmicutes[cite: 1]",
+          "note": "Depleted as the denominator of the elevated Bacteroidetes/Firmicutes ratio (p = 0.06). Also parent phylum of the four significantly-depleted species below.[cite: 1]"
+        },
+        {
+          "taxon": "Pseudoflavonifractor phocaensis[cite: 1]",
+          "note": "Strongest species-level finding: p = 0.003, r = 0.41. SCFA-producing Firmicute. Correlated with BPD psychometric severity.[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium coprostanoligenes[cite: 1]",
+          "note": "p = 0.01, r = 0.34. Cholesterol-metabolizing commensal in the Firmicutes phylum.[cite: 1]"
+        },
+        {
+          "taxon": "Anaerotaenia torta[cite: 1]",
+          "note": "p = 0.01, r = 0.35. Butyrate-producing Lachnospiraceae member.[cite: 1]"
+        },
+        {
+          "taxon": "Parabacteroides chongii[cite: 1]",
+          "note": "p = 0.046, r = 0.26. Weaker but significant. Note: species-level finding within a genus (Parabacteroides) that shows mixed directions across psychiatric conditions.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_286[cite: 1]",
+      "name": "Parkinson's disease[cite: 1]",
+      "abbr": "PD[cite: 1]",
+      "description": "The most robust, best-replicated gut-microbiome signal in neurology. The recurring pattern: mucin-layer-degrading Akkermansia up, SCFA/butyrate producers (Roseburia, Faecalibacterium, Lachnospiraceae, Blautia, Fusicatenibacter) down. Nishiwaki showed this holds across countries and is independent of constipation, BMI, sex, age and COMT-inhibitor use. Mechanistic throughline: butyrate loss + mucus-layer degradation → barrier permeability → enteric α-synuclein. Caveats: directions are for established PD; COMT inhibitors independently raise Lactobacillaceae, and disease stage shifts the picture (Faecalibacterium/Fusicatenibacter depletion predicts faster progression).[cite: 1]",
+      "up": [
+        {
+          "taxon": "Alistipes[cite: 1]",
+          "refs": "Nature[cite: 1]"
+        },
+        {
+          "taxon": "Escherichia/Shigella[cite: 1]"
+        },
+        {
+          "taxon": "Akkermansia[cite: 1]",
+          "refs": "Nishiwaki 2020; Romano 2021[cite: 1]",
+          "note": "Mucin-layer degrader; the single most consistent PD enrichment.[cite: 1]"
+        },
+        {
+          "taxon": "Akkermansia muciniphila[cite: 1]",
+          "refs": "shotgun meta[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "Romano 2021[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillus[cite: 1]",
+          "refs": "Romano 2021[cite: 1]",
+          "note": "Also driven up independently by COMT-inhibitor intake.[cite: 1]"
+        },
+        {
+          "taxon": "Streptococcus[cite: 1]",
+          "refs": "Wang 2022[cite: 1]"
+        },
+        {
+          "taxon": "Hungatella[cite: 1]",
+          "refs": "Romano 2021[cite: 1]"
+        },
+        {
+          "taxon": "Christensenella[cite: 1]",
+          "refs": "Romano 2021[cite: 1]",
+          "note": "Christensenellaceae R-7 group.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Coprococcus[cite: 1]",
+          "refs": "PMC[cite: 1]",
+          "note": "Diminished butyrate producer.[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]",
+          "refs": "Nishiwaki 2020; Romano 2021[cite: 1]",
+          "note": "Butyrate producer; depletion predicts rapid progression.[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium prausnitzii[cite: 1]",
+          "refs": "shotgun meta[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "Nishiwaki 2020[cite: 1]",
+          "note": "Butyrate producer, depleted across countries.[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia intestinalis[cite: 1]",
+          "refs": "shotgun meta[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospiraceae[cite: 1]",
+          "refs": "Romano 2021[cite: 1]",
+          "note": "Family-level butyrate producers.[cite: 1]"
+        },
+        {
+          "taxon": "Blautia[cite: 1]",
+          "refs": "Romano 2021[cite: 1]"
+        },
+        {
+          "taxon": "Fusicatenibacter[cite: 1]",
+          "refs": "Romano 2021[cite: 1]",
+          "note": "Depletion predicts rapid 2-yr progression.[cite: 1]"
+        },
+        {
+          "taxon": "Anaerostipes[cite: 1]",
+          "refs": "Romano 2021[cite: 1]"
+        },
+        {
+          "taxon": "Prevotella[cite: 1]",
+          "refs": "Wang 2022[cite: 1]",
+          "note": "Decreased Prevotella linked to faster progression (Aho).[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospira[cite: 1]",
+          "refs": "Wang 2022[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_325[cite: 1]",
+      "name": "ME/CFS[cite: 1]",
+      "abbr": "MECFS[cite: 1]",
+      "description": "Two simultaneous 2023 Cell Host & Microbe cohorts (Guo n=106/91; Xiong short- vs long-term). Core signal: loss of butyrate-producing capacity — F. prausnitzii and E. rectale depleted, with F. prausnitzii abundance inversely tracking fatigue severity, confirmed functionally by metagenomics, qPCR and fecal SCFA metabolomics. Xiong found dysbiosis pronounced in short-term (<4 y) disease but largely resolved in long-term (>10 y) patients who retained metabolic/clinical aberrations — so disease duration matters. Opportunistic species (R. gnavus, Enterocloster, Hungatella, Eggerthella) enriched.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Bacteroidetes[cite: 1]",
+          "refs": "review 2024[cite: 1]",
+          "note": "Phylum-level increase.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus gnavus[cite: 1]",
+          "refs": "Guo 2023[cite: 1]",
+          "note": "IBD-associated.[cite: 1]"
+        },
+        {
+          "taxon": "Enterocloster bolteae[cite: 1]",
+          "refs": "Guo 2023[cite: 1]",
+          "note": "Correlated with fatigue in multiple sclerosis.[cite: 1]"
+        },
+        {
+          "taxon": "Hungatella hathewayi[cite: 1]",
+          "refs": "review 2024[cite: 1]",
+          "note": "Opportunistic pathobiont.[cite: 1]"
+        },
+        {
+          "taxon": "Eggerthella lenta[cite: 1]",
+          "refs": "review 2024[cite: 1]"
+        },
+        {
+          "taxon": "Erysipelatoclostridium ramosum[cite: 1]",
+          "refs": "review 2024[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Faecalibacterium prausnitzii[cite: 1]",
+          "refs": "Guo 2023[cite: 1]",
+          "note": "Inversely correlated with fatigue severity; candidate diagnostic biomarker.[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium rectale[cite: 1]",
+          "refs": "Guo 2023[cite: 1]",
+          "note": "Butyrate producer, depleted alongside F. prausnitzii.[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]",
+          "refs": "Guo 2023[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "Xiong 2023[cite: 1]",
+          "note": "SCFA producer.[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "review 2024[cite: 1]"
+        },
+        {
+          "taxon": "Firmicutes[cite: 1]",
+          "refs": "review 2024[cite: 1]",
+          "note": "Phylum-level reduction.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_353[cite: 1]",
+      "name": "Fibromyalgia[cite: 1]",
+      "abbr": "FM[cite: 1]",
+      "description": "Well-controlled case-control (Minerbi 2019): 77 women with FM vs matched controls, with differences independent of diet, physical activity, medication and comorbid IBS, and taxa abundance tracking symptom severity. Signature is a reshuffle of the butyrate-producing community — the well-characterised 'healthy' producers (F. prausnitzii, B. uniformis, P. copri, Blautia faecis) depleted while less-characterised producers (Intestinimonas, Flavonifractor, Eisenbergiella, Butyricicoccus) rise, mirrored by altered serum SCFAs. Bifidobacterium and Eubacterium (neurotransmitter-metabolising genera) reduced — a plausible tie to the low-GABA / high-glutamate axis reported in FM.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Phascolarctobacterium[cite: 1]",
+          "refs": "Nature[cite: 1]",
+          "note": "Single recent cohort.[cite: 1]"
+        },
+        {
+          "taxon": "Lachnoclostridium[cite: 1]",
+          "refs": "Nature[cite: 1]",
+          "note": "Single recent cohort.[cite: 1]"
+        },
+        {
+          "taxon": "Intestinimonas butyriciproducens[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]",
+          "note": "Less-characterised butyrate producer.[cite: 1]"
+        },
+        {
+          "taxon": "Flavonifractor plautii[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]"
+        },
+        {
+          "taxon": "Butyricicoccus desmolans[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]"
+        },
+        {
+          "taxon": "Eisenbergiella tayi[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]",
+          "note": "Cross-ref: Eisenbergiella tayi is also ↑ in MS (iMSMS 2022), and Eisenbergiella rises in rodent depression models — a recurring 'up' signal.[cite: 1]"
+        },
+        {
+          "taxon": "Eisenbergiella massiliensis[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]",
+          "note": "Cross-ref: Eisenbergiella tayi is also ↑ in MS (iMSMS 2022), and Eisenbergiella rises in rodent depression models — a recurring 'up' signal.[cite: 1]"
+        },
+        {
+          "taxon": "Parabacteroides merdae[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]",
+          "note": "Also a ketogenic-diet mediator (Olson).[cite: 1]"
+        },
+        {
+          "taxon": "Firmicutes[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]",
+          "note": "High relative prevalence of Firmicutes phylum.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Faecalibacterium prausnitzii[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]",
+          "note": "Butyrate producer; depletion reflected in circulating SCFAs.[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroides uniformis[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]"
+        },
+        {
+          "taxon": "Prevotella copri[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]"
+        },
+        {
+          "taxon": "Blautia faecis[cite: 1]",
+          "refs": "Minerbi 2019[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "Clos-Garcia 2019[cite: 1]",
+          "note": "Neurotransmitter-metabolising genus.[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium[cite: 1]",
+          "refs": "review[cite: 1]",
+          "note": "Neurotransmitter-metabolising genus.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_380[cite: 1]",
+      "name": "Migraine[cite: 1]",
+      "abbr": "MIG[cite: 1]",
+      "description": "EVIDENCE IS ON MIGRAINE BROADLY, NOT VESTIBULAR MIGRAINE — no vestibular-migraine-specific microbiome study exists yet, so read this as an adjacent-population proxy. Recurring signal: lower α-diversity, Veillonella (lactate metabolism) up, and anti-inflammatory Faecalibacterium & Roseburia down in chronic migraine. Direction varies by age (Roseburia reportedly UP in paediatric cases) and prophylactic medication shifts several genera — so treat these directional calls as tentative.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Prevotella[cite: 1]",
+          "refs": "PMC[cite: 1]",
+          "note": "Episodic-↑/chronic-↓ (Heterogeneous).[cite: 1]"
+        },
+        {
+          "taxon": "Catenibacterium[cite: 1]",
+          "refs": "PMC[cite: 1]",
+          "note": "Heterogeneous.[cite: 1]"
+        },
+        {
+          "taxon": "Veillonella[cite: 1]",
+          "refs": "review 2025[cite: 1]",
+          "note": "Consistently elevated across studies; lactate metabolism.[cite: 1]"
+        },
+        {
+          "taxon": "Firmicutes[cite: 1]",
+          "refs": "Chen 2019[cite: 1]",
+          "note": "Phylum elevated in elderly-women cohort.[cite: 1]"
+        },
+        {
+          "taxon": "Clostridium[cite: 1]",
+          "refs": "Chen 2019[cite: 1]",
+          "note": "'Unfriendly' Clostridium spp. enriched.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Agathobacter[cite: 1]",
+          "refs": "PMC[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium[cite: 1]",
+          "refs": "review 2025; Chen 2019[cite: 1]",
+          "note": "Anti-inflammatory; reduced in chronic migraine.[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium prausnitzii[cite: 1]",
+          "refs": "Chen 2019[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "Yong 2023[cite: 1]",
+          "note": "Reduced in chronic migraine (but reportedly up in paediatric cases).[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "review 2025[cite: 1]",
+          "note": "Higher Bifidobacterium associated with decreased migraine risk.[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium adolescentis[cite: 1]",
+          "refs": "Chen 2019[cite: 1]"
+        },
+        {
+          "taxon": "Methanobrevibacter smithii[cite: 1]",
+          "refs": "Chen 2019[cite: 1]"
+        },
+        {
+          "taxon": "Prevotellaceae[cite: 1]",
+          "refs": "review 2025[cite: 1]",
+          "note": "Higher Prevotellaceae associated with decreased risk.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_405[cite: 1]",
+      "name": "PTSD[cite: 1]",
+      "abbr": "PTSD[cite: 1]",
+      "description": "EVIDENCE BASE IS THIN — small, heterogeneous, mostly phylum-level, with no consistent α/β-diversity difference. Anchored by one exploratory study (Hemmings 2017, n=18 PTSD + 12 trauma-exposed controls). The recurring finding is depletion of Actinobacteria, Lentisphaerae and Verrucomicrobia (the last includes barrier-supporting Akkermansia), with depletion tracking CAPS-5 symptom severity. Later cohorts (Malan-Müller 2022, Zeamer 2023) add genus-level signals but overlap poorly, and several cohorts are veteran/occupational, limiting generalisation.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Mitsuokella[cite: 1]",
+          "refs": "Malan-Müller 2022[cite: 1]",
+          "note": "Positively correlated with CAPS-5.[cite: 1]"
+        },
+        {
+          "taxon": "Odoribacter[cite: 1]",
+          "refs": "Malan-Müller 2022[cite: 1]",
+          "note": "Positively correlated with CAPS-5.[cite: 1]"
+        },
+        {
+          "taxon": "Catenibacterium[cite: 1]",
+          "refs": "Malan-Müller 2022[cite: 1]",
+          "note": "Positively correlated with CAPS-5.[cite: 1]"
+        },
+        {
+          "taxon": "Olsenella[cite: 1]",
+          "refs": "Malan-Müller 2022[cite: 1]",
+          "note": "Positively correlated with CAPS-5.[cite: 1]"
+        },
+        {
+          "taxon": "Escherichia-Shigella[cite: 1]",
+          "refs": "Hemmings 2017[cite: 1]",
+          "note": "'Unhealthy' microbes reported higher in PTSD.[cite: 1]"
+        },
+        {
+          "taxon": "Enterococcus[cite: 1]",
+          "refs": "Hemmings 2017[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Lachnospiraceae[cite: 1]",
+          "refs": "AURORA 2023[cite: 1]",
+          "note": "Depletion of SCFA-producing families.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcaceae[cite: 1]",
+          "refs": "AURORA 2023[cite: 1]"
+        },
+        {
+          "taxon": "Actinobacteria[cite: 1]",
+          "refs": "Hemmings 2017[cite: 1]",
+          "note": "Phylum; depletion ∝ higher CAPS-5 severity.[cite: 1]"
+        },
+        {
+          "taxon": "Lentisphaerae[cite: 1]",
+          "refs": "Hemmings 2017[cite: 1]",
+          "note": "Phylum.[cite: 1]"
+        },
+        {
+          "taxon": "Verrucomicrobia[cite: 1]",
+          "refs": "Hemmings 2017[cite: 1]",
+          "note": "Phylum; includes barrier-supporting Akkermansia.[cite: 1]"
+        },
+        {
+          "taxon": "Akkermansia[cite: 1]",
+          "refs": "Zeamer 2023[cite: 1]",
+          "note": "Barrier integrity / mucosal immunoregulation.[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "Zeamer 2023[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_424[cite: 1]",
+      "name": "Anorexia nervosa[cite: 1]",
+      "abbr": "AN[cite: 1]",
+      "description": "IMPORTANT — most of these shifts are downstream of the semi-starved, low-BMI state itself, not a cause. Methanobrevibacter smithii tracks inversely with BMI, faecal SCFA excretion falls on a hypocaloric diet, and several changes partially (though often incompletely) renormalise with weight restoration. The one causal signal is Fan 2023, where transplanting AN microbiota into germ-free mice transferred an anorexia-like phenotype — so the microbiome may also feed back onto the illness. Functionally, gut-brain modules for serotonin biosynthesis and for dopamine / glutamate / tryptophan degradation are enriched in AN, a plausible route to mood and appetite effects. Evidence is heterogeneous (small cohorts, few at species level, starvation a massive confound) — read the taxa as an illness-state signature, not a target.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Methanobrevibacter smithii[cite: 1]",
+          "refs": "review 2024; multiple[cite: 1]",
+          "note": "Methanogenic archaeon; negatively correlated with BMI — an adaptive response to caloric restriction and the most consistent AN enrichment.[cite: 1]"
+        },
+        {
+          "taxon": "Christensenellaceae[cite: 1]",
+          "refs": "Fan 2023[cite: 1]",
+          "note": "Most significantly enriched family in AN (Fan).[cite: 1]"
+        },
+        {
+          "taxon": "Enterobacteriaceae[cite: 1]",
+          "refs": "Borgo 2017[cite: 1]",
+          "note": "Gram-negative; increased in the Italian cohort.[cite: 1]"
+        },
+        {
+          "taxon": "Alistipes[cite: 1]",
+          "refs": "Prochazkova 2021[cite: 1]",
+          "note": "Overrepresented in severe AN.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Bacteroidetes[cite: 1]",
+          "refs": "Fan 2023[cite: 1]",
+          "note": "Phylum-level reduction (Bacteroidota).[cite: 1]"
+        },
+        {
+          "taxon": "Actinobacteria[cite: 1]",
+          "refs": "Fan 2023[cite: 1]",
+          "note": "Phylum-level reduction (Actinobacteriota).[cite: 1]"
+        },
+        {
+          "taxon": "Faecalibacterium prausnitzii[cite: 1]",
+          "refs": "review 2024[cite: 1]",
+          "note": "Butyrate producer; consistently depleted across studies.[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "review 2024[cite: 1]",
+          "note": "R. inulinivorans; depletion correlates with reduced faecal butyrate and higher anxiety/depression scores.[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium[cite: 1]",
+          "refs": "Friend-or-Foe 2020[cite: 1]",
+          "note": "Carbohydrate-fermenting Firmicutes, underrepresented.[cite: 1]"
+        },
+        {
+          "taxon": "Clostridium[cite: 1]",
+          "refs": "Borgo 2017[cite: 1]",
+          "note": "Reduced in the Italian cohort.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus[cite: 1]",
+          "refs": "Borgo 2017[cite: 1]",
+          "note": "Reduced (note: some studies report Ruminococcaceae up — heterogeneous).[cite: 1]"
+        },
+        {
+          "taxon": "Agathobacter[cite: 1]",
+          "refs": "Fan 2023; Prochazkova 2021[cite: 1]",
+          "note": "Enriched in healthy controls vs AN.[cite: 1]"
+        },
+        {
+          "taxon": "Blautia[cite: 1]",
+          "refs": "Prochazkova 2021[cite: 1]",
+          "note": "Underrepresented in AN.[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospira[cite: 1]",
+          "refs": "Prochazkova 2021[cite: 1]",
+          "note": "Underrepresented in AN.[cite: 1]"
+        },
+        {
+          "taxon": "Coprococcus[cite: 1]",
+          "refs": "Fan 2023[cite: 1]",
+          "note": "Enriched in healthy controls vs AN.[cite: 1]"
+        },
+        {
+          "taxon": "Gemmiger[cite: 1]",
+          "refs": "Fan 2023[cite: 1]",
+          "note": "Enriched in healthy controls vs AN.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_ida_state[cite: 1]",
+      "name": "Iron deficiency (state)[cite: 1]",
+      "abbr": "IDA[cite: 1]",
+      "description": "Host nutrient-state entry. Evidence mostly animal models + limited human.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Lactobacillus[cite: 1]",
+          "note": "Opposite to supplementation[cite: 1]"
+        },
+        {
+          "taxon": "Enterobacteriaceae[cite: 1]"
+        },
+        {
+          "taxon": "Enterococcus[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Bacteroides[cite: 1]",
+          "note": "↓ in rodent models; human data show it higher when ferritin is low.[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia / Eubacterium rectale[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_fe_supp[cite: 1]",
+      "name": "Oral iron supplementation (effect)[cite: 1]",
+      "abbr": "FE-SUPP[cite: 1]",
+      "description": "The microbiome COST OF CORRECTING it: oral iron is poorly absorbed. Raised iron availability increases Enterobacteriaceae and reduces beneficial Bifidobacteria and lactobacilli.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Enterobacteriaceae[cite: 1]"
+        },
+        {
+          "taxon": "Escherichia / Escherichia-Shigella[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroides[cite: 1]",
+          "note": "Some studies; opposite to deficiency state[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Bifidobacterium[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillus[cite: 1]",
+          "note": "Opposite to deficiency state[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_480[cite: 1]",
+      "name": "Tourette syndrome[cite: 1]",
+      "abbr": "TS[cite: 1]",
+      "description": "EVIDENCE IS THIN AND INCONSISTENT — small, paediatric tic-disorder (TD/TS) cohorts, mostly single-centre, with no consensus on α- or β-diversity and taxa that move in opposite directions across studies; treat directions as tentative. The most reproducible signals are increased Bacteroides and Ruminococcus (Ruminococcus lactaris especially enriched in TS specifically) and decreased Bifidobacterium. A GABA thread runs through the data and may interest you: the GABA-degrading Klebsiella pneumoniae rises with symptom deterioration, while GABA-producing Bifidobacterium, Eubacterium and Akkermansia muciniphila are inversely correlated with tic severity (YGTSS) — yet, oppositely, some GABA-producing Bacteroides species (B. thetaiotaomicron, B. eggerthii, B. dorei) correlate positively with severity. Notable conflicts: one drug-naive-TD cohort (Wang 2022) found Prevotella and Faecalibacterium INCREASED, opposite to the depletion seen in most other conditions here, and Odoribacter is up in TD but down in OCD. A probiotic/FMT signal exists (Limosilactobacillus reuteri; small FMT case series) but no definitive RCT.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Bacteroides[cite: 1]",
+          "refs": "Xi 2021; review[cite: 1]",
+          "note": "↑ in drug-naive TD (B. plebeius); some species (B. thetaiotaomicron, B. eggerthii, B. dorei) correlate positively with tic severity (YGTSS) despite being GABA producers.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus[cite: 1]",
+          "refs": "Xi 2021; Lee 2018[cite: 1]",
+          "note": "↑ in TD; Ruminococcus lactaris especially enriched in TS vs other tic disorders.[cite: 1]"
+        },
+        {
+          "taxon": "Klebsiella[cite: 1]",
+          "refs": "Xi 2021[cite: 1]",
+          "note": "Klebsiella pneumoniae is a GABA-degrading species; rises with symptom worsening (YGTSS).[cite: 1]"
+        },
+        {
+          "taxon": "Coprobacillus[cite: 1]",
+          "refs": "Wang 2022[cite: 1]",
+          "note": "↑ in tic-disorder children.[cite: 1]"
+        },
+        {
+          "taxon": "Odoribacter[cite: 1]",
+          "refs": "Wang 2022[cite: 1]",
+          "note": "↑ in TD — opposite direction to OCD, where Odoribacter is depleted.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcaceae[cite: 1]",
+          "refs": "Wang 2022[cite: 1]",
+          "note": "Unclassified Ruminococcaceae ↑.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "Wang 2022; Zhao 2020[cite: 1]",
+          "note": "↓ in TD; GABA producer, inversely correlated with tic severity (YGTSS).[cite: 1]"
+        },
+        {
+          "taxon": "Collinsella[cite: 1]",
+          "refs": "Wang 2022; Zhao 2020[cite: 1]",
+          "note": "↓ in TD.[cite: 1]"
+        },
+        {
+          "taxon": "Prevotella copri[cite: 1]",
+          "refs": "Xi 2021; review[cite: 1]",
+          "note": "↓ in drug-naive TD (note: genus Prevotella reported ↑ in one cohort — direction conflicts across studies).[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium[cite: 1]",
+          "refs": "Xi 2021; review[cite: 1]",
+          "note": "↓ in TD; GABA producer, inversely correlated with severity.[cite: 1]"
+        },
+        {
+          "taxon": "Akkermansia muciniphila[cite: 1]",
+          "refs": "Xi 2021[cite: 1]",
+          "note": "GABA producer; abundance inversely correlated with tic severity (YGTSS).[cite: 1]"
+        },
+        {
+          "taxon": "Dorea[cite: 1]",
+          "refs": "Zhao 2020[cite: 1]",
+          "note": "↓ in TD (Zhao 2020, all-male cohort).[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_ms[cite: 1]",
+      "name": "Multiple sclerosis[cite: 1]",
+      "abbr": "MS[cite: 1]",
+      "description": "Autoimmune demyelinating CNS disease. The flagship iMSMS shotgun study (576 patients + genetically unrelated household controls) is the strongest dataset: it reports enrichment of Akkermansia muciniphila, Ruthenibacterium lactatiformans, Hungatella hathewayi and Eisenbergiella tayi, and depletion of Faecalibacterium prausnitzii and Blautia. The recurring theme is loss of butyrate producers (Faecalibacterium, Roseburia, Coprococcus, Butyricimonas) plus a mucin-degrader (Akkermansia) and methanogen (Methanobrevibacter) rise. Composition also shifts with disease-modifying therapy, so treatment status is a major confound.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Akkermansia muciniphila[cite: 1]",
+          "refs": "iMSMS 2022; Jangi 2016[cite: 1]",
+          "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment.[cite: 1]"
+        },
+        {
+          "taxon": "Eisenbergiella tayi[cite: 1]",
+          "refs": "iMSMS 2022[cite: 1]",
+          "note": "Enriched in MS (iMSMS shotgun). Cross-ref: Eisenbergiella (incl. E. tayi and E. massiliensis) is also ↑ in fibromyalgia (Minerbi) and rises in rodent learned-helplessness depression models — a recurring 'up' signal across pain / neuro-inflammatory conditions.[cite: 1]"
+        },
+        {
+          "taxon": "Hungatella hathewayi[cite: 1]",
+          "refs": "iMSMS 2022[cite: 1]",
+          "note": "Enriched in MS in the iMSMS shotgun cohort.[cite: 1]"
+        },
+        {
+          "taxon": "Ruthenibacterium lactatiformans[cite: 1]",
+          "refs": "iMSMS 2022[cite: 1]",
+          "note": "Enriched in MS in the iMSMS shotgun cohort.[cite: 1]"
+        },
+        {
+          "taxon": "Methanobrevibacter[cite: 1]",
+          "refs": "Jangi 2016[cite: 1]",
+          "note": "Archaeal methanogen elevated in MS; correlates with elevated breath methane and proposed to enhance dendritic-cell recruitment. Cross-ref: methanogen overgrowth also appears in the SIBO workup of hEDS.[cite: 1]"
+        },
+        {
+          "taxon": "Sutterella[cite: 1]",
+          "refs": "Jangi 2016[cite: 1]",
+          "note": "Increased in disease-modifying-therapy-treated vs untreated MS patients (Jangi).[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroidetes[cite: 1]",
+          "refs": "Systematic review 2023[cite: 1]",
+          "note": "Phylum-level increase reported in MS (contested across cohorts). Cross-ref: opposite direction to the ↓ Bacteroidetes seen in autism.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Faecalibacterium prausnitzii[cite: 1]",
+          "refs": "iMSMS 2022[cite: 1]",
+          "note": "Anti-inflammatory butyrate producer depleted in MS (iMSMS shotgun; an IgA-coated F. prausnitzii variant is also reduced at disease onset). Cross-ref: consistently ↓ in fibromyalgia, IBS and depression too — a shared 'loss of butyrate producers' theme.[cite: 1]"
+        },
+        {
+          "taxon": "Blautia[cite: 1]",
+          "refs": "iMSMS 2022[cite: 1]",
+          "note": "iMSMS reports depleted Blautia species in MS; the MS-associated Blautia wexlerae drives inflammation and a lower Bifidobacterium:Akkermansia ratio in mouse transfer (PNAS 2025). Caveat: some reviews report Blautia ↑ in MS — direction is contested. Cross-ref: Blautia is ↓ in autism as well.[cite: 1]"
+        },
+        {
+          "taxon": "Butyricimonas[cite: 1]",
+          "refs": "Jangi 2016[cite: 1]",
+          "note": "Butyrate producer depleted in MS (Jangi).[cite: 1]"
+        },
+        {
+          "taxon": "Prevotella[cite: 1]",
+          "refs": "Systematic review 2023; Nature 2024[cite: 1]",
+          "note": "Depleted across ~8 MS studies and lower in progressors; tends to rise again on disease-modifying therapy. Individual Prevotella species (P. copri, P. buccalis) associate with higher MS severity, so genus-vs-species stories diverge. Cross-ref: Prevotella is also ↓ in autism and Parkinson's.[cite: 1]"
+        },
+        {
+          "taxon": "Roseburia[cite: 1]",
+          "refs": "Systematic review 2023[cite: 1]",
+          "note": "Butyrate/SCFA producer depleted in MS.[cite: 1]"
+        },
+        {
+          "taxon": "Coprococcus[cite: 1]",
+          "refs": "Systematic review 2023[cite: 1]",
+          "note": "Butyrate producer depleted in MS. Cross-ref: Coprococcus ↓ is a recurring depression finding (Valles-Colomer).[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "Systematic review 2023; PNAS 2025[cite: 1]",
+          "note": "Depleted in MS; a lower Bifidobacterium:Akkermansia ratio tracks disability. Cross-ref: Bifidobacterium ↓ is shared with depression, autism and IBS.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_eds[cite: 1]",
+      "name": "Ehlers-Danlos (hypermobile)[cite: 1]",
+      "abbr": "EDS[cite: 1]",
+      "description": "Heritable connective-tissue disorder (defects in collagen / ECM). Gut involvement is real and common — chronic GI symptoms in ~80% — but it is a story of dysmotility, small intestinal bacterial overgrowth (SIBO) and overlap with IBS/POTS/MCAS, NOT a characterised fecal taxon signature. There is currently no validated microbial biomarker for hEDS, so the entries here are deliberately sparse and flagged as indirect. Included because Kelsey's rheumatologist context makes the EDS/hypermobility axis relevant and because it cross-links strongly to IBS and fibromyalgia.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Small intestinal bacterial overgrowth (SIBO)[cite: 1]",
+          "refs": "Hypermobility SIMD 2026[cite: 1]",
+          "note": "Not a single taxon — overall small-bowel bacterial load. In hypermobility disorders (including hEDS) with GI symptoms, ~70% meet SIBO criteria on aspirate (≥10^3 CFU/mL); 100% of those with gastroparesis or dyssynergic defecation. Mechanism is connective-tissue-driven dysmotility allowing luminal microbes to proliferate, not a distinctive dysbiotic community.[cite: 1]"
+        },
+        {
+          "taxon": "Enterobacteriaceae[cite: 1]",
+          "refs": "SIBO context (inferred)[cite: 1]",
+          "note": "Facultative anaerobes proliferate under hypomotility/SIBO; this mirrors the IBS enrichment rather than being an EDS-specific finding, and is inferred from the SIBO / IBS-overlap literature rather than a case-control fecal study. Cross-ref: Enterobacteriaceae is also ↑ in IBS and depression.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Reduced microbial diversity[cite: 1]",
+          "refs": "reviews[cite: 1]",
+          "note": "hEDS has no validated stool taxon signature. The literature is dominated by dysmotility/SIBO and very heavy overlap with IBS and functional foregut disorders (up to ~98% of hEDS patients meet criteria for a disorder of gut-brain interaction). Diagnostic microbial biomarkers have not been established — treat any species-level claim for EDS as provisional.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_ibs[cite: 1]",
+      "name": "Irritable bowel syndrome[cite: 1]",
+      "abbr": "IBS[cite: 1]",
+      "description": "Disorder of gut-brain interaction; the most-studied gut condition here and a natural comparator for the neuropsychiatric set (IBS is highly comorbid with depression, anxiety, fibromyalgia, autism and hEDS). Pittayanon 2019's systematic review anchors the signature: ↑ Enterobacteriaceae, Lactobacillaceae and Bacteroides; ↓ uncultured Clostridiales I, Faecalibacterium (incl. F. prausnitzii) and Bifidobacterium. Diversity is decreased or unchanged. Subtype (IBS-C/D/M) matters — e.g. methanogens rise in constipation-predominant disease — and most studies cannot cleanly separate subtypes.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Enterobacteriaceae[cite: 1]",
+          "refs": "Pittayanon 2019[cite: 1]",
+          "note": "Family-level enrichment (Proteobacteria) — facultative anaerobes favoured by inflammation and altered motility. One of the most reproducible IBS findings. Cross-ref: also ↑ in depression and (via SIBO) EDS.[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroides[cite: 1]",
+          "refs": "Pittayanon 2019[cite: 1]",
+          "note": "Genus increased in IBS overall (IBS-C in particular shows ↑ fecal Bacteroides); mixed across subtypes and some RCT meta-analyses find no difference.[cite: 1]"
+        },
+        {
+          "taxon": "Lactobacillaceae[cite: 1]",
+          "refs": "Pittayanon 2019[cite: 1]",
+          "note": "Family increased in IBS in the systematic review. Contrast: species-level Lactobacillus is often ↓ by qPCR in other meta-analyses — a level-of-resolution disagreement.[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus[cite: 1]",
+          "refs": "Frontiers review 2019[cite: 1]",
+          "note": "Increased in several IBS cohorts (Firmicutes). Direction is not universal.[cite: 1]"
+        },
+        {
+          "taxon": "Streptococcus[cite: 1]",
+          "refs": "Integrated analysis 2023[cite: 1]",
+          "note": "IBS-enriched genus in the multicentre integrated analysis. Cross-ref: also enriched in endometriosis gut.[cite: 1]"
+        },
+        {
+          "taxon": "Escherichia coli[cite: 1]",
+          "refs": "meta 23 studies[cite: 1]",
+          "note": "Elevated (with Enterobacter) in the 23-study meta-analysis. Cross-ref: Escherichia-Shigella is ↑ in autism and endometriosis too.[cite: 1]"
+        },
+        {
+          "taxon": "Enterocloster[cite: 1]",
+          "refs": "Integrated analysis 2023[cite: 1]",
+          "note": "IBS-enriched genus (formerly within Clostridium) in the integrated multicentre analysis.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Faecalibacterium prausnitzii[cite: 1]",
+          "refs": "Pittayanon 2019[cite: 1]",
+          "note": "Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "Pittayanon 2019; meta 23 studies[cite: 1]",
+          "note": "Depleted across most IBS cohorts (5/7 studies significant in Pittayanon). Cross-ref: Bifidobacterium ↓ is shared with depression, autism and MS.[cite: 1]"
+        },
+        {
+          "taxon": "Clostridiales[cite: 1]",
+          "refs": "Pittayanon 2019[cite: 1]",
+          "note": "Uncultured Clostridiales I consistently decreased in IBS across European cohorts.[cite: 1]"
+        },
+        {
+          "taxon": "Methanobrevibacter[cite: 1]",
+          "refs": "Frontiers review 2019[cite: 1]",
+          "note": "Methanogens reduced overall in IBS vs controls — though a methane-positive, constipation-predominant (IBS-C / IMO) subtype is well recognised, so this reverses in that subgroup.[cite: 1]"
+        },
+        {
+          "taxon": "Erysipelotrichaceae[cite: 1]",
+          "refs": "Frontiers review 2019[cite: 1]",
+          "note": "Depleted in IBS in the pathophysiology review.[cite: 1]"
+        }
+      ]
+    },
+    {
+      "id": "seed_endo[cite: 1]",
+      "name": "Endometriosis[cite: 1]",
+      "abbr": "ENDO[cite: 1]",
+      "description": "Estrogen-dependent inflammatory disease (endometrial-like tissue outside the uterus); frequently comorbid with IBS. Two microbiomes matter — gut and reproductive tract — and the 'estrobolome' (gut microbes that deconjugate estrogens via β-glucuronidase) is the proposed mechanistic link. Gut findings (this atlas' focus): a higher Firmicutes/Bacteroidetes ratio, phylum-level rises in Actinobacteria/Proteobacteria/Verrucomicrobia, loss of Lactobacilli and butyrate producers (Ruminococcaceae, Lachnospira), and severity-dependent shifts (Dialister ↓, Streptococcus/Lactobacillus ↑ with stage; Prevotella/Bacteroides ↓ in advanced disease). Directions are frequently contested between Shan 2020, Svensson 2021 and the 2025 meta-analysis, so several taxa here carry explicit caveats.[cite: 1]",
+      "up": [
+        {
+          "taxon": "Actinobacteria[cite: 1]",
+          "refs": "Shan 2020; 2019 review[cite: 1]",
+          "note": "Phylum enriched in the endometriosis gut (Shan 2020 and a 2019 systematic review).[cite: 1]"
+        },
+        {
+          "taxon": "Proteobacteria[cite: 1]",
+          "refs": "2019 review[cite: 1]",
+          "note": "Phylum higher in the endometriosis gut; more patients show Shigella/Escherichia dominance.[cite: 1]"
+        },
+        {
+          "taxon": "Verrucomicrobia[cite: 1]",
+          "refs": "2019 review; Shan 2020[cite: 1]",
+          "note": "Phylum higher in the endometriosis gut (includes Akkermansia).[cite: 1]"
+        },
+        {
+          "taxon": "Prevotella[cite: 1]",
+          "refs": "meta 2025 (Iavarone)[cite: 1]",
+          "note": "Increased at genus level per the Iavarone review. Stage twist: in advanced / late-stage disease Prevotella (and Bacteroides) instead decrease. Cross-ref: Prevotella direction is strongly condition- and severity-dependent (↓ in autism/MS/PD).[cite: 1]"
+        },
+        {
+          "taxon": "Blautia[cite: 1]",
+          "refs": "Shan 2020; meta 2025[cite: 1]",
+          "note": "Enriched in the endometriosis gut (Shan 2020; Iavarone). Cross-ref: opposite to the Blautia ↓ seen in autism and MS.[cite: 1]"
+        },
+        {
+          "taxon": "Dorea[cite: 1]",
+          "refs": "Shan 2020[cite: 1]",
+          "note": "Enriched in the endometriosis gut (Shan 2020).[cite: 1]"
+        },
+        {
+          "taxon": "Streptococcus[cite: 1]",
+          "refs": "Shan 2020; severity[cite: 1]",
+          "note": "Enriched, and rises with disease severity alongside Lactobacillus while Dialister falls. Cross-ref: Streptococcus is also IBS-enriched.[cite: 1]"
+        },
+        {
+          "taxon": "Escherichia-Shigella[cite: 1]",
+          "refs": "2019 review[cite: 1]",
+          "note": "More endometriosis patients show gut Shigella/Escherichia dominance. Cross-ref: Escherichia-Shigella is ↑ in autism and (as E. coli) in IBS.[cite: 1]"
+        }
+      ],
+      "down": [
+        {
+          "taxon": "Lactobacillus[cite: 1]",
+          "refs": "Talwar 2022; 2019 review[cite: 1]",
+          "note": "Loss of beneficial Lactobacilli is a hallmark of endometriosis (most pronounced in the reproductive tract; Lactobacillaceae also ↓ in gut). Severity twist: with increasing disease stage some studies report Lactobacillus (and Streptococcus) rising while Dialister falls — so 'low Lactobacillus' is the baseline signal, not a monotonic one.[cite: 1]"
+        },
+        {
+          "taxon": "Bifidobacterium[cite: 1]",
+          "refs": "meta 2025 (Shan 2021)[cite: 1]",
+          "note": "Reduced mucosa-adherent barrier taxon in endometriosis per the 2025 meta-analysis (Shan 2021). Contested: Shan 2020 reported Bifidobacterium ↑ — direction is not settled.[cite: 1]"
+        },
+        {
+          "taxon": "Lachnospira[cite: 1]",
+          "refs": "meta 2025; Shan 2020[cite: 1]",
+          "note": "Depleted mucosa-adherent barrier taxon (Svensson 2021 via meta-analysis; Shan 2020).[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcus[cite: 1]",
+          "refs": "meta 2025 (Iavarone review)[cite: 1]",
+          "note": "Decreased at genus level (Iavarone review, incorporated in the 2025 meta-analysis).[cite: 1]"
+        },
+        {
+          "taxon": "Ruminococcaceae[cite: 1]",
+          "refs": "narrative review[cite: 1]",
+          "note": "Butyrate-producing family decreased in endometriosis — loss of anti-inflammatory SCFA capacity, a pattern shared with autoimmune dysbiosis. Cross-ref: Ruminococcaceae also ↓ in autism.[cite: 1]"
+        },
+        {
+          "taxon": "Dialister[cite: 1]",
+          "refs": "severity review[cite: 1]",
+          "note": "Decreasing Dialister tracks increasing endometriosis severity (advanced stage, deep infiltrating disease, symptom burden). Cross-ref: Dialister is ↓ in depression and autism as well.[cite: 1]"
+        },
+        {
+          "taxon": "Eubacterium[cite: 1]",
+          "refs": "Shan 2020[cite: 1]",
+          "note": "Decreased in the endometriosis gut (Shan 2020).[cite: 1]"
+        },
+        {
+          "taxon": "Bacteroides[cite: 1]",
+          "refs": "late-stage 2025[cite: 1]",
+          "note": "Decreased in advanced / late-stage endometriosis microbiomes; advanced disease is instead marked by enrichment of Bartonella and Snodgrassella and suppressed steroid-biosynthesis pathways.[cite: 1]"
+        }
+      ]
+    }
+  ]
+}

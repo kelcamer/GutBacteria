@@ -340,6 +340,20 @@
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
             }
           ]
+        },
+        {
+          "id": "audit_Depr_Dialister",
+          "name": "Dialister",
+          "dir": "down",
+          "refs": "",
+          "note": "Valles-Colomer 2019 (Nat Microbiol): Dialister depleted alongside Coprococcus, tracking quality of life.",
+          "links": [
+            {
+              "id": "audit_Depr_Dialister_l1",
+              "label": "Valles-Colomer 2019 (Nat Microbiol): Dialister depleted alongside Coprococcus, tracking quality of life.",
+              "url": "https://www.nature.com/articles/s41564-018-0337-x"
+            }
+          ]
         }
       ]
     },
@@ -917,6 +931,20 @@
               "url": "https://pubmed.ncbi.nlm.nih.gov/38068995/"
             }
           ]
+        },
+        {
+          "id": "audit_Auti_Coprococcus",
+          "name": "Coprococcus",
+          "dir": "down",
+          "refs": "",
+          "note": "Kang 2013 (PLoS ONE): Coprococcus depleted alongside Prevotella and unclassified Veillonellaceae in ASD.",
+          "links": [
+            {
+              "id": "audit_Auti_Coprococcus_l1",
+              "label": "Kang 2013 (PLoS ONE): Coprococcus depleted alongside Prevotella and unclassified Veillonellaceae in ASD.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+            }
+          ]
         }
       ]
     },
@@ -1113,6 +1141,20 @@
           "refs": "80",
           "note": "",
           "links": []
+        },
+        {
+          "id": "audit_ADHD_Veillonellaceae",
+          "name": "Veillonellaceae",
+          "dir": "down",
+          "refs": "",
+          "note": "Wan 2020 (Front Neurosci): Veillonellaceae depleted alongside Faecalibacterium in pediatric ADHD.",
+          "links": [
+            {
+              "id": "audit_ADHD_Veillonellaceae_l1",
+              "label": "Wan 2020 (Front Neurosci): Veillonellaceae depleted alongside Faecalibacterium in pediatric ADHD.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32116566/"
+            }
+          ]
         }
       ]
     },
@@ -1361,6 +1403,34 @@
               "id": "seed_122",
               "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
               "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+            }
+          ]
+        },
+        {
+          "id": "audit_Alzh_Bacteroidetes",
+          "name": "Bacteroidetes",
+          "dir": "up",
+          "refs": "",
+          "note": "Vogt 2017 (Sci Rep): Bacteroidetes raised in AD alongside Firmicutes depletion.",
+          "links": [
+            {
+              "id": "audit_Alzh_Bacteroidetes_l1",
+              "label": "Vogt 2017 (Sci Rep): Bacteroidetes raised in AD alongside Firmicutes depletion.",
+              "url": "https://www.nature.com/articles/s41598-017-13601-y"
+            }
+          ]
+        },
+        {
+          "id": "audit_Alzh_Firmicutes",
+          "name": "Firmicutes",
+          "dir": "down",
+          "refs": "",
+          "note": "Vogt 2017 (Sci Rep): Firmicutes depleted in AD alongside Bacteroidetes rise.",
+          "links": [
+            {
+              "id": "audit_Alzh_Firmicutes_l1",
+              "label": "Vogt 2017 (Sci Rep): Firmicutes depleted in AD alongside Bacteroidetes rise.",
+              "url": "https://www.nature.com/articles/s41598-017-13601-y"
             }
           ]
         }
@@ -2040,6 +2110,34 @@
               "id": "seed_202",
               "label": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
               "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+            }
+          ]
+        },
+        {
+          "id": "seed_ocd_rumino",
+          "name": "Ruminococcaceae",
+          "dir": "down",
+          "refs": "",
+          "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD — i.e. lower levels causally linked to higher OCD risk.",
+          "links": [
+            {
+              "id": "seed_ocd_rumino_l1",
+              "label": "Causal link between gut microbiota and OCD: MR analysis (2025)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
+            }
+          ]
+        },
+        {
+          "id": "seed_ocd_bilophila",
+          "name": "Bilophila",
+          "dir": "down",
+          "refs": "",
+          "note": "Same 2025 MR study found Bilophila (Proteobacteria) also has a protective causal effect against OCD.",
+          "links": [
+            {
+              "id": "seed_ocd_bilophila_l1",
+              "label": "Causal link between gut microbiota and OCD: MR analysis (2025)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
             }
           ]
         },
