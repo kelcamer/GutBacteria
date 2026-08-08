@@ -5965,6 +5965,387 @@
           ]
         }
       ]
+    },
+    {
+      "id": "new_aud",
+      "name": "Alcohol use disorder",
+      "abbr": "AUD",
+      "color": "#B91C1C",
+      "note": "Grounded primarily in a 2025 meta-analysis synthesizing human and animal ethanol-dysbiosis research, plus targeted primary studies for taxa the meta-analysis didn't cover. The meta-analysis itself flags that human and animal studies sometimes show opposite trends for the same genus (confounders like antibiotic exposure in human cohorts) — treat single-study genus-level calls as more provisional than the phylum-level pattern.",
+      "links": [
+        {
+          "id": "new_aud_l1",
+          "label": "Alexandrescu et al. 2025 meta-analysis, Microorganisms (PMID 41011331)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+        },
+        {
+          "id": "new_aud_l2",
+          "label": "Dubinkina et al. 2017, Microbiome — alcohol dependence & alcoholic liver disease (PMC5645934)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5645934/"
+        },
+        {
+          "id": "new_aud_l3",
+          "label": "Alcohol Addiction, Gut Microbiota, and Alcoholism Treatment: A Review (PMC7504034)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "new_aud_t1",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "PMID 41011331",
+          "note": "Depleted across human and animal ethanol-dysbiosis studies — loss of the anti-inflammatory, butyrate-producing genus that's already low across most inflammatory conditions in this app.",
+          "links": [
+            {
+              "id": "new_aud_t1_l1",
+              "label": "Alexandrescu et al. 2025 meta-analysis, Microorganisms (PMID 41011331)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t2",
+          "name": "Lactobacillus",
+          "dir": "down",
+          "refs": "PMID 41011331",
+          "note": "Consistently depleted with chronic ethanol exposure.",
+          "links": [
+            {
+              "id": "new_aud_t2_l1",
+              "label": "Alexandrescu et al. 2025 meta-analysis, Microorganisms (PMID 41011331)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t3",
+          "name": "Akkermansia muciniphila",
+          "dir": "down",
+          "refs": "PMID 41011331",
+          "note": "Mucin-degrading, barrier-supportive species depleted alongside the broader loss of protective commensals.",
+          "links": [
+            {
+              "id": "new_aud_t3_l1",
+              "label": "Alexandrescu et al. 2025 meta-analysis, Microorganisms (PMID 41011331)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t4",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "PMID 41011331",
+          "note": "Depleted across the pooled human/animal studies.",
+          "links": [
+            {
+              "id": "new_aud_t4_l1",
+              "label": "Alexandrescu et al. 2025 meta-analysis, Microorganisms (PMID 41011331)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t5",
+          "name": "Proteobacteria",
+          "dir": "up",
+          "refs": "PMID 41011331",
+          "note": "Expansion of this LPS-bearing, pro-inflammatory phylum is one of the most consistent findings in alcohol-related dysbiosis.",
+          "links": [
+            {
+              "id": "new_aud_t5_l1",
+              "label": "Alexandrescu et al. 2025 meta-analysis, Microorganisms (PMID 41011331)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t6",
+          "name": "Enterococcus",
+          "dir": "up",
+          "refs": "PMID 41011331",
+          "note": "Expanded alongside Proteobacteria and Veillonella as part of the pro-inflammatory taxa bloom.",
+          "links": [
+            {
+              "id": "new_aud_t6_l1",
+              "label": "Alexandrescu et al. 2025 meta-analysis, Microorganisms (PMID 41011331)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t7",
+          "name": "Veillonella",
+          "dir": "up",
+          "refs": "PMID 41011331",
+          "note": "Expanded in the pooled meta-analysis; also one of the oral-origin taxa that invades the gut in more advanced alcohol-related liver disease.",
+          "links": [
+            {
+              "id": "new_aud_t7_l1",
+              "label": "Alexandrescu et al. 2025 meta-analysis, Microorganisms (PMID 41011331)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t8",
+          "name": "Streptococcus",
+          "dir": "up",
+          "refs": "PMC5645934",
+          "note": "Oral-origin genus that shows relative increase with heavy alcohol consumption and more pronounced blooms in alcoholic liver disease.",
+          "links": [
+            {
+              "id": "new_aud_t8_l1",
+              "label": "Dubinkina et al. 2017, Microbiome",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5645934/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t9",
+          "name": "Escherichia",
+          "dir": "up",
+          "refs": "Frontiers Psychiatry",
+          "note": "Increased at the genus level in AUD patients relative to healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
+          "links": [
+            {
+              "id": "new_aud_t9_l1",
+              "label": "Diversity of intestinal microbiota in AUD and its relationship to consumption/cognition",
+              "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1054685/full"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t10",
+          "name": "Lachnospiraceae",
+          "dir": "down",
+          "refs": "PMC7504034",
+          "note": "Commensal family showing relative decrease in heavy alcohol consumers.",
+          "links": [
+            {
+              "id": "new_aud_t10_l1",
+              "label": "Alcohol Addiction, Gut Microbiota, and Alcoholism Treatment: A Review",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
+            }
+          ]
+        },
+        {
+          "id": "new_aud_t11",
+          "name": "Prevotellaceae",
+          "dir": "down",
+          "refs": "PMC7504034",
+          "note": "Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
+          "links": [
+            {
+              "id": "new_aud_t11_l1",
+              "label": "Alcohol Addiction, Gut Microbiota, and Alcoholism Treatment: A Review",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new_smk",
+      "name": "Smoking (cigarette)",
+      "abbr": "SMK",
+      "color": "#78716C",
+      "note": "Genus-level smoking findings are less consistent across studies than the phylum-level pattern (some studies report the opposite direction for Bacteroides and Prevotella depending on population/method) — this entry sticks to the taxa that replicate across multiple independent reviews rather than every single reported finding.",
+      "links": [
+        {
+          "id": "new_smk_l1",
+          "label": "Impact of cigarette smoking on gut microbial dysbiosis: a structured literature review (PMC11658948)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+        },
+        {
+          "id": "new_smk_l2",
+          "label": "Smoking-induced microbial dysbiosis: a key driver of systemic diseases, Cell Death Discovery (Nature)",
+          "url": "https://www.nature.com/articles/s41420-025-02914-x"
+        },
+        {
+          "id": "new_smk_l3",
+          "label": "Biedermann et al. 2013, PLOS ONE — smoking cessation microbiota shifts (PMC3597605)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "new_smk_t1",
+          "name": "Desulfovibrio",
+          "dir": "up",
+          "refs": "PMC11658948",
+          "note": "Sulfate-reducing, H2S-producing genus increased by cigarette smoke exposure.",
+          "links": [
+            {
+              "id": "new_smk_t1_l1",
+              "label": "Structured literature review, cigarette smoking & gut dysbiosis",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+            }
+          ]
+        },
+        {
+          "id": "new_smk_t2",
+          "name": "Bilophila",
+          "dir": "up",
+          "refs": "PMC11658948",
+          "note": "LPS-bearing pathobiont increased alongside Desulfovibrio in smokers.",
+          "links": [
+            {
+              "id": "new_smk_t2_l1",
+              "label": "Structured literature review, cigarette smoking & gut dysbiosis",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+            }
+          ]
+        },
+        {
+          "id": "new_smk_t3",
+          "name": "Alistipes",
+          "dir": "down",
+          "refs": "PMC11658948",
+          "note": "Reduced by chronic cigarette smoke exposure; also a genus positively associated with healthy body weight.",
+          "links": [
+            {
+              "id": "new_smk_t3_l1",
+              "label": "Structured literature review, cigarette smoking & gut dysbiosis",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+            }
+          ]
+        },
+        {
+          "id": "new_smk_t4",
+          "name": "Clostridium",
+          "dir": "down",
+          "refs": "PMC11658948",
+          "note": "Reduced by cigarette smoke exposure per the structured review.",
+          "links": [
+            {
+              "id": "new_smk_t4_l1",
+              "label": "Structured literature review, cigarette smoking & gut dysbiosis",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+            }
+          ]
+        },
+        {
+          "id": "new_smk_t5",
+          "name": "Turicibacter",
+          "dir": "down",
+          "refs": "PMC11658948",
+          "note": "Reduced by cigarette smoke exposure alongside Clostridium.",
+          "links": [
+            {
+              "id": "new_smk_t5_l1",
+              "label": "Structured literature review, cigarette smoking & gut dysbiosis",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+            }
+          ]
+        },
+        {
+          "id": "new_smk_t6",
+          "name": "Proteobacteria",
+          "dir": "up",
+          "refs": "PMC3597605",
+          "note": "Higher in current smokers; fell after smoking cessation in a controlled before/after cohort.",
+          "links": [
+            {
+              "id": "new_smk_t6_l1",
+              "label": "Biedermann et al. 2013, PLOS ONE",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+            }
+          ]
+        },
+        {
+          "id": "new_smk_t7",
+          "name": "Firmicutes",
+          "dir": "down",
+          "refs": "PMC3597605",
+          "note": "Lower in current smokers; increased after smoking cessation in the same cohort.",
+          "links": [
+            {
+              "id": "new_smk_t7_l1",
+              "label": "Biedermann et al. 2013, PLOS ONE",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+            }
+          ]
+        },
+        {
+          "id": "new_smk_t8",
+          "name": "Actinobacteria",
+          "dir": "down",
+          "refs": "PMC3597605",
+          "note": "Lower in current smokers; increased after smoking cessation, the same pattern as Firmicutes.",
+          "links": [
+            {
+              "id": "new_smk_t8_l1",
+              "label": "Biedermann et al. 2013, PLOS ONE",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new_thc",
+      "name": "Cannabis / THC use",
+      "abbr": "THC",
+      "color": "#16A34A",
+      "note": "Genuinely the thinnest-evidenced entry in this app — cannabis-gut-microbiome research is young (a 2025 systematic review found only 9 human studies total, 2 clinical trials + 7 observational) and much of the mechanistic taxa-level work is mouse-only, which isn't included here. Deliberately excluded a genus-level 'Ruminococcus increased' finding from the review's synthesis, since this app already has an established rule (see Depression/ASD entries) that bare Ruminococcus has no defensible genus-level direction — its beneficial and pathobiont species pull in opposite directions.",
+      "links": [
+        {
+          "id": "new_thc_l1",
+          "label": "Panee et al. 2018, J Neuroimmune Pharmacol (PMID 29101632)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29101632/"
+        },
+        {
+          "id": "new_thc_l2",
+          "label": "Thu et al. 2025 systematic review, Biomedicine & Pharmacotherapy",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "new_thc_t1",
+          "name": "Prevotella",
+          "dir": "down",
+          "refs": "PMID 29101632",
+          "note": "The clearest human finding in this space: chronic marijuana users (n=19) had a ~13-fold lower Prevotella:Bacteroides ratio than non-users (n=20), and lifetime use correlated inversely with the ratio, mitochondrial function, and attention/inhibitory-control scores.",
+          "links": [
+            {
+              "id": "new_thc_t1_l1",
+              "label": "Panee et al. 2018, J Neuroimmune Pharmacol (PMID 29101632)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29101632/"
+            }
+          ]
+        },
+        {
+          "id": "new_thc_t2",
+          "name": "Fusobacterium",
+          "dir": "up",
+          "refs": "Thu et al. 2025 review",
+          "note": "Positively correlated with marijuana use across the observational studies synthesized in a 2025 systematic review.",
+          "links": [
+            {
+              "id": "new_thc_t2_l1",
+              "label": "Thu et al. 2025 systematic review, Biomedicine & Pharmacotherapy",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
+            }
+          ]
+        },
+        {
+          "id": "new_thc_t3",
+          "name": "Dorea",
+          "dir": "down",
+          "refs": "Preliminary (HIV+ cohort)",
+          "note": "Lower in marijuana-using people with HIV in a preliminary cross-sectional study — population-specific finding, flagged since it's not a general-population result.",
+          "links": [
+            {
+              "id": "new_thc_t3_l1",
+              "label": "Thu et al. 2025 systematic review, Biomedicine & Pharmacotherapy",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
