@@ -5294,6 +5294,677 @@
           ]
         }
       ]
+    },
+    {
+      "id": "new_cd",
+      "name": "Crohn's disease",
+      "abbr": "CD",
+      "color": "#34D399",
+      "note": "One of the best-evidenced conditions in gut-microbiome research generally, but the app didn't have it yet. Ileal and colonic CD have somewhat different signatures in the literature; this entry blends both since most studies don't split them.",
+      "links": [
+        {
+          "id": "new_cd_l1",
+          "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
+          "url": "https://www.nature.com/articles/s41467-024-54797-8"
+        },
+        {
+          "id": "new_cd_l2",
+          "label": "Sokol et al. 2008 PNAS — F. prausnitzii anti-inflammatory commensal",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.0804812105"
+        },
+        {
+          "id": "new_cd_l3",
+          "label": "Henke et al. 2019 PNAS/PMC6601261 — R. gnavus inflammatory polysaccharide",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6601261/"
+        },
+        {
+          "id": "new_cd_l4",
+          "label": "Darfeuille-Michaud et al. 2004 Gastroenterology — AIEC in ileal CD (PMID 15300573)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15300573/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "new_cd_t1",
+          "name": "Faecalibacterium prausnitzii",
+          "dir": "down",
+          "refs": "PNAS",
+          "note": "Landmark finding: depleted, and the degree of depletion at surgery predicts risk of post-operative recurrence. Its butyrate/anti-inflammatory output is a major loss.",
+          "links": [
+            {
+              "id": "new_cd_t1_l1",
+              "label": "Sokol et al. 2008, PNAS",
+              "url": "https://www.pnas.org/doi/10.1073/pnas.0804812105"
+            }
+          ]
+        },
+        {
+          "id": "new_cd_t2",
+          "name": "Escherichia coli",
+          "dir": "up",
+          "refs": "Gastroenterology",
+          "note": "Adherent-invasive E. coli (AIEC) found in ~22% of ileal CD lesions vs ~6% of controls; invades epithelial cells and survives inside macrophages.",
+          "links": [
+            {
+              "id": "new_cd_t2_l1",
+              "label": "Darfeuille-Michaud et al. 2004",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15300573/"
+            }
+          ]
+        },
+        {
+          "id": "new_cd_t3",
+          "name": "Ruminococcus gnavus",
+          "dir": "up",
+          "refs": "PNAS",
+          "note": "Blooms during flares; produces an inflammatory polysaccharide that drives dendritic cells to secrete TNFα.",
+          "links": [
+            {
+              "id": "new_cd_t3_l1",
+              "label": "Henke et al. 2019, PNAS",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6601261/"
+            }
+          ]
+        },
+        {
+          "id": "new_cd_t4",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "Nat Commun",
+          "note": "Depleted, especially in ileal disease — loss of a major butyrate producer.",
+          "links": [
+            {
+              "id": "new_cd_t4_l1",
+              "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
+              "url": "https://www.nature.com/articles/s41467-024-54797-8"
+            }
+          ]
+        },
+        {
+          "id": "new_cd_t5",
+          "name": "Coprococcus",
+          "dir": "down",
+          "refs": "Nat Commun",
+          "note": "Depleted alongside Roseburia and F. prausnitzii in ileal CD.",
+          "links": [
+            {
+              "id": "new_cd_t5_l1",
+              "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
+              "url": "https://www.nature.com/articles/s41467-024-54797-8"
+            }
+          ]
+        },
+        {
+          "id": "new_cd_t6",
+          "name": "Fusobacterium",
+          "dir": "up",
+          "refs": "Nat Commun",
+          "note": "Enriched in CD mucosa; invasive Fusobacterium strains are also implicated in colorectal cancer.",
+          "links": [
+            {
+              "id": "new_cd_t6_l1",
+              "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
+              "url": "https://www.nature.com/articles/s41467-024-54797-8"
+            }
+          ]
+        },
+        {
+          "id": "new_cd_t7",
+          "name": "Akkermansia muciniphila",
+          "dir": "down",
+          "refs": "Frontiers Microbiol",
+          "note": "Mucin-degrading, barrier-protective species depleted in CD alongside other Verrucomicrobia.",
+          "links": [
+            {
+              "id": "new_cd_t7_l1",
+              "label": "Frontiers in Cellular and Infection Microbiology, IBD microbiota review",
+              "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2022.733992/full"
+            }
+          ]
+        },
+        {
+          "id": "new_cd_t8",
+          "name": "Bacteroides",
+          "dir": "down",
+          "refs": "Nat Commun",
+          "note": "Reduced overall, part of the broader Bacteroidetes contraction seen in active CD.",
+          "links": [
+            {
+              "id": "new_cd_t8_l1",
+              "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
+              "url": "https://www.nature.com/articles/s41467-024-54797-8"
+            }
+          ]
+        },
+        {
+          "id": "new_cd_t9",
+          "name": "Prevotella",
+          "dir": "down",
+          "refs": "Nat Commun",
+          "note": "Depleted alongside other Bacteroidetes genera in CD cohorts.",
+          "links": [
+            {
+              "id": "new_cd_t9_l1",
+              "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
+              "url": "https://www.nature.com/articles/s41467-024-54797-8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new_uc",
+      "name": "Ulcerative colitis",
+      "abbr": "UC",
+      "color": "#FB923C",
+      "note": "Shares a lot of dysbiosis biology with Crohn's disease but the two have distinct signatures (see the Nat Commun multi-biome study, which directly compares them) — kept as separate entries rather than merged into one 'IBD' card.",
+      "links": [
+        {
+          "id": "new_uc_l1",
+          "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
+          "url": "https://www.nature.com/articles/s41467-024-54797-8"
+        },
+        {
+          "id": "new_uc_l2",
+          "label": "Sci Rep — dysbiosis in Polish UC cohort (s41598-021-81628-3)",
+          "url": "https://www.nature.com/articles/s41598-021-81628-3"
+        },
+        {
+          "id": "new_uc_l3",
+          "label": "PMC9735443 — gut microbiota/metabolite disturbances in IBD",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9735443/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "new_uc_t1",
+          "name": "Faecalibacterium prausnitzii",
+          "dir": "down",
+          "refs": "PMC7835370",
+          "note": "Highly reduced, same anti-inflammatory/butyrate-loss mechanism as in Crohn's.",
+          "links": [
+            {
+              "id": "new_uc_t1_l1",
+              "label": "Dysbiosis in Polish UC patients (pilot study)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+            }
+          ]
+        },
+        {
+          "id": "new_uc_t2",
+          "name": "Escherichia/Shigella",
+          "dir": "up",
+          "refs": "PMC7835370",
+          "note": "Consistently increased in active UC alongside other Enterobacteriaceae.",
+          "links": [
+            {
+              "id": "new_uc_t2_l1",
+              "label": "Dysbiosis in Polish UC patients (pilot study)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+            }
+          ]
+        },
+        {
+          "id": "new_uc_t3",
+          "name": "Klebsiella",
+          "dir": "up",
+          "refs": "PMC7835370",
+          "note": "Increased alongside other facultative-anaerobe pathobionts.",
+          "links": [
+            {
+              "id": "new_uc_t3_l1",
+              "label": "Dysbiosis in Polish UC patients (pilot study)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+            }
+          ]
+        },
+        {
+          "id": "new_uc_t4",
+          "name": "Streptococcus",
+          "dir": "up",
+          "refs": "PMC7835370",
+          "note": "Elevated in UC gut communities.",
+          "links": [
+            {
+              "id": "new_uc_t4_l1",
+              "label": "Dysbiosis in Polish UC patients (pilot study)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+            }
+          ]
+        },
+        {
+          "id": "new_uc_t5",
+          "name": "Bacteroides",
+          "dir": "down",
+          "refs": "PMC7835370",
+          "note": "Main Bacteroidaceae-family species significantly reduced in UC stool.",
+          "links": [
+            {
+              "id": "new_uc_t5_l1",
+              "label": "Dysbiosis in Polish UC patients (pilot study)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+            }
+          ]
+        },
+        {
+          "id": "new_uc_t6",
+          "name": "Parabacteroides",
+          "dir": "down",
+          "refs": "PMC7835370",
+          "note": "Reduced alongside Bacteroides in the same family-level contraction.",
+          "links": [
+            {
+              "id": "new_uc_t6_l1",
+              "label": "Dysbiosis in Polish UC patients (pilot study)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+            }
+          ]
+        },
+        {
+          "id": "new_uc_t7",
+          "name": "Collinsella",
+          "dir": "down",
+          "refs": "PMC7835370",
+          "note": "Actinobacteria-phylum genus depleted in UC cohorts.",
+          "links": [
+            {
+              "id": "new_uc_t7_l1",
+              "label": "Dysbiosis in Polish UC patients (pilot study)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+            }
+          ]
+        },
+        {
+          "id": "new_uc_t8",
+          "name": "Akkermansia muciniphila",
+          "dir": "down",
+          "refs": "Nat Commun",
+          "note": "Mucus-layer specialist depleted alongside broader Verrucomicrobia loss, consistent with the mucosal barrier breakdown seen in UC.",
+          "links": [
+            {
+              "id": "new_uc_t8_l1",
+              "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
+              "url": "https://www.nature.com/articles/s41467-024-54797-8"
+            }
+          ]
+        },
+        {
+          "id": "new_uc_t9",
+          "name": "Prevotella",
+          "dir": "down",
+          "refs": "PMC7835370",
+          "note": "Reduced, part of the general loss of fiber-fermenting Bacteroidetes.",
+          "links": [
+            {
+              "id": "new_uc_t9_l1",
+              "label": "Dysbiosis in Polish UC patients (pilot study)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new_t2d",
+      "name": "Type 2 diabetes",
+      "abbr": "T2D",
+      "color": "#38BDF8",
+      "note": "Directional findings here are more consistent across meta-analyses than the classic 'Firmicutes/Bacteroidetes ratio' obesity story, which large re-analyses (e.g. Sze & Schloss 2016, mBio) have not been able to reproduce — that ratio claim is deliberately NOT used as evidence here.",
+      "links": [
+        {
+          "id": "new_t2d_l1",
+          "label": "Systematic review on gut microbiota in T2DM (PMC11782031)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782031/"
+        },
+        {
+          "id": "new_t2d_l2",
+          "label": "Functional alterations and predictive capacity of gut microbiome in T2D, Sci Rep (s41598-023-49679-w)",
+          "url": "https://www.nature.com/articles/s41598-023-49679-w"
+        },
+        {
+          "id": "new_t2d_l3",
+          "label": "Acylated ghrelin links Akkermansia abundance to insulin resistance in T2D (PMC12343160)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12343160/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "new_t2d_t1",
+          "name": "Akkermansia muciniphila",
+          "dir": "down",
+          "refs": "PMC12343160",
+          "note": "Consistently negatively associated with T2D across cohorts; mechanistic mouse/human work ties its loss to insulin resistance via ghrelin signalling.",
+          "links": [
+            {
+              "id": "new_t2d_t1_l1",
+              "label": "Acylated ghrelin, Akkermansia & insulin resistance in T2D",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12343160/"
+            }
+          ]
+        },
+        {
+          "id": "new_t2d_t2",
+          "name": "Roseburia",
+          "dir": "down",
+          "refs": "PMC11782031",
+          "note": "Butyrate producer negatively associated with T2D in meta-analysis of 7 studies (600 cases/543 controls).",
+          "links": [
+            {
+              "id": "new_t2d_t2_l1",
+              "label": "Systematic review on gut microbiota in T2DM",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782031/"
+            }
+          ]
+        },
+        {
+          "id": "new_t2d_t3",
+          "name": "Faecalibacterium",
+          "dir": "down",
+          "refs": "PMC11782031",
+          "note": "Negatively associated with T2D across the same meta-analysis.",
+          "links": [
+            {
+              "id": "new_t2d_t3_l1",
+              "label": "Systematic review on gut microbiota in T2DM",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782031/"
+            }
+          ]
+        },
+        {
+          "id": "new_t2d_t4",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "PMC11782031",
+          "note": "Negatively associated with T2D; consistent with its broader anti-inflammatory/barrier-supportive role.",
+          "links": [
+            {
+              "id": "new_t2d_t4_l1",
+              "label": "Systematic review on gut microbiota in T2DM",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782031/"
+            }
+          ]
+        },
+        {
+          "id": "new_t2d_t5",
+          "name": "Bacteroides",
+          "dir": "down",
+          "refs": "PMC11782031",
+          "note": "Negatively associated with T2D in the pooled meta-analysis.",
+          "links": [
+            {
+              "id": "new_t2d_t5_l1",
+              "label": "Systematic review on gut microbiota in T2DM",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782031/"
+            }
+          ]
+        },
+        {
+          "id": "new_t2d_t6",
+          "name": "Escherichia/Shigella",
+          "dir": "up",
+          "refs": "PMC11782031",
+          "note": "Positively associated with T2D — a pro-inflammatory, LPS-bearing group consistent with the broader T2D endotoxemia model.",
+          "links": [
+            {
+              "id": "new_t2d_t6_l1",
+              "label": "Systematic review on gut microbiota in T2DM",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782031/"
+            }
+          ]
+        },
+        {
+          "id": "new_t2d_t7",
+          "name": "Fusobacterium",
+          "dir": "up",
+          "refs": "PMC11782031",
+          "note": "Positively associated with T2D across the pooled cohorts.",
+          "links": [
+            {
+              "id": "new_t2d_t7_l1",
+              "label": "Systematic review on gut microbiota in T2DM",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782031/"
+            }
+          ]
+        },
+        {
+          "id": "new_t2d_t8",
+          "name": "Blautia",
+          "dir": "up",
+          "refs": "Frontiers Immunol",
+          "note": "Elevated in T2D in several cohort studies, contrasting with its more neutral/beneficial role elsewhere.",
+          "links": [
+            {
+              "id": "new_t2d_t8_l1",
+              "label": "Gut bacterial characteristics of T2DM patients",
+              "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2021.722206/full"
+            }
+          ]
+        },
+        {
+          "id": "new_t2d_t9",
+          "name": "Lactobacillus",
+          "dir": "up",
+          "refs": "PMC11782031",
+          "note": "Positively associated with T2D in the meta-analysis — a reminder that 'probiotic genus' does not always mean 'protective' at the population level.",
+          "links": [
+            {
+              "id": "new_t2d_t9_l1",
+              "label": "Systematic review on gut microbiota in T2DM",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782031/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new_ra",
+      "name": "Rheumatoid arthritis",
+      "abbr": "RA",
+      "color": "#F43F5E",
+      "note": "The Prevotella copri expansion is the single most-replicated finding in RA gut-microbiome research, first shown in new-onset untreated patients and since reproduced in mouse models of arthritis susceptibility.",
+      "links": [
+        {
+          "id": "new_ra_l1",
+          "label": "Scher et al. 2013 eLife/PMC3816614 — P. copri expansion & arthritis susceptibility",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3816614/"
+        },
+        {
+          "id": "new_ra_l2",
+          "label": "Chen et al. 2020 PMID 32272752 — expansion of rare/harmful lineages in established RA",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32272752/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "new_ra_t1",
+          "name": "Prevotella copri",
+          "dir": "up",
+          "refs": "eLife",
+          "note": "The signature RA finding: expanded in new-onset untreated RA, correlates with disease, and colonizing mice increases susceptibility to arthritis via Th17 induction.",
+          "links": [
+            {
+              "id": "new_ra_t1_l1",
+              "label": "Scher et al. 2013",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3816614/"
+            }
+          ]
+        },
+        {
+          "id": "new_ra_t2",
+          "name": "Collinsella",
+          "dir": "up",
+          "refs": "PMID 32272752",
+          "note": "Overrepresented in RA; reduces tight-junction protein expression in gut epithelium and worsens arthritis severity in a transgenic mouse model.",
+          "links": [
+            {
+              "id": "new_ra_t2_l1",
+              "label": "Chen et al. 2020, expansion of rare/harmful lineages in RA",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32272752/"
+            }
+          ]
+        },
+        {
+          "id": "new_ra_t3",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "PMC9499173",
+          "note": "Reduced in early/established RA — loss of a barrier-supportive, generally anti-inflammatory genus.",
+          "links": [
+            {
+              "id": "new_ra_t3_l1",
+              "label": "Gut microbiota and RA review",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9499173/"
+            }
+          ]
+        },
+        {
+          "id": "new_ra_t4",
+          "name": "Eubacterium rectale",
+          "dir": "down",
+          "refs": "PMC9499173",
+          "note": "Reduced at an early stage of RA alongside the Prevotella copri expansion.",
+          "links": [
+            {
+              "id": "new_ra_t4_l1",
+              "label": "Gut microbiota and RA review",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9499173/"
+            }
+          ]
+        },
+        {
+          "id": "new_ra_t5",
+          "name": "Enterococcus",
+          "dir": "up",
+          "refs": "PMID 32272752",
+          "note": "Increased in established RA cohorts.",
+          "links": [
+            {
+              "id": "new_ra_t5_l1",
+              "label": "Chen et al. 2020, expansion of rare/harmful lineages in RA",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32272752/"
+            }
+          ]
+        },
+        {
+          "id": "new_ra_t6",
+          "name": "Dorea",
+          "dir": "down",
+          "refs": "PMID 32272752",
+          "note": "Decreased (D. formicigenerans specifically) in established RA.",
+          "links": [
+            {
+              "id": "new_ra_t6_l1",
+              "label": "Chen et al. 2020, expansion of rare/harmful lineages in RA",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32272752/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new_pso",
+      "name": "Psoriasis",
+      "abbr": "PSO",
+      "color": "#FACC15",
+      "note": "Caveat: individual studies on psoriasis gut microbiota disagree more than most conditions in this app — even the direction of Faecalibacterium and Bacteroides changes differs across cohorts. The entries below reflect the more commonly replicated direction, but treat this condition's evidence as noisier than average.",
+      "links": [
+        {
+          "id": "new_pso_l1",
+          "label": "PMC8069836 — skin & gut microbiome alterations in psoriasis/PsA",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069836/"
+        },
+        {
+          "id": "new_pso_l2",
+          "label": "PMC8646027 — gut microbiota in development of psoriasis vulgaris",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8646027/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "new_pso_t1",
+          "name": "Faecalibacterium prausnitzii",
+          "dir": "down",
+          "refs": "PMC8646027",
+          "note": "Underrepresented in psoriasis patients vs. healthy controls, consistent with its anti-inflammatory role in other inflammatory/autoimmune conditions.",
+          "links": [
+            {
+              "id": "new_pso_t1_l1",
+              "label": "Gut microbiota in development of psoriasis vulgaris",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8646027/"
+            }
+          ]
+        },
+        {
+          "id": "new_pso_t2",
+          "name": "Bifidobacterium",
+          "dir": "down",
+          "refs": "PMC8646027",
+          "note": "Underrepresented alongside Lactobacillus and F. prausnitzii.",
+          "links": [
+            {
+              "id": "new_pso_t2_l1",
+              "label": "Gut microbiota in development of psoriasis vulgaris",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8646027/"
+            }
+          ]
+        },
+        {
+          "id": "new_pso_t3",
+          "name": "Parabacteroides",
+          "dir": "down",
+          "refs": "PMC8646027",
+          "note": "Underrepresented in psoriasis cohorts.",
+          "links": [
+            {
+              "id": "new_pso_t3_l1",
+              "label": "Gut microbiota in development of psoriasis vulgaris",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8646027/"
+            }
+          ]
+        },
+        {
+          "id": "new_pso_t4",
+          "name": "Escherichia coli",
+          "dir": "up",
+          "refs": "PMC8646027",
+          "note": "Overrepresented alongside other potentially pathogenic species (Salmonella, Campylobacter, Helicobacter).",
+          "links": [
+            {
+              "id": "new_pso_t4_l1",
+              "label": "Gut microbiota in development of psoriasis vulgaris",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8646027/"
+            }
+          ]
+        },
+        {
+          "id": "new_pso_t5",
+          "name": "Akkermansia muciniphila",
+          "dir": "up",
+          "refs": "PMC8069836",
+          "note": "One of the more consistent findings — increased in psoriasis/psoriatic arthritis, an interesting contrast to its 'protective' role in metabolic disease.",
+          "links": [
+            {
+              "id": "new_pso_t5_l1",
+              "label": "Skin & gut microbiome in psoriasis/PsA",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069836/"
+            }
+          ]
+        },
+        {
+          "id": "new_pso_t6",
+          "name": "Ruminococcus",
+          "dir": "up",
+          "refs": "PMC8069836",
+          "note": "Increased in psoriasis alongside Akkermansia and Faecalibacterium in some cohorts — flagged here as one of the conflicting-direction genera; treat cautiously.",
+          "links": [
+            {
+              "id": "new_pso_t6_l1",
+              "label": "Skin & gut microbiome in psoriasis/PsA",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069836/"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
