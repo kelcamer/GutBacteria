@@ -500,7 +500,6 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble)
       if(el.parentNode)el.parentNode.removeChild(el);
       delete pinnedEls[key];
     }
-    selectedNodes.delete(idx);
   }
 
   function closeAllPinned(){
@@ -544,7 +543,7 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble)
       stopped = false;
       if (!raf) raf = requestAnimationFrame(step);
 
-      if (curr === dragNode.i && !selectedNodes.has(dragNode.i)) showPreview(curr);
+      if (curr === dragNode.i && !pinnedEls[String(dragNode.i)]) showPreview(curr);
       return;
     }
 
@@ -553,7 +552,7 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble)
     if (el && el.dataset && el.dataset.i != null) {
       var idx = +el.dataset.i;
       if (idx !== curr) { curr = idx; setHi(curr); }
-      if (!selectedNodes.has(idx)) showPreview(idx);
+      if (!pinnedEls[String(idx)]) showPreview(idx);
     } else {
       if (curr != null) { curr = null; setHi(null); }
       hidePreview();
@@ -571,7 +570,7 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble)
         dragNode.vx = 0; dragNode.vy = 0;
       }
       if (!isDragging) {
-        if (selectedNodes.has(dragNode.i)) {
+        if (pinnedEls[String(dragNode.i)]) {
           closePinned(dragNode.i);
         } else {
           selectedNodes.add(dragNode.i);
@@ -1089,7 +1088,6 @@ function GFA_buildMap(host,tip,conds,mode,scramble){
       if(el.parentNode)el.parentNode.removeChild(el);
       delete pinnedEls[key];
     }
-    selectedNodes.delete(idx);
   }
 
   function closeAllPinned(){
@@ -1133,7 +1131,7 @@ function GFA_buildMap(host,tip,conds,mode,scramble){
       stopped = false;
       if (!raf) raf = requestAnimationFrame(step);
 
-      if (curr === dragNode.i && !selectedNodes.has(dragNode.i)) showPreview(curr);
+      if (curr === dragNode.i && !pinnedEls[String(dragNode.i)]) showPreview(curr);
       return;
     }
 
@@ -1142,7 +1140,7 @@ function GFA_buildMap(host,tip,conds,mode,scramble){
     if (el && el.dataset && el.dataset.i != null) {
       var idx = +el.dataset.i;
       if (idx !== curr) { curr = idx; setHi(curr); }
-      if (!selectedNodes.has(idx)) showPreview(idx);
+      if (!pinnedEls[String(idx)]) showPreview(idx);
     } else {
       if (curr != null) { curr = null; setHi(null); }
       hidePreview();
@@ -1157,7 +1155,7 @@ function GFA_buildMap(host,tip,conds,mode,scramble){
         dragNode.vx = 0; dragNode.vy = 0;
       }
       if (!isDragging) {
-        if (selectedNodes.has(dragNode.i)) {
+        if (pinnedEls[String(dragNode.i)]) {
           closePinned(dragNode.i);
         } else {
           selectedNodes.add(dragNode.i);
