@@ -8906,6 +8906,111 @@
      ]
     }
    ]
+  },
+  {
+   "id": "new_tbi",
+   "name": "Traumatic Brain Injury",
+   "abbr": "TBI",
+   "color": "#4338CA",
+   "note": "Emerging area \u2014 the field is heavily animal-model-dominated (a 2020 systematic review found only 1 of 7 qualifying studies used human subjects), and this app only draws from human/clinical data. Two solid human primary studies anchor this entry: an antibiotic-naive TBI cohort profiled by 16S rRNA within 8 days of hospitalization, and a clinical-trial cohort's subgroup analysis of who developed cognitive impairment after mild TBI. Comparable in depth to this app's Cannabis/THC entry \u2014 genuinely thin-but-real, not an established evidence base.",
+   "links": [
+    {
+     "id": "new_tbi_l1",
+     "label": "Gut microbiota and TBI: insights from an antibiotic-free cohort, 2025 (PMID 41551652)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41551652/"
+    },
+    {
+     "id": "new_tbi_l2",
+     "label": "Protective role of Hungatella hathewayi for post-mTBI cognitive impairment, 2026 (PMID 41617714)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41617714/"
+    }
+   ],
+   "taxa": [
+    {
+     "id": "new_tbi_t1",
+     "name": "Eubacterium",
+     "dir": "down",
+     "refs": "PMID 41551652",
+     "note": "Depleted SCFA-producing genus in TBI patients profiled within 8 days of injury (antibiotic-naive, 16S rRNA) vs healthy controls.",
+     "links": [
+      {
+       "id": "new_tbi_t1_l1",
+       "label": "Gut microbiota and TBI: insights from an antibiotic-free cohort, 2025 (PMID 41551652)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41551652/"
+      }
+     ]
+    },
+    {
+     "id": "new_tbi_t2",
+     "name": "Agathobacter",
+     "dir": "down",
+     "refs": "PMID 41551652",
+     "note": "Depleted SCFA-producing genus in the same antibiotic-naive TBI cohort, alongside Eubacterium.",
+     "links": [
+      {
+       "id": "new_tbi_t2_l1",
+       "label": "Gut microbiota and TBI: insights from an antibiotic-free cohort, 2025 (PMID 41551652)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41551652/"
+      }
+     ]
+    },
+    {
+     "id": "new_tbi_t3",
+     "name": "Escherichia/Shigella",
+     "dir": "up",
+     "refs": "PMID 41551652",
+     "note": "Enriched dysbiosis-associated genera in TBI patients vs healthy controls in the antibiotic-naive cohort.",
+     "links": [
+      {
+       "id": "new_tbi_t3_l1",
+       "label": "Gut microbiota and TBI: insights from an antibiotic-free cohort, 2025 (PMID 41551652)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41551652/"
+      }
+     ]
+    },
+    {
+     "id": "new_tbi_t4",
+     "name": "Lactobacillus",
+     "dir": "up",
+     "refs": "PMID 41551652",
+     "note": "Elevated in TBI patients in the same cohort; authors framed this as a possible compensatory response rather than a harmful shift.",
+     "links": [
+      {
+       "id": "new_tbi_t4_l1",
+       "label": "Gut microbiota and TBI: insights from an antibiotic-free cohort, 2025 (PMID 41551652)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41551652/"
+      }
+     ]
+    },
+    {
+     "id": "new_tbi_t5",
+     "name": "Faecalibacillus intestinalis",
+     "dir": "down",
+     "refs": "PMID 41551652",
+     "note": "Depleted SCFA-producing species in the antibiotic-naive TBI cohort, alongside Eubacterium and Agathobacter.",
+     "links": [
+      {
+       "id": "new_tbi_t5_l1",
+       "label": "Gut microbiota and TBI: insights from an antibiotic-free cohort, 2025 (PMID 41551652)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41551652/"
+      }
+     ]
+    },
+    {
+     "id": "new_tbi_t6",
+     "name": "Hungatella hathewayi",
+     "dir": "down",
+     "refs": "PMID 41617714",
+     "note": "Subgroup finding, not simple TBI-vs-healthy: within a clinical-trial cohort of mild-TBI patients, those who went on to develop cognitive impairment had lower Hungatella hathewayi than those who didn't \u2014 a rat mechanism arm in the same study supported a protective, cognition-related role.",
+     "links": [
+      {
+       "id": "new_tbi_t6_l1",
+       "label": "Protective role of Hungatella hathewayi for post-mTBI cognitive impairment, 2026 (PMID 41617714)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41617714/"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
