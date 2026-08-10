@@ -1,0 +1,2195 @@
+{
+ "version": 1,
+ "symptoms": [
+  "Bloating & gas",
+  "Abdominal pain",
+  "Diarrhea",
+  "Constipation",
+  "Nausea",
+  "Loss of appetite",
+  "Gut barrier dysfunction",
+  "Systemic inflammation",
+  "Immune dysregulation",
+  "Chronic pain",
+  "Joint pain",
+  "Metabolic dysregulation",
+  "Fatigue",
+  "Headache / migraine",
+  "Overstimulation",
+  "Understimulation",
+  "Restlessness",
+  "Paresthesia / numbness",
+  "Dizziness / orthostatic intolerance",
+  "Brain fog",
+  "Anxiety",
+  "Depressed mood",
+  "Mania",
+  "OCD symptoms",
+  "Irritability",
+  "Sleep disturbance",
+  "Reduced socializing",
+  "Histamine reactions",
+  "Acne / skin flares",
+  "Alcohol-related dysbiosis",
+  "Smoking-related dysbiosis",
+  "Cannabis-related dysbiosis",
+  "Exercise-associated microbiota changes",
+  "Lack of impulse control"
+ ],
+ "bacteria": [
+  {
+   "name": "Bifidobacterium",
+   "count": 7,
+   "up": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Significantly higher relative abundance in physically active adults vs. sedentary/pre-intervention baseline, across a 25-study meta-analysis of RCTs and crossover trials.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "RCTs of B. infantis 35624 / B. longum / B. bifidum MIMBb75 reduced bloating & abdominal distension vs placebo.",
+     "ref": "PMC7456408",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7456408/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Systematic review: ~50% of RCTs found significant abdominal-pain improvement with Bifidobacterium supplementation.",
+     "ref": "PMC7456408",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7456408/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "B. infantis 35624 normalizes anti-/pro-inflammatory cytokine ratio; modulates innate & adaptive immunity.",
+     "ref": "PMC9450040",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9450040/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "Sensory under-responsivity showed a significant negative correlation with Bifidobacterium abundance in autistic children.",
+     "ref": "PMC11484847",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11484847/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Depleted across the pooled human/animal ethanol-dysbiosis studies.",
+     "ref": "PMID 41011331",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Positively associated with the UPPS-premeditation facet \u2014 i.e. higher levels track with more forethought and less impulsive action \u2014 in the same cohort; framed here as depleted in the lower-premeditation, more-impulsive state.",
+     "ref": "Translational Psychiatry 2025 (PMID 40753077)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
+    }
+   ]
+  },
+  {
+   "name": "Faecalibacterium",
+   "count": 12,
+   "up": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Butyrate producer (F. prausnitzii) consistently increased with exercise in an obesity/type 2 diabetes-specific meta-analysis \u2014 directly relevant since this genus is tracked as depleted across most conditions elsewhere in this app.",
+     "ref": "Meta-analysis, 19 studies, n=1,062 obesity/T2D patients (PMID 41070132)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41070132/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Abdominal pain",
+     "note": "F. prausnitzii shows anti-nociceptive effects in IBS-like rodent models; reduced in IBD vs healthy controls.",
+     "ref": "PMC4726104 / PMC3985188",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4726104/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Induces IL-10 anti-inflammatory signaling; supernatant lowers tissue cytokines & intestinal permeability in mouse colitis models.",
+     "ref": "PMID 25888448",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25888448/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Reinforces intestinal epithelial barrier; loss linked to permeability defects.",
+     "ref": "PMID 37793274",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37793274/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "Minerbi et al. 2019: depleted in fibromyalgia; FMT from fibromyalgia patients into mice induced pain sensitivity.",
+     "ref": "Minerbi 2019 / PMC11671092",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11671092/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Migraine microbiome signature shows reduced health-promoting genera including Faecalibacterium alongside Roseburia.",
+     "ref": "PMC12096802",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Loss of appetite",
+     "note": "Major butyrate producer; depletion is linked to disrupted SCFA-driven appetite-hormone signalling.",
+     "ref": "PMID 34284827 (Microbiome review)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34284827/"
+    },
+    {
+     "symptom": "Reduced socializing",
+     "note": "Found at significantly lower abundance in autistic children vs. neurotypical peers in mucosa-associated bacteria studies.",
+     "ref": "PMC8474478",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8474478/"
+    },
+    {
+     "symptom": "Mania",
+     "note": "Within bipolar patients, lower Faecalibacterium correlated with higher (worse) Altman Mania Rating Scale scores and more severe symptoms.",
+     "ref": "PMID 27988330",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27988330/"
+    },
+    {
+     "symptom": "Histamine reactions",
+     "note": "Reduced in histamine-intolerant patients alongside the histamine-former bloom \u2014 loss of this generally protective, anti-inflammatory genus tracks with worse histamine handling.",
+     "ref": "PMC9102523",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9102523/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Butyrate-producing genus whose abundance positively correlates with cognitive-function scores and negatively correlates with inflammatory cytokines in AUD; used as a predictive indicator of cognitive impairment alongside Gemmiger and Escherichia.",
+     "ref": "PMC9814012",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9814012/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Depleted across human and animal ethanol-dysbiosis studies \u2014 loss of the anti-inflammatory, butyrate-producing genus that's already low across most inflammatory conditions in this app.",
+     "ref": "PMID 41011331",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    }
+   ]
+  },
+  {
+   "name": "Roseburia",
+   "count": 8,
+   "up": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Butyrate producer (especially R. hominis) with significantly higher relative abundance in actively exercising adults; independently confirmed in an obesity/T2D-specific meta-analysis.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Reduced fiber fermentation and butyrate output linked to bloating, gas and irregularity.",
+     "ref": "PMC8647967",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8647967/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Low Roseburia associated with impaired motility/irregularity from reduced butyrate.",
+     "ref": "PMC8647967",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8647967/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Butyrate depletion associated with low energy and brain fog in reviews of low-Roseburia states.",
+     "ref": "PMC8647967",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8647967/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Butyrate loss linked to IBD, T2DM and inflammatory disease states.",
+     "ref": "PMC8647967",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8647967/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Systematic review: Roseburia significantly reduced in chronic migraine patients.",
+     "ref": "PMC12391207 / PMC12096802",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12391207/"
+    },
+    {
+     "symptom": "Loss of appetite",
+     "note": "SCFA producer; microbial short-chain fatty acids stimulate anorexigenic gut hormones (PYY, GLP-1, leptin) that regulate satiety and appetite.",
+     "ref": "PMID 34284827 (Microbiome review)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34284827/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Depleted in this app's iron-deficiency-state taxa; iron-deficiency anemia is a documented cause of orthostatic hypotension/dizziness, and low iron storage is elevated in adolescent POTS.",
+     "ref": "PMC11488462 / PMID 23720007",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11488462/"
+    }
+   ]
+  },
+  {
+   "name": "Lactobacillus",
+   "count": 7,
+   "up": [
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Elevated in this app's iron-deficiency-state taxa; iron-deficiency anemia is a documented cause of orthostatic hypotension/dizziness, and low iron storage is elevated in adolescent POTS.",
+     "ref": "PMC11488462 / PMID 23720007",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11488462/"
+    },
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Enriched after high-intensity exercise; supports lipid metabolism, per a meta-analysis of 25 RCT/crossover studies.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Anxiety",
+     "note": "Psychobiotic genus; depletion repeatedly linked to elevated anxiety/mood symptoms across gut-brain-axis reviews.",
+     "ref": "PMC12044767",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12044767/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "Loss of Lactobacillus linked to reduced mucosal immune modulation.",
+     "ref": "PMC12044767",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12044767/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "Sensory under-responsivity showed a significant negative correlation with L. plantarum abundance in autistic children (lower Lactobacillus, higher under-responsivity).",
+     "ref": "PMC11484847",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11484847/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Genus Lactobacillus abundance was negatively (causally) correlated with acne vulgaris incidence in Mendelian-randomization analysis.",
+     "ref": "PMC10507220",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10507220/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Consistently depleted with chronic ethanol exposure.",
+     "ref": "PMID 41011331",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    }
+   ]
+  },
+  {
+   "name": "Prevotella",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Joint pain",
+     "note": "P. copri expansion correlates with susceptibility to arthritis; abundant in new-onset untreated rheumatoid arthritis.",
+     "ref": "PMID 24192039 / PMID 24275964",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24192039/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Drives Th17-biased immune responses linked to autoimmune inflammation in animal models.",
+     "ref": "PMID 36323929",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36323929/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Chronic pain",
+     "note": "P. copri (a distinct signal from its up-regulation in arthritis) was depleted in fibromyalgia patients in Minerbi et al. 2019.",
+     "ref": "Minerbi 2019 / PMC11671092",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11671092/"
+    },
+    {
+     "symptom": "Cannabis-related dysbiosis",
+     "note": "Chronic marijuana users (n=19) had a ~13-fold lower Prevotella:Bacteroides ratio than non-users (n=20); lifetime use correlated inversely with the ratio and with attention/inhibitory-control scores.",
+     "ref": "PMID 29101632",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29101632/"
+    }
+   ]
+  },
+  {
+   "name": "Eubacterium",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Overstimulation",
+     "note": "Elevated alongside Eggerthella and Sutterella in children with migraine, a condition defined by sensory hypersensitivity (photophobia/phonophobia) that clinically co-occurs with misophonia (comorbidity evidence, not a direct bacteria-misophonia study).",
+     "ref": "PMC7001586 / PMC12308847",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001586/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Blautia",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Bacteroidetes",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies \u2014 treat as weak evidence.",
+     "ref": "PMID 27529273",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Phylum-level decrease post-exercise (effect size -0.29, p=0.013) across pooled RCT/crossover data.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ]
+  },
+  {
+   "name": "Escherichia/Shigella",
+   "count": 7,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Expansion raises LPS-driven endotoxemia; linked to elevated TNF-\u03b1/IL-6 and blood-brain-barrier tight-junction disruption.",
+     "ref": "PMC9769903",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9769903/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "LPS-driven inflammation via the gut-brain axis affects brain function and focus.",
+     "ref": "PMC9769903",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9769903/"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Significantly elevated in generalized anxiety disorder cohorts.",
+     "ref": "Baske et al. 2024, J Affect Disord systematic review",
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165032724005111"
+    },
+    {
+     "symptom": "Nausea",
+     "note": "Facultative-anaerobe overgrowth (incl. E. coli) implicated in SIBO, which commonly presents with nausea.",
+     "ref": "PMID 23997926",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23997926/"
+    },
+    {
+     "symptom": "Paresthesia / numbness",
+     "note": "Overgrowth of coliforms including E. coli drives SIBO-related B12 malabsorption and peripheral paresthesia.",
+     "ref": "PMC7279035",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7279035/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Gut microbiota composition is altered in POTS; facultative-anaerobe overgrowth co-occurs with orthostatic intolerance.",
+     "ref": "PMC10858216",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10858216/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Increased at the genus level in AUD patients relative to healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
+     "ref": "Frontiers Psychiatry",
+     "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1054685/full"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Firmicutes",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies \u2014 treat as weak evidence.",
+     "ref": "PMID 27529273",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/"
+    },
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Significant phylum-level increase post-exercise (effect size 1.49, p<0.0001) across pooled RCT/crossover data \u2014 though the resulting Firmicutes/Bacteroidetes ratio shift is of debated clinical significance for metabolic health.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "Lower in current smokers; increased after smoking cessation in the same cohort.",
+     "ref": "PMC3597605",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+    }
+   ]
+  },
+  {
+   "name": "Enterobacteriaceae",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Family containing Escherichia/Shigella/Klebsiella; blooms are a recognized dysbiosis/endotoxemia signature.",
+     "ref": "PMC9769903",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9769903/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Elevated in this app's iron-deficiency-state taxa; iron-deficiency anemia is a documented cause of orthostatic hypotension/dizziness.",
+     "ref": "PMC11488462 / PMID 39929492",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11488462/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Coprococcus",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Butyrate-producing genus with enrichment noted in exercising adults across pooled RCT/crossover data.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Depressed mood",
+     "note": "Depleted alongside Dialister in populations with lower quality of life and depression (Flemish Gut Flora Project).",
+     "ref": "Nat Microbiol s41564-018-0337-x",
+     "url": "https://www.nature.com/articles/s41564-018-0337-x"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Butyrate-producing genus; loss tracks with low-energy, low-mood states.",
+     "ref": "Nat Microbiol s41564-018-0337-x",
+     "url": "https://www.nature.com/articles/s41564-018-0337-x"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    }
+   ]
+  },
+  {
+   "name": "Clostridium",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "Reduced by cigarette smoke exposure per the structured review.",
+     "ref": "PMC11658948",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+    }
+   ]
+  },
+  {
+   "name": "Ruminococcaceae",
+   "count": 4,
+   "up": [],
+   "down": [
+    {
+     "symptom": "OCD symptoms",
+     "note": "Two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD \u2014 i.e. lower levels causally associated with OCD risk.",
+     "ref": "PMID 40056996",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
+    },
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Akkermansia",
+   "count": 5,
+   "up": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Consistently increased with exercise across both a general-adult meta-analysis and a separate obesity/T2D-specific meta-analysis \u2014 one of the most reproducible exercise-microbiome findings; this genus is tracked as depleted in several conditions elsewhere in this app, making it a strong 'exercise counteracts X' candidate.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "A. muciniphila restores mucus-layer thickness and Reg3g expression; abundance falls in obesity/T2DM.",
+     "ref": "Tandfonline 2024, Gut Microbes/Virulence review",
+     "url": "https://www.tandfonline.com/doi/full/10.1080/21505594.2024.2375555"
+    },
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Improves insulin sensitivity, adiposity and GLP-1 secretion via SCFA/TLR2 signalling; depleted in metabolic disease.",
+     "ref": "PMC12691757",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12691757/"
+    },
+    {
+     "symptom": "Reduced socializing",
+     "note": "Found at significantly lower abundance in autistic children vs. neurotypical peers in mucosa-associated bacteria studies.",
+     "ref": "PMC8474478",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8474478/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Mucin-degrading, barrier-supportive species depleted alongside the broader loss of protective commensals in alcohol use disorder.",
+     "ref": "PMID 41011331",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    }
+   ]
+  },
+  {
+   "name": "Lachnospiraceae",
+   "count": 5,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Commensal family showing relative decrease in heavy alcohol consumers.",
+     "ref": "PMC7504034",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    }
+   ]
+  },
+  {
+   "name": "Collinsella",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Alters gut permeability in experimental arthritis; correlates with increased epithelial permeability.",
+     "ref": "PMC7524262",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7524262/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Correlates with proinflammatory IL-17A production and cumulative inflammatory burden in rheumatoid arthritis.",
+     "ref": "PMID 36076603",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36076603/"
+    },
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Associated with insulin resistance, metabolic syndrome and cardiovascular risk factors.",
+     "ref": "PMC7524262",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7524262/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Lachnospira",
+   "count": 4,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Depletion of Lachnospira pectinoschiza correlated with OCD obsession-subscale severity (Domenech 2022); \u2193 in the Law 2023 synthesis.",
+     "ref": "Law 2023 (Gut/BMJ IDDF abstract; systematic review: \u2193\u03b1-diversity; \u2191Alistipes/Rikenellaceae, \u2193Prevotellaceae + butyrate producers; probiotics may help)",
+     "url": "https://gut.bmj.com/content/72/Suppl_1/A135.1"
+    }
+   ]
+  },
+  {
+   "name": "Actinobacteria",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Mania",
+     "note": "Phylum Actinobacteria (LDA 4.82, p=0.007) and class Coriobacteria (LDA 4.75, p=0.010) significantly more abundant in bipolar disorder inpatients during a depressive episode vs. healthy controls (Painold et al. 2019, n=32 BD/10 HC).",
+     "ref": "PMID 30051546",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Immune dysregulation",
+     "note": "Phylum containing Bifidobacterium/Collinsella/Eggerthella; broad depletion tracks with reduced mucosal immune modulation.",
+     "ref": "Binda et al. 2018, Dig Liver Dis",
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S159086581830210X"
+    },
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "Lower in current smokers; increased after smoking cessation, the same pattern as Firmicutes.",
+     "ref": "PMC3597605",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+    }
+   ]
+  },
+  {
+   "name": "Streptococcus",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Brain fog",
+     "note": "Elevated levels associated with sustained neuroinflammation and oxidative stress.",
+     "ref": "PMC12028401",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12028401/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "A serotonin-producing genus; overproduction linked to tryptophan depletion and hyperserotonemia with GI/mood effects.",
+     "ref": "PMC12028401",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12028401/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Oral-origin genus that shows relative increase with heavy alcohol consumption and more pronounced blooms in alcoholic liver disease.",
+     "ref": "PMC5645934",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5645934/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Consistently lower abundance after exercise intervention across pooled RCT/crossover studies \u2014 notable since Streptococcus is tracked as elevated in several inflammatory/infectious contexts elsewhere in this app.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ]
+  },
+  {
+   "name": "Alistipes",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Anxiety",
+     "note": "Increased with stress exposure; indole-positive metabolism reduces serotonin availability, disrupting the gut-brain axis.",
+     "ref": "PMC12270276",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12270276/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Elevated in major depressive disorder; Alistipes-linked metabolites correlate with affective/cognitive MRI measures.",
+     "ref": "PMC12270276",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12270276/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: increased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "Reduced by chronic cigarette smoke exposure; also a genus positively associated with healthy body weight.",
+     "ref": "PMC11658948",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+    }
+   ]
+  },
+  {
+   "name": "Anaerostipes",
+   "count": 5,
+   "up": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "SCFA-producing Firmicutes genus with increased abundance after exercise intervention, positively correlated with insulin sensitivity and cardiorespiratory fitness.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes).",
+     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
+    }
+   ]
+  },
+  {
+   "name": "Fusicatenibacter",
+   "count": 4,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Showed a suggestive protective association against acne vulgaris in the same Mendelian-randomization analysis.",
+     "ref": "PMC10507220",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10507220/"
+    }
+   ]
+  },
+  {
+   "name": "Proteobacteria",
+   "count": 5,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Alcohol metabolism generates reactive-oxygen-species-driven epithelial damage and tight-junction disruption, enabling bacterial translocation of Gram-negative (Proteobacteria) LPS into the portal circulation \u2014 the classic alcohol 'leaky gut' mechanism.",
+     "ref": "PMC12034794",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12034794/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Expansion of this LPS-bearing, pro-inflammatory phylum is one of the most consistent findings in alcohol-related dysbiosis.",
+     "ref": "PMID 41011331",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "Higher in current smokers; fell after smoking cessation in a controlled before/after cohort.",
+     "ref": "PMC3597605",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Lachnoclostridium",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Restlessness",
+     "note": "Significantly reduced in restless legs syndrome; genus modulates systemic inflammation via SCFA production, linked to dopaminergic/iron pathways implicated in RLS.",
+     "ref": "PMID 41378921",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41378921/"
+    }
+   ]
+  },
+  {
+   "name": "Dialister",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Depressed mood",
+     "note": "Depleted in depression alongside Coprococcus in large population cohort microbiome studies.",
+     "ref": "Nat Microbiol s41564-018-0337-x",
+     "url": "https://www.nature.com/articles/s41564-018-0337-x"
+    }
+   ]
+  },
+  {
+   "name": "Parabacteroides",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "P. distasonis produces succinate/secondary bile acids that improve insulin sensitivity; depletion tracks with metabolic disease in mouse & cohort studies.",
+     "ref": "PMID 30605678",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30605678/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Loss associated with reduced short-chain fatty acid and bile-acid signalling supporting barrier integrity.",
+     "ref": "PMID 30605678",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30605678/"
+    },
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Lower abundance after exercise intervention across pooled RCT/crossover studies.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ]
+  },
+  {
+   "name": "Eisenbergiella",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Hungatella",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Agathobacter",
+   "count": 4,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    }
+   ]
+  },
+  {
+   "name": "Methanobrevibacter",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Constipation",
+     "note": "Archaeal methane producer; overgrowth is the established mechanism behind constipation-predominant SIBO/IBS-C.",
+     "ref": "PMC9722381",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9722381/"
+    },
+    {
+     "symptom": "Bloating & gas",
+     "note": "Methane slows gut transit and is directly correlated with bloating severity.",
+     "ref": "PMC9722381",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9722381/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Enriched in Parkinson's disease patients with dopaminergic-therapy-induced impulse control disorders (14 ICD vs 177 non-ICD patients, 16S rRNA) \u2014 population-specific finding, flagged since it's not a general-population result.",
+     "ref": "Int J Mol Sci 2025 (PMID 40649930)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40649930/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Flavonifractor",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Enterococcus",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Elevated in this app's iron-deficiency-state taxa; iron-deficiency anemia is a documented cause of orthostatic hypotension/dizziness.",
+     "ref": "PMC11488462 / PMID 39929492",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11488462/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Expanded alongside Proteobacteria and Veillonella as part of the pro-inflammatory taxa bloom in alcohol use disorder.",
+     "ref": "PMID 41011331",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Butyricicoccus",
+   "count": 4,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Negatively associated with the UPPS-urgency facet of trait impulsivity in a general-population cohort (n=913, neurotypical adults); also correlated with healthier dietary patterns (higher fiber/fruit/vegetable intake, less sugary drinks).",
+     "ref": "Translational Psychiatry 2025 (PMID 40753077)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
+    }
+   ]
+  },
+  {
+   "name": "Prevotellaceae",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Joint pain",
+     "note": "Family-level signal mirrors Prevotella copri's arthritis association.",
+     "ref": "PMID 24192039",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24192039/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
+     "ref": "PMC7504034",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    }
+   ]
+  },
+  {
+   "name": "Christensenellaceae",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Dorea",
+   "count": 5,
+   "up": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Acetate-producing genus directly associated with glucose regulation; increased abundance after exercise intervention.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Cannabis-related dysbiosis",
+     "note": "Lower in marijuana-using people with HIV in a preliminary cross-sectional study \u2014 population-specific finding.",
+     "ref": "Preliminary (HIV+ cohort)",
+     "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
+    }
+   ]
+  },
+  {
+   "name": "Gemmiger",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Phascolarctobacterium",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Verrucomicrobia",
+   "count": 2,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Phylum containing Akkermansia; depletion tracks mucus-layer thinning.",
+     "ref": "Tandfonline 2024, Gut Microbes/Virulence review",
+     "url": "https://www.tandfonline.com/doi/full/10.1080/21505594.2024.2375555"
+    },
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Phylum-level signal mirrors Akkermansia's metabolic associations.",
+     "ref": "PMC12691757",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12691757/"
+    }
+   ]
+  },
+  {
+   "name": "Odoribacter",
+   "count": 4,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes).",
+     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
+    }
+   ]
+  },
+  {
+   "name": "Ruminococcus gnavus",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Blooms during Crohn's flares and degrades mucin via glycosidases, thinning the mucus barrier.",
+     "ref": "PMC6601261",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6601261/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Produces an inflammatory glucorhamnan polysaccharide that triggers TNF\u03b1 from dendritic cells.",
+     "ref": "PMC6601261 / PNAS 1904099116",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6601261/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Eggerthella",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently elevated across 8+ depression/anxiety studies; Mendelian randomization suggests a causal link.",
+     "ref": "PMID 36473852",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36473852/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Can remove dopamine's hydroxyl group, lowering dopamine and plausibly affecting cognition/mood.",
+     "ref": "Nat Rev Microbiol s41579-026-01344-5",
+     "url": "https://www.nature.com/articles/s41579-026-01344-5"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "Elevated in children with migraine as part of an inflammatory dysbiosis pattern; migraine's hallmark accompanying symptoms are photophobia/phonophobia. A 2025 study found misophonia is a common, clinically significant comorbidity in migraine sharing this same sensory-hypersensitivity phenotype (comorbidity evidence, not a direct bacteria-misophonia study).",
+     "ref": "PMC7001586 / PMC12308847",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001586/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Subdoligranulum",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Parasutterella",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Overstimulation",
+     "note": "Same genus grouping as Sutterella; elevated in pediatric migraine's inflammatory dysbiosis pattern linked to photophobia/phonophobia, which clinically co-occurs with misophonia (comorbidity evidence, not a direct bacteria-misophonia study).",
+     "ref": "PMC7001586 / PMC12308847",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001586/"
+    },
+    {
+     "symptom": "Reduced socializing",
+     "note": "Same genus grouping as Sutterella; linked to social-reciprocity outcomes in autism-behavior microbiome research.",
+     "ref": "Sci Rep s41598-020-72386-9",
+     "url": "https://www.nature.com/articles/s41598-020-72386-9"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Repeatedly flagged in autism-spectrum GI-symptom microbiome studies.",
+     "ref": "PMID 31752095 (autism GI review)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31752095/"
+    },
+    {
+     "symptom": "Diarrhea",
+     "note": "Associated with GI symptom severity in autism cohorts.",
+     "ref": "PMID 31752095 (autism GI review)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31752095/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Veillonella",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Headache / migraine",
+     "note": "Elevated as part of the potentially-pathogenic dysbiosis pattern seen in migraine microbiome studies.",
+     "ref": "PMC12096802",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "note": "Expanded in the pooled meta-analysis; also one of the oral-origin taxa that invades the gut in more advanced alcohol-related liver disease.",
+     "ref": "PMID 41011331",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Fusobacterium",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Cannabis-related dysbiosis",
+     "note": "Positively correlated with marijuana use across observational studies synthesized in a 2025 systematic review.",
+     "ref": "Thu et al. 2025 review",
+     "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Erysipelatoclostridium",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Enterocloster",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Catenibacterium",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Bacteroides",
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies \u2014 treat as weak evidence.",
+     "ref": "PMID 27529273",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Mendelian-randomization analysis found genus Bacteroides (OR\u22482.25) and family Bacteroidaceae causally increased acne vulgaris risk.",
+     "ref": "PMC10507220",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10507220/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "note": "Consistently lower abundance after exercise intervention across pooled RCT/crossover studies.",
+     "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    }
+   ]
+  },
+  {
+   "name": "Bacteroidales",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Desulfovibrio",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Abdominal pain",
+     "note": "Sulfate-reducing genus; H2S byproduct disrupts colonic epithelial morphology and function.",
+     "ref": "MDPI Microorganisms 11(7):1772",
+     "url": "https://www.mdpi.com/2076-2607/11/7/1772"
+    },
+    {
+     "symptom": "Diarrhea",
+     "note": "Overgrowth found across IBD, IBS and colitis; H2S implicated in colitis severity.",
+     "ref": "PMC11282857",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11282857/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "H2S accumulation implicated in initiation/maintenance of inflammatory bowel disease.",
+     "ref": "PMID 31330956",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31330956/"
+    },
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "Sulfate-reducing, H2S-producing genus increased by cigarette smoke exposure.",
+     "ref": "PMC11658948",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Veillonellaceae",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Turicibacter",
+   "count": 2,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Turicibacter expresses TuriSERT, a bacterial homolog of the human serotonin transporter (SERT), and imports host 5-HT \u2014 a mechanism inhibited by SSRIs like fluoxetine (Fung et al. 2019, Nat Microbiol).",
+     "ref": "PMID 31477894",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31477894/"
+    },
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "Reduced by cigarette smoke exposure alongside Clostridium.",
+     "ref": "PMC11658948",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+    }
+   ]
+  },
+  {
+   "name": "Bilophila",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "LPS-bearing pathobiont increased alongside Desulfovibrio in smokers.",
+     "ref": "PMC11658948",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+    }
+   ],
+   "down": [
+    {
+     "symptom": "OCD symptoms",
+     "note": "Same 2025 Mendelian randomization study found Bilophila (Proteobacteria) also has a protective causal effect against OCD \u2014 i.e. lower levels causally linked to higher OCD risk (same direction logic as the Ruminococcaceae entry, not a contradiction).",
+     "ref": "PMID 40056996",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
+    }
+   ]
+  },
+  {
+   "name": "Tyzzerella",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Anaerococcus",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Succinivibrio",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Megasphaera",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Haemophilus",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Tenericutes",
+   "count": 0,
+   "up": [],
+   "down": []
+  },
+  {
+   "name": "Rikenellaceae",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Anxiety",
+     "note": "Family containing Alistipes; broad signal mirrors Alistipes mood associations.",
+     "ref": "PMC12270276 (Alistipes)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12270276/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: increased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Oscillospira",
+   "count": 2,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Associated with leanness/satiety signalling in diet-microbiome studies; depletion linked to metabolic shifts.",
+     "ref": "PMID 28028921",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28028921/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes).",
+     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
+    }
+   ]
+  },
+  {
+   "name": "Streptococcaceae",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Gut Streptococcus abundance positively associated with circulating systemic-inflammation biomarkers and subclinical coronary atherosclerosis (SCAPIS cohort, n=8,973).",
+     "ref": "PMC10399955",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10399955/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Pseudoflavonifractor",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Anaerotaenia",
+   "count": 0,
+   "up": [],
+   "down": []
+  },
+  {
+   "name": "Christensenella",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Intestinimonas",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Mitsuokella",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Olsenella",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Olsenella scatoligenes-derived skatole promotes vascular smooth-muscle proliferation/migration, aggravating atherosclerosis; genus also positively associated with T2D and Parkinson's risk in Mendelian-randomization studies.",
+     "ref": "PMC12613830",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12613830/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Lentisphaerae",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Elevated in NAFLD patients alongside intestinal inflammation and impaired mucosal immune function; evidence is mixed across other conditions (protective association reported in sepsis) \u2014 treat as suggestive, not conclusive.",
+     "ref": "Sci Rep srep08096",
+     "url": "https://www.nature.com/articles/srep08096"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Klebsiella",
+   "count": 6,
+   "up": [
+    {
+     "symptom": "Nausea",
+     "note": "Classic SIBO overgrowth organism; nausea is a common presenting symptom of small intestinal bacterial overgrowth.",
+     "ref": "PMID 23997926",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23997926/"
+    },
+    {
+     "symptom": "Paresthesia / numbness",
+     "note": "SIBO organism; bacterial overgrowth consumes vitamin B12, and resulting B12 deficiency causes tingling/numbness in hands and feet.",
+     "ref": "PMC7279035",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7279035/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "SIBO found in ~69% of POTS patients in clinical case series; overgrowth organisms implicated in the gut-autonomic link.",
+     "ref": "PMC10858216 / atrantil SIBO-POTS series",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10858216/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "PMC5688358",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Histamine reactions",
+     "note": "K. aerogenes strains carrying a histidine-decarboxylase gene variant were identified as major gut histamine producers, highly abundant in 3 independent IBS cohorts; colonizing germ-free mice with high-histamine IBS microbiota caused visceral hyperalgesia via histamine-4-receptor signalling.",
+     "ref": "PMID 35895832",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35895832/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Coprobacillus",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Ruthenibacterium",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Sutterella",
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Overstimulation",
+     "note": "Elevated in pediatric migraine's inflammatory dysbiosis pattern; separately, Sutterella is repeatedly flagged in autism sensory over-responsivity brain-gut-microbiome models. Misophonia is a documented comorbidity of migraine's sensory-hypersensitivity phenotype (comorbidity evidence, not a direct bacteria-misophonia study).",
+     "ref": "PMC7001586 / PMID 41779338 / PMC12308847",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001586/"
+    },
+    {
+     "symptom": "Reduced socializing",
+     "note": "Sutterella abundance was associated with social reciprocity scale scores in a prospective infant gut-microbiome study.",
+     "ref": "Sci Rep s41598-020-72386-9",
+     "url": "https://www.nature.com/articles/s41598-020-72386-9"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Repeatedly flagged in autism-spectrum GI-symptom microbiome studies.",
+     "ref": "PMID 31752095 (autism GI review)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31752095/"
+    },
+    {
+     "symptom": "Diarrhea",
+     "note": "Associated with GI symptom severity in autism cohorts.",
+     "ref": "PMID 31752095 (autism GI review)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31752095/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Butyricimonas",
+   "count": 3,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Bloating & gas",
+     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "PMC6421268",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ]
+  },
+  {
+   "name": "Erysipelotrichaceae",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
+     "ref": "PMC7524151",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Ruminococcus torques",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "A keystone mucin-degrader positively associated with IBD in multiple studies \u2014 though a 2025 study found it can also reinforce the epithelial barrier and resolve inflammation in other contexts, so evidence on direction is genuinely mixed/context-dependent, unlike gnavus.",
+     "ref": "mBio 10.1128/mbio.00039-24 / PMID 41131583",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41131583/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Bacteroides uniformis",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Chronic pain",
+     "note": "Found depleted in the Minerbi et al. 2019 fibromyalgia microbiome signature \u2014 this is a species-specific finding, kept separate from the bare Bacteroides genus node.",
+     "ref": "Minerbi 2019 / PMC11671092",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11671092/"
+    }
+   ]
+  },
+  {
+   "name": "Morganella",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Histamine reactions",
+     "note": "M. morganii is a classic high-capacity histamine former; histamine-intolerant patients show significantly higher relative abundance of Morganellaceae than controls.",
+     "ref": "PMC9102523",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9102523/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Lachnospiraceae UCG-001",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Negatively associated with the UPPS-urgency facet of trait impulsivity in the same n=913 cohort; separately reported as reduced in human and mouse depression studies.",
+     "ref": "Translational Psychiatry 2025 (PMID 40753077)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
+    }
+   ]
+  },
+  {
+   "name": "Eubacterium siraeum",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Positively associated with the UPPS-sensation-seeking facet of trait impulsivity in the same cohort; also correlated with more frequent alcohol consumption.",
+     "ref": "Translational Psychiatry 2025 (PMID 40753077)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Intestinimonas butyriciproducens",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Enriched in the same Parkinson's disease impulse-control-disorder cohort \u2014 population-specific finding, flagged since it's not a general-population result.",
+     "ref": "Int J Mol Sci 2025 (PMID 40649930)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40649930/"
+    }
+   ],
+   "down": []
+  }
+ ]
+}
