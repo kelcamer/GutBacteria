@@ -540,12 +540,6 @@
    "up": [],
    "down": [
     {
-     "symptom": "OCD symptoms",
-     "note": "Two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD \u2014 i.e. lower levels causally associated with OCD risk.",
-     "ref": "PMID 40056996",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
-    },
-    {
      "symptom": "Bloating & gas",
      "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "PMC6421268",
@@ -562,6 +556,14 @@
      "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "PMC6421268",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    }
+   ],
+   "both": [
+    {
+     "symptom": "OCD symptoms",
+     "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD \u2014 i.e. lower levels causally linked to higher OCD risk. Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae \u2014 the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
+     "ref": "Causal link between gut microbiota and OCD: MR analysis (2025)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     }
    ]
   },
@@ -631,10 +633,12 @@
      "note": "Commensal family showing relative decrease in heavy alcohol consumers.",
      "ref": "PMC7504034",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
-    },
+    }
+   ],
+   "both": [
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
+     "note": "Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae \u2014 the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
      "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     }

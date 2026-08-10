@@ -2788,28 +2788,38 @@
     {
      "id": "seed_201",
      "name": "Lachnospiraceae",
-     "dir": "down",
+     "dir": "both",
      "refs": "220",
-     "note": "",
+     "note": "Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae \u2014 the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
      "links": [
       {
        "id": "seed_202",
        "label": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+      },
+      {
+       "id": "seed_ocd_lachnospiraceae_animal_l1",
+       "label": "Quinpirole rat model of compulsive checking (2018, PMID 29194070)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/29194070/"
       }
      ]
     },
     {
      "id": "seed_ocd_rumino",
      "name": "Ruminococcaceae",
-     "dir": "down",
+     "dir": "both",
      "refs": "",
-     "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD \u2014 i.e. lower levels causally linked to higher OCD risk.",
+     "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD \u2014 i.e. lower levels causally linked to higher OCD risk. Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae \u2014 the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
      "links": [
       {
        "id": "seed_ocd_rumino_l1",
        "label": "Causal link between gut microbiota and OCD: MR analysis (2025)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
+      },
+      {
+       "id": "seed_ocd_ruminococcaceae_animal_l1",
+       "label": "Quinpirole rat model of compulsive checking (2018, PMID 29194070)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/29194070/"
       }
      ]
     },
