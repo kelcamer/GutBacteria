@@ -857,7 +857,7 @@
   },
   {
    "name": "Proteobacteria",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -890,7 +890,15 @@
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
     }
    ],
-   "down": []
+   "down": [],
+   "both": [
+    {
+     "symptom": "OCD symptoms",
+     "note": "Genuinely conflicting evidence depending on study type. A 2025 Mendelian randomization study found Proteobacteria has a protective causal effect against primary OCD risk (i.e. lower levels causally linked to higher risk). But a 2023 clinical study of ulcerative colitis patients found the opposite pattern in a comorbid population: UC patients with obsessive-compulsive behavioral features showed an increase in Proteobacteria. Marked as \"both\" since these are two different populations and it isn't clear one supersedes the other.",
+     "ref": "PMID 40056996 (MR) / PMID 37280117 (UC comorbidity)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
+    }
+   ]
   },
   {
    "name": "Lachnoclostridium",

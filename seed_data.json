@@ -2868,6 +2868,25 @@
        "url": "https://gut.bmj.com/content/72/Suppl_1/A135.1"
       }
      ]
+    },
+    {
+     "id": "seed_ocd_proteobacteria",
+     "name": "Proteobacteria",
+     "dir": "both",
+     "refs": "",
+     "note": "Genuinely conflicting evidence depending on study type. A 2025 Mendelian randomization study found Proteobacteria has a protective causal effect against primary OCD risk (i.e. lower levels causally linked to higher risk \u2014 same direction logic as the Ruminococcaceae/Bilophila entries above). But a 2023 clinical study of ulcerative colitis patients found the opposite pattern in a comorbid population: UC patients with obsessive-compulsive behavioral features showed an *increase* in Proteobacteria, alongside Actinobacteria and Saccharibacteria. Marked as \"both\" rather than picking one, since these are two different populations (primary OCD risk vs. OCD-like features secondary to a systemic inflammatory disease) and it isn't clear one supersedes the other.",
+     "links": [
+      {
+       "id": "seed_ocd_proteobacteria_l1",
+       "label": "Causal link between gut microbiota and OCD: MR analysis (2025, PMID 40056996)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
+      },
+      {
+       "id": "seed_ocd_proteobacteria_l2",
+       "label": "Gut microbiota signatures & psychopathological profiles in UC (2023, PMID 37280117)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37280117/"
+      }
+     ]
     }
    ]
   },
