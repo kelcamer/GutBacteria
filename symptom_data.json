@@ -34,12 +34,13 @@
   "Smoking-related dysbiosis",
   "Cannabis-related dysbiosis",
   "Exercise-associated microbiota changes",
-  "Lack of impulse control"
+  "Lack of impulse control",
+  "Non-secretor status (FUT2)"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -84,12 +85,18 @@
      "note": "Positively associated with the UPPS-premeditation facet \u2014 i.e. higher levels track with more forethought and less impulsive action \u2014 in the same cohort; framed here as depleted in the lower-premeditation, more-impulsive state.",
      "ref": "Translational Psychiatry 2025 (PMID 40753077)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Demonstrated reduced bifidobacterial diversity, richness, and overall abundance.",
+     "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
     }
    ]
   },
   {
    "name": "Faecalibacterium",
-   "count": 12,
+   "count": 13,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -164,6 +171,12 @@
      "note": "Depleted across human and animal ethanol-dysbiosis studies \u2014 loss of the anti-inflammatory, butyrate-producing genus that's already low across most inflammatory conditions in this app.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele, implying lower abundance in non-secretors.",
+     "ref": "2023, Frontiers in Microbiology \u2014 FUT2 & rotavirus susceptibility",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36922975/"
     }
    ]
   },
@@ -225,7 +238,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -270,6 +283,12 @@
      "note": "Consistently depleted with chronic ethanol exposure.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Growth was promoted by fucosylated HMOs present in secretor milk, implying lower abundance with non-secretor status; consistent with a separate cohort (PMID 30540710) finding Lactobacillus spp. lower in non-secretor milk.",
+     "ref": "2018, mSystems \u2014 Chinese mothers' milk glycans (n=56)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30637338/"
     }
    ]
   },
@@ -364,13 +383,19 @@
   },
   {
    "name": "Bacteroidetes",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
      "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies \u2014 treat as weak evidence.",
      "ref": "PMID 27529273",
      "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "ref": "derived",
+     "url": ""
     }
    ],
    "down": [
@@ -384,7 +409,7 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -429,11 +454,18 @@
      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1054685/full"
     }
    ],
-   "down": []
+   "down": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Non-secretor children had lower Escherichia/Shigella than secretor children (0.56% vs 1.35% median, p=0.002).",
+     "ref": "2025, Clin Microbiol Infect \u2014 Copenhagen birth cohort (n=700)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/"
+    }
+   ]
   },
   {
    "name": "Firmicutes",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -454,12 +486,18 @@
      "note": "Lower in current smokers; increased after smoking cessation in the same cohort.",
      "ref": "PMC3597605",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "ref": "derived",
+     "url": ""
     }
    ]
   },
   {
    "name": "Enterobacteriaceae",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -472,6 +510,12 @@
      "note": "Elevated in this app's iron-deficiency-state taxa; iron-deficiency anemia is a documented cause of orthostatic hypotension/dizziness.",
      "ref": "PMC11488462 / PMID 39929492",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11488462/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Higher relative abundance in non-secretor milk samples.",
+     "ref": "2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
     }
    ],
    "down": []
@@ -510,7 +554,7 @@
   },
   {
    "name": "Clostridium",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -531,6 +575,12 @@
      "note": "Reduced by cigarette smoke exposure per the structured review.",
      "ref": "PMC11658948",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "C. coccoides group counts significantly decreased in non-secretors vs. secretors (p=0.02).",
+     "ref": "2015, PLOS ONE \u2014 secretor status in pregnancy (n=123)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26231005/"
     }
    ]
   },
@@ -607,7 +657,7 @@
   },
   {
    "name": "Lachnospiraceae",
-   "count": 5,
+   "count": 6,
    "up": [],
    "down": [
     {
@@ -633,6 +683,12 @@
      "note": "Commensal family showing relative decrease in heavy alcohol consumers.",
      "ref": "PMC7504034",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Highlighted lower abundances in non-secretors.",
+     "ref": "derived",
+     "url": ""
     }
    ],
    "both": [
@@ -702,7 +758,7 @@
   },
   {
    "name": "Actinobacteria",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Mania",
@@ -723,12 +779,18 @@
      "note": "Lower in current smokers; increased after smoking cessation, the same pattern as Firmicutes.",
      "ref": "PMC3597605",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Lower in non-secretor mothers' milk/gut microbiota across two independent cohorts.",
+     "ref": "2019, J Pediatr Gastroenterol Nutr (n=25) + PMID 26231005, PLOS ONE (n=123)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
     }
    ]
   },
   {
    "name": "Streptococcus",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Brain fog",
@@ -755,6 +817,12 @@
      "note": "Consistently lower abundance after exercise intervention across pooled RCT/crossover studies \u2014 notable since Streptococcus is tracked as elevated in several inflammatory/infectious contexts elsewhere in this app.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Lower in non-secretor vs. secretor milk samples.",
+     "ref": "2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
     }
    ]
   },
@@ -861,7 +929,7 @@
   },
   {
    "name": "Proteobacteria",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -894,7 +962,14 @@
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
     }
    ],
-   "down": [],
+   "down": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "ref": "Paper URL",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5463037/"
+    }
+   ],
    "both": [
     {
      "symptom": "OCD symptoms",
@@ -1259,8 +1334,15 @@
   },
   {
    "name": "Phascolarctobacterium",
-   "count": 3,
-   "up": [],
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Higher in FUT2-null (sese) IBD patients vs. functional-FUT2 patients.",
+     "ref": "2021, J Genet Genomics \u2014 FUT2 loss-of-function in IBD (n=81)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
+    }
+   ],
    "down": [
     {
      "symptom": "Bloating & gas",
@@ -1509,7 +1591,7 @@
   },
   {
    "name": "Enterocloster",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1522,6 +1604,12 @@
      "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
      "ref": "PMC7524151",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Higher in mice receiving microbiota from infants of non-secretor mothers vs. secretor mothers.",
+     "ref": "2024, mSystems \u2014 infant-donor microbiota in germ-free mice",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/"
     }
    ],
    "down": []
@@ -1965,7 +2053,7 @@
   },
   {
    "name": "Klebsiella",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Nausea",
@@ -2002,6 +2090,12 @@
      "note": "K. aerogenes strains carrying a histidine-decarboxylase gene variant were identified as major gut histamine producers, highly abundant in 3 independent IBS cohorts; colonizing germ-free mice with high-histamine IBS microbiota caused visceral hyperalgesia via histamine-4-receptor signalling.",
      "ref": "PMID 35895832",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35895832/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia.",
+     "ref": "2024, mSystems \u2014 infant-donor microbiota in germ-free mice",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/"
     }
    ],
    "down": []
@@ -2108,7 +2202,7 @@
   },
   {
    "name": "Erysipelotrichaceae",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -2121,6 +2215,12 @@
      "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
      "ref": "PMC7524151",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Th17-inducing family higher in FUT2-null (sese) IBD patients.",
+     "ref": "2021, J Genet Genomics \u2014 FUT2 loss-of-function in IBD (n=81)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
     }
    ],
    "down": []
@@ -2199,6 +2299,58 @@
      "note": "Enriched in the same Parkinson's disease impulse-control-disorder cohort \u2014 population-specific finding, flagged since it's not a general-population result.",
      "ref": "Int J Mol Sci 2025 (PMID 40649930)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40649930/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Bifidobacterium adolescentis",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+    }
+   ]
+  },
+  {
+   "name": "Bifidobacterium Pseudocatenulatum",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+    }
+   ]
+  },
+  {
+   "name": "Bifidobacterium Bifidum",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+    }
+   ]
+  },
+  {
+   "name": "Bacteroides vulgatus",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Non-secretor children had higher fecal B. vulgatus than secretor children (5.00% vs 1.00% median, p=0.023); mediated 14% of secretor-status' effect on gastroenteritis risk.",
+     "ref": "2025, Clin Microbiol Infect \u2014 Copenhagen birth cohort (n=700)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/"
     }
    ],
    "down": []
