@@ -197,7 +197,7 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
   svg.setAttribute("width","100%");
   svg.setAttribute("preserveAspectRatio","xMidYMid meet");
   svg.style.display="block";svg.style.height="auto";
-  svg.style.touchAction="pan-y";
+  svg.style.touchAction="pan-y pinch-zoom";
 
   var gE=document.createElementNS(NS,"g"),gN=document.createElementNS(NS,"g");
   svg.appendChild(gE);svg.appendChild(gN);host.appendChild(svg);
@@ -605,8 +605,16 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
         dragNode.vx = 0; dragNode.vy = 0;
       }
       if (!isDragging) {
-        // Popups now open only on double-click (see onDblClick below) —
-        // a plain click just updates the highlight, it no longer pins.
+        // Popups now open only via double-click (see onDblClick below) —
+        // a plain click still selects/deselects the node (drives the
+        // highlight plus the Show Connections / Hide Isolated filters)
+        // without opening its popup.
+        var clickedIdx = dragNode.i;
+        if (selectedNodes.has(clickedIdx)) {
+          selectedNodes.delete(clickedIdx);
+        } else {
+          selectedNodes.add(clickedIdx);
+        }
         setHi(curr);
       }
       dragNode = null;
@@ -1065,7 +1073,7 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
   svg.setAttribute("width","100%");
   svg.setAttribute("preserveAspectRatio","xMidYMid meet");
   svg.style.display="block";svg.style.height="auto";
-  svg.style.touchAction="pan-y"; 
+  svg.style.touchAction="pan-y pinch-zoom"; 
   
   var gE=document.createElementNS(NS,"g"),gN=document.createElementNS(NS,"g");
   svg.appendChild(gE);svg.appendChild(gN);host.appendChild(svg);
@@ -1459,8 +1467,16 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
         dragNode.vx = 0; dragNode.vy = 0;
       }
       if (!isDragging) {
-        // Popups now open only on double-click (see onDblClick below) —
-        // a plain click just updates the highlight, it no longer pins.
+        // Popups now open only via double-click (see onDblClick below) —
+        // a plain click still selects/deselects the node (drives the
+        // highlight plus the Show Connections / Hide Isolated filters)
+        // without opening its popup.
+        var clickedIdx = dragNode.i;
+        if (selectedNodes.has(clickedIdx)) {
+          selectedNodes.delete(clickedIdx);
+        } else {
+          selectedNodes.add(clickedIdx);
+        }
         setHi(curr);
       }
       dragNode = null;
