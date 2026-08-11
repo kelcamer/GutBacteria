@@ -314,6 +314,8 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
   var dragNode = null;
   var isDragging = false;
   var bgDown = false;
+  var dragStartX = 0, dragStartY = 0;
+  var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
   var selectedNodes = new Set();
   var pinnedEls = {};
   var zCounter = 10;
@@ -611,6 +613,7 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
       dragNode = V[idx];
       isDragging = false;
       bgDown = false;
+      dragStartX = ev.clientX; dragStartY = ev.clientY;
       svg.setPointerCapture(ev.pointerId);
     } else {
       bgDown = true;
@@ -619,6 +622,10 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
 
   function onPointerMove(ev) {
     if (dragNode) {
+      if (!isDragging) {
+        var jitterDx = ev.clientX - dragStartX, jitterDy = ev.clientY - dragStartY;
+        if (Math.hypot(jitterDx, jitterDy) < DRAG_THRESHOLD) return; // still just a click, not a drag yet
+      }
       if (ev.cancelable) ev.preventDefault();
       isDragging = true;
       var pt = svg.createSVGPoint();
@@ -1184,6 +1191,8 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
   var dragNode = null;
   var isDragging = false;
   var bgDown = false;
+  var dragStartX = 0, dragStartY = 0;
+  var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
   var selectedNodes = new Set();
   var pinnedEls = {};
   var zCounter = 10;
@@ -1476,6 +1485,7 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
       dragNode = V[idx];
       isDragging = false;
       bgDown = false;
+      dragStartX = ev.clientX; dragStartY = ev.clientY;
       svg.setPointerCapture(ev.pointerId);
     } else {
       bgDown = true;
@@ -1484,6 +1494,10 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
 
   function onPointerMove(ev) {
     if (dragNode) {
+      if (!isDragging) {
+        var jitterDx = ev.clientX - dragStartX, jitterDy = ev.clientY - dragStartY;
+        if (Math.hypot(jitterDx, jitterDy) < DRAG_THRESHOLD) return; // still just a click, not a drag yet
+      }
       if (ev.cancelable) ev.preventDefault();
       isDragging = true;
       var pt = svg.createSVGPoint();
