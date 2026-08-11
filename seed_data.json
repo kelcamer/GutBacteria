@@ -1826,9 +1826,9 @@
     {
      "id": "seed_ad_t2",
      "name": "Bacteroides / Bacteroidetes",
-     "dir": "up",
+     "dir": "both",
      "refs": "Vogt 2017",
-     "note": "Hallmark finding (Vogt 2017); consistently higher in US cohorts.",
+     "note": "Genuine geographic contradiction: increased in American and Egyptian AD cohorts (SMD=0.79, 95% CI 0.29-1.28) but not replicated in Chinese cohorts (SMD=-0.75, 95% CI -1.58-0.07, opposite-direction point estimate) in a 2024 meta-analysis. Vogt 2017's US-cohort finding (kept as the original citation) is one side of this split, not a universal direction.",
      "links": [
       {
        "id": "seed_ad_t2_l1",
@@ -1839,16 +1839,27 @@
        "id": "seed_ad_t2_l2",
        "label": "Vogt 2017",
        "url": "https://pubmed.ncbi.nlm.nih.gov/29051531/"
+      },
+      {
+       "id": "seed_ad_t2_l3",
+       "label": "16S meta-analysis, geographic heterogeneity (PMID 39175809)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39175809/"
       }
      ]
     },
     {
      "id": "seed_ad_t3",
      "name": "Bifidobacterium",
-     "dir": "down",
-     "refs": "Vogt 2017",
-     "note": "Conflicted direction. Direction flips across meta-analyses.",
-     "links": []
+     "dir": "both",
+     "refs": "Vogt 2017 / PMID 39175809",
+     "note": "Conflicted direction, now with a real citation for the conflict: pooled effect across cohorts is non-significant (SMD=0.1, 95% CI -0.42-0.63) in a 2024 meta-analysis, but Chinese cohorts specifically show a positive correlation with AD (i.e. up) once adjusted for country, while the original Vogt 2017 finding here was 'down'.",
+     "links": [
+      {
+       "id": "seed_ad_t3_l1",
+       "label": "16S meta-analysis, geographic heterogeneity (PMID 39175809)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39175809/"
+      }
+     ]
     },
     {
      "id": "seed_99",
@@ -2133,14 +2144,19 @@
     {
      "id": "seed_94_fp7",
      "name": "Alistipes",
-     "dir": "up",
+     "dir": "both",
      "refs": "PMID 41037094",
-     "note": "Genus-level enrichment associated with higher amyloid-\u03b2 burden, more pronounced in APOE \u03b54 carriers \u2014 consistent in direction with the species-level Alistipes onderdonkii finding above.",
+     "note": "Genus-level enrichment associated with higher amyloid-\u03b2 burden, more pronounced in APOE \u03b54 carriers \u2014 consistent in direction with the species-level Alistipes onderdonkii finding above. However, a 2024 meta-analysis found the opposite pattern by geography: increased in US AD cohorts (SMD=0.49, 95% CI 0.12-0.86) but decreased in Chinese cohorts (SMD=-0.78, 95% CI -1.28--0.29) \u2014 genuine geographic contradiction, not just a single-study outlier.",
      "links": [
       {
        "id": "seed_94_fp7_l1",
        "label": "2025, J Neurology \u2014 Framingham Heart Study (n=227)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41037094/"
+      },
+      {
+       "id": "seed_94_fp7_l2",
+       "label": "16S meta-analysis, geographic heterogeneity (PMID 39175809)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39175809/"
       }
      ]
     }
@@ -7850,14 +7866,24 @@
     {
      "id": "new_cd_t8",
      "name": "Bacteroides",
-     "dir": "down",
+     "dir": "both",
      "refs": "Nat Commun",
-     "note": "Reduced overall, part of the broader Bacteroidetes contraction seen in active CD.",
+     "note": "Reduced overall, part of the broader Bacteroidetes contraction seen in active CD. Genuine contradiction in the wider literature: a meta-analysis found Bacteroides significantly LOWER in active CD/UC vs. controls (and lower still in active vs. remission, PMID 27999802), while a separate 2023 global systematic review found Bacteroides INCREASED in active CD compared to controls across 8 of its included studies. Kept the existing Nat Commun 'down' citation and added both sides rather than picking one.",
      "links": [
       {
        "id": "new_cd_t8_l1",
        "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
        "url": "https://www.nature.com/articles/s41467-024-54797-8"
+      },
+      {
+       "id": "new_cd_t8_l2",
+       "label": "Meta-analysis: Bacteroides lower in active CD/UC (PMID 27999802)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/27999802/"
+      },
+      {
+       "id": "new_cd_t8_l3",
+       "label": "Global systematic review: Bacteroides higher in 8/n active-CD studies (Clin Epidemiol Glob Health 2023)",
+       "url": "https://www.sciencedirect.com/science/article/pii/S2213398423002841"
       }
      ]
     },
