@@ -40,7 +40,7 @@
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 11,
+   "count": 12,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -109,6 +109,12 @@
      "note": "Significantly reduced in children with tic disorder vs. matched controls (p<0.05). Restlessness here is framed around the premonitory urge preceding tics \u2014 a restless/tense sensation phenomenologically similar to RLS restlessness.",
      "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Mendelian randomization evidence for decreased migraine risk (He et al. 2023) \u2014 i.e. higher levels causally linked to lower migraine risk.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
   },
@@ -226,7 +232,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 10,
+   "count": 11,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -289,12 +295,18 @@
      "note": "Enriched in controls vs. GAD; also depleted in perimenopausal panic disorder.",
      "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "Negatively correlated with Th17 cell levels and the Th17/Treg ratio (and with inflammatory markers ESR, CRP, IgG, IgM) in primary Sj\u00f6gren's syndrome \u2014 i.e. depletion tracks with a more pro-inflammatory, less-regulated T-cell balance.",
+     "ref": "Xin et al. 2022, Frontiers in Immunology \u2014 primary Sj\u00f6gren's syndrome, 98 patients vs. 105 controls (PMID 36275752)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36275752/"
     }
    ]
   },
   {
    "name": "Lactobacillus",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -353,12 +365,18 @@
      "note": "Enriched in 3 case-control studies, but the review explicitly notes \"conflicting patterns across studies\" for this genus specifically.",
      "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Mendelian randomization found increased Lactobacillus causally linked to higher migraine-with-aura risk (He et al. 2023), but a separate pediatric cohort found it decreased in migraine (Liu et al. 2024).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
   },
   {
    "name": "Prevotella",
-   "count": 7,
+   "count": 9,
    "up": [
     {
      "symptom": "Joint pain",
@@ -377,6 +395,12 @@
      "note": "One of five indicator OTUs (alongside unclassified Lachnospiraceae, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
      "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+    },
+    {
+     "symptom": "Diarrhea",
+     "note": "Prevotella-enriched enterotype associated with high risk of diarrhea-predominant IBS (IBS-D) \u2014 over 100-fold higher abundance vs. healthy controls (p<0.05); replicated in a post-infectious mouse model.",
+     "ref": "Su et al. 2018, Gastroenterology Research and Practice \u2014 40 IBS-D vs. 20 controls, +mouse model (PMID 29967640)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29967640/"
     }
    ],
    "down": [
@@ -405,6 +429,12 @@
      "note": "A peer-reviewed 2022 case-control study found Prevotella significantly increased in children with tic disorder (p<0.05). An earlier conference abstract reported the opposite \u2014 Prevotella lower in Tourette syndrome and negatively correlated with tic severity (p=0.026 and p=0.041). Marked \"both\" given the genuine conflict; weighted toward the peer-reviewed source but the abstract's severity-correlation finding is worth keeping visible.",
      "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424); Lee & Wong 2018, MDS International Congress (conference abstract, not yet peer-reviewed journal publication)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "This review explicitly flags Prevotella as conflicting: associated with higher migraine-with-aura risk in one MR study (He et al. 2023) but decreased in another cohort (Meng et al. 2024).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
   },
@@ -486,7 +516,7 @@
   },
   {
    "name": "Bacteroidetes",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -505,6 +535,12 @@
      "note": "Mendelian randomization evidence for a positive causal association (OR=1.22, 95% CI 1.00-1.50, p=0.04).",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Phylum-level increase in migraine across 2 independent studies within this review.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
    "down": [
@@ -580,7 +616,7 @@
   },
   {
    "name": "Firmicutes",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -593,6 +629,12 @@
      "note": "Significant phylum-level increase post-exercise (effect size 1.49, p<0.0001) across pooled RCT/crossover data \u2014 though the resulting Firmicutes/Bacteroidetes ratio shift is of debated clinical significance for metabolic health.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Phylum-level increase in migraine across 2 independent studies within this review.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
    "down": [
@@ -649,7 +691,7 @@
   },
   {
    "name": "Coprococcus",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -688,6 +730,12 @@
      "note": "Coprococcus eutactus significantly decreased in GAD and in \"any anxiety disorder\" broadly; also depleted in perimenopausal panic disorder.",
      "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "Negatively correlated with Th17 cell levels and the Th17/Treg ratio (and with inflammatory markers ESR, CRP, IgG, IgM) in primary Sj\u00f6gren's syndrome \u2014 i.e. depletion tracks with a more pro-inflammatory, less-regulated T-cell balance.",
+     "ref": "Xin et al. 2022, Frontiers in Immunology \u2014 primary Sj\u00f6gren's syndrome, 98 patients vs. 105 controls (PMID 36275752)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36275752/"
     }
    ]
   },
@@ -875,7 +923,7 @@
   },
   {
    "name": "Collinsella",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -908,12 +956,18 @@
      "note": "Significantly reduced in children with tic disorder vs. matched controls (p<0.05).",
      "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Decreased specifically in a comorbid IBS+migraine cohort (Yong et al. 2023).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
   },
   {
    "name": "Lachnospira",
-   "count": 5,
+   "count": 6,
    "up": [],
    "down": [
     {
@@ -946,11 +1000,19 @@
      "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     }
+   ],
+   "both": [
+    {
+     "symptom": "Headache / migraine",
+     "note": "Increased in a pediatric migraine cohort (Bai et al. 2023) but decreased in an adult chronic migraine cohort (Yong et al. 2023) \u2014 genuinely conflicting across age groups.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    }
    ]
   },
   {
    "name": "Actinobacteria",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Mania",
@@ -983,6 +1045,12 @@
      "note": "Lower in non-secretor mothers' milk/gut microbiota across two independent cohorts.",
      "ref": "2019, J Pediatr Gastroenterol Nutr (n=25) + PMID 26231005, PLOS ONE (n=123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Phylum-level decrease in migraine (Liu et al. 2024).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
   },
@@ -1141,7 +1209,7 @@
   },
   {
    "name": "Proteobacteria",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -1172,6 +1240,12 @@
      "note": "Higher in current smokers; fell after smoking cessation in a controlled before/after cohort.",
      "ref": "PMC3597605",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Phylum-level increase in migraine across 2 independent studies within this review.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
    "down": [
@@ -1193,7 +1267,7 @@
   },
   {
    "name": "Lachnoclostridium",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1214,6 +1288,12 @@
      "note": "Significantly reduced in restless legs syndrome; genus modulates systemic inflammation via SCFA production, linked to dopaminergic/iron pathways implicated in RLS.",
      "ref": "PMID 41378921",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41378921/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
   },
@@ -1232,13 +1312,19 @@
   },
   {
    "name": "Parabacteroides",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Constipation",
      "note": "Elevated in slow-transit constipation (STC).",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Increased in migraine across 2 independent studies within this review.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
    "down": [
@@ -1504,7 +1590,7 @@
   },
   {
    "name": "Dorea",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -1543,6 +1629,14 @@
      "note": "Lower in marijuana-using people with HIV in a preliminary cross-sectional study \u2014 population-specific finding.",
      "ref": "Preliminary (HIV+ cohort)",
      "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
+    }
+   ],
+   "both": [
+    {
+     "symptom": "Headache / migraine",
+     "note": "Increased in a pediatric migraine cohort (Bai et al. 2023) but decreased in an adult chronic migraine cohort (Yong et al. 2023) \u2014 genuinely conflicting across age groups.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
   },
@@ -1699,7 +1793,7 @@
   },
   {
    "name": "Eggerthella",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Depressed mood",
@@ -1718,6 +1812,12 @@
      "note": "Elevated in children with migraine as part of an inflammatory dysbiosis pattern; migraine's hallmark accompanying symptoms are photophobia/phonophobia. A 2025 study found misophonia is a common, clinically significant comorbidity in migraine sharing this same sensory-hypersensitivity phenotype (comorbidity evidence, not a direct bacteria-misophonia study).",
      "ref": "PMC7001586 / PMC12308847",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001586/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Increased in migraine across 3 independent studies within this review.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
    "down": []
@@ -1761,7 +1861,7 @@
   },
   {
    "name": "Parasutterella",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Overstimulation",
@@ -1788,7 +1888,14 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/31752095/"
     }
    ],
-   "down": []
+   "down": [
+    {
+     "symptom": "Headache / migraine",
+     "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    }
+   ]
   },
   {
    "name": "Veillonella",
@@ -1994,7 +2101,7 @@
   },
   {
    "name": "Desulfovibrio",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Abdominal pain",
@@ -2021,7 +2128,14 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
     }
    ],
-   "down": []
+   "down": [
+    {
+     "symptom": "Headache / migraine",
+     "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    }
+   ]
   },
   {
    "name": "Veillonellaceae",
@@ -2063,7 +2177,7 @@
   },
   {
    "name": "Bilophila",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -2096,12 +2210,18 @@
      "note": "Preoperative abundance negatively correlated with postoperative nausea/vomiting (PONV) severity (r=-0.33, p=0.030).",
      "ref": "Tang et al. 2025, Frontiers in Medicine \u2014 thyroid cancer surgery cohort (PMID 40491765)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40491765/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
   },
   {
    "name": "Tyzzerella",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -2116,7 +2236,14 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
     }
    ],
-   "down": []
+   "down": [
+    {
+     "symptom": "Headache / migraine",
+     "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    }
+   ]
   },
   {
    "name": "Anaerococcus",
@@ -2422,7 +2549,7 @@
   },
   {
    "name": "Coprobacillus",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -2441,6 +2568,12 @@
      "note": "Significantly increased in children with tic disorder vs. matched controls (p<0.05).",
      "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Increased in migraine across 3 independent studies within this review.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
    "down": []
@@ -2479,7 +2612,7 @@
   },
   {
    "name": "Sutterella",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Overstimulation",
@@ -2510,6 +2643,12 @@
      "note": "One of five indicator OTUs (alongside Prevotella, unclassified Lachnospiraceae, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
      "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Increased in migraine across 3 independent studies within this review.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
    "down": []
