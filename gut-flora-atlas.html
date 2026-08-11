@@ -342,6 +342,8 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
   var bgDown = false;
   var dragStartX = 0, dragStartY = 0;
   var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
+  var lastClickIdx = null, lastClickTime = 0;
+  var DBLCLICK_WINDOW = 400; // ms — our own double-click detection (matching node INDEX, not exact pixel position), replacing reliance on the browser's native dblclick event. Native dblclick failed to fire reliably here: its target-matching seems to be thrown off by a few px of cursor drift between the two clicks (or by the node itself drifting under force-directed physics between clicks), which a real click on a small node easily triggers.
   var selectedNodes = new Set();
   var pinnedEls = {};
   var zCounter = 10;
@@ -695,15 +697,33 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
         dragNode.vx = 0; dragNode.vy = 0;
       }
       if (!isDragging) {
-        // Popups now open only via double-click (see onDblClick below) —
-        // a plain click still selects/deselects the node (drives the
-        // highlight plus the Show Connections / Hide Isolated filters)
-        // without opening its popup.
+        // Popups open only on double-click — detected here by matching node
+        // INDEX within a short time window, not by the browser's native
+        // dblclick event (which didn't fire reliably: its target-matching
+        // gets thrown off by a few px of cursor drift between clicks, or by
+        // the node itself drifting under force-directed physics, both of
+        // which are easy to trigger on a real click of a small node). A
+        // plain click still selects/deselects the node (drives the
+        // highlight plus the Show Connections / Hide Isolated filters).
         var clickedIdx = dragNode.i;
-        if (selectedNodes.has(clickedIdx)) {
-          selectedNodes.delete(clickedIdx);
+        var now = Date.now();
+        var isDoubleClick = lastClickIdx === clickedIdx && (now - lastClickTime) < DBLCLICK_WINDOW;
+        if (isDoubleClick) {
+          lastClickIdx = null; lastClickTime = 0; // consumed — a 3rd quick click starts fresh, not a chained toggle
+          if (pinnedEls[String(clickedIdx)]) {
+            closePinned(clickedIdx);
+          } else {
+            selectedNodes.add(clickedIdx);
+            showPinned(clickedIdx);
+            hidePreview();
+          }
         } else {
-          selectedNodes.add(clickedIdx);
+          lastClickIdx = clickedIdx; lastClickTime = now;
+          if (selectedNodes.has(clickedIdx)) {
+            selectedNodes.delete(clickedIdx);
+          } else {
+            selectedNodes.add(clickedIdx);
+          }
         }
         setHi(curr);
       }
@@ -714,21 +734,6 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
       setHi(curr);
     }
     bgDown = false;
-  }
-
-  function onDblClick(ev) {
-    var el = ev.target;
-    while (el && el !== svg && !(el.dataset && el.dataset.i != null)) el = el.parentNode;
-    if (!(el && el.dataset && el.dataset.i != null)) return;
-    var idx = +el.dataset.i;
-    if (pinnedEls[String(idx)]) {
-      closePinned(idx);
-    } else {
-      selectedNodes.add(idx);
-      showPinned(idx);
-      hidePreview();
-    }
-    setHi(curr);
   }
 
   function onPointerLeave(ev) {
@@ -812,7 +817,6 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
   svg.addEventListener("pointercancel", onPointerUp);
   svg.addEventListener("pointerleave", onPointerLeave);
   svg.addEventListener("contextmenu", onContextMenu);
-  svg.addEventListener("dblclick", onDblClick);
 
   if(hiddenNamesRef&&hiddenNamesRef.current){
     V.forEach(function(n,idx){
@@ -830,7 +834,6 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
     svg.removeEventListener("pointercancel", onPointerUp);
     svg.removeEventListener("pointerleave", onPointerLeave);
     svg.removeEventListener("contextmenu", onContextMenu);
-    svg.removeEventListener("dblclick", onDblClick);
     tip.removeEventListener("pointerleave", onTipLeave);
     tip.removeEventListener("pointerenter", cancelHidePreview);
     closeAllPinned();
@@ -1219,6 +1222,8 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
   var bgDown = false;
   var dragStartX = 0, dragStartY = 0;
   var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
+  var lastClickIdx = null, lastClickTime = 0;
+  var DBLCLICK_WINDOW = 400; // ms — our own double-click detection (matching node INDEX, not exact pixel position), replacing reliance on the browser's native dblclick event. Native dblclick failed to fire reliably here: its target-matching seems to be thrown off by a few px of cursor drift between the two clicks (or by the node itself drifting under force-directed physics between clicks), which a real click on a small node easily triggers.
   var selectedNodes = new Set();
   var pinnedEls = {};
   var zCounter = 10;
@@ -1564,15 +1569,33 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
         dragNode.vx = 0; dragNode.vy = 0;
       }
       if (!isDragging) {
-        // Popups now open only via double-click (see onDblClick below) —
-        // a plain click still selects/deselects the node (drives the
-        // highlight plus the Show Connections / Hide Isolated filters)
-        // without opening its popup.
+        // Popups open only on double-click — detected here by matching node
+        // INDEX within a short time window, not by the browser's native
+        // dblclick event (which didn't fire reliably: its target-matching
+        // gets thrown off by a few px of cursor drift between clicks, or by
+        // the node itself drifting under force-directed physics, both of
+        // which are easy to trigger on a real click of a small node). A
+        // plain click still selects/deselects the node (drives the
+        // highlight plus the Show Connections / Hide Isolated filters).
         var clickedIdx = dragNode.i;
-        if (selectedNodes.has(clickedIdx)) {
-          selectedNodes.delete(clickedIdx);
+        var now = Date.now();
+        var isDoubleClick = lastClickIdx === clickedIdx && (now - lastClickTime) < DBLCLICK_WINDOW;
+        if (isDoubleClick) {
+          lastClickIdx = null; lastClickTime = 0; // consumed — a 3rd quick click starts fresh, not a chained toggle
+          if (pinnedEls[String(clickedIdx)]) {
+            closePinned(clickedIdx);
+          } else {
+            selectedNodes.add(clickedIdx);
+            showPinned(clickedIdx);
+            hidePreview();
+          }
         } else {
-          selectedNodes.add(clickedIdx);
+          lastClickIdx = clickedIdx; lastClickTime = now;
+          if (selectedNodes.has(clickedIdx)) {
+            selectedNodes.delete(clickedIdx);
+          } else {
+            selectedNodes.add(clickedIdx);
+          }
         }
         setHi(curr);
       }
@@ -1583,21 +1606,6 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
       setHi(curr);
     }
     bgDown = false;
-  }
-
-  function onDblClick(ev) {
-    var el = ev.target;
-    while (el && el !== svg && !(el.dataset && el.dataset.i != null)) el = el.parentNode;
-    if (!(el && el.dataset && el.dataset.i != null)) return;
-    var idx = +el.dataset.i;
-    if (pinnedEls[String(idx)]) {
-      closePinned(idx);
-    } else {
-      selectedNodes.add(idx);
-      showPinned(idx);
-      hidePreview();
-    }
-    setHi(curr);
   }
 
   function onPointerLeave(ev) {
@@ -1681,7 +1689,6 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
   svg.addEventListener("pointercancel", onPointerUp);
   svg.addEventListener("pointerleave", onPointerLeave);
   svg.addEventListener("contextmenu", onContextMenu);
-  svg.addEventListener("dblclick", onDblClick);
 
   if(hiddenNamesRef&&hiddenNamesRef.current){
     V.forEach(function(n,idx){
@@ -1699,7 +1706,6 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
     svg.removeEventListener("pointercancel", onPointerUp);
     svg.removeEventListener("pointerleave", onPointerLeave);
     svg.removeEventListener("contextmenu", onContextMenu);
-    svg.removeEventListener("dblclick", onDblClick);
     tip.removeEventListener("pointerleave", onTipLeave);
     tip.removeEventListener("pointerenter", cancelHidePreview);
     closeAllPinned();
