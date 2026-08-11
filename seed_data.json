@@ -1432,7 +1432,7 @@
      "name": "Actinobacteria",
      "dir": "down",
      "refs": "PMID 40828192",
-     "note": "Lower in ADHD children vs. neurotypical controls (5.78% vs 4.89%, p<0.001); consistent with a separate 15-pair study (PMID 40604388) finding the phylum, and Bifidobacterium within it, reduced.",
+     "note": "Lower in ADHD children vs. neurotypical controls (5.78% vs 4.89%, p<0.001); consistent with a separate 15-pair study (PMID 40604388) finding the phylum, and Bifidobacterium within it, reduced. An older, smaller study (Aarts et al. 2017, PMID 28863139, uncorrected p-values, described by its own authors as \"marginally significant\") found the opposite direction (14.08% controls vs. 22.14% ADHD) \u2014 not prioritized here given the much larger, more recent pooled meta-analysis above.",
      "links": [
       {
        "id": "seed_76_fp3_l1",
@@ -1516,7 +1516,7 @@
      "name": "Firmicutes",
      "dir": "up",
      "refs": "PMID 40828192",
-     "note": "Higher in ADHD children vs. controls (16.43% vs 14.21%, p<0.001) \u2014 prioritized over a conflicting single-study finding (PMID 40846210, n=14 ADHD) since this is a pooled 8-study meta-analysis.",
+     "note": "Higher in ADHD children vs. controls (16.43% vs 14.21%, p<0.001) \u2014 prioritized over a conflicting single-study finding (PMID 40846210, n=14 ADHD) since this is a pooled 8-study meta-analysis. The same older Aarts et al. 2017 study (PMID 28863139) also found the opposite direction (79.80% controls vs. 70.29% ADHD, uncorrected) \u2014 not prioritized here for the same reason.",
      "links": [
       {
        "id": "seed_76_fp9_l1",
@@ -1577,6 +1577,193 @@
       {
        "id": "seed_76_fp13_l1",
        "label": "2021, Translational Psychiatry \u2014 adult ADHD (n=100 vs 100, largest study to date)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34238926/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp14",
+     "name": "Bacteroides uniformis",
+     "dir": "up",
+     "refs": "PMID 31119393",
+     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "links": [
+      {
+       "id": "seed_76_fp14_l1",
+       "label": "Wang et al. 2020, Eur Child Adolesc Psychiatry (PMID 31119393)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp15",
+     "name": "Bacteroides ovatus",
+     "dir": "both",
+     "refs": "PMID 31119393",
+     "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study \u2014 and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
+     "links": [
+      {
+       "id": "seed_76_fp15_l1",
+       "label": "Wang et al. 2020, Eur Child Adolesc Psychiatry (PMID 31119393)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+      },
+      {
+       "id": "seed_76_fp15_l1",
+       "label": "Li et al. 2022, Gut Microbes (PMID 36128620)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36128620/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp16",
+     "name": "Bacteroides coprocola",
+     "dir": "down",
+     "refs": "PMID 31119393",
+     "note": "Decreased in ADHD children vs. controls in the same 16S case-control study.",
+     "links": [
+      {
+       "id": "seed_76_fp16_l1",
+       "label": "Wang et al. 2020, Eur Child Adolesc Psychiatry (PMID 31119393)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp17",
+     "name": "Sutterella stercoricanis",
+     "dir": "up",
+     "refs": "PMID 31119393",
+     "note": "Increased in ADHD children and positively correlated with ADHD symptom severity in the same study; also associated with dietary intake of dairy, nuts/seeds/legumes, ferritin and magnesium.",
+     "links": [
+      {
+       "id": "seed_76_fp17_l1",
+       "label": "Wang et al. 2020, Eur Child Adolesc Psychiatry (PMID 31119393)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp18",
+     "name": "Odoribacter",
+     "dir": "up",
+     "refs": "PMID 32132899",
+     "note": "Increased in ADHD children vs. controls (shotgun metagenomics, n=17/17), alongside neurotransmitter (serotonin/dopamine) metabolic pathway differences.",
+     "links": [
+      {
+       "id": "seed_76_fp18_l1",
+       "label": "Wan et al. 2020, Front Neurosci (PMID 32132899)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp19",
+     "name": "Enterococcus",
+     "dir": "up",
+     "refs": "PMID 32132899",
+     "note": "Increased in ADHD children vs. controls in the same study.",
+     "links": [
+      {
+       "id": "seed_76_fp19_l1",
+       "label": "Wan et al. 2020, Front Neurosci (PMID 32132899)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp20",
+     "name": "Neisseria",
+     "dir": "up",
+     "refs": "PMID 30001426",
+     "note": "Elevated in treatment-naive juvenile ADHD patients (n=14) vs. controls (n=17); flagged by the authors as \"a very promising ADHD-associated candidate\" biomarker.",
+     "links": [
+      {
+       "id": "seed_76_fp20_l1",
+       "label": "Prehn-Kristensen et al. 2018, PLoS One (PMID 30001426)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30001426/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp21",
+     "name": "Parabacteroides",
+     "dir": "down",
+     "refs": "PMID 30001426",
+     "note": "Family Prevotellaceae (which includes Parabacteroides-associated taxa) was associated with the control group rather than ADHD in the same study.",
+     "links": [
+      {
+       "id": "seed_76_fp21_l1",
+       "label": "Prehn-Kristensen et al. 2018, PLoS One (PMID 30001426)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30001426/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp22",
+     "name": "Escherichia coli",
+     "dir": "up",
+     "refs": "PMID 36178961",
+     "note": "Higher abundance in the processed-food-diet/ADHD-symptom subgroup of Korean schoolchildren (n=40) vs. the healthy-diet control group \u2014 a diet-interaction finding, not a simple ADHD-vs-control effect.",
+     "links": [
+      {
+       "id": "seed_76_fp22_l1",
+       "label": "Jung et al. 2022, PLoS One (PMID 36178961)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp23",
+     "name": "Enterobacter",
+     "dir": "up",
+     "refs": "PMID 36178961",
+     "note": "Higher abundance in the same processed-food-diet/ADHD-symptom subgroup, alongside lower fecal acetate/butyrate.",
+     "links": [
+      {
+       "id": "seed_76_fp23_l1",
+       "label": "Jung et al. 2022, PLoS One (PMID 36178961)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp24",
+     "name": "Clostridium",
+     "dir": "up",
+     "refs": "PMID 36178961",
+     "note": "Higher abundance in the same processed-food-diet/ADHD-symptom subgroup.",
+     "links": [
+      {
+       "id": "seed_76_fp24_l1",
+       "label": "Jung et al. 2022, PLoS One (PMID 36178961)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp25",
+     "name": "Megamonas",
+     "dir": "up",
+     "refs": "PMID 34238926",
+     "note": "Higher genus-level abundance in 100 medication-naive adults with ADHD vs. 100 sex-matched healthy controls; part of a 4-genus signature (with Dialister, Anaerotaenia, Gracilibacter) explaining 15% of ADHD variance (74% sensitivity, 71% specificity).",
+     "links": [
+      {
+       "id": "seed_76_fp25_l1",
+       "label": "Richarte et al. 2021, Transl Psychiatry (PMID 34238926)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34238926/"
+      }
+     ]
+    },
+    {
+     "id": "seed_76_fp26",
+     "name": "Gracilibacter",
+     "dir": "down",
+     "refs": "PMID 34238926",
+     "note": "Lower genus-level abundance (and lower family-level Gracilibacteraceae) in the same 100-vs-100 adult ADHD study, part of the same 4-genus signature.",
+     "links": [
+      {
+       "id": "seed_76_fp26_l1",
+       "label": "Richarte et al. 2021, Transl Psychiatry (PMID 34238926)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/34238926/"
       }
      ]
