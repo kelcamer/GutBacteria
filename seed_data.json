@@ -2939,25 +2939,6 @@
      ]
     },
     {
-     "id": "seed_212",
-     "name": "Bifidobacterium",
-     "dir": "down",
-     "refs": "derived",
-     "note": "Demonstrated reduced bifidobacterial diversity, richness, and overall abundance.",
-     "links": [
-      {
-       "id": "seed_213",
-       "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
-      },
-      {
-       "id": "seed_212_link",
-       "label": "Paper URL",
-       "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0020113"
-      }
-     ]
-    },
-    {
      "id": "seed_214",
      "name": "Firmicutes",
      "dir": "down",

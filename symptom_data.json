@@ -40,7 +40,7 @@
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 12,
+   "count": 11,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -87,12 +87,6 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
-     "note": "Demonstrated reduced bifidobacterial diversity, richness, and overall abundance.",
-     "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
-    },
-    {
      "symptom": "Nausea",
      "note": "Preoperative abundance strongly, negatively correlated with postoperative nausea/vomiting (PONV) severity (r=-0.69, p<0.001) \u2014 i.e. higher Bifidobacterium predicted milder PONV.",
      "ref": "Tang et al. 2025, Frontiers in Medicine \u2014 thyroid cancer surgery cohort (PMID 40491765)",
@@ -116,7 +110,8 @@
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
-   ]
+   ],
+   "both": []
   },
   {
    "name": "Faecalibacterium",
