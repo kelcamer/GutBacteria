@@ -39,7 +39,8 @@
   "Poor working memory",
   "Oral cavities",
   "Strep throat history",
-  "Intrusive thoughts"
+  "Intrusive thoughts",
+  "Urinary tract infections (UTI)"
  ],
  "bacteria": [
   {
@@ -119,7 +120,7 @@
   },
   {
    "name": "Faecalibacterium",
-   "count": 18,
+   "count": 19,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -224,6 +225,12 @@
      "note": "Consistently lower in depression across a 44-study meta-analysis.",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
+    },
+    {
+     "symptom": "Urinary tract infections (UTI)",
+     "note": "High relative abundance associated with lower risk of Enterobacteriaceae bacteriuria in kidney transplant recipients (HR 0.3, 95% CI 0.1-0.7, P=.01); combined with Romboutsia, HR 0.2 (95% CI 0.1-0.7, P=.008).",
+     "ref": "Magruder et al. 2019, Am J Transplant (PMID 32865119), 168 kidney transplant recipients",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32865119/"
     }
    ],
    "both": [
@@ -311,7 +318,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 10,
+   "count": 11,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -324,6 +331,12 @@
      "note": "Enriched after high-intensity exercise; supports lipid metabolism, per a meta-analysis of 25 RCT/crossover studies.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    },
+    {
+     "symptom": "Urinary tract infections (UTI)",
+     "note": "High relative abundance associated with increased risk of Enterobacteriaceae bacteriuria (HR 3.0, 95% CI 1.7-5.4, P<.001) and UTI (HR 3.0, 95% CI 1.5-6.0, P=.002) in kidney transplant recipients \u2014 a counterintuitive finding in this specific immunosuppressed cohort, opposite the usual protective role attributed to Lactobacillus elsewhere.",
+     "ref": "Magruder et al. 2019, Am J Transplant (PMID 32865119), 168 kidney transplant recipients",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32865119/"
     }
    ],
    "down": [
@@ -565,7 +578,7 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 10,
+   "count": 11,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -620,6 +633,12 @@
      "note": "Consistently higher in depression across a 44-study meta-analysis.",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
+    },
+    {
+     "symptom": "Urinary tract infections (UTI)",
+     "note": "A 1% relative gut abundance of Escherichia is an independent risk factor for Escherichia bacteriuria and UTI; strain-level analysis confirmed the same strain colonizing gut and urine in the same patients.",
+     "ref": "Magruder et al. 2019, Nat Commun (PMID 31797927), 168 kidney transplant recipients",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31797927/"
     }
    ],
    "down": [
@@ -1535,7 +1554,7 @@
   },
   {
    "name": "Enterococcus",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -1566,6 +1585,12 @@
      "note": "Consistently higher in depression across a 44-study meta-analysis.",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
+    },
+    {
+     "symptom": "Urinary tract infections (UTI)",
+     "note": "A 1% relative gut abundance of Enterococcus is an independent risk factor for Enterococcus bacteriuria.",
+     "ref": "Magruder et al. 2019, Nat Commun (PMID 31797927), 168 kidney transplant recipients",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31797927/"
     }
    ],
    "down": []
@@ -3031,6 +3056,48 @@
     }
    ],
    "down": [],
+   "both": []
+  },
+  {
+   "name": "Romboutsia",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Urinary tract infections (UTI)",
+     "note": "Combined with Faecalibacterium, high relative abundance associated with lower risk of future Enterobacteriaceae bacteriuria (HR 0.2, 95% CI 0.1-0.7, P=.008) in kidney transplant recipients.",
+     "ref": "Magruder et al. 2019, Am J Transplant (PMID 32865119), 168 kidney transplant recipients",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32865119/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Enterobacter",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Urinary tract infections (UTI)",
+     "note": "More abundant in the gut microbiome of children with febrile UTI vs. healthy controls (LDA score >3).",
+     "ref": "Paalanne et al. 2018, Eur J Clin Microbiol Infect Dis (PMID 30006660), 37 children with febrile UTI vs. controls",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30006660/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Peptostreptococcaceae",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Urinary tract infections (UTI)",
+     "note": "More abundant in the gut microbiome of healthy children vs. those with febrile UTI (LDA score >3).",
+     "ref": "Paalanne et al. 2018, Eur J Clin Microbiol Infect Dis (PMID 30006660), 37 children with febrile UTI vs. controls",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30006660/"
+    }
+   ],
    "both": []
   }
  ]
