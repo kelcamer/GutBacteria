@@ -35,7 +35,8 @@
   "Cannabis-related dysbiosis",
   "Exercise-associated microbiota changes",
   "Lack of impulse control",
-  "Non-secretor status (FUT2)"
+  "Non-secretor status (FUT2)",
+  "Poor working memory"
  ],
  "bacteria": [
   {
@@ -2915,6 +2916,32 @@
     }
    ],
    "down": []
+  },
+  {
+   "name": "Alcaligenaceae",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Poor working memory",
+     "note": "Negatively correlated with Quality of Working Memory (r=-0.294, p<0.05) in healthy older adults \u2014 higher abundance associated with worse working memory.",
+     "ref": "Komanduri et al. 2021, Nutrients \u2014 69 healthy older adults, 16S rRNA sequencing (PMID 35010939)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35010939/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Clostridiaceae",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Poor working memory",
+     "note": "Positively correlated with Quality of Working Memory (r=0.265, p<0.05) in healthy older adults \u2014 higher abundance associated with better working memory (i.e. depletion associated with worse working memory).",
+     "ref": "Komanduri et al. 2021, Nutrients \u2014 69 healthy older adults, 16S rRNA sequencing (PMID 35010939)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35010939/"
+    }
+   ]
   }
  ]
 }
