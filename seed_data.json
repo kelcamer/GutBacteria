@@ -2667,7 +2667,7 @@
    "name": "OCD",
    "abbr": "OCD",
    "color": "#33C7E8",
-   "note": "A 2023 systematic review (Law et al.) and a dysbiosis-centred review (Bendriss et al.) corroborate this profile: OCD shows LOWER gut \u03b1-diversity (species richness/evenness) and the recurring pattern of increased Alistipes (Rikenellaceae) alongside depletion of Prevotellaceae and butyrate producers (Oscillospira, Odoribacter, Anaerostipes, Agathobacter, Coprococcus, Lachnospira) \u2014 with Lachnospira pectinoschiza depletion tracking obsession-subscale severity. Direction isn't settled: a saliva/blood study found Actinobacteria and Firmicutes raised, and a natural-OCD deer-mouse model showed increased Desulfovermiculus, Aestuariispira, Peptococcus, Holdemanella and families Lachnospiraceae/Ruminococcaceae (animal \u2014 and opposite to the human Lachnospiraceae depletion). Probiotic signal: Lactobacillus rhamnosus GG and L. casei attenuate OCD-like behaviour in rodents; no human RCT yet.",
+   "note": "A 2023 systematic review (Law et al.) and a dysbiosis-centred review (Bendriss et al.) corroborate this profile: OCD shows LOWER gut \u03b1-diversity (species richness/evenness) and the recurring pattern of increased Alistipes (Rikenellaceae) alongside depletion of Prevotellaceae and butyrate producers (Oscillospira, Odoribacter, Anaerostipes, Agathobacter, Coprococcus, Lachnospira) \u2014 with Lachnospira pectinoschiza depletion tracking obsession-subscale severity. Direction isn't settled: a saliva/blood study found Actinobacteria and Firmicutes raised, and a natural-OCD deer-mouse model showed increased Desulfovermiculus, Aestuariispira, Peptococcus, Holdemanella and families Lachnospiraceae/Ruminococcaceae (animal \u2014 and opposite to the human Lachnospiraceae depletion). Probiotic signal: Lactobacillus rhamnosus GG and L. casei attenuate OCD-like behaviour in rodents; no human RCT yet. A 2021 JAMA Psychiatry transdiagnostic meta-analysis (59 case-control studies across 8 psychiatric disorders including both OCD and anorexia nervosa) found Coprococcus depletion as part of a shared cross-diagnostic pattern; this app's own data independently shows Alistipes (up), Agathobacter (down), Coprococcus (down), and Lachnospira (down) all moving the same direction in both OCD and anorexia nervosa \u2014 convergent, not contradictory, evidence.",
    "links": [
     {
      "id": "seed_183",
@@ -2698,6 +2698,11 @@
      "id": "seed_188",
      "label": "Bendriss 2023 (Int J Mol Sci; OCD gut-brain review; dysbiosis-centred model across serotonin / glutamate / dopamine)",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10419219/"
+    },
+    {
+     "id": "seed_ocd_transdiag_l1",
+     "label": "Perturbations in gut microbiota across psychiatric disorders: review & meta-analysis (2021, PMID 34524405)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34524405/"
     }
    ],
    "taxa": [
@@ -5156,7 +5161,7 @@
    "name": "Anorexia nervosa",
    "abbr": "AN",
    "color": "#E879F9",
-   "note": "IMPORTANT \u2014 most of these shifts are downstream of the semi-starved, low-BMI state itself, not a cause. Methanobrevibacter smithii tracks inversely with BMI, faecal SCFA excretion falls on a hypocaloric diet, and several changes partially (though often incompletely) renormalise with weight restoration. The one causal signal is Fan 2023, where transplanting AN microbiota into germ-free mice transferred an anorexia-like phenotype \u2014 so the microbiome may also feed back onto the illness. Functionally, gut-brain modules for serotonin biosynthesis and for dopamine / glutamate / tryptophan degradation are enriched in AN, a plausible route to mood and appetite effects. Evidence is heterogeneous (small cohorts, few at species level, starvation a massive confound) \u2014 read the taxa as an illness-state signature, not a target.",
+   "note": "IMPORTANT \u2014 most of these shifts are downstream of the semi-starved, low-BMI state itself, not a cause. Methanobrevibacter smithii tracks inversely with BMI, faecal SCFA excretion falls on a hypocaloric diet, and several changes partially (though often incompletely) renormalise with weight restoration. The one causal signal is Fan 2023, where transplanting AN microbiota into germ-free mice transferred an anorexia-like phenotype \u2014 so the microbiome may also feed back onto the illness. Functionally, gut-brain modules for serotonin biosynthesis and for dopamine / glutamate / tryptophan degradation are enriched in AN, a plausible route to mood and appetite effects. Evidence is heterogeneous (small cohorts, few at species level, starvation a massive confound) \u2014 read the taxa as an illness-state signature, not a target. A 2021 JAMA Psychiatry transdiagnostic meta-analysis (59 case-control studies across 8 psychiatric disorders including both OCD and anorexia nervosa) found Coprococcus depletion as part of a shared cross-diagnostic pattern; this app's own data independently shows Alistipes (up), Agathobacter (down), Coprococcus (down), and Lachnospira (down) all moving the same direction in both OCD and anorexia nervosa \u2014 convergent, not contradictory, evidence.",
    "links": [
     {
      "id": "seed_425",
@@ -5177,6 +5182,11 @@
      "id": "seed_428",
      "label": "Borgo 2017 (PLOS One; Italian cohort: Enterobacteriaceae & M. smithii \u2191, Roseburia/Ruminococcus/Clostridium \u2193)",
      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179739"
+    },
+    {
+     "id": "seed_an_transdiag_l1",
+     "label": "Perturbations in gut microbiota across psychiatric disorders: review & meta-analysis (2021, PMID 34524405)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34524405/"
     }
    ],
    "taxa": [
