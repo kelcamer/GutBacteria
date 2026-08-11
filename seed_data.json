@@ -5967,12 +5967,22 @@
    "name": "Iron deficiency (state)",
    "abbr": "IDA",
    "color": "#B45309",
-   "note": "Host nutrient-state entry. Evidence mostly animal models + limited human.",
+   "note": "Host nutrient-state entry. Evidence mostly animal models + limited human. Clinically, iron-deficiency states are linked to two symptoms tracked elsewhere in this app's Symptom Map: hair loss/telogen effluvium (evidence mixed across studies but a recognized association, PMID 16635664) and panic attacks (serum iron significantly lower in panic/hyperventilation-attack patients vs. controls, PMID 23603926) \u2014 see the \"Hair loss\" and \"Panic attack\" entries in the Symptom Map, whose bacteria links here are carried over via this iron-deficiency mechanism, not independent direct evidence.",
    "links": [
     {
      "id": "link_ida_state_1",
      "label": "MDPI",
      "url": "https://www.mdpi.com/2624-5647/2/4/30"
+    },
+    {
+     "id": "link_ida_state_2",
+     "label": "Iron deficiency \u2192 hair loss review (PMID 16635664)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
+    },
+    {
+     "id": "link_ida_state_3",
+     "label": "Iron deficiency \u2192 panic/hyperventilation attack (PMID 23603926)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
     }
    ],
    "taxa": [
@@ -5988,9 +5998,15 @@
      "id": "taxa_ida_2",
      "name": "Enterobacteriaceae",
      "dir": "up",
-     "refs": "",
-     "note": "",
-     "links": []
+     "refs": "Pilot study, infants/young children with IDA vs. controls (PMID 30418043)",
+     "note": "Relative abundance higher in IDA patients vs. controls (4.4% vs. 3.0%); decreased Bifidobacteriaceae/Enterobacteriaceae ratio also observed in IDA.",
+     "links": [
+      {
+       "id": "taxa_ida_2_l1",
+       "label": "Pediatrics pilot study (PMID 30418043)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30418043/"
+      }
+     ]
     },
     {
      "id": "taxa_ida_3",
@@ -6018,9 +6034,15 @@
      "id": "taxa_ida_5",
      "name": "Roseburia / Eubacterium rectale",
      "dir": "down",
-     "refs": "",
-     "note": "",
-     "links": []
+     "refs": "2-sample Mendelian randomization (PMID 39993092)",
+     "note": "Identified as a protective factor against IDA in a 2-sample MR analysis (beta=-0.0017, P=.04) \u2014 higher genetically-predicted abundance associated with lower IDA risk.",
+     "links": [
+      {
+       "id": "taxa_ida_5_l1",
+       "label": "Medicine (Baltimore) 2025 MR study (PMID 39993092)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39993092/"
+      }
+     ]
     },
     {
      "id": "seed_595",

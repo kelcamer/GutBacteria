@@ -40,7 +40,9 @@
   "Oral cavities",
   "Strep throat history",
   "Intrusive thoughts",
-  "Urinary tract infections (UTI)"
+  "Urinary tract infections (UTI)",
+  "Hair loss",
+  "Panic attack"
  ],
  "bacteria": [
   {
@@ -690,7 +692,7 @@
   },
   {
    "name": "Enterobacteriaceae",
-   "count": 5,
+   "count": 7,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -721,6 +723,18 @@
      "note": "Elevated in constipation-predominant IBS (IBS-C).",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Via iron deficiency: higher in IDA patients vs. controls (4.4% vs. 3.0%, PMID 30418043); iron deficiency itself is a recognized (though inconsistently replicated across studies) cause of hair loss/telogen effluvium.",
+     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "Via iron deficiency: higher in IDA patients vs. controls (4.4% vs. 3.0%, PMID 30418043); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
+     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
     }
    ],
    "down": []
@@ -2132,7 +2146,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 7,
+   "count": 9,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -2165,6 +2179,18 @@
      "note": "B. plebeius et rel. and B. fragilis et rel. co-occurred specifically in secretors (implying lower abundance in non-secretors); consistent with an earlier study from the same group reporting higher Bacteroides diversity/abundance in secretors.",
      "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Via iron deficiency: lower abundance recorded in rodent IDA models (human data conflict \u2014 some show it higher when ferritin is low); iron deficiency itself is a recognized (though inconsistently replicated) cause of hair loss/telogen effluvium.",
+     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "Via iron deficiency: lower abundance recorded in rodent IDA models (human data conflict \u2014 some show it higher when ferritin is low); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
+     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
     }
    ],
    "both": [
@@ -3098,6 +3124,46 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/30006660/"
     }
    ],
+   "both": []
+  },
+  {
+   "name": "Roseburia / Eubacterium rectale",
+   "count": 2,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Hair loss",
+     "note": "Via iron deficiency: protective against IDA in a 2-sample Mendelian randomization analysis (beta=-0.0017, P=.04, PMID 39993092); iron deficiency itself is a recognized (though inconsistently replicated) cause of hair loss/telogen effluvium.",
+     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "Via iron deficiency: protective against IDA in a 2-sample Mendelian randomization analysis (beta=-0.0017, P=.04, PMID 39993092); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
+     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Ruminococcus",
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Hair loss",
+     "note": "Via iron deficiency: species-level MR signal (Ruminococcus E sp003521625) increased IDA risk (OR=1.20, 95% CI 1.04-1.39, PMID 41045077); iron deficiency itself is a recognized (though inconsistently replicated) cause of hair loss/telogen effluvium.",
+     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "Via iron deficiency: species-level MR signal (Ruminococcus E sp003521625) increased IDA risk (OR=1.20, 95% CI 1.04-1.39, PMID 41045077); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
+     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
+    }
+   ],
+   "down": [],
    "both": []
   }
  ]
