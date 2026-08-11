@@ -657,10 +657,25 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
   function showConnectionsOnly(){
     if(!selectedNodes.size)return;
     var keep=new Set(selectedNodes);
-    selectedNodes.forEach(function(idx){
-      if(!V[idx])return;
-      V[idx].adj.forEach(function(j){keep.add(j);});
-    });
+    if(selectedNodes.size===1){
+      selectedNodes.forEach(function(idx){
+        if(V[idx])V[idx].adj.forEach(function(j){keep.add(j);});
+      });
+    }else{
+      // Only keep neighbors SHARED by 2+ selected nodes — a region/taxon
+      // touched by just one of the selected conditions isn't a connection
+      // between the selection, so it shouldn't survive the filter either.
+      var neighborCount={};
+      selectedNodes.forEach(function(idx){
+        if(!V[idx])return;
+        V[idx].adj.forEach(function(j){
+          neighborCount[j]=(neighborCount[j]||0)+1;
+        });
+      });
+      Object.keys(neighborCount).forEach(function(j){
+        if(neighborCount[j]>=2)keep.add(+j);
+      });
+    }
     V.forEach(function(n,idx){
       if(!keep.has(idx))hideNode(idx);
     });
@@ -1436,10 +1451,25 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
   function showConnectionsOnly(){
     if(!selectedNodes.size)return;
     var keep=new Set(selectedNodes);
-    selectedNodes.forEach(function(idx){
-      if(!V[idx])return;
-      V[idx].adj.forEach(function(j){keep.add(j);});
-    });
+    if(selectedNodes.size===1){
+      selectedNodes.forEach(function(idx){
+        if(V[idx])V[idx].adj.forEach(function(j){keep.add(j);});
+      });
+    }else{
+      // Only keep neighbors SHARED by 2+ selected nodes — a region/taxon
+      // touched by just one of the selected conditions isn't a connection
+      // between the selection, so it shouldn't survive the filter either.
+      var neighborCount={};
+      selectedNodes.forEach(function(idx){
+        if(!V[idx])return;
+        V[idx].adj.forEach(function(j){
+          neighborCount[j]=(neighborCount[j]||0)+1;
+        });
+      });
+      Object.keys(neighborCount).forEach(function(j){
+        if(neighborCount[j]>=2)keep.add(+j);
+      });
+    }
     V.forEach(function(n,idx){
       if(!keep.has(idx))hideNode(idx);
     });
