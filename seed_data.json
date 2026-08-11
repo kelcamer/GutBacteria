@@ -9803,6 +9803,474 @@
      ]
     }
    ]
+  },
+  {
+   "id": "new_pcos_1",
+   "name": "Polycystic Ovary Syndrome (PCOS)",
+   "abbr": "PCOS",
+   "color": "#EC4899",
+   "note": "Affects an estimated 8-13% of women of reproductive age \u2014 one of the most common endocrine disorders in women, and historically under-researched relative to its prevalence. Gut dysbiosis in PCOS is characterized by reduced alpha-diversity (Shannon SMD=-0.27, phylogenetic diversity SMD=-0.39) and a shift favoring pro-inflammatory taxa. Several taxa below show genuine cross-study contradictions (marked \"both\") rather than a single clean signature \u2014 reflected honestly rather than picked a side.",
+   "links": [
+    {
+     "id": "new_pcos_1_l1",
+     "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+    }
+   ],
+   "taxa": [
+    {
+     "id": "new_pcos_t1",
+     "name": "Bacteroides",
+     "dir": "both",
+     "refs": "37559119",
+     "note": "Genuine split: 7 studies found increased, 3 found decreased \u2014 kept as \"both\" rather than pick a side.",
+     "links": [
+      {
+       "id": "new_pcos_t1_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t2",
+     "name": "Parabacteroides",
+     "dir": "up",
+     "refs": "37559119",
+     "note": "Genus-level increase across included studies.",
+     "links": [
+      {
+       "id": "new_pcos_t2_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t3",
+     "name": "Lactobacillus",
+     "dir": "both",
+     "refs": "37559119",
+     "note": "Genuine split: 3 studies found increased, 2 found decreased.",
+     "links": [
+      {
+       "id": "new_pcos_t3_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t4",
+     "name": "Fusobacterium",
+     "dir": "up",
+     "refs": "37559119",
+     "note": "Increased across 3 studies.",
+     "links": [
+      {
+       "id": "new_pcos_t4_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t5",
+     "name": "Bilophila",
+     "dir": "up",
+     "refs": "37559119",
+     "note": "Increased across included studies.",
+     "links": [
+      {
+       "id": "new_pcos_t5_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t6",
+     "name": "Escherichia/Shigella",
+     "dir": "up",
+     "refs": "37559119",
+     "note": "Increased across 5 studies.",
+     "links": [
+      {
+       "id": "new_pcos_t6_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t7",
+     "name": "Lachnospira",
+     "dir": "down",
+     "refs": "37559119",
+     "note": "Decreased across 4 studies.",
+     "links": [
+      {
+       "id": "new_pcos_t7_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t8",
+     "name": "Prevotella",
+     "dir": "down",
+     "refs": "37559119",
+     "note": "5 studies found decreased vs. 1 found increased \u2014 majority direction used, minority noted rather than hidden.",
+     "links": [
+      {
+       "id": "new_pcos_t8_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t9",
+     "name": "Faecalibacterium prausnitzii",
+     "dir": "down",
+     "refs": "37559119",
+     "note": "Decreased in PCOS vs. controls.",
+     "links": [
+      {
+       "id": "new_pcos_t9_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t10",
+     "name": "Coprococcus",
+     "dir": "down",
+     "refs": "37559119",
+     "note": "Decreased in PCOS vs. controls.",
+     "links": [
+      {
+       "id": "new_pcos_t10_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t11",
+     "name": "Clostridium",
+     "dir": "down",
+     "refs": "37559119",
+     "note": "Decreased in PCOS vs. controls.",
+     "links": [
+      {
+       "id": "new_pcos_t11_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t12",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "refs": "37559119",
+     "note": "Decreased in PCOS vs. controls \u2014 notably opposite the \"up\" direction this genus shows in many other conditions tracked in this app.",
+     "links": [
+      {
+       "id": "new_pcos_t12_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t13",
+     "name": "Streptococcaceae",
+     "dir": "up",
+     "refs": "37559119",
+     "note": "Family-level increase across included studies.",
+     "links": [
+      {
+       "id": "new_pcos_t13_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t14",
+     "name": "Firmicutes",
+     "dir": "down",
+     "refs": "37559119",
+     "note": "Phylum-level decrease across included studies.",
+     "links": [
+      {
+       "id": "new_pcos_t14_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t15",
+     "name": "Proteobacteria",
+     "dir": "up",
+     "refs": "37559119",
+     "note": "Phylum-level increase across included studies.",
+     "links": [
+      {
+       "id": "new_pcos_t15_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "new_pcos_t16",
+     "name": "Alloprevotella",
+     "dir": "down",
+     "refs": "37559119",
+     "note": "Decreased in PCOS vs. controls.",
+     "links": [
+      {
+       "id": "new_pcos_t16_l1",
+       "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "new_pmdd_1",
+   "name": "Premenstrual Disorders (PMS/PMDD)",
+   "abbr": "PMDD",
+   "color": "#F472B6",
+   "note": "Covers premenstrual syndrome (PMS) and premenstrual dysphoric disorder (PMDD), affecting an estimated 20-30% (PMS) and 3-8% (PMDD) of menstruating women \u2014 a historically under-researched area of women's health. Evidence base here is real but still small (n=21/22); flagged honestly rather than overstated.",
+   "links": [
+    {
+     "id": "new_pmdd_1_l1",
+     "label": "Cross-sectional study, n=21 PMD/22 controls (PMID 35622782)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35622782/"
+    }
+   ],
+   "taxa": [
+    {
+     "id": "new_pmdd_t1",
+     "name": "Butyricicoccus",
+     "dir": "down",
+     "refs": "PMID 35622782",
+     "note": "Decreased prevalence in the premenstrual-disorders (PMD) group (LEfSe).",
+     "links": [
+      {
+       "id": "new_pmdd_t1_l1",
+       "label": "Cross-sectional study, n=21 PMD/22 controls (PMID 35622782)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35622782/"
+      }
+     ]
+    },
+    {
+     "id": "new_pmdd_t2",
+     "name": "Extibacter",
+     "dir": "down",
+     "refs": "PMID 35622782",
+     "note": "Decreased prevalence in PMD; correlated with total Premenstrual Symptoms Questionnaire (PSQ) score.",
+     "links": [
+      {
+       "id": "new_pmdd_t2_l1",
+       "label": "Cross-sectional study, n=21 PMD/22 controls (PMID 35622782)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35622782/"
+      }
+     ]
+    },
+    {
+     "id": "new_pmdd_t3",
+     "name": "Megasphaera",
+     "dir": "down",
+     "refs": "PMID 35622782",
+     "note": "Decreased prevalence in PMD; negatively predicted PSQ total score in regression analysis.",
+     "links": [
+      {
+       "id": "new_pmdd_t3_l1",
+       "label": "Cross-sectional study, n=21 PMD/22 controls (PMID 35622782)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35622782/"
+      }
+     ]
+    },
+    {
+     "id": "new_pmdd_t4",
+     "name": "Parabacteroides",
+     "dir": "down",
+     "refs": "PMID 35622782",
+     "note": "Decreased prevalence in PMD; correlated with PSQ score and negatively predicted PSQ total score in regression analysis.",
+     "links": [
+      {
+       "id": "new_pmdd_t4_l1",
+       "label": "Cross-sectional study, n=21 PMD/22 controls (PMID 35622782)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35622782/"
+      }
+     ]
+    },
+    {
+     "id": "new_pmdd_t5",
+     "name": "Anaerotaenia",
+     "dir": "up",
+     "refs": "PMID 35622782",
+     "note": "Increased prevalence in PMD; correlated with PSQ total score.",
+     "links": [
+      {
+       "id": "new_pmdd_t5_l1",
+       "label": "Cross-sectional study, n=21 PMD/22 controls (PMID 35622782)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35622782/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "new_meno_1",
+   "name": "Menopause (transition)",
+   "abbr": "MENO",
+   "color": "#A855F7",
+   "note": "Host life-stage entry, not a disease state. Large, well-powered shotgun-metagenomic cohort (n=1,322 total) found menopause-associated microbiome shifts toward a profile more similar to men's, plausibly related to declining estrogen/progesterone (the \"estrobolome\" \u2014 gut bacterial genes that metabolize estrogens). Associated with adverse cardiometabolic risk profile; associations held after adjusting for cardiometabolic confounders.",
+   "links": [
+    {
+     "id": "new_meno_1_l1",
+     "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+    }
+   ],
+   "taxa": [
+    {
+     "id": "new_meno_t1",
+     "name": "Bacteroides sp. Ga6A1",
+     "dir": "up",
+     "refs": "PMID 35675542",
+     "note": "Enriched in postmenopausal vs. premenopausal women.",
+     "links": [
+      {
+       "id": "new_meno_t1_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    },
+    {
+     "id": "new_meno_t2",
+     "name": "Prevotella marshii",
+     "dir": "up",
+     "refs": "PMID 35675542",
+     "note": "Enriched in postmenopausal vs. premenopausal women.",
+     "links": [
+      {
+       "id": "new_meno_t2_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    },
+    {
+     "id": "new_meno_t3",
+     "name": "Sutterella wadsworthensis",
+     "dir": "up",
+     "refs": "PMID 35675542",
+     "note": "Enriched in postmenopausal vs. premenopausal women.",
+     "links": [
+      {
+       "id": "new_meno_t3_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    },
+    {
+     "id": "new_meno_t4",
+     "name": "Escherichia coli",
+     "dir": "down",
+     "refs": "PMID 35675542",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "links": [
+      {
+       "id": "new_meno_t4_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    },
+    {
+     "id": "new_meno_t5",
+     "name": "Oscillibacter",
+     "dir": "down",
+     "refs": "PMID 35675542",
+     "note": "Depleted in postmenopausal vs. premenopausal women (species KLE1745).",
+     "links": [
+      {
+       "id": "new_meno_t5_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    },
+    {
+     "id": "new_meno_t6",
+     "name": "Akkermansia muciniphila",
+     "dir": "down",
+     "refs": "PMID 35675542",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "links": [
+      {
+       "id": "new_meno_t6_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    },
+    {
+     "id": "new_meno_t7",
+     "name": "Clostridium lactatifermentans",
+     "dir": "down",
+     "refs": "PMID 35675542",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "links": [
+      {
+       "id": "new_meno_t7_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    },
+    {
+     "id": "new_meno_t8",
+     "name": "Parabacteroides johnsonii",
+     "dir": "down",
+     "refs": "PMID 35675542",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "links": [
+      {
+       "id": "new_meno_t8_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    },
+    {
+     "id": "new_meno_t9",
+     "name": "Veillonella seminalis",
+     "dir": "down",
+     "refs": "PMID 35675542",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "links": [
+      {
+       "id": "new_meno_t9_l1",
+       "label": "Hispanic Community Health Study/Study of Latinos, shotgun metagenomics, n=1,027 postmenopausal/295 premenopausal (PMID 35675542)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
