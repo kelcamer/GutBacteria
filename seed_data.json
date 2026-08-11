@@ -3958,20 +3958,6 @@
      ]
     },
     {
-     "id": "seed_292",
-     "name": "Akkermansia muciniphila",
-     "dir": "up",
-     "refs": "shotgun meta",
-     "note": "",
-     "links": [
-      {
-       "id": "seed_293",
-       "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia \u2191, Roseburia & Faecalibacterium \u2193)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
-      }
-     ]
-    },
-    {
      "id": "seed_294",
      "name": "Bifidobacterium",
      "dir": "up",
@@ -4061,20 +4047,6 @@
      ]
     },
     {
-     "id": "seed_307",
-     "name": "Faecalibacterium prausnitzii",
-     "dir": "down",
-     "refs": "shotgun meta",
-     "note": "",
-     "links": [
-      {
-       "id": "seed_308",
-       "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia \u2191, Roseburia & Faecalibacterium \u2193)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
-      }
-     ]
-    },
-    {
      "id": "seed_309",
      "name": "Roseburia",
      "dir": "down",
@@ -4083,20 +4055,6 @@
      "links": [
       {
        "id": "seed_310",
-       "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia \u2191, Roseburia & Faecalibacterium \u2193)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
-      }
-     ]
-    },
-    {
-     "id": "seed_311",
-     "name": "Roseburia intestinalis",
-     "dir": "down",
-     "refs": "shotgun meta",
-     "note": "",
-     "links": [
-      {
-       "id": "seed_312",
        "label": "Nishiwaki 2020 (Mov Disord; cross-country meta-analysis: Akkermansia \u2191, Roseburia & Faecalibacterium \u2193)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32557853/"
       }
@@ -4333,20 +4291,6 @@
      "links": [
       {
        "id": "seed_332",
-       "label": "Guo 2023 (Cell Host Microbe; n=106/91: F. prausnitzii & E. rectale \u2193, butyrate deficit, F. prausnitzii inversely \u221d fatigue severity)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
-      }
-     ]
-    },
-    {
-     "id": "seed_333",
-     "name": "Faecalibacterium",
-     "dir": "down",
-     "refs": "Guo 2023",
-     "note": "",
-     "links": [
-      {
-       "id": "seed_334",
        "label": "Guo 2023 (Cell Host Microbe; n=106/91: F. prausnitzii & E. rectale \u2193, butyrate deficit, F. prausnitzii inversely \u221d fatigue severity)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
       }
@@ -4911,20 +4855,6 @@
       },
       {
        "id": "seed_392",
-       "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes \u2191, Faecalibacterium & F. prausnitzii \u2193)",
-       "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
-      }
-     ]
-    },
-    {
-     "id": "seed_393",
-     "name": "Faecalibacterium prausnitzii",
-     "dir": "down",
-     "refs": "Chen 2019",
-     "note": "",
-     "links": [
-      {
-       "id": "seed_394",
        "label": "Chen 2019 (Front Cell Infect Microbiol; elderly women: Firmicutes \u2191, Faecalibacterium & F. prausnitzii \u2193)",
        "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
       }
