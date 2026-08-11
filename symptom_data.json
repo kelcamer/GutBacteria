@@ -96,7 +96,7 @@
   },
   {
    "name": "Faecalibacterium",
-   "count": 13,
+   "count": 14,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -171,6 +171,12 @@
      "note": "Depleted across human and animal ethanol-dysbiosis studies \u2014 loss of the anti-inflammatory, butyrate-producing genus that's already low across most inflammatory conditions in this app.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Meta-analysis across 14 studies found Faecalibacterium significantly decreased in insomnia patients.",
+     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     }
    ],
    "both": [
@@ -246,7 +252,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 8,
+   "count": 9,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -298,11 +304,19 @@
      "ref": "2018, mSystems \u2014 Chinese mothers' milk glycans (n=56)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30637338/"
     }
+   ],
+   "both": [
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Enriched in 3 case-control studies, but the review explicitly notes \"conflicting patterns across studies\" for this genus specifically.",
+     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
+    }
    ]
   },
   {
    "name": "Prevotella",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Joint pain",
@@ -335,6 +349,12 @@
      "note": "Chronic marijuana users (n=19) had a ~13-fold lower Prevotella:Bacteroides ratio than non-users (n=20); lifetime use correlated inversely with the ratio and with attention/inhibitory-control scores.",
      "ref": "PMID 29101632",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29101632/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Depleted in chronic insomnia cohorts across 2 case-control studies.",
+     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     }
    ]
   },
@@ -372,13 +392,19 @@
   },
   {
    "name": "Blautia",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
      "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Meta-analysis across 14 studies found Blautia significantly increased in insomnia patients.",
+     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     }
    ],
    "down": [
@@ -581,7 +607,7 @@
   },
   {
    "name": "Clostridium",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -594,6 +620,12 @@
      "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
      "ref": "PMC7524151",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Genus-level enrichment across 2 case-control studies.",
+     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     }
    ],
    "down": [
@@ -763,7 +795,7 @@
   },
   {
    "name": "Lachnospira",
-   "count": 4,
+   "count": 5,
    "up": [],
    "down": [
     {
@@ -789,18 +821,30 @@
      "note": "Depletion of Lachnospira pectinoschiza correlated with OCD obsession-subscale severity (Domenech 2022); \u2193 in the Law 2023 synthesis.",
      "ref": "Law 2023 (Gut/BMJ IDDF abstract; systematic review: \u2193\u03b1-diversity; \u2191Alistipes/Rikenellaceae, \u2193Prevotellaceae + butyrate producers; probiotics may help)",
      "url": "https://gut.bmj.com/content/72/Suppl_1/A135.1"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Meta-analysis across 14 studies found Lachnospira significantly decreased in insomnia patients.",
+     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     }
    ]
   },
   {
    "name": "Actinobacteria",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Mania",
      "note": "Phylum Actinobacteria (LDA 4.82, p=0.007) and class Coriobacteria (LDA 4.75, p=0.010) significantly more abundant in bipolar disorder inpatients during a depressive episode vs. healthy controls (Painold et al. 2019, n=32 BD/10 HC).",
      "ref": "PMID 30051546",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Phylum-level enrichment across 3 case-control studies, including 2 chronic-insomnia cohorts.",
+     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     }
    ],
    "down": [
@@ -826,7 +870,7 @@
   },
   {
    "name": "Streptococcus",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Brain fog",
@@ -859,6 +903,14 @@
      "note": "Lower in non-secretor vs. secretor milk samples.",
      "ref": "2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
+    }
+   ],
+   "both": [
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Enriched in 3 case-control studies but depleted in 1 \u2014 a real, if lopsided, split rather than a clean single direction.",
+     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     }
    ]
   },
@@ -1683,7 +1735,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -1711,11 +1763,19 @@
      "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     }
+   ],
+   "both": [
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Increased in 2 case-control studies, decreased in 2 others \u2014 an even split, no consensus direction.",
+     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
+    }
    ]
   },
   {
    "name": "Bacteroidales",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -1728,6 +1788,12 @@
      "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
      "ref": "PMC5688358",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Order-level enrichment across 2 case-control studies.",
+     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     }
    ],
    "down": []
@@ -2411,6 +2477,19 @@
      "note": "Non-secretor children had higher fecal B. vulgatus than secretor children (5.00% vs 1.00% median, p=0.023); mediated 14% of secretor-status' effect on gastroenteritis risk.",
      "ref": "2025, Clin Microbiol Infect \u2014 Copenhagen birth cohort (n=700)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Eubacterium hallii",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Sleep disturbance",
+     "note": "The only species showing consensus enrichment across chronic insomnia cohorts; independently confirmed as significantly increased in a separate 14-study meta-analysis.",
+     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     }
    ],
    "down": []
