@@ -8018,6 +8018,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40007605/"
       }
      ]
+    },
+    {
+     "id": "new_cd_t15",
+     "name": "Bifidobacterium",
+     "dir": "down",
+     "refs": "n=16 active/5 quiescent CD vs. 14 controls (PMID 9125655)",
+     "note": "Significantly reduced in both active (P<0.01) and quiescent (P<0.02) Crohn's disease vs. healthy controls \u2014 classic early finding, still widely cited.",
+     "links": [
+      {
+       "id": "new_cd_t15_l1",
+       "label": "Favier et al., n=16/5/14 (PMID 9125655)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/9125655/"
+      }
+     ]
     }
    ]
   },
@@ -8271,6 +8285,20 @@
        "id": "seed_698",
        "label": "iScience 2026 (multi-omics, Iranian UC cohort; \u2193Faecalibacterium/Roseburia, \u2191E. coli/Fusobacterium, \u2193F/B ratio)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41847619/"
+      }
+     ]
+    },
+    {
+     "id": "new_uc_t17",
+     "name": "Bifidobacterium",
+     "dir": "down",
+     "refs": "16S rRNA microbial profiling (PMID 27604252)",
+     "note": "Marked reduction, particularly the Bifidobacterium bifidum species, proposed as a microbial biomarker for UC; B. bifidum shown protective against experimentally induced colitis.",
+     "links": [
+      {
+       "id": "new_uc_t17_l1",
+       "label": "16S rRNA profiling study (PMID 27604252)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/27604252/"
       }
      ]
     }
