@@ -40,7 +40,7 @@
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -97,12 +97,18 @@
      "note": "Preoperative abundance strongly, negatively correlated with postoperative nausea/vomiting (PONV) severity (r=-0.69, p<0.001) \u2014 i.e. higher Bifidobacterium predicted milder PONV.",
      "ref": "Tang et al. 2025, Frontiers in Medicine \u2014 thyroid cancer surgery cohort (PMID 40491765)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40491765/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Decreased in chronic constipation across multiple studies (though one slow-transit-specific study found B. longum specifically increased in that subtype).",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ]
   },
   {
    "name": "Faecalibacterium",
-   "count": 14,
+   "count": 15,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -183,6 +189,12 @@
      "note": "Meta-analysis across 14 studies found Faecalibacterium significantly decreased in insomnia patients.",
      "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Butyrate-producing genus reduced in chronic constipation across multiple studies.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
    "both": [
@@ -436,7 +448,7 @@
   },
   {
    "name": "Bacteroidetes",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -449,6 +461,12 @@
      "note": "Significant increase in Bacteroidetes among non-secretors (ANOVA, p=0.036) in a healthy-subject cohort comparison.",
      "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Mendelian randomization evidence for a positive causal association (OR=1.22, 95% CI 1.00-1.50, p=0.04).",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
    "down": [
@@ -462,7 +480,7 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 8,
+   "count": 9,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -505,6 +523,12 @@
      "note": "Increased at the genus level in AUD patients relative to healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
      "ref": "Frontiers Psychiatry",
      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1054685/full"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Increased in constipation-predominant IBS (IBS-C).",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
    "down": [
@@ -550,7 +574,7 @@
   },
   {
    "name": "Enterobacteriaceae",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -575,13 +599,19 @@
      "note": "Relative abundance of family Enterobacteriaceae showed a significant positive correlation with bloating in duodenal-aspirate SIBO patients (Spearman R=0.185, p=0.028).",
      "ref": "Leite et al. 2020, PLOS ONE \u2014 duodenal microbiome in SIBO (PMID 32645011)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32645011/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Elevated in constipation-predominant IBS (IBS-C).",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
    "down": []
   },
   {
    "name": "Coprococcus",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -608,6 +638,12 @@
      "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
      "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Mendelian randomization evidence for a protective causal effect (OR=0.74, 95% CI 0.64-0.86, p=0.0001) \u2014 i.e. lower levels causally linked to higher constipation risk.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ]
   },
@@ -653,8 +689,15 @@
   },
   {
    "name": "Ruminococcaceae",
-   "count": 4,
-   "up": [],
+   "count": 5,
+   "up": [
+    {
+     "symptom": "Constipation",
+     "note": "Higher abundance in defecatory disorder (a constipation subtype) vs. non-defecatory-disorder constipation.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    }
+   ],
    "down": [
     {
      "symptom": "Bloating & gas",
@@ -686,13 +729,19 @@
   },
   {
    "name": "Akkermansia",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
      "note": "Consistently increased with exercise across both a general-adult meta-analysis and a separate obesity/T2D-specific meta-analysis \u2014 one of the most reproducible exercise-microbiome findings; this genus is tracked as depleted in several conditions elsewhere in this app, making it a strong 'exercise counteracts X' candidate.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Enriched specifically in patients with delayed colonic transit.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
    "down": [
@@ -928,7 +977,7 @@
   },
   {
    "name": "Alistipes",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Anxiety",
@@ -947,6 +996,12 @@
      "note": "Part of the OCD gut-microbiome profile: increased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
      "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Enriched specifically in patients with delayed colonic transit.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
    "down": [
@@ -1120,8 +1175,15 @@
   },
   {
    "name": "Parabacteroides",
-   "count": 3,
-   "up": [],
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Constipation",
+     "note": "Elevated in slow-transit constipation (STC).",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    }
+   ],
    "down": [
     {
      "symptom": "Metabolic dysregulation",
@@ -1353,8 +1415,15 @@
   },
   {
    "name": "Christensenellaceae",
-   "count": 3,
-   "up": [],
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Constipation",
+     "note": "Increased in slow-transit constipation (STC) vs. normal-transit constipation.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    }
+   ],
    "down": [
     {
      "symptom": "Bloating & gas",
@@ -1579,7 +1648,7 @@
   },
   {
    "name": "Subdoligranulum",
-   "count": 3,
+   "count": 4,
    "up": [],
    "down": [
     {
@@ -1599,6 +1668,12 @@
      "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "PMC6421268",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Down-regulated in slow-transit constipation (STC).",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ]
   },
@@ -1754,7 +1829,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -1789,6 +1864,12 @@
      "note": "Increased in 2 case-control studies, decreased in 2 others \u2014 an even split, no consensus direction.",
      "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
+    },
+    {
+     "symptom": "Constipation",
+     "note": "Significantly up-regulated in slow-transit constipation in one study, but functional-constipation patients showed significantly lower Bacteroides in another \u2014 a real split, possibly reflecting different constipation subtypes.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ]
   },
@@ -2266,8 +2347,15 @@
   },
   {
    "name": "Ruthenibacterium",
-   "count": 3,
-   "up": [],
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Constipation",
+     "note": "Enriched specifically in patients with delayed colonic transit.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    }
+   ],
    "down": [
     {
      "symptom": "Bloating & gas",
@@ -2328,8 +2416,15 @@
   },
   {
    "name": "Butyricimonas",
-   "count": 3,
-   "up": [],
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Constipation",
+     "note": "Mendelian randomization risk association (OR=1.07, 95% CI 1.01-1.13, p=0.015).",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    }
+   ],
    "down": [
     {
      "symptom": "Bloating & gas",
