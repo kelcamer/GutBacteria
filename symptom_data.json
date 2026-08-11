@@ -120,7 +120,7 @@
   },
   {
    "name": "Faecalibacterium",
-   "count": 17,
+   "count": 18,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -219,6 +219,12 @@
      "note": "Enriched in healthy controls vs. GAD across multiple cohorts; negatively correlated with plasma cortisol. A meta-analysis found depleted Faecalibacterium and Coprococcus consistently shared between MDD and anxiety.",
      "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently lower in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ],
    "both": [
@@ -440,7 +446,7 @@
   },
   {
    "name": "Eubacterium",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Overstimulation",
@@ -473,6 +479,12 @@
      "note": "Multiple Eubacterium sub-taxa (E. rectale, E. coprostanoligenes group) more abundant in healthy controls than in GAD patients across independent cohorts \u2014 consistent direction at genus level despite species-level granularity in the underlying studies.",
      "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Eubacterium ventriosum group consistently lower in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ]
   },
@@ -554,7 +566,7 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -603,6 +615,12 @@
      "note": "Increased in constipation-predominant IBS (IBS-C).",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently higher in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ],
    "down": [
@@ -1056,7 +1074,7 @@
   },
   {
    "name": "Streptococcus",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Brain fog",
@@ -1075,6 +1093,12 @@
      "note": "Oral-origin genus that shows relative increase with heavy alcohol consumption and more pronounced blooms in alcoholic liver disease.",
      "ref": "PMC5645934",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5645934/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently higher in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ],
    "down": [
@@ -1178,7 +1202,7 @@
   },
   {
    "name": "Fusicatenibacter",
-   "count": 4,
+   "count": 5,
    "up": [],
    "down": [
     {
@@ -1204,6 +1228,12 @@
      "note": "Showed a suggestive protective association against acne vulgaris in the same Mendelian-randomization analysis.",
      "ref": "PMC10507220",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10507220/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently lower in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ]
   },
@@ -1267,7 +1297,7 @@
   },
   {
    "name": "Lachnoclostridium",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1280,6 +1310,12 @@
      "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
      "ref": "PMC7524151",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently higher in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ],
    "down": [
@@ -1444,7 +1480,7 @@
   },
   {
    "name": "Flavonifractor",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1457,6 +1493,12 @@
      "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
      "ref": "PMC7524151",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently higher in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ],
    "down": [
@@ -1470,7 +1512,7 @@
   },
   {
    "name": "Enterococcus",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -1495,13 +1537,19 @@
      "note": "Expanded alongside Proteobacteria and Veillonella as part of the pro-inflammatory taxa bloom in alcohol use disorder.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently higher in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ],
    "down": []
   },
   {
    "name": "Butyricicoccus",
-   "count": 4,
+   "count": 5,
    "up": [],
    "down": [
     {
@@ -1527,6 +1575,12 @@
      "note": "Negatively associated with the UPPS-urgency facet of trait impulsivity in a general-population cohort (n=913, neurotypical adults); also correlated with healthier dietary patterns (higher fiber/fruit/vegetable intake, less sugary drinks).",
      "ref": "Translational Psychiatry 2025 (PMID 40753077)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently lower in depression across a 44-study meta-analysis (2,091 patients vs. 2,792 controls).",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ]
   },
@@ -1824,7 +1878,7 @@
   },
   {
    "name": "Subdoligranulum",
-   "count": 5,
+   "count": 6,
    "up": [],
    "down": [
     {
@@ -1856,6 +1910,12 @@
      "note": "Enriched in healthy controls vs. GAD across two independent cohorts.",
      "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Consistently lower in depression across a 44-study meta-analysis.",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ]
   },
@@ -2612,7 +2672,7 @@
   },
   {
    "name": "Sutterella",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Overstimulation",
@@ -2651,7 +2711,15 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
-   "down": []
+   "down": [],
+   "both": [
+    {
+     "symptom": "Reduced socializing",
+     "note": "One study found Sutterella increased in ASD alongside Parasutterella. But a separate ASD cohort found Sutterella abundance negatively correlated with CARS severity scores (r=-0.24, p=0.0046, stronger in ASD-only subgroup r=-0.34, p=0.0072) \u2014 i.e. higher Sutterella tracked with LESS severe social impairment there, the opposite implication. Marked \"both\" given the genuine conflict.",
+     "ref": "Chen et al. 2021, Frontiers in Psychiatry \u2014 ASD children, CARS severity correlation (PMID 34975585)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34975585/"
+    }
+   ]
   },
   {
    "name": "Butyricimonas",
