@@ -633,18 +633,30 @@
     {
      "id": "seed_43",
      "name": "Collinsella",
-     "dir": "up",
+     "dir": "both",
      "refs": "57",
-     "note": "",
-     "links": []
+     "note": "Conflicting evidence: one source (ref 57) reports Collinsella elevated in autism, while another (PMC6933684) reports it depleted. Kept as \"both\" rather than picking a side.",
+     "links": [
+      {
+       "id": "seed_68_link",
+       "label": "PMC6933684",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
+      }
+     ]
     },
     {
      "id": "seed_44",
      "name": "Lachnoclostridium",
-     "dir": "up",
+     "dir": "both",
      "refs": "57",
-     "note": "",
-     "links": []
+     "note": "Conflicting evidence: one source (ref 57) reports Lachnoclostridium elevated in autism, while another (PMC6933684) reports it depleted. Kept as \"both\" rather than picking a side.",
+     "links": [
+      {
+       "id": "seed_70_link",
+       "label": "PMC6933684",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
+      }
+     ]
     },
     {
      "id": "seed_45",
@@ -881,20 +893,6 @@
      ]
     },
     {
-     "id": "seed_68",
-     "name": "Collinsella",
-     "dir": "down",
-     "refs": "",
-     "note": "",
-     "links": [
-      {
-       "id": "seed_68_link",
-       "label": "PMC6933684",
-       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
-      }
-     ]
-    },
-    {
      "id": "seed_69",
      "name": "Tyzzerella",
      "dir": "down",
@@ -903,20 +901,6 @@
      "links": [
       {
        "id": "seed_69_link",
-       "label": "PMC6933684",
-       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
-      }
-     ]
-    },
-    {
-     "id": "seed_70",
-     "name": "Lachnoclostridium",
-     "dir": "down",
-     "refs": "",
-     "note": "",
-     "links": [
-      {
-       "id": "seed_70_link",
        "label": "PMC6933684",
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
       }
