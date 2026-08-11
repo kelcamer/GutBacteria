@@ -1227,7 +1227,7 @@
   },
   {
    "name": "Flavonifractor",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1242,7 +1242,14 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
     }
    ],
-   "down": []
+   "down": [
+    {
+     "symptom": "Restlessness",
+     "note": "Significantly reduced in RLS vs. both healthy controls and insomnia patients \u2014 same study already cited for Lachnoclostridium above, the only two genera that met significance thresholds.",
+     "ref": "2025/2026, SLEEP (Oxford Academic) \u2014 RLS metagenomic signature study (PMID 41378921)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41378921/"
+    }
+   ]
   },
   {
    "name": "Enterococcus",
