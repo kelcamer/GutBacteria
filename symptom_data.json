@@ -114,7 +114,7 @@
   },
   {
    "name": "Faecalibacterium",
-   "count": 16,
+   "count": 17,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -207,6 +207,12 @@
      "note": "Butyrate-producing genus reduced in chronic constipation across multiple studies.",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Enriched in healthy controls vs. GAD across multiple cohorts; negatively correlated with plasma cortisol. A meta-analysis found depleted Faecalibacterium and Coprococcus consistently shared between MDD and anxiety.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ],
    "both": [
@@ -220,7 +226,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -277,6 +283,12 @@
      "note": "Depleted in this app's iron-deficiency-state taxa; iron-deficiency anemia is a documented cause of orthostatic hypotension/dizziness, and low iron storage is elevated in adolescent POTS.",
      "ref": "PMC11488462 / PMID 23720007",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11488462/"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Enriched in controls vs. GAD; also depleted in perimenopausal panic disorder.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ]
   },
@@ -398,7 +410,7 @@
   },
   {
    "name": "Eubacterium",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Overstimulation",
@@ -425,6 +437,12 @@
      "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "PMC6421268",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Multiple Eubacterium sub-taxa (E. rectale, E. coprostanoligenes group) more abundant in healthy controls than in GAD patients across independent cohorts \u2014 consistent direction at genus level despite species-level granularity in the underlying studies.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ]
   },
@@ -631,7 +649,7 @@
   },
   {
    "name": "Coprococcus",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -664,6 +682,12 @@
      "note": "Mendelian randomization evidence for a protective causal effect (OR=0.74, 95% CI 0.64-0.86, p=0.0001) \u2014 i.e. lower levels causally linked to higher constipation risk.",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Coprococcus eutactus significantly decreased in GAD and in \"any anxiety disorder\" broadly; also depleted in perimenopausal panic disorder.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ]
   },
@@ -1638,7 +1662,7 @@
   },
   {
    "name": "Ruminococcus gnavus",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1663,6 +1687,12 @@
      "note": "Significantly associated with the CBCL Aggressive Behavior subscale in ADHD children (p=0.031), and also with Rule-Breaking Behavior (p=0.046) and broadband Externalizing Behavior (p=0.036) in the same cohort \u2014 overall increased in the ADHD group vs. healthy controls.",
      "ref": "Lee et al. 2022, J Pers Med \u2014 ADHD children, CBCL Aggressive Behavior subscale, p=0.031 (PMID 36294773)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36294773/"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Increased in GAD patients vs. controls.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ],
    "down": []
@@ -1694,7 +1724,7 @@
   },
   {
    "name": "Subdoligranulum",
-   "count": 4,
+   "count": 5,
    "up": [],
    "down": [
     {
@@ -1720,6 +1750,12 @@
      "note": "Down-regulated in slow-transit constipation (STC).",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Enriched in healthy controls vs. GAD across two independent cohorts.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ]
   },
@@ -1787,7 +1823,7 @@
   },
   {
    "name": "Fusobacterium",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -1806,6 +1842,12 @@
      "note": "Positively correlated with marijuana use across observational studies synthesized in a 2025 systematic review.",
      "ref": "Thu et al. 2025 review",
      "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Increased in GAD across two independent cohorts.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ],
    "down": []
@@ -1875,7 +1917,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -1888,6 +1930,12 @@
      "note": "Mendelian-randomization analysis found genus Bacteroides (OR\u22482.25) and family Bacteroidaceae causally increased acne vulgaris risk.",
      "ref": "PMC10507220",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10507220/"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Enriched in treatment-naive GAD patients; abundance positively associated with anxiety severity.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ],
    "down": [
