@@ -3102,12 +3102,57 @@
    "name": "Non-secretor (FUT2)",
    "abbr": "FUT2",
    "color": "#C3E88D",
-   "note": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on \u2014 so Bifido runs low, and with it GABA.",
+   "note": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on \u2014 so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3\u00d710\u207b\u00b9\u2078, n=8,344 T1D cases). Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each.",
    "links": [
     {
      "id": "seed_210",
      "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+    },
+    {
+     "id": "seed_209_fp30_l1",
+     "label": "Peptic ulcers \u2014 Suadicani et al. 1999, Scand J Gastroenterol, Copenhagen Male Study n=3,387",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/10048731/"
+    },
+    {
+     "id": "seed_209_fp30_l2",
+     "label": "Dental caries \u2014 Holbrook & Blackwell 1989, FEMS Microbiol Immunol (Iceland)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/2488318/"
+    },
+    {
+     "id": "seed_209_fp30_l3",
+     "label": "Periodontal disease \u2014 Tabasum & Nayak 2011, Int J Dent Hyg",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21356004/"
+    },
+    {
+     "id": "seed_209_fp30_l4",
+     "label": "Oral submucous fibrosis \u2014 Hallikeri et al. 2015, J Investig Clin Dent",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24616058/"
+    },
+    {
+     "id": "seed_209_fp30_l5",
+     "label": "Crohn's disease \u2014 McGovern et al. 2010, Hum Mol Genet (FUT2 non-secretor GWAS association)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/20570966/"
+    },
+    {
+     "id": "seed_209_fp30_l6",
+     "label": "Necrotizing enterocolitis \u2014 Morrow et al. 2011, J Pediatr (premature infants)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21238985/"
+    },
+    {
+     "id": "seed_209_fp30_l7",
+     "label": "HIV progression (secretors) \u2014 Blackwell et al. 1991, BMJ",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/1932970/"
+    },
+    {
+     "id": "seed_209_fp30_l8",
+     "label": "Respiratory viral illness / influenza (secretors) \u2014 Raza et al. 1991, BMJ",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/1932979/"
+    },
+    {
+     "id": "seed_209_fp30_l9",
+     "label": "Type 1 Diabetes (non-secretor A/A genotype, OR=1.29) \u2014 Smyth et al. 2011, Diabetes (PMID 22025780)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22025780/"
     }
    ],
    "taxa": [
@@ -3337,14 +3382,19 @@
     {
      "id": "seed_209_fp10",
      "name": "Streptococcus",
-     "dir": "down",
+     "dir": "both",
      "refs": "PMID 30540710",
-     "note": "Lower in non-secretor vs. secretor milk samples.",
+     "note": "Lower in non-secretor vs. secretor milk samples (n=25) \u2014 but a 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus\" (a general/background claim in that review, not tied to its own dedicated primary study, so weaker evidence than the milk finding). Circumstantial support: Type 1 diabetes \u2014 itself strongly linked to non-secretor status (Smyth et al. 2011, OR=1.29, P=4.3\u00d710\u207b\u00b9\u2078) \u2014 independently shows elevated Streptococcus vs. healthy controls. Milk and general/oral infection susceptibility are different body-fluid contexts, so both directions are preserved rather than picking one.",
      "links": [
       {
        "id": "seed_209_fp10_l1",
        "label": "2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
+      },
+      {
+       "id": "seed_209_fp10_l2",
+       "label": "Kaur et al. 2022, Int J Mol Epidemiol Genet \u2014 review (PMID 35892094)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
       }
      ]
     },
@@ -3495,6 +3545,34 @@
        "id": "seed_209_fp20_l1",
        "label": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp28",
+     "name": "Candida albicans",
+     "dir": "up",
+     "refs": "PMID 35892094",
+     "note": "A 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus,\" and separately cites a case-control study finding non-secretor status predisposes to vaginal candidiasis (Kulkarni & Venkatesh 2004) and non-secretion of blood group antigens associated with susceptibility to Candida species infection (Thom et al. 1989).",
+     "links": [
+      {
+       "id": "seed_209_fp28_l1",
+       "label": "Kaur et al. 2022, Int J Mol Epidemiol Genet \u2014 review (PMID 35892094)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp29",
+     "name": "Helicobacter pylori",
+     "dir": "down",
+     "refs": "PMID 35892094",
+     "note": "Opposite pattern from most pathogens on this map: SECRETORS (not non-secretors) are more susceptible. Positive-BabA-adhesin H. pylori strains require the secretor phenotype's fucosylated glycans to adhere to and infect gastric epithelium in both humans and rhesus monkeys (Azevedo et al. 2008, J Pathol) \u2014 so non-secretors are relatively protected from this specific colonization route.",
+     "links": [
+      {
+       "id": "seed_209_fp29_l1",
+       "label": "Kaur et al. 2022, Int J Mol Epidemiol Genet \u2014 review of Azevedo et al. 2008 (PMID 35892094)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
       }
      ]
     }
@@ -9327,6 +9405,153 @@
        "id": "new_tbi_t6_l1",
        "label": "Protective role of Hungatella hathewayi for post-mTBI cognitive impairment, 2026 (PMID 41617714)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41617714/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "new_t1d",
+   "name": "Type 1 Diabetes",
+   "abbr": "T1D",
+   "color": "#FF6F91",
+   "note": "Genetically linked to FUT2 non-secretor status: the nonsecretor A/A genotype of rs601338 confers T1D susceptibility (OR=1.29, 95% CI 1.20\u20131.37, P=4.3\u00d710\u207b\u00b9\u2078 across 8,344 T1D cases, 10,008 controls, 3,360 T1D families) \u2014 the authors describe \"an intriguing relationship between host resistance to infections and susceptibility to autoimmune disease.\" Bacteria taxa below are from a separate, direct gut-microbiome case-control study.",
+   "links": [
+    {
+     "id": "new_t1d_l1",
+     "label": "Smyth et al. 2011, Diabetes \u2014 FUT2 nonsecretor status links T1D susceptibility and resistance to infection (PMID 22025780)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22025780/"
+    },
+    {
+     "id": "new_t1d_l2",
+     "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control gut microbiome study (PMID 30224347)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+    }
+   ],
+   "taxa": [
+    {
+     "id": "new_t1d_t1",
+     "name": "Bacteroides",
+     "dir": "up",
+     "refs": "PMID 30224347",
+     "note": "Significantly higher relative abundance vs. healthy children.",
+     "links": [
+      {
+       "id": "new_t1d_t1_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      }
+     ]
+    },
+    {
+     "id": "new_t1d_t2",
+     "name": "Ruminococcus",
+     "dir": "up",
+     "refs": "PMID 30224347",
+     "note": "Significantly higher relative abundance vs. healthy children.",
+     "links": [
+      {
+       "id": "new_t1d_t2_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      }
+     ]
+    },
+    {
+     "id": "new_t1d_t3",
+     "name": "Veillonella",
+     "dir": "up",
+     "refs": "PMID 30224347",
+     "note": "Significantly higher relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability).",
+     "links": [
+      {
+       "id": "new_t1d_t3_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      }
+     ]
+    },
+    {
+     "id": "new_t1d_t4",
+     "name": "Blautia",
+     "dir": "up",
+     "refs": "PMID 30224347",
+     "note": "Significantly higher relative abundance vs. healthy children.",
+     "links": [
+      {
+       "id": "new_t1d_t4_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      }
+     ]
+    },
+    {
+     "id": "new_t1d_t5",
+     "name": "Streptococcus",
+     "dir": "up",
+     "refs": "PMID 30224347",
+     "note": "Significantly higher relative abundance vs. healthy children.",
+     "links": [
+      {
+       "id": "new_t1d_t5_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      }
+     ]
+    },
+    {
+     "id": "new_t1d_t6",
+     "name": "Bifidobacterium",
+     "dir": "down",
+     "refs": "PMID 30224347",
+     "note": "Significantly lower relative abundance vs. healthy children.",
+     "links": [
+      {
+       "id": "new_t1d_t6_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      }
+     ]
+    },
+    {
+     "id": "new_t1d_t7",
+     "name": "Roseburia",
+     "dir": "down",
+     "refs": "PMID 30224347",
+     "note": "Significantly lower relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability).",
+     "links": [
+      {
+       "id": "new_t1d_t7_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      }
+     ]
+    },
+    {
+     "id": "new_t1d_t8",
+     "name": "Faecalibacterium",
+     "dir": "down",
+     "refs": "PMID 30224347",
+     "note": "Significantly lower relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability).",
+     "links": [
+      {
+       "id": "new_t1d_t8_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      }
+     ]
+    },
+    {
+     "id": "new_t1d_t9",
+     "name": "Lachnospira",
+     "dir": "down",
+     "refs": "PMID 30224347",
+     "note": "Significantly lower relative abundance vs. healthy children.",
+     "links": [
+      {
+       "id": "new_t1d_t9_l1",
+       "label": "Leiva-Gea et al. 2018, Diabetes Care \u2014 case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
       }
      ]
     }

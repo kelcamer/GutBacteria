@@ -36,7 +36,9 @@
   "Exercise-associated microbiota changes",
   "Lack of impulse control",
   "Non-secretor status (FUT2)",
-  "Poor working memory"
+  "Poor working memory",
+  "Oral cavities",
+  "Strep throat history"
  ],
  "bacteria": [
   {
@@ -1070,7 +1072,7 @@
   },
   {
    "name": "Streptococcus",
-   "count": 7,
+   "count": 9,
    "up": [
     {
      "symptom": "Brain fog",
@@ -1095,6 +1097,18 @@
      "note": "Consistently higher in depression across a 44-study meta-analysis.",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
+    },
+    {
+     "symptom": "Oral cavities",
+     "note": "Non-secretor status is linked to dental caries in two independent studies (Iceland and Hungary cohorts) and to periodontal disease, via reduced antimicrobial HBGA glycans in saliva.",
+     "ref": "Holbrook & Blackwell 1989, FEMS Microbiol Immunol; K\u00e1rp\u00e1ti et al. 2014, Caries Res",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/2488318/"
+    },
+    {
+     "symptom": "Strep throat history",
+     "note": "A 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus\" \u2014 a general/background claim in that review, not tied to a dedicated primary study on strep throat specifically, so treat as weaker/lower-confidence evidence than this app's other Streptococcus entries.",
+     "ref": "Kaur et al. 2022, Int J Mol Epidemiol Genet \u2014 review (PMID 35892094)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
     }
    ],
    "down": [
