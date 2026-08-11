@@ -171,18 +171,20 @@
      "note": "Depleted across human and animal ethanol-dysbiosis studies \u2014 loss of the anti-inflammatory, butyrate-producing genus that's already low across most inflammatory conditions in this app.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
-    },
+    }
+   ],
+   "both": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele, implying lower abundance in non-secretors.",
-     "ref": "2023, Frontiers in Microbiology \u2014 FUT2 & rotavirus susceptibility",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/36922975/"
+     "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele in one cohort, implying lower abundance in non-secretors \u2014 but a separate indicator-species analysis found Faecalibacterium among the taxa characteristic of healthy non-secretor individuals, the opposite direction. Marked \"both\" given real, independently-sourced evidence on each side.",
+     "ref": "2023, Frontiers in Microbiology \u2014 FUT2 & rotavirus susceptibility; Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     }
    ]
   },
   {
    "name": "Roseburia",
-   "count": 8,
+   "count": 9,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -300,7 +302,7 @@
   },
   {
    "name": "Prevotella",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Joint pain",
@@ -313,6 +315,12 @@
      "note": "Drives Th17-biased immune responses linked to autoimmune inflammation in animal models.",
      "ref": "PMID 36323929",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36323929/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "One of five indicator OTUs (alongside unclassified Lachnospiraceae, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     }
    ],
    "down": [
@@ -364,8 +372,15 @@
   },
   {
    "name": "Blautia",
-   "count": 3,
-   "up": [],
+   "count": 4,
+   "up": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
+     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+    }
+   ],
    "down": [
     {
      "symptom": "Bloating & gas",
@@ -399,9 +414,9 @@
     },
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
-     "ref": "derived",
-     "url": ""
+     "note": "Significant increase in Bacteroidetes among non-secretors (ANOVA, p=0.036) in a healthy-subject cohort comparison.",
+     "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     }
    ],
    "down": [
@@ -581,12 +596,14 @@
      "note": "Reduced by cigarette smoke exposure per the structured review.",
      "ref": "PMC11658948",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
-    },
+    }
+   ],
+   "both": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "C. coccoides group counts significantly decreased in non-secretors vs. secretors (p=0.02).",
-     "ref": "2015, PLOS ONE \u2014 secretor status in pregnancy (n=123)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/26231005/"
+     "note": "C. coccoides group (cluster XIVa) counts significantly decreased in non-secretors vs. secretors (p=0.02) in a pregnancy cohort \u2014 but a separate adult cohort found Clostridium sphenoides et rel. significantly higher in non-secretors (p<0.05), plus a non-significant trend toward higher Clostridium clusters IV/XIVa overall in non-secretors. Marked \"both\" given real, independently-sourced evidence pointing opposite directions, likely reflecting different sub-clades within the genus.",
+     "ref": "2015, PLOS ONE \u2014 secretor status in pregnancy (n=123); Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     }
    ]
   },
@@ -625,7 +642,7 @@
   },
   {
    "name": "Akkermansia",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -658,13 +675,26 @@
      "note": "Mucin-degrading, barrier-supportive species depleted alongside the broader loss of protective commensals in alcohol use disorder.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) \u2014 a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors.",
+     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     }
    ]
   },
   {
    "name": "Lachnospiraceae",
    "count": 6,
-   "up": [],
+   "up": [
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Correction: an earlier version of this entry listed Lachnospiraceae as lower in non-secretors with no real citation behind it. The actual literature found points the other way \u2014 unclassified Lachnospiraceae was one of five indicator OTUs (alongside Prevotella, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+    }
+   ],
    "down": [
     {
      "symptom": "Bloating & gas",
@@ -689,12 +719,6 @@
      "note": "Commensal family showing relative decrease in heavy alcohol consumers.",
      "ref": "PMC7504034",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
-    },
-    {
-     "symptom": "Non-secretor status (FUT2)",
-     "note": "Highlighted lower abundances in non-secretors.",
-     "ref": "derived",
-     "url": ""
     }
    ],
    "both": [
@@ -1277,13 +1301,19 @@
   },
   {
    "name": "Dorea",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
      "note": "Acetate-producing genus directly associated with glucose regulation; increased abundance after exercise intervention.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Dorea formicigenerans et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
+     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     }
    ],
    "down": [
@@ -1422,7 +1452,7 @@
   },
   {
    "name": "Ruminococcus gnavus",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1435,6 +1465,12 @@
      "note": "Produces an inflammatory glucorhamnan polysaccharide that triggers TNF\u03b1 from dendritic cells.",
      "ref": "PMC6601261 / PNAS 1904099116",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6601261/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "Ruminococcus gnavus et rel. significantly higher in non-secretors (p<0.05), HITChip analysis \u2014 distinct from the bare Ruminococcus genus, which showed no single clean direction and isn't tracked here for that reason.",
+     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     }
    ],
    "down": []
@@ -1641,7 +1677,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -1662,6 +1698,12 @@
      "note": "Consistently lower abundance after exercise intervention across pooled RCT/crossover studies.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "B. plebeius et rel. and B. fragilis et rel. co-occurred specifically in secretors (implying lower abundance in non-secretors); consistent with an earlier study from the same group reporting higher Bacteroides diversity/abundance in secretors.",
+     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     }
    ]
   },
@@ -2152,7 +2194,7 @@
   },
   {
    "name": "Sutterella",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Overstimulation",
@@ -2177,6 +2219,12 @@
      "note": "Associated with GI symptom severity in autism cohorts.",
      "ref": "PMID 31752095 (autism GI review)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31752095/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "One of five indicator OTUs (alongside Prevotella, unclassified Lachnospiraceae, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     }
    ],
    "down": []

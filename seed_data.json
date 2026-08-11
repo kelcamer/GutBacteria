@@ -2928,9 +2928,15 @@
      "id": "seed_211",
      "name": "Bacteroidetes",
      "dir": "up",
-     "refs": "derived",
-     "note": "",
-     "links": []
+     "refs": "PMID 22068912",
+     "note": "Significant increase in Bacteroidetes among non-secretors (ANOVA, p=0.036) in a healthy-subject cohort comparison.",
+     "links": [
+      {
+       "id": "seed_211_l1",
+       "label": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+      }
+     ]
     },
     {
      "id": "seed_212",
@@ -2962,10 +2968,16 @@
     {
      "id": "seed_215",
      "name": "Lachnospiraceae",
-     "dir": "down",
-     "refs": "derived",
-     "note": "Highlighted lower abundances in non-secretors.",
-     "links": []
+     "dir": "up",
+     "refs": "PMID 22068912",
+     "note": "Correction: an earlier version of this entry listed Lachnospiraceae as lower in non-secretors with no real citation behind it. The actual literature found points the other way \u2014 unclassified Lachnospiraceae was one of five indicator OTUs (alongside Prevotella, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "links": [
+      {
+       "id": "seed_215_l1",
+       "label": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+      }
+     ]
     },
     {
      "id": "seed_216",
@@ -3110,14 +3122,19 @@
     {
      "id": "seed_209_fp7",
      "name": "Faecalibacterium",
-     "dir": "down",
+     "dir": "both",
      "refs": "PMID 36922975",
-     "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele, implying lower abundance in non-secretors.",
+     "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele in one cohort, implying lower abundance in non-secretors \u2014 but a separate indicator-species analysis found Faecalibacterium among the taxa characteristic of healthy non-secretor individuals, the opposite direction. Marked \"both\" given real, independently-sourced evidence on each side.",
      "links": [
       {
        "id": "seed_209_fp7_l1",
        "label": "2023, Frontiers in Microbiology \u2014 FUT2 & rotavirus susceptibility",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36922975/"
+      },
+      {
+       "id": "seed_209_fp7_l2",
+       "label": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
       }
      ]
     },
@@ -3180,14 +3197,19 @@
     {
      "id": "seed_209_fp12",
      "name": "Clostridium",
-     "dir": "down",
+     "dir": "both",
      "refs": "PMID 26231005",
-     "note": "C. coccoides group counts significantly decreased in non-secretors vs. secretors (p=0.02).",
+     "note": "C. coccoides group (cluster XIVa) counts significantly decreased in non-secretors vs. secretors (p=0.02) in a pregnancy cohort \u2014 but a separate adult cohort found Clostridium sphenoides et rel. significantly higher in non-secretors (p<0.05), plus a non-significant trend toward higher Clostridium clusters IV/XIVa overall in non-secretors. Marked \"both\" given real, independently-sourced evidence pointing opposite directions, likely reflecting different sub-clades within the genus.",
      "links": [
       {
        "id": "seed_209_fp12_l1",
        "label": "2015, PLOS ONE \u2014 secretor status in pregnancy (n=123)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/26231005/"
+      },
+      {
+       "id": "seed_209_fp12_l2",
+       "label": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
       }
      ]
     },
@@ -3207,6 +3229,104 @@
        "id": "seed_209_fp13_l2",
        "label": "Imhann et al. 2018, Gut \u2014 host genetics & IBD microbiota (PMID 27802154)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/27802154/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp14",
+     "name": "Akkermansia",
+     "dir": "down",
+     "refs": "PMID 24733310",
+     "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) \u2014 a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors.",
+     "links": [
+      {
+       "id": "seed_209_fp14_l1",
+       "label": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp15",
+     "name": "Blautia",
+     "dir": "up",
+     "refs": "PMID 24733310",
+     "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
+     "links": [
+      {
+       "id": "seed_209_fp15_l1",
+       "label": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp16",
+     "name": "Dorea",
+     "dir": "up",
+     "refs": "PMID 24733310",
+     "note": "Dorea formicigenerans et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
+     "links": [
+      {
+       "id": "seed_209_fp16_l1",
+       "label": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp17",
+     "name": "Ruminococcus gnavus",
+     "dir": "up",
+     "refs": "PMID 24733310",
+     "note": "Ruminococcus gnavus et rel. significantly higher in non-secretors (p<0.05), HITChip analysis \u2014 distinct from the bare Ruminococcus genus, which showed no single clean direction and isn't tracked here for that reason.",
+     "links": [
+      {
+       "id": "seed_209_fp17_l1",
+       "label": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp18",
+     "name": "Bacteroides",
+     "dir": "down",
+     "refs": "PMID 24733310",
+     "note": "B. plebeius et rel. and B. fragilis et rel. co-occurred specifically in secretors (implying lower abundance in non-secretors); consistent with an earlier study from the same group reporting higher Bacteroides diversity/abundance in secretors.",
+     "links": [
+      {
+       "id": "seed_209_fp18_l1",
+       "label": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp19",
+     "name": "Prevotella",
+     "dir": "up",
+     "refs": "PMID 22068912",
+     "note": "One of five indicator OTUs (alongside unclassified Lachnospiraceae, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "links": [
+      {
+       "id": "seed_209_fp19_l1",
+       "label": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp20",
+     "name": "Sutterella",
+     "dir": "up",
+     "refs": "PMID 22068912",
+     "note": "One of five indicator OTUs (alongside Prevotella, unclassified Lachnospiraceae, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "links": [
+      {
+       "id": "seed_209_fp20_l1",
+       "label": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
       }
      ]
     }
