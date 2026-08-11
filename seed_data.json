@@ -3444,28 +3444,38 @@
     {
      "id": "seed_240",
      "name": "Bacteroidetes",
-     "dir": "up",
+     "dir": "both",
      "refs": "",
-     "note": "Enriched in untreated BD depression vs HC (Hu 2019 shotgun).",
+     "note": "Enriched in untreated BD depression vs. HC in a younger cohort (mean age ~24, Hu 2019). But a systematic review found this flips with age: middle-aged BD cohorts (mean age ~38-41) show DECREASED Bacteroidetes instead \u2014 the same age-dependent pattern documented for Major Depressive Disorder in this app, but reported here as an independent BD-specific finding in the same review.",
      "links": [
       {
        "id": "seed_241",
        "label": "Hu 2019 (Adv Sci; bipolar depression: \u2191Bacteroidetes/Parabacteroides/Bacteroides; \u2193Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+      },
+      {
+       "id": "seed_241_l_kelly",
+       "label": "Kelly et al. 2021 systematic review, Nutrients (PMID 35010912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
       }
      ]
     },
     {
      "id": "seed_242",
      "name": "Bacteroides",
-     "dir": "up",
+     "dir": "both",
      "refs": "",
-     "note": "Higher in untreated BD depression (Hu 2019).",
+     "note": "Higher in untreated BD depression (Hu 2019). But a systematic review found Bacteroides/Bacteroides-Prevotella group elevated in BD in 2 studies, while a third study found it lower in BD \u2014 marked \"both\" given real, independently-sourced evidence on each side.",
      "links": [
       {
        "id": "seed_243",
        "label": "Hu 2019 (Adv Sci; bipolar depression: \u2191Bacteroidetes/Parabacteroides/Bacteroides; \u2193Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+      },
+      {
+       "id": "seed_243_l_sublette",
+       "label": "Sublette et al. 2021 systematic review, Bipolar Disorders (PMID 33512753)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33512753/"
       }
      ]
     },
@@ -3542,23 +3552,28 @@
     {
      "id": "seed_254",
      "name": "Firmicutes",
-     "dir": "down",
+     "dir": "both",
      "refs": "",
-     "note": "Depleted at phylum level in untreated BD depression vs HC (Hu 2019).",
+     "note": "Depleted at phylum level in untreated BD depression vs. HC in a younger cohort (mean age ~24, Hu 2019). But a systematic review found this flips with age: middle-aged BD cohorts (mean age ~38-41) show INCREASED Firmicutes instead \u2014 the same age-dependent pattern documented for Major Depressive Disorder in this app, but reported here as an independent BD-specific finding in the same review.",
      "links": [
       {
        "id": "seed_255",
        "label": "Hu 2019 (Adv Sci; bipolar depression: \u2191Bacteroidetes/Parabacteroides/Bacteroides; \u2193Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+      },
+      {
+       "id": "seed_255_l_kelly",
+       "label": "Kelly et al. 2021 systematic review, Nutrients (PMID 35010912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
       }
      ]
     },
     {
      "id": "seed_256",
      "name": "Faecalibacterium",
-     "dir": "down",
+     "dir": "both",
      "refs": "",
-     "note": "Robust across cohorts; Evans 2017 shows F. prausnitzii inversely correlates with SF12/PHQ9/PSQI/GAD7/ASRM within BD.",
+     "note": "Robust across most cohorts; Evans 2017 shows F. prausnitzii inversely correlates with SF12/PHQ9/PSQI/GAD7/ASRM within BD. But a systematic review of the Ruminococcaceae/Faecalibacterium/F. prausnitzii clade found it reduced in BD vs. controls in 3 studies and elevated in a 4th \u2014 marked \"both\" given real, independently-sourced evidence on each side.",
      "links": [
       {
        "id": "seed_257",
@@ -3574,20 +3589,30 @@
        "id": "seed_259",
        "label": "Hu 2019 (Adv Sci; bipolar depression: \u2191Bacteroidetes/Parabacteroides/Bacteroides; \u2193Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+      },
+      {
+       "id": "seed_257_l_sublette",
+       "label": "Sublette et al. 2021 systematic review, Bipolar Disorders (PMID 33512753)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33512753/"
       }
      ]
     },
     {
      "id": "seed_260",
      "name": "Ruminococcaceae",
-     "dir": "down",
+     "dir": "both",
      "refs": "",
-     "note": "Family-level LEfSe decrease in BD (Painold 2019).",
+     "note": "Family-level LEfSe decrease in BD (Painold 2019). But a systematic review found this same clade (Ruminococcaceae/Faecalibacterium/F. prausnitzii) reduced in BD vs. controls in 3 studies and elevated in a 4th \u2014 marked \"both\" given real, independently-sourced evidence on each side.",
      "links": [
       {
        "id": "seed_261",
        "label": "Painold 2019 (Bipolar Disord; \u2191Actinobacteria/Coriobacteria, \u2193Ruminococcaceae/Faecalibacterium; state = depressive episode)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30051546/"
+      },
+      {
+       "id": "seed_261_l_sublette",
+       "label": "Sublette et al. 2021 systematic review, Bipolar Disorders (PMID 33512753)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33512753/"
       }
      ]
     },
@@ -3742,6 +3767,20 @@
        "id": "seed_520",
        "label": "Nikolova 2021 (JAMA Psychiatry; umbrella meta-analysis, 59 studies; transdiagnostic \u2191Eggerthella, \u2193Faecalibacterium/Coprococcus)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/34524405/"
+      }
+     ]
+    },
+    {
+     "id": "seed_bp_prevotella",
+     "name": "Prevotella",
+     "dir": "up",
+     "refs": "",
+     "note": "Bacteroides-Prevotella cluster enriched in untreated BD depression patients vs. healthy controls (Hu 2019 shotgun sequencing) \u2014 same study already cited for Bacteroidetes/Bacteroides/Parabacteroides here.",
+     "links": [
+      {
+       "id": "seed_bp_prevotella_l1",
+       "label": "Hu et al. 2019 (Adv Sci; Bacteroides-Prevotella cluster enriched in untreated BD depression)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
       }
      ]
     }
