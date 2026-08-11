@@ -3190,6 +3190,25 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/26231005/"
       }
      ]
+    },
+    {
+     "id": "seed_209_fp13",
+     "name": "Roseburia",
+     "dir": "down",
+     "refs": "PMID 24781901",
+     "note": "Roseburia (an anti-inflammatory SCFA/butyrate producer) was significantly depleted in FUT2 heterozygotes and non-secretors vs. secretor homozygotes, in cecal/sigmoid mucosal samples from healthy volunteers; the same secretor-linked depletion is echoed in an IBD cohort's host-genetics/microbiota analysis.",
+     "links": [
+      {
+       "id": "seed_209_fp13_l1",
+       "label": "2014, ISME Journal \u2014 FUT2 & gut microbiome energy metabolism, healthy volunteers (n=39)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24781901/"
+      },
+      {
+       "id": "seed_209_fp13_l2",
+       "label": "Imhann et al. 2018, Gut \u2014 host genetics & IBD microbiota (PMID 27802154)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/27802154/"
+      }
+     ]
     }
    ]
   },
