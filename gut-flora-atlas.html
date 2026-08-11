@@ -605,12 +605,28 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
     el.style.zIndex=String(++zCounter);
     renderTip(el,idx,true);
     if(isNew){
+      // Open right next to the node that was actually double-clicked
+      // (same node->screen conversion the old hover preview used), not in a
+      // fixed corner of the map — the whole point of pinning is "here's
+      // this node's info," so it should visually stay near that node. Still
+      // draggable/closeable afterward via the existing chrome.
+      var node=V[idx];
+      var pt=svg.createSVGPoint();
+      pt.x=node.x;pt.y=node.y;
+      var sp=pt.matrixTransform(svg.getScreenCTM());
       var rect=wrap.getBoundingClientRect();
       var tw=el.offsetWidth,th=el.offsetHeight;
+      var edge=Math.max(node.r||8,12);
+      var baseX=sp.x-rect.left,baseY=sp.y-rect.top;
       var n=Object.keys(pinnedEls).length-1;
-      var off=(n%8)*20;
-      el.style.left=Math.max(6,rect.width-tw-6-off)+"px";
-      el.style.top=Math.max(6,rect.height-th-6-off)+"px";
+      var off=(n%8)*20; // stagger multiple simultaneously-open popups so they don't perfectly overlap
+      var nx=baseX+edge+6+off;
+      if(nx+tw>rect.width-6)nx=baseX-edge-6-tw-off;
+      var ny=baseY-th/2+off;
+      nx=Math.max(6,Math.min(nx,rect.width-tw-6));
+      ny=Math.max(6,Math.min(ny,rect.height-th-6));
+      el.style.left=nx+"px";
+      el.style.top=ny+"px";
     }
   }
 
@@ -1480,12 +1496,28 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
     el.style.zIndex=String(++zCounter);
     renderTip(el,idx,true);
     if(isNew){
+      // Open right next to the node that was actually double-clicked
+      // (same node->screen conversion the old hover preview used), not in a
+      // fixed corner of the map — the whole point of pinning is "here's
+      // this node's info," so it should visually stay near that node. Still
+      // draggable/closeable afterward via the existing chrome.
+      var node=V[idx];
+      var pt=svg.createSVGPoint();
+      pt.x=node.x;pt.y=node.y;
+      var sp=pt.matrixTransform(svg.getScreenCTM());
       var rect=wrap.getBoundingClientRect();
       var tw=el.offsetWidth,th=el.offsetHeight;
+      var edge=Math.max(node.r||8,12);
+      var baseX=sp.x-rect.left,baseY=sp.y-rect.top;
       var n=Object.keys(pinnedEls).length-1;
-      var off=(n%8)*20;
-      el.style.left=Math.max(6,rect.width-tw-6-off)+"px";
-      el.style.top=Math.max(6,rect.height-th-6-off)+"px";
+      var off=(n%8)*20; // stagger multiple simultaneously-open popups so they don't perfectly overlap
+      var nx=baseX+edge+6+off;
+      if(nx+tw>rect.width-6)nx=baseX-edge-6-tw-off;
+      var ny=baseY-th/2+off;
+      nx=Math.max(6,Math.min(nx,rect.width-tw-6));
+      ny=Math.max(6,Math.min(ny,rect.height-th-6));
+      el.style.left=nx+"px";
+      el.style.top=ny+"px";
     }
   }
 
