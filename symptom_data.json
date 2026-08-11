@@ -42,7 +42,8 @@
   "Intrusive thoughts",
   "Urinary tract infections (UTI)",
   "Hair loss",
-  "Panic attack"
+  "Panic attack",
+  "Allergies"
  ],
  "bacteria": [
   {
@@ -252,7 +253,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 11,
+   "count": 12,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -321,6 +322,12 @@
      "note": "Negatively correlated with Th17 cell levels and the Th17/Treg ratio (and with inflammatory markers ESR, CRP, IgG, IgM) in primary Sj\u00f6gren's syndrome \u2014 i.e. depletion tracks with a more pro-inflammatory, less-regulated T-cell balance.",
      "ref": "Xin et al. 2022, Frontiers in Immunology \u2014 primary Sj\u00f6gren's syndrome, 98 patients vs. 105 controls (PMID 36275752)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36275752/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Decreased in allergic rhinitis patients across 2 independent studies.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ]
   },
@@ -408,7 +415,7 @@
   },
   {
    "name": "Prevotella",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Joint pain",
@@ -433,6 +440,12 @@
      "note": "Prevotella-enriched enterotype associated with high risk of diarrhea-predominant IBS (IBS-D) \u2014 over 100-fold higher abundance vs. healthy controls (p<0.05); replicated in a post-infectious mouse model.",
      "ref": "Su et al. 2018, Gastroenterology Research and Practice \u2014 40 IBS-D vs. 20 controls, +mouse model (PMID 29967640)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29967640/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Increased in allergic rhinitis patients across 2 independent studies.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ],
    "down": [
@@ -554,7 +567,7 @@
   },
   {
    "name": "Bacteroidetes",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -579,6 +592,12 @@
      "note": "Phylum-level increase in migraine across 2 independent studies within this review.",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Increased in allergic rhinitis patients, corroborated across 5 independent studies.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ],
    "down": [
@@ -704,7 +723,7 @@
   },
   {
    "name": "Enterobacteriaceae",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -753,6 +772,12 @@
      "note": "Significantly increased in diarrhea-predominant IBS (IBS-D) patients vs. healthy controls (P<0.01), 16S rRNA, n=30 IBS-D / 30 controls.",
      "ref": "Mei et al. 2021, BMC Gastroenterology (PMID 33663411)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/33663411/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Increased in allergic rhinitis patients (2 studies); also identified as elevated in the broader allergic-sensitization/eczema/asthma literature.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ],
    "down": [
@@ -816,7 +841,7 @@
   },
   {
    "name": "Clostridium",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -843,6 +868,12 @@
      "note": "Reduced by cigarette smoke exposure per the structured review.",
      "ref": "PMC11658948",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Decreased in allergic rhinitis patients across 3 independent studies. Note: the family-level Clostridiaceae is reported INCREASED in the broader allergic-sensitization/eczema/asthma literature \u2014 a genuine rank-level split, kept as two separate entries rather than merged.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ],
    "both": [
@@ -1314,7 +1345,7 @@
   },
   {
    "name": "Proteobacteria",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -1365,6 +1396,12 @@
      "note": "Causal protective factor for OCD in a two-sample Mendelian randomization analysis (OR=0.545, 95%CI 0.345-0.855, P=0.008) \u2014 a broader OCD-wide finding, not specific to the obsessions subscale like the Lachnospira pectinoschiza entry above.",
      "ref": "He et al. 2025, J Affect Disord \u2014 two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Decreased in allergic rhinitis patients across 2 independent studies (phylum-level).",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ],
    "both": [
@@ -1429,7 +1466,7 @@
   },
   {
    "name": "Parabacteroides",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Constipation",
@@ -1442,6 +1479,12 @@
      "note": "Increased in migraine across 2 independent studies within this review.",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Increased in allergic rhinitis patients across 2 independent studies.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ],
    "down": [
@@ -1743,7 +1786,7 @@
   },
   {
    "name": "Dorea",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -1782,6 +1825,12 @@
      "note": "Lower in marijuana-using people with HIV in a preliminary cross-sectional study \u2014 population-specific finding.",
      "ref": "Preliminary (HIV+ cohort)",
      "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Decreased in allergic rhinitis patients across 2 independent studies.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ],
    "both": [
@@ -1983,7 +2032,7 @@
   },
   {
    "name": "Subdoligranulum",
-   "count": 6,
+   "count": 7,
    "up": [],
    "down": [
     {
@@ -2021,6 +2070,12 @@
      "note": "Consistently lower in depression across a 44-study meta-analysis.",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Decreased in allergic rhinitis patients across 2 independent studies.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
    ]
   },
@@ -3073,8 +3128,15 @@
   },
   {
    "name": "Clostridiaceae",
-   "count": 1,
-   "up": [],
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Allergies",
+     "note": "Family-level increase associated with development of allergic sensitization, eczema, or asthma. Note: at the genus level, bare Clostridium is reported DECREASED in allergic rhinitis specifically (3 studies) \u2014 a genuine rank-level split kept as two separate entries rather than merged.",
+     "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/"
+    }
+   ],
    "down": [
     {
      "symptom": "Poor working memory",
@@ -3399,7 +3461,7 @@
   },
   {
    "name": "Faecalibacterium prausnitzii",
-   "count": 2,
+   "count": 3,
    "up": [],
    "down": [
     {
@@ -3413,6 +3475,82 @@
      "note": "Reduced in ME/CFS patients along with Eubacterium rectale, contributing to deficient microbial butyrate-synthesis capacity; abundance inversely associated with fatigue severity.",
      "ref": "Guo et al. 2023, Cell Host & Microbe (PMID 36758522)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+    },
+    {
+     "symptom": "Allergies",
+     "note": "Decreased in allergic rhinitis patients.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Escherichia",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Allergies",
+     "note": "Increased in allergic rhinitis patients across 2 independent studies.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Bacteroidaceae",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Allergies",
+     "note": "Family-level increase associated with development of allergic sensitization, eczema, or asthma.",
+     "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Akkermansia muciniphila",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Allergies",
+     "note": "Decreased in allergic rhinitis patients.",
+     "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Bifidobacteriaceae",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Allergies",
+     "note": "Family-level decrease associated with development of allergic sensitization, eczema, or asthma \u2014 classic protective/probiotic-relevant family.",
+     "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Lactobacillaceae",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Allergies",
+     "note": "Family-level decrease associated with development of allergic sensitization, eczema, or asthma \u2014 classic protective/probiotic-relevant family.",
+     "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/"
     }
    ],
    "both": []
