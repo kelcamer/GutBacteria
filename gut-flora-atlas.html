@@ -928,6 +928,22 @@ function GFA_BrainTab(props){
   var lead=pinType==="bact"
     ?"Every brain region sits on the rim; each condition that implicates it is pulled inward toward it, so brain regions implicated across multiple conditions settle in the middle. "
     :"Each condition sits on the rim; every brain region reported as altered for it is pulled inward toward it, so regions implicated across multiple conditions settle in between — a literal map of where these conditions' neuroimaging findings overlap and diverge. ";
+  var[expandedNb,setExpandedNb]=R.useState(null);
+  var regionOverlap=function(aName,bName){
+    var A=conds.find(function(c){return c.name===aName;});
+    var B=conds.find(function(c){return c.name===bName;});
+    if(!A||!B)return{same:[],opp:[]};
+    var bMap={};
+    (B.taxa||[]).forEach(function(t){bMap[t.name]=t.dir;});
+    var same=[],opp=[];
+    (A.taxa||[]).forEach(function(t){
+      if(Object.prototype.hasOwnProperty.call(bMap,t.name)){
+        if(bMap[t.name]===t.dir)same.push({region:t.name,dir:t.dir});
+        else opp.push({region:t.name,dirA:t.dir,dirB:bMap[t.name]});
+      }
+    });
+    return{same:same,opp:opp};
+  };
   var neighborRows=R.useMemo(function(){
     return conds.map(function(c){
       var regionMap={};
@@ -988,9 +1004,27 @@ function GFA_BrainTab(props){
               row.name
             ]})}),
             row.neighbors.concat([null,null,null]).slice(0,3).map(function(n,ni){
-              return(0,s.jsx)("td",{style:{padding:"7px 10px",color:f.muted},children:n?(0,s.jsxs)("span",{style:{display:"inline-flex",alignItems:"center",gap:6},children:[
-                (0,s.jsx)("span",{style:{width:7,height:7,borderRadius:7,background:n.color,display:"inline-block",flexShrink:0}}),
-                (0,s.jsxs)("span",{children:[n.name," ",(0,s.jsxs)("span",{style:{color:f.muted,fontSize:11},children:["(",n.same," same-dir",n.opp?", "+n.opp+" diverges on":"",")"]})]})
+              var nbKey=n?row.name+"\u2192"+n.name:null;
+              var isOpen=!!(n&&expandedNb===nbKey);
+              return(0,s.jsx)("td",{style:{padding:"7px 10px",color:f.muted,verticalAlign:"top"},children:n?(0,s.jsxs)("div",{children:[
+                (0,s.jsxs)("span",{onClick:function(){setExpandedNb(isOpen?null:nbKey);},role:"button",tabIndex:0,style:{display:"inline-flex",alignItems:"center",gap:6,cursor:"pointer",textDecoration:isOpen?"underline":"none"},children:[
+                  (0,s.jsx)("span",{style:{width:7,height:7,borderRadius:7,background:n.color,display:"inline-block",flexShrink:0}}),
+                  (0,s.jsxs)("span",{children:[n.name," ",(0,s.jsxs)("span",{style:{color:f.muted,fontSize:11},children:["(",n.same," same-dir",n.opp?", "+n.opp+" diverges on":"",")"]})]})
+                ]}),
+                isOpen?(function(){
+                  var d=regionOverlap(row.name,n.name);
+                  return(0,s.jsxs)("div",{style:{marginTop:6,padding:"8px 10px",background:f.ink3,border:"1px solid "+f.line,borderRadius:8,fontSize:11.5,maxWidth:260},children:[
+                    d.same.length>0?(0,s.jsxs)("div",{style:{marginBottom:d.opp.length>0?6:0},children:[
+                      (0,s.jsx)("div",{style:{fontWeight:700,color:f.text,marginBottom:2},children:"Same direction ("+d.same.length+")"}),
+                      d.same.map(function(r,i){return(0,s.jsxs)("div",{style:{color:f.muted},children:[r.region+" ("+r.dir+")"]},i);})
+                    ]}):null,
+                    d.opp.length>0?(0,s.jsxs)("div",{children:[
+                      (0,s.jsx)("div",{style:{fontWeight:700,color:f.text,marginBottom:2},children:"Diverges on ("+d.opp.length+")"}),
+                      d.opp.map(function(r,i){return(0,s.jsxs)("div",{style:{color:f.muted},children:[r.region+" ("+row.name+": "+r.dirA+", "+n.name+": "+r.dirB+")"]},i);})
+                    ]}):null,
+                    d.same.length===0&&d.opp.length===0?(0,s.jsx)("div",{style:{color:f.muted},children:"No shared regions."}):null
+                  ]});
+                })():null
               ]}):"—"},ni);
             })
           ]},row.name);
