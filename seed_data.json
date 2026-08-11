@@ -3383,16 +3383,21 @@
      "id": "seed_209_fp10",
      "name": "Streptococcus",
      "dir": "up",
-     "refs": "PMID 30540710",
-     "note": "Non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus\" (Kaur et al. 2022 review) \u2014 corroborated circumstantially by Type 1 Diabetes, itself strongly linked to non-secretor status (Smyth et al. 2011, OR=1.29, P=4.3\u00d710\u207b\u00b9\u2078), independently showing elevated Streptococcus vs. healthy controls. One narrower counter-finding exists in a different body-fluid context: Streptococcus was lower in non-secretor vs. secretor BREAST MILK specifically (n=25) \u2014 not treated as a competing direction here since it's a distinct, tangential context (lactation microbiota) rather than general infection susceptibility.",
+     "refs": "PMID 30345375 / PMID 35892094",
+     "note": "Non-secretors have increased susceptibility to Streptococcus pneumoniae specifically \u2014 stated directly in the abstract of a 7,582-person ALSPAC cohort study (Azad et al. 2018): \"Being homozygous for the inactive 'non-secretor' rs601338(A) allele confers resistance to certain infections (e.g. Norovirus, Rotavirus) and susceptibility to others (e.g. Haemophilus influenza, Streptococcus pneumonia).\" A separate 2022 review (Kaur et al.) makes a broader claim in its full text \u2014 \"non-secretors are often more commonly related to low-level infections including yeast (Candida) and Streptococcus\" \u2014 though that specific sentence is in the body text, not the abstract PubMed displays. Circumstantial support: Type 1 Diabetes, itself strongly linked to non-secretor status (Smyth et al. 2011, OR=1.29, P=4.3\u00d710\u207b\u00b9\u2078), independently shows elevated Streptococcus vs. healthy controls. One narrower counter-finding exists in a different body-fluid context: Streptococcus was lower in non-secretor vs. secretor BREAST MILK specifically (n=25) \u2014 not treated as a competing direction here since it's a distinct, tangential context.",
      "links": [
       {
        "id": "seed_209_fp10_l1",
-       "label": "Kaur et al. 2022, Int J Mol Epidemiol Genet \u2014 review (PMID 35892094)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
+       "label": "Azad et al. 2018, Wellcome Open Res \u2014 ALSPAC cohort, n=7,582 (PMID 30345375)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30345375/"
       },
       {
        "id": "seed_209_fp10_l2",
+       "label": "Kaur et al. 2022, Int J Mol Epidemiol Genet \u2014 review, full text (PMID 35892094)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
+      },
+      {
+       "id": "seed_209_fp10_l3",
        "label": "Milk-specific counter-finding: 2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
       }
