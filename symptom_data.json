@@ -518,7 +518,7 @@
   },
   {
    "name": "Enterobacteriaceae",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -537,6 +537,12 @@
      "note": "Higher relative abundance in non-secretor milk samples.",
      "ref": "2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
+    },
+    {
+     "symptom": "Bloating & gas",
+     "note": "Relative abundance of family Enterobacteriaceae showed a significant positive correlation with bloating in duodenal-aspirate SIBO patients (Spearman R=0.185, p=0.028).",
+     "ref": "Leite et al. 2020, PLOS ONE \u2014 duodenal microbiome in SIBO (PMID 32645011)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32645011/"
     }
    ],
    "down": []
