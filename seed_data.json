@@ -7503,9 +7503,9 @@
     {
      "id": "seed_endo_t9",
      "name": "Prevotella",
-     "dir": "up",
+     "dir": "both",
      "refs": "meta 2025 (Iavarone)",
-     "note": "Increased at genus level per the Iavarone review. Stage twist: in advanced / late-stage disease Prevotella (and Bacteroides) instead decrease. Cross-ref: Prevotella direction is strongly condition- and severity-dependent (\u2193 in autism/MS/PD). A newer, smaller case-control study (n=22 infertile endometriosis vs 13 controls, PMID 41488762) found the opposite \u2014 depleted Prevotella \u2014 reinforcing that direction is unsettled rather than resolving it.",
+     "note": "Increased at genus level per the Iavarone review. Stage twist: in advanced / late-stage disease Prevotella (and Bacteroides) instead decrease. Cross-ref: Prevotella direction is strongly condition- and severity-dependent (\u2193 in autism/MS/PD). A newer, smaller case-control study (n=22 infertile endometriosis vs 13 controls, PMID 41488762) found the opposite \u2014 depleted Prevotella \u2014 reinforcing that direction is unsettled rather than resolving it. Genuine stage-dependent contradiction: a 2025 study (n=75, 39 early-stage/36 late-stage) found Bacteroides AND Prevotella decreased specifically in late-stage (Stage III/IV) disease with dysmenorrhea, while Bartonella/Snodgrassella were enriched instead (PMID 40189515) \u2014 opposite the existing 'up' citation here, which doesn't stratify by stage.",
      "links": [
       {
        "id": "seed_new_l67",
@@ -7516,6 +7516,11 @@
        "id": "seed_new_l68",
        "label": "Early- vs late-stage endometriosis microbiome (75 patients)",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11974225/"
+      },
+      {
+       "id": "seed_endo_t9_l2",
+       "label": "Early- vs. late-stage endometriosis, n=75, Prevotella decreased late-stage (PMID 40189515)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40189515/"
       }
      ]
     },
@@ -8061,14 +8066,19 @@
     {
      "id": "new_uc_t5",
      "name": "Bacteroides",
-     "dir": "down",
+     "dir": "both",
      "refs": "PMC7835370",
-     "note": "Main Bacteroidaceae-family species significantly reduced in UC stool.",
+     "note": "Main Bacteroidaceae-family species significantly reduced in UC stool. Genuine contradiction: a separate primary study (n=48 UC/48 controls) found Bacteroides directly proportional to disease severity \u2014 i.e. elevated, not reduced \u2014 and higher baseline Bacteroides associated with worse relapse outcomes (PMID 36344781). Kept the existing Polish-cohort 'down' citation and added both sides.",
      "links": [
       {
        "id": "new_uc_t5_l1",
        "label": "Dysbiosis in Polish UC patients (pilot study)",
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+      },
+      {
+       "id": "new_uc_t5_l2",
+       "label": "n=48 UC/48 controls, Bacteroides elevated with severity (PMID 36344781)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36344781/"
       }
      ]
     },
@@ -8829,28 +8839,43 @@
     {
      "id": "new_pso_t5",
      "name": "Akkermansia muciniphila",
-     "dir": "up",
+     "dir": "both",
      "refs": "PMC8069836",
-     "note": "One of the more consistent findings \u2014 increased in psoriasis/psoriatic arthritis, an interesting contrast to its 'protective' role in metabolic disease.",
+     "note": "One of the more consistent findings \u2014 increased in psoriasis/psoriatic arthritis, an interesting contrast to its 'protective' role in metabolic disease. Genuine contradiction: the majority finding across studies is actually DECREASED Akkermansia muciniphila in psoriasis (Tan et al. 2018, Exp Dermatol, PMID 29130553, 16S rDNA case-control), which weakens the protective mucus layer and worsens barrier dysfunction \u2014 the existing 'up' citation here reflects a minority/contrarian finding, not the consensus. Kept both rather than replace.",
      "links": [
       {
        "id": "new_pso_t5_l1",
        "label": "Skin & gut microbiome in psoriasis/PsA",
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069836/"
+      },
+      {
+       "id": "new_pso_t5_l2",
+       "label": "Tan et al. 2018, Exp Dermatol, majority finding is decreased (PMID 29130553)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/29130553/"
       }
      ]
     },
     {
      "id": "new_pso_t6",
      "name": "Ruminococcus",
-     "dir": "up",
+     "dir": "both",
      "refs": "PMC8069836",
-     "note": "Increased in psoriasis alongside Akkermansia and Faecalibacterium in some cohorts \u2014 flagged here as one of the conflicting-direction genera; treat cautiously.",
+     "note": "Increased in psoriasis alongside Akkermansia and Faecalibacterium in some cohorts \u2014 flagged here as one of the conflicting-direction genera; treat cautiously. Genuine contradiction: multiple case-control studies (Brazilian cohort, PMID 34897759; psoriatic-arthritis cohort, PMID 36600182) found Ruminococcus REDUCED in psoriasis/PsA vs. the existing 'up' citation here \u2014 direction genuinely disputed across studies, not a single outlier.",
      "links": [
       {
        "id": "new_pso_t6_l1",
        "label": "Skin & gut microbiome in psoriasis/PsA",
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069836/"
+      },
+      {
+       "id": "new_pso_t6_l2",
+       "label": "Brazilian case-control, Ruminococcus reduced (PMID 34897759)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34897759/"
+      },
+      {
+       "id": "new_pso_t6_l3",
+       "label": "Psoriatic arthritis cohort, Ruminococcus reduced (PMID 36600182)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36600182/"
       }
      ]
     },
