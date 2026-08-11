@@ -5060,14 +5060,19 @@
     {
      "id": "seed_mig_t1",
      "name": "Prevotella",
-     "dir": "up",
+     "dir": "both",
      "refs": "PMC",
-     "note": "Episodic-\u2191/chronic-\u2193 (Heterogeneous).",
+     "note": "Episodic-up/chronic-down (heterogeneous) was already noted here, now backed by a real citation for the conflict: a 2025 systematic review found one Mendelian randomization study reporting Prevotella as a risk factor for migraine with aura (OR=1.11, 95% CI 1.01-1.24) and another reporting it protective (inverse-variance-weighted OR=0.89, 95% CI 0.80-0.98, P=0.02) \u2014 a genuine causal-direction contradiction, not just study-to-study noise.",
      "links": [
       {
        "id": "seed_mig_t1_l1",
        "label": "PMC",
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12391207/"
+      },
+      {
+       "id": "seed_mig_t1_l2",
+       "label": "Systematic review, 2 conflicting MR studies (PMID 40175732)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40175732/"
       }
      ]
     },
@@ -8440,6 +8445,20 @@
        "id": "seed_708",
        "label": "J Med Microbiol 2026 (16S rDNA, Chaoshan region China, n=33 T1DM/35 T2DM/30 HC; HC-enriched genera incl. Alloprevotella, T2DM-enriched incl. Megasphaera)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42446512/"
+      }
+     ]
+    },
+    {
+     "id": "new_t2d_t10",
+     "name": "Bacteroidetes",
+     "dir": "both",
+     "refs": "Systematic review, 29 studies (PMID 38161953)",
+     "note": "Genuine phylum-level contradiction: a systematic review of 29 studies found most report decreased Bacteroidetes (with a correlated rise in the Firmicutes:Bacteroidetes ratio) in T2DM, but 3 studies report the opposite \u2014 increased Bacteroidetes with a lower ratio. Kept separate from the existing genus-level Bacteroides entry, which this phylum-level review does not directly address.",
+     "links": [
+      {
+       "id": "new_t2d_t10_l1",
+       "label": "Systematic review, 29 studies (PMID 38161953)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38161953/"
       }
      ]
     }
