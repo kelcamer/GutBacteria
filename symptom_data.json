@@ -3390,6 +3390,26 @@
     }
    ],
    "both": []
+  },
+  {
+   "name": "Faecalibacterium prausnitzii",
+   "count": 2,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Joint pain",
+     "note": "Reduced in knee osteoarthritis patients (n=18 OA/20 age-matched controls); significant negative correlation with VAS pain scores.",
+     "ref": "Scientific Reports 2025, machine-learning gut microbiota/OA study, n=18/20",
+     "url": "https://www.nature.com/articles/s41598-025-24500-y"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Reduced in ME/CFS patients along with Eubacterium rectale, contributing to deficient microbial butyrate-synthesis capacity; abundance inversely associated with fatigue severity.",
+     "ref": "Guo et al. 2023, Cell Host & Microbe (PMID 36758522)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+    }
+   ],
+   "both": []
   }
  ]
 }

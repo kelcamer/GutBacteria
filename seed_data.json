@@ -1188,6 +1188,25 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/42196966/"
       }
      ]
+    },
+    {
+     "id": "seed_76",
+     "name": "Ruminococcus",
+     "dir": "both",
+     "refs": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
+     "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
+     "links": [
+      {
+       "id": "seed_76_l1",
+       "label": "Systematic review, 3 studies up vs. 1 down (PMID 30696816)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
+      },
+      {
+       "id": "seed_76_l2",
+       "label": "Soltysova et al. 2022, case-control, decreased (PMID 36296284)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36296284/"
+      }
+     ]
     }
    ]
   },
@@ -1458,14 +1477,19 @@
     {
      "id": "seed_76_fp5",
      "name": "Ruminococcus gnavus",
-     "dir": "up",
+     "dir": "both",
      "refs": "PMID 41075498",
-     "note": "Higher relative abundance identified across multiple included studies.",
+     "note": "Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) \u2014 opposite the systematic-review 'up' finding above. Kept both rather than pick a side.",
      "links": [
       {
        "id": "seed_76_fp5_l1",
        "label": "2025, J Psychiatric Research \u2014 ADHD systematic review (14 studies, n=1319)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41075498/"
+      },
+      {
+       "id": "seed_76_fp5_l2",
+       "label": "Case-control, n=17/17, R. gnavus reduced (PMID 32132899)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
       }
      ]
     },
@@ -3108,6 +3132,20 @@
        "id": "seed_ocd_proteobacteria_l2",
        "label": "Gut microbiota signatures & psychopathological profiles in UC (2023, PMID 37280117)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37280117/"
+      }
+     ]
+    },
+    {
+     "id": "seed_208",
+     "name": "Faecalibacterium prausnitzii",
+     "dir": "down",
+     "refs": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257)",
+     "note": "FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
+     "links": [
+      {
+       "id": "seed_208_l1",
+       "label": "Systematic review citing Zhang et al. 2024 shotgun metagenomics (PMID 41157257)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41157257/"
       }
      ]
     }
@@ -9334,6 +9372,48 @@
        "id": "seed_760",
        "label": "Cancer Immunol Immunother 2026 (n=225 NSCLC, full-length 16S; smokers: \u2193Bifidobacterium longum, \u2191Gram-negative taxa/Gammaproteobacteria)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42324435/"
+      }
+     ]
+    },
+    {
+     "id": "new_smk_t15",
+     "name": "Faecalibacterium prausnitzii",
+     "dir": "down",
+     "refs": "n=33 smokers/121 non-smokers, whole-genome sequencing (PMID 34368009)",
+     "note": "Significantly lower relative abundance in smokers vs. non-smokers (P=0.0000052).",
+     "links": [
+      {
+       "id": "new_smk_t15_l1",
+       "label": "Yan et al. 2021, Front Cell Infect Microbiol, n=33/121 (PMID 34368009)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34368009/"
+      }
+     ]
+    },
+    {
+     "id": "new_smk_t16",
+     "name": "Ruminococcus gnavus",
+     "dir": "up",
+     "refs": "n=33 smokers/121 non-smokers (PMID 34368009)",
+     "note": "Significantly more abundant in smokers vs. non-smokers (P=0.00197).",
+     "links": [
+      {
+       "id": "new_smk_t16_l1",
+       "label": "Yan et al. 2021, Front Cell Infect Microbiol, n=33/121 (PMID 34368009)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34368009/"
+      }
+     ]
+    },
+    {
+     "id": "new_smk_t17",
+     "name": "Akkermansia muciniphila",
+     "dir": "down",
+     "refs": "n=33 smokers/121 non-smokers (PMID 34368009)",
+     "note": "Significantly lower relative abundance in smokers vs. non-smokers (P=0.0057).",
+     "links": [
+      {
+       "id": "new_smk_t17_l1",
+       "label": "Yan et al. 2021, Front Cell Infect Microbiol, n=33/121 (PMID 34368009)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34368009/"
       }
      ]
     }
