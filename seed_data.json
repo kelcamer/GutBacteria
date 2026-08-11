@@ -3102,7 +3102,7 @@
    "name": "Non-secretor (FUT2)",
    "abbr": "FUT2",
    "color": "#C3E88D",
-   "note": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on \u2014 so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3\u00d710\u207b\u00b9\u2078, n=8,344 T1D cases). Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each.",
+   "note": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on \u2014 so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3\u00d710\u207b\u00b9\u2078, n=8,344 T1D cases). Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each. Cognitive link worth flagging: Clostridiaceae \u2014 reduced in non-secretors (Kumar et al. 2015) \u2014 is one of only two bacteria this app links to Poor working memory (PMID 35010939, its depletion associated with worse working memory quality), so non-secretor status may plausibly extend to reduced working memory via this shared bacterial pathway, though this specific chain hasn't been tested directly in one study.",
    "links": [
     {
      "id": "seed_210",
@@ -3573,6 +3573,20 @@
        "id": "seed_209_fp29_l1",
        "label": "Kaur et al. 2022, Int J Mol Epidemiol Genet \u2014 review of Azevedo et al. 2008 (PMID 35892094)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
+      }
+     ]
+    },
+    {
+     "id": "seed_209_fp30",
+     "name": "Clostridiaceae",
+     "dir": "down",
+     "refs": "PMID 26231005",
+     "note": "Family-level abundance decreased significantly more across pregnancy in non-secretors vs. secretors (p=0.05, n=123 pregnant women, 108 secretors/15 non-secretors); C. coccoides group counts specifically decreased more in non-secretors (qPCR, p=0.02), and Clostridium species richness was also reduced (DGGE). Study population is pregnant women specifically, not general population \u2014 noted as a caveat. This directly matters for cognition: Clostridiaceae is one of only two bacteria this app links to Poor working memory (its depletion associated with worse working memory quality, PMID 35010939) \u2014 so non-secretor status may plausibly extend to reduced working memory via this same pathway.",
+     "links": [
+      {
+       "id": "seed_209_fp30_l1",
+       "label": "Kumar et al. 2015, PLoS One \u2014 123 pregnant women, 108 secretors/15 non-secretors (PMID 26231005)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/26231005/"
       }
      ]
     }
