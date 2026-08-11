@@ -47,7 +47,7 @@
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 11,
+   "count": 12,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -116,6 +116,12 @@
      "note": "Mendelian randomization evidence for decreased migraine risk (He et al. 2023) \u2014 i.e. higher levels causally linked to lower migraine risk.",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Supplementation with B. longum 1714 (4 weeks, n=22 healthy male volunteers, within-subjects placebo-controlled) blunted the anxiety response to an acute social stress test, lowered cortisol output (P<0.05), and reduced daily reported stress (P=0.03, d=0.53) vs. placebo.",
+     "ref": "Allen et al. 2016, Transl Psychiatry, n=22 (PMID 27801892)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27801892/"
     }
    ],
    "both": []
