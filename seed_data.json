@@ -219,10 +219,16 @@
     {
      "id": "seed_17",
      "name": "Prevotellaceae",
-     "dir": "down",
+     "dir": "both",
      "refs": "20\u201322",
-     "note": "",
-     "links": []
+     "note": "Altered in both directions across studies with no overall tendency, per a systematic review \u2014 partly age-related, with reduced abundance more consistently reported in middle-aged MDD cohorts specifically.",
+     "links": [
+      {
+       "id": "seed_dep_prevotellaceae_both_l1",
+       "label": "Kelly et al. 2021 systematic review, Nutrients (PMID 35010912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
+      }
+     ]
     },
     {
      "id": "seed_18",
@@ -255,14 +261,19 @@
     {
      "id": "seed_22",
      "name": "Bacteroidetes",
-     "dir": "up",
+     "dir": "both",
      "refs": "",
-     "note": "",
+     "note": "Reported reduced in depressed subjects across multiple studies, but other studies report the opposite \u2014 a systematic review found this splits by age: elevated in young MDD cohorts (e.g. ages 18-25), reduced in middle-aged cohorts (late 30s-50s) relative to age-matched controls.",
      "links": [
       {
        "id": "seed_22_link",
        "label": "PMC9656367",
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
+      },
+      {
+       "id": "seed_dep_bacteroidetes_both_l1",
+       "label": "Kelly et al. 2021 systematic review, Nutrients (PMID 35010912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
       }
      ]
     },
@@ -442,28 +453,38 @@
     {
      "id": "seed_1_fp7",
      "name": "Prevotella",
-     "dir": "down",
+     "dir": "both",
      "refs": "PMID 42495140",
-     "note": "Depleted in depressed adolescents vs. healthy adolescent controls (genus-level; distinct from the already-tracked Prevotellaceae family-level entry).",
+     "note": "Depleted in depressed adolescents vs. healthy adolescent controls (genus-level; distinct from the already-tracked Prevotellaceae family-level entry). Inversely correlated with depression/mood in four studies, but positively correlated in others, per a systematic review \u2014 no clear overall tendency despite earlier proposals to use Prevotella shifts as a depression biomarker.",
      "links": [
       {
        "id": "seed_1_fp7_l1",
        "label": "2026, Frontiers in Microbiology \u2014 adolescent vs adult depression (n=125)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42495140/"
+      },
+      {
+       "id": "seed_dep_prevotella_both_l1",
+       "label": "Kelly et al. 2021 systematic review, Nutrients (PMID 35010912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
       }
      ]
     },
     {
      "id": "seed_1_fp8",
      "name": "Firmicutes",
-     "dir": "up",
+     "dir": "both",
      "refs": "PMID 40430019",
-     "note": "Increased abundance in completed-suicide cases, positively correlating with depression severity.",
+     "note": "Increased abundance in completed-suicide cases, positively correlating with depression severity. Reported to alter in both directions across studies, per a systematic review of human MDD/BD microbiota studies \u2014 most studies reporting an increase also found a corresponding Bacteroidetes decrease (or vice versa), and the split partly tracks patient age (younger cohorts skew toward decreased Firmicutes, middle-aged cohorts toward increased).",
      "links": [
       {
        "id": "seed_1_fp8_l1",
        "label": "2025, Int J Mol Sci \u2014 depression & completed suicide (n=71)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40430019/"
+      },
+      {
+       "id": "seed_dep_firmicutes_both_l1",
+       "label": "Kelly et al. 2021 systematic review, Nutrients (PMID 35010912)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
       }
      ]
     },
