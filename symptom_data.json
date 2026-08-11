@@ -38,7 +38,8 @@
   "Non-secretor status (FUT2)",
   "Poor working memory",
   "Oral cavities",
-  "Strep throat history"
+  "Strep throat history",
+  "Intrusive thoughts"
  ],
  "bacteria": [
   {
@@ -2956,6 +2957,20 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/35010939/"
     }
    ]
+  },
+  {
+   "name": "Lachnospira pectinoschiza",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "Depletion correlated with greater obsession severity on the Y-BOCS obsessions subscale (r=-0.420) in OCD patients \u2014 species-level finding, distinct from the genus-level Lachnospira already tracked elsewhere in this app.",
+     "ref": "Dom\u00e8nech et al. 2022, Scientific Reports \u2014 32 OCD patients/33 controls, stool + oropharyngeal microbiome (PMID 35087123)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    }
+   ],
+   "both": []
   }
  ]
 }
