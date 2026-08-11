@@ -401,7 +401,9 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
     el.addEventListener("pointerdown",function(ev){
       el.style.zIndex=String(++zCounter);
       var closeH=ev.target&&ev.target.closest&&ev.target.closest(".gfa-tip-close");
-      if(closeH){ev.preventDefault();ev.stopPropagation();closePinned(+el.dataset.idx);setHi(curr);}
+      if(closeH){ev.preventDefault();ev.stopPropagation();closePinned(+el.dataset.idx);setHi(curr);return;}
+      var copyH=ev.target&&ev.target.closest&&ev.target.closest(".gfa-tip-copy");
+      if(copyH){ev.preventDefault();ev.stopPropagation();GFA_copyTipText(el,copyH);}
     });
     var gfaDragging=false,gfaSX=0,gfaSY=0,gfaSL=0,gfaST=0;
     el.addEventListener("pointerdown",function(ev){
@@ -457,7 +459,7 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
   function renderTip(el,idx,withChrome){
     var html=buildTipHtml(idx);
     if(withChrome){
-      el.innerHTML='<div class="gfa-tip-drag" style="cursor:move;padding:2px 4px 2px 20px;margin:-2px -2px 4px -2px;color:#7C6BA8;font-size:9px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08);user-select:none;touch-action:none">&#10021; drag to move</div><div class="gfa-tip-resize" style="position:absolute;left:0;top:0;width:20px;height:20px;cursor:nwse-resize;background:rgba(124,107,168,.35);border-radius:10px 0 8px 0;opacity:.85;font-size:13px;line-height:20px;text-align:center;color:#E4DBFF;user-select:none;touch-action:none;z-index:2">&#8598;</div><div class="gfa-tip-close" title="Close" style="position:absolute;right:2px;top:2px;width:16px;height:16px;cursor:pointer;font-size:14px;line-height:15px;text-align:center;color:#B9A7F0;user-select:none;touch-action:none;z-index:3">&times;</div>'+html;
+      el.innerHTML='<div class="gfa-tip-drag" style="cursor:move;padding:2px 20px 2px 20px;margin:-2px -2px 4px -2px;color:#7C6BA8;font-size:9px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08);user-select:none;touch-action:none">&#10021; drag to move</div><div class="gfa-tip-resize" style="position:absolute;left:0;top:0;width:20px;height:20px;cursor:nwse-resize;background:rgba(124,107,168,.35);border-radius:10px 0 8px 0;opacity:.85;font-size:13px;line-height:20px;text-align:center;color:#E4DBFF;user-select:none;touch-action:none;z-index:2">&#8598;</div><div class="gfa-tip-copy" title="Copy this popup\'s text" style="position:absolute;right:20px;top:2px;width:16px;height:16px;cursor:pointer;font-size:12px;line-height:16px;text-align:center;color:#8FD3F4;user-select:none;touch-action:none;z-index:3">&#128203;</div><div class="gfa-tip-close" title="Close" style="position:absolute;right:2px;top:2px;width:16px;height:16px;cursor:pointer;font-size:14px;line-height:15px;text-align:center;color:#B9A7F0;user-select:none;touch-action:none;z-index:3">&times;</div>'+html;
       wireChrome(el);
     }else{
       el.innerHTML=html;
@@ -964,6 +966,32 @@ function GFA_lum(hex){try{var c=(hex||"#888888").replace("#","");var r=parseInt(
 function GFA_esc(s){return String(s).replace(/[&<>"]/g,function(c){return({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[c];});}
 function GFA_dirColor(dir){return dir==="up"?"#FF5C86":dir==="down"?"#4FC3F7":"#FBBF24";}
 function GFA_dirArrow(dir){return dir==="up"?"▲":dir==="down"?"▼":"↕";}
+function GFA_copyTipText(el,btn){
+  var clone=el.cloneNode(true);
+  ["gfa-tip-drag","gfa-tip-resize","gfa-tip-close","gfa-tip-copy"].forEach(function(cls){
+    var n=clone.querySelector("."+cls);
+    if(n&&n.parentNode)n.parentNode.removeChild(n);
+  });
+  var text=(clone.innerText||clone.textContent||"").replace(/\n{3,}/g,"\n\n").trim();
+  var done=function(ok){
+    if(!btn)return;
+    var orig=btn.innerHTML;
+    btn.innerHTML=ok?"&#10003;":"&#10007;";
+    setTimeout(function(){btn.innerHTML=orig;},900);
+  };
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(text).then(function(){done(true);}).catch(function(){done(false);});
+  }else{
+    try{
+      var ta=document.createElement("textarea");
+      ta.value=text;ta.style.cssText="position:fixed;top:0;left:0;opacity:0";
+      document.body.appendChild(ta);ta.focus();ta.select();
+      var ok=document.execCommand("copy");
+      document.body.removeChild(ta);
+      done(ok);
+    }catch(e){done(false);}
+  }
+}
 function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesRef){
   pinType=pinType||"cond";
   var NS="http://www.w3.org/2000/svg";
@@ -1165,14 +1193,34 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
     if(node.type==="cond"){
       var cond=conds[node.i];
       var taxa=(cond&&cond.taxa)||[];
+      var isBrain=!!(GFA_BRAIN_REGION_INFO&&taxa.length&&GFA_BRAIN_REGION_INFO[taxa[0].name]);
       var trows=taxa.map(function(t){
         var bi=bMap[(t.name||"").trim()];
         var also=bi!=null?nodes[bi].conds.filter(function(oc){return oc.name!==cond.name;}).map(function(oc){return oc.name;}):[];
         var alsoHtml=also.length?'<div style="color:#6b5c8f;margin-top:1px">Also in: '+GFA_esc(also.join(", "))+'</div>':"";
         var link=(t.links&&t.links[0])||null;
-        return '<div style="margin:4px 0;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.06)">'+GFA_esc(t.name)+' <b style="color:'+GFA_dirColor(t.dir)+'">'+GFA_dirArrow(t.dir)+'</b>'+srcRow(t.note,t.refs,link?link.url:null)+alsoHtml+'</div>';
+        var regionInfo=isBrain&&GFA_BRAIN_REGION_INFO[t.name];
+        var descHtml=regionInfo?' - '+GFA_esc(regionInfo.desc):"";
+        return '<div style="margin:4px 0;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.06)">'+GFA_esc(t.name)+' <b style="color:'+GFA_dirColor(t.dir)+'">'+GFA_dirArrow(t.dir)+'</b>'+'<span style="color:#B9A7F0">'+descHtml+'</span>'+srcRow(t.note,t.refs,link?link.url:null)+alsoHtml+'</div>';
       }).join("");
-      html='<div style="font-weight:700;color:#F1EAFF">'+GFA_esc(node.name)+'</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">'+node.deg+' taxa mapped</div><div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">'+(trows||'<div style="color:#7C6BA8">No taxa logged.</div>')+'</div>';
+      var summaryHtml="";
+      if(isBrain){
+        var upItems=[],downItems=[],seen={};
+        taxa.forEach(function(t){
+          var info=GFA_BRAIN_REGION_INFO[t.name];
+          if(!info)return;
+          var list=t.dir==="up"?info.up:t.dir==="down"?info.down:(info.up||[]).concat(info.down||[]);
+          (list||[]).forEach(function(s){
+            var key=s.toLowerCase();
+            if(!seen[key]){seen[key]=1;(t.dir==="down"?downItems:upItems).push(s);}
+          });
+        });
+        var symLis=upItems.concat(downItems).slice(0,10).map(function(s){return '<li>'+GFA_esc(s)+'</li>';}).join("");
+        if(symLis){
+          summaryHtml='<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.08)"><b style="color:#F1EAFF;font-size:10.5px">Likely symptom presentation</b><div style="color:#7C6BA8;font-size:9.5px;margin-bottom:2px">Synthesized from this condition\'s regions and their reported directions — not a diagnostic claim.</div><ul style="margin:2px 0 0 16px;padding:0;color:#A08FC7">'+symLis+'</ul></div>';
+        }
+      }
+      html='<div style="font-weight:700;color:#F1EAFF">'+GFA_esc(node.name)+'</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">'+node.deg+' taxa mapped</div>'+summaryHtml+'<div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto;margin-top:6px">'+(trows||'<div style="color:#7C6BA8">No taxa logged.</div>')+'</div>';
     }else{
       var rows=node.conds.map(function(x){
         var link=(x.links&&x.links[0])||null;
@@ -1198,7 +1246,9 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
     el.addEventListener("pointerdown",function(ev){
       el.style.zIndex=String(++zCounter);
       var closeH=ev.target&&ev.target.closest&&ev.target.closest(".gfa-tip-close");
-      if(closeH){ev.preventDefault();ev.stopPropagation();closePinned(+el.dataset.idx);setHi(curr);}
+      if(closeH){ev.preventDefault();ev.stopPropagation();closePinned(+el.dataset.idx);setHi(curr);return;}
+      var copyH=ev.target&&ev.target.closest&&ev.target.closest(".gfa-tip-copy");
+      if(copyH){ev.preventDefault();ev.stopPropagation();GFA_copyTipText(el,copyH);}
     });
     var gfaDragging=false,gfaSX=0,gfaSY=0,gfaSL=0,gfaST=0;
     el.addEventListener("pointerdown",function(ev){
@@ -1254,7 +1304,7 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
   function renderTip(el,idx,withChrome){
     var html=buildTipHtml(idx);
     if(withChrome){
-      el.innerHTML='<div class="gfa-tip-drag" style="cursor:move;padding:2px 4px 2px 20px;margin:-2px -2px 4px -2px;color:#7C6BA8;font-size:9px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08);user-select:none;touch-action:none">&#10021; drag to move</div><div class="gfa-tip-resize" style="position:absolute;left:0;top:0;width:20px;height:20px;cursor:nwse-resize;background:rgba(124,107,168,.35);border-radius:10px 0 8px 0;opacity:.85;font-size:13px;line-height:20px;text-align:center;color:#E4DBFF;user-select:none;touch-action:none;z-index:2">&#8598;</div><div class="gfa-tip-close" title="Close" style="position:absolute;right:2px;top:2px;width:16px;height:16px;cursor:pointer;font-size:14px;line-height:15px;text-align:center;color:#B9A7F0;user-select:none;touch-action:none;z-index:3">&times;</div>'+html;
+      el.innerHTML='<div class="gfa-tip-drag" style="cursor:move;padding:2px 20px 2px 20px;margin:-2px -2px 4px -2px;color:#7C6BA8;font-size:9px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08);user-select:none;touch-action:none">&#10021; drag to move</div><div class="gfa-tip-resize" style="position:absolute;left:0;top:0;width:20px;height:20px;cursor:nwse-resize;background:rgba(124,107,168,.35);border-radius:10px 0 8px 0;opacity:.85;font-size:13px;line-height:20px;text-align:center;color:#E4DBFF;user-select:none;touch-action:none;z-index:2">&#8598;</div><div class="gfa-tip-copy" title="Copy this popup\'s text" style="position:absolute;right:20px;top:2px;width:16px;height:16px;cursor:pointer;font-size:12px;line-height:16px;text-align:center;color:#8FD3F4;user-select:none;touch-action:none;z-index:3">&#128203;</div><div class="gfa-tip-close" title="Close" style="position:absolute;right:2px;top:2px;width:16px;height:16px;cursor:pointer;font-size:14px;line-height:15px;text-align:center;color:#B9A7F0;user-select:none;touch-action:none;z-index:3">&times;</div>'+html;
       wireChrome(el);
     }else{
       el.innerHTML=html;
