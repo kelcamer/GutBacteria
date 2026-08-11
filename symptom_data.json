@@ -320,7 +320,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 11,
+   "count": 12,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -377,6 +377,12 @@
      "note": "Growth was promoted by fucosylated HMOs present in secretor milk, implying lower abundance with non-secretor status; consistent with a separate cohort (PMID 30540710) finding Lactobacillus spp. lower in non-secretor milk.",
      "ref": "2018, mSystems \u2014 Chinese mothers' milk glycans (n=56)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30637338/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "note": "Down-regulated in IBS patients (SMD=-0.85, P<0.001) across a meta-analysis of 13 studies, n=360 IBS patients / 268 controls.",
+     "ref": "Meta-analysis, 13 studies, n=628 (PMID 28179092)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28179092/"
     }
    ],
    "both": [
@@ -692,7 +698,7 @@
   },
   {
    "name": "Enterobacteriaceae",
-   "count": 7,
+   "count": 9,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -735,9 +741,22 @@
      "note": "Via iron deficiency: higher in IDA patients vs. controls (4.4% vs. 3.0%, PMID 30418043); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
      "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
+    },
+    {
+     "symptom": "Diarrhea",
+     "note": "Significantly increased in diarrhea-predominant IBS (IBS-D) patients vs. healthy controls (P<0.01), 16S rRNA, n=30 IBS-D / 30 controls.",
+     "ref": "Mei et al. 2021, BMC Gastroenterology (PMID 33663411)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33663411/"
     }
    ],
-   "down": []
+   "down": [
+    {
+     "symptom": "Chronic pain",
+     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
+    }
+   ]
   },
   {
    "name": "Coprococcus",
@@ -1611,7 +1630,7 @@
   },
   {
    "name": "Butyricicoccus",
-   "count": 5,
+   "count": 6,
    "up": [],
    "down": [
     {
@@ -1643,12 +1662,18 @@
      "note": "Consistently lower in depression across a 44-study meta-analysis (2,091 patients vs. 2,792 controls).",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
     }
    ]
   },
   {
    "name": "Prevotellaceae",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Joint pain",
@@ -1669,6 +1694,12 @@
      "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
      "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    },
+    {
+     "symptom": "Histamine reactions",
+     "note": "Significantly lower abundance in histamine-intolerant patients vs. controls (P<0.05).",
+     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
     }
    ]
   },
@@ -1909,7 +1940,7 @@
   },
   {
    "name": "Eggerthella",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Depressed mood",
@@ -1934,6 +1965,12 @@
      "note": "Increased in migraine across 3 independent studies within this review.",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "Higher genetically-predicted abundance associated with increased fibromyalgia susceptibility (risk factor). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
     }
    ],
    "down": []
@@ -2052,7 +2089,7 @@
   },
   {
    "name": "Fusobacterium",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -2079,7 +2116,14 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ],
-   "down": []
+   "down": [
+    {
+     "symptom": "Diarrhea",
+     "note": "Significantly decreased in diarrhea-predominant IBS (IBS-D) patients vs. healthy controls (P<0.01), 16S rRNA, n=30 IBS-D / 30 controls.",
+     "ref": "Mei et al. 2021, BMC Gastroenterology (PMID 33663411)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33663411/"
+    }
+   ]
   },
   {
    "name": "Erysipelatoclostridium",
@@ -2939,7 +2983,7 @@
   },
   {
    "name": "Bifidobacterium adolescentis",
-   "count": 1,
+   "count": 2,
    "up": [],
    "down": [
     {
@@ -2947,6 +2991,12 @@
      "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+    },
+    {
+     "symptom": "Histamine reactions",
+     "note": "Species-level: significantly lower abundance in histamine-intolerant patients vs. controls (P=0.034).",
+     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
     }
    ]
   },
@@ -3148,7 +3198,7 @@
   },
   {
    "name": "Ruminococcus",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Hair loss",
@@ -3163,7 +3213,168 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
     }
    ],
+   "down": [
+    {
+     "symptom": "Histamine reactions",
+     "note": "Significantly lower abundance in histamine-intolerant patients vs. controls (P<0.05).",
+     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Alloprevotella",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Diarrhea",
+     "note": "Significantly decreased in diarrhea-predominant IBS (IBS-D) patients vs. healthy controls (P<0.01), 16S rRNA, n=30 IBS-D / 30 controls.",
+     "ref": "Mei et al. 2021, BMC Gastroenterology (PMID 33663411)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33663411/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Coprococcus1",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Chronic pain",
+     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Enterobacteriales",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Chronic pain",
+     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Ruminococcaceae UCG005",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Chronic pain",
+     "note": "Higher genetically-predicted abundance associated with increased fibromyalgia susceptibility (risk factor). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
+    }
+   ],
    "down": [],
+   "both": []
+  },
+  {
+   "name": "Staphylococcus",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Histamine reactions",
+     "note": "7-fold higher mean abundance in histamine-intolerant patients vs. controls (P<0.05).",
+     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Proteus",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Histamine reactions",
+     "note": "1.8-fold higher mean abundance in histamine-intolerant patients vs. controls (P<0.05).",
+     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Lactobacillus rogosae",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Histamine reactions",
+     "note": "Species-level: significantly lower abundance in histamine-intolerant patients vs. controls (P=0.017).",
+     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Cyanobacteria",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Independent causal risk factor for acne vulgaris in a 2-sample Mendelian randomization analysis (OR=1.14, 95% CI 1.05-1.23, P=0.001).",
+     "ref": "Wu et al. 2024, Frontiers in Microbiology, 2-sample MR (PMID 38371936)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38371936/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Family XIII",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Independent causal risk factor for acne vulgaris in a 2-sample Mendelian randomization analysis (OR=1.18, 95% CI 1.03-1.36, P=0.016).",
+     "ref": "Wu et al. 2024, Frontiers in Microbiology, 2-sample MR (PMID 38371936)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38371936/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Ruminiclostridium5",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Independent protective factor against acne vulgaris in a 2-sample Mendelian randomization analysis (OR=0.85, 95% CI 0.72-0.97, P=0.014).",
+     "ref": "Wu et al. 2024, Frontiers in Microbiology, 2-sample MR (PMID 38371936)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38371936/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Ruminococcus1",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Independent protective factor against acne vulgaris in a 2-sample Mendelian randomization analysis (OR=0.87, 95% CI 0.78-0.98, P=0.024).",
+     "ref": "Wu et al. 2024, Frontiers in Microbiology, 2-sample MR (PMID 38371936)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38371936/"
+    }
+   ],
    "both": []
   }
  ]
