@@ -40,7 +40,7 @@
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 8,
+   "count": 9,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -91,6 +91,12 @@
      "note": "Demonstrated reduced bifidobacterial diversity, richness, and overall abundance.",
      "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+    },
+    {
+     "symptom": "Nausea",
+     "note": "Preoperative abundance strongly, negatively correlated with postoperative nausea/vomiting (PONV) severity (r=-0.69, p<0.001) \u2014 i.e. higher Bifidobacterium predicted milder PONV.",
+     "ref": "Tang et al. 2025, Frontiers in Medicine \u2014 thyroid cancer surgery cohort (PMID 40491765)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40491765/"
     }
    ]
   },
@@ -770,7 +776,7 @@
   },
   {
    "name": "Collinsella",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -789,6 +795,12 @@
      "note": "Associated with insulin resistance, metabolic syndrome and cardiovascular risk factors.",
      "ref": "PMC7524262",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7524262/"
+    },
+    {
+     "symptom": "Joint pain",
+     "note": "Collinsella aerofaciens significantly increased in established RA patients vs. matched healthy controls (p=0.039); also independently associated with high ACPA (anti-citrullinated protein antibody) titers and smoking. Human cohort, n=40 vs 40.",
+     "ref": "Mena-V\u00e1zquez et al. 2020, J Clin Med (PMID 32272752)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32272752/"
     }
    ],
    "down": []
@@ -1876,7 +1888,7 @@
   },
   {
    "name": "Bilophila",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -1903,6 +1915,12 @@
      "note": "Same 2025 Mendelian randomization study found Bilophila (Proteobacteria) also has a protective causal effect against OCD \u2014 i.e. lower levels causally linked to higher OCD risk (same direction logic as the Ruminococcaceae entry, not a contradiction).",
      "ref": "PMID 40056996",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
+    },
+    {
+     "symptom": "Nausea",
+     "note": "Preoperative abundance negatively correlated with postoperative nausea/vomiting (PONV) severity (r=-0.33, p=0.030).",
+     "ref": "Tang et al. 2025, Frontiers in Medicine \u2014 thyroid cancer surgery cohort (PMID 40491765)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40491765/"
     }
    ]
   },
