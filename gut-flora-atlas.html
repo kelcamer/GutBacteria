@@ -444,7 +444,7 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
       if(hiE[i]){eEls[i].setAttribute("stroke-opacity","0.98");eEls[i].setAttribute("stroke-width","2.1");}
       else{eEls[i].setAttribute("stroke-opacity","0.09");eEls[i].setAttribute("stroke-width","0.7");}
     }
-    for(var q=0;q<nEls.length;q++)nEls[q].g.style.opacity=(V[q].type==="symptom"||hiN[q])?"1":"0.13";
+    for(var q=0;q<nEls.length;q++)nEls[q].g.style.opacity=(V[q].pin||hiN[q])?"1":"0.13";
   }
 
   var srcRow=function(note,ref,url){
@@ -1308,7 +1308,7 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
       if(hiE[i]){eEls[i].setAttribute("stroke-opacity","0.98");eEls[i].setAttribute("stroke-width","2.1");}
       else{eEls[i].setAttribute("stroke-opacity","0.09");eEls[i].setAttribute("stroke-width","0.7");}
     }
-    for(var q=0;q<nEls.length;q++)nEls[q].g.style.opacity=(dimNodes===false||hiN[q])?"1":"0.13";
+    for(var q=0;q<nEls.length;q++)nEls[q].g.style.opacity=(dimNodes===false||V[q].type==="cond"||hiN[q])?"1":"0.13";
   }
 
   var srcRow=function(note,ref,url){
