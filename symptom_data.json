@@ -40,7 +40,7 @@
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 10,
+   "count": 11,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -103,18 +103,30 @@
      "note": "Decreased in chronic constipation across multiple studies (though one slow-transit-specific study found B. longum specifically increased in that subtype).",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Significantly reduced in children with tic disorder vs. matched controls (p<0.05). Restlessness here is framed around the premonitory urge preceding tics \u2014 a restless/tense sensation phenomenologically similar to RLS restlessness.",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     }
    ]
   },
   {
    "name": "Faecalibacterium",
-   "count": 15,
+   "count": 16,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
      "note": "Butyrate producer (F. prausnitzii) consistently increased with exercise in an obesity/type 2 diabetes-specific meta-analysis \u2014 directly relevant since this genus is tracked as depleted across most conditions elsewhere in this app.",
      "ref": "Meta-analysis, 19 studies, n=1,062 obesity/T2D patients (PMID 41070132)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41070132/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Significantly increased in children with tic disorder vs. matched controls (p<0.05).",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     }
    ],
    "down": [
@@ -334,7 +346,7 @@
   },
   {
    "name": "Prevotella",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Joint pain",
@@ -373,6 +385,14 @@
      "note": "Depleted in chronic insomnia cohorts across 2 case-control studies.",
      "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
+    }
+   ],
+   "both": [
+    {
+     "symptom": "Restlessness",
+     "note": "A peer-reviewed 2022 case-control study found Prevotella significantly increased in children with tic disorder (p<0.05). An earlier conference abstract reported the opposite \u2014 Prevotella lower in Tourette syndrome and negatively correlated with tic severity (p=0.026 and p=0.041). Marked \"both\" given the genuine conflict; weighted toward the peer-reviewed source but the abstract's severity-correlation finding is worth keeping visible.",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424); Lee & Wong 2018, MDS International Congress (conference abstract, not yet peer-reviewed journal publication)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     }
    ]
   },
@@ -689,13 +709,19 @@
   },
   {
    "name": "Ruminococcaceae",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Constipation",
      "note": "Higher abundance in defecatory disorder (a constipation subtype) vs. non-defecatory-disorder constipation.",
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Unclassified Ruminococcaceae significantly increased in children with tic disorder vs. matched controls (p<0.05).",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     }
    ],
    "down": [
@@ -825,7 +851,7 @@
   },
   {
    "name": "Collinsella",
-   "count": 4,
+   "count": 5,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -852,7 +878,14 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/32272752/"
     }
    ],
-   "down": []
+   "down": [
+    {
+     "symptom": "Restlessness",
+     "note": "Significantly reduced in children with tic disorder vs. matched controls (p<0.05).",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
+    }
+   ]
   },
   {
    "name": "Lachnospira",
@@ -1567,8 +1600,15 @@
   },
   {
    "name": "Odoribacter",
-   "count": 4,
-   "up": [],
+   "count": 5,
+   "up": [
+    {
+     "symptom": "Restlessness",
+     "note": "Significantly increased in children with tic disorder vs. matched controls (p<0.05).",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
+    }
+   ],
    "down": [
     {
      "symptom": "Bloating & gas",
@@ -1598,7 +1638,7 @@
   },
   {
    "name": "Ruminococcus gnavus",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1617,6 +1657,12 @@
      "note": "Ruminococcus gnavus et rel. significantly higher in non-secretors (p<0.05), HITChip analysis \u2014 distinct from the bare Ruminococcus genus, which showed no single clean direction and isn't tracked here for that reason.",
      "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "Significantly associated with the CBCL Aggressive Behavior subscale in ADHD children (p=0.031), and also with Rule-Breaking Behavior (p=0.046) and broadband Externalizing Behavior (p=0.036) in the same cohort \u2014 overall increased in the ADHD group vs. healthy controls.",
+     "ref": "Lee et al. 2022, J Pers Med \u2014 ADHD children, CBCL Aggressive Behavior subscale, p=0.031 (PMID 36294773)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36294773/"
     }
    ],
    "down": []
@@ -2328,7 +2374,7 @@
   },
   {
    "name": "Coprobacillus",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -2341,6 +2387,12 @@
      "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
      "ref": "PMC7524151",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Significantly increased in children with tic disorder vs. matched controls (p<0.05).",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     }
    ],
    "down": []
