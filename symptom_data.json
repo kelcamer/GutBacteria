@@ -3376,6 +3376,20 @@
     }
    ],
    "both": []
+  },
+  {
+   "name": "Bacteroides ovatus",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Poor working memory",
+     "note": "Depleted specifically in combined-type ADHD patients (n=207, metagenomic, 8-marker panel AUC=0.89); causally validated in rats \u2014 B. ovatus gavage ameliorated spatial working-memory deficits, enhanced hippocampal CA1 neuronal activation, and reversed abnormal theta EEG rhythms.",
+     "ref": "Wang et al. 2022, metagenomic + rat causal validation, n=207 (PMID 36128620)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36128620/"
+    }
+   ],
+   "both": []
   }
  ]
 }
