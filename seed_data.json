@@ -1791,6 +1791,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/34238926/"
       }
      ]
+    },
+    {
+     "id": "seed_adhd_t43",
+     "name": "Roseburia",
+     "dir": "down",
+     "refs": "2-sample Mendelian randomization (PMID 37168108)",
+     "note": "Negatively correlated with ADHD risk in forward MR analysis (OR=0.812, 95% CI 0.694-0.95, P=0.009) \u2014 protective. Reverse MR found ADHD itself may increase Roseburia abundance (P=0.020), a bidirectional nuance worth noting but not treated as contradicting the forward-causal direction used here.",
+     "links": [
+      {
+       "id": "seed_adhd_t43_l1",
+       "label": "2-sample MR, forward+reverse analysis (PMID 37168108)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37168108/"
+      }
+     ]
     }
    ]
   },
@@ -9178,6 +9192,20 @@
        "id": "seed_748",
        "label": "Transl Psychiatry 2022 (n=507 humans + rat FMT model; heavy episodic drinking \u2191Actinobacteria, associated with Bristol Type 1 stool)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/35393390/"
+      }
+     ]
+    },
+    {
+     "id": "new_aud_t14",
+     "name": "Roseburia",
+     "dir": "down",
+     "refs": "Korean twin cohort, n=410 fecal samples/212 twins (PMID 31866426)",
+     "note": "Strong association between low AUDIT (alcohol use) scores and higher Roseburia abundance in a twin cohort controlling for genetics; administering Roseburia ameliorated alcoholic fatty liver in mice, partly via restoring gut barrier integrity (Occludin upregulation).",
+     "links": [
+      {
+       "id": "new_aud_t14_l1",
+       "label": "Korean twin cohort + mouse causal validation (PMID 31866426)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31866426/"
       }
      ]
     }
