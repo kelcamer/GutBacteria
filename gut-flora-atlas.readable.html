@@ -20536,7 +20536,7 @@ select{-webkit-appearance:none;appearance:none}
     }]
   }];
   var GFA_SYMPTOM_DATA_SHIPPED = {
-    "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies"],
+    "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies", "Cold sores"],
     "bacteria": [{
       "name": "Bifidobacterium",
       "count": 12,
@@ -21469,6 +21469,11 @@ select{-webkit-appearance:none;appearance:none}
         "note": "Enriched dysbiosis-associated genera in TBI patients vs healthy controls in the antibiotic-naive cohort.",
         "ref": "PMID 41551652",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41551652/"
+      }, {
+        "symptom": "Cold sores",
+        "note": "Genetically-predicted higher abundance (genus Shigella) increases HSV-1 infection risk — the virus that causes cold sores — in a 2-sample Mendelian randomization study across gut microbiota and 5 viral infectious diseases (OR=1.165, 95% CI 1.030-1.316, P=0.015, IVW).",
+        "ref": "2-sample MR, Hu et al. 2025, Medicine (Baltimore) (PMID 40629566)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
       }],
       "down": [{
         "symptom": "Non-secretor status (FUT2)",
@@ -22395,6 +22400,11 @@ select{-webkit-appearance:none;appearance:none}
         "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
         "ref": "PMC7524151",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
+      }, {
+        "symptom": "Cold sores",
+        "note": "Genetically-predicted higher abundance increases HSV-1 infection risk (the virus that causes cold sores), from the same Mendelian randomization analysis as this app's other Cold sores entries (OR=1.112, 95% CI 1.009-1.224, P=0.032, IVW).",
+        "ref": "2-sample MR, Hu et al. 2025, Medicine (Baltimore) (PMID 40629566)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
       }],
       "down": []
     }, {
@@ -23513,7 +23523,12 @@ select{-webkit-appearance:none;appearance:none}
     }, {
       "name": "Oscillospira",
       "count": 2,
-      "up": [],
+      "up": [{
+        "symptom": "Cold sores",
+        "note": "Genetically-predicted higher abundance increases HSV-1 infection risk (the virus that causes cold sores) in the same 2-sample Mendelian randomization study as this app's other Cold sores entries (OR=1.248, 95% CI 1.041-1.496, P=0.016, IVW).",
+        "ref": "2-sample MR, Hu et al. 2025, Medicine (Baltimore) (PMID 40629566)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
+      }],
       "down": [{
         "symptom": "Metabolic dysregulation",
         "note": "Associated with leanness/satiety signalling in diet-microbiome studies; depletion linked to metabolic shifts.",
@@ -23805,7 +23820,12 @@ select{-webkit-appearance:none;appearance:none}
         "ref": "2021, J Genet Genomics — FUT2 loss-of-function in IBD (n=81)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
       }],
-      "down": []
+      "down": [{
+        "symptom": "Cold sores",
+        "note": "The ErysipelotrichaceaeUCG003 subgroup's genetically-predicted higher abundance decreases HSV-1 infection risk — the virus that causes cold sores — in a 2-sample Mendelian randomization study (OR=0.837, 95% CI 0.717-0.976, P=0.023, IVW). Filed at the family level since this app doesn't track UCG-subgroup resolution elsewhere.",
+        "ref": "2-sample MR, Hu et al. 2025, Medicine (Baltimore) (PMID 40629566)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
+      }]
     }, {
       "name": "Ruminococcus torques",
       "count": 1,
@@ -24796,6 +24816,16 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
       }],
       "both": []
+    }, {
+      "name": "Anaerotruncus",
+      "count": 1,
+      "up": [],
+      "down": [{
+        "symptom": "Cold sores",
+        "note": "Genetically-predicted higher abundance decreases HSV-1 infection risk — the virus that causes cold sores — in a 2-sample Mendelian randomization study across gut microbiota and viral infectious diseases (OR=0.814, 95% CI 0.674-0.982, P=0.032, IVW). The only symptom link currently tracked for this genus.",
+        "ref": "2-sample MR, Hu et al. 2025, Medicine (Baltimore) (PMID 40629566)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
+      }]
     }]
   };
   var GFA_SYMPTOM_DATA = GFA_SYMPTOM_DATA_SHIPPED;
