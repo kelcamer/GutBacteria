@@ -5618,6 +5618,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40399789/"
       }
      ]
+    },
+    {
+     "id": "audit_Migraine_Bacteroides",
+     "name": "Bacteroides",
+     "dir": "up",
+     "refs": "n=126 pediatric migraine/50 age-matched controls (PMID 41454664)",
+     "note": "Pediatric migraine patients (with or without comorbid GI disorder) showed elevated Bacteroides alongside reduced Bifidobacterium longum vs. age-matched healthy controls.",
+     "links": [
+      {
+       "id": "audit_Migraine_Bacteroides_l1",
+       "label": "PMID 41454664",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41454664/"
+      }
+     ]
     }
    ]
   },
@@ -9028,6 +9042,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36046745/"
       }
      ]
+    },
+    {
+     "id": "audit_T2D_Streptococcus_thermophilus",
+     "name": "Streptococcus thermophilus",
+     "dir": "down",
+     "refs": "Multi-cohort shotgun metagenomics, n=433 samples, Europe+Asia (PMID 41927536)",
+     "note": "One of 8 T2D-depleted species reproducible across independent European and Asian cohorts (AUC>0.8 for T2D discrimination); T2D-depleted and T2D-enriched taxa formed separate, negatively-linked mutualistic networks.",
+     "links": [
+      {
+       "id": "audit_T2D_Streptococcus_thermophilus_l1",
+       "label": "PMID 41927536",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41927536/"
+      }
+     ]
     }
    ]
   },
@@ -9517,6 +9545,20 @@
        "id": "seed_744",
        "label": "Psoriasis (Auckland) 2025 (metagenomics + mediation analysis, n=64 psoriasis vs 64 matched controls; pathogenic: Prevotella copri/Eggerthellaceae)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40125310/"
+      }
+     ]
+    },
+    {
+     "id": "audit_Psoriasis_Bacteroides_plebeius",
+     "name": "Bacteroides plebeius",
+     "dir": "up",
+     "refs": "n=36 psoriasis/24 healthy controls (PMID 41421479)",
+     "note": "Species-level finding from a cross-sectional 16S study: higher abundance in psoriasis patients vs. controls (p<0.05), alongside higher Subdoligranulum/Lactobacillus and lower Ruminococcus (already tracked here as \"both\").",
+     "links": [
+      {
+       "id": "audit_Psoriasis_Bacteroides_plebeius_l1",
+       "label": "PMID 41421479",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41421479/"
       }
      ]
     }
@@ -10600,6 +10642,20 @@
        "id": "audit_PCOS_Faecalibacterium_l1",
        "label": "PMID 41977159",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41977159/"
+      }
+     ]
+    },
+    {
+     "id": "audit_PCOS_Streptococcus_thermophilus",
+     "name": "Streptococcus thermophilus",
+     "dir": "down",
+     "refs": "Two independent human cohorts + mouse model (PMID 41112053)",
+     "note": "Consistently depleted in PCOS across two human cohorts and a mouse model; restoring it via oral administration improved reproductive outcomes in mice by restoring the flavonoid-derived metabolite DHPAA (dependent on the species' β-galactosidase activity).",
+     "links": [
+      {
+       "id": "audit_PCOS_Streptococcus_thermophilus_l1",
+       "label": "PMID 41112053",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41112053/"
       }
      ]
     }
