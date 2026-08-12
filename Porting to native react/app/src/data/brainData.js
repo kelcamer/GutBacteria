@@ -1,8 +1,17 @@
-// Extracted programmatically (JSON round-trip) from `GFA_BRAIN_DATA` in
-// gut-flora-atlas.readable.html (~line 17513-20537, 20 entries) - one entry
-// per condition, each with a `taxa` list where every "taxon" is actually a
-// brain region name (matched against BRAIN_REGION_INFO) plus dir/refs/note/
-// links, same shape as a Condition's taxa array so it can reuse buildMap.
+// Originally extracted programmatically (JSON round-trip) from
+// `GFA_BRAIN_DATA` in gut-flora-atlas.readable.html (~line 17513-20537, 20
+// entries) - one entry per condition, each with a `taxa` list where every
+// "taxon" is actually a brain region name (matched against
+// BRAIN_REGION_INFO) plus dir/refs/note/links, same shape as a Condition's
+// taxa array so it can reuse buildMap.
+//
+// `brain_estrogen` (21st entry, added directly in this file rather than
+// the original minified source, which never had it) is not a diagnosed
+// condition like the rest - it tracks brain regions where estradiol
+// level/menstrual-cycle phase/menopausal status/hormone therapy showed a
+// significant human-neuroimaging effect (PET/fMRI/SPECT/SPET), 18 taxa
+// across 17 distinct PMIDs, every one verified directly against Europe
+// PMC's REST API before use (not taken from search-result summaries).
 export const BRAIN_DATA = [
   {
     "id": "brain_asd",
@@ -3857,6 +3866,329 @@ export const BRAIN_DATA = [
         "refs": "",
         "note": "Functional finding (not structural): hypoactivity concurrent with amygdala hyperactivity in the late luteal phase, both correlating with PMDD symptom severity.",
         "links": []
+      }
+    ]
+  },
+  {
+    "id": "brain_estrogen",
+    "name": "Estrogen",
+    "abbr": "E2",
+    "color": "#FBBF24",
+    "note": "Not a diagnosed condition like this map's other entries — tracks brain regions where estradiol (the primary circulating estrogen) level, menstrual-cycle phase, menopausal status, or hormone therapy was found to significantly affect activity, blood flow, glucose metabolism, receptor density, or connectivity in human neuroimaging studies (PET/fMRI/SPECT/SPET), plus one flagged rodent mechanistic study. Directions describe how each region's measured activity moves WITH higher estrogen (e.g. follicular phase, hormone-therapy use), not a claim about the region's baseline size or overall health.",
+    "links": [
+      {
+        "id": "brain_estrogen_l1",
+        "label": "Review: Estrogen and the prefrontal cortex, 2014, Hum Brain Mapp (PMID 23238908)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23238908/"
+      },
+      {
+        "id": "brain_estrogen_l2",
+        "label": "Shaywitz et al. 1999, JAMA — randomized crossover fMRI, working memory (PMID 10199429)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10199429/"
+      },
+      {
+        "id": "brain_estrogen_l3",
+        "label": "Dreher et al. 2007, PNAS — menstrual cycle phase and reward (PMID 17267613)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17267613/"
+      },
+      {
+        "id": "brain_estrogen_l4",
+        "label": "Stevens et al. 2025, PNAS — hormonal mechanisms of women's risk, high-res fMRI (PMID 41397126)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41397126/"
+      }
+    ],
+    "taxa": [
+      {
+        "id": "brain_estrogen_t1",
+        "name": "Hippocampus",
+        "dir": "up",
+        "refs": "PMID 10867223; PMID 9238064",
+        "note": "Increased right hippocampal blood flow over time in postmenopausal hormone-therapy users vs. non-users (longitudinal PET), and greater hippocampal activation during PET-measured cognitive-task performance under estrogen (vs. placebo) add-back in women with ovarian hormone suppression.",
+        "links": [
+          {
+            "id": "brain_estrogen_t1_l1",
+            "label": "Maki & Resnick 2000, Neurobiol Aging — longitudinal PET CBF study",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10867223/"
+          },
+          {
+            "id": "brain_estrogen_t1_l2",
+            "label": "Berman et al. 1997, PNAS — PET, gonadal steroid add-back",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9238064/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t2",
+        "name": "Prefrontal cortex",
+        "dir": "up",
+        "refs": "PMID 16735938; PMID 23238908; PMID 9238064",
+        "note": "Estrogen therapy selectively enhanced prefrontal-dependent cognitive processing (verbal encoding/working memory) on fMRI in perimenopausal/postmenopausal women, part of a broader literature reviewed as “estrogen and the prefrontal cortex.”",
+        "links": [
+          {
+            "id": "brain_estrogen_t2_l1",
+            "label": "Joffe et al. 2006, Menopause — RCT, fMRI",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16735938/"
+          },
+          {
+            "id": "brain_estrogen_t2_l2",
+            "label": "Review: Estrogen and the prefrontal cortex, 2014, Hum Brain Mapp",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23238908/"
+          },
+          {
+            "id": "brain_estrogen_t2_l3",
+            "label": "Berman et al. 1997, PNAS",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9238064/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t3",
+        "name": "Inferior frontal gyrus",
+        "dir": "up",
+        "refs": "PMID 9799627",
+        "note": "Increased activation during episodic-memory retrieval in hormone-therapy users on PET, part of the same longitudinal cohort as this entry's Hippocampus finding.",
+        "links": [
+          {
+            "id": "brain_estrogen_t3_l1",
+            "label": "Resnick & Maki 1998, Horm Behav — PET CBF + neuropsychological performance",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9799627/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t4",
+        "name": "Superior frontal gyrus",
+        "dir": "up",
+        "refs": "PMID 10199429",
+        "note": "Increased activation during retrieval in a working-memory task under estrogen therapy vs. placebo, in a randomized crossover fMRI study of postmenopausal women.",
+        "links": [
+          {
+            "id": "brain_estrogen_t4_l1",
+            "label": "Shaywitz et al. 1999, JAMA — randomized crossover fMRI",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10199429/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t5",
+        "name": "Medial prefrontal cortex",
+        "dir": "up",
+        "refs": "PMID 14741674",
+        "note": "Activation here (and at Postcentral gyrus) was reduced by tamoxifen (an anti-estrogen) relative to untreated/estrogen-therapy comparison groups — framed here as an estrogen-presence-associated increase, the inverse of the tamoxifen finding.",
+        "links": [
+          {
+            "id": "brain_estrogen_t5_l1",
+            "label": "Eberling et al. 2004, Neuroimage — estrogen- and tamoxifen-associated brain effects",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/14741674/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t6",
+        "name": "Middle temporal gyrus",
+        "dir": "up",
+        "refs": "PMID 10867223",
+        "note": "Enhanced resting activity in hormone-therapy users (bilateral finding: right middle/superior temporal gyrus and left middle temporal gyrus) in the same longitudinal PET cohort as this entry's Hippocampus finding.",
+        "links": [
+          {
+            "id": "brain_estrogen_t6_l1",
+            "label": "Maki & Resnick 2000, Neurobiol Aging",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10867223/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t7",
+        "name": "Inferior temporal gyrus",
+        "dir": "up",
+        "refs": "PMID 10867223",
+        "note": "Increased resting activity in hormone-therapy users, same longitudinal PET cohort as this entry's Hippocampus/Middle temporal gyrus findings.",
+        "links": [
+          {
+            "id": "brain_estrogen_t7_l1",
+            "label": "Maki & Resnick 2000, Neurobiol Aging",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10867223/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t8",
+        "name": "Superior temporal gyrus",
+        "dir": "up",
+        "refs": "PMID 10994014",
+        "note": "Greater cerebral glucose metabolism in estrogen-therapy users vs. non-users on PET, in postmenopausal women.",
+        "links": [
+          {
+            "id": "brain_estrogen_t8_l1",
+            "label": "Eberling et al. 2000, Neurology — PET glucose metabolism",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10994014/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t9",
+        "name": "Parahippocampal gyrus",
+        "dir": "up",
+        "refs": "PMID 10867223",
+        "note": "Increased right posterior parahippocampal blood flow over time in hormone-therapy users, same longitudinal PET cohort as this entry's Hippocampus finding.",
+        "links": [
+          {
+            "id": "brain_estrogen_t9_l1",
+            "label": "Maki & Resnick 2000, Neurobiol Aging",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10867223/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t10",
+        "name": "Posterior cingulate cortex",
+        "dir": "up",
+        "refs": "PMID 15582750; PMID 10199429",
+        "note": "Increased glucose metabolism over time in estrogen-therapy users (notable since this region is an early site of metabolic decline in Alzheimer's disease), plus enhanced working-memory-task activation under estrogen on fMRI.",
+        "links": [
+          {
+            "id": "brain_estrogen_t10_l1",
+            "label": "Rasgon et al. 2005, Neurobiol Aging — longitudinal PET metabolism",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15582750/"
+          },
+          {
+            "id": "brain_estrogen_t10_l2",
+            "label": "Shaywitz et al. 1999, JAMA",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10199429/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t11",
+        "name": "Anterior cingulate cortex",
+        "dir": "up",
+        "refs": "PMID 12900319; PMID 10199429",
+        "note": "Increased prefrontal/ACC serotonin 2A receptor binding following estradiol treatment in postmenopausal women (SPECT), alongside altered ACC activation during spatial working memory under estrogen on fMRI.",
+        "links": [
+          {
+            "id": "brain_estrogen_t11_l1",
+            "label": "Kugaya et al. 2003, Am J Psychiatry — SPECT, 5-HT2A binding",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12900319/"
+          },
+          {
+            "id": "brain_estrogen_t11_l2",
+            "label": "Shaywitz et al. 1999, JAMA",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10199429/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t12",
+        "name": "Inferior parietal lobule",
+        "dir": "both",
+        "refs": "PMID 10199429",
+        "note": "Task-dependent bidirectional effect in the same randomized crossover fMRI study: estrogen increased activation during storage of verbal working-memory material but decreased it during storage of nonverbal material — genuinely mixed, not picking a side.",
+        "links": [
+          {
+            "id": "brain_estrogen_t12_l1",
+            "label": "Shaywitz et al. 1999, JAMA",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10199429/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t13",
+        "name": "Thalamus",
+        "dir": "up",
+        "refs": "PMID 17173920",
+        "note": "High muscarinic-acetylcholine-receptor density (linked to cognitive performance) in long-term estrogen-therapy users on SPET, alongside the Caudate nucleus/striatal finding from the same study.",
+        "links": [
+          {
+            "id": "brain_estrogen_t13_l1",
+            "label": "Norbury et al. 2007, Horm Behav — SPET, muscarinic receptor density",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17173920/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t14",
+        "name": "Caudate nucleus",
+        "dir": "up",
+        "refs": "PMID 17173920",
+        "note": "High striatal muscarinic-acetylcholine-receptor density identified as important for cognition in long-term estrogen-therapy users on SPET (filed at the caudate specifically since this app doesn't track a bare “striatum” region).",
+        "links": [
+          {
+            "id": "brain_estrogen_t14_l1",
+            "label": "Norbury et al. 2007, Horm Behav",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17173920/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t15",
+        "name": "Amygdala",
+        "dir": "down",
+        "refs": "PMID 41397126; PMID 26581193; PMID 32849310",
+        "note": "Estradiol administration reduced central/corticomedial amygdala reactivity to threat on high-resolution fMRI (effect present in trauma-naive women, absent in women with PTSD); separately, natural estradiol level and hormonal-contraceptive use both shaped sex differences in amygdala engagement during fear conditioning/extinction. A rodent (estrous-cycle) study found GPER receptor expression itself fluctuating in the amygdala and dorsal hippocampus — flagged as an animal-model mechanistic finding, not a human activity measurement.",
+        "links": [
+          {
+            "id": "brain_estrogen_t15_l1",
+            "label": "2025, PNAS — hormonal mechanisms of women's risk in the face of traumatic stress, high-resolution fMRI",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41397126/"
+          },
+          {
+            "id": "brain_estrogen_t15_l2",
+            "label": "Hwang et al. 2015, BMC Psychiatry — fear conditioning/extinction, estradiol + contraceptives",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26581193/"
+          },
+          {
+            "id": "brain_estrogen_t15_l3",
+            "label": "2020, Front Endocrinol (Lausanne) — rodent estrous cycle, GPER immunoreactivity (animal model)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32849310/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t16",
+        "name": "Nucleus accumbens",
+        "dir": "up",
+        "refs": "PMID 17267613; PMID 26471712",
+        "note": "Reward-related neural response (both at reward outcome and during anticipation) was greater during the high-estradiol follicular phase than the luteal phase in two independent menstrual-cycle fMRI studies.",
+        "links": [
+          {
+            "id": "brain_estrogen_t16_l1",
+            "label": "Dreher et al. 2007, PNAS — event-related fMRI, follicular vs. luteal phase",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17267613/"
+          },
+          {
+            "id": "brain_estrogen_t16_l2",
+            "label": "Diekhof & Ratnayake 2016, Neuropsychologia — reward sensitivity + performance monitoring across cycle phase",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26471712/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t17",
+        "name": "Postcentral gyrus",
+        "dir": "up",
+        "refs": "PMID 14741674",
+        "note": "Activation here (and at Medial prefrontal cortex) was reduced by tamoxifen (an anti-estrogen) relative to comparison groups — framed here as an estrogen-presence-associated increase, the inverse of the tamoxifen finding.",
+        "links": [
+          {
+            "id": "brain_estrogen_t17_l1",
+            "label": "Eberling et al. 2004, Neuroimage",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/14741674/"
+          }
+        ]
+      },
+      {
+        "id": "brain_estrogen_t18",
+        "name": "Periaqueductal gray",
+        "dir": "both",
+        "refs": "PMID 40251694",
+        "note": "Menopausal status and estrogen metabolites shaped PAG connectivity in opposite directions to different networks: PAG-default-mode-network connectivity was HIGHER in postmenopausal (low-estrogen) than premenopausal women, while PAG-sensorimotor-network connectivity was HIGHER in premenopausal (high-estrogen) women, and higher stool 2-hydroxyestrone specifically tracked with higher PAG connectivity to both networks in premenopausal women — genuinely mixed/metabolite-specific, not a single clean direction.",
+        "links": [
+          {
+            "id": "brain_estrogen_t18_l1",
+            "label": "Kilpatrick et al. 2025, Biol Sex Differ — brainstem connectivity by sex and menopausal status",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40251694/"
+          }
+        ]
       }
     ]
   }
