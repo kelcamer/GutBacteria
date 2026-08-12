@@ -1,0 +1,120 @@
+name: Build & deploy (React port + existing site, combined)
+
+# NOT enabled for automatic deploys yet - manual trigger only
+# (workflow_dispatch), on purpose. See "Porting to native react/PORTING_PLAN.md"
+# for why.
+#
+# Short version: kelcamer.github.io/GutBacteria is currently live via
+# GitHub's classic "Deploy from a branch" Pages source (confirmed by
+# curling it - the root serves a Jekyll-rendered README, and
+# gut-flora-atlas.html is reachable directly at its own path). A repo can
+# only have ONE Pages source at a time, and switching to "GitHub Actions"
+# as the source REPLACES the branch-based deploy, it doesn't add to it.
+# Flipping that switch carelessly would take down the live app the day
+# it's flipped, not just add a new URL.
+#
+# This workflow is written to avoid that: it publishes the EXISTING repo
+# root (gut-flora-atlas.html, seed_data.json, everything, byte-for-byte
+# unchanged) AND the new React port's build output side by side in one
+# artifact, so nothing that works today stops working. The port lives at
+# /GutBacteria/react-preview/ once this is actually turned on.
+#
+# To actually go live with this:
+#   1. Run this workflow manually once (Actions tab -> this workflow -> Run)
+#      and check the deployed /react-preview/ path looks right.
+#   2. In repo Settings -> Pages, switch the source from "Deploy from a
+#      branch" to "GitHub Actions".
+#   3. Only then uncomment the `push:` trigger below for real automatic
+#      deploys.
+#   4. When/if the port is ready to fully replace the old app, that's a
+#      separate, deliberate decision - change what this workflow copies to
+#      root, don't let it happen as a side effect of an unrelated commit.
+
+on:
+  workflow_dispatch: {}
+  # push:
+  #   branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: "Porting to native react/app/package-lock.json"
+
+      - name: Install React port dependencies
+        working-directory: "Porting to native react/app"
+        run: npm ci
+
+      - name: Build React port
+        working-directory: "Porting to native react/app"
+        run: npm run build
+
+      - name: Assemble combined Pages artifact
+        run: |
+          set -e
+          mkdir -p _site
+          # Existing site, unchanged - every tracked file at repo root,
+          # minus the things that don't belong in a deploy (this workflow,
+          # the porting project's own source, git/editor cruft).
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.githooks' \
+            --exclude='.venv-readable' \
+            --exclude='Porting to native react' \
+            --exclude='_site' \
+            ./ _site/
+          # New React port, at its own subpath, alongside the old app.
+          mkdir -p "_site/react-preview"
+          cp -r "Porting to native react/app/dist/." "_site/react-preview/"
+          # There's no index.html at the repo root - today's "Deploy from a
+          # branch" source papers over that with Jekyll auto-rendering
+          # README.md into a landing page, but Actions-sourced Pages does
+          # NOT run Jekyll, so without this the root would 404. Minimal
+          # honest placeholder, not a silent decision about what the real
+          # root should eventually be - that's still a separate call to make.
+          # (printf, not a heredoc: a heredoc's closing delimiter has to be
+          # completely unindented, which doesn't survive living inside an
+          # indented YAML block scalar - learned that the hard way while
+          # writing this line, not shipped as a live guess.)
+          if [ ! -f _site/index.html ]; then
+            printf '%s\n' \
+              '<!doctype html><html><head><meta charset="utf-8"><title>GutBacteria</title></head>' \
+              '<body style="font:16px/1.5 ui-sans-serif,system-ui;background:#160E2B;color:#F1EAFF;padding:2rem;max-width:40rem;margin:0 auto">' \
+              '<h1>GutBacteria</h1>' \
+              '<ul>' \
+              '<li><a href="./gut-flora-atlas.html" style="color:#8FD3F4">Gut Flora Atlas (current app)</a></li>' \
+              '<li><a href="./react-preview/" style="color:#8FD3F4">React port preview (in progress)</a></li>' \
+              '</ul>' \
+              '</body></html>' \
+              > _site/index.html
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
