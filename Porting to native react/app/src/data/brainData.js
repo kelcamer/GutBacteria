@@ -4191,5 +4191,331 @@ export const BRAIN_DATA = [
         ]
       }
     ]
-  }
+  },
+  {
+      "id": "brain_testo",
+      "name": "Testosterone",
+      "abbr": "T",
+      "color": "#0EA5E9",
+      "note": "Not a diagnosed condition like this map's other entries — tracks brain regions where testosterone level (endogenous or administered) showed a significant human-neuroimaging effect, mostly on amygdala reactivity/connectivity and its coupling with regulatory cortical regions. Smaller and more amygdala-centric than this app's Estrogen brain entry, reflecting a real difference in how much human testosterone-neuroimaging literature exists (most of the deepest mechanistic testosterone-brain work is rodent, not human) - not a gap left uninvestigated. See also this app's gut-flora Testosterone condition (Conditions tab) for the separate gut-microbiome side of this hormone.",
+      "links": [
+        {
+          "id": "brain_testo_l1",
+          "label": "van Wingen et al. 2011, Cereb Cortex — prefrontal-amygdala connectivity (PMID 21339377)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21339377/"
+        },
+        {
+          "id": "brain_testo_l2",
+          "label": "Bos et al. 2013, Psychoneuroendocrinology — amygdala responses to faces (PMID 22999654)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22999654/"
+        },
+        {
+          "id": "brain_testo_l3",
+          "label": "Hermans et al. 2010, Neuroimage — ventral striatal reward response (PMID 20398773)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20398773/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "brain_testo_t1",
+          "name": "Amygdala",
+          "dir": "up",
+          "refs": "PMID 18235425; PMID 22999654; PMID 31506704; PMID 22341731; PMID 34896406; PMID 29744800",
+          "note": "Repeatedly linked to heightened amygdala reactivity: exogenous testosterone raised amygdala reactivity in middle-aged women to a young-adulthood level; testosterone administration in women increased amygdala responses to fearful/happy faces; men with high hair-testosterone concentrations showed increased neural reactivity to emotional pictures; endogenous testosterone in healthy men correlated with amygdala reactivity and memory performance; amygdala-subregion structural covariance and resting connectivity both track endogenous testosterone and trait aggression.",
+          "links": [
+            {
+              "id": "brain_testo_t1_l1",
+              "label": "van Wingen et al. 2009, Neuropsychopharmacology",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18235425/"
+            },
+            {
+              "id": "brain_testo_t1_l2",
+              "label": "Bos et al. 2013, Psychoneuroendocrinology",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22999654/"
+            },
+            {
+              "id": "brain_testo_t1_l3",
+              "label": "2019, Soc Cogn Affect Neurosci — hair testosterone",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31506704/"
+            },
+            {
+              "id": "brain_testo_t1_l4",
+              "label": "2012, Psychoneuroendocrinology — amygdala reactivity + memory",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22341731/"
+            },
+            {
+              "id": "brain_testo_t1_l5",
+              "label": "2022, Neuropsychologia — amygdala subregion structural covariance",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34896406/"
+            },
+            {
+              "id": "brain_testo_t1_l6",
+              "label": "2019, Brain Imaging Behav — basolateral amygdala connectivity",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29744800/"
+            }
+          ]
+        },
+        {
+          "id": "brain_testo_t2",
+          "name": "Orbitofrontal cortex",
+          "dir": "down",
+          "refs": "PMID 19782476",
+          "note": "Testosterone reduced amygdala-orbitofrontal cortex functional coupling in healthy volunteers, consistent with reduced top-down regulatory input from OFC to amygdala.",
+          "links": [
+            {
+              "id": "brain_testo_t2_l1",
+              "label": "van Wingen et al. 2010, Psychoneuroendocrinology",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19782476/"
+            }
+          ]
+        },
+        {
+          "id": "brain_testo_t3",
+          "name": "Prefrontal cortex",
+          "dir": "down",
+          "refs": "PMID 21339377; PMID 24204845",
+          "note": "Endogenous testosterone modulated prefrontal-amygdala connectivity during social emotional behavior, consistent with reduced PFC regulatory control over the amygdala; separately, testosterone was inversely related to brain activity during emotional inhibition in a schizophrenia cohort (clinical population, flagged as such rather than treated as a healthy-population finding).",
+          "links": [
+            {
+              "id": "brain_testo_t3_l1",
+              "label": "van Wingen et al. 2011, Cereb Cortex",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21339377/"
+            },
+            {
+              "id": "brain_testo_t3_l2",
+              "label": "2013, PLoS One — schizophrenia cohort",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24204845/"
+            }
+          ]
+        },
+        {
+          "id": "brain_testo_t4",
+          "name": "Nucleus accumbens",
+          "dir": "up",
+          "refs": "PMID 20398773",
+          "note": "Exogenous testosterone increased ventral striatal (nucleus accumbens) BOLD response during reward anticipation in healthy women.",
+          "links": [
+            {
+              "id": "brain_testo_t4_l1",
+              "label": "Hermans et al. 2010, Neuroimage",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/20398773/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brain_meno",
+      "name": "Menopause",
+      "abbr": "MENO",
+      "color": "#A855F7",
+      "note": "Not a diagnosed condition like this map's other entries — a host life-stage entry, matching this app's gut-flora Menopause (transition) condition (Conditions tab). Tracks brain regions where menopausal status (vs. premenopausal) showed a significant human-neuroimaging effect: bioenergetic/metabolic decline concentrated in prefrontal cortex and hippocampus, plus connectivity shifts in brainstem-network coupling. Distinct from this map's separate Perimenopause entry, which tracks the fluctuating-hormone transition phase specifically rather than the sustained-low-estrogen postmenopausal state.",
+      "links": [
+        {
+          "id": "brain_meno_l1",
+          "label": "Mosconi et al. 2017, PLoS One — FDG-PET bioenergetics across the transition (PMID 29016679)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29016679/"
+        },
+        {
+          "id": "brain_meno_l2",
+          "label": "2021, Sci Rep — brain structure/connectivity/metabolism/amyloid-beta (PMID 34108509)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34108509/"
+        },
+        {
+          "id": "brain_meno_l3",
+          "label": "2022, Neurology — white matter hyperintensities, the Rhineland Study (PMID 35768207)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35768207/"
+        },
+        {
+          "id": "brain_meno_l4",
+          "label": "2025, Biol Sex Differ — brainstem connectivity by menopausal status (PMID 40251694)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40251694/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "brain_meno_t1",
+          "name": "Prefrontal cortex",
+          "dir": "down",
+          "refs": "PMID 29016679; PMID 34108509",
+          "note": "Frontal cortex is among the first regions to show glucose-hypometabolism/bioenergetic decline across the menopause transition (FDG-PET, n=43 women across pre/peri/postmenopause), sustained into postmenopause; corroborated by a broader structural/connectivity/metabolic/amyloid-beta neuroimaging study.",
+          "links": [
+            {
+              "id": "brain_meno_t1_l1",
+              "label": "Mosconi et al. 2017, PLoS One",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29016679/"
+            },
+            {
+              "id": "brain_meno_t1_l2",
+              "label": "2021, Sci Rep — brain structure/connectivity/metabolism/amyloid-beta",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34108509/"
+            }
+          ]
+        },
+        {
+          "id": "brain_meno_t2",
+          "name": "Hippocampus",
+          "dir": "down",
+          "refs": "PMID 27263667; PMID 34108509",
+          "note": "Reduced hippocampal volume associated with menopausal status (moderated by hormone-therapy use) in postmenopausal women, alongside verbal memory changes; part of the same bioenergetic decline pattern as this entry's Prefrontal cortex finding.",
+          "links": [
+            {
+              "id": "brain_meno_t2_l1",
+              "label": "2017, Neuropsychol Dev Cogn B Aging Neuropsychol Cogn — hippocampal volume + HT",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27263667/"
+            },
+            {
+              "id": "brain_meno_t2_l2",
+              "label": "2021, Sci Rep",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34108509/"
+            }
+          ]
+        },
+        {
+          "id": "brain_meno_t3",
+          "name": "Periaqueductal gray",
+          "dir": "both",
+          "refs": "PMID 40251694",
+          "note": "PAG connectivity shifted with menopausal status in opposite directions to different networks: PAG-default-mode-network connectivity was HIGHER in postmenopausal than premenopausal women, while PAG-sensorimotor-network connectivity was HIGHER in premenopausal women — same brainstem-connectivity study already cited in this app's Estrogen brain entry, included here too since it's specifically about menopausal status, not just estrogen level in the abstract.",
+          "links": [
+            {
+              "id": "brain_meno_t3_l1",
+              "label": "2025, Biol Sex Differ — brainstem connectivity by sex and menopausal status",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40251694/"
+            }
+          ]
+        },
+        {
+          "id": "brain_meno_t4",
+          "name": "Default mode network",
+          "dir": "both",
+          "refs": "PMID 40251694",
+          "note": "See this entry's Periaqueductal gray finding — PAG-DMN connectivity itself was higher in postmenopausal than premenopausal women in the same study, a genuinely bidirectional-with-network-specificity result, not a single clean direction.",
+          "links": [
+            {
+              "id": "brain_meno_t4_l1",
+              "label": "2025, Biol Sex Differ",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40251694/"
+            }
+          ]
+        },
+        {
+          "id": "brain_meno_t5",
+          "name": "Corpus callosum",
+          "dir": "down",
+          "refs": "PMID 35768207",
+          "note": "Framed here as a proxy for this app's white-matter tracking (no dedicated diffuse-white-matter region exists in this map's region list): menopausal status was associated with white matter hyperintensity burden in a large population cohort (the Rhineland Study). White matter hyperintensities are a diffuse, not focal, finding - filed at Corpus callosum as this app's largest single white-matter tract rather than as a precise regional claim.",
+          "links": [
+            {
+              "id": "brain_meno_t5_l1",
+              "label": "2022, Neurology — the Rhineland Study",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35768207/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brain_perimeno",
+      "name": "Perimenopause",
+      "abbr": "PERI",
+      "color": "#D946A6",
+      "note": "Not a diagnosed condition like this map's other entries — matches this app's gut-flora Perimenopause condition (Conditions tab). Deliberately kept to 2 taxa rather than padded: the one study that specifically isolates perimenopause (rather than lumping it with postmenopause) as the phase where a distinct brain bioenergetic phenotype first emerges is Mosconi et al. 2017 - see this map's separate Menopause entry for the broader postmenopausal-vs-premenopausal neuroimaging literature this one deliberately doesn't duplicate.",
+      "links": [
+        {
+          "id": "brain_perimeno_l1",
+          "label": "Mosconi et al. 2017, PLoS One — FDG-PET, n=43 across pre/peri/postmenopause (PMID 29016679)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29016679/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "brain_perimeno_t1",
+          "name": "Prefrontal cortex",
+          "dir": "down",
+          "refs": "PMID 29016679",
+          "note": "The Alzheimer's-like bioenergetic phenotype (glucose hypometabolism, declining mitochondrial cytochrome-oxidase efficiency) EMERGES specifically during perimenopause in this FDG-PET study (n=43 across pre/peri/postmenopause), then persists into postmenopause — filed here rather than only under this map's separate Menopause entry because the study's own framing is about where the phenotype first appears.",
+          "links": [
+            {
+              "id": "brain_perimeno_t1_l1",
+              "label": "Mosconi et al. 2017, PLoS One",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29016679/"
+            }
+          ]
+        },
+        {
+          "id": "brain_perimeno_t2",
+          "name": "Hippocampus",
+          "dir": "down",
+          "refs": "PMID 29016679",
+          "note": "Same FDG-PET bioenergetic-emergence finding as this entry's Prefrontal cortex, in the same perimenopausal cohort.",
+          "links": [
+            {
+              "id": "brain_perimeno_t2_l1",
+              "label": "Mosconi et al. 2017, PLoS One",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29016679/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brain_prog",
+      "name": "Progesterone",
+      "abbr": "P4",
+      "color": "#F97316",
+      "note": "Not a diagnosed condition like this map's other entries — matches this app's gut-flora Progesterone condition (Conditions tab), and honestly smaller for the same underlying reason: less human-neuroimaging literature exists here than for Estrogen or Testosterone. What does exist centers on progesterone's neuroactive metabolites (allopregnanolone, pregnanolone) as GABA-A positive allosteric modulators acting on amygdala and hippocampus - the same mechanism implicated in this app's PMDD brain entry (see Amygdala/ACC/dlPFC findings there), since PMDD is fundamentally a progesterone-withdrawal-sensitivity condition.",
+      "links": [
+        {
+          "id": "brain_prog_l1",
+          "label": "Van Wingen et al. 2008, Mol Psychiatry — single-dose progesterone, amygdala reactivity (PMID 17579609)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17579609/"
+        },
+        {
+          "id": "brain_prog_l2",
+          "label": "2018, J Neuroendocrinol — review, GABA-active steroids and PMDD (PMID 29072794)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29072794/"
+        }
+      ],
+      "taxa": [
+        {
+          "id": "brain_prog_t1",
+          "name": "Amygdala",
+          "dir": "up",
+          "refs": "PMID 17579609; PMID 29072794",
+          "note": "A single progesterone administration selectively increased amygdala reactivity to emotional faces in women (vs. placebo); consistent with the broader neurosteroid literature on progesterone's metabolites (allopregnanolone/pregnanolone) acting as positive allosteric GABA-A modulators in corticolimbic circuits including the amygdala, reviewed specifically in the context of PMDD.",
+          "links": [
+            {
+              "id": "brain_prog_t1_l1",
+              "label": "Van Wingen et al. 2008, Mol Psychiatry",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17579609/"
+            },
+            {
+              "id": "brain_prog_t1_l2",
+              "label": "2018, J Neuroendocrinol — review, GABA-active steroids in the female brain",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29072794/"
+            }
+          ]
+        },
+        {
+          "id": "brain_prog_t2",
+          "name": "Hippocampus",
+          "dir": "both",
+          "refs": "PMID 29072794; PMID 36842096",
+          "note": "Allopregnanolone/pregnanolone are synthesized directly in hippocampal pyramidal neurons and modulate their excitability via GABA-A potentiation; a rodent PMDD-model study found GABAA-Rα4 receptor expression abnormally HIGH in hippocampus (vs. abnormally low in amygdala), with allopregnanolone normalizing both directions — genuinely region-specific rather than a single clean direction, and the receptor-expression study is a rodent model, flagged as such.",
+          "links": [
+            {
+              "id": "brain_prog_t2_l1",
+              "label": "2018, J Neuroendocrinol — review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29072794/"
+            },
+            {
+              "id": "brain_prog_t2_l2",
+              "label": "2023, Aging (Albany NY) — rodent PMDD model, GABAA-Rα4",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36842096/"
+            }
+          ]
+        }
+      ]
+    }
 ]
