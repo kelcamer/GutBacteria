@@ -7411,6 +7411,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41173896/"
       }
      ]
+    },
+    {
+     "id": "seed_ibs_t26",
+     "name": "Lactobacillus",
+     "dir": "down",
+     "refs": "Meta-analysis, 13 studies, n=628 (PMID 28179092)",
+     "note": "Down-regulated in IBS patients (SMD=-0.85, P<0.001) across a meta-analysis of 13 studies, n=360 IBS/268 controls \u2014 same source already used for this app's \"Abdominal pain\" symptom entry.",
+     "links": [
+      {
+       "id": "seed_ibs_t26_l1",
+       "label": "Meta-analysis, 13 studies, n=628 (PMID 28179092)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28179092/"
+      }
+     ]
     }
    ]
   },
