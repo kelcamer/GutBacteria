@@ -6,17 +6,15 @@ name: Build & deploy (React port + existing site, combined)
 # this was confirmed working end-to-end; see "Porting to native
 # react/PORTING_PLAN.md" for that history). Re-run it manually (Actions tab
 # -> this workflow -> Run) whenever the live site should pick up new
-# commits from either branch - there's no push trigger, so nothing deploys
-# automatically as a side effect of a routine commit.
+# commits - there's no push trigger, so nothing deploys automatically as a
+# side effect of a routine commit.
 #
-# Two checkouts, on purpose: the React port lives on `native-react-app`
-# and was cleaned to contain ONLY React-relevant files (no duplicated copy
-# of the existing single-file app) - so "the existing site" half of the
-# combined artifact is sourced by checking out `main` separately, not by
-# assuming it's sitting in the same working tree as the React app. This
-# also means the workflow doesn't care which branch you dispatch it from;
-# it always pulls main for the old app and native-react-app for the new
-# one, by explicit ref.
+# Single checkout, on purpose: the React port used to live on a separate
+# `native-react-app` branch (which needed its own checkout, by explicit
+# ref, since it was cleaned to carry only React-relevant files) - that
+# branch has since been merged back into `main` now that the port is
+# complete and verified, so both apps live in the same tree again and one
+# checkout covers both.
 
 on:
   workflow_dispatch: {}
@@ -34,53 +32,43 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout existing site (main)
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          path: site
-
-      - name: Checkout React port (native-react-app)
-        uses: actions/checkout@v4
-        with:
-          ref: native-react-app
-          path: react
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
-          cache-dependency-path: "react/Porting to native react/app/package-lock.json"
+          cache-dependency-path: "Porting to native react/app/package-lock.json"
 
       - name: Install React port dependencies
-        working-directory: "react/Porting to native react/app"
+        working-directory: "Porting to native react/app"
         run: npm ci
 
       - name: Build React port
-        working-directory: "react/Porting to native react/app"
+        working-directory: "Porting to native react/app"
         run: npm run build
 
       - name: Assemble combined Pages artifact
         run: |
           set -e
           mkdir -p _site
-          # Existing site, unchanged - every tracked file at main's repo
-          # root, minus dev tooling that was never meant to be served
-          # (same exclude list the pre-cleanup single-checkout version of
-          # this workflow used, kept as-is since main itself wasn't
-          # touched by the native-react-app branch cleanup).
+          # Existing site, unchanged - every tracked file at repo root,
+          # minus the things that don't belong in a deploy (this workflow,
+          # the porting project's own source, git/editor cruft).
           rsync -a \
             --exclude='.git' \
             --exclude='.github' \
             --exclude='.githooks' \
             --exclude='.venv-readable' \
-            ./site/ _site/
+            --exclude='Porting to native react' \
+            --exclude='_site' \
+            ./ _site/
           # New React port, at its own subpath, alongside the old app.
           mkdir -p "_site/react-preview"
-          cp -r "react/Porting to native react/app/dist/." "_site/react-preview/"
-          # There's no index.html at main's repo root - the classic
-          # "Deploy from a branch" source used to paper over that with
-          # Jekyll auto-rendering README.md into a landing page, but
+          cp -r "Porting to native react/app/dist/." "_site/react-preview/"
+          # There's no index.html at the repo root - the classic "Deploy
+          # from a branch" source used to paper over that with Jekyll
+          # auto-rendering README.md into a landing page, but
           # Actions-sourced Pages does NOT run Jekyll, so without this the
           # root would 404. Minimal honest placeholder, not a silent
           # decision about what the real root should eventually be - that's

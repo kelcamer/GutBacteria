@@ -1,0 +1,121 @@
+import { useState } from 'react'
+import { ChevronRight, Plus } from 'lucide-react'
+import { theme, palette } from '../theme'
+import { makeId } from '../lib/id'
+import { Button } from './Button'
+import { Field } from './Field'
+import { Modal } from './Modal'
+
+// Ported verbatim from `Wm` in gut-flora-atlas.readable.html (~line
+// 28344-28515). `Eo`=ChevronRight, `at`=Plus (confirmed in the icon
+// inventory), `zf`=palette (theme.js), `$`=makeId.
+export function ConditionsGrid({ conditions, onOpen, onAdd }) {
+  const [addOpen, setAddOpen] = useState(false)
+  const [name, setName] = useState('')
+  const [code, setCode] = useState('')
+  const [color, setColor] = useState(palette[6])
+
+  const addCondition = () => {
+    if (!name.trim()) return
+    onAdd({
+      id: makeId(),
+      name: name.trim(),
+      abbr: (code.trim() || name.trim().slice(0, 4)).toUpperCase(),
+      color,
+      note: '',
+      links: [],
+      taxa: [],
+    })
+    setName('')
+    setCode('')
+    setAddOpen(false)
+  }
+
+  return (
+    <div className="p-4 safe-bottom">
+      <p className="mb-4" style={{ color: theme.muted, fontSize: 13, maxWidth: 620 }}>
+        Every condition holds a list of taxa marked increased or decreased. Tap one to edit it, or head to Compare
+        to lay two side by side.
+      </p>
+
+      <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
+        {conditions.map((c) => {
+          const up = c.taxa.filter((t) => t.dir === 'up').length
+          const down = c.taxa.length - up
+          return (
+            <button
+              key={c.id}
+              onClick={() => onOpen(c.id)}
+              className="text-left rounded-2xl p-4 transition-transform"
+              style={{ background: theme.ink2, border: `1px solid ${theme.line}`, borderTop: `3px solid ${c.color}` }}
+            >
+              <div className="flex items-start justify-between gap-2">
+                <div style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 18, lineHeight: 1.15 }}>
+                  {c.name}
+                </div>
+                <span className="font-mono" style={{ fontSize: 10, color: c.color, letterSpacing: '.08em' }}>
+                  {c.abbr}
+                </span>
+              </div>
+              <div className="flex mt-3 rounded-full overflow-hidden" style={{ height: 6, background: theme.ink3 }}>
+                <div style={{ width: `${(up / Math.max(c.taxa.length, 1)) * 100}%`, background: theme.up }} />
+                <div style={{ width: `${(down / Math.max(c.taxa.length, 1)) * 100}%`, background: theme.down }} />
+              </div>
+              <div className="flex items-center gap-4 mt-2.5 font-mono" style={{ fontSize: 11 }}>
+                <span style={{ color: theme.up }}>▲ {up} up</span>
+                <span style={{ color: theme.down }}>▼ {down} down</span>
+                <ChevronRight size={14} style={{ color: theme.muted, marginLeft: 'auto' }} />
+              </div>
+            </button>
+          )
+        })}
+
+        <button
+          onClick={() => setAddOpen(true)}
+          className="rounded-2xl p-4 flex flex-col items-center justify-center gap-2"
+          style={{ border: `1px dashed ${theme.line}`, color: theme.muted, minHeight: 128 }}
+        >
+          <Plus size={20} />
+          <span className="text-sm">Add a condition</span>
+        </button>
+      </div>
+
+      {addOpen && (
+        <Modal title="Add a condition" onClose={() => setAddOpen(false)}>
+          <div className="space-y-3">
+            <Field label="Name" value={name} onChange={setName} placeholder="e.g. Vestibular migraine" />
+            <Field label="Short code" value={code} onChange={setCode} placeholder="VM" mono />
+            <div>
+              <span className="font-mono block mb-2" style={{ fontSize: 10, letterSpacing: '.12em', color: theme.muted }}>
+                COLOR
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {palette.map((c) => (
+                  <button
+                    key={c}
+                    onClick={() => setColor(c)}
+                    aria-label={`Color ${c}`}
+                    style={{
+                      width: 28,
+                      height: 28,
+                      borderRadius: 8,
+                      background: c,
+                      outline: color === c ? `2px solid ${theme.text}` : 'none',
+                      outlineOffset: 2,
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="flex gap-2 pt-1">
+              <Button tone="solid" onClick={addCondition}>
+                Add condition
+              </Button>
+              <Button onClick={() => setAddOpen(false)}>Cancel</Button>
+            </div>
+          </div>
+        </Modal>
+      )}
+    </div>
+  )
+}

@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* Ported verbatim from the inline <style> block inside `$u`
+   (gut-flora-atlas.readable.html ~line 16949-16967). Moved to a real CSS
+   file instead of JSX-injected on every render - same effect, more
+   idiomatic for a real app with a real build step. */
+
+:root {
+  --display: 'Bricolage Grotesque', ui-sans-serif, system-ui;
+  --body: 'IBM Plex Sans', ui-sans-serif, system-ui;
+}
+
+html,
+body {
+  background: #160e2b; /* theme.ink - avoids a flash-of-unstyled-content before
+                           React mounts; the original achieves the same via an
+                           inline style on its root wrapper div instead. */
+  color: #f1eaff; /* theme.text */
+  font-family: var(--body);
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3e2c6e; /* theme.line */
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #ff5c86; /* theme.up */
+  outline-offset: 2px;
+}
+
+input::placeholder {
+  color: #a08fc7; /* theme.muted */
+  opacity: 0.65;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.dish {
+  background-image: radial-gradient(circle at 12% 18%, rgba(181, 123, 255, 0.1), transparent 42%),
+    radial-gradient(circle at 86% 8%, rgba(255, 92, 134, 0.09), transparent 38%),
+    radial-gradient(circle at 72% 88%, rgba(79, 195, 247, 0.08), transparent 44%);
+}
+
+/* Home-screen standalone mode puts content under the status bar and home indicator. */
+.safe-top {
+  padding-top: calc(12px + env(safe-area-inset-top, 0px));
+}
+.safe-x {
+  padding-left: calc(12px + env(safe-area-inset-left, 0px));
+  padding-right: calc(12px + env(safe-area-inset-right, 0px));
+}
+.safe-bottom {
+  padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+}
+.safe-drawer {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
