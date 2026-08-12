@@ -2211,6 +2211,25 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/39175809/"
       }
      ]
+    },
+    {
+     "id": "seed_ad_t26",
+     "name": "Prevotella",
+     "dir": "both",
+     "refs": "PMID 36102237 (up) / PMID 40604345 (down/protective)",
+     "note": "Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern \u2014 higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side.",
+     "links": [
+      {
+       "id": "seed_ad_t26_l1",
+       "label": "Kazakhstan cohort, n=41/43, enriched (PMID 36102237)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36102237/"
+      },
+      {
+       "id": "seed_ad_t26_l2",
+       "label": "US AD-risk cohort, n=239/93, protective (PMID 40604345)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40604345/"
+      }
+     ]
     }
    ]
   },
@@ -2931,6 +2950,25 @@
        "id": "seed_anx_t21_l1",
        "label": "n=36/24, 16S rRNA sequencing (PMID 31437702)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+      }
+     ]
+    },
+    {
+     "id": "seed_anx_t22",
+     "name": "Prevotella",
+     "dir": "down",
+     "refs": "n=36 GAD/24 controls (PMID 31437702); n unspecified GAD study (PMID 40601331)",
+     "note": "Prevotella_9 negatively correlated with anxiety severity, positively with treatment-response reduction (PMID 31437702); a separate GAD study independently found decreased Prevotellaceae/Prevotella (PMID 40601331) \u2014 two corroborating sources, same direction.",
+     "links": [
+      {
+       "id": "seed_anx_t22_l1",
+       "label": "n=36/24 (PMID 31437702)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+      },
+      {
+       "id": "seed_anx_t22_l2",
+       "label": "Multi-omics GAD study (PMID 40601331)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40601331/"
       }
      ]
     }
@@ -8663,6 +8701,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/38161953/"
       }
      ]
+    },
+    {
+     "id": "new_t2d_t11",
+     "name": "Prevotella",
+     "dir": "up",
+     "refs": "n=180 (60 T2DM/60 PreDM/60 controls), 16S rRNA (PMID 33854922)",
+     "note": "Significantly higher relative abundance in T2DM group vs. controls (P=0.016); Alloprevotella also elevated (P=0.018).",
+     "links": [
+      {
+       "id": "new_t2d_t11_l1",
+       "label": "Zhang et al. 2021, n=180 (PMID 33854922)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33854922/"
+      }
+     ]
     }
    ]
   },
@@ -9318,6 +9370,20 @@
        "id": "new_aud_t14_l1",
        "label": "Korean twin cohort + mouse causal validation (PMID 31866426)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/31866426/"
+      }
+     ]
+    },
+    {
+     "id": "new_aud_t15",
+     "name": "Prevotella",
+     "dir": "down",
+     "refs": "n=33 AD/21 controls, male patients (PMID 37577447)",
+     "note": "Decreased in the gut microbiota of alcohol-dependent patients vs. controls; Bacteroides and Fusobacterium increased instead \u2014 pro-inflammatory compositional shift.",
+     "links": [
+      {
+       "id": "new_aud_t15_l1",
+       "label": "n=33/21, male patients (PMID 37577447)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37577447/"
       }
      ]
     }
