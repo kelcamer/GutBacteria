@@ -671,6 +671,12 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
     },
     {
+     "symptom": "Emotional Dysregulation",
+     "note": "Not a new abundance-comparison study — a review proposing an integrative \"microbiome neuro-immuno-affective\" framework for how alcohol-related depletion of taxa including Lactobacillus (alongside Bacteroides and shifts in Firmicutes) could drive emotional dysregulation in alcohol misuse, via inflammatory/neuro-immune pathways affecting frontolimbic circuitry. Filed here at the same depletion this app's Alcohol-related dysbiosis entry above already tracks, rather than as an independent new finding — flagged as review-level synthesis, not primary statistics, since the underlying abstract doesn't report its own taxon-level effect sizes.",
+     "ref": "Carbia et al. 2021, Mol Psychiatry — review (PMID 33288871)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33288871/"
+    },
+    {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Growth was promoted by fucosylated HMOs present in secretor milk, implying lower abundance with non-secretor status; consistent with a separate cohort (PMID 30540710) finding Lactobacillus spp. lower in non-secretor milk.",
      "ref": "2018, mSystems \u2014 Chinese mothers' milk glycans (n=56)",
