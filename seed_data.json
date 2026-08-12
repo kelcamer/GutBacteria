@@ -2985,6 +2985,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40601331/"
       }
      ]
+    },
+    {
+     "id": "seed_anx_t23",
+     "name": "Blautia",
+     "dir": "up",
+     "refs": "n=21 high-trait-anxiety/29 controls (PMID 35281444)",
+     "note": "Significant overgrowth (alongside Streptococcus, Romboutsia) in high-trait-anxiety young adults vs. controls.",
+     "links": [
+      {
+       "id": "seed_anx_t23_l1",
+       "label": "n=21/29, MBCT-responsiveness study (PMID 35281444)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35281444/"
+      }
+     ]
     }
    ]
   },
@@ -8269,6 +8283,20 @@
        "id": "new_cd_t17_l1",
        "label": "n=191 CD/132 UC/125 controls, metagenomic (PMID 36268225)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36268225/"
+      }
+     ]
+    },
+    {
+     "id": "new_cd_t18",
+     "name": "Blautia faecis",
+     "dir": "down",
+     "refs": "PMID 26789999",
+     "note": "Species-level: significantly reduced in CD alongside other butyrate-producing species (Roseburia inulinivorans, Ruminococcus torques, Clostridium lavalense, Bacteroides uniformis, Faecalibacterium prausnitzii).",
+     "links": [
+      {
+       "id": "new_cd_t18_l1",
+       "label": "Reduced butyrate producers in CD (PMID 26789999)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/26789999/"
       }
      ]
     }
