@@ -44,7 +44,8 @@
   "Hair loss",
   "Panic attack",
   "Allergies",
-  "Cold sores"
+  "Cold sores",
+  "Emotional Dysregulation"
  ],
  "bacteria": [
   {
@@ -4045,6 +4046,12 @@
      "note": "Increased in migraine across 3 independent studies within this review.",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Emotional Dysregulation",
+     "note": "Higher abundance significantly associated with inhibitory-self-control risk (a facet of explicit emotion regulation) in 3-4 year olds, n=257 (26 ISC-risk / 231 non-risk) (p=0.003, q=0.084).",
+     "ref": "Fujihara et al. 2023, Microorganisms (PMID 37764088)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37764088/"
     }
    ],
    "down": [],
@@ -5367,6 +5374,19 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
     }
    ]
+  },
+  {
+   "name": "Actinomyces",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Emotional Dysregulation",
+     "note": "Higher abundance significantly associated with inhibitory-self-control risk (a facet of explicit emotion regulation) in 3-4 year olds, n=257 (26 ISC-risk / 231 non-risk) \u2014 the stronger of two genus-level findings in this study (p<0.001, q=0.006). Flagged by the authors as one of several inflammation-related taxa elevated in the risk group.",
+     "ref": "Fujihara et al. 2023, Microorganisms (PMID 37764088)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37764088/"
+    }
+   ],
+   "down": []
   }
  ]
 }
