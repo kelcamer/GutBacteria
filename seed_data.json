@@ -8972,6 +8972,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/32214153/"
       }
      ]
+    },
+    {
+     "id": "new_t2d_t14",
+     "name": "Collinsella",
+     "dir": "up",
+     "refs": "Systematic review, 18 studies (PMID 36046745)",
+     "note": "Increased abundance in prediabetes/newly-diagnosed T2D vs. normal glucose tolerance, reported in at least 2 of 18 included studies (alongside Lactobacillus, Streptococcus, Escherichia, Veillonella).",
+     "links": [
+      {
+       "id": "new_t2d_t14_l1",
+       "label": "Systematic review, 18 studies (PMID 36046745)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36046745/"
+      }
+     ]
     }
    ]
   },
