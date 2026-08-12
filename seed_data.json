@@ -8313,6 +8313,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/26789999/"
       }
      ]
+    },
+    {
+     "id": "new_cd_t19",
+     "name": "Eubacterium",
+     "dir": "down",
+     "refs": "Takahashi et al. 2016 (PMID 26789999)",
+     "note": "Significantly decreased in CD vs. controls, alongside Bacteroides, Faecalibacterium, and Ruminococcus \u2014 same source already used for this app's Blautia faecis entry here.",
+     "links": [
+      {
+       "id": "new_cd_t19_l1",
+       "label": "Takahashi et al. 2016 (PMID 26789999)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/26789999/"
+      }
+     ]
     }
    ]
   },
@@ -8844,6 +8858,20 @@
        "id": "new_t2d_t11_l1",
        "label": "Zhang et al. 2021, n=180 (PMID 33854922)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/33854922/"
+      }
+     ]
+    },
+    {
+     "id": "new_t2d_t12",
+     "name": "Eubacterium rectale",
+     "dir": "down",
+     "refs": "Qin et al. 2012, MGWAS, n=345 (PMID 23023125)",
+     "note": "Species-level: decreased in T2DM, one of the classic butyrate-producing species depleted in this landmark metagenome-wide association study of Chinese individuals.",
+     "links": [
+      {
+       "id": "new_t2d_t12_l1",
+       "label": "Qin et al. 2012, Nature, n=345 (PMID 23023125)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/23023125/"
       }
      ]
     }
