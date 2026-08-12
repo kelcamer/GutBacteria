@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# Blocks a commit if gut-flora-atlas.html's embedded data fallbacks
+# (qf() / GFA_SYMPTOM_DATA_SHIPPED) don't match what's actually staged
+# for seed_data.json / symptom_data.json.
+#
+# This checks the STAGED (index) content, not just what's on disk, so it
+# catches drift no matter how it happened - including a `git add` that
+# only picked up the JSON edit and not a resynced HTML.
+#
+# One-time setup after cloning (this isn't automatic - git doesn't track
+# hooks by default):
+#   git config core.hooksPath .githooks
+#
+# To bypass in a real emergency: git commit --no-verify
+
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+TMPDIR="$(mktemp -d)"
+trap 'rm -rf "$TMPDIR"' EXIT
+
+for f in gut-flora-atlas.html seed_data.json symptom_data.json; do
+  git show ":$f" > "$TMPDIR/$f" 2>/dev/null || cp "$f" "$TMPDIR/$f"
+done
+
+if ! python3 scripts/sync_embedded_data.py --check \
+      --html "$TMPDIR/gut-flora-atlas.html" \
+      --seed "$TMPDIR/seed_data.json" \
+      --symptom "$TMPDIR/symptom_data.json"; then
+  echo "" >&2
+  echo "pre-commit: gut-flora-atlas.html's embedded data is out of sync with" >&2
+  echo "the staged seed_data.json / symptom_data.json. Fix it with:" >&2
+  echo "" >&2
+  echo "    python3 scripts/sync_embedded_data.py" >&2
+  echo "    git add gut-flora-atlas.html" >&2
+  echo "" >&2
+  echo "then commit again. (Emergency bypass: git commit --no-verify)" >&2
+  exit 1
+fi
+
+# Real JS syntax check (JavaScriptCore, no node/deno needed) on the staged HTML.
+if ! scripts/check_syntax.sh "$TMPDIR/gut-flora-atlas.html" >&2; then
+  echo "" >&2
+  echo "pre-commit: the staged gut-flora-atlas.html doesn't parse as valid" >&2
+  echo "JavaScript (see SyntaxError above). Fix it before committing." >&2
+  echo "(Emergency bypass: git commit --no-verify)" >&2
+  exit 1
+fi
+
+exit 0
