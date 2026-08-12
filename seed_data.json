@@ -9561,6 +9561,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41421479/"
       }
      ]
+    },
+    {
+     "id": "audit_Psoriasis_Lactobacillus",
+     "name": "Lactobacillus",
+     "dir": "up",
+     "refs": "n=36 psoriasis/24 healthy controls (PMID 41421479)",
+     "note": "Same cross-sectional 16S study as this condition's Bacteroides plebeius entry: higher abundance of the genus Lactobacillus (and Subdoligranulum) in psoriasis patients vs. controls (p<0.05), correlated with IL17/IL23/IL36/TNFa/TGFb.",
+     "links": [
+      {
+       "id": "audit_Psoriasis_Lactobacillus_l1",
+       "label": "PMID 41421479",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41421479/"
+      }
+     ]
     }
    ]
   },
@@ -10059,6 +10073,20 @@
        "id": "new_smk_t17_l1",
        "label": "Yan et al. 2021, Front Cell Infect Microbiol, n=33/121 (PMID 34368009)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/34368009/"
+      }
+     ]
+    },
+    {
+     "id": "audit_Smoking_Lactobacillus",
+     "name": "Lactobacillus",
+     "dir": "down",
+     "refs": "n=200, western Iran (smokers/hookah/combined/non-smoking controls) (PMID 42052326)",
+     "note": "Fecal Lactobacillus prevalence markedly lower in all tobacco-user groups (cigarette, hookah, combined) vs. non-smoking controls (p<0.001), alongside elevated stool pH — tobacco-associated gut dysbiosis.",
+     "links": [
+      {
+       "id": "audit_Smoking_Lactobacillus_l1",
+       "label": "PMID 42052326",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42052326/"
       }
      ]
     }
@@ -10656,6 +10684,20 @@
        "id": "audit_PCOS_Streptococcus_thermophilus_l1",
        "label": "PMID 41112053",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41112053/"
+      }
+     ]
+    },
+    {
+     "id": "audit_PCOS_Bifidobacterium",
+     "name": "Bifidobacterium",
+     "dir": "up",
+     "refs": "n=23 PCOS/24 non-PCOS controls (PMID 41882707)",
+     "note": "Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio.",
+     "links": [
+      {
+       "id": "audit_PCOS_Bifidobacterium_l1",
+       "label": "PMID 41882707",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/"
       }
      ]
     }
