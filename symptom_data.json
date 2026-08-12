@@ -2251,7 +2251,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -2270,6 +2270,12 @@
      "note": "Enriched in treatment-naive GAD patients; abundance positively associated with anxiety severity.",
      "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "More abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
+     "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
     }
    ],
    "down": [
@@ -3551,6 +3557,48 @@
      "note": "Family-level decrease associated with development of allergic sensitization, eczema, or asthma \u2014 classic protective/probiotic-relevant family.",
      "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/"
+    }
+   ],
+   "both": []
+  },
+  {
+   "name": "Barnesiella",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Irritability",
+     "note": "More abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
+     "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Rhodospirillales",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Irritability",
+     "note": "Order-level: more abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
+     "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
+    }
+   ],
+   "down": [],
+   "both": []
+  },
+  {
+   "name": "Catenisphaera",
+   "count": 1,
+   "up": [],
+   "down": [
+    {
+     "symptom": "Irritability",
+     "note": "More abundant in non-impulsive (control) women \u2014 i.e. depleted in the impulsively violent group (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
+     "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
     }
    ],
    "both": []
