@@ -7561,6 +7561,25 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/28179092/"
       }
      ]
+    },
+    {
+     "id": "seed_ibs_t27",
+     "name": "Firmicutes",
+     "dir": "both",
+     "refs": "PMID 30829919 (up, ratio) / PMID 30090090 (down, IBS-D specific)",
+     "note": "Genuine contradiction: a systematic review of 16 studies (n=777 IBS/461 controls) found an increased Firmicutes:Bacteroidetes ratio overall (PMID 30829919), while a direct case-control study specifically in diarrhea-predominant IBS (n=27 IBS-D/13 controls) found Firmicutes significantly DECREASED (26.14% vs. 35.97%, P=0.046, PMID 30090090) \u2014 subtype-dependent split, kept as both rather than picking a side.",
+     "links": [
+      {
+       "id": "seed_ibs_t27_l1",
+       "label": "Systematic review, 16 studies, n=777/461 (PMID 30829919)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30829919/"
+      },
+      {
+       "id": "seed_ibs_t27_l2",
+       "label": "IBS-D specific, n=27/13 (PMID 30090090)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30090090/"
+      }
+     ]
     }
    ]
   },
@@ -8222,6 +8241,20 @@
        "id": "new_cd_t15_l1",
        "label": "Favier et al., n=16/5/14 (PMID 9125655)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/9125655/"
+      }
+     ]
+    },
+    {
+     "id": "new_cd_t16",
+     "name": "Firmicutes",
+     "dir": "down",
+     "refs": "16S rRNA qPCR study (PMID 26261163)",
+     "note": "Firmicutes/Bacteroidetes ratio significantly decreased in both CD and UC vs. controls; Clostridium coccoides and C. leptum groups (both Firmicutes) specifically reduced in CD.",
+     "links": [
+      {
+       "id": "new_cd_t16_l1",
+       "label": "16S rRNA qPCR study (PMID 26261163)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/26261163/"
       }
      ]
     }
