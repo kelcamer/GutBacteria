@@ -571,6 +571,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/"
       }
      ]
+    },
+    {
+     "id": "seed_dep_t37",
+     "name": "Ruminococcus",
+     "dir": "down",
+     "refs": "Cells 2023, PMID 37174640",
+     "note": "Depleted in Thai MDD patients (n=32) vs. healthy controls (n=37); enriched in controls, proposed as a putative biomarker for MDD, consistent with 5 other independent case-control studies finding the same depletion.",
+     "links": [
+      {
+       "id": "seed_dep_t37_l1",
+       "label": "Cells (PMID 37174640)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37174640/"
+      }
+     ]
     }
    ]
   },
@@ -1873,6 +1887,20 @@
        "id": "seed_adhd_t43_l1",
        "label": "2-sample MR, forward+reverse analysis (PMID 37168108)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37168108/"
+      }
+     ]
+    },
+    {
+     "id": "audit_ADHD_Akkermansia",
+     "name": "Akkermansia",
+     "dir": "down",
+     "refs": "n=42 ADHD/31 controls (PMID 39184374)",
+     "note": "Verrucomicrobia phylum and genus Akkermansia significantly higher (more abundant) in the healthy control group than in ADHD cases.",
+     "links": [
+      {
+       "id": "audit_ADHD_Akkermansia_l1",
+       "label": "PMID 39184374",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39184374/"
       }
      ]
     }
@@ -4797,6 +4825,20 @@
        "id": "seed_pd_t27_l1",
        "label": "n=39/39, central China cohort (PMID 34650532)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/34650532/"
+      }
+     ]
+    },
+    {
+     "id": "seed_pd_t28",
+     "name": "Ruminococcus",
+     "dir": "down",
+     "refs": "Sci China Life Sci 2017, PMID 28536926",
+     "note": "Putative cellulose-degrading/butyrate-related genus significantly decreased in PD (n=24) vs. healthy controls (n=14), P=0.019, alongside Blautia and Faecalibacterium; disease severity and PD duration negatively correlated with these degraders.",
+     "links": [
+      {
+       "id": "seed_pd_t28_l1",
+       "label": "Sci China Life Sci (PMID 28536926)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28536926/"
       }
      ]
     }
@@ -9315,6 +9357,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/42152323/"
       }
      ]
+    },
+    {
+     "id": "audit_RA_Akkermansia_muciniphila",
+     "name": "Akkermansia muciniphila",
+     "dir": "up",
+     "refs": "n=128 RA/20 healthy controls (PMID 31652955)",
+     "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients.",
+     "links": [
+      {
+       "id": "audit_RA_Akkermansia_muciniphila_l1",
+       "label": "PMID 31652955",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
+      }
+     ]
     }
    ]
   },
@@ -10530,6 +10586,20 @@
        "id": "new_pcos_t16_l1",
        "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      }
+     ]
+    },
+    {
+     "id": "audit_PCOS_Faecalibacterium",
+     "name": "Faecalibacterium",
+     "dir": "down",
+     "refs": "n=26 PCOS+hyperandrogenemia/149 without HA, incl. 19 healthy controls (PMID 41977159)",
+     "note": "Eastern Siberia PCOS Epidemiology and Phenotype (ESPEP) cohort: lower Faecalibacterium relative abundance (cutoff ≤0.043%) associated with the hyperandrogenemia phenotype of PCOS.",
+     "links": [
+      {
+       "id": "audit_PCOS_Faecalibacterium_l1",
+       "label": "PMID 41977159",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41977159/"
       }
      ]
     }
