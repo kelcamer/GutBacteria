@@ -67,6 +67,12 @@
      "note": "Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored.",
      "ref": "Zeamer 2023",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio.",
+     "ref": "n=23 PCOS/24 non-PCOS controls (PMID 41882707)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/"
     }
    ],
    "down": [
@@ -245,6 +251,12 @@
               "note": "Multiple sclerosis: Depleted in MS; a lower Bifidobacterium:Akkermansia ratio tracks disability. Cross-ref: Bifidobacterium ↓ is shared with depression, autism and IBS. (down) | PTSD: Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored. (up)",
               "ref": "Multiple sources across Multiple sclerosis, PTSD",
               "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10001679/"
+             },
+             {
+              "symptom": "Hair loss",
+              "note": "Polycystic Ovary Syndrome (PCOS): Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio. (up) | Anorexia nervosa: Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model. (down)",
+              "ref": "Multiple sources across Anorexia nervosa, Polycystic Ovary Syndrome (PCOS)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/"
              }
             ]
   },
@@ -427,6 +439,18 @@
      "note": "Genus-level depletion in MS vs healthy controls, reinforcing the F. prausnitzii species-level entry already tracked here — corroborated by the largest MS microbiome meta-analysis to date (14 cohorts, n=1,493).",
      "ref": "Multi-cohort meta-analysis 2025 (14 datasets, n=1,493; controls enriched in Faecalibacterium/Christensenellaceae clusters)",
      "url": "https://www.medrxiv.org/content/10.1101/2025.09.08.25335213v1"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Eastern Siberia PCOS Epidemiology and Phenotype (ESPEP) cohort: lower Faecalibacterium relative abundance (cutoff ≤0.043%) associated with the hyperandrogenemia phenotype of PCOS.",
+     "ref": "n=26 PCOS+hyperandrogenemia/149 without HA, incl. 19 healthy controls (PMID 41977159)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41977159/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Polycystic Ovary Syndrome (PCOS): Eastern Siberia PCOS Epidemiology and Phenotype (ESPEP) cohort: lower Faecalibacterium relative abundance (cutoff ≤0.043%) associated with the hyperandrogenemia phenotype of PCOS. (down) | Anorexia nervosa: Genus-level decrease in AN vs healthy controls, corroborated across multiple studies (a 117-child neurodevelopmental cohort, a severe-and-enduring-AN cohort, and a 14-study/476-patient comprehensive review already tracked here at the F. prausnitzii species level). (down)",
+     "ref": "Multiple sources across Anorexia nervosa, Polycystic Ovary Syndrome (PCOS)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41977159/"
     }
    ],
    "both": [
@@ -723,6 +747,12 @@
      "note": "PTSD: Lactobacillus casei reduced in PTSD patients (n=40) vs controls (n=42) in a culturomic cohort study. (down) | Anxiety: From this app's Anxiety condition data. (up)",
      "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41518171/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Genuine split: 3 studies found increased, 2 found decreased.",
+     "ref": "37559119",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
     }
    ]
   },
@@ -875,6 +905,12 @@
      "note": "Depleted across ~8 MS studies and lower in progressors; tends to rise again on disease-modifying therapy. Individual Prevotella species (P. copri, P. buccalis) associate with higher MS severity, so genus-vs-species stories diverge. Cross-ref: Prevotella is also ↓ in autism and Parkinson's.",
      "ref": "Systematic review 2023; Nature 2024",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10001679/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "5 studies found decreased vs. 1 found increased — majority direction used, minority noted rather than hidden.",
+     "ref": "37559119",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
     }
    ],
    "both": [
@@ -1129,6 +1165,24 @@
      "note": "Consistently increased in active UC alongside other Enterobacteriaceae.",
      "ref": "PMC7835370",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Increased across 5 studies.",
+     "ref": "37559119",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Increased across 5 studies.",
+     "ref": "37559119",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Enriched dysbiosis-associated genera in TBI patients vs healthy controls in the antibiotic-naive cohort.",
+     "ref": "PMID 41551652",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41551652/"
     }
    ],
    "down": [
@@ -1445,6 +1499,12 @@
      "note": "Depleted in postmenopausal vs. premenopausal women.",
      "ref": "PMID 35675542",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Decreased in PCOS vs. controls.",
+     "ref": "37559119",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
     }
    ],
    "both": [
@@ -1908,6 +1968,12 @@
      "note": "Significantly elevated relative abundance in RA patients vs. controls (3.5% vs. 0.8%, P=0.0013) — one of 97 genera found more abundant in the RA group.",
      "ref": "n=29 RA/30 controls (PMID 34670873)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
+    },
+    {
+     "symptom": "Paresthesia / numbness",
+     "note": "Significantly elevated relative abundance in RA patients vs. controls (3.5% vs. 0.8%, P=0.0013) — one of 97 genera found more abundant in the RA group.",
+     "ref": "n=29 RA/30 controls (PMID 34670873)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
     }
    ],
    "down": [
@@ -1946,6 +2012,18 @@
      "note": "From this app's Autism (ASD) condition data.",
      "ref": "PMC6933684",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Consistently depleted in PCOS across two human cohorts and a mouse model; restoring it via oral administration improved reproductive outcomes in mice by restoring the flavonoid-derived metabolite DHPAA (dependent on the species' β-galactosidase activity).",
+     "ref": "Two independent human cohorts + mouse model (PMID 41112053)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41112053/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Consistently depleted in PCOS across two human cohorts and a mouse model; restoring it via oral administration improved reproductive outcomes in mice by restoring the flavonoid-derived metabolite DHPAA (dependent on the species' β-galactosidase activity).",
+     "ref": "Two independent human cohorts + mouse model (PMID 41112053)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41112053/"
     }
    ],
    "both": [
@@ -2839,6 +2917,12 @@
     },
     {
      "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Enriched among individuals who went on to develop worse adverse post-traumatic neuropsychiatric sequelae (APNS) in the AURORA trauma cohort (n=51 stool metagenomics), alongside Flavonifractor plautii and Bifidobacterium species.",
+     "ref": "Zeamer 2023 (Transl Psychiatry; AURORA cohort, n=51, stool metagenomics + ML; ↑Flavonifractor plautii/Ruminococcus gnavus/Bifidobacterium predicting worse post-trauma outcomes)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
+    },
+    {
+     "symptom": "Restlessness",
      "note": "Enriched among individuals who went on to develop worse adverse post-traumatic neuropsychiatric sequelae (APNS) in the AURORA trauma cohort (n=51 stool metagenomics), alongside Flavonifractor plautii and Bifidobacterium species.",
      "ref": "Zeamer 2023 (Transl Psychiatry; AURORA cohort, n=51, stool metagenomics + ML; ↑Flavonifractor plautii/Ruminococcus gnavus/Bifidobacterium predicting worse post-trauma outcomes)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
@@ -4831,6 +4915,18 @@
      "note": "Anti-inflammatory butyrate producer depleted in MS (iMSMS shotgun; an IgA-coated F. prausnitzii variant is also reduced at disease onset). Cross-ref: consistently ↓ in fibromyalgia, IBS and depression too — a shared 'loss of butyrate producers' theme.",
      "ref": "iMSMS 2022",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "note": "Decreased in PCOS vs. controls.",
+     "ref": "37559119",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Polycystic Ovary Syndrome (PCOS): Decreased in PCOS vs. controls. (down) | Anorexia nervosa: Butyrate producer; consistently depleted across studies. (down)",
+     "ref": "Multiple sources across Anorexia nervosa, Polycystic Ovary Syndrome (PCOS)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
     }
    ],
    "both": []
