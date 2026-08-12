@@ -1,12 +1,16 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
-import { symptomData } from '../data'
+import { symptomData, seedData } from '../data'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
+import { withExtraConditions } from '../lib/symptomMapConditionOverlay'
 
 // Ported verbatim from `GFA_SymptomTab` in gut-flora-atlas.readable.html
 // (~line 25998-26211) - the React wrapper that mounts buildSymptomMap into
 // a plain <div> ref, used for both the global Bacteria->Symptom and
-// Symptom->Bacteria maps (same engine, `pinType` swapped).
+// Symptom->Bacteria maps (same engine, `pinType` swapped). The "Add
+// additional conditions?" picker below is new in this port (no minified
+// source equivalent) - see symptomMapConditionOverlay.js's header comment
+// for why it's built as a data-overlay rather than an engine change.
 export function SymptomTab({ pinType = 'bact' }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
@@ -14,12 +18,25 @@ export function SymptomTab({ pinType = 'bact' }) {
   const graphRef = useRef(null)
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
+  const [showConditionPicker, setShowConditionPicker] = useState(false)
+  const [extraConditionIds, setExtraConditionIds] = useState([])
+
+  // seedData is a static JSON import (always defined, stable reference) -
+  // no need to memoize this itself, just avoid the `|| []` fallback
+  // creating a fresh array literal every render, which would otherwise
+  // defeat extraConditions' memoization below.
+  const conditions = seedData.conditions
+  const extraConditions = useMemo(
+    () => conditions.filter((c) => extraConditionIds.includes(c.id)),
+    [conditions, extraConditionIds]
+  )
+  const mapData = useMemo(() => withExtraConditions(symptomData, extraConditions), [extraConditions])
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, symptomData, mode, pinType, true, layoutState.scramble, hiddenNamesRef)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, mapData, mode, pinType, true, layoutState.scramble, hiddenNamesRef)
       graphRef.current = stop
     } catch {
       if (hostRef.current) {
@@ -33,13 +50,12 @@ export function SymptomTab({ pinType = 'bact' }) {
         // best-effort cleanup, matches the original's bare try/catch here
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- ported 1:1 from
-    // the original's own dependency array (mode, pinType, layoutState only)
-  }, [mode, pinType, layoutState])
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own dependency array (mode, pinType, layoutState) with mapData, the new overlay input
+  }, [mode, pinType, layoutState, mapData])
 
-  const nBact = (symptomData.bacteria || []).length
-  const nSym = (symptomData.symptoms || []).length
-  const nEdge = (symptomData.bacteria || []).reduce((a, b) => a + (b.up || []).length + (b.down || []).length, 0)
+  const nBact = (mapData.bacteria || []).length
+  const nSym = (mapData.symptoms || []).length
+  const nEdge = (mapData.bacteria || []).reduce((a, b) => a + (b.up || []).length + (b.down || []).length, 0)
 
   const Segment = ({ id, label }) => (
     <button
@@ -79,6 +95,56 @@ export function SymptomTab({ pinType = 'bact' }) {
         LPS-bearing pathobionts, mucin-degraders, etc). Treat single-source or 'general literature' links as
         exploratory, not diagnostic — hover a node for its citation.
       </p>
+
+      <div className="mb-4" style={{ maxWidth: 700 }}>
+        <button
+          onClick={() => setShowConditionPicker(!showConditionPicker)}
+          className="text-sm mb-2"
+          style={{ color: theme.muted, background: 'transparent', border: 'none', cursor: 'pointer', padding: 0 }}
+        >
+          {showConditionPicker ? '▾ ' : '▸ '}Add additional conditions?
+        </button>
+        {showConditionPicker && (
+          <div>
+            <p className="mb-2" style={{ color: theme.muted, fontSize: 12 }}>
+              Overlays each selected condition onto this map as an extra node, wired to whichever bacteria here it
+              shares — so you can see which conditions move the same bacteria already linked to these symptoms.
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {[...conditions]
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((c) => {
+                  const on = extraConditionIds.includes(c.id)
+                  return (
+                    <button
+                      key={c.id}
+                      onClick={() =>
+                        setExtraConditionIds(on ? extraConditionIds.filter((x) => x !== c.id) : [...extraConditionIds, c.id])
+                      }
+                      className="rounded-full px-2.5 py-1 text-xs"
+                      style={{
+                        background: on ? c.color + '33' : theme.ink2,
+                        border: `1px solid ${on ? c.color : theme.line}`,
+                        color: on ? theme.text : theme.muted,
+                      }}
+                    >
+                      {c.name}
+                    </button>
+                  )
+                })}
+            </div>
+            {extraConditionIds.length > 0 && (
+              <button
+                onClick={() => setExtraConditionIds([])}
+                className="mt-2 rounded-lg px-2 py-1 text-xs"
+                style={{ border: `1px solid ${theme.line}`, color: theme.muted }}
+              >
+                × clear all
+              </button>
+            )}
+          </div>
+        )}
+      </div>
 
       <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'hidden' }}>
         <div ref={hostRef} style={{ width: '100%' }} />
