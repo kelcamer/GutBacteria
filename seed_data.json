@@ -9245,6 +9245,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
       }
      ]
+    },
+    {
+     "id": "new_ra_t22",
+     "name": "Lachnospira rogosae",
+     "dir": "up",
+     "refs": "2-sample Mendelian randomization (PMID 42152323)",
+     "note": "Species-level: genetically-predicted higher abundance elevated RA risk (IVW P=.023). Causal/genetic evidence \u2014 lower confidence than direct case-control data per this app's MR convention.",
+     "links": [
+      {
+       "id": "new_ra_t22_l1",
+       "label": "2-sample MR (PMID 42152323)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42152323/"
+      }
+     ]
     }
    ]
   },
