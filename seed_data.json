@@ -4715,6 +4715,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40461531/"
       }
      ]
+    },
+    {
+     "id": "seed_pd_t26",
+     "name": "Escherichia/Shigella",
+     "dir": "up",
+     "refs": "Systematic review, 26 studies (PMID 36284437)",
+     "note": "One of 9 genera consistently reported increased in PD across multiple studies; PD-duration correlation also reported for this genus/family Enterobacteriaceae in 2 studies.",
+     "links": [
+      {
+       "id": "seed_pd_t26_l1",
+       "label": "Systematic review, 26 studies (PMID 36284437)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36284437/"
+      }
+     ]
     }
    ]
   },
