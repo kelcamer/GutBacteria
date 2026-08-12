@@ -61,6 +61,12 @@
      "note": "Mechanistically interesting dopamine-precursor story, though treatment-sensitive.",
      "ref": "Frontiers",
      "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.838941/full"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored.",
+     "ref": "Zeamer 2023",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
     }
    ],
    "down": [
@@ -233,6 +239,12 @@
               "note": "Depression: In pregnant women, depressive symptom severity was significantly negatively associated with fecal B. longum abundance (q=0.02). (down) | Anxiety: From this app's Anxiety condition data. (down) | Parkinson's disease: From this app's Parkinson's disease condition data. (up)",
               "ref": "Multiple sources across Anxiety, Depression, Parkinson's disease — see individual condition entries",
               "url": "https://pubmed.ncbi.nlm.nih.gov/41651131/"
+             },
+             {
+              "symptom": "Dizziness / orthostatic intolerance",
+              "note": "Multiple sclerosis: Depleted in MS; a lower Bifidobacterium:Akkermansia ratio tracks disability. Cross-ref: Bifidobacterium ↓ is shared with depression, autism and IBS. (down) | PTSD: Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored. (up)",
+              "ref": "Multiple sources across Multiple sclerosis, PTSD",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10001679/"
              }
             ]
   },
@@ -409,6 +421,12 @@
      "note": "From this app's Depression condition data.",
      "ref": "19–22",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30718848/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Genus-level depletion in MS vs healthy controls, reinforcing the F. prausnitzii species-level entry already tracked here — corroborated by the largest MS microbiome meta-analysis to date (14 cohorts, n=1,493).",
+     "ref": "Multi-cohort meta-analysis 2025 (14 datasets, n=1,493; controls enriched in Faecalibacterium/Christensenellaceae clusters)",
+     "url": "https://www.medrxiv.org/content/10.1101/2025.09.08.25335213v1"
     }
    ],
    "both": [
@@ -587,6 +605,12 @@
      "note": "Anxiety: From this app's Anxiety condition data. (up) | Alzheimer's: From this app's Alzheimer's condition data. (up)",
      "ref": "Multiple sources across Alzheimer's, Anxiety — see individual condition entries",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "From this app's Alzheimer's condition data.",
+     "ref": "115",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
     }
    ],
    "down": [
@@ -661,6 +685,12 @@
      "note": "Consistently depleted with chronic ethanol exposure.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "Lactobacillus casei reduced in PTSD patients (n=40) vs controls (n=42) in a culturomic cohort study.",
+     "ref": "PTSD antibiotic-resistance cohort 2025 (Wiad Lek; n=40 PTSD vs n=42 controls, culturomics; ↑Klebsiella pneumoniae/Enterobacter cloacae, ↓Lactobacillus casei)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41518171/"
     }
    ],
    "both": [
@@ -765,6 +795,12 @@
      "note": "The signature RA finding: expanded in new-onset untreated RA, correlates with disease, and colonizing mice increases susceptibility to arthritis via Th17 induction.",
      "ref": "eLife",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3816614/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Enriched in postmenopausal vs. premenopausal women.",
+     "ref": "PMID 35675542",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
     }
    ],
    "down": [
@@ -833,6 +869,12 @@
      "note": "From this app's Anxiety condition data.",
      "ref": "168",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Depleted across ~8 MS studies and lower in progressors; tends to rise again on disease-modifying therapy. Individual Prevotella species (P. copri, P. buccalis) associate with higher MS severity, so genus-vs-species stories diverge. Cross-ref: Prevotella is also ↓ in autism and Parkinson's.",
+     "ref": "Systematic review 2023; Nature 2024",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10001679/"
     }
    ],
    "both": [
@@ -871,6 +913,12 @@
      "note": "Anxiety: From this app's Anxiety condition data. (down) | Alzheimer's: Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern — higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side. (both)",
      "ref": "Multiple sources across Alzheimer's, Anxiety — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern — higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side.",
+     "ref": "PMID 36102237 (up) / PMID 40604345 (down/protective)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36102237/"
     }
    ]
   },
@@ -1072,6 +1120,12 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
+     "note": "Consistently increased in active UC alongside other Enterobacteriaceae.",
+     "ref": "PMC7835370",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
+    },
+    {
+     "symptom": "Immune dysregulation",
      "note": "Consistently increased in active UC alongside other Enterobacteriaceae.",
      "ref": "PMC7835370",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/"
@@ -1335,6 +1389,18 @@
      "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
      "ref": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
+     "ref": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Increased abundance identified in the same synthesis.",
+     "ref": "PMID 40944763",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40944763/"
     }
    ],
    "down": [
@@ -1367,6 +1433,18 @@
      "note": "Clostridium cluster IV decreased in Japanese CD patients vs healthy controls, negatively correlated with fecal calprotectin in UC; Clostridium cluster XIVa negatively correlated with calprotectin/CRP in both CD and UC — consistent with reduced butyrate-producing capacity driving inflammation.",
      "ref": "J Med Invest 2026 (16S, Japanese CD/UC vs healthy; ↓Clostridium cluster IV in CD, both clusters inversely correlated with inflammatory markers)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42021104/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "Clostridium cluster IV decreased in Japanese CD patients vs healthy controls, negatively correlated with fecal calprotectin in UC; Clostridium cluster XIVa negatively correlated with calprotectin/CRP in both CD and UC — consistent with reduced butyrate-producing capacity driving inflammation.",
+     "ref": "J Med Invest 2026 (16S, Japanese CD/UC vs healthy; ↓Clostridium cluster IV in CD, both clusters inversely correlated with inflammatory markers)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42021104/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "ref": "PMID 35675542",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
     }
    ],
    "both": [
@@ -1531,6 +1609,18 @@
      "note": "Depleted in depressed adolescents vs. healthy adolescent controls.",
      "ref": "PMID 42495140",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42495140/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "A distinct species from A. muciniphila (already tracked here as up) — GWAS colocalization between MS risk and the FcRL3 gene found lower abundance of A. massiliensis specifically may contribute to MS predisposition, an opposite direction from its more-studied relative.",
+     "ref": "Genes Immun 2026 (GWAS cross-comparison/colocalization; FcRL3-MS signal colocalizes with lower A. massiliensis abundance)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42436285/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Reduced abundance identified as contributing to elevated cardiovascular-disease risk in people living with schizophrenia.",
+     "ref": "PMID 40944763",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40944763/"
     }
    ]
   },
@@ -2734,6 +2824,24 @@
      "note": "From this app's Anxiety condition data.",
      "ref": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "Enriched among individuals who went on to develop worse adverse post-traumatic neuropsychiatric sequelae (APNS) in the AURORA trauma cohort (n=51 stool metagenomics), alongside Flavonifractor plautii and Bifidobacterium species.",
+     "ref": "Zeamer 2023 (Transl Psychiatry; AURORA cohort, n=51, stool metagenomics + ML; ↑Flavonifractor plautii/Ruminococcus gnavus/Bifidobacterium predicting worse post-trauma outcomes)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "Crohn's disease: Blooms during flares; produces an inflammatory polysaccharide that drives dendritic cells to secrete TNFα. (up) | Ulcerative colitis: Pro-inflammatory taxon enriched in UC vs healthy controls (n=31 UC vs 32 HC), shared with the Crohn's disease group in the same cohort. (up)",
+     "ref": "Multiple sources across Crohn's disease, Ulcerative colitis",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6601261/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Enriched among individuals who went on to develop worse adverse post-traumatic neuropsychiatric sequelae (APNS) in the AURORA trauma cohort (n=51 stool metagenomics), alongside Flavonifractor plautii and Bifidobacterium species.",
+     "ref": "Zeamer 2023 (Transl Psychiatry; AURORA cohort, n=51, stool metagenomics + ML; ↑Flavonifractor plautii/Ruminococcus gnavus/Bifidobacterium predicting worse post-trauma outcomes)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
     }
    ],
    "down": [
@@ -3082,6 +3190,12 @@
      "note": "Genus increased in IBS overall (IBS-C in particular shows ↑ fecal Bacteroides); mixed across subtypes and some RCT meta-analyses find no difference.",
      "ref": "Pittayanon 2019",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30940523/"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "Genetically predicted (Mendelian randomization) to positively associate with PTSD risk (OR=1.11, 95% CI 1.01-1.23) in a large-scale mbGWAS causal analysis. Causal/genetic evidence, not a case-control abundance finding — treat as lower-confidence than direct observational data.",
+     "ref": "Chen 2023 (Brain Behav Immun; mbGWAS + bidirectional MR, up to 500k individuals; Bacteroides eggerthii/thetaiotaomicron ↑PTSD risk)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37557965/"
     }
    ],
    "down": [
@@ -4309,6 +4423,12 @@
      "note": "Flagged higher in adult ADHD.",
      "ref": "ScienceDirect",
      "url": "https://www.sciencedirect.com/science/article/pii/S0924977X24001585"
+    },
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Significantly higher relative abundance vs. healthy children.",
+     "ref": "PMID 30224347",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
     }
    ],
    "down": [
@@ -4347,6 +4467,18 @@
      "note": "Decreased across 2024 meta-analysis.",
      "ref": "PMC",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11338931/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "Decreased at genus level (Iavarone review, incorporated in the 2025 meta-analysis).",
+     "ref": "meta 2025 (Iavarone review)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12092452/"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Depleted in untreated BD (Hu 2019).",
+     "ref": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
     }
    ],
    "both": [
@@ -4693,6 +4825,12 @@
      "note": "FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
      "ref": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41157257/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Anti-inflammatory butyrate producer depleted in MS (iMSMS shotgun; an IgA-coated F. prausnitzii variant is also reduced at disease onset). Cross-ref: consistently ↓ in fibromyalgia, IBS and depression too — a shared 'loss of butyrate producers' theme.",
+     "ref": "iMSMS 2022",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
     }
    ],
    "both": []
@@ -4820,9 +4958,40 @@
      "note": "Anxiety: From this app's Anxiety condition data. (up) | Alzheimer's: From this app's Alzheimer's condition data. (up)",
      "ref": "Multiple sources across Alzheimer's, Anxiety — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "More endometriosis patients show gut Shigella/Escherichia dominance. Cross-ref: Escherichia-Shigella is ↑ in autism and (as E. coli) in IBS.",
+     "ref": "2019 review",
+     "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2023.1110824/full"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "'Unhealthy' microbes reported higher in PTSD.",
+     "ref": "Hemmings 2017",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "Crohn's disease: Adherent-invasive E. coli (AIEC) found in ~22% of ileal CD lesions vs ~6% of controls; invades epithelial cells and survives inside macrophages. (up) | Endometriosis: More endometriosis patients show gut Shigella/Escherichia dominance. Cross-ref: Escherichia-Shigella is ↑ in autism and (as E. coli) in IBS. (up)",
+     "ref": "Multiple sources across Crohn's disease, Endometriosis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/15300573/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "'Unhealthy' microbes reported higher in PTSD.",
+     "ref": "Hemmings 2017",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
     }
    ],
-   "down": [],
+   "down": [
+             {
+              "symptom": "Hair loss",
+              "note": "Depleted in postmenopausal vs. premenopausal women.",
+              "ref": "PMID 35675542",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+             }
+            ],
    "both": []
   },
   {
@@ -4875,6 +5044,24 @@
            },
            {
             "symptom": "Brain fog",
+            "note": "From this app's Alzheimer's condition data.",
+            "ref": "115",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+           },
+           {
+            "symptom": "Dizziness / orthostatic intolerance",
+            "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment.",
+            "ref": "iMSMS 2022; Jangi 2016",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+           },
+           {
+            "symptom": "Fatigue",
+            "note": "Multiple sclerosis: Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment. (up) | Rheumatoid arthritis: The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients. (up)",
+            "ref": "Multiple sources across Multiple sclerosis, Rheumatoid arthritis",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+           },
+           {
+            "symptom": "Poor working memory",
             "note": "From this app's Alzheimer's condition data.",
             "ref": "115",
             "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
@@ -4940,6 +5127,18 @@
      "note": "GABA producer; abundance inversely correlated with tic severity (YGTSS).",
      "ref": "Xi 2021",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11275248/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "ref": "PMID 35675542",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "ref": "PMID 35675542",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
     }
    ],
    "both": [
