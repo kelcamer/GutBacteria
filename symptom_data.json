@@ -55,6 +55,12 @@
      "note": "Significantly higher relative abundance in physically active adults vs. sedentary/pre-intervention baseline, across a 25-study meta-analysis of RCTs and crossover trials.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Mechanistically interesting dopamine-precursor story, though treatment-sensitive.",
+     "ref": "Frontiers",
+     "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.838941/full"
     }
    ],
    "down": [
@@ -183,9 +189,52 @@
      "note": "From this app's Autism (ASD) condition data.",
      "ref": "56,57",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+    },
+    {
+     "symptom": "Loss of appetite",
+     "note": "Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model.",
+     "ref": "Neuroscience 2025 (117 children: ASD/ADHD/AN vs healthy; common ↓Bifidobacterium across all three conditions)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40846210/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "In pregnant women, depressive symptom severity was significantly negatively associated with fecal B. longum abundance (q=0.02).",
+     "ref": "PMID 41651131",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41651131/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "56,57",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "Reduced in early/established RA — loss of a barrier-supportive, generally anti-inflammatory genus.",
+     "ref": "PMC9499173",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9499173/"
     }
    ],
-   "both": []
+   "both": [
+             {
+              "symptom": "Irritability",
+              "note": "ADHD: Mechanistically interesting dopamine-precursor story, though treatment-sensitive. (up) | Autism (ASD): From this app's Autism (ASD) condition data. (down)",
+              "ref": "Multiple sources across ADHD, Autism (ASD) — see individual condition entries",
+              "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.838941/full"
+             },
+             {
+              "symptom": "Panic attack",
+              "note": "PTSD: Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored. (up) | Anxiety: From this app's Anxiety condition data. (down)",
+              "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
+             },
+             {
+              "symptom": "Sleep disturbance",
+              "note": "Depression: In pregnant women, depressive symptom severity was significantly negatively associated with fecal B. longum abundance (q=0.02). (down) | Anxiety: From this app's Anxiety condition data. (down) | Parkinson's disease: From this app's Parkinson's disease condition data. (up)",
+              "ref": "Multiple sources across Anxiety, Depression, Parkinson's disease — see individual condition entries",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41651131/"
+             }
+            ]
   },
   {
    "name": "Faecalibacterium",
@@ -324,6 +373,42 @@
      "note": "Genus-level depletion in MS vs healthy controls, reinforcing the F. prausnitzii species-level entry already tracked here — corroborated by the largest MS microbiome meta-analysis to date (14 cohorts, n=1,493).",
      "ref": "Multi-cohort meta-analysis 2025 (14 datasets, n=1,493; controls enriched in Faecalibacterium/Christensenellaceae clusters)",
      "url": "https://www.medrxiv.org/content/10.1101/2025.09.08.25335213v1"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "From this app's ADHD condition data.",
+     "ref": "63",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "From this app's ADHD condition data.",
+     "ref": "63",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "Neurotypical siblings showed enrichment of Faecalibacterium relative to their ASD siblings in a household-matched design.",
+     "ref": "PMID 41952964",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41952964/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "Neurotypical siblings showed enrichment of Faecalibacterium relative to their ASD siblings in a household-matched design.",
+     "ref": "PMID 41952964",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41952964/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "From this app's Anxiety condition data.",
+     "ref": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "From this app's Depression condition data.",
+     "ref": "19–22",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30718848/"
     }
    ],
    "both": [
@@ -332,6 +417,12 @@
      "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele in one cohort, implying lower abundance in non-secretors \u2014 but a separate indicator-species analysis found Faecalibacterium among the taxa characteristic of healthy non-secretor individuals, the opposite direction. Marked \"both\" given real, independently-sourced evidence on each side.",
      "ref": "2023, Frontiers in Microbiology \u2014 FUT2 & rotavirus susceptibility; Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "ADHD: From this app's ADHD condition data. (down) | Autism (ASD): Neurotypical siblings showed enrichment of Faecalibacterium relative to their ASD siblings in a household-matched design. (down) | Bipolar Disorder: Robust across most cohorts; Evans 2017 shows F. prausnitzii inversely correlates with SF12/PHQ9/PSQI/GAD7/ASRM within BD. But a systematic review of the Ruminococcaceae/Faecalibacterium/F. prausnitzii clade found it reduced in BD vs. controls in 3 studies and elevated in a 4th — marked \"both\" given real, independently-sourced evidence on each side. (both)",
+     "ref": "Multiple sources across ADHD, Autism (ASD), Bipolar Disorder — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
     }
    ]
   },
@@ -466,6 +557,36 @@
      "note": "From this app's Autism (ASD) condition data.",
      "ref": "PMC9656367",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
+    },
+    {
+     "symptom": "Joint pain",
+     "note": "Genetically-predicted higher abundance increases fibromyalgia risk (OR=1.576, 95% CI 1.073-2.315, P=0.020) — counterintuitive given Lactobacillus's usual probiotic reputation, but the genus is species-heterogeneous (e.g. L. plantarum upregulates serotonin, while L. acidophilus/L. rhamnosus downregulate it), which may explain the direction. Causal/genetic evidence — lower confidence than direct case-control data per this app's MR convention.",
+     "ref": "2-sample Mendelian randomization (PMID 38260871)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38260871/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "Autism (ASD): From this app's Autism (ASD) condition data. (up) | Bipolar Disorder: Greatest genus-level fold-change increase in BD vs healthy controls in an Iranian case-control study (n=30 vs 30); a separate systematic review of 12 studies flags Lactobacillus as one of the most consistently *studied* genera in BD but notes its reported direction is not consistent across all studies. (up)",
+     "ref": "Multiple sources across Autism (ASD), Bipolar Disorder — see individual condition entries",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "PMC9656367",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "From this app's Anxiety condition data.",
+     "ref": "PMC9656367",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Anxiety: From this app's Anxiety condition data. (up) | Alzheimer's: From this app's Alzheimer's condition data. (up)",
+     "ref": "Multiple sources across Alzheimer's, Anxiety — see individual condition entries",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
     }
    ],
    "down": [
@@ -534,6 +655,12 @@
      "note": "Down-regulated in IBS patients (SMD=-0.85, P<0.001) across a meta-analysis of 13 studies, n=360 IBS/268 controls — same source already used for this app's \"Abdominal pain\" symptom entry.",
      "ref": "Meta-analysis, 13 studies, n=628 (PMID 28179092)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/28179092/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Consistently depleted with chronic ethanol exposure.",
+     "ref": "PMID 41011331",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
     }
    ],
    "both": [
@@ -548,6 +675,24 @@
      "note": "Mendelian randomization found increased Lactobacillus causally linked to higher migraine-with-aura risk (He et al. 2023), but a separate pediatric cohort found it decreased in migraine (Liu et al. 2024).",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Depression: Majority direction across reviewed studies (2 of 3 addressing this genus found it decreased in MDD, corroborated by Aizawa et al. 2016 PMID 27288567 — lower counts, cutoff-based comparison significant though the continuous-value comparison was only trend-level, P=0.067). Review authors note results for specific taxa in depression remain inconclusive overall — flagged honestly rather than overstated. (down) | Bipolar Disorder: Greatest genus-level fold-change increase in BD vs healthy controls in an Iranian case-control study (n=30 vs 30); a separate systematic review of 12 studies flags Lactobacillus as one of the most consistently *studied* genera in BD but notes its reported direction is not consistent across all studies. (up)",
+     "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Fibromyalgia: Genetically-predicted higher abundance increases fibromyalgia risk (OR=1.576, 95% CI 1.073-2.315, P=0.020) — counterintuitive given Lactobacillus's usual probiotic reputation, but the genus is species-heterogeneous (e.g. L. plantarum upregulates serotonin, while L. acidophilus/L. rhamnosus downregulate it), which may explain the direction. Causal/genetic evidence — lower confidence than direct case-control data per this app's MR convention. (up) | Depression: Majority direction across reviewed studies (2 of 3 addressing this genus found it decreased in MDD, corroborated by Aizawa et al. 2016 PMID 27288567 — lower counts, cutoff-based comparison significant though the continuous-value comparison was only trend-level, P=0.067). Review authors note results for specific taxa in depression remain inconclusive overall — flagged honestly rather than overstated. (down)",
+     "ref": "Multiple sources across Depression, Fibromyalgia — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38260871/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "PTSD: Lactobacillus casei reduced in PTSD patients (n=40) vs controls (n=42) in a culturomic cohort study. (down) | Anxiety: From this app's Anxiety condition data. (up)",
+     "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41518171/"
     }
    ]
   },
@@ -670,6 +815,24 @@
      "note": "From this app's Autism (ASD) condition data.",
      "ref": "57,58",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "57,58",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "57,58",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "From this app's Anxiety condition data.",
+     "ref": "168",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
     }
    ],
    "both": [
@@ -684,6 +847,30 @@
      "note": "This review explicitly flags Prevotella as conflicting: associated with higher migraine-with-aura risk in one MR study (He et al. 2023) but decreased in another cohort (Meng et al. 2024).",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Depression: Depleted in depressed adolescents vs. healthy adolescent controls (genus-level; distinct from the already-tracked Prevotellaceae family-level entry). Inversely correlated with depression/mood in four studies, but positively correlated in others, per a systematic review — no clear overall tendency despite earlier proposals to use Prevotella shifts as a depression biomarker. (both) | Bipolar Disorder: Bacteroides-Prevotella cluster enriched in untreated BD depression patients vs. healthy controls (Hu 2019 shotgun sequencing) — same study already cited for Bacteroidetes/Bacteroides/Parabacteroides here. (up)",
+     "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42495140/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Fibromyalgia: From this app's Fibromyalgia condition data. (down) | Depression: Depleted in depressed adolescents vs. healthy adolescent controls (genus-level; distinct from the already-tracked Prevotellaceae family-level entry). Inversely correlated with depression/mood in four studies, but positively correlated in others, per a systematic review — no clear overall tendency despite earlier proposals to use Prevotella shifts as a depression biomarker. (both)",
+     "ref": "Multiple sources across Depression, Fibromyalgia — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "Autism (ASD): From this app's Autism (ASD) condition data. (down) | Bipolar Disorder: Bacteroides-Prevotella cluster enriched in untreated BD depression patients vs. healthy controls (Hu 2019 shotgun sequencing) — same study already cited for Bacteroidetes/Bacteroides/Parabacteroides here. (up)",
+     "ref": "Multiple sources across Autism (ASD), Bipolar Disorder — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Anxiety: From this app's Anxiety condition data. (down) | Alzheimer's: Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern — higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side. (both)",
+     "ref": "Multiple sources across Alzheimer's, Anxiety — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
     }
    ]
   },
@@ -1100,6 +1287,54 @@
      "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
      "ref": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Depression: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up) | Bipolar Disorder: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
+     "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "'Unfriendly' Clostridium spp. enriched.",
+     "ref": "Chen 2019",
+     "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "ADHD: Higher abundance in the same processed-food-diet/ADHD-symptom subgroup. (up) | Bipolar Disorder: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
+     "ref": "Multiple sources across ADHD, Bipolar Disorder — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+    },
+    {
+     "symptom": "Reduced socializing",
+     "note": "Schizophrenia: Increased abundance identified in the same synthesis. (up) | Depression: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
+     "ref": "Multiple sources across Depression, Schizophrenia — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40944763/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Higher abundance in the same processed-food-diet/ADHD-symptom subgroup.",
+     "ref": "PMID 36178961",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Higher abundance in the same processed-food-diet/ADHD-symptom subgroup.",
+     "ref": "PMID 36178961",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Higher abundance in the same processed-food-diet/ADHD-symptom subgroup.",
+     "ref": "PMID 36178961",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
+     "ref": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/"
     }
    ],
    "down": [
@@ -1114,6 +1349,24 @@
      "note": "Decreased in allergic rhinitis patients across 3 independent studies. Note: the family-level Clostridiaceae is reported INCREASED in the broader allergic-sensitization/eczema/asthma literature \u2014 a genuine rank-level split, kept as two separate entries rather than merged.",
      "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
+    },
+    {
+     "symptom": "Loss of appetite",
+     "note": "Reduced in the Italian cohort.",
+     "ref": "Borgo 2017",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179739"
+    },
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Decreased in PCOS vs. controls.",
+     "ref": "37559119",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+    },
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Clostridium cluster IV decreased in Japanese CD patients vs healthy controls, negatively correlated with fecal calprotectin in UC; Clostridium cluster XIVa negatively correlated with calprotectin/CRP in both CD and UC — consistent with reduced butyrate-producing capacity driving inflammation.",
+     "ref": "J Med Invest 2026 (16S, Japanese CD/UC vs healthy; ↓Clostridium cluster IV in CD, both clusters inversely correlated with inflammatory markers)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42021104/"
     }
    ],
    "both": [
@@ -1122,6 +1375,12 @@
      "note": "C. coccoides group (cluster XIVa) counts significantly decreased in non-secretors vs. secretors (p=0.02) in a pregnancy cohort \u2014 but a separate adult cohort found Clostridium sphenoides et rel. significantly higher in non-secretors (p<0.05), plus a non-significant trend toward higher Clostridium clusters IV/XIVa overall in non-secretors. Marked \"both\" given real, independently-sourced evidence pointing opposite directions, likely reflecting different sub-clades within the genus.",
      "ref": "2015, PLOS ONE \u2014 secretor status in pregnancy (n=123); Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Corrected from an uncited 'up' placeholder: a large GMrepo cross-sectional analysis (PD n=378 vs healthy n=293) found Escherichia-Shigella significantly decreased in PD, alongside Faecalibacterium/Agathobacterium/Prevotella — all already tracked as down here.",
+     "ref": "Cheng 2026 (Front Cell Infect Microbiol; GMrepo n=378 PD vs n=293 healthy; ↑Bacteroides/Akkermansia/Parabacteroides/Phascolarctobacterium/Bifidobacterium, ↓Escherichia-Shigella/Faecalibacterium/Prevotella in PD)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42564147/"
     }
    ]
   },
@@ -1230,6 +1489,48 @@
      "note": "A distinct species from A. muciniphila (already tracked here as up) — GWAS colocalization between MS risk and the FcRL3 gene found lower abundance of A. massiliensis specifically may contribute to MS predisposition, an opposite direction from its more-studied relative.",
      "ref": "Genes Immun 2026 (GWAS cross-comparison/colocalization; FcRL3-MS signal colocalizes with lower A. massiliensis abundance)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42436285/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Depleted in depressed adolescents vs. healthy adolescent controls.",
+     "ref": "PMID 42495140",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42495140/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "A distinct species from A. muciniphila (already tracked here as up) — GWAS colocalization between MS risk and the FcRL3 gene found lower abundance of A. massiliensis specifically may contribute to MS predisposition, an opposite direction from its more-studied relative.",
+     "ref": "Genes Immun 2026 (GWAS cross-comparison/colocalization; FcRL3-MS signal colocalizes with lower A. massiliensis abundance)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42436285/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "Verrucomicrobia phylum and genus Akkermansia significantly higher (more abundant) in the healthy control group than in ADHD cases.",
+     "ref": "n=42 ADHD/31 controls (PMID 39184374)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39184374/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Verrucomicrobia phylum and genus Akkermansia significantly higher (more abundant) in the healthy control group than in ADHD cases.",
+     "ref": "n=42 ADHD/31 controls (PMID 39184374)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39184374/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Verrucomicrobia phylum and genus Akkermansia significantly higher (more abundant) in the healthy control group than in ADHD cases.",
+     "ref": "n=42 ADHD/31 controls (PMID 39184374)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39184374/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Verrucomicrobia phylum and genus Akkermansia significantly higher (more abundant) in the healthy control group than in ADHD cases.",
+     "ref": "n=42 ADHD/31 controls (PMID 39184374)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39184374/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Depleted in depressed adolescents vs. healthy adolescent controls.",
+     "ref": "PMID 42495140",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42495140/"
     }
    ]
   },
@@ -1276,6 +1577,12 @@
      "note": "Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae \u2014 the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
      "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Depression: Depleted in depressed adolescents vs. healthy adolescent controls. (down) | Parkinson's disease: Mucin-layer degrader; the single most consistent PD enrichment. (up)",
+     "ref": "Multiple sources across Depression, Parkinson's disease — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42495140/"
     }
    ]
   },
@@ -1499,6 +1806,18 @@
      "note": "Rheumatoid arthritis: Significantly elevated relative abundance in RA patients vs. controls (3.5% vs. 0.8%, P=0.0013) — one of 97 genera found more abundant in the RA group. (up) | Type 1 Diabetes: Significantly higher relative abundance vs. healthy children. (up)",
      "ref": "Multiple sources across Rheumatoid arthritis, Type 1 Diabetes — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "2023 meta-analysis consistent increase.",
+     "ref": "PMC10709466",
+     "url": "https://www.nature.com/articles/s41398-023-02670-5"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "Significantly elevated relative abundance in RA patients vs. controls (3.5% vs. 0.8%, P=0.0013) — one of 97 genera found more abundant in the RA group.",
+     "ref": "n=29 RA/30 controls (PMID 34670873)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
     }
    ],
    "down": [
@@ -1522,6 +1841,18 @@
     },
     {
      "symptom": "Reduced socializing",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "PMC6933684",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "PMC6933684",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
+    },
+    {
+     "symptom": "Understimulation",
      "note": "From this app's Autism (ASD) condition data.",
      "ref": "PMC6933684",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
@@ -2041,6 +2372,18 @@
      "note": "Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
      "ref": "PMID 41465974",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41465974/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
+     "ref": "PMID 41465974",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41465974/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
+     "ref": "PMID 41465974",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41465974/"
     }
    ],
    "down": [
@@ -2061,6 +2404,42 @@
      "note": "Significantly lower abundance in histamine-intolerant patients vs. controls (P<0.05).",
      "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Higher Prevotellaceae associated with decreased risk.",
+     "ref": "review 2025",
+     "url": "https://link.springer.com/article/10.1007/s13760-025-02779-y"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
+     "ref": "PMC7504034",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Lower in unmedicated ADHD children vs. healthy controls, distinct from the already-tracked genus-level Prevotella entry.",
+     "ref": "PMID 39856212",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39856212/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Lower in unmedicated ADHD children vs. healthy controls, distinct from the already-tracked genus-level Prevotella entry.",
+     "ref": "PMID 39856212",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39856212/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Lower in unmedicated ADHD children vs. healthy controls, distinct from the already-tracked genus-level Prevotella entry.",
+     "ref": "PMID 39856212",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39856212/"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "From this app's OCD condition data.",
+     "ref": "220",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     }
    ]
   },
@@ -2151,6 +2530,30 @@
      "note": "Increased in a pediatric migraine cohort (Bai et al. 2023) but decreased in an adult chronic migraine cohort (Yong et al. 2023) \u2014 genuinely conflicting across age groups.",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Altered in both directions across studies with no overall tendency, per a systematic review — partly age-related, with reduced abundance more consistently reported in middle-aged MDD cohorts specifically.",
+     "ref": "20–22",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "ADHD: Lower in unmedicated ADHD children vs. healthy controls, distinct from the already-tracked genus-level Prevotella entry. (down) | Autism (ASD): Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment. (up)",
+     "ref": "Multiple sources across ADHD, Autism (ASD) — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39856212/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Altered in both directions across studies with no overall tendency, per a systematic review — partly age-related, with reduced abundance more consistently reported in middle-aged MDD cohorts specifically.",
+     "ref": "20–22",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Altered in both directions across studies with no overall tendency, per a systematic review — partly age-related, with reduced abundance more consistently reported in middle-aged MDD cohorts specifically.",
+     "ref": "20–22",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/"
     }
    ]
   },
@@ -2319,11 +2722,35 @@
      "note": "IBD-associated.",
      "ref": "Guo 2023",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "PTSD: Enriched among individuals who went on to develop worse adverse post-traumatic neuropsychiatric sequelae (APNS) in the AURORA trauma cohort (n=51 stool metagenomics), alongside Flavonifractor plautii and Bifidobacterium species. (up) | Anxiety: From this app's Anxiety condition data. (up)",
+     "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "From this app's Anxiety condition data.",
+     "ref": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
     }
    ],
    "down": [
              {
               "symptom": "Reduced socializing",
+              "note": "From this app's Autism (ASD) condition data.",
+              "ref": "PMC7716279",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
+             },
+             {
+              "symptom": "Overstimulation",
+              "note": "From this app's Autism (ASD) condition data.",
+              "ref": "PMC7716279",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
+             },
+             {
+              "symptom": "Understimulation",
               "note": "From this app's Autism (ASD) condition data.",
               "ref": "PMC7716279",
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
@@ -2705,6 +3132,36 @@
      "note": "From this app's Autism (ASD) condition data.",
      "ref": "PMC6933684",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Decreased in ADHD children vs. controls in the same 16S case-control study.",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Decreased in ADHD children vs. controls in the same 16S case-control study.",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "PMC6933684",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "PMC6933684",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "Decreased in newly-diagnosed RA patients vs healthy controls (n=22 vs 20, Vietnam); independently corroborated by a separate moxibustion-trial baseline comparison (n=65 RA vs 30 healthy) which also found Bacteroides (and Bacteroidota/Faecalibacterium/Bifidobacterium) significantly lower in RA.",
+     "ref": "PeerJ 2025 (n=22 vs 20, Vietnam) + Zhen Ci Yan Jiu 2026 (baseline, n=65 RA vs 30 HC)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41431641/"
     }
    ],
    "both": [
@@ -2743,6 +3200,36 @@
      "note": "Rheumatoid arthritis: Decreased in newly-diagnosed RA patients vs healthy controls (n=22 vs 20, Vietnam); independently corroborated by a separate moxibustion-trial baseline comparison (n=65 RA vs 30 healthy) which also found Bacteroides (and Bacteroidota/Faecalibacterium/Bifidobacterium) significantly lower in RA. (down) | Type 1 Diabetes: Significantly higher relative abundance vs. healthy children. (up)",
      "ref": "Multiple sources across Rheumatoid arthritis, Type 1 Diabetes — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41431641/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Depression: In the same cohort, depressive symptom severity was significantly positively associated with fecal B. thetaiotaomicron abundance (q=0.02). (up) | Bipolar Disorder: Higher in untreated BD depression (Hu 2019). But a systematic review found Bacteroides/Bacteroides-Prevotella group elevated in BD in 2 studies, while a third study found it lower in BD — marked \"both\" given real, independently-sourced evidence on each side. (both)",
+     "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41651131/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Iron deficiency (state): ↓ in rodent models; human data show it higher when ferritin is low. (down) | ADHD: Decreased in ADHD children vs. controls in the same 16S case-control study. (down) | Tourette syndrome: ↑ in drug-naive TD (B. plebeius); some species (B. thetaiotaomicron, B. eggerthii, B. dorei) correlate positively with tic severity (YGTSS) despite being GABA producers. (up) | Anxiety: Abundance positively associated with anxiety severity in GAD patients. (up)",
+     "ref": "Multiple sources across ADHD, Anxiety, Iron deficiency (state), Tourette syndrome — see individual condition entries",
+     "url": "https://www.ajog.org/article/S0002-9378(23)01643-5/fulltext"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side.",
+     "ref": "PMID 41075498",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41075498/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side.",
+     "ref": "PMID 41075498",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41075498/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "ADHD: Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side. (both) | Anxiety: From this app's Anxiety condition data. (up)",
+     "ref": "Multiple sources across ADHD, Anxiety — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41075498/"
     }
    ]
   },
@@ -3413,13 +3900,50 @@
   {
    "name": "Bacteroides uniformis",
    "count": 1,
-   "up": [],
+   "up": [
+           {
+            "symptom": "Irritability",
+            "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+            "ref": "PMID 31119393",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+           },
+           {
+            "symptom": "Poor working memory",
+            "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+            "ref": "PMID 31119393",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+           },
+           {
+            "symptom": "Lack of impulse control",
+            "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+            "ref": "PMID 31119393",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+           },
+           {
+            "symptom": "Restlessness",
+            "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+            "ref": "PMID 31119393",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+           }
+          ],
    "down": [
     {
      "symptom": "Chronic pain",
      "note": "Found depleted in the Minerbi et al. 2019 fibromyalgia microbiome signature \u2014 this is a species-specific finding, kept separate from the bare Bacteroides genus node.",
      "ref": "Minerbi 2019 / PMC11671092",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11671092/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "From this app's Fibromyalgia condition data.",
+     "ref": "Minerbi 2019",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
+    },
+    {
+     "symptom": "Joint pain",
+     "note": "From this app's Fibromyalgia condition data.",
+     "ref": "Minerbi 2019",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/"
     }
    ]
   },
@@ -3491,6 +4015,12 @@
      "note": "Species-level: significantly lower abundance in histamine-intolerant patients vs. controls (P=0.034).",
      "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "From this app's Migraine condition data.",
+     "ref": "Chen 2019",
+     "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full"
     }
    ]
   },
@@ -3761,6 +4291,24 @@
      "note": "Species-level: genetically higher abundance of Ruminococcus E sp003521625 increased IDA risk (OR=1.20, 95% CI 1.04-1.39) in a 3-sample Mendelian randomization analysis (28,075 IDA cases / 857,930 controls, Pan-UKB/FinnGen/GERA). Causal/genetic evidence, not case-control abundance — lower confidence than direct observational data. Note: existing genus-level entries here are case-control based; this is a distinct species-level MR signal.",
      "ref": "Hematology 2025 (3-sample MR; gut microbiota GWAS n=5,959 + plasma metabolites n=8,299 + IDA outcome n=886,005; Ruminococcus E sp003521625 ↑IDA risk, Jiangellaceae ↓IDA risk via PSPC metabolite mediation)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41045077/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Iron deficiency (state): Species-level: genetically higher abundance of Ruminococcus E sp003521625 increased IDA risk (OR=1.20, 95% CI 1.04-1.39) in a 3-sample Mendelian randomization analysis (28,075 IDA cases / 857,930 controls, Pan-UKB/FinnGen/GERA). Causal/genetic evidence, not case-control abundance — lower confidence than direct observational data. Note: existing genus-level entries here are case-control based; this is a distinct species-level MR signal. (up) | ADHD: Flagged higher in adult ADHD. (up) | Tourette syndrome: ↑ in TD; Ruminococcus lactaris especially enriched in TS vs other tic disorders. (up)",
+     "ref": "Multiple sources across ADHD, Iron deficiency (state), Tourette syndrome — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41045077/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Flagged higher in adult ADHD.",
+     "ref": "ScienceDirect",
+     "url": "https://www.sciencedirect.com/science/article/pii/S0924977X24001585"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Flagged higher in adult ADHD.",
+     "ref": "ScienceDirect",
+     "url": "https://www.sciencedirect.com/science/article/pii/S0924977X24001585"
     }
    ],
    "down": [
@@ -3781,6 +4329,24 @@
      "note": "Depleted in untreated BD (Hu 2019).",
      "ref": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+    },
+    {
+     "symptom": "Loss of appetite",
+     "note": "Reduced (note: some studies report Ruminococcaceae up — heterogeneous).",
+     "ref": "Borgo 2017",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179739"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Bipolar Disorder: Depleted in untreated BD (Hu 2019). (down) | Depression: Depleted in Thai MDD patients (n=32) vs. healthy controls (n=37); enriched in controls, proposed as a putative biomarker for MDD, consistent with 5 other independent case-control studies finding the same depletion. (down) | Parkinson's disease: Putative cellulose-degrading/butyrate-related genus significantly decreased in PD (n=24) vs. healthy controls (n=14), P=0.019, alongside Blautia and Faecalibacterium; disease severity and PD duration negatively correlated with these degraders. (down)",
+     "ref": "Multiple sources across Bipolar Disorder, Depression, Parkinson's disease — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Decreased across 2024 meta-analysis.",
+     "ref": "PMC",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11338931/"
     }
    ],
    "both": [
@@ -3798,6 +4364,30 @@
              },
              {
               "symptom": "Reduced socializing",
+              "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
+              "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
+             },
+             {
+              "symptom": "Irritability",
+              "note": "ADHD: Flagged higher in adult ADHD. (up) | Autism (ASD): Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels. (both) | Bipolar Disorder: Depleted in untreated BD (Hu 2019). (down)",
+              "ref": "Multiple sources across ADHD, Autism (ASD), Bipolar Disorder — see individual condition entries",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0924977X24001585"
+             },
+             {
+              "symptom": "Fatigue",
+              "note": "Iron deficiency (state): Species-level: genetically higher abundance of Ruminococcus E sp003521625 increased IDA risk (OR=1.20, 95% CI 1.04-1.39) in a 3-sample Mendelian randomization analysis (28,075 IDA cases / 857,930 controls, Pan-UKB/FinnGen/GERA). Causal/genetic evidence, not case-control abundance — lower confidence than direct observational data. Note: existing genus-level entries here are case-control based; this is a distinct species-level MR signal. (up) | Depression: Depleted in Thai MDD patients (n=32) vs. healthy controls (n=37); enriched in controls, proposed as a putative biomarker for MDD, consistent with 5 other independent case-control studies finding the same depletion. (down)",
+              "ref": "Multiple sources across Depression, Iron deficiency (state) — see individual condition entries",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41045077/"
+             },
+             {
+              "symptom": "Overstimulation",
+              "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
+              "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
+             },
+             {
+              "symptom": "Understimulation",
               "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
               "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
               "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
@@ -3970,7 +4560,26 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/36128620/"
     }
    ],
-   "both": []
+   "both": [
+             {
+              "symptom": "Irritability",
+              "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
+              "ref": "PMID 31119393",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+             },
+             {
+              "symptom": "Lack of impulse control",
+              "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
+              "ref": "PMID 31119393",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+             },
+             {
+              "symptom": "Restlessness",
+              "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
+              "ref": "PMID 31119393",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+             }
+            ]
   },
   {
    "name": "Faecalibacterium prausnitzii",
@@ -4060,6 +4669,30 @@
      "note": "Anti-inflammatory butyrate producer depleted in MS (iMSMS shotgun; an IgA-coated F. prausnitzii variant is also reduced at disease onset). Cross-ref: consistently ↓ in fibromyalgia, IBS and depression too — a shared 'loss of butyrate producers' theme.",
      "ref": "iMSMS 2022",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+    },
+    {
+     "symptom": "Loss of appetite",
+     "note": "Butyrate producer; consistently depleted across studies.",
+     "ref": "review 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10885100/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "Anti-inflammatory butyrate producer depleted in MS (iMSMS shotgun; an IgA-coated F. prausnitzii variant is also reduced at disease onset). Cross-ref: consistently ↓ in fibromyalgia, IBS and depression too — a shared 'loss of butyrate producers' theme.",
+     "ref": "iMSMS 2022",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+    },
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Decreased in PCOS vs. controls.",
+     "ref": "37559119",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
+     "ref": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41157257/"
     }
    ],
    "both": []
@@ -4127,6 +4760,66 @@
      "note": "From this app's Autism (ASD) condition data.",
      "ref": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Most abundant species within the significantly enriched Pseudomonadota (Proteobacteria) phylum in children with migraine vs healthy controls (n=30 vs 30), metagenomic sequencing.",
+     "ref": "Zhang 2026 (J Headache Pain; pediatric migraine metagenomics, n=30 vs 30; ↑Pseudomonadota/Escherichia coli)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41781872/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "ADHD: Higher abundance in the processed-food-diet/ADHD-symptom subgroup of Korean schoolchildren (n=40) vs. the healthy-diet control group — a diet-interaction finding, not a simple ADHD-vs-control effect. (up) | Autism (ASD): From this app's Autism (ASD) condition data. (up)",
+     "ref": "Multiple sources across ADHD, Autism (ASD) — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "PTSD: 'Unhealthy' microbes reported higher in PTSD. (up) | Anxiety: From this app's Anxiety condition data. (up)",
+     "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28700459/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Higher abundance in the processed-food-diet/ADHD-symptom subgroup of Korean schoolchildren (n=40) vs. the healthy-diet control group — a diet-interaction finding, not a simple ADHD-vs-control effect.",
+     "ref": "PMID 36178961",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Higher abundance in the processed-food-diet/ADHD-symptom subgroup of Korean schoolchildren (n=40) vs. the healthy-diet control group — a diet-interaction finding, not a simple ADHD-vs-control effect.",
+     "ref": "PMID 36178961",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "ADHD: Higher abundance in the processed-food-diet/ADHD-symptom subgroup of Korean schoolchildren (n=40) vs. the healthy-diet control group — a diet-interaction finding, not a simple ADHD-vs-control effect. (up) | Anxiety: From this app's Anxiety condition data. (up)",
+     "ref": "Multiple sources across ADHD, Anxiety — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "From this app's Anxiety condition data.",
+     "ref": "168,169",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Anxiety: From this app's Anxiety condition data. (up) | Alzheimer's: From this app's Alzheimer's condition data. (up)",
+     "ref": "Multiple sources across Alzheimer's, Anxiety — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/"
     }
    ],
    "down": [],
@@ -4167,6 +4860,24 @@
             "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment.",
             "ref": "iMSMS 2022; Jangi 2016",
             "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+           },
+           {
+            "symptom": "Loss of appetite",
+            "note": "Increased abundance (LEfSe) in AN patients (n=16) vs healthy controls (n=14), while SCFA-producing species (Roseburia, Agathobacter, Faecalibacterium — all already tracked here) were more prevalent in controls.",
+            "ref": "J Psychosom Res 2025 (16S, implicit-learning pilot study, n=16 AN vs n=14 HC; ↑Akkermansia muciniphila in AN, ↑Roseburia/Agathobacter/Faecalibacterium in HC)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40424967/"
+           },
+           {
+            "symptom": "Chronic pain",
+            "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients.",
+            "ref": "n=128 RA/20 healthy controls (PMID 31652955)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
+           },
+           {
+            "symptom": "Brain fog",
+            "note": "From this app's Alzheimer's condition data.",
+            "ref": "115",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
            }
           ],
    "down": [
@@ -4205,6 +4916,30 @@
      "note": "Among the most consistent ASD signatures.",
      "ref": "Frontiers",
      "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "Among the most consistent ASD signatures.",
+     "ref": "Frontiers",
+     "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "Among the most consistent ASD signatures.",
+     "ref": "Frontiers",
+     "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "Among the most consistent ASD signatures.",
+     "ref": "Frontiers",
+     "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "GABA producer; abundance inversely correlated with tic severity (YGTSS).",
+     "ref": "Xi 2021",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11275248/"
     }
    ],
    "both": [
