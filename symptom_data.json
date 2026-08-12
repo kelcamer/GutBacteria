@@ -396,6 +396,12 @@
      "note": "Down-regulated in IBS patients (SMD=-0.85, P<0.001) across a meta-analysis of 13 studies, n=360 IBS patients / 268 controls.",
      "ref": "Meta-analysis, 13 studies, n=628 (PMID 28179092)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/28179092/"
+    },
+    {
+     "symptom": "Smoking-related dysbiosis",
+     "note": "Fecal Lactobacillus prevalence markedly lower in all tobacco-user groups (cigarette, hookah, combined; n=200) vs. non-smoking controls (p<0.001), alongside elevated stool pH.",
+     "ref": "PMID 42052326",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42052326/"
     }
    ],
    "both": [
@@ -1219,6 +1225,12 @@
      "note": "Lower in non-secretor vs. secretor milk samples.",
      "ref": "2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
+    },
+    {
+     "symptom": "Metabolic dysregulation",
+     "note": "Species S. thermophilus: one of 8 T2D-depleted bacteria reproducible across independent European and Asian cohorts (n=433 shotgun metagenomics, AUC>0.8).",
+     "ref": "PMID 41927536",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41927536/"
     }
    ],
    "both": [
@@ -2276,6 +2288,12 @@
      "note": "More abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
      "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "note": "Elevated in pediatric migraine patients (n=126) vs. age-matched healthy controls (n=50), alongside reduced Bifidobacterium longum.",
+     "ref": "PMID 41454664",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41454664/"
     }
    ],
    "down": [
@@ -3293,6 +3311,12 @@
      "note": "Significantly lower abundance in histamine-intolerant patients vs. controls (P<0.05).",
      "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
+    },
+    {
+     "symptom": "Depressed mood",
+     "note": "Depleted in Thai MDD patients (n=32) vs. healthy controls (n=37); proposed as a putative biomarker for MDD, consistent with 5 other independent case-control studies.",
+     "ref": "Cells 2023 (PMID 37174640)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37174640/"
     }
    ],
    "both": []
@@ -3522,7 +3546,14 @@
   {
    "name": "Akkermansia muciniphila",
    "count": 1,
-   "up": [],
+   "up": [
+           {
+            "symptom": "Joint pain",
+            "note": "Highest-abundance genus within phylum Verrucomicrobiae in RA patients (n=128) vs. healthy controls (n=20); active RA patients also had higher levels than inactive RA.",
+            "ref": "PMID 31652955",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
+           }
+          ],
    "down": [
     {
      "symptom": "Allergies",
