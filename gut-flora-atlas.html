@@ -280,7 +280,7 @@ function GFA_buildSymptomMap(host,tip,data,mode,pinType,forceAllLabels,scramble,
   svg.setAttribute("width","100%");
   svg.setAttribute("preserveAspectRatio","xMidYMid meet");
   svg.style.display="block";svg.style.height="auto";
-  svg.style.touchAction="pan-y pinch-zoom";
+  svg.style.touchAction="pan-x pan-y pinch-zoom";
 
   var gE=document.createElementNS(NS,"g"),gN=document.createElementNS(NS,"g");
   svg.appendChild(gE);svg.appendChild(gN);host.appendChild(svg);
@@ -1216,7 +1216,7 @@ function GFA_buildMap(host,tip,conds,mode,scramble,dimNodes,pinType,hiddenNamesR
   svg.setAttribute("width","100%");
   svg.setAttribute("preserveAspectRatio","xMidYMid meet");
   svg.style.display="block";svg.style.height="auto";
-  svg.style.touchAction="pan-y pinch-zoom"; 
+  svg.style.touchAction="pan-x pan-y pinch-zoom"; 
   
   var gE=document.createElementNS(NS,"g"),gN=document.createElementNS(NS,"g");
   svg.appendChild(gE);svg.appendChild(gN);host.appendChild(svg);
