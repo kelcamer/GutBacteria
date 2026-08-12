@@ -543,6 +543,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/33421868/"
       }
      ]
+    },
+    {
+     "id": "seed_dep_t35",
+     "name": "Alistipes",
+     "dir": "up",
+     "refs": "n=111 MDD/102 controls (PMID 40621717)",
+     "note": "Higher abundance in MDD vs. controls (P=1.27x10^-6); multi-omics analysis linked Alistipes-related metabolites to gray-matter morphology, brain function, and white-matter integrity, associated with anxiety/anhedonia and cognition in MDD. One of 5 genera with fair diagnostic efficacy for distinguishing MDD from controls.",
+     "links": [
+      {
+       "id": "seed_dep_t35_l1",
+       "label": "Multi-omics study, n=111/102 (PMID 40621717)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40621717/"
+      }
+     ]
     }
    ]
   },
