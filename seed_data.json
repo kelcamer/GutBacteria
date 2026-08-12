@@ -2919,6 +2919,20 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
       }
      ]
+    },
+    {
+     "id": "seed_anx_t21",
+     "name": "Bacteroides",
+     "dir": "up",
+     "refs": "n=36 GAD/24 controls, 16S rRNA (PMID 31437702)",
+     "note": "Abundance positively associated with anxiety severity in GAD patients.",
+     "links": [
+      {
+       "id": "seed_anx_t21_l1",
+       "label": "n=36/24, 16S rRNA sequencing (PMID 31437702)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/"
+      }
+     ]
     }
    ]
   },
@@ -6930,6 +6944,34 @@
        "id": "seed_632",
        "label": "Mol Neurobiol 2025 (Egyptian cohort, Nanopore full-length 16S; progressive MS: \u2193Ruminococcus bromii/Faecalibacterium duncaniae, \u2191Enterococcus faecium/Romboutsia timonensis)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40679698/"
+      }
+     ]
+    },
+    {
+     "id": "new_ms_t26",
+     "name": "Bacteroides fragilis",
+     "dir": "down",
+     "refs": "Systematic review, \u22652 corroborating studies (PMID 32172998)",
+     "note": "Species-level: lower relative abundance in MS cases vs. controls, corroborated across \u22652 independent studies.",
+     "links": [
+      {
+       "id": "new_ms_t26_l1",
+       "label": "Systematic review (PMID 32172998)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32172998/"
+      }
+     ]
+    },
+    {
+     "id": "new_ms_t27",
+     "name": "Bacteroides coprophilus",
+     "dir": "down",
+     "refs": "Systematic review, \u22652 corroborating studies (PMID 32172998)",
+     "note": "Species-level: lower relative abundance in MS cases vs. controls, corroborated across \u22652 independent studies.",
+     "links": [
+      {
+       "id": "new_ms_t27_l1",
+       "label": "Systematic review (PMID 32172998)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32172998/"
       }
      ]
     }
