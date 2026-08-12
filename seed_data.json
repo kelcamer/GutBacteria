@@ -8902,6 +8902,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/23023125/"
       }
      ]
+    },
+    {
+     "id": "new_t2d_t13",
+     "name": "Dorea",
+     "dir": "up",
+     "refs": "Northern China cohort (PMID 32214153)",
+     "note": "Significantly increased in T2D individuals, negatively correlated with butyrate-producing bacteria abundance \u2014 flagged by the authors as a previously-overlooked contributor to T2D.",
+     "links": [
+      {
+       "id": "new_t2d_t13_l1",
+       "label": "Northern China cohort (PMID 32214153)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32214153/"
+      }
+     ]
     }
    ]
   },
