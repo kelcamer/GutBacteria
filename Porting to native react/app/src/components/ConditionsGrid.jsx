@@ -8,7 +8,11 @@ import { Modal } from './Modal'
 
 // Ported verbatim from `Wm` in gut-flora-atlas.readable.html (~line
 // 28344-28515). `Eo`=ChevronRight, `at`=Plus (confirmed in the icon
-// inventory), `zf`=palette (theme.js), `$`=makeId.
+// inventory), `zf`=palette (theme.js), `$`=makeId. One deliberate
+// deviation from the original: the grid is alphabetized by name here
+// (the original just rendered `conditions` in storage order) - a
+// requested UX change, applied consistently across every condition list
+// in this app, not something the port introduced unasked.
 export function ConditionsGrid({ conditions, onOpen, onAdd }) {
   const [addOpen, setAddOpen] = useState(false)
   const [name, setName] = useState('')
@@ -39,7 +43,7 @@ export function ConditionsGrid({ conditions, onOpen, onAdd }) {
       </p>
 
       <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
-        {conditions.map((c) => {
+        {[...conditions].sort((a, b) => a.name.localeCompare(b.name)).map((c) => {
           const up = c.taxa.filter((t) => t.dir === 'up').length
           const down = c.taxa.length - up
           return (

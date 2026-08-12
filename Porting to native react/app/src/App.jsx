@@ -211,7 +211,7 @@ export default function App() {
           </div>
           {(() => {
             const recent = recentIds.map((id) => conditions.find((c) => c.id === id)).filter(Boolean)
-            const rest = conditions.filter((c) => !recentIds.includes(c.id))
+            const rest = conditions.filter((c) => !recentIds.includes(c.id)).sort((a, b) => a.name.localeCompare(b.name))
             return recent
               .concat(rest)
               .slice(0, 5)

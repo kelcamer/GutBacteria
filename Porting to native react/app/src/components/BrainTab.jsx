@@ -84,7 +84,11 @@ export function BrainTab({ pinType }) {
 
   const neighborRows = useMemo(
     () =>
-      conds.map((c) => {
+      // Rows alphabetized by condition name (a UX change applied consistently
+      // across every condition list in this app) - the neighbor RANKING
+      // within each row (below) is untouched, since that's a real similarity
+      // score, not an arbitrary list order.
+      [...conds].sort((a, b) => a.name.localeCompare(b.name)).map((c) => {
         const regionMap = {}
         ;(c.taxa || []).forEach((t) => { regionMap[t.name] = t.dir })
         const scored = conds
