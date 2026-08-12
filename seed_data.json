@@ -529,6 +529,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/"
       }
      ]
+    },
+    {
+     "id": "seed_dep_t34",
+     "name": "Actinobacteria",
+     "dir": "down",
+     "refs": "n=62 female MDD/46 controls (PMID 33421868)",
+     "note": "Consistently higher in controls than in MDD patients (i.e. depleted in depression) \u2014 verified directly against the primary abstract. Note: some secondary/review sources claim the opposite (increased in depression), but that specific claim did not survive direct verification this pass; only the depleted direction is recorded here pending a cleaner primary source for the other side.",
+     "links": [
+      {
+       "id": "seed_dep_t34_l1",
+       "label": "Chen et al. 2021, n=62/46 (PMID 33421868)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33421868/"
+      }
+     ]
     }
    ]
   },
