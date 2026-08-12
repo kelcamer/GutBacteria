@@ -9063,6 +9063,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41995552/"
       }
      ]
+    },
+    {
+     "id": "new_ra_t20",
+     "name": "Streptococcus",
+     "dir": "up",
+     "refs": "n=29 RA/30 controls (PMID 34670873)",
+     "note": "Significantly elevated relative abundance in RA patients vs. controls (3.5% vs. 0.8%, P=0.0013) \u2014 one of 97 genera found more abundant in the RA group.",
+     "links": [
+      {
+       "id": "new_ra_t20_l1",
+       "label": "n=29/30, biomarker study (PMID 34670873)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
+      }
+     ]
     }
    ]
   },
