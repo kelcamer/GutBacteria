@@ -1,5 +1,6 @@
 .DS_Store
 *.bak
+.venv-readable/
 
 FINISHED_CHANGES.md
 PROPOSED_CHANGES.md
