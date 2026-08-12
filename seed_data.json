@@ -4871,6 +4871,34 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/23791918/"
       }
      ]
+    },
+    {
+     "id": "new_mecfs_t17",
+     "name": "Bacteroides",
+     "dir": "up",
+     "refs": "n=50 ME/CFS/50 controls, fecal metagenomics (PMID 28441964)",
+     "note": "Unclassified Bacteroides abundance elevated in ME/CFS (without IBS comorbidity) vs. controls, identified via multiple analytical approaches (ROC AUC=0.948 model including this + other biomarkers).",
+     "links": [
+      {
+       "id": "new_mecfs_t17_l1",
+       "label": "Nagy-Szakal et al. 2017, n=50/50 (PMID 28441964)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28441964/"
+      }
+     ]
+    },
+    {
+     "id": "new_mecfs_t18",
+     "name": "Bacteroides vulgatus",
+     "dir": "down",
+     "refs": "n=50 ME/CFS/50 controls, fecal metagenomics (PMID 28441964)",
+     "note": "Species-level: decreased relative abundance distinguished ME/CFS patients (particularly the IBS-comorbid subgroup) across all statistical tests used.",
+     "links": [
+      {
+       "id": "new_mecfs_t18_l1",
+       "label": "Nagy-Szakal et al. 2017, n=50/50 (PMID 28441964)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28441964/"
+      }
+     ]
     }
    ]
   },
