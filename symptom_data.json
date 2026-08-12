@@ -1974,6 +1974,12 @@
      "note": "Significantly elevated relative abundance in RA patients vs. controls (3.5% vs. 0.8%, P=0.0013) — one of 97 genera found more abundant in the RA group.",
      "ref": "n=29 RA/30 controls (PMID 34670873)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
+    },
+    {
+     "symptom": "Nausea",
+     "note": "Increased relative abundance in SIBO patients (n=17) vs. non-SIBO patients (n=7), duodenal 16S rRNA sequencing — SIBO commonly presents with nausea among its GI symptoms.",
+     "ref": "Japanese duodenal microbiota study, n=17/7 (PMID 36180941)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36180941/"
     }
    ],
    "down": [
@@ -3360,6 +3366,12 @@
      "note": "Decreased in newly-diagnosed RA patients vs healthy controls (n=22 vs 20, Vietnam); independently corroborated by a separate moxibustion-trial baseline comparison (n=65 RA vs 30 healthy) which also found Bacteroides (and Bacteroidota/Faecalibacterium/Bifidobacterium) significantly lower in RA.",
      "ref": "PeerJ 2025 (n=22 vs 20, Vietnam) + Zhen Ci Yan Jiu 2026 (baseline, n=65 RA vs 30 HC)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41431641/"
+    },
+    {
+     "symptom": "Nausea",
+     "note": "Decreased relative abundance in SIBO patients (n=17) vs. non-SIBO patients (n=7), duodenal 16S rRNA sequencing — SIBO commonly presents with nausea among its GI symptoms.",
+     "ref": "Japanese duodenal microbiota study, n=17/7 (PMID 36180941)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36180941/"
     }
    ],
    "both": [
