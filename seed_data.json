@@ -7756,7 +7756,7 @@
    "name": "Endometriosis",
    "abbr": "ENDO",
    "color": "#ED64A6",
-   "note": "Estrogen-dependent inflammatory disease (endometrial-like tissue outside the uterus); frequently comorbid with IBS. Two microbiomes matter \u2014 gut and reproductive tract \u2014 and the 'estrobolome' (gut microbes that deconjugate estrogens via \u03b2-glucuronidase) is the proposed mechanistic link. Gut findings (this atlas' focus): a higher Firmicutes/Bacteroidetes ratio, phylum-level rises in Actinobacteria/Proteobacteria/Verrucomicrobia, loss of Lactobacilli and butyrate producers (Ruminococcaceae, Lachnospira), and severity-dependent shifts (Dialister \u2193, Streptococcus/Lactobacillus \u2191 with stage; Prevotella/Bacteroides \u2193 in advanced disease). Directions are frequently contested between Shan 2020, Svensson 2021 and the 2025 meta-analysis, so several taxa here carry explicit caveats.",
+   "note": "Estrogen-dependent inflammatory disease (endometrial-like tissue outside the uterus); frequently comorbid with IBS. Two microbiomes matter \u2014 gut and reproductive tract \u2014 and the 'estrobolome' (gut microbes that deconjugate estrogens via \u03b2-glucuronidase) is the proposed mechanistic link. Gut findings (this atlas' focus): a higher Firmicutes/Bacteroidetes ratio, phylum-level rises in Actinobacteria/Proteobacteria/Verrucomicrobia, loss of Lactobacilli and butyrate producers (Ruminococcaceae, Lachnospira), and severity-dependent shifts (Dialister \u2193, Streptococcus/Lactobacillus \u2191 with stage; Prevotella/Bacteroides \u2193 in advanced disease). Directions are frequently contested between Shan 2020, Svensson 2021 and the 2025 meta-analysis, so several taxa here carry explicit caveats. See also this app's Estrogen condition, which tracks the same estrobolome mechanism from the opposite direction \u2014 bacteria correlated with circulating estrogen level generally, rather than this entry's endometriosis-specific dysbiosis pattern.",
    "links": [
     {
      "id": "seed_new_l78",
@@ -10426,7 +10426,7 @@
    "name": "Polycystic Ovary Syndrome (PCOS)",
    "abbr": "PCOS",
    "color": "#EC4899",
-   "note": "Affects an estimated 8-13% of women of reproductive age \u2014 one of the most common endocrine disorders in women, and historically under-researched relative to its prevalence. Gut dysbiosis in PCOS is characterized by reduced alpha-diversity (Shannon SMD=-0.27, phylogenetic diversity SMD=-0.39) and a shift favoring pro-inflammatory taxa. Several taxa below show genuine cross-study contradictions (marked \"both\") rather than a single clean signature \u2014 reflected honestly rather than picked a side.",
+   "note": "Affects an estimated 8-13% of women of reproductive age \u2014 one of the most common endocrine disorders in women, and historically under-researched relative to its prevalence. Gut dysbiosis in PCOS is characterized by reduced alpha-diversity (Shannon SMD=-0.27, phylogenetic diversity SMD=-0.39) and a shift favoring pro-inflammatory taxa. Several taxa below show genuine cross-study contradictions (marked \"both\") rather than a single clean signature \u2014 reflected honestly rather than picked a side. See also this app's Estrogen and Testosterone conditions: PCOS is defined by both estrogen dysregulation and hyperandrogenism (elevated testosterone), and several taxa there (Collinsella, Sutterella, Subdoligranulum, Paraprevotella, Akkermansia) are drawn from PCOS-specific cohorts.",
    "links": [
     {
      "id": "new_pcos_1_l1",
@@ -10708,7 +10708,7 @@
    "name": "Premenstrual Disorders (PMS/PMDD)",
    "abbr": "PMDD",
    "color": "#F472B6",
-   "note": "Covers premenstrual syndrome (PMS) and premenstrual dysphoric disorder (PMDD), affecting an estimated 20-30% (PMS) and 3-8% (PMDD) of menstruating women \u2014 a historically under-researched area of women's health. Evidence base here is real but still small (n=21/22); flagged honestly rather than overstated.",
+   "note": "Covers premenstrual syndrome (PMS) and premenstrual dysphoric disorder (PMDD), affecting an estimated 20-30% (PMS) and 3-8% (PMDD) of menstruating women \u2014 a historically under-researched area of women's health. Evidence base here is real but still small (n=21/22); flagged honestly rather than overstated. See also this app's Progesterone condition and this app's PMDD brain-map entry: PMDD is fundamentally a progesterone-withdrawal-sensitivity condition, and the GABA-active-neurosteroid mechanism (allopregnanolone/pregnanolone) discussed there is the leading biological model for PMDD specifically.",
    "links": [
     {
      "id": "new_pmdd_1_l1",
@@ -10794,7 +10794,7 @@
    "name": "Menopause (transition)",
    "abbr": "MENO",
    "color": "#A855F7",
-   "note": "Host life-stage entry, not a disease state. Large, well-powered shotgun-metagenomic cohort (n=1,322 total) found menopause-associated microbiome shifts toward a profile more similar to men's, plausibly related to declining estrogen/progesterone (the \"estrobolome\" \u2014 gut bacterial genes that metabolize estrogens). Associated with adverse cardiometabolic risk profile; associations held after adjusting for cardiometabolic confounders.",
+   "note": "Host life-stage entry, not a disease state. Large, well-powered shotgun-metagenomic cohort (n=1,322 total) found menopause-associated microbiome shifts toward a profile more similar to men's, plausibly related to declining estrogen/progesterone (the \"estrobolome\" \u2014 gut bacterial genes that metabolize estrogens). Associated with adverse cardiometabolic risk profile; associations held after adjusting for cardiometabolic confounders. See also this app's Perimenopause condition (the fluctuating-hormone phase before this sustained-low-estrogen state) and its Estrogen and Progesterone conditions (the specific hormones whose decline this life-stage entry reflects).",
    "links": [
     {
      "id": "new_meno_1_l1",
@@ -11023,7 +11023,7 @@
    "name": "Perimenopause",
    "abbr": "PERI",
    "color": "#D946A6",
-   "note": "Host life-stage entry, not a disease state — the fluctuating-hormone transition period BEFORE menopause proper, distinct from the sustained-low-estrogen postmenopausal state this app tracks separately as \"Menopause (transition).\" A 2022 review specifically distinguishes the two phases: perimenopause shows reduced Lactobacillus/Bifidobacterium and increased Enterobacter, while postmenopause instead shows a broader shift toward a male-like profile. The 3 taxa entries here rest on one review's characterization (not yet an independently-replicated primary cohort the way the postmenopausal entry has); the wider link list below situates that claim among the broader menopausal-transition microbiome literature rather than leaving it isolated.",
+   "note": "Host life-stage entry, not a disease state — the fluctuating-hormone transition period BEFORE menopause proper, distinct from the sustained-low-estrogen postmenopausal state this app tracks separately as \"Menopause (transition).\" A 2022 review specifically distinguishes the two phases: perimenopause shows reduced Lactobacillus/Bifidobacterium and increased Enterobacter, while postmenopause instead shows a broader shift toward a male-like profile. The 3 taxa entries here rest on one review's characterization (not yet an independently-replicated primary cohort the way the postmenopausal entry has); the wider link list below situates that claim among the broader menopausal-transition microbiome literature rather than leaving it isolated. See also this app's Estrogen and Progesterone conditions — the specific fluctuating hormones this transitional phase is named for.",
    "links": [
     {
      "id": "new_perimeno_l1",
@@ -11126,7 +11126,7 @@
    "name": "Estrogen",
    "abbr": "E2",
    "color": "#FBBF24",
-   "note": "Host hormone-level entry, not a disease state — tracks the \"estrobolome\": gut bacteria whose abundance correlates with circulating/urinary estrogen or estrogen-metabolite levels in human cohort studies (mostly postmenopausal women; some PCOS cohorts). This is a genuinely emerging, smaller-sample, exploratory research area compared to most other conditions in this app — several source studies explicitly caution their own taxon-level findings should be treated as exploratory, and that caveat is preserved here rather than smoothed over. Complements this app's separate Menopause (transition) and Perimenopause entries, which track the reciprocal, better-powered question (what changes about the microbiome as estrogen declines) rather than this one (what correlates with estrogen level directly).",
+   "note": "Host hormone-level entry, not a disease state — tracks the \"estrobolome\": gut bacteria whose abundance correlates with circulating/urinary estrogen or estrogen-metabolite levels in human cohort studies (mostly postmenopausal women; some PCOS cohorts). This is a genuinely emerging, smaller-sample, exploratory research area compared to most other conditions in this app — several source studies explicitly caution their own taxon-level findings should be treated as exploratory, and that caveat is preserved here rather than smoothed over. Complements this app's separate Menopause (transition) and Perimenopause entries, which track the reciprocal, better-powered question (what changes about the microbiome as estrogen declines) rather than this one (what correlates with estrogen level directly). See also this app's PCOS and Endometriosis conditions — both are fundamentally estrogen-driven, and several taxa here (Collinsella, Sutterella, Subdoligranulum) come from the same PCOS cohorts cited there.",
    "links": [
     {
      "id": "new_estro_l1",
@@ -11318,7 +11318,7 @@
    "name": "Testosterone",
    "abbr": "T",
    "color": "#0EA5E9",
-   "note": "Host hormone-level entry, not a disease state — tracks the emerging \"testobolome\" concept (a testosterone-metabolism analogue to the estrobolome): gut bacteria whose abundance correlates with serum testosterone, drawn mostly from small human cohort studies (healthy men, PCOS women, male T2D patients). A landmark 2013 Science study in GERM-FREE MICE (Markle et al., PMID 23328391) showed this relationship can run causally in both directions — transferring male gut microbiota into female mice raised their testosterone — flagged explicitly here as a mouse mechanistic finding, not a human correlation, but included because it's the strongest evidence this is a real bidirectional pathway and not just a marker.",
+   "note": "Host hormone-level entry, not a disease state — tracks the emerging \"testobolome\" concept (a testosterone-metabolism analogue to the estrobolome): gut bacteria whose abundance correlates with serum testosterone, drawn mostly from small human cohort studies (healthy men, PCOS women, male T2D patients). A landmark 2013 Science study in GERM-FREE MICE (Markle et al., PMID 23328391) showed this relationship can run causally in both directions — transferring male gut microbiota into female mice raised their testosterone — flagged explicitly here as a mouse mechanistic finding, not a human correlation, but included because it's the strongest evidence this is a real bidirectional pathway and not just a marker. See also this app's PCOS condition — hyperandrogenism (elevated testosterone) is one of PCOS's hallmark diagnostic features, and several taxa here (Paraprevotella, Raoultella, Akkermansia) are drawn from the same PCOS cohorts cited there.",
    "links": [
     {
      "id": "new_testo_l1",
@@ -11529,7 +11529,7 @@
    "name": "Progesterone",
    "abbr": "P4",
    "color": "#F97316",
-   "note": "Host hormone-level entry, not a disease state. Genuinely thinner evidence base than this app's Estrogen or Testosterone entries - a 2022 systematic review searching specifically for sex-hormone/gut-microbiota associations (PMID 35283442) found NO direct progesterone-taxon abundance correlations in the literature it covered, only a passing mechanistic note about butyrate. What real evidence does exist is more mechanistic than correlational: a landmark 2024 Cell paper identified specific bacterial species that metabolically PRODUCE progestins from host glucocorticoids (a genuinely different kind of relationship than \"this bacterium's abundance rises with progesterone,\" flagged per-taxon below), plus one solid human pregnancy cohort finding for Bifidobacterium specifically. Kept honestly small (3 taxa) rather than padded to match the other hormone entries' counts - the link list below is intentionally broader than the taxa list, since most of what's citable here is context/mechanism rather than new per-genus findings.",
+   "note": "Host hormone-level entry, not a disease state. Genuinely thinner evidence base than this app's Estrogen or Testosterone entries - a 2022 systematic review searching specifically for sex-hormone/gut-microbiota associations (PMID 35283442) found NO direct progesterone-taxon abundance correlations in the literature it covered, only a passing mechanistic note about butyrate. What real evidence does exist is more mechanistic than correlational: a landmark 2024 Cell paper identified specific bacterial species that metabolically PRODUCE progestins from host glucocorticoids (a genuinely different kind of relationship than \"this bacterium's abundance rises with progesterone,\" flagged per-taxon below), plus one solid human pregnancy cohort finding for Bifidobacterium specifically. Kept honestly small (3 taxa) rather than padded to match the other hormone entries' counts - the link list below is intentionally broader than the taxa list, since most of what's citable here is context/mechanism rather than new per-genus findings. See also this app's Premenstrual Disorders (PMS/PMDD) condition and this app's PMDD brain-map entry — PMDD is fundamentally a progesterone-withdrawal-sensitivity condition, this hormone's strongest clinical link in this app — and its Menopause (transition)/Perimenopause conditions, since progesterone declines alongside estrogen through that transition.",
    "links": [
     {
      "id": "new_prog_l1",
