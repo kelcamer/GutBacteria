@@ -59,6 +59,13 @@ function copyTipText(el, btn) {
 export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef) {
     pinType = pinType || "bact";
     var NS = "http://www.w3.org/2000/svg";
+    // Matches the invisible hit-target circle radius set on every node below
+    // (`hit.setAttribute("r", HIT_R)`). Referenced again in the physics
+    // collision floor so two nodes are never allowed to settle close enough
+    // for their hit-targets to fully overlap - see that usage's comment for
+    // why this needed its own constant instead of reusing each node's
+    // visible radius (a.r/b.r).
+    var HIT_R = 12;
     var symptomsIn = (data && data.symptoms) || [],
       bacteriaIn = (data && data.bacteria) || [];
     var W = 1000,
@@ -378,7 +385,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       // small to reliably grab. This keeps the visible circle's true size while
       // making every node draggable regardless of how small it draws.
       var hit = document.createElementNS(NS, "circle");
-      hit.setAttribute("r", 12);
+      hit.setAttribute("r", HIT_R);
       hit.setAttribute("fill", "transparent");
       g.appendChild(hit);
       var circ = document.createElementNS(NS, "circle");
@@ -476,7 +483,23 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           var bothDynamic = !a.pin && !b.pin;
           var kRepPair = bothDynamic ? kRep * 0.35 : kRep;
           var force = kRepPair / d2 * alpha;
-          var mind = a.r + b.r + 2;
+          // BUG FIX: this floor used to be plain `a.r + b.r + 2` - fine for
+          // keeping the visible circles from overlapping, but the invisible
+          // hit-target circle every node gets (radius HIT_R, see its own
+          // comment above) is much bigger than most nodes' visible radius.
+          // Two dynamic nodes with reduced repulsion (bothDynamic above)
+          // would settle right at that smaller floor, close enough that
+          // their HIT_R-radius hit-targets fully overlapped - the topmost
+          // one in SVG paint order silently ate 100% of clicks aimed at the
+          // one(s) underneath, which were then unclickable no matter where
+          // within the overlap you clicked (reported: "only the outer
+          // [rim] nodes are selectable" on the Symptom<->Bacteria maps -
+          // the brain map doesn't have this bug because GFA_buildMap has no
+          // bothDynamic reduced-repulsion special case, so its nodes never
+          // settle this close together). Flooring by HIT_R too keeps every
+          // node's hit-target clear of its neighbors' regardless of how
+          // tightly their visible circles are allowed to cluster.
+          var mind = Math.max(a.r, HIT_R) + Math.max(b.r, HIT_R) + 2;
           if (d < mind) force += (mind - d) * 0.35;
           var fx = dx / d * force,
             fy = dy / d * force;
