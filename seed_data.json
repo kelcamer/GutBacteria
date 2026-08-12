@@ -8257,6 +8257,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/26261163/"
       }
      ]
+    },
+    {
+     "id": "new_cd_t17",
+     "name": "Enterobacteriaceae",
+     "dir": "up",
+     "refs": "n=191 CD/132 UC/125 controls, metagenomic (PMID 36268225)",
+     "note": "Overrepresented in both CD and UC vs. controls \u2014 the major gut microbiome signature identified by this comprehensive metagenomic analysis of the IBDMDB dataset. Six Enterobacteriaceae species significantly elevated in both diseases, including E. coli, K. variicola, K. quasipneumoniae.",
+     "links": [
+      {
+       "id": "new_cd_t17_l1",
+       "label": "n=191 CD/132 UC/125 controls, metagenomic (PMID 36268225)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36268225/"
+      }
+     ]
     }
    ]
   },
@@ -8524,6 +8538,20 @@
        "id": "new_uc_t17_l1",
        "label": "16S rRNA profiling study (PMID 27604252)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/27604252/"
+      }
+     ]
+    },
+    {
+     "id": "new_uc_t18",
+     "name": "Enterobacteriaceae",
+     "dir": "up",
+     "refs": "n=191 CD/132 UC/125 controls, metagenomic (PMID 36268225)",
+     "note": "Overrepresented in both CD and UC vs. controls \u2014 the major gut microbiome signature identified by this comprehensive metagenomic analysis of the IBDMDB dataset. Six Enterobacteriaceae species significantly elevated in both diseases, including E. coli, K. variicola, K. quasipneumoniae.",
+     "links": [
+      {
+       "id": "new_uc_t18_l1",
+       "label": "n=191 CD/132 UC/125 controls, metagenomic (PMID 36268225)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36268225/"
       }
      ]
     }
