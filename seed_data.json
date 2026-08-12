@@ -1221,6 +1221,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36296284/"
       }
      ]
+    },
+    {
+     "id": "seed_asd_t44",
+     "name": "Proteobacteria",
+     "dir": "up",
+     "refs": "Systematic review, 16 studies (PMID 30696816)",
+     "note": "Elevated phylum-level abundance in ASD patients, consistently reported across multiple studies (William et al., Finegold et al.). Concerning given Proteobacteria's high proportion of Gram-negative opportunistic pathogens/LPS producers, linked to gut inflammation and barrier dysfunction.",
+     "links": [
+      {
+       "id": "seed_asd_t44_l1",
+       "label": "Systematic review, 16 studies (PMID 30696816)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
+      }
+     ]
     }
    ]
   },
@@ -4657,6 +4671,20 @@
        "id": "seed_538",
        "label": "Frontiers in Microbiomes 2026 (full-length 16S; AD n=37, PD n=65, HC n=50; PD \u2193Faecalibacterium prausnitzii/Agathobacter rectalis/Roseburia intestinalis)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42206189/"
+      }
+     ]
+    },
+    {
+     "id": "seed_pd_t25",
+     "name": "Proteobacteria",
+     "dir": "up",
+     "refs": "Meta-analysis, 5 studies, n=1,007 fecal samples (PMID 40461531)",
+     "note": "Betaproteobacteria and Alphaproteobacteria classes both upregulated in PD vs. controls (FDR P<0.05); Klebsiella variicola (a Gammaproteobacteria species) highlighted as a particularly notable proinflammatory finding.",
+     "links": [
+      {
+       "id": "seed_pd_t25_l1",
+       "label": "Meta-analysis, n=1,007 (PMID 40461531)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40461531/"
       }
      ]
     }
