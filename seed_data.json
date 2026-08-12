@@ -9133,6 +9133,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
       }
      ]
+    },
+    {
+     "id": "new_ra_t21",
+     "name": "Bacteroidetes",
+     "dir": "down",
+     "refs": "n=29 RA/30 controls (PMID 34670873)",
+     "note": "Significantly decreased phylum-level relative abundance in RA vs. controls, while Verrucomicrobia and Proteobacteria were increased \u2014 same source already used for this app's RA Streptococcus entry.",
+     "links": [
+      {
+       "id": "new_ra_t21_l1",
+       "label": "n=29/30, biomarker study (PMID 34670873)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
+      }
+     ]
     }
    ]
   },
