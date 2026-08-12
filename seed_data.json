@@ -557,6 +557,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40621717/"
       }
      ]
+    },
+    {
+     "id": "seed_dep_t36",
+     "name": "Clostridium",
+     "dir": "up",
+     "refs": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
+     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
+     "links": [
+      {
+       "id": "seed_dep_t36_l1",
+       "label": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/"
+      }
+     ]
     }
    ]
   },
@@ -4236,6 +4250,20 @@
        "id": "seed_bp_prevotella_l1",
        "label": "Hu et al. 2019 (Adv Sci; Bacteroides-Prevotella cluster enriched in untreated BD depression)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/"
+      }
+     ]
+    },
+    {
+     "id": "seed_231",
+     "name": "Clostridium",
+     "dir": "up",
+     "refs": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
+     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
+     "links": [
+      {
+       "id": "seed_231_l1",
+       "label": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/"
       }
      ]
     }
