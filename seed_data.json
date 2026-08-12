@@ -2286,6 +2286,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40604345/"
       }
      ]
+    },
+    {
+     "id": "seed_ad_t27",
+     "name": "Enterococcus",
+     "dir": "down",
+     "refs": "n=30 AD/47 controls (PMID 33732104)",
+     "note": "More abundant in cognitively healthy controls than AD patients (P<0.05) \u2014 i.e. depleted in AD, alongside Megamonas and Anaerostipes. From an APOE-epsilon4 carrier-status study.",
+     "links": [
+      {
+       "id": "seed_ad_t27_l1",
+       "label": "n=30/47, APOE-e4 study (PMID 33732104)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33732104/"
+      }
+     ]
     }
    ]
   },
