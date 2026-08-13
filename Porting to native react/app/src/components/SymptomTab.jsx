@@ -2,25 +2,22 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
 import { symptomData, seedData } from '../data'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
-import { withExtraConditions, buildOverlayMapData } from '../lib/symptomMapConditionOverlay'
+import { buildOverlayMapData } from '../lib/symptomMapConditionOverlay'
 
 // Ported verbatim from `GFA_SymptomTab` in gut-flora-atlas.readable.html
 // (~line 25998-26211) - the React wrapper that mounts buildSymptomMap into
 // a plain <div> ref, used for both the global Bacteria->Symptom and
 // Symptom->Bacteria maps (same engine, `pinType` swapped).
 //
-// The picker below is new in this port (no minified source equivalent),
-// and currently diverges by direction on purpose, as a trial: on
-// Symptom->Bacteria (pinType="symptom") it's the newer "build this map"
-// picker - pick exactly which symptoms AND which conditions to include,
-// and the map is constructed from just that selection (an empty
-// selection means "no filter, show everything," the original default).
-// On Bacteria->Symptom (pinType="bact") it's still the earlier,
-// simpler "add conditions on top of everything" overlay. Once there's a
-// verdict on the newer picker, both directions should converge on
-// whichever one wins rather than staying permanently split - see
-// symptomMapConditionOverlay.js's header comment for the data-layer side
-// of this.
+// The map-builder picker below is new in this port (no minified source
+// equivalent) - trialed on Symptom->Bacteria only at first, now graduated
+// to both directions after a positive verdict. Pick specific symptoms
+// and/or conditions to narrow the map down to exactly that selection
+// (leaving everything unpicked shows the full map, the original
+// default); clicking the graph's background clears the picker back to
+// that default too, without having to find the "clear all" button - see
+// symptomMapConditionOverlay.js's header comment for the data-layer side,
+// and buildSymptomMap.js's onBackgroundClick param for the engine side.
 export function SymptomTab({ pinType = 'bact' }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
@@ -32,8 +29,6 @@ export function SymptomTab({ pinType = 'bact' }) {
   const [extraConditionIds, setExtraConditionIds] = useState([])
   const [selectedSymptoms, setSelectedSymptoms] = useState([])
 
-  const isBuilderMode = pinType === 'symptom'
-
   // seedData is a static JSON import (always defined, stable reference) -
   // no need to memoize this itself, just avoid the `|| []` fallback
   // creating a fresh array literal every render, which would otherwise
@@ -44,36 +39,32 @@ export function SymptomTab({ pinType = 'bact' }) {
     [conditions, extraConditionIds]
   )
   const mapData = useMemo(
-    () =>
-      isBuilderMode
-        ? buildOverlayMapData(symptomData, selectedSymptoms, extraConditions)
-        : withExtraConditions(symptomData, extraConditions),
-    [isBuilderMode, selectedSymptoms, extraConditions]
+    () => buildOverlayMapData(symptomData, selectedSymptoms, extraConditions),
+    [selectedSymptoms, extraConditions]
   )
+
+  const clearPicker = () => {
+    setSelectedSymptoms([])
+    setExtraConditionIds([])
+  }
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, mapData, mode, pinType, true, layoutState.scramble, hiddenNamesRef)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, mapData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, clearPicker)
       graphRef.current = stop
-      // Nodes added/kept via the picker(s) above aren't the result of a
-      // real click, so they'd otherwise never end up in the graph's own
+      // Nodes added/kept via the picker above aren't the result of a real
+      // click, so they'd otherwise never end up in the graph's own
       // selectedNodes set - and Show Connections only ever looks at that
       // set. Pre-select them here so Show Connections works on whatever
       // you just picked without also having to click each node in the
-      // graph itself.
-      //
-      // BUG FIX: this originally only included extraConditions (picked
-      // conditions), not selectedSymptoms - so picking ONLY a symptom
-      // (e.g. just "Headache / migraine", no conditions) correctly
-      // narrowed the map via buildOverlayMapData, but left selectedNodes
-      // empty, so Show Connections had nothing to work from and silently
-      // did nothing - reported as "select headache and migraine and then
-      // show connections" not doing anything. Picked symptoms are now
-      // included too (builder mode only - selectedSymptoms is always []
-      // in the older bact-mode overlay, so this is a no-op there).
-      const namesToSelect = [...(isBuilderMode ? selectedSymptoms : []), ...extraConditions.map((c) => c.name)]
+      // graph itself. With only one item picked this is a no-op in
+      // practice (the map's already narrowed to just that item and its
+      // own neighbors, so there's nothing further to hide) - it starts
+      // doing real work once 2+ items are picked, narrowing from "touches
+      // EITHER selected item" down to "touches BOTH/ALL of them."
+      const namesToSelect = [...selectedSymptoms, ...extraConditions.map((c) => c.name)]
       if (namesToSelect.length) stop?.selectByNames?.(namesToSelect)
     } catch {
       if (hostRef.current) {
@@ -111,6 +102,7 @@ export function SymptomTab({ pinType = 'bact' }) {
       : "Symptoms sit on the rim; every bacterium is pulled inward toward the symptoms it's linked to, so bacteria touching multiple symptom domains drift toward the middle. "
 
   const allSymptoms = useMemo(() => [...(symptomData.symptoms || [])].sort((a, b) => a.localeCompare(b)), [])
+  const hasSelection = selectedSymptoms.length > 0 || extraConditionIds.length > 0
 
   return (
     <div className="p-4 safe-bottom">
@@ -141,16 +133,16 @@ export function SymptomTab({ pinType = 'bact' }) {
           className="text-sm mb-2"
           style={{ color: theme.muted, background: 'transparent', border: 'none', cursor: 'pointer', padding: 0 }}
         >
-          {showPicker ? '▾ ' : '▸ '}
-          {isBuilderMode ? 'Build this map from specific symptoms and conditions?' : 'Add additional conditions?'}
+          {showPicker ? '▾ ' : '▸ '}Build this map from specific symptoms and conditions?
         </button>
-        {showPicker && isBuilderMode && (
+        {showPicker && (
           <div>
             <p className="mb-2" style={{ color: theme.muted, fontSize: 12 }}>
               Pick specific symptoms to narrow the map to just those (leave none picked to show every symptom, the
               default). Add conditions on top to overlay them as extra nodes wired to whichever bacteria are
               currently shown — a focused way to see which conditions move the same bacteria as the symptoms you
-              picked, from a gut-flora perspective.
+              picked, from a gut-flora perspective. Click the map's background at any time to clear this and go
+              back to the full map.
             </p>
             <div className="mb-3">
               <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
@@ -202,53 +194,10 @@ export function SymptomTab({ pinType = 'bact' }) {
                   })}
               </div>
             </div>
-            {(selectedSymptoms.length > 0 || extraConditionIds.length > 0) && (
+            {hasSelection && (
               <button
-                onClick={() => {
-                  setSelectedSymptoms([])
-                  setExtraConditionIds([])
-                }}
+                onClick={clearPicker}
                 className="rounded-lg px-2 py-1 text-xs"
-                style={{ border: `1px solid ${theme.line}`, color: theme.muted }}
-              >
-                × clear all
-              </button>
-            )}
-          </div>
-        )}
-        {showPicker && !isBuilderMode && (
-          <div>
-            <p className="mb-2" style={{ color: theme.muted, fontSize: 12 }}>
-              Overlays each selected condition onto this map as an extra node, wired to whichever bacteria here it
-              shares — so you can see which conditions move the same bacteria already linked to these symptoms.
-            </p>
-            <div className="flex flex-wrap gap-1.5">
-              {[...conditions]
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((c) => {
-                  const on = extraConditionIds.includes(c.id)
-                  return (
-                    <button
-                      key={c.id}
-                      onClick={() =>
-                        setExtraConditionIds(on ? extraConditionIds.filter((x) => x !== c.id) : [...extraConditionIds, c.id])
-                      }
-                      className="rounded-full px-2.5 py-1 text-xs"
-                      style={{
-                        background: on ? c.color + '33' : theme.ink2,
-                        border: `1px solid ${on ? c.color : theme.line}`,
-                        color: on ? theme.text : theme.muted,
-                      }}
-                    >
-                      {c.name}
-                    </button>
-                  )
-                })}
-            </div>
-            {extraConditionIds.length > 0 && (
-              <button
-                onClick={() => setExtraConditionIds([])}
-                className="mt-2 rounded-lg px-2 py-1 text-xs"
                 style={{ border: `1px solid ${theme.line}`, color: theme.muted }}
               >
                 × clear all

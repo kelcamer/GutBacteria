@@ -18,6 +18,15 @@
 // GFA_buildSymptomMap(...)` -> `export function buildSymptomMap(...)`.
 // Not yet reviewed line-by-line against the live original in a browser -
 // see PORTING_PLAN.md's verification notes.
+//
+// One real addition since the port, not in the original: an optional 9th
+// param, `onBackgroundClick` - fired from onPointerUp whenever a plain
+// click lands on empty canvas (not a node, not a drag). Lets a caller
+// hook "user clicked the background" without adding a second click
+// listener of its own on top of this engine's existing pointer handling
+// (which already tracks bgDown/dragNode precisely to distinguish a real
+// background click from a node click or a drag) - SymptomTab.jsx uses it
+// to clear its symptom/condition picker selection.
 import { dirColor, dirArrow } from '../theme'
 
 function esc(s) {
@@ -56,7 +65,7 @@ function copyTipText(el, btn) {
   }
 }
 
-export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef) {
+export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, onBackgroundClick) {
     pinType = pinType || "bact";
     var NS = "http://www.w3.org/2000/svg";
     // Matches the invisible hit-target circle radius set on every node below
@@ -1022,9 +1031,12 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         }
         dragNode = null;
         isDragging = false;
-      } else if (bgDown && selectedNodes.size) {
-        closeAllPinned();
-        setHi(curr);
+      } else if (bgDown) {
+        if (selectedNodes.size) {
+          closeAllPinned();
+          setHi(curr);
+        }
+        if (typeof onBackgroundClick === "function") onBackgroundClick();
       }
       bgDown = false;
     }

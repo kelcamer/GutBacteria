@@ -1,11 +1,12 @@
 import { canonTaxon } from './conditionSymptomData'
 
 // New helpers (no minified-source equivalent - this UI didn't exist in the
-// original app). Power SymptomTab.jsx's map-builder picker (currently only
-// enabled on the Symptom->Bacteria direction, pinType="symptom", as a
-// trial): lets a user pick exactly which symptoms to include AND overlay
-// one or more real Conditions on top, to build a focused map from exactly
-// their selections rather than always starting from "everything."
+// original app). Power SymptomTab.jsx's map-builder picker, used on both
+// the Bacteria->Symptom and Symptom->Bacteria directions (trialed on the
+// latter alone first, graduated to both after a positive verdict): lets a
+// user pick exactly which symptoms to include AND overlay one or more
+// real Conditions on top, to build a focused map from exactly their
+// selections rather than always starting from "everything."
 //
 // Deliberately does NOT touch buildSymptomMap.js's engine at all (that
 // file has a well-documented history of fragility - see its own header
@@ -65,7 +66,11 @@ export function withExtraConditions(data, extraConditions) {
 // `deg` from these arrays and its own `vis` filter already excludes
 // zero-degree bacteria, so leaning on that existing behavior instead of
 // re-implementing it here keeps this function simpler and keeps the
-// engine itself untouched.
+// engine itself untouched. Not currently called by buildOverlayMapData
+// below (which needed different empty-list semantics once conditions
+// entered the picture - see its own comment) - kept exported as its own
+// tested, correct utility for "just filter to symptoms" in case anything
+// else wants that in isolation.
 export function filterToSymptoms(data, selectedSymptomNames) {
   if (!selectedSymptomNames || !selectedSymptomNames.length) return data
   const keep = new Set(selectedSymptomNames)
