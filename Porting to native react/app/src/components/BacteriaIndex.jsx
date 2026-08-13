@@ -21,9 +21,19 @@ const FILTERS = [
   ['split', 'Opposite directions'],
 ]
 
+// New (no minified-source equivalent): sort toggle for the grid below.
+// 'connections' (most conditions first) is the default - it's the more
+// useful ordering for browsing "what matters most," alphabetical is
+// there for anyone who already knows the name they're looking for.
+const SORTS = [
+  ['connections', '# Connections'],
+  ['alpha', 'A–Z'],
+]
+
 export function BacteriaIndex({ conditions, loose, onOpen, focusRequest }) {
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState('all')
+  const [sortBy, setSortBy] = useState('connections')
   // New (no minified-source equivalent): clicking a bacterium's name below
   // jumps to a focused node map of everything it touches, at the bottom
   // of this same tab - see BacteriumFocusMap.jsx / bacteriumFocusMap.js.
@@ -45,7 +55,15 @@ export function BacteriaIndex({ conditions, loose, onOpen, focusRequest }) {
 
   const grouped = useMemo(() => groupBacteriaFromConditions(conditions, loose), [conditions, loose])
 
-  const rows = grouped.filter((g) => {
+  // groupBacteriaFromConditions already returns alphabetical order (its
+  // own default, still used as-is by GlobalSearch.jsx) - only re-sort
+  // here when the "# Connections" toggle is active, ranked highest-first.
+  const sorted = useMemo(() => {
+    if (sortBy !== 'connections') return grouped
+    return [...grouped].sort((a, b) => b.hits.length - a.hits.length || a.label.localeCompare(b.label))
+  }, [grouped, sortBy])
+
+  const rows = sorted.filter((g) => {
     if (filter === 'split' && !g.split) return false
     if (filter === 'shared' && g.hits.length < 2) return false
     if (query.trim()) return g.names.join(' ').toLowerCase().includes(query.trim().toLowerCase())
@@ -95,6 +113,26 @@ export function BacteriaIndex({ conditions, loose, onOpen, focusRequest }) {
               background: filter === id ? theme.ink3 : 'transparent',
               border: `1px solid ${filter === id ? theme.line : 'transparent'}`,
               color: filter === id ? theme.text : theme.muted,
+            }}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      <div className="flex items-center gap-2 mb-4">
+        <span className="font-mono" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+          SORT
+        </span>
+        {SORTS.map(([id, label]) => (
+          <button
+            key={id}
+            onClick={() => setSortBy(id)}
+            className="rounded-lg px-2.5 py-1 text-xs"
+            style={{
+              background: sortBy === id ? theme.ink3 : 'transparent',
+              border: `1px solid ${sortBy === id ? theme.line : 'transparent'}`,
+              color: sortBy === id ? theme.text : theme.muted,
             }}
           >
             {label}
