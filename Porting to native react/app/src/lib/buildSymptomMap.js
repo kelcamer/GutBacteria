@@ -685,7 +685,48 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           return '<div style="margin:4px 0;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.06)">' + esc(x.name) + ' <b style="color:' + dirColor(x.dir) + '">' + dirArrow(x.dir) + '</b>' + srcRow(x.note, x.ref, x.url) + '</div>';
         }).join("");
         var smore = srows.length > sshown.length ? '<div style="color:#7C6BA8;margin-top:3px">+' + (srows.length - sshown.length) + ' more</div>' : "";
-        html = '<div style="font-weight:700;color:#F1EAFF">' + esc(node.name) + '</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">' + node.deg + ' bacteria linked</div><div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + srowsHtml + smore + '</div>';
+
+        // New (no minified-source equivalent): two-hop cross-reference -
+        // for every bacterium this symptom touches (e.g. FUT2 -> decreased
+        // Sutterella), look at every OTHER symptom that ALSO touches that
+        // same bacterium. Same direction (also decreases Sutterella) means
+        // "moves this bacterium the same way" - surfaced as "Most Likely
+        // Related Symptoms". Opposite direction (increases Sutterella)
+        // means the other symptom is associated with more of the very
+        // thing this one suppresses - surfaced as "Most likely protective
+        // to have <this node>", since having it would work against that
+        // symptom's own bacterial signature. "both"/mixed edges on either
+        // side are skipped rather than guessed at - only clean up/down
+        // pairs get bucketed. A symptom CAN legitimately land in both
+        // lists (related via one shared bacterium, protective via
+        // another) - that's real nuance, not deduplicated away.
+        var relatedSet = {},
+          protectiveSet = {};
+        node.adjE.forEach(function(ei) {
+          var e = E[ei];
+          var myDir = e.dir;
+          if (myDir !== "up" && myDir !== "down") return;
+          var bi = e.s === idx ? e.t : e.s;
+          var bNode = V[bi];
+          if (!bNode || !bNode.adjE) return;
+          bNode.adjE.forEach(function(ei2) {
+            var e2 = E[ei2];
+            var si2 = e2.s === bi ? e2.t : e2.s;
+            if (si2 === idx) return;
+            var otherNode = V[si2];
+            if (!otherNode || otherNode.type !== "symptom") return;
+            var otherDir = e2.dir;
+            if (otherDir !== "up" && otherDir !== "down") return;
+            if (otherDir === myDir) relatedSet[otherNode.name] = true;
+            else protectiveSet[otherNode.name] = true;
+          });
+        });
+        var relatedNames = Object.keys(relatedSet).sort();
+        var protectiveNames = Object.keys(protectiveSet).sort();
+        var relatedLine = relatedNames.length ? '<div style="color:#8FD3F4;font-size:10.5px;margin-bottom:4px"><b>Most Likely Related Symptoms:</b> ' + esc(relatedNames.join(", ")) + '</div>' : "";
+        var protectiveLine = protectiveNames.length ? '<div style="color:#3DDC97;font-size:10.5px;margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.08)"><b>Most likely protective to have ' + esc(node.name) + ':</b> ' + esc(protectiveNames.join(", ")) + '</div>' : "";
+
+        html = '<div style="font-weight:700;color:#F1EAFF">' + esc(node.name) + '</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">' + node.deg + ' bacteria linked</div>' + relatedLine + protectiveLine + '<div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + srowsHtml + smore + '</div>';
       } else {
         var relatedNames = node.items.map(function(x) {
           return x.symptom;
