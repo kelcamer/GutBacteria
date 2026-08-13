@@ -17,6 +17,7 @@ import { SourcesTab } from './components/SourcesTab'
 import { BackupTab } from './components/BackupTab'
 import { FindInPapersTab } from './components/FindInPapersTab'
 import { GlobalSearch } from './components/GlobalSearch'
+import { JumpToTop } from './components/JumpToTop'
 
 // Module-level, not a `?? []` inline fallback: a stable reference so
 // `conditions` below doesn't look like a fresh array every render to
@@ -411,6 +412,7 @@ export default function App() {
         ].includes(activeTab) && (
           <TabPlaceholder tab={activeTab} conditionCount={conditions.length} researchTargetId={researchTargetId} />
         )}
+        <JumpToTop />
       </main>
     </div>
   )
