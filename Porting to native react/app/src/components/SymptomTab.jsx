@@ -57,15 +57,24 @@ export function SymptomTab({ pinType = 'bact' }) {
     try {
       stop = buildSymptomMap(hostRef.current, tipRef.current, mapData, mode, pinType, true, layoutState.scramble, hiddenNamesRef)
       graphRef.current = stop
-      // Nodes added via the picker(s) above aren't the result of a real
-      // click, so they'd otherwise never end up in the graph's own
+      // Nodes added/kept via the picker(s) above aren't the result of a
+      // real click, so they'd otherwise never end up in the graph's own
       // selectedNodes set - and Show Connections only ever looks at that
       // set. Pre-select them here so Show Connections works on whatever
       // you just picked without also having to click each node in the
-      // graph itself. (Bug: previously "Show Connections" silently did
-      // nothing after adding conditions through a picker, since nothing
-      // was actually selected from the engine's point of view.)
-      if (extraConditions.length) stop?.selectByNames?.(extraConditions.map((c) => c.name))
+      // graph itself.
+      //
+      // BUG FIX: this originally only included extraConditions (picked
+      // conditions), not selectedSymptoms - so picking ONLY a symptom
+      // (e.g. just "Headache / migraine", no conditions) correctly
+      // narrowed the map via buildOverlayMapData, but left selectedNodes
+      // empty, so Show Connections had nothing to work from and silently
+      // did nothing - reported as "select headache and migraine and then
+      // show connections" not doing anything. Picked symptoms are now
+      // included too (builder mode only - selectedSymptoms is always []
+      // in the older bact-mode overlay, so this is a no-op there).
+      const namesToSelect = [...(isBuilderMode ? selectedSymptoms : []), ...extraConditions.map((c) => c.name)]
+      if (namesToSelect.length) stop?.selectByNames?.(namesToSelect)
     } catch {
       if (hostRef.current) {
         hostRef.current.innerHTML = '<div style="color:#A08FC7;font-size:13px;padding:24px">Map unavailable.</div>'
