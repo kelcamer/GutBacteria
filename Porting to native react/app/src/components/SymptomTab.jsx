@@ -57,6 +57,15 @@ export function SymptomTab({ pinType = 'bact' }) {
     try {
       stop = buildSymptomMap(hostRef.current, tipRef.current, mapData, mode, pinType, true, layoutState.scramble, hiddenNamesRef)
       graphRef.current = stop
+      // Nodes added via the picker(s) above aren't the result of a real
+      // click, so they'd otherwise never end up in the graph's own
+      // selectedNodes set - and Show Connections only ever looks at that
+      // set. Pre-select them here so Show Connections works on whatever
+      // you just picked without also having to click each node in the
+      // graph itself. (Bug: previously "Show Connections" silently did
+      // nothing after adding conditions through a picker, since nothing
+      // was actually selected from the engine's point of view.)
+      if (extraConditions.length) stop?.selectByNames?.(extraConditions.map((c) => c.name))
     } catch {
       if (hostRef.current) {
         hostRef.current.innerHTML = '<div style="color:#A08FC7;font-size:13px;padding:24px">Map unavailable.</div>'

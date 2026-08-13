@@ -1099,6 +1099,24 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       });
     }
 
+    // New (no minified-source equivalent): lets a caller programmatically
+    // select nodes by NAME rather than requiring a real click in the SVG -
+    // added specifically so SymptomTab.jsx's map-builder picker can put its
+    // newly-added condition nodes into the SAME selection state a manual
+    // click would, so the existing Show Connections button (which only
+    // ever looked at `selectedNodes`, populated exclusively by clicks
+    // before this) works on picker-added nodes without the user having to
+    // separately click each one inside the graph first. Deliberately
+    // reuses `selectedNodes`/`setHi` as-is rather than inventing a second,
+    // parallel selection concept.
+    function selectByNames(names) {
+      var wanted = new Set(names || []);
+      V.forEach(function(n, idx) {
+        if (wanted.has(n.name)) selectedNodes.add(idx);
+      });
+      setHi(curr);
+    }
+
     function onContextMenu(ev) {
       var el = ev.target;
       while (el && el !== svg && !(el.dataset && el.dataset.i != null)) el = el.parentNode;
@@ -1145,5 +1163,6 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     };
     stopFn.showConnectionsOnly = showConnectionsOnly;
     stopFn.hideIsolatedNodes = hideIsolatedNodes;
+    stopFn.selectByNames = selectByNames;
     return stopFn;
   }
