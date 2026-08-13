@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Menu, X, TriangleAlert, Search } from 'lucide-react'
 import { theme } from './theme'
 import { NAV_ITEMS } from './navItems'
@@ -17,6 +17,12 @@ import { SourcesTab } from './components/SourcesTab'
 import { BackupTab } from './components/BackupTab'
 import { FindInPapersTab } from './components/FindInPapersTab'
 import { GlobalSearch } from './components/GlobalSearch'
+
+// Module-level, not a `?? []` inline fallback: a stable reference so
+// `conditions` below doesn't look like a fresh array every render to
+// conditionsQueryMatches' own useMemo (the exact footgun SymptomTab.jsx's
+// ALL_SYMPTOMS comment already documents for the same reason).
+const EMPTY_CONDITIONS = []
 
 // Ported from `$u` in gut-flora-atlas.readable.html (~line 16750-17219) -
 // the root app shell: data loading, the nav drawer, header, and tab
@@ -37,6 +43,10 @@ export default function App() {
   // Set by ConditionDetail's "Find taxa in papers" button (was `m` inside
   // $u); consumed once the Find-in-Papers tab (Zm) is ported.
   const [researchTargetId, setResearchTargetId] = useState(null)
+  // New (no minified-source equivalent): ConditionsGrid's search box, lifted
+  // up so its sibling ConditionsMap can highlight whatever's typed there -
+  // see ConditionsMap.jsx's own focusNames effect.
+  const [conditionsQuery, setConditionsQuery] = useState('')
 
   // New (no minified-source equivalent): GlobalSearch's own open/close
   // state, plus one "jump request" slot per destination tab that has its
@@ -66,8 +76,18 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [])
 
-  const conditions = data?.conditions ?? []
+  const conditions = data?.conditions ?? EMPTY_CONDITIONS
   const activeCondition = conditions.find((c) => c.id === activeConditionId) ?? null
+
+  // Memoized so ConditionsMap's own focusNames effect only re-fires when
+  // the query or the condition list actually changes, not on every
+  // unrelated App re-render (a fresh array literal here every render
+  // would otherwise look like "a new search" to that effect each time).
+  const conditionsQueryMatches = useMemo(() => {
+    const q = conditionsQuery.trim().toLowerCase()
+    if (!q) return []
+    return conditions.filter((c) => c.name.toLowerCase().includes(q)).map((c) => c.name)
+  }, [conditionsQuery, conditions])
 
   // CRUD helpers, ported from D/M/Q/S/z inside $u (~line 16832-16861).
   const updateCondition = (id, patch) =>
@@ -304,8 +324,14 @@ export default function App() {
       <main className="dish" style={{ minHeight: 'calc(100vh - 61px)' }}>
         {activeTab === 'conditions' && !activeCondition && (
           <>
-            <ConditionsGrid conditions={conditions} onOpen={setActiveConditionId} onAdd={addCondition} />
-            <ConditionsMap conditions={conditions} />
+            <ConditionsGrid
+              conditions={conditions}
+              onOpen={setActiveConditionId}
+              onAdd={addCondition}
+              query={conditionsQuery}
+              onQueryChange={setConditionsQuery}
+            />
+            <ConditionsMap conditions={conditions} focusNames={conditionsQueryMatches} />
           </>
         )}
         {activeTab === 'conditions' && activeCondition && (

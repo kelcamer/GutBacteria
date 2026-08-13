@@ -78,6 +78,14 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
   const NS = 'http://www.w3.org/2000/svg'
   const W = 1000, H = 820
   host.innerHTML = ''
+  // Matches the invisible hit-target circle radius set on every node below,
+  // and floors the physics collision distance the same way
+  // buildSymptomMap.js's own HIT_R already does - added here as a
+  // preemptive safety measure while bumping node sizes ("bubbles too small
+  // to click," app-wide), since a bigger hit target only stays useful if
+  // two nodes are never allowed to settle close enough for their hit
+  // targets to fully overlap.
+  const HIT_R = 14
 
   const nodes = []
   const condIdx = []
@@ -200,12 +208,12 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     g.setAttribute('data-i', i)
     g.style.cursor = 'pointer'
     const hit = document.createElementNS(NS, 'circle')
-    hit.setAttribute('r', 12)
+    hit.setAttribute('r', HIT_R)
     hit.setAttribute('fill', 'transparent')
     g.appendChild(hit)
     const circ = document.createElementNS(NS, 'circle')
     if (n.type === 'cond') {
-      const r = 8 + Math.min(n.deg, 24) * 0.22
+      const r = 9.5 + Math.min(n.deg, 24) * 0.24 // bumped from 8 + deg*0.22
       n.r = r
       circ.setAttribute('r', r)
       circ.setAttribute('fill', n.color)
@@ -222,7 +230,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
       tx.textContent = n.label
       g.appendChild(tx)
     } else {
-      const rr = 2.4 + Math.min(n.deg, 9) * 0.85
+      const rr = 3.4 + Math.min(n.deg, 9) * 0.95 // bumped from 2.4 + deg*0.85
       n.r = rr
       circ.setAttribute('r', rr)
       circ.setAttribute('fill', n.deg >= 2 ? '#B9A7F0' : '#7C6BA8')
@@ -274,7 +282,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
         const d2 = dx * dx + dy * dy + 0.01
         const d = Math.sqrt(d2)
         let force = (kRep / d2) * alpha
-        const mind = a.r + b.r + 2
+        const mind = Math.max(a.r, HIT_R) + Math.max(b.r, HIT_R) + 2
         if (d < mind) force += (mind - d) * 0.05
         const fx = (dx / d) * force, fy = (dy / d) * force
         a.vx += fx
@@ -858,6 +866,13 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
   // brain region or condition from search highlights it as if it had been
   // clicked, without needing a real pointer event.
   function selectByNames(names) {
+    // Clears first, not just adds: callers that re-invoke this on a
+    // still-live graph instance (e.g. re-searching for a different
+    // condition without the graph itself rebuilding) would otherwise
+    // accumulate every past selection forever. A no-op change for the
+    // existing "call once right after a fresh build" use, since
+    // selectedNodes is already empty there.
+    selectedNodes.clear()
     const wanted = new Set(names || [])
     V.forEach((n, idx) => {
       if (wanted.has(n.name)) selectedNodes.add(idx)

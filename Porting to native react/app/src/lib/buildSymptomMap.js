@@ -74,7 +74,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     // for their hit-targets to fully overlap - see that usage's comment for
     // why this needed its own constant instead of reusing each node's
     // visible radius (a.r/b.r).
-    var HIT_R = 12;
+    var HIT_R = 14; // bumped from 12 - "bubbles are too small to click," bumped one size step app-wide (both engines)
     var symptomsIn = (data && data.symptoms) || [],
       bacteriaIn = (data && data.bacteria) || [];
     var W = 1000,
@@ -399,7 +399,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       g.appendChild(hit);
       var circ = document.createElementNS(NS, "circle");
       if (n.type === "symptom") {
-        var r = 13 + Math.min(n.deg, 40) * 0.28;
+        var r = 15 + Math.min(n.deg, 40) * 0.3; // bumped from 13 + deg*0.28 - "make all nodes one size larger" for easier clicking
         n.r = r;
         circ.setAttribute("r", r);
         circ.setAttribute("fill", n.color);
@@ -418,7 +418,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           g.appendChild(tx);
         }
       } else {
-        var rr = 2.2 + Math.min(n.deg, 6) * 0.9;
+        var rr = 3.2 + Math.min(n.deg, 6) * 1.0; // bumped from 2.2 + deg*0.9
         n.r = rr;
         circ.setAttribute("r", rr);
         circ.setAttribute("fill", n.deg >= 2 ? "#B9A7F0" : "#7C6BA8");
@@ -1134,6 +1134,11 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     // reuses `selectedNodes`/`setHi` as-is rather than inventing a second,
     // parallel selection concept.
     function selectByNames(names) {
+      // Clears first, not just adds - see buildMap.js's identical fix for
+      // why (repeated calls on a still-live graph instance must not
+      // accumulate past selections forever). No-op for the existing
+      // "call once right after a fresh build" use.
+      selectedNodes.clear();
       var wanted = new Set(names || []);
       V.forEach(function(n, idx) {
         if (wanted.has(n.name)) selectedNodes.add(idx);

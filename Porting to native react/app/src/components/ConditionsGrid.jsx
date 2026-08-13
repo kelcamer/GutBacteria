@@ -15,12 +15,14 @@ import { Modal } from './Modal'
 // order), and a search box was added above it (matching the filter
 // pattern BacteriaIndex.jsx already uses) - with 40 conditions and
 // growing, plain scrolling stopped being enough.
-export function ConditionsGrid({ conditions, onOpen, onAdd }) {
+// `query`/`onQueryChange` are controlled from App.jsx (not local state)
+// so ConditionsMap.jsx, rendered as this grid's sibling, can highlight
+// whatever's currently typed here - see App.jsx's own state comment.
+export function ConditionsGrid({ conditions, onOpen, onAdd, query, onQueryChange }) {
   const [addOpen, setAddOpen] = useState(false)
   const [name, setName] = useState('')
   const [code, setCode] = useState('')
   const [color, setColor] = useState(palette[6])
-  const [query, setQuery] = useState('')
 
   const addCondition = () => {
     if (!name.trim()) return
@@ -52,13 +54,13 @@ export function ConditionsGrid({ conditions, onOpen, onAdd }) {
         <Search size={15} style={{ color: theme.muted, flexShrink: 0 }} />
         <input
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => onQueryChange(e.target.value)}
           placeholder="Find a condition"
           className="flex-1 bg-transparent py-2.5 text-sm outline-none"
           style={{ color: theme.text }}
         />
         {query && (
-          <button onClick={() => setQuery('')} style={{ color: theme.muted, flexShrink: 0 }} aria-label="Clear search">
+          <button onClick={() => onQueryChange('')} style={{ color: theme.muted, flexShrink: 0 }} aria-label="Clear search">
             <X size={14} />
           </button>
         )}

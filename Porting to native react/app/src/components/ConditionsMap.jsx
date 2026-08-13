@@ -7,7 +7,7 @@ import { buildMap } from '../lib/buildMap'
 // the ConditionsGrid on the Conditions tab's list view (not its own nav
 // item). Reuses `buildMap`/`GFA_buildMap` with pinType left undefined,
 // which the engine defaults to "cond" (conditions on the rim).
-export function ConditionsMap({ conditions }) {
+export function ConditionsMap({ conditions, focusNames }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
@@ -40,6 +40,20 @@ export function ConditionsMap({ conditions }) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- ported 1:1 from the original's own deps ([sig, mode, layoutState])
   }, [sig, mode, layoutState])
+
+  // New (no minified-source equivalent): typing a condition name in
+  // ConditionsGrid above (its sibling on this same tab) highlights it -
+  // and its connections - right here, via buildMap.js's selectByNames
+  // (added alongside this feature). Separate effect from the rebuild
+  // above since a new search match doesn't need the whole graph rebuilt,
+  // just the already-live graphRef told about it.
+  useEffect(() => {
+    // Always called, even with an empty list - selectByNames clears the
+    // prior selection first, so clearing the search box above properly
+    // clears the highlight here too instead of leaving it stuck on the
+    // last match.
+    graphRef.current?.selectByNames?.(focusNames || [])
+  }, [focusNames])
 
   const nBact = useMemo(() => {
     const set = {}
