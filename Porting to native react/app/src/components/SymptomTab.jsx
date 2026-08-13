@@ -23,7 +23,7 @@ const ALL_SYMPTOMS = [...(symptomData.symptoms || [])].sort((a, b) => a.localeCo
 // that default too, without having to find the "clear all" button - see
 // symptomMapConditionOverlay.js's header comment for the data-layer side,
 // and buildSymptomMap.js's onBackgroundClick param for the engine side.
-export function SymptomTab({ pinType = 'bact' }) {
+export function SymptomTab({ pinType = 'bact', initialSelection }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
@@ -39,6 +39,19 @@ export function SymptomTab({ pinType = 'bact' }) {
   // condition with zero symptoms checked still narrows for real (that
   // case is told apart from "nothing picked yet" there too).
   const [selectedSymptoms, setSelectedSymptoms] = useState([])
+
+  // New (no minified-source equivalent): GlobalSearch.jsx jumping to a
+  // specific symptom lands here with a fresh {symptoms: [name]} object -
+  // applied as a real picker selection (and the picker opened, so the
+  // selection is actually visible) rather than some separate highlight-only
+  // path, since the picker IS the mechanism for "show me just this."
+  useEffect(() => {
+    if (initialSelection?.symptoms?.length) {
+      setSelectedSymptoms(initialSelection.symptoms)
+      setShowPicker(true)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- fires once per fresh initialSelection object from App.jsx, not on every render
+  }, [initialSelection])
 
   // seedData is a static JSON import (always defined, stable reference) -
   // no need to memoize this itself, just avoid the `|| []` fallback

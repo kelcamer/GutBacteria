@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react'
-import { Menu, X, TriangleAlert } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
+import { Menu, X, TriangleAlert, Search } from 'lucide-react'
 import { theme } from './theme'
 import { NAV_ITEMS } from './navItems'
 import { useConditionsData } from './hooks/useConditionsData'
@@ -16,6 +16,7 @@ import { BacteriaIndex } from './components/BacteriaIndex'
 import { SourcesTab } from './components/SourcesTab'
 import { BackupTab } from './components/BackupTab'
 import { FindInPapersTab } from './components/FindInPapersTab'
+import { GlobalSearch } from './components/GlobalSearch'
 
 // Ported from `$u` in gut-flora-atlas.readable.html (~line 16750-17219) -
 // the root app shell: data loading, the nav drawer, header, and tab
@@ -37,8 +38,33 @@ export default function App() {
   // $u); consumed once the Find-in-Papers tab (Zm) is ported.
   const [researchTargetId, setResearchTargetId] = useState(null)
 
+  // New (no minified-source equivalent): GlobalSearch's own open/close
+  // state, plus one "jump request" slot per destination tab that has its
+  // own internal focus concept (Bacteria index, both symptom maps, both
+  // brain maps). Each is a fresh object every time a result is chosen
+  // (never reused/mutated), so the destination's own effect - keyed on
+  // that object identity - always re-fires even for a repeat search of the
+  // same thing. See GlobalSearch.jsx's header comment for the full picture.
+  const [searchOpen, setSearchOpen] = useState(false)
+  const [bacteriaFocusRequest, setBacteriaFocusRequest] = useState(null)
+  const [symptomSelectionRequest, setSymptomSelectionRequest] = useState(null)
+  const [brainRegionFocusRequest, setBrainRegionFocusRequest] = useState(null)
+
   const recentIds = useRecentConditions(activeConditionId)
   useSwipeGestures()
+
+  // Cmd/Ctrl+K opens the search palette from anywhere in the app - the
+  // header's search icon covers the same action for touch/no-keyboard use.
+  useEffect(() => {
+    const onKeyDown = (ev) => {
+      if ((ev.metaKey || ev.ctrlKey) && ev.key.toLowerCase() === 'k') {
+        ev.preventDefault()
+        setSearchOpen(true)
+      }
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [])
 
   const conditions = data?.conditions ?? []
   const activeCondition = conditions.find((c) => c.id === activeConditionId) ?? null
@@ -86,6 +112,26 @@ export default function App() {
     setActiveTab(id)
     setActiveConditionId(null)
     setDrawerOpen(false)
+  }
+
+  // GlobalSearch's single dispatch point: every result type lands on
+  // whichever tab already knows how to focus one specific item, using that
+  // tab's existing mechanism (see the state comment above).
+  const handleSearchSelect = (result) => {
+    setSearchOpen(false)
+    if (result.type === 'condition') {
+      setActiveTab('conditions')
+      setActiveConditionId(result.id)
+    } else if (result.type === 'bacteria') {
+      setActiveTab('index')
+      setBacteriaFocusRequest({ label: result.label, names: result.names })
+    } else if (result.type === 'symptom') {
+      setActiveTab('s2b')
+      setSymptomSelectionRequest({ symptoms: [result.name] })
+    } else if (result.type === 'brainRegion') {
+      setActiveTab('brain')
+      setBrainRegionFocusRequest({ name: result.name })
+    }
   }
 
   if (!data) {
@@ -136,6 +182,15 @@ export default function App() {
           </div>
         </div>
         <button
+          onClick={() => setSearchOpen(true)}
+          aria-label="Search everything"
+          title="Search everything (Ctrl/Cmd+K)"
+          className="rounded-lg p-2"
+          style={{ border: `1px solid ${theme.line}`, color: theme.muted }}
+        >
+          <Search size={16} />
+        </button>
+        <button
           onClick={() => setLooseMatching((v) => !v)}
           title="Loose matching treats Prevotella, Prevotellaceae and Prevotella 9 as the same lineage."
           className="rounded-full px-3 py-1.5 font-mono"
@@ -151,6 +206,14 @@ export default function App() {
           {looseMatching ? 'loose taxa' : 'exact taxa'}
         </button>
       </header>
+
+      <GlobalSearch
+        open={searchOpen}
+        onClose={() => setSearchOpen(false)}
+        conditions={conditions}
+        loose={looseMatching}
+        onSelect={handleSearchSelect}
+      />
 
       {saveFailed && (
         <div
@@ -261,9 +324,9 @@ export default function App() {
           />
         )}
         {activeTab === 'glossary' && <Glossary />}
-        {activeTab === 'b2s' && <SymptomTab pinType="bact" />}
-        {activeTab === 's2b' && <SymptomTab pinType="symptom" />}
-        {activeTab === 'brain' && <BrainTab pinType="cond" />}
+        {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} />}
+        {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} />}
+        {activeTab === 'brain' && <BrainTab pinType="cond" focusRegion={brainRegionFocusRequest} />}
         {activeTab === 'brain_r2c' && <BrainTab pinType="bact" />}
         {activeTab === 'compare' && (
           <CompareTab
@@ -279,6 +342,7 @@ export default function App() {
           <BacteriaIndex
             conditions={conditions}
             loose={looseMatching}
+            focusRequest={bacteriaFocusRequest}
             onOpen={(id) => {
               setActiveTab('conditions')
               setActiveConditionId(id)

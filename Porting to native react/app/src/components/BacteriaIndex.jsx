@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Search, X, TriangleAlert, Link2 } from 'lucide-react'
 import { theme } from '../theme'
-import { groupTaxa } from '../lib/looseMatch'
+import { groupBacteriaFromConditions } from '../lib/bacteriaGroups'
 import { RankBadge } from './RankBadge'
 import { Italic } from './Italic'
 import { DirTriangle } from './DirTriangle'
@@ -21,7 +21,7 @@ const FILTERS = [
   ['split', 'Opposite directions'],
 ]
 
-export function BacteriaIndex({ conditions, loose, onOpen }) {
+export function BacteriaIndex({ conditions, loose, onOpen, focusRequest }) {
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState('all')
   // New (no minified-source equivalent): clicking a bacterium's name below
@@ -34,21 +34,16 @@ export function BacteriaIndex({ conditions, loose, onOpen }) {
     if (focusedGroup) focusMapRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [focusedGroup])
 
-  const grouped = useMemo(() => {
-    const pairs = []
-    conditions.forEach((c) => c.taxa.forEach((t) => pairs.push({ c, t })))
-    return groupTaxa(
-      pairs.map((p) => p.t.name),
-      loose
-    )
-      .map((g) => {
-        const hits = pairs.filter((p) => g.names.includes(p.t.name))
-        const up = hits.filter((p) => p.t.dir === 'up')
-        const down = hits.filter((p) => p.t.dir === 'down')
-        return { label: g.label, names: g.names, hits, up, down, split: up.length > 0 && down.length > 0 }
-      })
-      .sort((x, y) => y.hits.length - x.hits.length || x.label.localeCompare(y.label))
-  }, [conditions, loose])
+  // External jump-in, e.g. from GlobalSearch: a fresh {label, names} object
+  // means "focus this bacterium" - applied here rather than read directly
+  // in the click handler below so both entry points (a real click on a
+  // card, and an outside search result) converge on the same state and
+  // the same scroll-into-view effect above.
+  useEffect(() => {
+    if (focusRequest) setFocusedGroup(focusRequest)
+  }, [focusRequest])
+
+  const grouped = useMemo(() => groupBacteriaFromConditions(conditions, loose), [conditions, loose])
 
   const rows = grouped.filter((g) => {
     if (filter === 'split' && !g.split) return false

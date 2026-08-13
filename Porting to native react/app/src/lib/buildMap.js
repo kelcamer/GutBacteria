@@ -850,8 +850,22 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     host.innerHTML = ''
     if (tip) tip.style.opacity = '0'
   }
+  // New (no minified-source equivalent) - mirrors buildSymptomMap.js's own
+  // selectByNames exactly (same V-array-position semantics showConnectionsOnly
+  // above already relies on), added for GlobalSearch.jsx: jumping to a
+  // brain region or condition from search highlights it as if it had been
+  // clicked, without needing a real pointer event.
+  function selectByNames(names) {
+    const wanted = new Set(names || [])
+    V.forEach((n, idx) => {
+      if (wanted.has(n.name)) selectedNodes.add(idx)
+    })
+    setHi(curr)
+  }
+
   stopFn.showConnectionsOnly = showConnectionsOnly
   stopFn.hideIsolatedNodes = hideIsolatedNodes
+  stopFn.selectByNames = selectByNames
   return stopFn
 }
 

@@ -11,7 +11,7 @@ import { BRAIN_DATA } from '../data/brainData'
 // engine used by ConditionsMap - buildMap's brain-tooltip branch keys off
 // BRAIN_REGION_INFO matching a taxon's name, which only brain-region names
 // do.
-export function BrainTab({ pinType }) {
+export function BrainTab({ pinType, focusRegion }) {
   pinType = pinType || 'cond'
   const conds = BRAIN_DATA
   const hostRef = useRef(null)
@@ -41,6 +41,15 @@ export function BrainTab({ pinType }) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- ported 1:1 from the original's own deps ([mode, pinType, layoutState])
   }, [mode, pinType, layoutState])
+
+  // New (no minified-source equivalent): GlobalSearch.jsx jumping to a
+  // specific brain region lands here and highlights it, same as clicking
+  // it directly - a separate effect from the one above since selecting a
+  // node doesn't need the whole graph rebuilt, just the already-live
+  // graphRef told about it.
+  useEffect(() => {
+    if (focusRegion) graphRef.current?.selectByNames?.([focusRegion.name])
+  }, [focusRegion])
 
   const nRegion = useMemo(() => {
     const set = {}
