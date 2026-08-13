@@ -10232,11 +10232,15 @@ Error generating stack: ` + r.message + `
         "name": "Non-secretor (FUT2)",
         "abbr": "FUT2",
         "color": "#C3E88D",
-        "note": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on — so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3×10⁻¹⁸, n=8,344 T1D cases). Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each. Cognitive link worth flagging: Clostridiaceae — reduced in non-secretors (Kumar et al. 2015) — is one of only two bacteria this app links to Poor working memory (PMID 35010939, its depletion associated with worse working memory quality), so non-secretor status may plausibly extend to reduced working memory via this shared bacterial pathway, though this specific chain hasn't been tested directly in one study.",
+        "note": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on — so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3×10⁻¹⁸, n=8,344 T1D cases) that isn't just genetic on its own — a 2020 mini-review (PMID 33425974) reports non-secretor children share the SAME low-Bifidobacterium/high-Bacteroides gut-microbiota signature as children with T1D itself, proposing FUT2-shaped early-life bifidobacteria colonization as a plausible mechanistic bridge between the two. See also this app's Type 1 Diabetes condition. Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each. Cognitive link worth flagging: Clostridiaceae — reduced in non-secretors (Kumar et al. 2015) — is one of only two bacteria this app links to Poor working memory (PMID 35010939, its depletion associated with worse working memory quality), so non-secretor status may plausibly extend to reduced working memory via this shared bacterial pathway, though this specific chain hasn't been tested directly in one study.",
         "links": [{
           "id": "seed_210",
           "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
           "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+        }, {
+          "id": "seed_209_t1d_l1",
+          "label": "Giampaoli et al. 2020, Front Nutr — mini-review, FUT2 non-secretor gut microbiota shares T1D's signature (PMID 33425974)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33425974/"
         }, {
           "id": "seed_209_fp30_l1",
           "label": "Peptic ulcers — Suadicani et al. 1999, Scand J Gastroenterol, Copenhagen Male Study n=3,387",
@@ -15682,7 +15686,7 @@ Error generating stack: ` + r.message + `
         "name": "Type 1 Diabetes",
         "abbr": "T1D",
         "color": "#FF6F91",
-        "note": "Genetically linked to FUT2 non-secretor status: the nonsecretor A/A genotype of rs601338 confers T1D susceptibility (OR=1.29, 95% CI 1.20–1.37, P=4.3×10⁻¹⁸ across 8,344 T1D cases, 10,008 controls, 3,360 T1D families) — the authors describe \"an intriguing relationship between host resistance to infections and susceptibility to autoimmune disease.\" Bacteria taxa below are from a separate, direct gut-microbiome case-control study.",
+        "note": "Genetically linked to FUT2 non-secretor status: the nonsecretor A/A genotype of rs601338 confers T1D susceptibility (OR=1.29, 95% CI 1.20–1.37, P=4.3×10⁻¹⁸ across 8,344 T1D cases, 10,008 controls, 3,360 T1D families) — the authors describe \"an intriguing relationship between host resistance to infections and susceptibility to autoimmune disease.\" Bacteria taxa below are from a separate, direct gut-microbiome case-control study — and the overlap isn't just genetic: a 2020 mini-review reports non-secretor children share the SAME gut-microbiota signature as children with T1D (both show fewer bifidobacteria and more Bacteroides), the exact Bifidobacterium-down/Bacteroides-up pattern this app's own T1D taxa list below already shows, and proposes FUT2-shaped early-life bifidobacteria colonization as a plausible mechanistic bridge. See also this app's Non-secretor (FUT2) condition.",
         "links": [{
           "id": "new_t1d_l1",
           "label": "Smyth et al. 2011, Diabetes — FUT2 nonsecretor status links T1D susceptibility and resistance to infection (PMID 22025780)",
@@ -15691,6 +15695,10 @@ Error generating stack: ` + r.message + `
           "id": "new_t1d_l2",
           "label": "Leiva-Gea et al. 2018, Diabetes Care — case-control gut microbiome study (PMID 30224347)",
           "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+        }, {
+          "id": "new_t1d_l3",
+          "label": "Giampaoli et al. 2020, Front Nutr — mini-review, FUT2 non-secretor gut microbiota and T1D susceptibility in children (PMID 33425974)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33425974/"
         }],
         "taxa": [{
           "id": "new_t1d_t1",
