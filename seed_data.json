@@ -11126,7 +11126,7 @@
    "name": "Estrogen",
    "abbr": "E2",
    "color": "#FBBF24",
-   "note": "Host hormone-level entry, not a disease state — tracks the \"estrobolome\": gut bacteria whose abundance correlates with circulating/urinary estrogen or estrogen-metabolite levels in human cohort studies (mostly postmenopausal women; some PCOS cohorts). This is a genuinely emerging, smaller-sample, exploratory research area compared to most other conditions in this app — several source studies explicitly caution their own taxon-level findings should be treated as exploratory, and that caveat is preserved here rather than smoothed over. Complements this app's separate Menopause (transition) and Perimenopause entries, which track the reciprocal, better-powered question (what changes about the microbiome as estrogen declines) rather than this one (what correlates with estrogen level directly). See also this app's PCOS and Endometriosis conditions — both are fundamentally estrogen-driven, and several taxa here (Collinsella, Sutterella, Subdoligranulum) come from the same PCOS cohorts cited there.",
+   "note": "Host hormone-level entry, not a disease state — tracks the \"estrobolome\": gut bacteria whose abundance correlates with circulating/urinary estrogen or estrogen-metabolite levels in human cohort studies. This is a genuinely emerging, smaller-sample, exploratory research area compared to most other conditions in this app — several source studies explicitly caution their own taxon-level findings should be treated as exploratory, and that caveat is preserved here rather than smoothed over. Complements this app's separate Menopause (transition) and Perimenopause entries, which track the reciprocal, better-powered question (what changes about the microbiome as estrogen declines) rather than this one (what correlates with estrogen level directly). See also this app's PCOS and Endometriosis conditions — both are fundamentally estrogen-driven. Taxa sourced ONLY from disease-specific subpopulations (e.g. a PCOS-only cohort) rather than a healthy/general population or a direct hormone-level correlation are deliberately excluded here, since the goal of this entry is estrogen's own effect, not PCOS's — see the Sutterella entry below for a case where that distinction reverses the finding entirely.",
    "links": [
     {
      "id": "new_estro_l1",
@@ -11142,11 +11142,6 @@
      "id": "new_estro_l3",
      "label": "Shin et al. 2019, Res Microbiol — serum sex steroid hormones vs. gut microbiome, n=57 (PMID 30940469)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30940469/"
-    },
-    {
-     "id": "new_estro_l4",
-     "label": "Zhou et al. 2020, Endocr Connect — gut microbiota in PCOS women (PMID 31972546)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/31972546/"
     },
     {
      "id": "new_estro_l5",
@@ -11212,18 +11207,13 @@
      "id": "new_estro_t3",
      "name": "Subdoligranulum",
      "dir": "up",
-     "refs": "PMID 23259758; PMID 31972546",
-     "note": "Positively correlated with total estrogens (β=0.59, P=.03) in the same small preliminary cohort; separately reported elevated in obese PCOS women's estradiol-associated microbiome profile.",
+     "refs": "PMID 23259758",
+     "note": "Positively correlated with total estrogens (β=0.59, P=.03) in the same small preliminary mixed men/postmenopausal-women cohort. (A separate PCOS-only report of this genus being elevated in obese PCOS women's estradiol-associated profile was dropped from this entry — that population is confounded by PCOS status itself, not a clean read on estrogen alone; see this condition's own top-level note.)",
      "links": [
       {
        "id": "new_estro_t3_l1",
        "label": "Flores et al. 2012, J Transl Med",
        "url": "https://pubmed.ncbi.nlm.nih.gov/23259758/"
-      },
-      {
-       "id": "new_estro_t3_l2",
-       "label": "Zhou et al. 2020, Endocr Connect (via review PMID 35283442)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/31972546/"
       }
      ]
     },
@@ -11242,30 +11232,21 @@
      ]
     },
     {
-     "id": "new_estro_t5",
-     "name": "Collinsella",
-     "dir": "up",
-     "refs": "PMID 31972546",
-     "note": "Reported positively correlated with estradiol specifically in obese PCOS women, per a 2022 systematic review's synthesis of Zhou et al. 2020.",
-     "links": [
-      {
-       "id": "new_estro_t5_l1",
-       "label": "Zhou et al. 2020, Endocr Connect (via review PMID 35283442)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/31972546/"
-      }
-     ]
-    },
-    {
      "id": "new_estro_t6",
      "name": "Sutterella",
-     "dir": "up",
-     "refs": "PMID 31972546",
-     "note": "Reported associated with estradiol in obese PCOS women, per the same review's synthesis of Zhou et al. 2020.",
+     "dir": "down",
+     "refs": "PMID 35675542; PMID 41978103",
+     "note": "CORRECTED (was previously listed as 'up', sourced only from a PCOS-only obese-women cohort — that finding is confounded by PCOS status, not a clean read on estrogen alone, and has been dropped). The direction here is inferred instead from this app's own Menopause (transition) data: Sutterella wadsworthensis is consistently reported ENRICHED in low-estrogen postmenopausal women vs. higher-estrogen premenopausal women (PMID 35675542), a finding a 2026 review of estrogen/gut-microbiome physiology reaffirms (PMID 41978103). If low estrogen tracks with more Sutterella, higher estrogen should track with less — the opposite of the discarded PCOS-only claim. This is a cross-referenced inference, not a direct estrogen-dosing study of Sutterella — flagged as such rather than presented as equally strong as this entry's directly-measured taxa.",
      "links": [
       {
        "id": "new_estro_t6_l1",
-       "label": "Zhou et al. 2020, Endocr Connect (via review PMID 35283442)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/31972546/"
+       "label": "Peters et al. 2022 (HCHS/SOL), postmenopausal vs. premenopausal comparator, n=1,027/295",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+      },
+      {
+       "id": "new_estro_t6_l2",
+       "label": "Lim et al. 2026, Nutrients — review reaffirming the postmenopausal Sutterella enrichment",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41978103/"
       }
      ]
     },
@@ -11318,22 +11299,12 @@
    "name": "Testosterone",
    "abbr": "T",
    "color": "#0EA5E9",
-   "note": "Host hormone-level entry, not a disease state — tracks the emerging \"testobolome\" concept (a testosterone-metabolism analogue to the estrobolome): gut bacteria whose abundance correlates with serum testosterone, drawn mostly from small human cohort studies (healthy men, PCOS women, male T2D patients). A landmark 2013 Science study in GERM-FREE MICE (Markle et al., PMID 23328391) showed this relationship can run causally in both directions — transferring male gut microbiota into female mice raised their testosterone — flagged explicitly here as a mouse mechanistic finding, not a human correlation, but included because it's the strongest evidence this is a real bidirectional pathway and not just a marker. See also this app's PCOS condition — hyperandrogenism (elevated testosterone) is one of PCOS's hallmark diagnostic features, and several taxa here (Paraprevotella, Raoultella, Akkermansia) are drawn from the same PCOS cohorts cited there.",
+   "note": "Host hormone-level entry, not a disease state — tracks the emerging \"testobolome\" concept (a testosterone-metabolism analogue to the estrobolome): gut bacteria whose abundance correlates with serum testosterone. Taxa sourced only from disease-specific subpopulations (male type 2 diabetics, PCOS-vs-healthy group comparisons) were removed from this entry after an audit — those cohorts' findings are confounded by the disease itself, not a clean read on testosterone alone (see this app's Estrogen entry's Sutterella correction for a case where this exact confound flipped a finding's direction). What remains here is either a healthy-cohort serum-level correlation, or a genus-level correlation computed across a whole mixed sample against continuous hormone level (a legitimate way to isolate the hormone's own association) rather than a disease-status comparison. A landmark 2013 Science study in GERM-FREE MICE (Markle et al., PMID 23328391) showed this relationship can run causally in both directions — transferring male gut microbiota into female mice raised their testosterone — flagged explicitly here as a mouse mechanistic finding, not a human correlation, but included because it's the strongest evidence this is a real bidirectional pathway and not just a marker. See also this app's PCOS condition — hyperandrogenism (elevated testosterone) is one of PCOS's hallmark diagnostic features.",
    "links": [
     {
      "id": "new_testo_l1",
      "label": "Shin et al. 2019, Res Microbiol — serum sex steroid hormones vs. gut microbiome, n=57 (PMID 30940469)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30940469/"
-    },
-    {
-     "id": "new_testo_l2",
-     "label": "Liu et al. 2022, Front Endocrinol (Lausanne) — gut microbiota and testosterone in male T2D patients (PMID 35399957)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/35399957/"
-    },
-    {
-     "id": "new_testo_l3",
-     "label": "Zhou et al. 2020, Endocr Connect — gut microbiota in PCOS women (PMID 31972546)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/31972546/"
     },
     {
      "id": "new_testo_l4",
@@ -11439,48 +11410,6 @@
      ]
     },
     {
-     "id": "new_testo_t5",
-     "name": "Blautia",
-     "dir": "down",
-     "refs": "PMID 35399957",
-     "note": "Statistically significant negative association with testosterone level in male patients with type 2 diabetes.",
-     "links": [
-      {
-       "id": "new_testo_t5_l1",
-       "label": "Liu et al. 2022, Front Endocrinol (Lausanne)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/35399957/"
-      }
-     ]
-    },
-    {
-     "id": "new_testo_t6",
-     "name": "Lachnoclostridium",
-     "dir": "down",
-     "refs": "PMID 35399957",
-     "note": "Statistically significant negative association with testosterone level in the same male T2D cohort.",
-     "links": [
-      {
-       "id": "new_testo_t6_l1",
-       "label": "Liu et al. 2022, Front Endocrinol (Lausanne)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/35399957/"
-      }
-     ]
-    },
-    {
-     "id": "new_testo_t7",
-     "name": "Bergeyella",
-     "dir": "down",
-     "refs": "PMID 35399957",
-     "note": "Statistically significant negative association with testosterone level in the same male T2D cohort.",
-     "links": [
-      {
-       "id": "new_testo_t7_l1",
-       "label": "Liu et al. 2022, Front Endocrinol (Lausanne)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/35399957/"
-      }
-     ]
-    },
-    {
      "id": "new_testo_t8",
      "name": "Paraprevotella",
      "dir": "up",
@@ -11505,20 +11434,6 @@
        "id": "new_testo_t9_l1",
        "label": "Insenser et al. 2018, JCEM (via review PMID 35283442)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/29897462/"
-      }
-     ]
-    },
-    {
-     "id": "new_testo_t10",
-     "name": "Akkermansia",
-     "dir": "down",
-     "refs": "PMID 35283442",
-     "note": "Reported inversely correlated with testosterone in a PCOS-and-healthy-women cohort, per a 2022 systematic review's synthesis.",
-     "links": [
-      {
-       "id": "new_testo_t10_l1",
-       "label": "Liu et al. 2017 (via review PMID 35283442)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/35283442/"
       }
      ]
     }
