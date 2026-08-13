@@ -4,6 +4,11 @@ import { symptomData, seedData } from '../data'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { buildOverlayMapData } from '../lib/symptomMapConditionOverlay'
 
+// Module-level, not per-render: a stable list AND a stable default value
+// for useState below (symptomData is a static JSON import, so this never
+// needs to change after the module loads).
+const ALL_SYMPTOMS = [...(symptomData.symptoms || [])].sort((a, b) => a.localeCompare(b))
+
 // Ported verbatim from `GFA_SymptomTab` in gut-flora-atlas.readable.html
 // (~line 25998-26211) - the React wrapper that mounts buildSymptomMap into
 // a plain <div> ref, used for both the global Bacteria->Symptom and
@@ -27,7 +32,12 @@ export function SymptomTab({ pinType = 'bact' }) {
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
   const [extraConditionIds, setExtraConditionIds] = useState([])
-  const [selectedSymptoms, setSelectedSymptoms] = useState([])
+  // Defaults to every symptom CHECKED, not empty - so the picker honestly
+  // shows what's included (all of it) instead of "nothing highlighted"
+  // secretly meaning "show everything." Real filtering only happens once
+  // you actually uncheck something. See symptomMapConditionOverlay.js's
+  // buildOverlayMapData for the data-layer half of this.
+  const [selectedSymptoms, setSelectedSymptoms] = useState(ALL_SYMPTOMS)
 
   // seedData is a static JSON import (always defined, stable reference) -
   // no need to memoize this itself, just avoid the `|| []` fallback
@@ -44,7 +54,7 @@ export function SymptomTab({ pinType = 'bact' }) {
   )
 
   const clearPicker = () => {
-    setSelectedSymptoms([])
+    setSelectedSymptoms(ALL_SYMPTOMS) // back to "everything checked," the real default - not []
     setExtraConditionIds([])
   }
 
@@ -101,8 +111,10 @@ export function SymptomTab({ pinType = 'bact' }) {
       ? 'Symptom clusters sit in the middle; every bacterium that moves them sits on the rim, pulled inward only by how many symptoms it touches — so genera linked across many symptom domains drift toward the center. '
       : "Symptoms sit on the rim; every bacterium is pulled inward toward the symptoms it's linked to, so bacteria touching multiple symptom domains drift toward the middle. "
 
-  const allSymptoms = useMemo(() => [...(symptomData.symptoms || [])].sort((a, b) => a.localeCompare(b)), [])
-  const hasSelection = selectedSymptoms.length > 0 || extraConditionIds.length > 0
+  // "Customized" means the current state differs from the real default
+  // (every symptom checked, no conditions) - not just "something is
+  // non-empty," since selectedSymptoms is never actually empty at rest.
+  const isCustomized = selectedSymptoms.length !== ALL_SYMPTOMS.length || extraConditionIds.length > 0
 
   return (
     <div className="p-4 safe-bottom">
@@ -138,18 +150,18 @@ export function SymptomTab({ pinType = 'bact' }) {
         {showPicker && (
           <div>
             <p className="mb-2" style={{ color: theme.muted, fontSize: 12 }}>
-              Pick specific symptoms to narrow the map to just those (leave none picked to show every symptom, the
-              default). Add conditions on top to overlay them as extra nodes wired to whichever bacteria are
-              currently shown — a focused way to see which conditions move the same bacteria as the symptoms you
-              picked, from a gut-flora perspective. Click the map's background at any time to clear this and go
-              back to the full map.
+              Every symptom is checked by default — that's the full map. Uncheck any to narrow the map down to just
+              what's left checked. Add conditions on top to overlay them as extra nodes wired to whichever bacteria
+              are currently shown — a focused way to see which conditions move the same bacteria as the symptoms
+              you picked, from a gut-flora perspective. Click the map's background at any time to reset back to
+              every symptom checked and no conditions.
             </p>
             <div className="mb-3">
               <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
                 SYMPTOMS
               </div>
               <div className="flex flex-wrap gap-1.5 mb-2">
-                {allSymptoms.map((s) => {
+                {ALL_SYMPTOMS.map((s) => {
                   const on = selectedSymptoms.includes(s)
                   return (
                     <button
@@ -194,13 +206,13 @@ export function SymptomTab({ pinType = 'bact' }) {
                   })}
               </div>
             </div>
-            {hasSelection && (
+            {isCustomized && (
               <button
                 onClick={clearPicker}
                 className="rounded-lg px-2 py-1 text-xs"
                 style={{ border: `1px solid ${theme.line}`, color: theme.muted }}
               >
-                × clear all
+                ↻ reset to every symptom, no conditions
               </button>
             )}
           </div>

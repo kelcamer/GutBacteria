@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Search, X, TriangleAlert, Link2 } from 'lucide-react'
 import { theme } from '../theme'
 import { groupTaxa } from '../lib/looseMatch'
 import { RankBadge } from './RankBadge'
 import { Italic } from './Italic'
 import { DirTriangle } from './DirTriangle'
+import { BacteriumFocusMap } from './BacteriumFocusMap'
 
 // Ported from `Xm` in gut-flora-atlas.readable.html (~line 29603-29804,
 // 202 lines) - the A-Z bacteria index: every taxon across every condition,
@@ -23,6 +24,15 @@ const FILTERS = [
 export function BacteriaIndex({ conditions, loose, onOpen }) {
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState('all')
+  // New (no minified-source equivalent): clicking a bacterium's name below
+  // jumps to a focused node map of everything it touches, at the bottom
+  // of this same tab - see BacteriumFocusMap.jsx / bacteriumFocusMap.js.
+  const [focusedGroup, setFocusedGroup] = useState(null)
+  const focusMapRef = useRef(null)
+
+  useEffect(() => {
+    if (focusedGroup) focusMapRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [focusedGroup])
 
   const grouped = useMemo(() => {
     const pairs = []
@@ -110,9 +120,16 @@ export function BacteriaIndex({ conditions, loose, onOpen }) {
           >
             <div className="flex items-center gap-2 mb-2">
               <RankBadge name={g.label} />
-              <Italic className="truncate" style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 16 }}>
-                {g.label}
-              </Italic>
+              <button
+                onClick={() => setFocusedGroup({ label: g.label, names: g.names })}
+                className="truncate text-left"
+                title={`See everything ${g.label} touches`}
+                style={{ background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}
+              >
+                <Italic style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 16, textDecoration: 'underline', textDecorationColor: theme.line, textUnderlineOffset: 3 }}>
+                  {g.label}
+                </Italic>
+              </button>
               <span className="font-mono ml-auto" style={{ fontSize: 10, color: theme.muted }}>
                 {g.hits.length}×
               </span>
@@ -159,6 +176,17 @@ export function BacteriaIndex({ conditions, loose, onOpen }) {
             </div>
           </div>
         ))}
+      </div>
+
+      <div ref={focusMapRef}>
+        {focusedGroup && (
+          <BacteriumFocusMap
+            key={focusedGroup.label}
+            label={focusedGroup.label}
+            names={focusedGroup.names}
+            onClose={() => setFocusedGroup(null)}
+          />
+        )}
       </div>
     </div>
   )

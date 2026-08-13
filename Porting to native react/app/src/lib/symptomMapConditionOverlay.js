@@ -84,29 +84,28 @@ export function filterToSymptoms(data, selectedSymptomNames) {
   return { ...data, symptoms, bacteria }
 }
 
-// Combines both customizations for SymptomTab.jsx's map-builder picker.
+// Combines both customizations for SymptomTab.jsx's map-builder picker:
+// filters {symptoms, bacteria} down to EXACTLY the given symptom names,
+// then overlays the given conditions on top of that (already-narrowed)
+// set. Purely literal - no "empty means show everything" magic here.
 //
-// BUG FIX: this used to just be
-// `withExtraConditions(filterToSymptoms(data, selectedSymptomNames), extraConditions)`
-// - correct when symptoms were picked, but wrong when only conditions were:
-// filterToSymptoms treats an empty symptom list as "no filter" (its own
-// pre-existing, correct default for when NOTHING has been picked at all),
-// so picking e.g. only PCOS and OCD with zero symptoms selected still
-// overlaid them onto the full 44-symptom map instead of narrowing to just
-// those two - reported as "it correctly selects those 2 but does not
-// dynamically recreate the map."
-//
-// Fix: once ANY picker selection is active (symptoms and/or conditions),
-// the map is built EXCLUSIVELY from it - no silent "all symptoms"
-// fallback just because the symptom half of the selection happens to be
-// empty. Only bypass entirely (return `data` untouched) when NEITHER
-// symptoms nor conditions have been picked, matching the original
-// "everything" default.
+// HISTORY: an earlier version of this function DID special-case an empty
+// selectedSymptomNames as "no filter, show all," to match the picker's
+// original default (nothing checked = show everything). That caused two
+// separate real bugs: picking only conditions with zero symptoms checked
+// silently fell back to the full 44-symptom map instead of narrowing (an
+// empty symptom list looked identical to "nothing picked yet" even though
+// conditions WERE picked); and once the picker itself was changed to
+// default every symptom to CHECKED (so pills honestly show what's
+// included, instead of "nothing highlighted" secretly meaning "show
+// everything" - see SymptomTab.jsx), a real fully-empty selection became
+// a deliberate user action ("I unchecked every symptom") that deserves to
+// actually show nothing, not be silently overridden back to "show
+// everything." The "default to everything" behavior now lives entirely
+// in SymptomTab.jsx's initial state (selectedSymptoms starts as every
+// symptom name) - this function no longer needs, or should have, its own
+// opinion about what an empty list means.
 export function buildOverlayMapData(data, selectedSymptomNames, extraConditions) {
-  const hasSymptomSelection = !!(selectedSymptomNames && selectedSymptomNames.length)
-  const hasConditionSelection = !!(extraConditions && extraConditions.length)
-  if (!hasSymptomSelection && !hasConditionSelection) return data
-
   const keep = new Set(selectedSymptomNames || [])
   const symptoms = (data.symptoms || []).filter((s) => keep.has(s))
   const bacteria = (data.bacteria || []).map((b) => ({
@@ -118,7 +117,7 @@ export function buildOverlayMapData(data, selectedSymptomNames, extraConditions)
   // Bacteria are kept around (by name) even with every link stripped, so
   // withExtraConditions below can still find and attach to them - a
   // condition should be able to surface a bacterium even when zero
-  // symptoms were picked, which is the whole point of picking only
+  // symptoms were checked, which is the whole point of picking only
   // conditions.
   return withExtraConditions({ ...data, symptoms, bacteria }, extraConditions)
 }
