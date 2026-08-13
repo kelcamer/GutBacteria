@@ -2,15 +2,25 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
 import { symptomData, seedData } from '../data'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
-import { withExtraConditions } from '../lib/symptomMapConditionOverlay'
+import { withExtraConditions, buildOverlayMapData } from '../lib/symptomMapConditionOverlay'
 
 // Ported verbatim from `GFA_SymptomTab` in gut-flora-atlas.readable.html
 // (~line 25998-26211) - the React wrapper that mounts buildSymptomMap into
 // a plain <div> ref, used for both the global Bacteria->Symptom and
-// Symptom->Bacteria maps (same engine, `pinType` swapped). The "Add
-// additional conditions?" picker below is new in this port (no minified
-// source equivalent) - see symptomMapConditionOverlay.js's header comment
-// for why it's built as a data-overlay rather than an engine change.
+// Symptom->Bacteria maps (same engine, `pinType` swapped).
+//
+// The picker below is new in this port (no minified source equivalent),
+// and currently diverges by direction on purpose, as a trial: on
+// Symptom->Bacteria (pinType="symptom") it's the newer "build this map"
+// picker - pick exactly which symptoms AND which conditions to include,
+// and the map is constructed from just that selection (an empty
+// selection means "no filter, show everything," the original default).
+// On Bacteria->Symptom (pinType="bact") it's still the earlier,
+// simpler "add conditions on top of everything" overlay. Once there's a
+// verdict on the newer picker, both directions should converge on
+// whichever one wins rather than staying permanently split - see
+// symptomMapConditionOverlay.js's header comment for the data-layer side
+// of this.
 export function SymptomTab({ pinType = 'bact' }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
@@ -18,8 +28,11 @@ export function SymptomTab({ pinType = 'bact' }) {
   const graphRef = useRef(null)
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
-  const [showConditionPicker, setShowConditionPicker] = useState(false)
+  const [showPicker, setShowPicker] = useState(false)
   const [extraConditionIds, setExtraConditionIds] = useState([])
+  const [selectedSymptoms, setSelectedSymptoms] = useState([])
+
+  const isBuilderMode = pinType === 'symptom'
 
   // seedData is a static JSON import (always defined, stable reference) -
   // no need to memoize this itself, just avoid the `|| []` fallback
@@ -30,7 +43,13 @@ export function SymptomTab({ pinType = 'bact' }) {
     () => conditions.filter((c) => extraConditionIds.includes(c.id)),
     [conditions, extraConditionIds]
   )
-  const mapData = useMemo(() => withExtraConditions(symptomData, extraConditions), [extraConditions])
+  const mapData = useMemo(
+    () =>
+      isBuilderMode
+        ? buildOverlayMapData(symptomData, selectedSymptoms, extraConditions)
+        : withExtraConditions(symptomData, extraConditions),
+    [isBuilderMode, selectedSymptoms, extraConditions]
+  )
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current) return
@@ -73,6 +92,8 @@ export function SymptomTab({ pinType = 'bact' }) {
       ? 'Symptom clusters sit in the middle; every bacterium that moves them sits on the rim, pulled inward only by how many symptoms it touches — so genera linked across many symptom domains drift toward the center. '
       : "Symptoms sit on the rim; every bacterium is pulled inward toward the symptoms it's linked to, so bacteria touching multiple symptom domains drift toward the middle. "
 
+  const allSymptoms = useMemo(() => [...(symptomData.symptoms || [])].sort((a, b) => a.localeCompare(b)), [])
+
   return (
     <div className="p-4 safe-bottom">
       <div className="flex items-center flex-wrap gap-2 mb-1">
@@ -98,13 +119,86 @@ export function SymptomTab({ pinType = 'bact' }) {
 
       <div className="mb-4" style={{ maxWidth: 700 }}>
         <button
-          onClick={() => setShowConditionPicker(!showConditionPicker)}
+          onClick={() => setShowPicker(!showPicker)}
           className="text-sm mb-2"
           style={{ color: theme.muted, background: 'transparent', border: 'none', cursor: 'pointer', padding: 0 }}
         >
-          {showConditionPicker ? '▾ ' : '▸ '}Add additional conditions?
+          {showPicker ? '▾ ' : '▸ '}
+          {isBuilderMode ? 'Build this map from specific symptoms and conditions?' : 'Add additional conditions?'}
         </button>
-        {showConditionPicker && (
+        {showPicker && isBuilderMode && (
+          <div>
+            <p className="mb-2" style={{ color: theme.muted, fontSize: 12 }}>
+              Pick specific symptoms to narrow the map to just those (leave none picked to show every symptom, the
+              default). Add conditions on top to overlay them as extra nodes wired to whichever bacteria are
+              currently shown — a focused way to see which conditions move the same bacteria as the symptoms you
+              picked, from a gut-flora perspective.
+            </p>
+            <div className="mb-3">
+              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+                SYMPTOMS
+              </div>
+              <div className="flex flex-wrap gap-1.5 mb-2">
+                {allSymptoms.map((s) => {
+                  const on = selectedSymptoms.includes(s)
+                  return (
+                    <button
+                      key={s}
+                      onClick={() => setSelectedSymptoms(on ? selectedSymptoms.filter((x) => x !== s) : [...selectedSymptoms, s])}
+                      className="rounded-full px-2.5 py-1 text-xs"
+                      style={{
+                        background: on ? '#2DD4BF33' : theme.ink2,
+                        border: `1px solid ${on ? '#2DD4BF' : theme.line}`,
+                        color: on ? theme.text : theme.muted,
+                      }}
+                    >
+                      {s}
+                    </button>
+                  )
+                })}
+              </div>
+              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+                CONDITIONS
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {[...conditions]
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((c) => {
+                    const on = extraConditionIds.includes(c.id)
+                    return (
+                      <button
+                        key={c.id}
+                        onClick={() =>
+                          setExtraConditionIds(on ? extraConditionIds.filter((x) => x !== c.id) : [...extraConditionIds, c.id])
+                        }
+                        className="rounded-full px-2.5 py-1 text-xs"
+                        style={{
+                          background: on ? c.color + '33' : theme.ink2,
+                          border: `1px solid ${on ? c.color : theme.line}`,
+                          color: on ? theme.text : theme.muted,
+                        }}
+                      >
+                        {c.name}
+                      </button>
+                    )
+                  })}
+              </div>
+            </div>
+            {(selectedSymptoms.length > 0 || extraConditionIds.length > 0) && (
+              <button
+                onClick={() => {
+                  setSelectedSymptoms([])
+                  setExtraConditionIds([])
+                }}
+                className="rounded-lg px-2 py-1 text-xs"
+                style={{ border: `1px solid ${theme.line}`, color: theme.muted }}
+              >
+                × clear all
+              </button>
+            )}
+          </div>
+        )}
+        {showPicker && !isBuilderMode && (
           <div>
             <p className="mb-2" style={{ color: theme.muted, fontSize: 12 }}>
               Overlays each selected condition onto this map as an extra node, wired to whichever bacteria here it

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronRight, Plus } from 'lucide-react'
+import { ChevronRight, Plus, Search, X } from 'lucide-react'
 import { theme, palette } from '../theme'
 import { makeId } from '../lib/id'
 import { Button } from './Button'
@@ -8,16 +8,19 @@ import { Modal } from './Modal'
 
 // Ported verbatim from `Wm` in gut-flora-atlas.readable.html (~line
 // 28344-28515). `Eo`=ChevronRight, `at`=Plus (confirmed in the icon
-// inventory), `zf`=palette (theme.js), `$`=makeId. One deliberate
-// deviation from the original: the grid is alphabetized by name here
-// (the original just rendered `conditions` in storage order) - a
-// requested UX change, applied consistently across every condition list
-// in this app, not something the port introduced unasked.
+// inventory), `zf`=palette (theme.js), `$`=makeId. Two deliberate
+// deviations from the original, both requested UX changes applied
+// consistently across the app rather than introduced unasked: the grid
+// is alphabetized by name (the original rendered `conditions` in storage
+// order), and a search box was added above it (matching the filter
+// pattern BacteriaIndex.jsx already uses) - with 40 conditions and
+// growing, plain scrolling stopped being enough.
 export function ConditionsGrid({ conditions, onOpen, onAdd }) {
   const [addOpen, setAddOpen] = useState(false)
   const [name, setName] = useState('')
   const [code, setCode] = useState('')
   const [color, setColor] = useState(palette[6])
+  const [query, setQuery] = useState('')
 
   const addCondition = () => {
     if (!name.trim()) return
@@ -42,8 +45,39 @@ export function ConditionsGrid({ conditions, onOpen, onAdd }) {
         to lay two side by side.
       </p>
 
+      <div
+        className="flex items-center gap-2 rounded-xl px-3 mb-4"
+        style={{ background: theme.ink2, border: `1px solid ${theme.line}`, maxWidth: 360 }}
+      >
+        <Search size={15} style={{ color: theme.muted, flexShrink: 0 }} />
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Find a condition"
+          className="flex-1 bg-transparent py-2.5 text-sm outline-none"
+          style={{ color: theme.text }}
+        />
+        {query && (
+          <button onClick={() => setQuery('')} style={{ color: theme.muted, flexShrink: 0 }} aria-label="Clear search">
+            <X size={14} />
+          </button>
+        )}
+      </div>
+
+      {query.trim() &&
+        conditions.filter(
+          (c) => c.name.toLowerCase().includes(query.trim().toLowerCase()) || c.abbr.toLowerCase().includes(query.trim().toLowerCase())
+        ).length === 0 && (
+          <p className="py-6 text-center text-sm" style={{ color: theme.muted }}>
+            No conditions match that. Try a shorter search.
+          </p>
+        )}
+
       <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
-        {[...conditions].sort((a, b) => a.name.localeCompare(b.name)).map((c) => {
+        {[...conditions]
+          .filter((c) => c.name.toLowerCase().includes(query.trim().toLowerCase()) || c.abbr.toLowerCase().includes(query.trim().toLowerCase()))
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((c) => {
           const up = c.taxa.filter((t) => t.dir === 'up').length
           const down = c.taxa.length - up
           return (
