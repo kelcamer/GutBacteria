@@ -822,6 +822,22 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     })
   }
 
+  // New (no minified-source equivalent) - mirrors buildSymptomMap.js's own
+  // showDirectionOnly exactly, including its "both"-counts-as-either-filter
+  // semantics and one-way-until-Snap-back behavior; see that copy's
+  // comment for the full reasoning. Edge-level, not node-level - a single
+  // condition/region can have both up and down links at once.
+  function showDirectionOnly(want) {
+    const matches = (dir) => dir === want || dir === 'both'
+    E.forEach((e, i) => {
+      if (!matches(e.dir)) eEls[i].style.display = 'none'
+    })
+    V.forEach((n, idx) => {
+      const hasVisibleEdge = n.adjE.some((ei) => matches(E[ei].dir))
+      if (!hasVisibleEdge) hideNode(idx)
+    })
+  }
+
   function onContextMenu(ev) {
     let el = ev.target
     while (el && el !== svg && !(el.dataset && el.dataset.i != null)) el = el.parentNode
@@ -883,6 +899,8 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
   stopFn.showConnectionsOnly = showConnectionsOnly
   stopFn.hideIsolatedNodes = hideIsolatedNodes
   stopFn.selectByNames = selectByNames
+  stopFn.showIncreasedOnly = () => showDirectionOnly('up')
+  stopFn.showDecreasedOnly = () => showDirectionOnly('down')
   return stopFn
 }
 

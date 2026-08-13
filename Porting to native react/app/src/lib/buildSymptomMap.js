@@ -1123,6 +1123,35 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       });
     }
 
+    // New (no minified-source equivalent): "Show Increased Only" / "Show
+    // Decreased Only" buttons. Edge-level, not node-level, unlike
+    // hideIsolatedNodes/showConnectionsOnly above - a single bacterium can
+    // legitimately have both up- and down-linked symptoms at once, so
+    // filtering by hiding whole NODES would either hide a node that still
+    // has a real matching edge, or leave the wrong-direction edges drawn
+    // on a node that survives because it also has a right-direction one.
+    // "both" (yellow, mixed-evidence) edges intentionally count toward
+    // EITHER filter, not neither - a mixed finding isn't a non-answer to
+    // "does this move it up" or "down", it's evidence of both, per an
+    // explicit request. One-way like hideIsolatedNodes (not a live
+    // toggle) - "Snap back into position" is this app's one universal
+    // reset for every filter button, kept consistent rather than growing
+    // a second reset concept just for this pair.
+    function showDirectionOnly(want) {
+      var matches = function(dir) {
+        return dir === want || dir === "both";
+      };
+      E.forEach(function(e, i) {
+        if (!matches(e.dir)) eEls[i].style.display = "none";
+      });
+      V.forEach(function(n, idx) {
+        var hasVisibleEdge = n.adjE.some(function(ei) {
+          return matches(E[ei].dir);
+        });
+        if (!hasVisibleEdge) hideNode(idx);
+      });
+    }
+
     // New (no minified-source equivalent): lets a caller programmatically
     // select nodes by NAME rather than requiring a real click in the SVG -
     // added specifically so SymptomTab.jsx's map-builder picker can put its
@@ -1193,5 +1222,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     stopFn.showConnectionsOnly = showConnectionsOnly;
     stopFn.hideIsolatedNodes = hideIsolatedNodes;
     stopFn.selectByNames = selectByNames;
+    stopFn.showIncreasedOnly = function() { showDirectionOnly("up"); };
+    stopFn.showDecreasedOnly = function() { showDirectionOnly("down"); };
     return stopFn;
   }

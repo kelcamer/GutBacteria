@@ -104,6 +104,20 @@ export function ConditionMap({ condition }) {
           🕸️ Hide Isolated Nodes
         </button>
         <button
+          onClick={() => graphRef.current?.showIncreasedOnly?.()}
+          className="rounded-lg px-3 py-1.5 text-sm"
+          style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
+        >
+          ▲ Show Increased Only
+        </button>
+        <button
+          onClick={() => graphRef.current?.showDecreasedOnly?.()}
+          className="rounded-lg px-3 py-1.5 text-sm"
+          style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
+        >
+          ▼ Show Decreased Only
+        </button>
+        <button
           onClick={() => graphRef.current?.showConnectionsOnly?.()}
           className="rounded-lg px-3 py-1.5 text-sm ml-auto"
           style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
