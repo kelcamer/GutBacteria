@@ -87,25 +87,25 @@ export function filterToSymptoms(data, selectedSymptomNames) {
 // Combines both customizations for SymptomTab.jsx's map-builder picker:
 // filters {symptoms, bacteria} down to EXACTLY the given symptom names,
 // then overlays the given conditions on top of that (already-narrowed)
-// set. Purely literal - no "empty means show everything" magic here.
+// set - UNLESS nothing at all is picked yet, in which case the picker's
+// default state is "show everything" (see SymptomTab.jsx: nothing
+// highlighted by default, so the user never has to manually deselect 44
+// pills just to get a useful view).
 //
-// HISTORY: an earlier version of this function DID special-case an empty
-// selectedSymptomNames as "no filter, show all," to match the picker's
-// original default (nothing checked = show everything). That caused two
-// separate real bugs: picking only conditions with zero symptoms checked
-// silently fell back to the full 44-symptom map instead of narrowing (an
-// empty symptom list looked identical to "nothing picked yet" even though
-// conditions WERE picked); and once the picker itself was changed to
-// default every symptom to CHECKED (so pills honestly show what's
-// included, instead of "nothing highlighted" secretly meaning "show
-// everything" - see SymptomTab.jsx), a real fully-empty selection became
-// a deliberate user action ("I unchecked every symptom") that deserves to
-// actually show nothing, not be silently overridden back to "show
-// everything." The "default to everything" behavior now lives entirely
-// in SymptomTab.jsx's initial state (selectedSymptoms starts as every
-// symptom name) - this function no longer needs, or should have, its own
-// opinion about what an empty list means.
+// The two "empty" cases have to be told apart, not collapsed into one:
+// - selectedSymptomNames empty AND extraConditions empty -> nothing has
+//   been picked yet at all -> show the full, unfiltered map.
+// - selectedSymptomNames empty but extraConditions non-empty -> the user
+//   deliberately picked only conditions (e.g. PCOS + OCD, zero symptoms
+//   checked) -> must actually narrow to just those, not silently fall
+//   back to the full map (this was a real reported bug - filtering only
+//   on "is the symptom list empty" made a conditions-only pick
+//   indistinguishable from "nothing picked yet").
 export function buildOverlayMapData(data, selectedSymptomNames, extraConditions) {
+  const hasSymptomSelection = !!(selectedSymptomNames && selectedSymptomNames.length)
+  const hasConditionSelection = !!(extraConditions && extraConditions.length)
+  if (!hasSymptomSelection && !hasConditionSelection) return data
+
   const keep = new Set(selectedSymptomNames || [])
   const symptoms = (data.symptoms || []).filter((s) => keep.has(s))
   const bacteria = (data.bacteria || []).map((b) => ({

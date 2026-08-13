@@ -25,7 +25,12 @@ export function BacteriumFocusMap({ label, names, onClose }) {
     if (!hostRef.current || !tipRef.current || !data.bacteria.length) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, data, 'all', 'bact', true, layoutState.scramble, hiddenNamesRef)
+      // pinType 'symptom' (not 'bact'): pins the symptom/condition nodes to
+      // the rim and leaves the bacterium node(s) free, pulled inward by
+      // every connection - so the bacterium this map is about ends up in
+      // the middle, not fixed at a rim position (which, with only one or
+      // two bacteria nodes, tended to land at the top instead of center).
+      stop = buildSymptomMap(hostRef.current, tipRef.current, data, 'all', 'symptom', true, layoutState.scramble, hiddenNamesRef)
       graphRef.current = stop
     } catch {
       if (hostRef.current) {

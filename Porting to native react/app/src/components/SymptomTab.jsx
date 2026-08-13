@@ -32,12 +32,13 @@ export function SymptomTab({ pinType = 'bact' }) {
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
   const [extraConditionIds, setExtraConditionIds] = useState([])
-  // Defaults to every symptom CHECKED, not empty - so the picker honestly
-  // shows what's included (all of it) instead of "nothing highlighted"
-  // secretly meaning "show everything." Real filtering only happens once
-  // you actually uncheck something. See symptomMapConditionOverlay.js's
-  // buildOverlayMapData for the data-layer half of this.
-  const [selectedSymptoms, setSelectedSymptoms] = useState(ALL_SYMPTOMS)
+  // Defaults to nothing checked - so you never have to manually deselect
+  // 44 pills just to get the useful default view. An empty selection
+  // (of both symptoms AND conditions) means "show everything," handled by
+  // buildOverlayMapData in symptomMapConditionOverlay.js; picking a
+  // condition with zero symptoms checked still narrows for real (that
+  // case is told apart from "nothing picked yet" there too).
+  const [selectedSymptoms, setSelectedSymptoms] = useState([])
 
   // seedData is a static JSON import (always defined, stable reference) -
   // no need to memoize this itself, just avoid the `|| []` fallback
@@ -54,7 +55,7 @@ export function SymptomTab({ pinType = 'bact' }) {
   )
 
   const clearPicker = () => {
-    setSelectedSymptoms(ALL_SYMPTOMS) // back to "everything checked," the real default - not []
+    setSelectedSymptoms([]) // back to "nothing picked," the real default - shows everything
     setExtraConditionIds([])
   }
 
@@ -111,10 +112,7 @@ export function SymptomTab({ pinType = 'bact' }) {
       ? 'Symptom clusters sit in the middle; every bacterium that moves them sits on the rim, pulled inward only by how many symptoms it touches — so genera linked across many symptom domains drift toward the center. '
       : "Symptoms sit on the rim; every bacterium is pulled inward toward the symptoms it's linked to, so bacteria touching multiple symptom domains drift toward the middle. "
 
-  // "Customized" means the current state differs from the real default
-  // (every symptom checked, no conditions) - not just "something is
-  // non-empty," since selectedSymptoms is never actually empty at rest.
-  const isCustomized = selectedSymptoms.length !== ALL_SYMPTOMS.length || extraConditionIds.length > 0
+  const isCustomized = selectedSymptoms.length > 0 || extraConditionIds.length > 0
 
   return (
     <div className="p-4 safe-bottom">
@@ -150,11 +148,10 @@ export function SymptomTab({ pinType = 'bact' }) {
         {showPicker && (
           <div>
             <p className="mb-2" style={{ color: theme.muted, fontSize: 12 }}>
-              Every symptom is checked by default — that's the full map. Uncheck any to narrow the map down to just
-              what's left checked. Add conditions on top to overlay them as extra nodes wired to whichever bacteria
-              are currently shown — a focused way to see which conditions move the same bacteria as the symptoms
-              you picked, from a gut-flora perspective. Click the map's background at any time to reset back to
-              every symptom checked and no conditions.
+              Leave everything unpicked to see the full map. Check specific symptoms and/or conditions to narrow the
+              map down to just those — conditions get overlaid as extra nodes wired to whichever bacteria they
+              share, a focused way to see which conditions move the same bacteria as the symptoms you picked, from a
+              gut-flora perspective. Click the map's background at any time to clear back to the full map.
             </p>
             <div className="mb-3">
               <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
@@ -212,7 +209,7 @@ export function SymptomTab({ pinType = 'bact' }) {
                 className="rounded-lg px-2 py-1 text-xs"
                 style={{ border: `1px solid ${theme.line}`, color: theme.muted }}
               >
-                ↻ reset to every symptom, no conditions
+                × clear all
               </button>
             )}
           </div>
