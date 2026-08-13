@@ -79,13 +79,41 @@ export function filterToSymptoms(data, selectedSymptomNames) {
   return { ...data, symptoms, bacteria }
 }
 
-// Combines both customizations for SymptomTab.jsx's map-builder picker:
-// narrow to selected symptoms first, then overlay selected conditions on
-// top of that (already-narrowed) bacteria set - so a condition's edge
-// only appears if the bacterium it touches is also linked to one of the
-// currently-selected symptoms, which is the intuitive behavior ("build a
-// focused map from exactly what I picked," not "show a condition's full
-// reach regardless of my symptom selection").
+// Combines both customizations for SymptomTab.jsx's map-builder picker.
+//
+// BUG FIX: this used to just be
+// `withExtraConditions(filterToSymptoms(data, selectedSymptomNames), extraConditions)`
+// - correct when symptoms were picked, but wrong when only conditions were:
+// filterToSymptoms treats an empty symptom list as "no filter" (its own
+// pre-existing, correct default for when NOTHING has been picked at all),
+// so picking e.g. only PCOS and OCD with zero symptoms selected still
+// overlaid them onto the full 44-symptom map instead of narrowing to just
+// those two - reported as "it correctly selects those 2 but does not
+// dynamically recreate the map."
+//
+// Fix: once ANY picker selection is active (symptoms and/or conditions),
+// the map is built EXCLUSIVELY from it - no silent "all symptoms"
+// fallback just because the symptom half of the selection happens to be
+// empty. Only bypass entirely (return `data` untouched) when NEITHER
+// symptoms nor conditions have been picked, matching the original
+// "everything" default.
 export function buildOverlayMapData(data, selectedSymptomNames, extraConditions) {
-  return withExtraConditions(filterToSymptoms(data, selectedSymptomNames), extraConditions)
+  const hasSymptomSelection = !!(selectedSymptomNames && selectedSymptomNames.length)
+  const hasConditionSelection = !!(extraConditions && extraConditions.length)
+  if (!hasSymptomSelection && !hasConditionSelection) return data
+
+  const keep = new Set(selectedSymptomNames || [])
+  const symptoms = (data.symptoms || []).filter((s) => keep.has(s))
+  const bacteria = (data.bacteria || []).map((b) => ({
+    ...b,
+    up: (b.up || []).filter((e) => keep.has(e.symptom)),
+    down: (b.down || []).filter((e) => keep.has(e.symptom)),
+    both: (b.both || []).filter((e) => keep.has(e.symptom)),
+  }))
+  // Bacteria are kept around (by name) even with every link stripped, so
+  // withExtraConditions below can still find and attach to them - a
+  // condition should be able to surface a bacterium even when zero
+  // symptoms were picked, which is the whole point of picking only
+  // conditions.
+  return withExtraConditions({ ...data, symptoms, bacteria }, extraConditions)
 }
