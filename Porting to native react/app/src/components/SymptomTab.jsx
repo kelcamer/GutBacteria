@@ -66,6 +66,16 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
     () => buildOverlayMapData(symptomData, selectedSymptoms, extraConditions),
     [selectedSymptoms, extraConditions]
   )
+  // The unfiltered universe (every real symptom + whatever conditions are
+  // currently overlaid, regardless of which symptoms are actually
+  // checked) passed to buildSymptomMap as its 10th arg, so a popup's
+  // Related/Protective symptom cross-reference still has other symptoms
+  // to compare against even when the VISIBLE map has been narrowed down
+  // to one node - see buildSymptomMap.js's own fullData/xrefData comment.
+  const fullData = useMemo(
+    () => buildOverlayMapData(symptomData, ALL_SYMPTOMS, extraConditions),
+    [extraConditions]
+  )
 
   const clearPicker = () => {
     setSelectedSymptoms([]) // back to "nothing picked," the real default - shows everything
@@ -76,7 +86,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, mapData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, clearPicker)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, mapData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, clearPicker, fullData)
       graphRef.current = stop
       // Nodes added/kept via the picker above aren't the result of a real
       // click, so they'd otherwise never end up in the graph's own
@@ -102,8 +112,8 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
         // best-effort cleanup, matches the original's bare try/catch here
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own dependency array (mode, pinType, layoutState) with mapData, the new overlay input
-  }, [mode, pinType, layoutState, mapData])
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own dependency array (mode, pinType, layoutState) with mapData/fullData, the overlay inputs
+  }, [mode, pinType, layoutState, mapData, fullData])
 
   const nBact = (mapData.bacteria || []).length
   const nSym = (mapData.symptoms || []).length

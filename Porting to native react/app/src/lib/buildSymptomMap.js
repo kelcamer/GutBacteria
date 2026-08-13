@@ -65,8 +65,21 @@ function copyTipText(el, btn) {
   }
 }
 
-export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, onBackgroundClick) {
+export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, onBackgroundClick, fullData) {
     pinType = pinType || "bact";
+    // Optional 10th param: the UNFILTERED symptom+bacteria universe (every
+    // real symptom, plus whatever conditions are currently overlaid) to
+    // cross-reference against in buildTipHtml below - independent of
+    // `data`, which may be narrowed down to just one or two nodes by
+    // SymptomTab.jsx's map-builder picker. Without this, selecting only
+    // "Non-secretor (FUT2)" (so the visible graph has no OTHER symptom
+    // node to compare against) silently produced no Related/Protective
+    // lists at all, even though the answer doesn't depend on what's
+    // currently checked in the picker. Defaults to `data` itself, which
+    // exactly preserves prior behavior for every caller that doesn't pass
+    // this (BacteriumFocusMap.jsx etc.) - their own `data` is already the
+    // full relevant universe for what they show, no picker involved.
+    var xrefData = fullData || data;
     var NS = "http://www.w3.org/2000/svg";
     // Matches the invisible hit-target circle radius set on every node below
     // (`hit.setAttribute("r", HIT_R)`). Referenced again in the physics
@@ -653,6 +666,26 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       for (var q = 0; q < nEls.length; q++) nEls[q].g.style.opacity = "1"; // general rule: selection only dims/highlights connections, nodes stay fully visible so you can still click around and compare
     }
 
+    // Built once per graph build (not per tooltip open) from xrefData -
+    // bactName -> [{symptom, dir}] and symptomName -> [{bact, dir}], the
+    // two lookup directions buildTipHtml's Related/Protective computation
+    // needs. Deliberately independent of V/E/nodes above (the possibly-
+    // narrowed, currently-RENDERED graph) - this always reflects the full
+    // universe xrefData represents, per its own comment.
+    var xrefBactToSymptoms = {},
+      xrefSymptomToBact = {};
+    (xrefData.bacteria || []).forEach(function(b) {
+      var list = [];
+      (b.up || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "up" }); });
+      (b.down || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "down" }); });
+      (b.both || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "both" }); });
+      xrefBactToSymptoms[b.name] = list;
+      list.forEach(function(x) {
+        var arr = xrefSymptomToBact[x.symptom] || (xrefSymptomToBact[x.symptom] = []);
+        arr.push({ bact: b.name, dir: x.dir });
+      });
+    });
+
     var srcRow = function(note, ref, url) {
       var bits = [];
       if (note) bits.push('<div style="color:#B9A7F0;margin-top:1px">' + esc(note) + '</div>');
@@ -689,42 +722,62 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // New (no minified-source equivalent): two-hop cross-reference -
         // for every bacterium this symptom touches (e.g. FUT2 -> decreased
         // Sutterella), look at every OTHER symptom that ALSO touches that
-        // same bacterium. Same direction (also decreases Sutterella) means
-        // "moves this bacterium the same way" - surfaced as "Most Likely
-        // Related Symptoms". Opposite direction (increases Sutterella)
-        // means the other symptom is associated with more of the very
-        // thing this one suppresses - surfaced as "Most likely protective
-        // to have <this node>", since having it would work against that
-        // symptom's own bacterial signature. "both"/mixed edges on either
-        // side are skipped rather than guessed at - only clean up/down
-        // pairs get bucketed. A symptom CAN legitimately land in both
-        // lists (related via one shared bacterium, protective via
-        // another) - that's real nuance, not deduplicated away.
-        var relatedSet = {},
-          protectiveSet = {};
-        node.adjE.forEach(function(ei) {
-          var e = E[ei];
-          var myDir = e.dir;
-          if (myDir !== "up" && myDir !== "down") return;
-          var bi = e.s === idx ? e.t : e.s;
-          var bNode = V[bi];
-          if (!bNode || !bNode.adjE) return;
-          bNode.adjE.forEach(function(ei2) {
-            var e2 = E[ei2];
-            var si2 = e2.s === bi ? e2.t : e2.s;
-            if (si2 === idx) return;
-            var otherNode = V[si2];
-            if (!otherNode || otherNode.type !== "symptom") return;
-            var otherDir = e2.dir;
-            if (otherDir !== "up" && otherDir !== "down") return;
-            if (otherDir === myDir) relatedSet[otherNode.name] = true;
-            else protectiveSet[otherNode.name] = true;
+        // same bacterium, and tally how many shared bacteria they agree
+        // (same direction) vs. disagree (opposite direction) on. Uses
+        // xrefSymptomToBact/xrefBactToSymptoms (built from xrefData, the
+        // full symptom+condition universe) rather than this node's own
+        // adjE/the local V/E graph - so this still computes a real answer
+        // even when the CURRENTLY RENDERED map has been narrowed by the
+        // map-builder picker down to just this one node with no other
+        // symptom visible to compare against (e.g. picking only
+        // "Non-secretor (FUT2)" with nothing else checked).
+        //
+        // FIXED: an earlier version bucketed per shared-bacterium PAIR
+        // independently, so a high-degree node (FUT2 links 27 bacteria)
+        // could land the SAME other symptom in both "related" (agreed on
+        // one bacterium) and "protective" (disagreed on a different one)
+        // at once - confusing on its own, and with enough bacteria in
+        // play it flooded both lists with nearly every symptom in the
+        // map, which isn't useful signal. Now it's the NET tally across
+        // every bacterium the two symptoms actually share: more
+        // agreements -> related, more disagreements -> protective, an
+        // even split is genuinely ambiguous and excluded from both
+        // rather than forced into either. Sorted by margin (how lopsided/
+        // how many shared bacteria agree) so the strongest, most-connected
+        // matches lead the list, and capped, same "+N more" pattern the
+        // bacteria list below already uses, so a hub node like FUT2
+        // doesn't dump its entire symptom universe into the tooltip.
+        var tally = {};
+        (xrefSymptomToBact[node.name] || []).forEach(function(link) {
+          if (link.dir !== "up" && link.dir !== "down") return;
+          (xrefBactToSymptoms[link.bact] || []).forEach(function(o) {
+            if (o.symptom === node.name) return;
+            if (o.dir !== "up" && o.dir !== "down") return;
+            var rec = tally[o.symptom] || (tally[o.symptom] = { agree: 0, disagree: 0 });
+            if (o.dir === link.dir) rec.agree++;
+            else rec.disagree++;
           });
         });
-        var relatedNames = Object.keys(relatedSet).sort();
-        var protectiveNames = Object.keys(protectiveSet).sort();
-        var relatedLine = relatedNames.length ? '<div style="color:#8FD3F4;font-size:10.5px;margin-bottom:4px"><b>Most Likely Related Symptoms:</b> ' + esc(relatedNames.join(", ")) + '</div>' : "";
-        var protectiveLine = protectiveNames.length ? '<div style="color:#3DDC97;font-size:10.5px;margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.08)"><b>Most likely protective to have ' + esc(node.name) + ':</b> ' + esc(protectiveNames.join(", ")) + '</div>' : "";
+        var related = [],
+          protective = [];
+        Object.keys(tally).forEach(function(name) {
+          var t = tally[name];
+          if (t.agree > t.disagree) related.push({ name: name, margin: t.agree - t.disagree });
+          else if (t.disagree > t.agree) protective.push({ name: name, margin: t.disagree - t.agree });
+          // else: tied - genuinely ambiguous, left out of both on purpose
+        });
+        var byMargin = function(a, b) {
+          return b.margin - a.margin || a.name.localeCompare(b.name);
+        };
+        related.sort(byMargin);
+        protective.sort(byMargin);
+        var LIST_CAP = 8;
+        var relatedShown = related.slice(0, LIST_CAP).map(function(x) { return x.name; });
+        var relatedMore = related.length > LIST_CAP ? related.length - LIST_CAP : 0;
+        var protectiveShown = protective.slice(0, LIST_CAP).map(function(x) { return x.name; });
+        var protectiveMore = protective.length > LIST_CAP ? protective.length - LIST_CAP : 0;
+        var relatedLine = relatedShown.length ? '<div style="color:#8FD3F4;font-size:10.5px;margin-bottom:4px"><b>Most Likely Related Symptoms:</b> ' + esc(relatedShown.join(", ")) + (relatedMore ? ' <span style="color:#7C6BA8">+' + relatedMore + ' more</span>' : '') + '</div>' : "";
+        var protectiveLine = protectiveShown.length ? '<div style="color:#3DDC97;font-size:10.5px;margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.08)"><b>Most likely protective to have ' + esc(node.name) + ':</b> ' + esc(protectiveShown.join(", ")) + (protectiveMore ? ' <span style="color:#7C6BA8">+' + protectiveMore + ' more</span>' : '') + '</div>' : "";
 
         html = '<div style="font-weight:700;color:#F1EAFF">' + esc(node.name) + '</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">' + node.deg + ' bacteria linked</div>' + relatedLine + protectiveLine + '<div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + srowsHtml + smore + '</div>';
       } else {

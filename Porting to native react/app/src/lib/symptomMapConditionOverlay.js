@@ -46,6 +46,18 @@ export function withExtraConditions(data, extraConditions) {
     // "Headache / migraine" when the Migraine condition is picked.
     const dupSymptomPattern = new RegExp('^' + cond.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ' symptoms?$', 'i')
     symptoms = symptoms.filter((s) => !dupSymptomPattern.test(s))
+    // Second, separate near-duplicate pattern (same bug, different
+    // wording): "Non-secretor (FUT2)" the condition vs. "Non-secretor
+    // status (FUT2)" the symptom - not caught by the suffix check above
+    // since the wording doesn't match, but both share the same
+    // parenthetical abbreviation and nothing else in this app's data
+    // does (checked - this is the only such pair), so it's a safe,
+    // narrow signal for "these are the same underlying concept."
+    const abbrMatch = cond.name.match(/\(([^)]+)\)/)
+    if (abbrMatch) {
+      const abbrPattern = new RegExp('\\(' + abbrMatch[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\)', 'i')
+      symptoms = symptoms.filter((s) => s === cond.name || !abbrPattern.test(s))
+    }
     let matchedAny = false
     ;(cond.taxa || []).forEach((t) => {
       const canon = canonTaxon(t.name)
