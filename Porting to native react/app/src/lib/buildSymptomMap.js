@@ -455,6 +455,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
 
     var curr = null;
     var dragNode = null;
+    var dragIdx = null; // V-array position of dragNode, NOT dragNode.i (see onPointerDown's comment) - what selectedNodes/showConnectionsOnly/hideNode/selectByNames all actually index by.
     var isDragging = false;
     var bgDown = false;
     var dragStartX = 0,
@@ -930,6 +931,17 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       if (el && el.dataset && el.dataset.i != null) {
         var idx = +el.dataset.i;
         dragNode = V[idx];
+        // idx here IS the correct V-array position (data-i was set from the
+        // V.map() loop index at element-creation time). dragNode.i, by
+        // contrast, is that node's index into the UNFILTERED nodes array
+        // from before symptom/bacteria filtering - the two only coincide
+        // when nothing before this node in the array got filtered out. Bug:
+        // clicking a bacterium got a DIFFERENT bacterium selected/pinned
+        // whenever an earlier-ordered, zero-degree bacterium had been
+        // dropped by vis() ahead of it, shifting every later bact node's
+        // true V-position below its stale .i. Capturing the right index
+        // here (not reading dragNode.i again in onPointerUp) fixes it.
+        dragIdx = idx;
         isDragging = false;
         bgDown = false;
         dragStartX = ev.clientX;
@@ -1005,7 +1017,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // which are easy to trigger on a real click of a small node). A
           // plain click still selects/deselects the node (drives the
           // highlight plus the Show Connections / Hide Isolated filters).
-          var clickedIdx = dragNode.i;
+          var clickedIdx = dragIdx;
           var now = Date.now();
           var isDoubleClick = lastClickIdx === clickedIdx && (now - lastClickTime) < DBLCLICK_WINDOW;
           if (isDoubleClick) {

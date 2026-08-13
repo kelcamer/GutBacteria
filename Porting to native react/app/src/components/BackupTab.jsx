@@ -26,17 +26,27 @@ export function BackupTab({ data, commit }) {
   const fileInputRef = useRef(null)
 
   const exportJSON = () => {
+    // Two files fired back-to-back from one click handler is a known
+    // browser footgun: Chrome (and others) can silently drop one of two
+    // programmatic downloads triggered synchronously in the same task,
+    // and revoking each blob URL immediately after a.click() can beat the
+    // download itself starting. Bug report confirmed only the LAST file
+    // (symptoms) ever actually landed. Fixed by staggering the two
+    // downloads a beat apart and delaying each revoke instead of doing it
+    // synchronously right after click().
     const dlFile = (obj, suffix) => {
       const blob = new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
       a.download = `gut-flora-atlas-${suffix}-${new Date().toISOString().slice(0, 10)}.json`
+      document.body.appendChild(a)
       a.click()
-      URL.revokeObjectURL(url)
+      a.remove()
+      setTimeout(() => URL.revokeObjectURL(url), 2000)
     }
     dlFile({ version: data.version || 1, conditions: data.conditions }, 'conditions')
-    dlFile({ version: 1, symptoms: symptomData.symptoms, bacteria: symptomData.bacteria }, 'symptoms')
+    setTimeout(() => dlFile({ version: 1, symptoms: symptomData.symptoms, bacteria: symptomData.bacteria }, 'symptoms'), 350)
     setMessage('Exported 2 files: conditions and symptoms.')
   }
 

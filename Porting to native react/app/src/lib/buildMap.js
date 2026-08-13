@@ -250,6 +250,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
 
   let curr = null
   let dragNode = null
+  let dragIdx = null // V-array position of dragNode, NOT dragNode.i - see onPointerDown's comment (same fix as buildSymptomMap.js's identical bug: clicking a node could select a DIFFERENT one whenever an earlier zero-degree node had been filtered out of V, shifting every later node's true V-position below its stale .i)
   let isDragging = false
   let bgDown = false
   let dragStartX = 0, dragStartY = 0
@@ -647,6 +648,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     if (el && el.dataset && el.dataset.i != null) {
       const idx = +el.dataset.i
       dragNode = V[idx]
+      dragIdx = idx
       isDragging = false
       bgDown = false
       dragStartX = ev.clientX
@@ -718,7 +720,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
         // which are easy to trigger on a real click of a small node). A
         // plain click still selects/deselects the node (drives the
         // highlight plus the Show Connections / Hide Isolated filters).
-        const clickedIdx = dragNode.i
+        const clickedIdx = dragIdx
         const now = Date.now()
         const isDoubleClick = lastClickIdx === clickedIdx && now - lastClickTime < DBLCLICK_WINDOW
         if (isDoubleClick) {
