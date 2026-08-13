@@ -48,6 +48,12 @@ export default function App() {
   // up so its sibling ConditionsMap can highlight whatever's typed there -
   // see ConditionsMap.jsx's own focusNames effect.
   const [conditionsQuery, setConditionsQuery] = useState('')
+  // New (no minified-source equivalent): a single click on a ConditionsGrid
+  // card (as opposed to a double click, which still opens it) highlights
+  // it here instead - see ConditionsGrid.jsx's own click/double-click
+  // handling and the focusNames useMemo below for how this and the search
+  // box above combine.
+  const [clickedConditionName, setClickedConditionName] = useState(null)
 
   // New (no minified-source equivalent): GlobalSearch's own open/close
   // state, plus one "jump request" slot per destination tab that has its
