@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { ExternalLink } from 'lucide-react'
-import { theme } from '../theme'
+import { theme, dirColor, dirArrow } from '../theme'
 import { Italic } from './Italic'
 
 // Ported from `Km` in gut-flora-atlas.readable.html (~line 29806-29954,
@@ -25,6 +25,11 @@ export function SourcesTab({ conditions }) {
 
   const [selCond, setSelCond] = useState('')
   const filtered = selCond ? sources.filter((s) => s.uses.some((u) => u.c.id === selCond)) : sources
+  // New (no minified-source equivalent): filtering to one condition shows
+  // that condition's own note at the top - it's already this app's
+  // synthesized summary of what the combined research says, written once
+  // per condition rather than re-derived here from the raw taxa list.
+  const selectedCondition = selCond ? conditions.find((c) => c.id === selCond) : null
 
   const downloadSources = () => {
     const lines = filtered.map((s) => s.label + '\n' + s.url).join('\n\n')
@@ -69,6 +74,21 @@ export function SourcesTab({ conditions }) {
         </button>
       </div>
 
+      {selectedCondition && selectedCondition.note && (
+        <div
+          className="mb-4 rounded-2xl p-4"
+          style={{ background: theme.ink2, border: `1px solid ${selectedCondition.color}55` }}
+        >
+          <div className="flex items-center gap-2 mb-1.5">
+            <span style={{ width: 8, height: 8, borderRadius: 99, background: selectedCondition.color }} />
+            <span style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 14 }}>
+              What the combined research says about {selectedCondition.name}
+            </span>
+          </div>
+          <p style={{ color: theme.muted, fontSize: 13 }}>{selectedCondition.note}</p>
+        </div>
+      )}
+
       {filtered.length === 0 && (
         <p className="py-10 text-center text-sm" style={{ color: theme.muted }}>
           No papers attached yet for this condition.
@@ -103,7 +123,10 @@ export function SourcesTab({ conditions }) {
                   {taxon && (
                     <>
                       {' '}
-                      · <Italic>{taxon.name}</Italic>
+                      · <Italic>{taxon.name}</Italic>{' '}
+                      <span style={{ color: dirColor(taxon.dir), fontWeight: 700 }} title={`${taxon.name} ${taxon.dir === 'up' ? 'increased' : taxon.dir === 'down' ? 'decreased' : 'mixed/both directions'} per this source`}>
+                        {dirArrow(taxon.dir)}
+                      </span>
                     </>
                   )}
                 </span>
