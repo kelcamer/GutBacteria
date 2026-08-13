@@ -26,7 +26,7 @@ import { canonTaxon } from './conditionSymptomData'
 export function withExtraConditions(data, extraConditions) {
   if (!extraConditions || !extraConditions.length) return data
 
-  const symptoms = [...(data.symptoms || [])]
+  let symptoms = [...(data.symptoms || [])]
   const bacteria = (data.bacteria || []).map((b) => ({ ...b }))
   const bacteriaIndex = {}
   bacteria.forEach((b, i) => {
@@ -35,6 +35,17 @@ export function withExtraConditions(data, extraConditions) {
 
   extraConditions.forEach((cond) => {
     if (symptoms.includes(cond.name)) return // name collision with a real symptom - skip rather than silently merge
+    // Bug fix: symptom_data.json separately tracks an "X symptoms" cluster
+    // for some conditions (currently just "OCD symptoms") alongside the
+    // condition itself in seed_data.json ("OCD") - picking the condition
+    // via the map-builder picker used to add a second, near-identical node
+    // right next to the real one ("both OCD and OCD symptoms show up").
+    // Narrow match on purpose (an exact "<condition name> symptom(s)"
+    // suffix, not a loose substring test) so this doesn't accidentally
+    // swallow a real, only-coincidentally-related symptom bucket like
+    // "Headache / migraine" when the Migraine condition is picked.
+    const dupSymptomPattern = new RegExp('^' + cond.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ' symptoms?$', 'i')
+    symptoms = symptoms.filter((s) => !dupSymptomPattern.test(s))
     let matchedAny = false
     ;(cond.taxa || []).forEach((t) => {
       const canon = canonTaxon(t.name)

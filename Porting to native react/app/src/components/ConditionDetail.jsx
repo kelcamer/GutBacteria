@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowLeft, Microscope, Link2, Trash2, Plus, Pencil } from 'lucide-react'
+import { ArrowLeft, Microscope, Link2, Trash2, Plus, Pencil, ArrowLeftRight } from 'lucide-react'
 import { theme } from '../theme'
 import { Button } from './Button'
 import { Modal } from './Modal'
@@ -29,7 +29,7 @@ function newTaxon(dir) {
   return { id: crypto.randomUUID?.() ?? Math.random().toString(36).slice(2, 9), name: '', dir, refs: '', note: '', links: [] }
 }
 
-export function ConditionDetail({ condition, onBack, onUpdate, onUpsertTaxon, onRemoveTaxon, onDelete, onResearch }) {
+export function ConditionDetail({ condition, onBack, onUpdate, onUpsertTaxon, onRemoveTaxon, onDelete, onResearch, onCompare }) {
   const [editingTaxon, setEditingTaxon] = useState(null)
   const [confirmDelete, setConfirmDelete] = useState(false)
   const [notesOpen, setNotesOpen] = useState(false)
@@ -145,6 +145,23 @@ export function ConditionDetail({ condition, onBack, onUpdate, onUpsertTaxon, on
       </div>
 
       <ConditionMap condition={condition} />
+
+      {/* New (no minified-source equivalent): jumps to Compare with this
+          condition pre-loaded as side A - the natural next question after
+          reading one condition's own taxa is "how does this stack up
+          against something else," which used to mean leaving this screen,
+          finding Compare in the nav, then re-picking this same condition
+          from a dropdown. */}
+      {onCompare && (
+        <button
+          onClick={() => onCompare(condition.id)}
+          className="w-full flex items-center justify-center gap-2 rounded-2xl p-3.5 mt-4 text-sm"
+          style={{ background: theme.ink2, border: `1px dashed ${theme.line}`, color: theme.muted, maxWidth: 680 }}
+        >
+          <ArrowLeftRight size={15} />
+          Want to compare {condition.name} with another condition?
+        </button>
+      )}
 
       {editingTaxon && (
         <TaxonEditor

@@ -347,6 +347,11 @@ export default function App() {
               setActiveTab('research')
               setActiveConditionId(null)
             }}
+            onCompare={(id) => {
+              setCompareAId(id)
+              setActiveTab('compare')
+              setActiveConditionId(null)
+            }}
           />
         )}
         {activeTab === 'glossary' && <Glossary />}
