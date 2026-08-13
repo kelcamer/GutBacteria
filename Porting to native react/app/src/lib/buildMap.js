@@ -24,6 +24,7 @@
 // and `function GFA_buildMap(...)` -> `export function buildMap(...)`.
 import { dirColor, dirArrow } from '../theme'
 import { BRAIN_REGION_INFO } from '../data/brainRegionInfo'
+import { canonTaxon } from './conditionSymptomData'
 
 function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
@@ -73,7 +74,7 @@ function copyTipText(el, btn) {
   }
 }
 
-export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hiddenNamesRef) {
+export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hiddenNamesRef, symptomXrefData) {
   pinType = pinType || 'cond'
   const NS = 'http://www.w3.org/2000/svg'
   const W = 1000, H = 820
@@ -372,6 +373,26 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     for (let q = 0; q < nEls.length; q++) nEls[q].g.style.opacity = '1' // general rule: selection only dims/highlights connections, nodes stay fully visible so you can still click around and compare
   }
 
+  // New (no minified-source equivalent): optional cross-reference into
+  // symptom_data.json, mirroring buildSymptomMap.js's own xrefBactToSymptoms
+  // - built once here (not per popup) as canonicalized-bacterium-name ->
+  // [{symptom, dir}], so a condition's own taxa (species/strain-level names
+  // like "Bifidobacterium bifidum") can be matched against symptom_data
+  // .json's genus-level bacteria entries the same way bacteriumFocusMap.js
+  // already does (canonTaxon). Only built if the caller actually passes
+  // symptomXrefData - every other behavior here is unchanged when it's
+  // omitted.
+  const xrefBactToSymptoms = {}
+  if (symptomXrefData) {
+    ;(symptomXrefData.bacteria || []).forEach((b) => {
+      const list = []
+      ;(b.up || []).forEach((x) => list.push({ symptom: x.symptom, dir: 'up' }))
+      ;(b.down || []).forEach((x) => list.push({ symptom: x.symptom, dir: 'down' }))
+      ;(b.both || []).forEach((x) => list.push({ symptom: x.symptom, dir: 'both' }))
+      xrefBactToSymptoms[b.name] = list
+    })
+  }
+
   const srcRow = (note, ref, url) => {
     const bits = []
     if (note) bits.push('<div style="color:#B9A7F0;margin-top:1px">' + esc(note) + '</div>')
@@ -426,6 +447,50 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
           summaryHtml =
             '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.08)"><b style="color:#F1EAFF;font-size:10.5px">Likely symptom presentation</b><div style="color:#7C6BA8;font-size:9.5px;margin-bottom:2px">Synthesized from this condition\'s regions and their reported directions — not a diagnostic claim.</div><ul style="margin:2px 0 0 16px;padding:0;color:#A08FC7">' +
             symLis + '</ul></div>'
+        }
+      } else if (Object.keys(xrefBactToSymptoms).length) {
+        // New (no minified-source equivalent): cross-references this
+        // condition's own bacteria taxa against symptom_data.json - same
+        // net-tally technique buildSymptomMap.js's symptom-node popups use
+        // (agree/disagree per shared bacterium, summed across every
+        // bacterium this condition and a candidate symptom both touch, so
+        // one lucky/unlucky single bacterium can't misrepresent a
+        // multi-bacterium condition), ranked by margin, capped at 8.
+        const tally = {}
+        taxa.forEach((t) => {
+          if (t.dir !== 'up' && t.dir !== 'down') return
+          const canon = canonTaxon((t.name || '').trim())
+          ;(xrefBactToSymptoms[canon] || []).forEach((o) => {
+            if (o.dir !== 'up' && o.dir !== 'down') return
+            const rec = tally[o.symptom] || (tally[o.symptom] = { agree: 0, disagree: 0 })
+            if (o.dir === t.dir) rec.agree++
+            else rec.disagree++
+          })
+        })
+        // Same near-duplicate-concept exclusion as
+        // symptomMapConditionOverlay.js's withExtraConditions: a condition
+        // sharing its exact parenthetical abbreviation with a symptom (only
+        // "Non-secretor (FUT2)" the condition vs. "Non-secretor status
+        // (FUT2)" the symptom, checked - the only such pair app-wide) is
+        // the same underlying concept represented twice, so it'll always
+        // land at/near the top of "related" by sheer near-total agreement -
+        // true but redundant, not useful signal, so it's excluded here too.
+        const abbrMatch = (cond.name || '').match(/\(([^)]+)\)/)
+        const abbrPattern = abbrMatch ? new RegExp('\\(' + abbrMatch[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\)', 'i') : null
+        const related = []
+        Object.keys(tally).forEach((name) => {
+          if (abbrPattern && abbrPattern.test(name)) return
+          const rec = tally[name]
+          if (rec.agree > rec.disagree) related.push({ name, margin: rec.agree - rec.disagree })
+        })
+        related.sort((a, b) => b.margin - a.margin || a.name.localeCompare(b.name))
+        const CAP = 8
+        const shown = related.slice(0, CAP)
+        const more = related.length > CAP ? related.length - CAP : 0
+        if (shown.length) {
+          summaryHtml =
+            '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.08)"><b style="color:#8FD3F4;font-size:10.5px">Most Likely Related Symptoms</b><div style="color:#7C6BA8;font-size:9.5px;margin-bottom:2px">Symptoms whose own linked bacteria move the same way as this condition\'s, most-shared first — not a diagnostic claim.</div>' +
+            esc(shown.map((x) => x.name).join(', ')) + (more ? ' <span style="color:#7C6BA8">+' + more + ' more</span>' : '') + '</div>'
         }
       }
       html =

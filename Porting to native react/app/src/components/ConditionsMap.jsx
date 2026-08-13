@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
+import { symptomData } from '../data'
 import { buildMap } from '../lib/buildMap'
 
 // Ported from `Gfx` in gut-flora-atlas.readable.html (~line 28119-28372) -
@@ -24,7 +25,7 @@ export function ConditionsMap({ conditions, focusNames }) {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildMap(hostRef.current, tipRef.current, conditions, mode, layoutState.scramble, undefined, undefined, hiddenNamesRef)
+      stop = buildMap(hostRef.current, tipRef.current, conditions, mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, symptomData)
       graphRef.current = stop
     } catch {
       if (hostRef.current) {
