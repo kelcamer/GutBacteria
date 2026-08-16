@@ -19,7 +19,13 @@ const ALL_SYMPTOMS = [...(symptomData.symptoms || [])].sort((a, b) => a.localeCo
 // names out into their own INTERVENTIONS section below, purely by
 // name match against this curated list - no schema change, no change
 // to how selectedSymptoms is stored or passed to buildOverlayMapData.
-const INTERVENTION_NAMES = ['Coffee / Stimulants', 'Cannabis-related dysbiosis', 'Exercise-associated microbiota changes', 'Psilocybin / Psychedelics']
+const INTERVENTION_NAMES = [
+  'Coffee / Stimulants',
+  'Cannabis-related dysbiosis',
+  'Exercise-associated microbiota changes',
+  'Psilocybin / Psychedelics',
+  "2'-Fucosyllactose (HMO) supplementation",
+]
 const INTERVENTION_SET = new Set(INTERVENTION_NAMES)
 const ALL_INTERVENTIONS = ALL_SYMPTOMS.filter((s) => INTERVENTION_SET.has(s))
 const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !INTERVENTION_SET.has(s))

@@ -48,13 +48,20 @@
   "Emotional Dysregulation",
   "Coffee / Stimulants",
   "Psilocybin / Psychedelics",
-  "Arterial stiffness / vascular aging"
+  "Arterial stiffness / vascular aging",
+  "2'-Fucosyllactose (HMO) supplementation"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 12,
+   "count": 13,
    "up": [
+    {
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "note": "2'-FL is the human-milk oligosaccharide Bifidobacteria specifically feed on, and supplementing it raised gut Bifidobacterium in a 6-week RCT of 89 healthy older adults (mean age 67.3), alongside higher serum insulin, HDL cholesterol and FGF21. Crucial caveat: the trial's PRIMARY endpoint (cytokine response) was NOT met, and the benefit split the cohort — Bifidobacterium \"responders\" got extra metabolic/proteomic changes and better visual-memory scores, while non-responders were the people who lacked Bifidobacterium at baseline. So 2'-FL appears to feed an existing population rather than establish a new one, which matters most for anyone structurally depleted (e.g. FUT2 non-secretors, who cannot make this glycan themselves). A second adult RCT found 2'-FL improved microbial resilience after vancomycin, but only transiently (present at 2 weeks, gone by 8), while lowering fasting IL-6.",
+     "ref": "Cell Reports Medicine 2025, RCT n=89, NCT03690999 (PMID 40738103); Gut Microbes 2025, vancomycin-recovery RCT (PMID 41243448)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40738103/"
+    },
     {
      "symptom": "Exercise-associated microbiota changes",
      "note": "Significantly higher relative abundance in physically active adults vs. sedentary/pre-intervention baseline, across a 25-study meta-analysis of RCTs and crossover trials.",
