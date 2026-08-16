@@ -11,6 +11,26 @@ import { ZoomButtons } from './ZoomButtons'
 // needs to change after the module loads).
 const ALL_SYMPTOMS = [...(symptomData.symptoms || [])].sort((a, b) => a.localeCompare(b))
 
+// Substance/lifestyle-factor entries live in symptomData.symptoms
+// alongside real symptoms (buildOverlayMapData/buildSymptomMap don't
+// distinguish the two - they're all just "symptom" nodes to the data
+// layer), but they read as a different kind of thing to a person
+// scanning the picker. This is a UI-only split: pull these specific
+// names out into their own INTERVENTIONS section below, purely by
+// name match against this curated list - no schema change, no change
+// to how selectedSymptoms is stored or passed to buildOverlayMapData.
+const INTERVENTION_NAMES = [
+  'Coffee / Stimulants',
+  'Alcohol-related dysbiosis',
+  'Smoking-related dysbiosis',
+  'Cannabis-related dysbiosis',
+  'Exercise-associated microbiota changes',
+  'Psilocybin / Psychedelics',
+]
+const INTERVENTION_SET = new Set(INTERVENTION_NAMES)
+const ALL_INTERVENTIONS = ALL_SYMPTOMS.filter((s) => INTERVENTION_SET.has(s))
+const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !INTERVENTION_SET.has(s))
+
 // Ported verbatim from `GFA_SymptomTab` in gut-flora-atlas.readable.html
 // (~line 25998-26211) - the React wrapper that mounts buildSymptomMap into
 // a plain <div> ref, used for both the global Bacteria->Symptom and
@@ -174,17 +194,18 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
         {showPicker && (
           <div>
             <p className="mb-2" style={{ color: theme.muted, fontSize: 12 }}>
-              Leave everything unpicked to see the full map. Check specific symptoms and/or conditions to narrow the
-              map down to just those — conditions get overlaid as extra nodes wired to whichever bacteria they
-              share, a focused way to see which conditions move the same bacteria as the symptoms you picked, from a
-              gut-flora perspective. Click the map's background at any time to clear back to the full map.
+              Leave everything unpicked to see the full map. Check specific symptoms, interventions, and/or
+              conditions to narrow the map down to just those — conditions get overlaid as extra nodes wired to
+              whichever bacteria they share, a focused way to see which conditions move the same bacteria as what
+              you picked, from a gut-flora perspective. Click the map's background at any time to clear back to the
+              full map.
             </p>
             <div className="mb-3">
               <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
                 SYMPTOMS
               </div>
               <div className="flex flex-wrap gap-1.5 mb-2">
-                {ALL_SYMPTOMS.map((s) => {
+                {ALL_SYMPTOMS_ONLY.map((s) => {
                   const on = selectedSymptoms.includes(s)
                   return (
                     <button
@@ -194,6 +215,28 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
                       style={{
                         background: on ? '#2DD4BF33' : theme.ink2,
                         border: `1px solid ${on ? '#2DD4BF' : theme.line}`,
+                        color: on ? theme.text : theme.muted,
+                      }}
+                    >
+                      {s}
+                    </button>
+                  )
+                })}
+              </div>
+              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+                INTERVENTIONS
+              </div>
+              <div className="flex flex-wrap gap-1.5 mb-2">
+                {ALL_INTERVENTIONS.map((s) => {
+                  const on = selectedSymptoms.includes(s)
+                  return (
+                    <button
+                      key={s}
+                      onClick={() => setSelectedSymptoms(on ? selectedSymptoms.filter((x) => x !== s) : [...selectedSymptoms, s])}
+                      className="rounded-full px-2.5 py-1 text-xs"
+                      style={{
+                        background: on ? '#F5A62333' : theme.ink2,
+                        border: `1px solid ${on ? '#F5A623' : theme.line}`,
                         color: on ? theme.text : theme.muted,
                       }}
                     >
