@@ -501,6 +501,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     var lastClickIdx = null,
       lastClickTime = 0;
     var DBLCLICK_WINDOW = 400; // ms — our own double-click detection (matching node INDEX, not exact pixel position), replacing reliance on the browser's native dblclick event. Native dblclick failed to fire reliably here: its target-matching seems to be thrown off by a few px of cursor drift between the two clicks (or by the node itself drifting under force-directed physics between clicks), which a real click on a small node easily triggers.
+    var lastBgClickTime = 0; // New: background click now requires the same double-click pattern as node pinning (see onPointerUp's bgDown branch) - a single accidental click can't clear the selection anymore, by explicit request after a reported mobile zoom-related false clear.
     var selectedNodes = new Set();
     var pinnedEls = {};
     var zCounter = 10;
@@ -1187,12 +1188,44 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         dragNode = null;
         isDragging = false;
       } else if (bgDown) {
-        if (selectedNodes.size) {
-          closeAllPinned();
-          setHi(curr);
+        // Explicit request: clearing the selection on the background now
+        // needs a genuine double-click, same DBLCLICK_WINDOW/pattern as
+        // node pinning above (not the browser's native dblclick - same
+        // reasoning as that comment). A single accidental background
+        // click - e.g. a canceled touch gesture that still reaches here,
+        // or just a stray tap - no longer clears anything by itself.
+        var bgNow = Date.now();
+        var isDoubleBgClick = (bgNow - lastBgClickTime) < DBLCLICK_WINDOW;
+        if (isDoubleBgClick) {
+          lastBgClickTime = 0; // consumed - a 3rd quick click starts fresh
+          if (selectedNodes.size) {
+            closeAllPinned();
+            setHi(curr);
+          }
+          if (typeof onBackgroundClick === "function") onBackgroundClick();
+        } else {
+          lastBgClickTime = bgNow;
         }
-        if (typeof onBackgroundClick === "function") onBackgroundClick();
       }
+      bgDown = false;
+    }
+
+    // New: pointercancel used to be routed straight to onPointerUp, so a
+    // touch gesture the browser CANCELS to take over natively (pinch-zoom,
+    // double-tap-zoom) ran the exact same click/selection/background-clear
+    // logic a real pointerup does - the actual root cause of the reported
+    // "zooming clears my selection" bug on these maps specifically (a
+    // separate mechanism from the ConditionsGrid instance of the same
+    // symptom, which used a plain DOM onClick, not pointer events). A
+    // cancel means the browser took the gesture over; user intent is
+    // unknown, so this just resets transient state without treating it as
+    // any kind of click.
+    function onPointerCancel(ev) {
+      if (dragNode) {
+        try { svg.releasePointerCapture(ev.pointerId); } catch { /* already released/invalid, harmless */ }
+      }
+      dragNode = null;
+      isDragging = false;
       bgDown = false;
     }
 
@@ -1330,7 +1363,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     svg.addEventListener("pointerdown", onPointerDown);
     svg.addEventListener("pointermove", onPointerMove);
     svg.addEventListener("pointerup", onPointerUp);
-    svg.addEventListener("pointercancel", onPointerUp);
+    svg.addEventListener("pointercancel", onPointerCancel);
     svg.addEventListener("pointerleave", onPointerLeave);
     svg.addEventListener("contextmenu", onContextMenu);
 
@@ -1350,7 +1383,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       svg.removeEventListener("pointerdown", onPointerDown);
       svg.removeEventListener("pointermove", onPointerMove);
       svg.removeEventListener("pointerup", onPointerUp);
-      svg.removeEventListener("pointercancel", onPointerUp);
+      svg.removeEventListener("pointercancel", onPointerCancel);
       svg.removeEventListener("pointerleave", onPointerLeave);
       svg.removeEventListener("contextmenu", onContextMenu);
       tip.removeEventListener("pointerleave", onTipLeave);

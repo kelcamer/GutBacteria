@@ -276,6 +276,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
   const DRAG_THRESHOLD = 4 // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
   let lastClickIdx = null, lastClickTime = 0
   const DBLCLICK_WINDOW = 400 // ms — our own double-click detection (matching node INDEX, not exact pixel position), replacing reliance on the browser's native dblclick event. Native dblclick failed to fire reliably here: its target-matching seems to be thrown off by a few px of cursor drift between the two clicks (or by the node itself drifting under force-directed physics between clicks), which a real click on a small node easily triggers.
+  let lastBgClickTime = 0 // New: background click now requires the same double-click pattern as node pinning (see the bgDown branch below) - a single accidental click can't clear the selection anymore, by explicit request after a reported mobile zoom-related false clear.
   const selectedNodes = new Set()
   let pinnedEls = {}
   let zCounter = 10
@@ -833,17 +834,47 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
       dragNode = null
       isDragging = false
     } else if (bgDown) {
-      // Mirrors buildSymptomMap.js's own onBackgroundClick exactly - fires
-      // on any genuine background click (not a drag), regardless of
-      // whether there was a prior selection, so a caller can use it as a
-      // general "clear whatever I'm doing" signal (e.g. ConditionsGrid.jsx
-      // un-hiding its other cards once the map's background is clicked).
-      if (selectedNodes.size) {
-        closeAllPinned()
-        setHi(curr)
+      // Explicit request: clearing the selection on the background now
+      // needs a genuine double-click, same DBLCLICK_WINDOW/pattern as node
+      // pinning above (not the browser's native dblclick - same reasoning
+      // as that comment). A single accidental background click - e.g. a
+      // canceled touch gesture that still reaches here, or just a stray
+      // tap - no longer clears anything by itself.
+      const bgNow = Date.now()
+      const isDoubleBgClick = bgNow - lastBgClickTime < DBLCLICK_WINDOW
+      if (isDoubleBgClick) {
+        lastBgClickTime = 0 // consumed - a 3rd quick click starts fresh
+        if (selectedNodes.size) {
+          closeAllPinned()
+          setHi(curr)
+        }
+        if (typeof onBackgroundClick === 'function') onBackgroundClick()
+      } else {
+        lastBgClickTime = bgNow
       }
-      if (typeof onBackgroundClick === 'function') onBackgroundClick()
     }
+    bgDown = false
+  }
+
+  // New: pointercancel used to be routed straight to onPointerUp, so a
+  // touch gesture the browser CANCELS to take over natively (pinch-zoom,
+  // double-tap-zoom) ran the exact same click/selection/background-clear
+  // logic a real pointerup does - the actual root cause of the reported
+  // "zooming clears my selection" bug on these maps specifically (a
+  // separate mechanism from the ConditionsGrid instance of the same
+  // symptom, which used a plain DOM onClick, not pointer events). A cancel
+  // means the browser took the gesture over; user intent is unknown, so
+  // this just resets transient state without treating it as any click.
+  function onPointerCancel(ev) {
+    if (dragNode) {
+      try {
+        svg.releasePointerCapture(ev.pointerId)
+      } catch {
+        // already released/invalid, harmless
+      }
+    }
+    dragNode = null
+    isDragging = false
     bgDown = false
   }
 
@@ -939,7 +970,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
   svg.addEventListener('pointerdown', onPointerDown)
   svg.addEventListener('pointermove', onPointerMove)
   svg.addEventListener('pointerup', onPointerUp)
-  svg.addEventListener('pointercancel', onPointerUp)
+  svg.addEventListener('pointercancel', onPointerCancel)
   svg.addEventListener('pointerleave', onPointerLeave)
   svg.addEventListener('contextmenu', onContextMenu)
 
@@ -956,7 +987,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     svg.removeEventListener('pointerdown', onPointerDown)
     svg.removeEventListener('pointermove', onPointerMove)
     svg.removeEventListener('pointerup', onPointerUp)
-    svg.removeEventListener('pointercancel', onPointerUp)
+    svg.removeEventListener('pointercancel', onPointerCancel)
     svg.removeEventListener('pointerleave', onPointerLeave)
     svg.removeEventListener('contextmenu', onContextMenu)
     tip.removeEventListener('pointerleave', onTipLeave)
