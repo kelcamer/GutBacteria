@@ -96,6 +96,56 @@ no human gut-microbiome psilocybin studies were found. Flagged as such in every 
 
 ---
 
+## Session 2 — per-bacterium sweep
+
+### Desulfovibrio → Parkinson's disease (**added**, `up`)
+
+Murros et al. 2021, *Front Cell Infect Microbiol* (PMID 34012926), n=20 PD/20
+controls. **Every** PD patient harboured Desulfovibrio, at higher levels than
+controls, and concentration correlated with PD severity. Mechanistically loaded
+rather than merely correlational: these sulfate-reducers make hydrogen sulfide and
+LPS, and some strains synthesise magnetite — all proposed triggers of
+alpha-synuclein oligomerisation. A 2025 oral-gut-brain-axis analysis independently
+found the genus rising with PD severity. Small cohort, so recorded in-app as a
+strong mechanistic hypothesis, not settled epidemiology.
+
+This was a genuine gap — Parkinson's had 29 taxa and none of them Desulfovibrio.
+
+### Akkermansia muciniphila → Metabolic dysregulation (**strengthened**)
+
+Mount et al. 2026, *Nature Medicine* (PMID 42120725) — a real **RCT**, n=90 adults
+with overweight/obesity. 8-week low-energy diet, then 24 weeks daily pasteurised
+A. muciniphila MucT vs. placebo. MucT group regained **1.2 kg vs. 3.2 kg** placebo
+and held greater net loss; no serious adverse events. Baseline Akkermansia
+abundance predicted cardiometabolic response — it worked best in those who started
+with the least. Interventional evidence is rare in this app, so this materially
+upgrades an entry that was previously observational + mouse-mechanistic only.
+
+### Bilophila → Gut barrier dysfunction (**added**, `up`)
+
+Sayavedra et al. 2025, *Nature Communications* (PMID 40447622). High-fat diets
+expand this sulfide producer. 34 genes critical for colonisation identified —
+bacterial microcompartments + energy-metabolism enzymes that metabolise taurine
+and isethionate into H2S, acetate and ethanol. Co-colonised with other microbiota
+it increased gut permeability, raised liver ethanol, drove hepatic macrophage
+infiltration. The authors' own conclusion is worth preserving: metabolic
+flexibility and microbial *interactions* — not H2S alone — determine the harm.
+
+### Checked, nothing added yet
+
+- **Prevotella copri** — the literature is genuinely unsettled (strain-level
+  differences dominate; a high-fiber diet *exacerbated* arthritis in P. copri-
+  colonised RA models, which cuts against the usual fiber-is-good framing). The
+  app's existing Prevotella entries already reflect this ambiguity. Revisit with a
+  strain-resolved source.
+- **Christensenella minuta** — Phase I trial (NCT04663139) reportedly safe with
+  LDL reduction, but results are **unpublished**. Not citable yet. Worth watching.
+- **Ruminococcus gnavus** — 2025 global survey of 12,791 metagenomes
+  (Nat Commun) recapitulates known IBD/metabolic associations rather than adding
+  new directions. App already carries R. gnavus links.
+
+---
+
 ## Rejected / unverified — NOT added
 
 Recorded so the same dead ends aren't re-walked.

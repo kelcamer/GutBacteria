@@ -3650,8 +3650,14 @@
   },
   {
    "name": "Bilophila",
-   "count": 7,
+   "count": 8,
    "up": [
+    {
+     "symptom": "Gut barrier dysfunction",
+     "note": "High-fat diets expand this sulfide-producing genus. 34 genes were identified as critical for its gut colonisation — chiefly bacterial microcompartments and energy-metabolism enzymes letting it metabolise taurine and isethionate into hydrogen sulfide, acetate and ethanol. Co-colonised with other microbiota it increased gut permeability, raised liver ethanol, and drove hepatic macrophage infiltration. Notably the authors conclude metabolic flexibility and microbial interactions — not H2S production alone — determine the harm.",
+     "ref": "Sayavedra et al. 2025, Nature Communications (PMID 40447622)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40447622/"
+    },
     {
      "symptom": "Systemic inflammation",
      "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
@@ -5365,9 +5371,9 @@
     },
     {
      "symptom": "Metabolic dysregulation",
-     "note": "Consistently negatively associated with T2D across cohorts; mechanistic mouse/human work ties its loss to insulin resistance via ghrelin signalling.",
-     "ref": "PMC12343160",
-     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12343160/"
+     "note": "Consistently negatively associated with T2D across cohorts; mechanistic mouse/human work ties its loss to insulin resistance via ghrelin signalling. Now backed by a randomised controlled trial: 90 adults with overweight/obesity did an 8-week low-energy diet then 24 weeks of daily pasteurised A. muciniphila MucT or placebo — the MucT group regained far less weight (1.2 kg vs. 3.2 kg) and held greater net loss from baseline, with no serious adverse events. Baseline Akkermansia abundance predicted cardiometabolic response, i.e. it worked best in those who started with least.",
+     "ref": "PMC12343160; Mount et al. 2026, Nature Medicine — RCT, n=90 (PMID 42120725)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42120725/"
     },
     {
      "symptom": "Gut barrier dysfunction",

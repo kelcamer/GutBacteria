@@ -4907,6 +4907,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40461531/"
       }
      ]
+    },
+    {
+     "id": "seed_pd_t30",
+     "name": "Desulfovibrio",
+     "dir": "up",
+     "refs": "PMID 34012926",
+     "note": "Every PD patient in this cohort (n=20 PD/20 controls) harboured Desulfovibrio, at higher levels than controls, and the concentration correlated with PD severity. Mechanistically notable rather than merely correlational: these sulfate-reducing Gram-negatives produce hydrogen sulfide and LPS, and some strains synthesise magnetite — all proposed triggers of alpha-synuclein oligomerisation and aggregation. A separate 2025 oral-gut-brain-axis analysis likewise found the genus rising with PD severity. Small cohort, so weight it as a strong mechanistic hypothesis rather than settled epidemiology.",
+     "links": [
+      {
+       "id": "seed_pd_t30_l1",
+       "label": "Murros et al. 2021, Front Cell Infect Microbiol — n=20/20 (PMID 34012926)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34012926/"
+      }
+     ]
     }
    ]
   },
