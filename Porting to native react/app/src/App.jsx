@@ -48,6 +48,12 @@ export default function App() {
   // up so its sibling ConditionsMap can highlight whatever's typed there -
   // see ConditionsMap.jsx's own focusNames effect.
   const [conditionsQuery, setConditionsQuery] = useState('')
+  // New (no minified-source equivalent): a single click on a ConditionsGrid
+  // card (as opposed to a double click, which still opens it) highlights
+  // it here instead - see ConditionsGrid.jsx's own click/double-click
+  // handling and the focusNames useMemo below for how this and the search
+  // box above combine.
+  const [clickedConditionName, setClickedConditionName] = useState(null)
 
   // New (no minified-source equivalent): GlobalSearch's own open/close
   // state, plus one "jump request" slot per destination tab that has its
@@ -84,11 +90,14 @@ export default function App() {
   // the query or the condition list actually changes, not on every
   // unrelated App re-render (a fresh array literal here every render
   // would otherwise look like "a new search" to that effect each time).
+  // The search box wins over a single-clicked card when both are active
+  // (typing is the more deliberate, more recent-feeling action) - falls
+  // back to the click highlight only when the search box is empty.
   const conditionsQueryMatches = useMemo(() => {
     const q = conditionsQuery.trim().toLowerCase()
-    if (!q) return []
-    return conditions.filter((c) => c.name.toLowerCase().includes(q)).map((c) => c.name)
-  }, [conditionsQuery, conditions])
+    if (q) return conditions.filter((c) => c.name.toLowerCase().includes(q)).map((c) => c.name)
+    return clickedConditionName ? [clickedConditionName] : []
+  }, [conditionsQuery, conditions, clickedConditionName])
 
   // CRUD helpers, ported from D/M/Q/S/z inside $u (~line 16832-16861).
   const updateCondition = (id, patch) =>
@@ -329,8 +338,15 @@ export default function App() {
               conditions={conditions}
               onOpen={setActiveConditionId}
               onAdd={addCondition}
+              onHighlight={setClickedConditionName}
               query={conditionsQuery}
-              onQueryChange={setConditionsQuery}
+              onQueryChange={(v) => {
+                // Typing supersedes a prior single-click highlight - without
+                // this, clearing the search box afterward would resurrect
+                // whatever card was clicked before typing even started.
+                setConditionsQuery(v)
+                setClickedConditionName(null)
+              }}
             />
             <ConditionsMap conditions={conditions} focusNames={conditionsQueryMatches} />
           </>

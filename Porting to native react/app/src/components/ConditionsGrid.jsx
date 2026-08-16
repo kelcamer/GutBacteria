@@ -1,10 +1,20 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { ChevronRight, Plus, Search, X } from 'lucide-react'
 import { theme, palette } from '../theme'
 import { makeId } from '../lib/id'
 import { Button } from './Button'
 import { Field } from './Field'
 import { Modal } from './Modal'
+
+// One click vs. two, disambiguated with a plain setTimeout debounce
+// rather than the browser's native dblclick event - the same reasoning
+// buildSymptomMap.js/buildMap.js's own node click handling already
+// documents (native dblclick's target-matching is unreliable enough on
+// small/fast targets that this app avoids it everywhere). Keyed per
+// condition id in a plain object (not one shared timer) so quickly
+// clicking two DIFFERENT cards in a row can't be misread as a double-
+// click on either one.
+const DBLCLICK_WINDOW = 280
 
 // Ported verbatim from `Wm` in gut-flora-atlas.readable.html (~line
 // 28344-28515). `Eo`=ChevronRight, `at`=Plus (confirmed in the icon
@@ -18,11 +28,30 @@ import { Modal } from './Modal'
 // `query`/`onQueryChange` are controlled from App.jsx (not local state)
 // so ConditionsMap.jsx, rendered as this grid's sibling, can highlight
 // whatever's currently typed here - see App.jsx's own state comment.
-export function ConditionsGrid({ conditions, onOpen, onAdd, query, onQueryChange }) {
+export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, query, onQueryChange }) {
   const [addOpen, setAddOpen] = useState(false)
   const [name, setName] = useState('')
   const [code, setCode] = useState('')
   const [color, setColor] = useState(palette[6])
+  const clickTimers = useRef({})
+
+  // Single click -> highlight this condition (and its connections) in
+  // ConditionsMap below, without leaving this screen. Double click (a
+  // second click on the SAME card within DBLCLICK_WINDOW) -> open it, the
+  // original behavior.
+  const handleCardClick = (c) => {
+    const timers = clickTimers.current
+    if (timers[c.id]) {
+      clearTimeout(timers[c.id])
+      delete timers[c.id]
+      onOpen(c.id)
+    } else {
+      timers[c.id] = setTimeout(() => {
+        delete timers[c.id]
+        onHighlight?.(c.name)
+      }, DBLCLICK_WINDOW)
+    }
+  }
 
   const addCondition = () => {
     if (!name.trim()) return
@@ -44,7 +73,8 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, query, onQueryChange
     <div className="p-4 safe-bottom">
       <p className="mb-4" style={{ color: theme.muted, fontSize: 13, maxWidth: 620 }}>
         Every condition holds a list of taxa marked increased or decreased. Tap one to edit it, or head to Compare
-        to lay two side by side.
+        to lay two side by side. Click once on a card to highlight it in the bacteria map below; click twice to
+        open it.
       </p>
 
       <div
@@ -85,7 +115,7 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, query, onQueryChange
           return (
             <button
               key={c.id}
-              onClick={() => onOpen(c.id)}
+              onClick={() => handleCardClick(c)}
               className="text-left rounded-2xl p-4 transition-transform"
               style={{ background: theme.ink2, border: `1px solid ${theme.line}`, borderTop: `3px solid ${c.color}` }}
             >
