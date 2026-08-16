@@ -114,12 +114,25 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, highlig
 
       {highlightedName && (
         <p className="mb-3" style={{ color: theme.muted, fontSize: 12.5 }}>
-          Showing just <Italic>{highlightedName}</Italic> — click it again, or click the map's background below, to
+          Showing just <Italic>{highlightedName}</Italic> — click it again, or click the empty space beside it, to
           bring the rest back.
         </p>
       )}
 
-      <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
+      <div
+        className="grid gap-3"
+        style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))', minHeight: highlightedName ? 128 : undefined }}
+        onClick={(e) => {
+          // Background click, not a bubbled click from a card/button inside
+          // it - e.target === e.currentTarget is the standard way to tell
+          // the two apart in React, same idea the SVG node maps' own bgDown
+          // detection uses for "click empty canvas to clear." minHeight
+          // above keeps this div tall enough to have real empty space to
+          // click once it's down to one card, instead of shrinking to fit
+          // just that card and leaving nothing to click beside it.
+          if (e.target === e.currentTarget && highlightedName) onHighlight?.(null)
+        }}
+      >
         {[...conditions]
           .filter((c) => c.name.toLowerCase().includes(query.trim().toLowerCase()) || c.abbr.toLowerCase().includes(query.trim().toLowerCase()))
           .filter((c) => !highlightedName || c.name === highlightedName)
