@@ -21336,7 +21336,7 @@ select{-webkit-appearance:none;appearance:none}
     }]
   }];
   var GFA_SYMPTOM_DATA_SHIPPED = {
-    "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies", "Cold sores", "Emotional Dysregulation", "Coffee / Stimulants", "Psilocybin / Psychedelics"],
+    "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies", "Cold sores", "Emotional Dysregulation", "Coffee / Stimulants", "Psilocybin / Psychedelics", "Arterial stiffness / vascular aging"],
     "bacteria": [{
       "name": "Bifidobacterium",
       "count": 12,
@@ -22143,8 +22143,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Blautia",
-      "count": 5,
+      "count": 6,
       "up": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Blautia massiliensis was positively associated with BOTH aortic augmentation index and carotid-femoral pulse wave velocity in a 3,087-participant cross-sectional study — i.e. more of it tracked with stiffer arteries. One of the few taxa in this dataset pointing the pro-stiffness direction.",
+        "ref": "Cuadrat et al. 2023, Scientific Reports — EPIC-Potsdam, n=3,087 (PMID 37587126)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37587126/"
+      }, {
         "symptom": "Non-secretor status (FUT2)",
         "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
         "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
@@ -22574,7 +22579,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Ruminococcaceae",
-      "count": 7,
+      "count": 8,
       "up": [{
         "symptom": "Constipation",
         "note": "Higher abundance in defecatory disorder (a constipation subtype) vs. non-defecatory-disorder constipation.",
@@ -22587,6 +22592,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
       }],
       "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Two Ruminococcaceae OTUs were among 7 OTUs negatively associated with carotid-femoral pulse wave velocity (more of them, less arterial stiffness) in 617 middle-aged women. Microbiome alpha diversity itself was negatively correlated with PWV (Beta=-0.25, P=1e-4), and the microbiome explained 8.3% of PWV variance — only 5.51% of which was mediated by metabolic syndrome, so this is largely independent of classic cardiometabolic risk.",
+        "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
+      }, {
         "symptom": "Bloating & gas",
         "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
         "ref": "PMC6421268",
@@ -22746,7 +22756,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Collinsella",
-      "count": 6,
+      "count": 7,
+      "both": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Genuinely conflicting across two large cohorts. In EPIC-Potsdam (n=3,087) Collinsella aerofaciens was POSITIVELY associated with pulse wave velocity (more of it, stiffer arteries) — though that association lost significance after adjusting for type 2 diabetes. In TwinsUK (n=617) a C. aerofaciens OTU was among 7 OTUs NEGATIVELY associated with PWV (more of it, less stiffness). Marked \"both\" rather than picking a side; the T2D-adjustment detail suggests the pro-stiffness signal may be partly confounded by metabolic status.",
+        "ref": "Cuadrat et al. 2023, Scientific Reports (PMID 37587126) vs. Menni et al. 2018, European Heart Journal (PMID 29750272)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37587126/"
+      }],
       "up": [{
         "symptom": "Gut barrier dysfunction",
         "note": "Alters gut permeability in experimental arthritis; correlates with increased epithelial permeability.",
@@ -23625,7 +23641,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Odoribacter",
-      "count": 5,
+      "count": 6,
       "up": [{
         "symptom": "Restlessness",
         "note": "Significantly increased in children with tic disorder vs. matched controls (p<0.05).",
@@ -23633,6 +23649,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
       }],
       "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "One Odoribacter OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. its depletion tracks with stiffer arteries.",
+        "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
+      }, {
         "symptom": "Bloating & gas",
         "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
         "ref": "PMC6421268",
@@ -24357,7 +24378,7 @@ select{-webkit-appearance:none;appearance:none}
       "down": []
     }, {
       "name": "Rikenellaceae",
-      "count": 2,
+      "count": 3,
       "up": [{
         "symptom": "Anxiety",
         "note": "Family containing Alistipes; broad signal mirrors Alistipes mood associations.",
@@ -24369,7 +24390,12 @@ select{-webkit-appearance:none;appearance:none}
         "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
       }],
-      "down": []
+      "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "One Rikenellaceae OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. its depletion tracks with stiffer arteries.",
+        "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
+      }]
     }, {
       "name": "Oscillospira",
       "count": 2,
@@ -24587,7 +24613,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Sutterella",
-      "count": 7,
+      "count": 8,
       "up": [{
         "symptom": "Overstimulation",
         "note": "Elevated in pediatric migraine's inflammatory dysbiosis pattern; separately, Sutterella is repeatedly flagged in autism sensory over-responsivity brain-gut-microbiome models. Misophonia is a documented comorbidity of migraine's sensory-hypersensitivity phenotype (comorbidity evidence, not a direct bacteria-misophonia study).",
@@ -24624,7 +24650,12 @@ select{-webkit-appearance:none;appearance:none}
         "ref": "Fujihara et al. 2023, Microorganisms (PMID 37764088)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/37764088/"
       }],
-      "down": [],
+      "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Sutterella wadsworthensis (ASV 75) was inversely associated with BOTH aortic augmentation index (beta=-0.11 +/- 0.04) and carotid-femoral pulse wave velocity (beta=-0.14 +/- 0.03) in a 3,087-participant cross-sectional study — one of the strongest and most consistent single-species protective signals for vascular stiffness. Note this runs opposite to Sutterella's pro-inflammatory associations elsewhere in this app (autism GI, migraine), which is a real rank/context split rather than a data error.",
+        "ref": "Cuadrat et al. 2023, Scientific Reports — EPIC-Potsdam, n=3,087 (PMID 37587126)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37587126/"
+      }],
       "both": [{
         "symptom": "Reduced socializing",
         "note": "One study found Sutterella increased in ASD alongside Parasutterella. But a separate ASD cohort found Sutterella abundance negatively correlated with CARS severity scores (r=-0.24, p=0.0046, stronger in ASD-only subgroup r=-0.34, p=0.0072) — i.e. higher Sutterella tracked with LESS severe social impairment there, the opposite implication. Marked \"both\" given the genuine conflict.",
@@ -24693,7 +24724,7 @@ select{-webkit-appearance:none;appearance:none}
       "down": []
     }, {
       "name": "Bacteroides uniformis",
-      "count": 1,
+      "count": 2,
       "up": [{
         "symptom": "Irritability",
         "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
@@ -24716,6 +24747,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
       }],
       "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Negatively associated with carotid-femoral pulse wave velocity in a 3,087-participant cross-sectional study — i.e. its depletion tracks with stiffer arteries. The study specifically notes this species is already commercially available as a probiotic.",
+        "ref": "Cuadrat et al. 2023, Scientific Reports — EPIC-Potsdam, n=3,087 (PMID 37587126)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37587126/"
+      }, {
         "symptom": "Chronic pain",
         "note": "Found depleted in the Minerbi et al. 2019 fibromyalgia microbiome signature — this is a species-specific finding, kept separate from the bare Bacteroides genus node.",
         "ref": "Minerbi 2019 / PMC11671092",
@@ -24753,14 +24789,19 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Eubacterium siraeum",
-      "count": 1,
+      "count": 2,
       "up": [{
         "symptom": "Lack of impulse control",
         "note": "Positively associated with the UPPS-sensation-seeking facet of trait impulsivity in the same cohort; also correlated with more frequent alcohol consumption.",
         "ref": "Translational Psychiatry 2025 (PMID 40753077)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
       }],
-      "down": []
+      "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Negatively correlated with aortic augmentation index in a 3,087-participant cross-sectional study — i.e. its depletion tracks with stiffer arteries.",
+        "ref": "Cuadrat et al. 2023, Scientific Reports — EPIC-Potsdam, n=3,087 (PMID 37587126)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37587126/"
+      }]
     }, {
       "name": "Intestinimonas butyriciproducens",
       "count": 1,
@@ -24853,7 +24894,7 @@ select{-webkit-appearance:none;appearance:none}
       "down": []
     }, {
       "name": "Clostridiaceae",
-      "count": 2,
+      "count": 3,
       "up": [{
         "symptom": "Allergies",
         "note": "Family-level increase associated with development of allergic sensitization, eczema, or asthma. Note: at the genus level, bare Clostridium is reported DECREASED in allergic rhinitis specifically (3 studies) — a genuine rank-level split kept as two separate entries rather than merged.",
@@ -24865,6 +24906,11 @@ select{-webkit-appearance:none;appearance:none}
         "note": "Positively correlated with Quality of Working Memory (r=0.265, p<0.05) in healthy older adults — higher abundance associated with better working memory (i.e. depletion associated with worse working memory).",
         "ref": "Komanduri et al. 2021, Nutrients — 69 healthy older adults, 16S rRNA sequencing (PMID 35010939)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/35010939/"
+      }, {
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Two Clostridiaceae OTUs were among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. their depletion tracks with stiffer arteries.",
+        "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
       }]
     }, {
       "name": "Lachnospira pectinoschiza",
@@ -25201,9 +25247,14 @@ select{-webkit-appearance:none;appearance:none}
       "both": []
     }, {
       "name": "Ruminiclostridium5",
-      "count": 1,
+      "count": 2,
       "up": [],
       "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Negatively associated with BOTH aortic augmentation index and ankle-brachial index in a 3,087-participant cross-sectional study — i.e. its depletion tracks with stiffer arteries.",
+        "ref": "Cuadrat et al. 2023, Scientific Reports — EPIC-Potsdam, n=3,087 (PMID 37587126)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37587126/"
+      }, {
         "symptom": "Acne / skin flares",
         "note": "Independent protective factor against acne vulgaris in a 2-sample Mendelian randomization analysis (OR=0.85, 95% CI 0.72-0.97, P=0.014).",
         "ref": "Wu et al. 2024, Frontiers in Microbiology, 2-sample MR (PMID 38371936)",
@@ -25249,9 +25300,14 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Faecalibacterium prausnitzii",
-      "count": 3,
+      "count": 4,
       "up": [],
       "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Markedly depleted in elderly individuals, with a steeper decline in elderly heart-failure patients. This one is causal, not just correlational: oral administration of F. prausnitzii — or its metabolite butyrate alone — prevented age-related cardiac dysfunction by suppressing cardiomyocyte ferroptosis via downregulation of LCN2. A gene-edited strain unable to make butyrate LOST the cardioprotective effect, pinning the mechanism to butyrate specifically.",
+        "ref": "Zhang et al. 2025, Gut Microbes (PMID 40364435)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40364435/"
+      }, {
         "symptom": "Joint pain",
         "note": "Reduced in knee osteoarthritis patients (n=18 OA/20 age-matched controls); significant negative correlation with VAS pain scores.",
         "ref": "Scientific Reports 2025, machine-learning gut microbiota/OA study, n=18/20",
@@ -25640,14 +25696,19 @@ select{-webkit-appearance:none;appearance:none}
       "both": []
     }, {
       "name": "Barnesiella",
-      "count": 1,
+      "count": 2,
       "up": [{
         "symptom": "Irritability",
         "note": "More abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples — flagged honestly as a smaller/preliminary finding, not a large study.",
         "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
       }],
-      "down": [],
+      "down": [{
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "One Barnesiellaceae OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. its depletion tracks with stiffer arteries. Recorded at genus level here against the study's family-level OTU.",
+        "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
+      }],
       "both": []
     }, {
       "name": "Rhodospirillales",
