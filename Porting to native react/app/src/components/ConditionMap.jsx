@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
 import { conditionSymptomData } from '../lib/conditionSymptomData'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
+import { useZoom } from '../lib/useZoom'
+import { ZoomButtons } from './ZoomButtons'
 
 // Ported verbatim from `GFA_ConditionMap` in gut-flora-atlas.readable.html
 // (~line 26916-27095) - the per-condition scoped map that was placeholdered
@@ -11,6 +13,7 @@ export function ConditionMap({ condition }) {
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
+  const { zoom, zoomIn, zoomOut } = useZoom()
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
   const data = useMemo(() => conditionSymptomData(condition), [condition])
@@ -54,8 +57,10 @@ export function ConditionMap({ condition }) {
         {data.rankedSymptoms.join(', ')}.
       </p>
 
-      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'hidden' }}>
-        <div ref={hostRef} style={{ width: '100%' }} />
+      <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
+
+      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
+        <div ref={hostRef} style={{ width: '100%', transform: `scale(${zoom})`, transformOrigin: 'top center' }} />
         <div
           ref={tipRef}
           style={{

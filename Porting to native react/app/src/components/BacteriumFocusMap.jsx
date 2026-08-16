@@ -3,7 +3,9 @@ import { X } from 'lucide-react'
 import { theme } from '../theme'
 import { buildBacteriumFocusData } from '../lib/bacteriumFocusMap'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
+import { useZoom } from '../lib/useZoom'
 import { Italic } from './Italic'
+import { ZoomButtons } from './ZoomButtons'
 
 // New component (no minified-source equivalent), same shape as
 // ConditionMap.jsx (the per-condition scoped map) but inverted: given the
@@ -17,6 +19,7 @@ export function BacteriumFocusMap({ label, names, onClose }) {
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
+  const { zoom, zoomIn, zoomOut } = useZoom()
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
   const data = useMemo(() => buildBacteriumFocusData(names), [names])
@@ -73,8 +76,10 @@ export function BacteriumFocusMap({ label, names, onClose }) {
             its source.
           </p>
 
-          <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'hidden' }}>
-            <div ref={hostRef} style={{ width: '100%' }} />
+          <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
+
+          <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
+            <div ref={hostRef} style={{ width: '100%', transform: `scale(${zoom})`, transformOrigin: 'top center' }} />
             <div
               ref={tipRef}
               style={{

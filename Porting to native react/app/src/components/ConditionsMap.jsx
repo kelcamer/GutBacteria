@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
 import { symptomData } from '../data'
 import { buildMap } from '../lib/buildMap'
+import { useZoom } from '../lib/useZoom'
+import { ZoomButtons } from './ZoomButtons'
 
 // Ported from `Gfx` in gut-flora-atlas.readable.html (~line 28119-28372) -
 // the all-conditions "Condition <-> bacteria map", rendered directly below
@@ -13,6 +15,7 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
+  const { zoom, zoomIn, zoomOut } = useZoom()
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
@@ -109,8 +112,10 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
         more conditions. Hover any node to trace its links — {nBact} bacteria · {nEdge} links.
       </p>
 
-      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'hidden' }}>
-        <div ref={hostRef} style={{ width: '100%' }} />
+      <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
+
+      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
+        <div ref={hostRef} style={{ width: '100%', transform: `scale(${zoom})`, transformOrigin: 'top center' }} />
         <div
           ref={tipRef}
           style={{

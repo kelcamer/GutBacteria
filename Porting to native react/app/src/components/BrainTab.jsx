@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
 import { buildMap } from '../lib/buildMap'
 import { BRAIN_DATA } from '../data/brainData'
+import { useZoom } from '../lib/useZoom'
+import { ZoomButtons } from './ZoomButtons'
 
 // Ported from `GFA_BrainTab` in gut-flora-atlas.readable.html (~line
 // 26213-26743, 531 lines) - powers both "Condition to Brain Region" and
@@ -18,6 +20,7 @@ export function BrainTab({ pinType, focusRegion }) {
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
+  const { zoom, zoomIn, zoomOut } = useZoom()
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
@@ -162,8 +165,10 @@ export function BrainTab({ pinType, focusRegion }) {
         node's citation.
       </p>
 
-      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'hidden' }}>
-        <div ref={hostRef} style={{ width: '100%' }} />
+      <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
+
+      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
+        <div ref={hostRef} style={{ width: '100%', transform: `scale(${zoom})`, transformOrigin: 'top center' }} />
         <div
           ref={tipRef}
           style={{

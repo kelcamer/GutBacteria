@@ -3,6 +3,8 @@ import { theme } from '../theme'
 import { symptomData, seedData } from '../data'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { buildOverlayMapData } from '../lib/symptomMapConditionOverlay'
+import { useZoom } from '../lib/useZoom'
+import { ZoomButtons } from './ZoomButtons'
 
 // Module-level, not per-render: a stable list AND a stable default value
 // for useState below (symptomData is a static JSON import, so this never
@@ -28,6 +30,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
+  const { zoom, zoomIn, zoomOut } = useZoom()
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
@@ -239,8 +242,10 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
         )}
       </div>
 
-      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'hidden' }}>
-        <div ref={hostRef} style={{ width: '100%' }} />
+      <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
+
+      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
+        <div ref={hostRef} style={{ width: '100%', transform: `scale(${zoom})`, transformOrigin: 'top center' }} />
         <div
           ref={tipRef}
           style={{
