@@ -9253,13 +9253,17 @@ Error generating stack: ` + r.message + `
         }, {
           "id": "seed_115",
           "name": "Dialister",
-          "dir": "down",
-          "refs": "115",
-          "note": "",
+          "dir": "both",
+          "refs": "PMID 35027502; PMID 37849234",
+          "note": "Genuine cross-study contradiction, not resolved here in either direction: a 2022 meta-analysis found Dialister DECREASED in AD, but a 2023 causal fecal-transplant study (human AD donors + recipient rats) found it INCREASED in AD patients and inversely correlated with cognitive (MMSE) score. Flagged as \"both\" rather than picking a side.",
           "links": [{
             "id": "seed_116",
             "label": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+          }, {
+            "id": "seed_116_l2",
+            "label": "Grabrucker et al. 2023, Brain — human AD donors + FMT-recipient rats (PMID 37849234)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37849234/"
           }]
         }, {
           "id": "seed_117",
@@ -9422,6 +9426,39 @@ Error generating stack: ` + r.message + `
             "id": "seed_ad_t27_l1",
             "label": "n=30/47, APOE-e4 study (PMID 33732104)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/33732104/"
+          }]
+        }, {
+          "id": "seed_ad_t28",
+          "name": "Desulfovibrio",
+          "dir": "up",
+          "refs": "PMID 37849234",
+          "note": "The strongest finding in a causal fecal-microbiota-transplant study: increased in Alzheimer's patients vs. healthy controls (a pathobiont genus) AND inversely correlated with cognitive (MMSE) score in the human donors — then specifically replicated in the rats that received those patients' transplanted microbiota, the first evidence AD-associated gut dysbiosis itself (not just correlation) can transfer cognitive/neurogenesis deficits to a healthy recipient.",
+          "links": [{
+            "id": "seed_ad_t28_l1",
+            "label": "Grabrucker et al. 2023, Brain — human AD donors + FMT-recipient rats (PMID 37849234)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37849234/"
+          }]
+        }, {
+          "id": "seed_ad_t29",
+          "name": "Coprococcus",
+          "dir": "down",
+          "refs": "PMID 37849234",
+          "note": "SCFA-producing genus decreased in AD patients in the same donor cohort, positively correlated with cognitive (MMSE) score.",
+          "links": [{
+            "id": "seed_ad_t29_l1",
+            "label": "Grabrucker et al. 2023, Brain",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37849234/"
+          }]
+        }, {
+          "id": "seed_ad_t30",
+          "name": "Clostridium sensu stricto 1",
+          "dir": "down",
+          "refs": "PMID 37849234",
+          "note": "SCFA-producing genus significantly reduced in AD patients in the same donor cohort.",
+          "links": [{
+            "id": "seed_ad_t30_l1",
+            "label": "Grabrucker et al. 2023, Brain",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37849234/"
           }]
         }]
       }, {
