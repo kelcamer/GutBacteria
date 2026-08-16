@@ -111,7 +111,9 @@ def main():
         # matching on "transition" and pulling in energy/payment/metallurgy
         # papers. Then require EVERY remaining key word, not any.
         base = re.sub(r"\([^)]*\)", " ", cond)
-        keys = [k for k in re.split(r"[^A-Za-z0-9\']+", base) if len(k) > 3]
+        # len>3 silently emptied `keys` for short names like "OCD", which
+        # then matched everything. Keep acronyms; only drop 1-2 char noise.
+        keys = [k for k in re.split(r"[^A-Za-z0-9\']+", base) if len(k) > 2]
         keys = [k for k in keys if k.lower() not in {"disease", "disorder", "syndrome", "state", "effect"}]
         for it in items:
             title = (it.get("title") or [""])[0]
