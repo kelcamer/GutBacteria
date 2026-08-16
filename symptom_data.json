@@ -49,12 +49,13 @@
   "Coffee / Stimulants",
   "Psilocybin / Psychedelics",
   "Arterial stiffness / vascular aging",
-  "2'-Fucosyllactose (HMO) supplementation"
+  "2'-Fucosyllactose (HMO) supplementation",
+  "Oral iron supplementation"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 13,
+   "count": 14,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -101,6 +102,12 @@
    ],
    "down": [
     {
+     "symptom": "Oral iron supplementation",
+     "note": "Reduced by oral iron supplementation - the most consistently reported cost of correcting iron deficiency by mouth. Matters disproportionately for anyone whose Bifidobacterium is already structurally low, such as FUT2 non-secretors, since the same genus is being suppressed from two directions at once.",
+     "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+    },
+    {
      "symptom": "Bloating & gas",
      "note": "RCTs of B. infantis 35624 / B. longum / B. bifidum MIMBb75 reduced bloating & abdominal distension vs placebo.",
      "ref": "PMC7456408",
@@ -138,32 +145,32 @@
     },
     {
      "symptom": "Lack of impulse control",
-     "note": "Positively associated with the UPPS-premeditation facet \u2014 i.e. higher levels track with more forethought and less impulsive action \u2014 in the same cohort; framed here as depleted in the lower-premeditation, more-impulsive state.",
+     "note": "Positively associated with the UPPS-premeditation facet — i.e. higher levels track with more forethought and less impulsive action — in the same cohort; framed here as depleted in the lower-premeditation, more-impulsive state.",
      "ref": "Translational Psychiatry 2025 (PMID 40753077)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/"
     },
     {
      "symptom": "Nausea",
-     "note": "Preoperative abundance strongly, negatively correlated with postoperative nausea/vomiting (PONV) severity (r=-0.69, p<0.001) \u2014 i.e. higher Bifidobacterium predicted milder PONV.",
-     "ref": "Tang et al. 2025, Frontiers in Medicine \u2014 thyroid cancer surgery cohort (PMID 40491765)",
+     "note": "Preoperative abundance strongly, negatively correlated with postoperative nausea/vomiting (PONV) severity (r=-0.69, p<0.001) — i.e. higher Bifidobacterium predicted milder PONV.",
+     "ref": "Tang et al. 2025, Frontiers in Medicine — thyroid cancer surgery cohort (PMID 40491765)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40491765/"
     },
     {
      "symptom": "Constipation",
      "note": "Decreased in chronic constipation across multiple studies (though one slow-transit-specific study found B. longum specifically increased in that subtype).",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Restlessness",
-     "note": "Significantly reduced in children with tic disorder vs. matched controls (p<0.05). Restlessness here is framed around the premonitory urge preceding tics \u2014 a restless/tense sensation phenomenologically similar to RLS restlessness.",
-     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "note": "Significantly reduced in children with tic disorder vs. matched controls (p<0.05). Restlessness here is framed around the premonitory urge preceding tics — a restless/tense sensation phenomenologically similar to RLS restlessness.",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     },
     {
      "symptom": "Headache / migraine",
-     "note": "Mendelian randomization evidence for decreased migraine risk (He et al. 2023) \u2014 i.e. higher levels causally linked to lower migraine risk.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "note": "Mendelian randomization evidence for decreased migraine risk (He et al. 2023) — i.e. higher levels causally linked to lower migraine risk.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
@@ -258,37 +265,37 @@
     }
    ],
    "both": [
-             {
-              "symptom": "Irritability",
-              "note": "ADHD: Mechanistically interesting dopamine-precursor story, though treatment-sensitive. (up) | Autism (ASD): From this app's Autism (ASD) condition data. (down)",
-              "ref": "Multiple sources across ADHD, Autism (ASD) — see individual condition entries",
-              "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.838941/full"
-             },
-             {
-              "symptom": "Panic attack",
-              "note": "PTSD: Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored. (up) | Anxiety: From this app's Anxiety condition data. (down)",
-              "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
-             },
-             {
-              "symptom": "Sleep disturbance",
-              "note": "Depression: In pregnant women, depressive symptom severity was significantly negatively associated with fecal B. longum abundance (q=0.02). (down) | Anxiety: From this app's Anxiety condition data. (down) | Parkinson's disease: From this app's Parkinson's disease condition data. (up)",
-              "ref": "Multiple sources across Anxiety, Depression, Parkinson's disease — see individual condition entries",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/41651131/"
-             },
-             {
-              "symptom": "Dizziness / orthostatic intolerance",
-              "note": "Multiple sclerosis: Depleted in MS; a lower Bifidobacterium:Akkermansia ratio tracks disability. Cross-ref: Bifidobacterium ↓ is shared with depression, autism and IBS. (down) | PTSD: Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored. (up)",
-              "ref": "Multiple sources across Multiple sclerosis, PTSD",
-              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10001679/"
-             },
-             {
-              "symptom": "Hair loss",
-              "note": "Polycystic Ovary Syndrome (PCOS): Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio. (up) | Anorexia nervosa: Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model. (down)",
-              "ref": "Multiple sources across Anorexia nervosa, Polycystic Ovary Syndrome (PCOS)",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/"
-             }
-            ]
+    {
+     "symptom": "Irritability",
+     "note": "ADHD: Mechanistically interesting dopamine-precursor story, though treatment-sensitive. (up) | Autism (ASD): From this app's Autism (ASD) condition data. (down)",
+     "ref": "Multiple sources across ADHD, Autism (ASD) — see individual condition entries",
+     "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.838941/full"
+    },
+    {
+     "symptom": "Panic attack",
+     "note": "PTSD: Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored. (up) | Anxiety: From this app's Anxiety condition data. (down)",
+     "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/"
+    },
+    {
+     "symptom": "Sleep disturbance",
+     "note": "Depression: In pregnant women, depressive symptom severity was significantly negatively associated with fecal B. longum abundance (q=0.02). (down) | Anxiety: From this app's Anxiety condition data. (down) | Parkinson's disease: From this app's Parkinson's disease condition data. (up)",
+     "ref": "Multiple sources across Anxiety, Depression, Parkinson's disease — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41651131/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Multiple sclerosis: Depleted in MS; a lower Bifidobacterium:Akkermansia ratio tracks disability. Cross-ref: Bifidobacterium ↓ is shared with depression, autism and IBS. (down) | PTSD: Corrected direction: the cited Zeamer 2023 AURORA-cohort study (stool metagenomics, n=51 trauma-exposed adults) reports Bifidobacterium species as enriched among commensals important for predicting WORSE post-traumatic neuropsychiatric outcomes at 2/8/12 weeks — not depleted as previously stored. (up)",
+     "ref": "Multiple sources across Multiple sclerosis, PTSD",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10001679/"
+    },
+    {
+     "symptom": "Hair loss",
+     "note": "Polycystic Ovary Syndrome (PCOS): Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio. (up) | Anorexia nervosa: Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model. (down)",
+     "ref": "Multiple sources across Anorexia nervosa, Polycystic Ovary Syndrome (PCOS)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/"
+    }
+   ]
   },
   {
    "name": "Faecalibacterium",
@@ -296,14 +303,14 @@
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
-     "note": "Butyrate producer (F. prausnitzii) consistently increased with exercise in an obesity/type 2 diabetes-specific meta-analysis \u2014 directly relevant since this genus is tracked as depleted across most conditions elsewhere in this app.",
+     "note": "Butyrate producer (F. prausnitzii) consistently increased with exercise in an obesity/type 2 diabetes-specific meta-analysis — directly relevant since this genus is tracked as depleted across most conditions elsewhere in this app.",
      "ref": "Meta-analysis, 19 studies, n=1,062 obesity/T2D patients (PMID 41070132)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41070132/"
     },
     {
      "symptom": "Restlessness",
      "note": "Significantly increased in children with tic disorder vs. matched controls (p<0.05).",
-     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     }
    ],
@@ -358,7 +365,7 @@
     },
     {
      "symptom": "Histamine reactions",
-     "note": "Reduced in histamine-intolerant patients alongside the histamine-former bloom \u2014 loss of this generally protective, anti-inflammatory genus tracks with worse histamine handling.",
+     "note": "Reduced in histamine-intolerant patients alongside the histamine-former bloom — loss of this generally protective, anti-inflammatory genus tracks with worse histamine handling.",
      "ref": "PMC9102523",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9102523/"
     },
@@ -370,32 +377,32 @@
     },
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Depleted across human and animal ethanol-dysbiosis studies \u2014 loss of the anti-inflammatory, butyrate-producing genus that's already low across most inflammatory conditions in this app.",
+     "note": "Depleted across human and animal ethanol-dysbiosis studies — loss of the anti-inflammatory, butyrate-producing genus that's already low across most inflammatory conditions in this app.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
     },
     {
      "symptom": "Sleep disturbance",
      "note": "Meta-analysis across 14 studies found Faecalibacterium significantly decreased in insomnia patients.",
-     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
+     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews — 14 studies, 9,036 participants (PMID 41610732)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     },
     {
      "symptom": "Constipation",
      "note": "Butyrate-producing genus reduced in chronic constipation across multiple studies.",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Anxiety",
      "note": "Enriched in healthy controls vs. GAD across multiple cohorts; negatively correlated with plasma cortisol. A meta-analysis found depleted Faecalibacterium and Coprococcus consistently shared between MDD and anxiety.",
-     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports — review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     },
     {
      "symptom": "Depressed mood",
      "note": "Consistently lower in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     },
     {
@@ -486,8 +493,8 @@
    "both": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele in one cohort, implying lower abundance in non-secretors \u2014 but a separate indicator-species analysis found Faecalibacterium among the taxa characteristic of healthy non-secretor individuals, the opposite direction. Marked \"both\" given real, independently-sourced evidence on each side.",
-     "ref": "2023, Frontiers in Microbiology \u2014 FUT2 & rotavirus susceptibility; Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele in one cohort, implying lower abundance in non-secretors — but a separate indicator-species analysis found Faecalibacterium among the taxa characteristic of healthy non-secretor individuals, the opposite direction. Marked \"both\" given real, independently-sourced evidence on each side.",
+     "ref": "2023, Frontiers in Microbiology — FUT2 & rotavirus susceptibility; Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     },
     {
@@ -525,7 +532,7 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Roseburia (an anti-inflammatory SCFA/butyrate producer) was significantly depleted in FUT2 heterozygotes and non-secretors vs. secretor homozygotes, in cecal/sigmoid mucosal samples from healthy volunteers; the same secretor-linked depletion is echoed in an IBD cohort's host-genetics/microbiota analysis.",
-     "ref": "2014, ISME Journal \u2014 FUT2 & gut microbiome energy metabolism, healthy volunteers (n=39)",
+     "ref": "2014, ISME Journal — FUT2 & gut microbiome energy metabolism, healthy volunteers (n=39)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24781901/"
     },
     {
@@ -573,13 +580,13 @@
     {
      "symptom": "Anxiety",
      "note": "Enriched in controls vs. GAD; also depleted in perimenopausal panic disorder.",
-     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports — review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     },
     {
      "symptom": "Immune dysregulation",
-     "note": "Negatively correlated with Th17 cell levels and the Th17/Treg ratio (and with inflammatory markers ESR, CRP, IgG, IgM) in primary Sj\u00f6gren's syndrome \u2014 i.e. depletion tracks with a more pro-inflammatory, less-regulated T-cell balance.",
-     "ref": "Xin et al. 2022, Frontiers in Immunology \u2014 primary Sj\u00f6gren's syndrome, 98 patients vs. 105 controls (PMID 36275752)",
+     "note": "Negatively correlated with Th17 cell levels and the Th17/Treg ratio (and with inflammatory markers ESR, CRP, IgG, IgM) in primary Sjögren's syndrome — i.e. depletion tracks with a more pro-inflammatory, less-regulated T-cell balance.",
+     "ref": "Xin et al. 2022, Frontiers in Immunology — primary Sjögren's syndrome, 98 patients vs. 105 controls (PMID 36275752)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36275752/"
     },
     {
@@ -592,7 +599,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 12,
+   "count": 13,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -608,7 +615,7 @@
     },
     {
      "symptom": "Urinary tract infections (UTI)",
-     "note": "High relative abundance associated with increased risk of Enterobacteriaceae bacteriuria (HR 3.0, 95% CI 1.7-5.4, P<.001) and UTI (HR 3.0, 95% CI 1.5-6.0, P=.002) in kidney transplant recipients \u2014 a counterintuitive finding in this specific immunosuppressed cohort, opposite the usual protective role attributed to Lactobacillus elsewhere.",
+     "note": "High relative abundance associated with increased risk of Enterobacteriaceae bacteriuria (HR 3.0, 95% CI 1.7-5.4, P<.001) and UTI (HR 3.0, 95% CI 1.5-6.0, P=.002) in kidney transplant recipients — a counterintuitive finding in this specific immunosuppressed cohort, opposite the usual protective role attributed to Lactobacillus elsewhere.",
      "ref": "Magruder et al. 2019, Am J Transplant (PMID 32865119), 168 kidney transplant recipients",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32865119/"
     },
@@ -681,6 +688,12 @@
    ],
    "down": [
     {
+     "symptom": "Oral iron supplementation",
+     "note": "Reduced by oral iron. Notably this runs OPPOSITE to the iron-deficiency state itself, where Lactobacillus is reported increased - so treating the deficiency orally reverses that particular shift rather than restoring a neutral baseline.",
+     "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+    },
+    {
      "symptom": "Anxiety",
      "note": "Psychobiotic genus; depletion repeatedly linked to elevated anxiety/mood symptoms across gut-brain-axis reviews.",
      "ref": "PMC12044767",
@@ -719,7 +732,7 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Growth was promoted by fucosylated HMOs present in secretor milk, implying lower abundance with non-secretor status; consistent with a separate cohort (PMID 30540710) finding Lactobacillus spp. lower in non-secretor milk.",
-     "ref": "2018, mSystems \u2014 Chinese mothers' milk glycans (n=56)",
+     "ref": "2018, mSystems — Chinese mothers' milk glycans (n=56)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30637338/"
     },
     {
@@ -769,13 +782,13 @@
     {
      "symptom": "Sleep disturbance",
      "note": "Enriched in 3 case-control studies, but the review explicitly notes \"conflicting patterns across studies\" for this genus specifically.",
-     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     },
     {
      "symptom": "Headache / migraine",
      "note": "Mendelian randomization found increased Lactobacillus causally linked to higher migraine-with-aura risk (He et al. 2023), but a separate pediatric cohort found it decreased in migraine (Liu et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
@@ -823,13 +836,13 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "One of five indicator OTUs (alongside unclassified Lachnospiraceae, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
-     "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     },
     {
      "symptom": "Diarrhea",
-     "note": "Prevotella-enriched enterotype associated with high risk of diarrhea-predominant IBS (IBS-D) \u2014 over 100-fold higher abundance vs. healthy controls (p<0.05); replicated in a post-infectious mouse model.",
-     "ref": "Su et al. 2018, Gastroenterology Research and Practice \u2014 40 IBS-D vs. 20 controls, +mouse model (PMID 29967640)",
+     "note": "Prevotella-enriched enterotype associated with high risk of diarrhea-predominant IBS (IBS-D) — over 100-fold higher abundance vs. healthy controls (p<0.05); replicated in a post-infectious mouse model.",
+     "ref": "Su et al. 2018, Gastroenterology Research and Practice — 40 IBS-D vs. 20 controls, +mouse model (PMID 29967640)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29967640/"
     },
     {
@@ -903,7 +916,7 @@
     {
      "symptom": "Sleep disturbance",
      "note": "Depleted in chronic insomnia cohorts across 2 case-control studies.",
-     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     },
     {
@@ -970,14 +983,14 @@
    "both": [
     {
      "symptom": "Restlessness",
-     "note": "A peer-reviewed 2022 case-control study found Prevotella significantly increased in children with tic disorder (p<0.05). An earlier conference abstract reported the opposite \u2014 Prevotella lower in Tourette syndrome and negatively correlated with tic severity (p=0.026 and p=0.041). Marked \"both\" given the genuine conflict; weighted toward the peer-reviewed source but the abstract's severity-correlation finding is worth keeping visible.",
-     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424); Lee & Wong 2018, MDS International Congress (conference abstract, not yet peer-reviewed journal publication)",
+     "note": "A peer-reviewed 2022 case-control study found Prevotella significantly increased in children with tic disorder (p<0.05). An earlier conference abstract reported the opposite — Prevotella lower in Tourette syndrome and negatively correlated with tic severity (p=0.026 and p=0.041). Marked \"both\" given the genuine conflict; weighted toward the peer-reviewed source but the abstract's severity-correlation finding is worth keeping visible.",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424); Lee & Wong 2018, MDS International Congress (conference abstract, not yet peer-reviewed journal publication)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     },
     {
      "symptom": "Headache / migraine",
      "note": "This review explicitly flags Prevotella as conflicting: associated with higher migraine-with-aura risk in one MR study (He et al. 2023) but decreased in another cohort (Meng et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
@@ -1044,14 +1057,14 @@
     },
     {
      "symptom": "Anxiety",
-     "note": "Multiple Eubacterium sub-taxa (E. rectale, E. coprostanoligenes group) more abundant in healthy controls than in GAD patients across independent cohorts \u2014 consistent direction at genus level despite species-level granularity in the underlying studies.",
-     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "note": "Multiple Eubacterium sub-taxa (E. rectale, E. coprostanoligenes group) more abundant in healthy controls than in GAD patients across independent cohorts — consistent direction at genus level despite species-level granularity in the underlying studies.",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports — review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     },
     {
      "symptom": "Depressed mood",
      "note": "Eubacterium ventriosum group consistently lower in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ]
@@ -1069,19 +1082,19 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
-     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     },
     {
      "symptom": "Sleep disturbance",
      "note": "Meta-analysis across 14 studies found Blautia significantly increased in insomnia patients.",
-     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
+     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews — 14 studies, 9,036 participants (PMID 41610732)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     },
     {
      "symptom": "Coffee / Stimulants",
      "note": "In-vitro anaerobic fecal fermentation model, not a live human consumption study - flagged as such, weaker than an observational cohort: chlorogenic acid (coffee's main polyphenol) significantly increased growth of the \"Clostridium coccoides-Eubacterium rectale group\" (P<.05), an older taxonomic grouping largely reclassified into genus Blautia today. High-chlorogenic-acid coffee itself also drove a significant Bifidobacterium increase in the same experiment.",
-     "ref": "Mills et al. 2015, Br J Nutr \u2014 in-vitro fermentation model (PMID 25809126)",
+     "ref": "Mills et al. 2015, Br J Nutr — in-vitro fermentation model (PMID 25809126)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/25809126/"
     }
    ],
@@ -1112,26 +1125,26 @@
    "up": [
     {
      "symptom": "Metabolic dysregulation",
-     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies \u2014 treat as weak evidence.",
+     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies — treat as weak evidence.",
      "ref": "PMID 27529273",
      "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/"
     },
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Significant increase in Bacteroidetes among non-secretors (ANOVA, p=0.036) in a healthy-subject cohort comparison.",
-     "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     },
     {
      "symptom": "Constipation",
      "note": "Mendelian randomization evidence for a positive causal association (OR=1.22, 95% CI 1.00-1.50, p=0.04).",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Headache / migraine",
      "note": "Phylum-level increase in migraine across 2 independent studies within this review.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
@@ -1152,11 +1165,17 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 11,
+   "count": 12,
    "up": [
     {
+     "symptom": "Oral iron supplementation",
+     "note": "Trending increase under ferrous bisglycinate in the same RCT. Separately, ferrous sulfate triggered detection of the enteropathogenic E. coli virulence marker bfpA - i.e. the iron form matters, not just the dose.",
+     "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+    },
+    {
      "symptom": "Systemic inflammation",
-     "note": "Expansion raises LPS-driven endotoxemia; linked to elevated TNF-\u03b1/IL-6 and blood-brain-barrier tight-junction disruption.",
+     "note": "Expansion raises LPS-driven endotoxemia; linked to elevated TNF-α/IL-6 and blood-brain-barrier tight-junction disruption.",
      "ref": "PMC9769903",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9769903/"
     },
@@ -1199,13 +1218,13 @@
     {
      "symptom": "Constipation",
      "note": "Increased in constipation-predominant IBS (IBS-C).",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Depressed mood",
      "note": "Consistently higher in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     },
     {
@@ -1261,7 +1280,7 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Non-secretor children had lower Escherichia/Shigella than secretor children (0.56% vs 1.35% median, p=0.002).",
-     "ref": "2025, Clin Microbiol Infect \u2014 Copenhagen birth cohort (n=700)",
+     "ref": "2025, Clin Microbiol Infect — Copenhagen birth cohort (n=700)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/"
     }
    ]
@@ -1272,20 +1291,20 @@
    "up": [
     {
      "symptom": "Metabolic dysregulation",
-     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies \u2014 treat as weak evidence.",
+     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies — treat as weak evidence.",
      "ref": "PMID 27529273",
      "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/"
     },
     {
      "symptom": "Exercise-associated microbiota changes",
-     "note": "Significant phylum-level increase post-exercise (effect size 1.49, p<0.0001) across pooled RCT/crossover data \u2014 though the resulting Firmicutes/Bacteroidetes ratio shift is of debated clinical significance for metabolic health.",
+     "note": "Significant phylum-level increase post-exercise (effect size 1.49, p<0.0001) across pooled RCT/crossover data — though the resulting Firmicutes/Bacteroidetes ratio shift is of debated clinical significance for metabolic health.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
     },
     {
      "symptom": "Headache / migraine",
      "note": "Phylum-level increase in migraine across 2 independent studies within this review.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
@@ -1298,7 +1317,7 @@
     },
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "derived",
      "url": ""
     }
@@ -1306,8 +1325,14 @@
   },
   {
    "name": "Enterobacteriaceae",
-   "count": 10,
+   "count": 11,
    "up": [
+    {
+     "symptom": "Oral iron supplementation",
+     "note": "Ferrous bisglycinate significantly increased the relative abundance of this family over 12 weeks. Oral iron is poorly absorbed, so the unabsorbed remainder reaches the colon and raises luminal iron availability - Enterobacteriaceae are efficient iron scavengers and bloom on it. The authors explicitly raised this as a possible harm of blanket iron supplementation, since the family contains Salmonella, Shigella and pathogenic E. coli. Overall gut bacterial diversity was NOT affected.",
+     "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+    },
     {
      "symptom": "Systemic inflammation",
      "note": "Family containing Escherichia/Shigella/Klebsiella; blooms are a recognized dysbiosis/endotoxemia signature.",
@@ -1323,31 +1348,31 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Higher relative abundance in non-secretor milk samples.",
-     "ref": "2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
+     "ref": "2019, J Pediatr Gastroenterol Nutr — milk microbiota (n=25)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
     },
     {
      "symptom": "Bloating & gas",
      "note": "Relative abundance of family Enterobacteriaceae showed a significant positive correlation with bloating in duodenal-aspirate SIBO patients (Spearman R=0.185, p=0.028).",
-     "ref": "Leite et al. 2020, PLOS ONE \u2014 duodenal microbiome in SIBO (PMID 32645011)",
+     "ref": "Leite et al. 2020, PLOS ONE — duodenal microbiome in SIBO (PMID 32645011)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32645011/"
     },
     {
      "symptom": "Constipation",
      "note": "Elevated in constipation-predominant IBS (IBS-C).",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Hair loss",
      "note": "Via iron deficiency: higher in IDA patients vs. controls (4.4% vs. 3.0%, PMID 30418043); iron deficiency itself is a recognized (though inconsistently replicated across studies) cause of hair loss/telogen effluvium.",
-     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
+     "ref": "Iron-deficiency mediated — see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
     },
     {
      "symptom": "Panic attack",
      "note": "Via iron deficiency: higher in IDA patients vs. controls (4.4% vs. 3.0%, PMID 30418043); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
-     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
+     "ref": "Iron-deficiency mediated — see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
     },
     {
@@ -1366,7 +1391,7 @@
    "down": [
     {
      "symptom": "Chronic pain",
-     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization — lower confidence than direct case-control observational data.",
      "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
     }
@@ -1398,26 +1423,26 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     },
     {
      "symptom": "Constipation",
-     "note": "Mendelian randomization evidence for a protective causal effect (OR=0.74, 95% CI 0.64-0.86, p=0.0001) \u2014 i.e. lower levels causally linked to higher constipation risk.",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "note": "Mendelian randomization evidence for a protective causal effect (OR=0.74, 95% CI 0.64-0.86, p=0.0001) — i.e. lower levels causally linked to higher constipation risk.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Anxiety",
      "note": "Coprococcus eutactus significantly decreased in GAD and in \"any anxiety disorder\" broadly; also depleted in perimenopausal panic disorder.",
-     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports — review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     },
     {
      "symptom": "Immune dysregulation",
-     "note": "Negatively correlated with Th17 cell levels and the Th17/Treg ratio (and with inflammatory markers ESR, CRP, IgG, IgM) in primary Sj\u00f6gren's syndrome \u2014 i.e. depletion tracks with a more pro-inflammatory, less-regulated T-cell balance.",
-     "ref": "Xin et al. 2022, Frontiers in Immunology \u2014 primary Sj\u00f6gren's syndrome, 98 patients vs. 105 controls (PMID 36275752)",
+     "note": "Negatively correlated with Th17 cell levels and the Th17/Treg ratio (and with inflammatory markers ESR, CRP, IgG, IgM) in primary Sjögren's syndrome — i.e. depletion tracks with a more pro-inflammatory, less-regulated T-cell balance.",
+     "ref": "Xin et al. 2022, Frontiers in Immunology — primary Sjögren's syndrome, 98 patients vs. 105 controls (PMID 36275752)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36275752/"
     }
    ]
@@ -1441,7 +1466,7 @@
     {
      "symptom": "Sleep disturbance",
      "note": "Genus-level enrichment across 2 case-control studies.",
-     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     },
     {
@@ -1538,7 +1563,7 @@
     },
     {
      "symptom": "Allergies",
-     "note": "Decreased in allergic rhinitis patients across 3 independent studies. Note: the family-level Clostridiaceae is reported INCREASED in the broader allergic-sensitization/eczema/asthma literature \u2014 a genuine rank-level split, kept as two separate entries rather than merged.",
+     "note": "Decreased in allergic rhinitis patients across 3 independent studies. Note: the family-level Clostridiaceae is reported INCREASED in the broader allergic-sensitization/eczema/asthma literature — a genuine rank-level split, kept as two separate entries rather than merged.",
      "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     },
@@ -1582,8 +1607,8 @@
    "both": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "C. coccoides group (cluster XIVa) counts significantly decreased in non-secretors vs. secretors (p=0.02) in a pregnancy cohort \u2014 but a separate adult cohort found Clostridium sphenoides et rel. significantly higher in non-secretors (p<0.05), plus a non-significant trend toward higher Clostridium clusters IV/XIVa overall in non-secretors. Marked \"both\" given real, independently-sourced evidence pointing opposite directions, likely reflecting different sub-clades within the genus.",
-     "ref": "2015, PLOS ONE \u2014 secretor status in pregnancy (n=123); Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "note": "C. coccoides group (cluster XIVa) counts significantly decreased in non-secretors vs. secretors (p=0.02) in a pregnancy cohort — but a separate adult cohort found Clostridium sphenoides et rel. significantly higher in non-secretors (p<0.05), plus a non-significant trend toward higher Clostridium clusters IV/XIVa overall in non-secretors. Marked \"both\" given real, independently-sourced evidence pointing opposite directions, likely reflecting different sub-clades within the genus.",
+     "ref": "2015, PLOS ONE — secretor status in pregnancy (n=123); Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     },
     {
@@ -1601,21 +1626,21 @@
     {
      "symptom": "Constipation",
      "note": "Higher abundance in defecatory disorder (a constipation subtype) vs. non-defecatory-disorder constipation.",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Restlessness",
      "note": "Unclassified Ruminococcaceae significantly increased in children with tic disorder vs. matched controls (p<0.05).",
-     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     }
    ],
    "down": [
     {
      "symptom": "Arterial stiffness / vascular aging",
-     "note": "Two Ruminococcaceae OTUs were among 7 OTUs negatively associated with carotid-femoral pulse wave velocity (more of them, less arterial stiffness) in 617 middle-aged women. Microbiome alpha diversity itself was negatively correlated with PWV (Beta=-0.25, P=1e-4), and the microbiome explained 8.3% of PWV variance \u2014 only 5.51% of which was mediated by metabolic syndrome, so this is largely independent of classic cardiometabolic risk.",
-     "ref": "Menni et al. 2018, European Heart Journal \u2014 TwinsUK, n=617 (PMID 29750272)",
+     "note": "Two Ruminococcaceae OTUs were among 7 OTUs negatively associated with carotid-femoral pulse wave velocity (more of them, less arterial stiffness) in 617 middle-aged women. Microbiome alpha diversity itself was negatively correlated with PWV (Beta=-0.25, P=1e-4), and the microbiome explained 8.3% of PWV variance — only 5.51% of which was mediated by metabolic syndrome, so this is largely independent of classic cardiometabolic risk.",
+     "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
     },
     {
@@ -1639,14 +1664,14 @@
     {
      "symptom": "Intrusive thoughts",
      "note": "Causal protective factor for OCD (family level, OR=0.570, 95%CI 0.354-0.918, P=0.021) in the same Mendelian randomization analysis.",
-     "ref": "He et al. 2025, J Affect Disord \u2014 two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
+     "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     }
    ],
    "both": [
     {
      "symptom": "OCD symptoms",
-     "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD \u2014 i.e. lower levels causally linked to higher OCD risk. Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae \u2014 the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
+     "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD — i.e. lower levels causally linked to higher OCD risk. Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae — the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
      "ref": "Causal link between gut microbiota and OCD: MR analysis (2025)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     }
@@ -1658,14 +1683,14 @@
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
-     "note": "Consistently increased with exercise across both a general-adult meta-analysis and a separate obesity/T2D-specific meta-analysis \u2014 one of the most reproducible exercise-microbiome findings; this genus is tracked as depleted in several conditions elsewhere in this app, making it a strong 'exercise counteracts X' candidate.",
+     "note": "Consistently increased with exercise across both a general-adult meta-analysis and a separate obesity/T2D-specific meta-analysis — one of the most reproducible exercise-microbiome findings; this genus is tracked as depleted in several conditions elsewhere in this app, making it a strong 'exercise counteracts X' candidate.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
     },
     {
      "symptom": "Constipation",
      "note": "Enriched specifically in patients with delayed colonic transit.",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
@@ -1696,8 +1721,8 @@
     },
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) \u2014 a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors. A mouse mechanistic study directly ties FUT2 loss to WORSENED alcohol-related pathology through this exact bacterium \u2014 see this genus's own Alcohol-related dysbiosis entry above, and note this REVERSES an earlier, unsupported cross-reference this app briefly surfaced implying FUT2 was protective against alcohol; the real relationship runs the other way.",
-     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) — a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors. A mouse mechanistic study directly ties FUT2 loss to WORSENED alcohol-related pathology through this exact bacterium — see this genus's own Alcohol-related dysbiosis entry above, and note this REVERSES an earlier, unsupported cross-reference this app briefly surfaced implying FUT2 was protective against alcohol; the real relationship runs the other way.",
+     "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     },
     {
@@ -1768,8 +1793,8 @@
    "up": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Correction: an earlier version of this entry listed Lachnospiraceae as lower in non-secretors with no real citation behind it. The actual literature found points the other way \u2014 unclassified Lachnospiraceae was one of five indicator OTUs (alongside Prevotella, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
-     "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "note": "Correction: an earlier version of this entry listed Lachnospiraceae as lower in non-secretors with no real citation behind it. The actual literature found points the other way — unclassified Lachnospiraceae was one of five indicator OTUs (alongside Prevotella, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     }
    ],
@@ -1802,8 +1827,8 @@
    "both": [
     {
      "symptom": "OCD symptoms",
-     "note": "Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae \u2014 the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
-     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "note": "Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae — the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     },
     {
@@ -1847,7 +1872,7 @@
     {
      "symptom": "Joint pain",
      "note": "Collinsella aerofaciens significantly increased in established RA patients vs. matched healthy controls (p=0.039); also independently associated with high ACPA (anti-citrullinated protein antibody) titers and smoking. Human cohort, n=40 vs 40.",
-     "ref": "Mena-V\u00e1zquez et al. 2020, J Clin Med (PMID 32272752)",
+     "ref": "Mena-Vázquez et al. 2020, J Clin Med (PMID 32272752)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32272752/"
     }
    ],
@@ -1855,13 +1880,13 @@
     {
      "symptom": "Restlessness",
      "note": "Significantly reduced in children with tic disorder vs. matched controls (p<0.05).",
-     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     },
     {
      "symptom": "Headache / migraine",
      "note": "Decreased specifically in a comorbid IBS+migraine cohort (Yong et al. 2023).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
@@ -1891,22 +1916,22 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Depletion of Lachnospira pectinoschiza correlated with OCD obsession-subscale severity (Domenech 2022); \u2193 in the Law 2023 synthesis.",
-     "ref": "Law 2023 (Gut/BMJ IDDF abstract; systematic review: \u2193\u03b1-diversity; \u2191Alistipes/Rikenellaceae, \u2193Prevotellaceae + butyrate producers; probiotics may help)",
+     "note": "Depletion of Lachnospira pectinoschiza correlated with OCD obsession-subscale severity (Domenech 2022); ↓ in the Law 2023 synthesis.",
+     "ref": "Law 2023 (Gut/BMJ IDDF abstract; systematic review: ↓α-diversity; ↑Alistipes/Rikenellaceae, ↓Prevotellaceae + butyrate producers; probiotics may help)",
      "url": "https://gut.bmj.com/content/72/Suppl_1/A135.1"
     },
     {
      "symptom": "Sleep disturbance",
      "note": "Meta-analysis across 14 studies found Lachnospira significantly decreased in insomnia patients.",
-     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
+     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews — 14 studies, 9,036 participants (PMID 41610732)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     }
    ],
    "both": [
     {
      "symptom": "Headache / migraine",
-     "note": "Increased in a pediatric migraine cohort (Bai et al. 2023) but decreased in an adult chronic migraine cohort (Yong et al. 2023) \u2014 genuinely conflicting across age groups.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "note": "Increased in a pediatric migraine cohort (Bai et al. 2023) but decreased in an adult chronic migraine cohort (Yong et al. 2023) — genuinely conflicting across age groups.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
@@ -1924,12 +1949,12 @@
     {
      "symptom": "Sleep disturbance",
      "note": "Phylum-level enrichment across 3 case-control studies, including 2 chronic-insomnia cohorts.",
-     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     },
     {
      "symptom": "Psilocybin / Psychedelics",
-     "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (fecal 16S rRNA at 1 and 3 weeks). Preliminary, rat/animal-only data \u2014 no human gut-microbiome studies of psilocybin were found in the literature searched.",
+     "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (fecal 16S rRNA at 1 and 3 weeks). Preliminary, rat/animal-only data — no human gut-microbiome studies of psilocybin were found in the literature searched.",
      "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/"
     }
@@ -1956,7 +1981,7 @@
     {
      "symptom": "Headache / migraine",
      "note": "Phylum-level decrease in migraine (Liu et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
@@ -1986,19 +2011,19 @@
     {
      "symptom": "Depressed mood",
      "note": "Consistently higher in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     },
     {
      "symptom": "Oral cavities",
      "note": "Non-secretor status is linked to dental caries in two independent studies (Iceland and Hungary cohorts) and to periodontal disease, via reduced antimicrobial HBGA glycans in saliva.",
-     "ref": "Holbrook & Blackwell 1989, FEMS Microbiol Immunol; K\u00e1rp\u00e1ti et al. 2014, Caries Res",
+     "ref": "Holbrook & Blackwell 1989, FEMS Microbiol Immunol; Kárpáti et al. 2014, Caries Res",
      "url": "https://pubmed.ncbi.nlm.nih.gov/2488318/"
     },
     {
      "symptom": "Strep throat history",
-     "note": "A 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus\" \u2014 a general/background claim in that review, not tied to a dedicated primary study on strep throat specifically, so treat as weaker/lower-confidence evidence than this app's other Streptococcus entries.",
-     "ref": "Kaur et al. 2022, Int J Mol Epidemiol Genet \u2014 review (PMID 35892094)",
+     "note": "A 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus\" — a general/background claim in that review, not tied to a dedicated primary study on strep throat specifically, so treat as weaker/lower-confidence evidence than this app's other Streptococcus entries.",
+     "ref": "Kaur et al. 2022, Int J Mol Epidemiol Genet — review (PMID 35892094)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
     },
     {
@@ -2077,14 +2102,14 @@
    "down": [
     {
      "symptom": "Exercise-associated microbiota changes",
-     "note": "Consistently lower abundance after exercise intervention across pooled RCT/crossover studies \u2014 notable since Streptococcus is tracked as elevated in several inflammatory/infectious contexts elsewhere in this app.",
+     "note": "Consistently lower abundance after exercise intervention across pooled RCT/crossover studies — notable since Streptococcus is tracked as elevated in several inflammatory/infectious contexts elsewhere in this app.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
     },
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Lower in non-secretor vs. secretor milk samples.",
-     "ref": "2019, J Pediatr Gastroenterol Nutr \u2014 milk microbiota (n=25)",
+     "ref": "2019, J Pediatr Gastroenterol Nutr — milk microbiota (n=25)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
     },
     {
@@ -2127,8 +2152,8 @@
    "both": [
     {
      "symptom": "Sleep disturbance",
-     "note": "Enriched in 3 case-control studies but depleted in 1 \u2014 a real, if lopsided, split rather than a clean single direction.",
-     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "note": "Enriched in 3 case-control studies but depleted in 1 — a real, if lopsided, split rather than a clean single direction.",
+     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     }
    ]
@@ -2151,14 +2176,14 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: increased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "note": "Part of the OCD gut-microbiome profile: increased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     },
     {
      "symptom": "Constipation",
      "note": "Enriched specifically in patients with delayed colonic transit.",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
@@ -2203,8 +2228,8 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes).",
-     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes)",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes).",
+     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
     }
    ]
@@ -2241,7 +2266,7 @@
     {
      "symptom": "Depressed mood",
      "note": "Consistently lower in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ]
@@ -2264,7 +2289,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Alcohol metabolism generates reactive-oxygen-species-driven epithelial damage and tight-junction disruption, enabling bacterial translocation of Gram-negative (Proteobacteria) LPS into the portal circulation \u2014 the classic alcohol 'leaky gut' mechanism.",
+     "note": "Alcohol metabolism generates reactive-oxygen-species-driven epithelial damage and tight-junction disruption, enabling bacterial translocation of Gram-negative (Proteobacteria) LPS into the portal circulation — the classic alcohol 'leaky gut' mechanism.",
      "ref": "PMC12034794",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12034794/"
     },
@@ -2283,21 +2308,21 @@
     {
      "symptom": "Headache / migraine",
      "note": "Phylum-level increase in migraine across 2 independent studies within this review.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
    "down": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Paper URL",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5463037/"
     },
     {
      "symptom": "Intrusive thoughts",
-     "note": "Causal protective factor for OCD in a two-sample Mendelian randomization analysis (OR=0.545, 95%CI 0.345-0.855, P=0.008) \u2014 a broader OCD-wide finding, not specific to the obsessions subscale like the Lachnospira pectinoschiza entry above.",
-     "ref": "He et al. 2025, J Affect Disord \u2014 two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
+     "note": "Causal protective factor for OCD in a two-sample Mendelian randomization analysis (OR=0.545, 95%CI 0.345-0.855, P=0.008) — a broader OCD-wide finding, not specific to the obsessions subscale like the Lachnospira pectinoschiza entry above.",
+     "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     },
     {
@@ -2341,7 +2366,7 @@
     {
      "symptom": "Depressed mood",
      "note": "Consistently higher in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ],
@@ -2355,7 +2380,7 @@
     {
      "symptom": "Headache / migraine",
      "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
@@ -2380,13 +2405,13 @@
     {
      "symptom": "Constipation",
      "note": "Elevated in slow-transit constipation (STC).",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Headache / migraine",
      "note": "Increased in migraine across 2 independent studies within this review.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
@@ -2486,8 +2511,8 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     }
    ]
@@ -2510,7 +2535,7 @@
     },
     {
      "symptom": "Lack of impulse control",
-     "note": "Enriched in Parkinson's disease patients with dopaminergic-therapy-induced impulse control disorders (14 ICD vs 177 non-ICD patients, 16S rRNA) \u2014 population-specific finding, flagged since it's not a general-population result.",
+     "note": "Enriched in Parkinson's disease patients with dopaminergic-therapy-induced impulse control disorders (14 ICD vs 177 non-ICD patients, 16S rRNA) — population-specific finding, flagged since it's not a general-population result.",
      "ref": "Int J Mol Sci 2025 (PMID 40649930)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40649930/"
     }
@@ -2549,15 +2574,15 @@
     {
      "symptom": "Depressed mood",
      "note": "Consistently higher in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     }
    ],
    "down": [
     {
      "symptom": "Restlessness",
-     "note": "Significantly reduced in RLS vs. both healthy controls and insomnia patients \u2014 same study already cited for Lachnoclostridium above, the only two genera that met significance thresholds.",
-     "ref": "2025/2026, SLEEP (Oxford Academic) \u2014 RLS metagenomic signature study (PMID 41378921)",
+     "note": "Significantly reduced in RLS vs. both healthy controls and insomnia patients — same study already cited for Lachnoclostridium above, the only two genera that met significance thresholds.",
+     "ref": "2025/2026, SLEEP (Oxford Academic) — RLS metagenomic signature study (PMID 41378921)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41378921/"
     }
    ]
@@ -2593,7 +2618,7 @@
     {
      "symptom": "Depressed mood",
      "note": "Consistently higher in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     },
     {
@@ -2637,12 +2662,12 @@
     {
      "symptom": "Depressed mood",
      "note": "Consistently lower in depression across a 44-study meta-analysis (2,091 patients vs. 2,792 controls).",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     },
     {
      "symptom": "Chronic pain",
-     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization — lower confidence than direct case-control observational data.",
      "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
     }
@@ -2686,14 +2711,14 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     },
     {
      "symptom": "Histamine reactions",
      "note": "Significantly lower abundance in histamine-intolerant patients vs. controls (P<0.05).",
-     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "ref": "Sánchez-Pérez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
     },
     {
@@ -2741,7 +2766,7 @@
     {
      "symptom": "Constipation",
      "note": "Increased in slow-transit constipation (STC) vs. normal-transit constipation.",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
@@ -2779,7 +2804,7 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Dorea formicigenerans et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
-     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     }
    ],
@@ -2804,7 +2829,7 @@
     },
     {
      "symptom": "Cannabis-related dysbiosis",
-     "note": "Lower in marijuana-using people with HIV in a preliminary cross-sectional study \u2014 population-specific finding.",
+     "note": "Lower in marijuana-using people with HIV in a preliminary cross-sectional study — population-specific finding.",
      "ref": "Preliminary (HIV+ cohort)",
      "url": "https://www.sciencedirect.com/science/article/pii/S0753332224016500"
     },
@@ -2818,8 +2843,8 @@
    "both": [
     {
      "symptom": "Headache / migraine",
-     "note": "Increased in a pediatric migraine cohort (Bai et al. 2023) but decreased in an adult chronic migraine cohort (Yong et al. 2023) \u2014 genuinely conflicting across age groups.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "note": "Increased in a pediatric migraine cohort (Bai et al. 2023) but decreased in an adult chronic migraine cohort (Yong et al. 2023) — genuinely conflicting across age groups.",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
@@ -2880,7 +2905,7 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Higher in FUT2-null (sese) IBD patients vs. functional-FUT2 patients.",
-     "ref": "2021, J Genet Genomics \u2014 FUT2 loss-of-function in IBD (n=81)",
+     "ref": "2021, J Genet Genomics — FUT2 loss-of-function in IBD (n=81)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
     }
    ],
@@ -2888,7 +2913,7 @@
     {
      "symptom": "Metabolic dysregulation",
      "note": "ANIMAL/LIVESTOCK DATA, no human studies included. P. succinatutens was the key genus enriched in low-backfat pigs (n=129) and correlated positively with serum arginine; given to mice it curbed weight gain, shrank adipocytes and attenuated gut inflammation. The mechanism is worked out in detail: its main metabolite propionate suppresses MYC chromatin accessibility, stimulating arginine synthesis, which reduces fat deposition via PI3K/Akt/FOXO3a. Recorded as depletion-linked on that basis, with human relevance untested.",
-     "ref": "npj Biofilms and Microbiomes 2025 \u2014 pigs (n=129) + mouse validation (PMID 40753182)",
+     "ref": "npj Biofilms and Microbiomes 2025 — pigs (n=129) + mouse validation (PMID 40753182)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40753182/"
     },
     {
@@ -2944,15 +2969,15 @@
     {
      "symptom": "Restlessness",
      "note": "Significantly increased in children with tic disorder vs. matched controls (p<0.05).",
-     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     }
    ],
    "down": [
     {
      "symptom": "Arterial stiffness / vascular aging",
-     "note": "One Odoribacter OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women \u2014 i.e. its depletion tracks with stiffer arteries.",
-     "ref": "Menni et al. 2018, European Heart Journal \u2014 TwinsUK, n=617 (PMID 29750272)",
+     "note": "One Odoribacter OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. its depletion tracks with stiffer arteries.",
+     "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
     },
     {
@@ -2975,8 +3000,8 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes).",
-     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes)",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes).",
+     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
     }
    ]
@@ -2993,26 +3018,26 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Produces an inflammatory glucorhamnan polysaccharide that triggers TNF\u03b1 from dendritic cells.",
+     "note": "Produces an inflammatory glucorhamnan polysaccharide that triggers TNFα from dendritic cells.",
      "ref": "PMC6601261 / PNAS 1904099116",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6601261/"
     },
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Ruminococcus gnavus et rel. significantly higher in non-secretors (p<0.05), HITChip analysis \u2014 distinct from the bare Ruminococcus genus, which showed no single clean direction and isn't tracked here for that reason.",
-     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "note": "Ruminococcus gnavus et rel. significantly higher in non-secretors (p<0.05), HITChip analysis — distinct from the bare Ruminococcus genus, which showed no single clean direction and isn't tracked here for that reason.",
+     "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     },
     {
      "symptom": "Irritability",
-     "note": "Significantly associated with the CBCL Aggressive Behavior subscale in ADHD children (p=0.031), and also with Rule-Breaking Behavior (p=0.046) and broadband Externalizing Behavior (p=0.036) in the same cohort \u2014 overall increased in the ADHD group vs. healthy controls.",
-     "ref": "Lee et al. 2022, J Pers Med \u2014 ADHD children, CBCL Aggressive Behavior subscale, p=0.031 (PMID 36294773)",
+     "note": "Significantly associated with the CBCL Aggressive Behavior subscale in ADHD children (p=0.031), and also with Rule-Breaking Behavior (p=0.046) and broadband Externalizing Behavior (p=0.036) in the same cohort — overall increased in the ADHD group vs. healthy controls.",
+     "ref": "Lee et al. 2022, J Pers Med — ADHD children, CBCL Aggressive Behavior subscale, p=0.031 (PMID 36294773)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36294773/"
     },
     {
      "symptom": "Anxiety",
      "note": "Increased in GAD patients vs. controls.",
-     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports — review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     },
     {
@@ -3071,25 +3096,25 @@
     }
    ],
    "down": [
-             {
-              "symptom": "Reduced socializing",
-              "note": "From this app's Autism (ASD) condition data.",
-              "ref": "PMC7716279",
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
-             },
-             {
-              "symptom": "Overstimulation",
-              "note": "From this app's Autism (ASD) condition data.",
-              "ref": "PMC7716279",
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
-             },
-             {
-              "symptom": "Understimulation",
-              "note": "From this app's Autism (ASD) condition data.",
-              "ref": "PMC7716279",
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
-             }
-            ]
+    {
+     "symptom": "Reduced socializing",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "PMC7716279",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "PMC7716279",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "From this app's Autism (ASD) condition data.",
+     "ref": "PMC7716279",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/"
+    }
+   ]
   },
   {
    "name": "Eggerthella",
@@ -3116,12 +3141,12 @@
     {
      "symptom": "Headache / migraine",
      "note": "Increased in migraine across 3 independent studies within this review.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
      "symptom": "Chronic pain",
-     "note": "Higher genetically-predicted abundance associated with increased fibromyalgia susceptibility (risk factor). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "note": "Higher genetically-predicted abundance associated with increased fibromyalgia susceptibility (risk factor). Causal/genetic evidence from bidirectional Mendelian randomization — lower confidence than direct case-control observational data.",
      "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
     },
@@ -3160,19 +3185,19 @@
     {
      "symptom": "Constipation",
      "note": "Down-regulated in slow-transit constipation (STC).",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
      "symptom": "Anxiety",
      "note": "Enriched in healthy controls vs. GAD across two independent cohorts.",
-     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports — review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     },
     {
      "symptom": "Depressed mood",
      "note": "Consistently lower in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry \u2014 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
+     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/"
     },
     {
@@ -3222,7 +3247,7 @@
     {
      "symptom": "Headache / migraine",
      "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
@@ -3289,7 +3314,7 @@
     {
      "symptom": "Anxiety",
      "note": "Increased in GAD across two independent cohorts.",
-     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports — review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     }
    ],
@@ -3340,7 +3365,7 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Higher in mice receiving microbiota from infants of non-secretor mothers vs. secretor mothers.",
-     "ref": "2024, mSystems \u2014 infant-donor microbiota in germ-free mice",
+     "ref": "2024, mSystems — infant-donor microbiota in germ-free mice",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/"
     }
    ],
@@ -3367,29 +3392,35 @@
   },
   {
    "name": "Bacteroides",
-   "count": 10,
+   "count": 11,
    "up": [
     {
+     "symptom": "Oral iron supplementation",
+     "note": "Increased under oral iron in some studies - and, like Lactobacillus, this is opposite to the direction seen in the untreated iron-deficiency state.",
+     "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+    },
+    {
      "symptom": "Metabolic dysregulation",
-     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies \u2014 treat as weak evidence.",
+     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies — treat as weak evidence.",
      "ref": "PMID 27529273",
      "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/"
     },
     {
      "symptom": "Acne / skin flares",
-     "note": "Mendelian-randomization analysis found genus Bacteroides (OR\u22482.25) and family Bacteroidaceae causally increased acne vulgaris risk.",
+     "note": "Mendelian-randomization analysis found genus Bacteroides (OR≈2.25) and family Bacteroidaceae causally increased acne vulgaris risk.",
      "ref": "PMC10507220",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10507220/"
     },
     {
      "symptom": "Anxiety",
      "note": "Enriched in treatment-naive GAD patients; abundance positively associated with anxiety severity.",
-     "ref": "Butler et al. 2025, Current Psychiatry Reports \u2014 review of GAD/anxiety microbiota studies (PMID 40221592)",
+     "ref": "Butler et al. 2025, Current Psychiatry Reports — review of GAD/anxiety microbiota studies (PMID 40221592)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40221592/"
     },
     {
      "symptom": "Irritability",
-     "note": "More abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
+     "note": "More abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples — flagged honestly as a smaller/preliminary finding, not a large study.",
      "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
     },
@@ -3458,19 +3489,19 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "B. plebeius et rel. and B. fragilis et rel. co-occurred specifically in secretors (implying lower abundance in non-secretors); consistent with an earlier study from the same group reporting higher Bacteroides diversity/abundance in secretors.",
-     "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
+     "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     },
     {
      "symptom": "Hair loss",
-     "note": "Via iron deficiency: lower abundance recorded in rodent IDA models (human data conflict \u2014 some show it higher when ferritin is low); iron deficiency itself is a recognized (though inconsistently replicated) cause of hair loss/telogen effluvium.",
-     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
+     "note": "Via iron deficiency: lower abundance recorded in rodent IDA models (human data conflict — some show it higher when ferritin is low); iron deficiency itself is a recognized (though inconsistently replicated) cause of hair loss/telogen effluvium.",
+     "ref": "Iron-deficiency mediated — see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
     },
     {
      "symptom": "Panic attack",
-     "note": "Via iron deficiency: lower abundance recorded in rodent IDA models (human data conflict \u2014 some show it higher when ferritin is low); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
-     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
+     "note": "Via iron deficiency: lower abundance recorded in rodent IDA models (human data conflict — some show it higher when ferritin is low); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
+     "ref": "Iron-deficiency mediated — see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
     },
     {
@@ -3537,14 +3568,14 @@
    "both": [
     {
      "symptom": "Sleep disturbance",
-     "note": "Increased in 2 case-control studies, decreased in 2 others \u2014 an even split, no consensus direction.",
-     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "note": "Increased in 2 case-control studies, decreased in 2 others — an even split, no consensus direction.",
+     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     },
     {
      "symptom": "Constipation",
-     "note": "Significantly up-regulated in slow-transit constipation in one study, but functional-constipation patients showed significantly lower Bacteroides in another \u2014 a real split, possibly reflecting different constipation subtypes.",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "note": "Significantly up-regulated in slow-transit constipation in one study, but functional-constipation patients showed significantly lower Bacteroides in another — a real split, possibly reflecting different constipation subtypes.",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     },
     {
@@ -3622,7 +3653,7 @@
     {
      "symptom": "Sleep disturbance",
      "note": "Order-level enrichment across 2 case-control studies.",
-     "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
     }
    ],
@@ -3661,7 +3692,7 @@
     {
      "symptom": "Headache / migraine",
      "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
@@ -3692,7 +3723,7 @@
    "down": [
     {
      "symptom": "Sleep disturbance",
-     "note": "Turicibacter expresses TuriSERT, a bacterial homolog of the human serotonin transporter (SERT), and imports host 5-HT \u2014 a mechanism inhibited by SSRIs like fluoxetine (Fung et al. 2019, Nat Microbiol).",
+     "note": "Turicibacter expresses TuriSERT, a bacterial homolog of the human serotonin transporter (SERT), and imports host 5-HT — a mechanism inhibited by SSRIs like fluoxetine (Fung et al. 2019, Nat Microbiol).",
      "ref": "PMID 31477894",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31477894/"
     },
@@ -3736,26 +3767,26 @@
    "down": [
     {
      "symptom": "OCD symptoms",
-     "note": "Same 2025 Mendelian randomization study found Bilophila (Proteobacteria) also has a protective causal effect against OCD \u2014 i.e. lower levels causally linked to higher OCD risk (same direction logic as the Ruminococcaceae entry, not a contradiction).",
+     "note": "Same 2025 Mendelian randomization study found Bilophila (Proteobacteria) also has a protective causal effect against OCD — i.e. lower levels causally linked to higher OCD risk (same direction logic as the Ruminococcaceae entry, not a contradiction).",
      "ref": "PMID 40056996",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     },
     {
      "symptom": "Nausea",
      "note": "Preoperative abundance negatively correlated with postoperative nausea/vomiting (PONV) severity (r=-0.33, p=0.030).",
-     "ref": "Tang et al. 2025, Frontiers in Medicine \u2014 thyroid cancer surgery cohort (PMID 40491765)",
+     "ref": "Tang et al. 2025, Frontiers in Medicine — thyroid cancer surgery cohort (PMID 40491765)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40491765/"
     },
     {
      "symptom": "Headache / migraine",
      "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
      "symptom": "Intrusive thoughts",
      "note": "Causal protective factor for OCD (genus level, OR=0.623, 95%CI 0.425-0.911, P=0.015) in the same Mendelian randomization analysis.",
-     "ref": "He et al. 2025, J Affect Disord \u2014 two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
+     "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     }
    ],
@@ -3782,7 +3813,7 @@
     {
      "symptom": "Headache / migraine",
      "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ]
@@ -3881,23 +3912,23 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: increased abundance, per Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Dom\u00e8nech 2022 (Sci Rep; OCD: \u2191Rikenellaceae/Alistipes, \u2193Prevotellaceae, Agathobacter, Coprococcus)",
+     "note": "Part of the OCD gut-microbiome profile: increased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     }
    ],
    "down": [
     {
      "symptom": "Arterial stiffness / vascular aging",
-     "note": "One Rikenellaceae OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women \u2014 i.e. its depletion tracks with stiffer arteries.",
-     "ref": "Menni et al. 2018, European Heart Journal \u2014 TwinsUK, n=617 (PMID 29750272)",
+     "note": "One Rikenellaceae OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. its depletion tracks with stiffer arteries.",
+     "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
     }
    ]
   },
   {
    "name": "Oscillospira",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Cold sores",
@@ -3908,6 +3939,12 @@
    ],
    "down": [
     {
+     "symptom": "Oral iron supplementation",
+     "note": "Dose- and timing-dependent: DECREASED under standard-dose oral iron (100mg once daily with a meal) but INCREASED under low-dose (6mg twice daily, fasting). One of the clearest signals that how iron is dosed changes its microbiome cost, not just whether it is taken.",
+     "ref": "4-arm dose/timing comparison of oral iron regimens (PMID 42124000)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42124000/"
+    },
+    {
      "symptom": "Metabolic dysregulation",
      "note": "Associated with leanness/satiety signalling in diet-microbiome studies; depletion linked to metabolic shifts.",
      "ref": "PMID 28028921",
@@ -3915,8 +3952,8 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes).",
-     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: \u2193Oscillospira, Odoribacter, Anaerostipes)",
+     "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes).",
+     "ref": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32307692/"
     }
    ]
@@ -4047,7 +4084,7 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Elevated in NAFLD patients alongside intestinal inflammation and impaired mucosal immune function; evidence is mixed across other conditions (protective association reported in sepsis) \u2014 treat as suggestive, not conclusive.",
+     "note": "Elevated in NAFLD patients alongside intestinal inflammation and impaired mucosal immune function; evidence is mixed across other conditions (protective association reported in sepsis) — treat as suggestive, not conclusive.",
      "ref": "Sci Rep srep08096",
      "url": "https://www.nature.com/articles/srep08096"
     }
@@ -4097,7 +4134,7 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia.",
-     "ref": "2024, mSystems \u2014 infant-donor microbiota in germ-free mice",
+     "ref": "2024, mSystems — infant-donor microbiota in germ-free mice",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/"
     }
    ],
@@ -4122,13 +4159,13 @@
     {
      "symptom": "Restlessness",
      "note": "Significantly increased in children with tic disorder vs. matched controls (p<0.05).",
-     "ref": "Wang et al. 2022, Frontiers in Pediatrics \u2014 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/"
     },
     {
      "symptom": "Headache / migraine",
      "note": "Increased in migraine across 3 independent studies within this review.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     }
    ],
@@ -4141,7 +4178,7 @@
     {
      "symptom": "Constipation",
      "note": "Enriched specifically in patients with delayed colonic transit.",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
@@ -4197,13 +4234,13 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "One of five indicator OTUs (alongside Prevotella, unclassified Lachnospiraceae, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
-     "ref": "Rausch et al. 2011, PNAS \u2014 healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
     },
     {
      "symptom": "Headache / migraine",
      "note": "Increased in migraine across 3 independent studies within this review.",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) \u2014 He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
     },
     {
@@ -4224,8 +4261,8 @@
    "both": [
     {
      "symptom": "Reduced socializing",
-     "note": "One study found Sutterella increased in ASD alongside Parasutterella. But a separate ASD cohort found Sutterella abundance negatively correlated with CARS severity scores (r=-0.24, p=0.0046, stronger in ASD-only subgroup r=-0.34, p=0.0072) \u2014 i.e. higher Sutterella tracked with LESS severe social impairment there, the opposite implication. Marked \"both\" given the genuine conflict.",
-     "ref": "Chen et al. 2021, Frontiers in Psychiatry \u2014 ASD children, CARS severity correlation (PMID 34975585)",
+     "note": "One study found Sutterella increased in ASD alongside Parasutterella. But a separate ASD cohort found Sutterella abundance negatively correlated with CARS severity scores (r=-0.24, p=0.0046, stronger in ASD-only subgroup r=-0.34, p=0.0072) — i.e. higher Sutterella tracked with LESS severe social impairment there, the opposite implication. Marked \"both\" given the genuine conflict.",
+     "ref": "Chen et al. 2021, Frontiers in Psychiatry — ASD children, CARS severity correlation (PMID 34975585)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34975585/"
     }
    ]
@@ -4237,7 +4274,7 @@
     {
      "symptom": "Constipation",
      "note": "Mendelian randomization risk association (OR=1.07, 95% CI 1.01-1.13, p=0.015).",
-     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology \u2014 causal evidence incl. Mendelian randomization studies",
+     "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279"
     }
    ],
@@ -4281,14 +4318,14 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Th17-inducing family higher in FUT2-null (sese) IBD patients.",
-     "ref": "2021, J Genet Genomics \u2014 FUT2 loss-of-function in IBD (n=81)",
+     "ref": "2021, J Genet Genomics — FUT2 loss-of-function in IBD (n=81)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
     }
    ],
    "down": [
     {
      "symptom": "Cold sores",
-     "note": "The ErysipelotrichaceaeUCG003 subgroup's genetically-predicted higher abundance decreases HSV-1 infection risk \u2014 the virus that causes cold sores \u2014 in a 2-sample Mendelian randomization study (OR=0.837, 95% CI 0.717-0.976, P=0.023, IVW). Filed at the family level since this app doesn't track UCG-subgroup resolution elsewhere.",
+     "note": "The ErysipelotrichaceaeUCG003 subgroup's genetically-predicted higher abundance decreases HSV-1 infection risk — the virus that causes cold sores — in a 2-sample Mendelian randomization study (OR=0.837, 95% CI 0.717-0.976, P=0.023, IVW). Filed at the family level since this app doesn't track UCG-subgroup resolution elsewhere.",
      "ref": "2-sample MR, Hu et al. 2025, Medicine (Baltimore) (PMID 40629566)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
     }
@@ -4300,7 +4337,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "A keystone mucin-degrader positively associated with IBD in multiple studies \u2014 though a 2025 study found it can also reinforce the epithelial barrier and resolve inflammation in other contexts, so evidence on direction is genuinely mixed/context-dependent, unlike gnavus.",
+     "note": "A keystone mucin-degrader positively associated with IBD in multiple studies — though a 2025 study found it can also reinforce the epithelial barrier and resolve inflammation in other contexts, so evidence on direction is genuinely mixed/context-dependent, unlike gnavus.",
      "ref": "mBio 10.1128/mbio.00039-24 / PMID 41131583",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41131583/"
     }
@@ -4311,41 +4348,41 @@
    "name": "Bacteroides uniformis",
    "count": 2,
    "up": [
-           {
-            "symptom": "Irritability",
-            "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
-            "ref": "PMID 31119393",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
-           },
-           {
-            "symptom": "Poor working memory",
-            "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
-            "ref": "PMID 31119393",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
-           },
-           {
-            "symptom": "Lack of impulse control",
-            "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
-            "ref": "PMID 31119393",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
-           },
-           {
-            "symptom": "Restlessness",
-            "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
-            "ref": "PMID 31119393",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
-           }
-          ],
+    {
+     "symptom": "Irritability",
+     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    }
+   ],
    "down": [
     {
      "symptom": "Arterial stiffness / vascular aging",
-     "note": "Negatively associated with carotid-femoral pulse wave velocity in a 3,087-participant cross-sectional study \u2014 i.e. its depletion tracks with stiffer arteries. The study specifically notes this species is already commercially available as a probiotic.",
-     "ref": "Cuadrat et al. 2023, Scientific Reports \u2014 EPIC-Potsdam, n=3,087 (PMID 37587126)",
+     "note": "Negatively associated with carotid-femoral pulse wave velocity in a 3,087-participant cross-sectional study — i.e. its depletion tracks with stiffer arteries. The study specifically notes this species is already commercially available as a probiotic.",
+     "ref": "Cuadrat et al. 2023, Scientific Reports — EPIC-Potsdam, n=3,087 (PMID 37587126)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37587126/"
     },
     {
      "symptom": "Chronic pain",
-     "note": "Found depleted in the Minerbi et al. 2019 fibromyalgia microbiome signature \u2014 this is a species-specific finding, kept separate from the bare Bacteroides genus node.",
+     "note": "Found depleted in the Minerbi et al. 2019 fibromyalgia microbiome signature — this is a species-specific finding, kept separate from the bare Bacteroides genus node.",
      "ref": "Minerbi 2019 / PMC11671092",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11671092/"
     },
@@ -4415,7 +4452,7 @@
    "up": [
     {
      "symptom": "Lack of impulse control",
-     "note": "Enriched in the same Parkinson's disease impulse-control-disorder cohort \u2014 population-specific finding, flagged since it's not a general-population result.",
+     "note": "Enriched in the same Parkinson's disease impulse-control-disorder cohort — population-specific finding, flagged since it's not a general-population result.",
      "ref": "Int J Mol Sci 2025 (PMID 40649930)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40649930/"
     }
@@ -4429,14 +4466,14 @@
    "down": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
     },
     {
      "symptom": "Histamine reactions",
      "note": "Species-level: significantly lower abundance in histamine-intolerant patients vs. controls (P=0.034).",
-     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "ref": "Sánchez-Pérez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
     },
     {
@@ -4454,7 +4491,7 @@
    "down": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
     }
@@ -4467,7 +4504,7 @@
    "down": [
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Baseline host-genotype profile, not a diagnosis \u2014 non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
+     "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
     }
@@ -4480,24 +4517,24 @@
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Non-secretor children had higher fecal B. vulgatus than secretor children (5.00% vs 1.00% median, p=0.023); mediated 14% of secretor-status' effect on gastroenteritis risk.",
-     "ref": "2025, Clin Microbiol Infect \u2014 Copenhagen birth cohort (n=700)",
+     "ref": "2025, Clin Microbiol Infect — Copenhagen birth cohort (n=700)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/"
     }
    ],
    "down": [
-             {
-              "symptom": "Fatigue",
-              "note": "Species-level: decreased relative abundance distinguished ME/CFS patients (particularly the IBS-comorbid subgroup) across all statistical tests used.",
-              "ref": "n=50 ME/CFS/50 controls, fecal metagenomics (PMID 28441964)",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/28441964/"
-             },
-             {
-              "symptom": "Brain fog",
-              "note": "Species-level: decreased relative abundance distinguished ME/CFS patients (particularly the IBS-comorbid subgroup) across all statistical tests used.",
-              "ref": "n=50 ME/CFS/50 controls, fecal metagenomics (PMID 28441964)",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/28441964/"
-             }
-            ]
+    {
+     "symptom": "Fatigue",
+     "note": "Species-level: decreased relative abundance distinguished ME/CFS patients (particularly the IBS-comorbid subgroup) across all statistical tests used.",
+     "ref": "n=50 ME/CFS/50 controls, fecal metagenomics (PMID 28441964)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28441964/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "Species-level: decreased relative abundance distinguished ME/CFS patients (particularly the IBS-comorbid subgroup) across all statistical tests used.",
+     "ref": "n=50 ME/CFS/50 controls, fecal metagenomics (PMID 28441964)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28441964/"
+    }
+   ]
   },
   {
    "name": "Eubacterium hallii",
@@ -4512,7 +4549,7 @@
     {
      "symptom": "Sleep disturbance",
      "note": "The only species showing consensus enrichment across chronic insomnia cohorts; independently confirmed as significantly increased in a separate 14-study meta-analysis.",
-     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews \u2014 14 studies, 9,036 participants (PMID 41610732)",
+     "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews — 14 studies, 9,036 participants (PMID 41610732)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/"
     }
    ],
@@ -4524,8 +4561,8 @@
    "up": [
     {
      "symptom": "Poor working memory",
-     "note": "Negatively correlated with Quality of Working Memory (r=-0.294, p<0.05) in healthy older adults \u2014 higher abundance associated with worse working memory.",
-     "ref": "Komanduri et al. 2021, Nutrients \u2014 69 healthy older adults, 16S rRNA sequencing (PMID 35010939)",
+     "note": "Negatively correlated with Quality of Working Memory (r=-0.294, p<0.05) in healthy older adults — higher abundance associated with worse working memory.",
+     "ref": "Komanduri et al. 2021, Nutrients — 69 healthy older adults, 16S rRNA sequencing (PMID 35010939)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35010939/"
     }
    ],
@@ -4537,7 +4574,7 @@
    "up": [
     {
      "symptom": "Allergies",
-     "note": "Family-level increase associated with development of allergic sensitization, eczema, or asthma. Note: at the genus level, bare Clostridium is reported DECREASED in allergic rhinitis specifically (3 studies) \u2014 a genuine rank-level split kept as two separate entries rather than merged.",
+     "note": "Family-level increase associated with development of allergic sensitization, eczema, or asthma. Note: at the genus level, bare Clostridium is reported DECREASED in allergic rhinitis specifically (3 studies) — a genuine rank-level split kept as two separate entries rather than merged.",
      "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/"
     }
@@ -4545,14 +4582,14 @@
    "down": [
     {
      "symptom": "Poor working memory",
-     "note": "Positively correlated with Quality of Working Memory (r=0.265, p<0.05) in healthy older adults \u2014 higher abundance associated with better working memory (i.e. depletion associated with worse working memory).",
-     "ref": "Komanduri et al. 2021, Nutrients \u2014 69 healthy older adults, 16S rRNA sequencing (PMID 35010939)",
+     "note": "Positively correlated with Quality of Working Memory (r=0.265, p<0.05) in healthy older adults — higher abundance associated with better working memory (i.e. depletion associated with worse working memory).",
+     "ref": "Komanduri et al. 2021, Nutrients — 69 healthy older adults, 16S rRNA sequencing (PMID 35010939)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35010939/"
     },
     {
      "symptom": "Arterial stiffness / vascular aging",
-     "note": "Two Clostridiaceae OTUs were among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women \u2014 i.e. their depletion tracks with stiffer arteries.",
-     "ref": "Menni et al. 2018, European Heart Journal \u2014 TwinsUK, n=617 (PMID 29750272)",
+     "note": "Two Clostridiaceae OTUs were among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. their depletion tracks with stiffer arteries.",
+     "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
     }
    ]
@@ -4564,8 +4601,8 @@
    "down": [
     {
      "symptom": "Intrusive thoughts",
-     "note": "Depletion correlated with greater obsession severity on the Y-BOCS obsessions subscale (r=-0.420) in OCD patients \u2014 species-level finding, distinct from the genus-level Lachnospira already tracked elsewhere in this app.",
-     "ref": "Dom\u00e8nech et al. 2022, Scientific Reports \u2014 32 OCD patients/33 controls, stool + oropharyngeal microbiome (PMID 35087123)",
+     "note": "Depletion correlated with greater obsession severity on the Y-BOCS obsessions subscale (r=-0.420) in OCD patients — species-level finding, distinct from the genus-level Lachnospira already tracked elsewhere in this app.",
+     "ref": "Domènech et al. 2022, Scientific Reports — 32 OCD patients/33 controls, stool + oropharyngeal microbiome (PMID 35087123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/"
     }
    ],
@@ -4578,7 +4615,7 @@
     {
      "symptom": "Intrusive thoughts",
      "note": "Causal risk factor for OCD (order level, OR=1.327, 95%CI 1.032-1.707, P=0.027) in the same Mendelian randomization analysis.",
-     "ref": "He et al. 2025, J Affect Disord \u2014 two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
+     "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     }
    ],
@@ -4592,7 +4629,7 @@
     {
      "symptom": "Intrusive thoughts",
      "note": "Causal risk factor for OCD (OR=1.347, 95%CI 1.012-1.794, P=0.041) in the same Mendelian randomization analysis.",
-     "ref": "He et al. 2025, J Affect Disord \u2014 two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
+     "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     }
    ],
@@ -4606,7 +4643,7 @@
     {
      "symptom": "Intrusive thoughts",
      "note": "Causal risk factor for OCD (OR=1.384, 95%CI 1.003-1.910, P=0.048) in the same Mendelian randomization analysis.",
-     "ref": "He et al. 2025, J Affect Disord \u2014 two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
+     "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/"
     }
    ],
@@ -4663,13 +4700,13 @@
     {
      "symptom": "Hair loss",
      "note": "Via iron deficiency: protective against IDA in a 2-sample Mendelian randomization analysis (beta=-0.0017, P=.04, PMID 39993092); iron deficiency itself is a recognized (though inconsistently replicated) cause of hair loss/telogen effluvium.",
-     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
+     "ref": "Iron-deficiency mediated — see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
     },
     {
      "symptom": "Panic attack",
      "note": "Via iron deficiency: protective against IDA in a 2-sample Mendelian randomization analysis (beta=-0.0017, P=.04, PMID 39993092); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
-     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
+     "ref": "Iron-deficiency mediated — see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
     }
    ],
@@ -4682,13 +4719,13 @@
     {
      "symptom": "Hair loss",
      "note": "Via iron deficiency: species-level MR signal (Ruminococcus E sp003521625) increased IDA risk (OR=1.20, 95% CI 1.04-1.39, PMID 41045077); iron deficiency itself is a recognized (though inconsistently replicated) cause of hair loss/telogen effluvium.",
-     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
+     "ref": "Iron-deficiency mediated — see \"Iron deficiency (state)\" condition; hair-loss link: Trost et al. 2006, J Am Acad Dermatol (PMID 16635664)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
     },
     {
      "symptom": "Panic attack",
      "note": "Via iron deficiency: species-level MR signal (Ruminococcus E sp003521625) increased IDA risk (OR=1.20, 95% CI 1.04-1.39, PMID 41045077); serum iron is significantly lower in panic/hyperventilation-attack patients than controls.",
-     "ref": "Iron-deficiency mediated \u2014 see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
+     "ref": "Iron-deficiency mediated — see \"Iron deficiency (state)\" condition; panic-attack link: Hasegawa et al. 2013, Acta Med Okayama (PMID 23603926)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
     },
     {
@@ -4756,7 +4793,7 @@
     {
      "symptom": "Histamine reactions",
      "note": "Significantly lower abundance in histamine-intolerant patients vs. controls (P<0.05).",
-     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "ref": "Sánchez-Pérez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
     },
     {
@@ -4803,49 +4840,49 @@
     }
    ],
    "both": [
-             {
-              "symptom": "Systemic inflammation",
-              "note": "Increased in psoriasis alongside Akkermansia and Faecalibacterium in some cohorts — flagged here as one of the conflicting-direction genera; treat cautiously. Genuine contradiction: multiple case-control studies (Brazilian cohort, PMID 34897759; psoriatic-arthritis cohort, PMID 36600182) found Ruminococcus REDUCED in psoriasis/PsA vs. the existing 'up' citation here — direction genuinely disputed across studies, not a single outlier.",
-              "ref": "PMC8069836",
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069836/"
-             },
-             {
-              "symptom": "Paresthesia / numbness",
-              "note": "Genus-level MR signal: genetically higher abundance of 'Ruminococcus2' increased MS risk, partially mediated (19.19%) by plasma neurturin levels. Causal/genetic evidence from a 5-GWAS bidirectional MR study — lower confidence than direct case-control abundance data.",
-              "ref": "Curr Neuropharmacol 2026 (bidirectional MR across 5 neurodegenerative-disease GWAS; Ruminococcus2→neurturin→MS mediation pathway, OR=1.038)",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42460525/"
-             },
-             {
-              "symptom": "Reduced socializing",
-              "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
-              "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
-             },
-             {
-              "symptom": "Irritability",
-              "note": "ADHD: Flagged higher in adult ADHD. (up) | Autism (ASD): Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels. (both) | Bipolar Disorder: Depleted in untreated BD (Hu 2019). (down)",
-              "ref": "Multiple sources across ADHD, Autism (ASD), Bipolar Disorder — see individual condition entries",
-              "url": "https://www.sciencedirect.com/science/article/pii/S0924977X24001585"
-             },
-             {
-              "symptom": "Fatigue",
-              "note": "Iron deficiency (state): Species-level: genetically higher abundance of Ruminococcus E sp003521625 increased IDA risk (OR=1.20, 95% CI 1.04-1.39) in a 3-sample Mendelian randomization analysis (28,075 IDA cases / 857,930 controls, Pan-UKB/FinnGen/GERA). Causal/genetic evidence, not case-control abundance — lower confidence than direct observational data. Note: existing genus-level entries here are case-control based; this is a distinct species-level MR signal. (up) | Depression: Depleted in Thai MDD patients (n=32) vs. healthy controls (n=37); enriched in controls, proposed as a putative biomarker for MDD, consistent with 5 other independent case-control studies finding the same depletion. (down)",
-              "ref": "Multiple sources across Depression, Iron deficiency (state) — see individual condition entries",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/41045077/"
-             },
-             {
-              "symptom": "Overstimulation",
-              "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
-              "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
-             },
-             {
-              "symptom": "Understimulation",
-              "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
-              "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
-             }
-            ]
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Increased in psoriasis alongside Akkermansia and Faecalibacterium in some cohorts — flagged here as one of the conflicting-direction genera; treat cautiously. Genuine contradiction: multiple case-control studies (Brazilian cohort, PMID 34897759; psoriatic-arthritis cohort, PMID 36600182) found Ruminococcus REDUCED in psoriasis/PsA vs. the existing 'up' citation here — direction genuinely disputed across studies, not a single outlier.",
+     "ref": "PMC8069836",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8069836/"
+    },
+    {
+     "symptom": "Paresthesia / numbness",
+     "note": "Genus-level MR signal: genetically higher abundance of 'Ruminococcus2' increased MS risk, partially mediated (19.19%) by plasma neurturin levels. Causal/genetic evidence from a 5-GWAS bidirectional MR study — lower confidence than direct case-control abundance data.",
+     "ref": "Curr Neuropharmacol 2026 (bidirectional MR across 5 neurodegenerative-disease GWAS; Ruminococcus2→neurturin→MS mediation pathway, OR=1.038)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42460525/"
+    },
+    {
+     "symptom": "Reduced socializing",
+     "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
+     "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
+    },
+    {
+     "symptom": "Irritability",
+     "note": "ADHD: Flagged higher in adult ADHD. (up) | Autism (ASD): Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels. (both) | Bipolar Disorder: Depleted in untreated BD (Hu 2019). (down)",
+     "ref": "Multiple sources across ADHD, Autism (ASD), Bipolar Disorder — see individual condition entries",
+     "url": "https://www.sciencedirect.com/science/article/pii/S0924977X24001585"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Iron deficiency (state): Species-level: genetically higher abundance of Ruminococcus E sp003521625 increased IDA risk (OR=1.20, 95% CI 1.04-1.39) in a 3-sample Mendelian randomization analysis (28,075 IDA cases / 857,930 controls, Pan-UKB/FinnGen/GERA). Causal/genetic evidence, not case-control abundance — lower confidence than direct observational data. Note: existing genus-level entries here are case-control based; this is a distinct species-level MR signal. (up) | Depression: Depleted in Thai MDD patients (n=32) vs. healthy controls (n=37); enriched in controls, proposed as a putative biomarker for MDD, consistent with 5 other independent case-control studies finding the same depletion. (down)",
+     "ref": "Multiple sources across Depression, Iron deficiency (state) — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41045077/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
+     "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
+    },
+    {
+     "symptom": "Understimulation",
+     "note": "Genuine cross-study contradiction, distinct from the existing Ruminococcaceae (up) and Ruminococcus gnavus (down) entries here: a systematic review found 3 studies reporting Ruminococcus increased in ASD vs. 1 study reporting it reduced (PMID 30696816), and a more recent case-control study (Soltysova et al. 2022) also found it decreased in ASD children (PMID 36296284). Bare-genus level, previously untracked here despite being tracked at the family (Ruminococcaceae) and species (R. gnavus) levels.",
+     "ref": "Systematic review (PMID 30696816); Soltysova et al. 2022 (PMID 36296284)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30696816/"
+    }
+   ]
   },
   {
    "name": "Alloprevotella",
@@ -4868,7 +4905,7 @@
    "down": [
     {
      "symptom": "Chronic pain",
-     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization — lower confidence than direct case-control observational data.",
      "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
     }
@@ -4882,7 +4919,7 @@
    "down": [
     {
      "symptom": "Chronic pain",
-     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "note": "Higher genetically-predicted abundance associated with reduced fibromyalgia risk (protective). Causal/genetic evidence from bidirectional Mendelian randomization — lower confidence than direct case-control observational data.",
      "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
     }
@@ -4895,7 +4932,7 @@
    "up": [
     {
      "symptom": "Chronic pain",
-     "note": "Higher genetically-predicted abundance associated with increased fibromyalgia susceptibility (risk factor). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
+     "note": "Higher genetically-predicted abundance associated with increased fibromyalgia susceptibility (risk factor). Causal/genetic evidence from bidirectional Mendelian randomization — lower confidence than direct case-control observational data.",
      "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
     }
@@ -4910,7 +4947,7 @@
     {
      "symptom": "Histamine reactions",
      "note": "7-fold higher mean abundance in histamine-intolerant patients vs. controls (P<0.05).",
-     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "ref": "Sánchez-Pérez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
     }
    ],
@@ -4924,7 +4961,7 @@
     {
      "symptom": "Histamine reactions",
      "note": "1.8-fold higher mean abundance in histamine-intolerant patients vs. controls (P<0.05).",
-     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "ref": "Sánchez-Pérez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
     }
    ],
@@ -4939,7 +4976,7 @@
     {
      "symptom": "Histamine reactions",
      "note": "Species-level: significantly lower abundance in histamine-intolerant patients vs. controls (P=0.017).",
-     "ref": "S\u00e1nchez-P\u00e9rez et al. 2022 (PMC9102523)",
+     "ref": "Sánchez-Pérez et al. 2022 (PMC9102523)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9102523/"
     }
    ],
@@ -5014,31 +5051,31 @@
    "down": [
     {
      "symptom": "Poor working memory",
-     "note": "Depleted specifically in combined-type ADHD patients (n=207, metagenomic, 8-marker panel AUC=0.89); causally validated in rats \u2014 B. ovatus gavage ameliorated spatial working-memory deficits, enhanced hippocampal CA1 neuronal activation, and reversed abnormal theta EEG rhythms.",
+     "note": "Depleted specifically in combined-type ADHD patients (n=207, metagenomic, 8-marker panel AUC=0.89); causally validated in rats — B. ovatus gavage ameliorated spatial working-memory deficits, enhanced hippocampal CA1 neuronal activation, and reversed abnormal theta EEG rhythms.",
      "ref": "Wang et al. 2022, metagenomic + rat causal validation, n=207 (PMID 36128620)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36128620/"
     }
    ],
    "both": [
-             {
-              "symptom": "Irritability",
-              "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
-              "ref": "PMID 31119393",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
-             },
-             {
-              "symptom": "Lack of impulse control",
-              "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
-              "ref": "PMID 31119393",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
-             },
-             {
-              "symptom": "Restlessness",
-              "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
-              "ref": "PMID 31119393",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
-             }
-            ]
+    {
+     "symptom": "Irritability",
+     "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    },
+    {
+     "symptom": "Lack of impulse control",
+     "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    },
+    {
+     "symptom": "Restlessness",
+     "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
+     "ref": "PMID 31119393",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/"
+    }
+   ]
   },
   {
    "name": "Faecalibacterium prausnitzii",
@@ -5337,13 +5374,13 @@
     }
    ],
    "down": [
-             {
-              "symptom": "Hair loss",
-              "note": "Depleted in postmenopausal vs. premenopausal women.",
-              "ref": "PMID 35675542",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
-             }
-            ],
+    {
+     "symptom": "Hair loss",
+     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "ref": "PMID 35675542",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/"
+    }
+   ],
    "both": []
   },
   {
@@ -5364,61 +5401,61 @@
    "name": "Akkermansia muciniphila",
    "count": 1,
    "up": [
-           {
-            "symptom": "Joint pain",
-            "note": "Highest-abundance genus within phylum Verrucomicrobiae in RA patients (n=128) vs. healthy controls (n=20); active RA patients also had higher levels than inactive RA.",
-            "ref": "PMID 31652955",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
-           },
-           {
-            "symptom": "Immune dysregulation",
-            "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients.",
-            "ref": "n=128 RA/20 healthy controls (PMID 31652955)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
-           },
-           {
-            "symptom": "Paresthesia / numbness",
-            "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment.",
-            "ref": "iMSMS 2022; Jangi 2016",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
-           },
-           {
-            "symptom": "Loss of appetite",
-            "note": "Increased abundance (LEfSe) in AN patients (n=16) vs healthy controls (n=14), while SCFA-producing species (Roseburia, Agathobacter, Faecalibacterium — all already tracked here) were more prevalent in controls.",
-            "ref": "J Psychosom Res 2025 (16S, implicit-learning pilot study, n=16 AN vs n=14 HC; ↑Akkermansia muciniphila in AN, ↑Roseburia/Agathobacter/Faecalibacterium in HC)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/40424967/"
-           },
-           {
-            "symptom": "Chronic pain",
-            "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients.",
-            "ref": "n=128 RA/20 healthy controls (PMID 31652955)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
-           },
-           {
-            "symptom": "Brain fog",
-            "note": "From this app's Alzheimer's condition data.",
-            "ref": "115",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
-           },
-           {
-            "symptom": "Dizziness / orthostatic intolerance",
-            "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment.",
-            "ref": "iMSMS 2022; Jangi 2016",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
-           },
-           {
-            "symptom": "Fatigue",
-            "note": "Multiple sclerosis: Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment. (up) | Rheumatoid arthritis: The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients. (up)",
-            "ref": "Multiple sources across Multiple sclerosis, Rheumatoid arthritis",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
-           },
-           {
-            "symptom": "Poor working memory",
-            "note": "From this app's Alzheimer's condition data.",
-            "ref": "115",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
-           }
-          ],
+    {
+     "symptom": "Joint pain",
+     "note": "Highest-abundance genus within phylum Verrucomicrobiae in RA patients (n=128) vs. healthy controls (n=20); active RA patients also had higher levels than inactive RA.",
+     "ref": "PMID 31652955",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients.",
+     "ref": "n=128 RA/20 healthy controls (PMID 31652955)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
+    },
+    {
+     "symptom": "Paresthesia / numbness",
+     "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment.",
+     "ref": "iMSMS 2022; Jangi 2016",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+    },
+    {
+     "symptom": "Loss of appetite",
+     "note": "Increased abundance (LEfSe) in AN patients (n=16) vs healthy controls (n=14), while SCFA-producing species (Roseburia, Agathobacter, Faecalibacterium — all already tracked here) were more prevalent in controls.",
+     "ref": "J Psychosom Res 2025 (16S, implicit-learning pilot study, n=16 AN vs n=14 HC; ↑Akkermansia muciniphila in AN, ↑Roseburia/Agathobacter/Faecalibacterium in HC)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40424967/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients.",
+     "ref": "n=128 RA/20 healthy controls (PMID 31652955)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
+    },
+    {
+     "symptom": "Brain fog",
+     "note": "From this app's Alzheimer's condition data.",
+     "ref": "115",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment.",
+     "ref": "iMSMS 2022; Jangi 2016",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+    },
+    {
+     "symptom": "Fatigue",
+     "note": "Multiple sclerosis: Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment. (up) | Rheumatoid arthritis: The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients. (up)",
+     "ref": "Multiple sources across Multiple sclerosis, Rheumatoid arthritis",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
+    },
+    {
+     "symptom": "Poor working memory",
+     "note": "From this app's Alzheimer's condition data.",
+     "ref": "115",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
+    }
+   ],
    "down": [
     {
      "symptom": "Allergies",
@@ -5494,13 +5531,13 @@
     }
    ],
    "both": [
-             {
-              "symptom": "Systemic inflammation",
-              "note": "Rheumatoid arthritis: The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients. (up) | Psoriasis: One of the more consistent findings — increased in psoriasis/psoriatic arthritis, an interesting contrast to its 'protective' role in metabolic disease. Genuine contradiction: the majority finding across studies is actually DECREASED Akkermansia muciniphila in psoriasis (Tan et al. 2018, Exp Dermatol, PMID 29130553, 16S rDNA case-control), which weakens the protective mucus layer and worsens barrier dysfunction — the existing 'up' citation here reflects a minority/contrarian finding, not the consensus. Kept both rather than replace. (both)",
-              "ref": "Multiple sources across Psoriasis, Rheumatoid arthritis — see individual condition entries",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
-             }
-            ]
+    {
+     "symptom": "Systemic inflammation",
+     "note": "Rheumatoid arthritis: The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients. (up) | Psoriasis: One of the more consistent findings — increased in psoriasis/psoriatic arthritis, an interesting contrast to its 'protective' role in metabolic disease. Genuine contradiction: the majority finding across studies is actually DECREASED Akkermansia muciniphila in psoriasis (Tan et al. 2018, Exp Dermatol, PMID 29130553, 16S rDNA case-control), which weakens the protective mucus layer and worsens barrier dysfunction — the existing 'up' citation here reflects a minority/contrarian finding, not the consensus. Kept both rather than replace. (both)",
+     "ref": "Multiple sources across Psoriasis, Rheumatoid arthritis — see individual condition entries",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
+    }
+   ]
   },
   {
    "name": "Bifidobacteriaceae",
@@ -5509,7 +5546,7 @@
    "down": [
     {
      "symptom": "Allergies",
-     "note": "Family-level decrease associated with development of allergic sensitization, eczema, or asthma \u2014 classic protective/probiotic-relevant family.",
+     "note": "Family-level decrease associated with development of allergic sensitization, eczema, or asthma — classic protective/probiotic-relevant family.",
      "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/"
     }
@@ -5523,7 +5560,7 @@
    "down": [
     {
      "symptom": "Allergies",
-     "note": "Family-level decrease associated with development of allergic sensitization, eczema, or asthma \u2014 classic protective/probiotic-relevant family.",
+     "note": "Family-level decrease associated with development of allergic sensitization, eczema, or asthma — classic protective/probiotic-relevant family.",
      "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/"
     }
@@ -5536,7 +5573,7 @@
    "up": [
     {
      "symptom": "Irritability",
-     "note": "More abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
+     "note": "More abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples — flagged honestly as a smaller/preliminary finding, not a large study.",
      "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
     }
@@ -5544,8 +5581,8 @@
    "down": [
     {
      "symptom": "Arterial stiffness / vascular aging",
-     "note": "One Barnesiellaceae OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women \u2014 i.e. its depletion tracks with stiffer arteries. Recorded at genus level here against the study's family-level OTU.",
-     "ref": "Menni et al. 2018, European Heart Journal \u2014 TwinsUK, n=617 (PMID 29750272)",
+     "note": "One Barnesiellaceae OTU was among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. its depletion tracks with stiffer arteries. Recorded at genus level here against the study's family-level OTU.",
+     "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/"
     }
    ],
@@ -5557,7 +5594,7 @@
    "up": [
     {
      "symptom": "Irritability",
-     "note": "Order-level: more abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
+     "note": "Order-level: more abundant in impulsively violent women vs. non-impulsive controls (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples — flagged honestly as a smaller/preliminary finding, not a large study.",
      "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
     }
@@ -5572,7 +5609,7 @@
    "down": [
     {
      "symptom": "Irritability",
-     "note": "More abundant in non-impulsive (control) women \u2014 i.e. depleted in the impulsively violent group (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples \u2014 flagged honestly as a smaller/preliminary finding, not a large study.",
+     "note": "More abundant in non-impulsive (control) women — i.e. depleted in the impulsively violent group (DESeq2, FDR<0.05). Authors themselves caution these taxa had relatively low prevalence across samples — flagged honestly as a smaller/preliminary finding, not a large study.",
      "ref": "n=33 impulsively violent female convicts/20 non-impulsive controls (PMID 39496242)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39496242/"
     }
@@ -5586,7 +5623,7 @@
    "down": [
     {
      "symptom": "Cold sores",
-     "note": "Genetically-predicted higher abundance decreases HSV-1 infection risk \u2014 the virus that causes cold sores \u2014 in a 2-sample Mendelian randomization study across gut microbiota and viral infectious diseases (OR=0.814, 95% CI 0.674-0.982, P=0.032, IVW). The only symptom link currently tracked for this genus.",
+     "note": "Genetically-predicted higher abundance decreases HSV-1 infection risk — the virus that causes cold sores — in a 2-sample Mendelian randomization study across gut microbiota and viral infectious diseases (OR=0.814, 95% CI 0.674-0.982, P=0.032, IVW). The only symptom link currently tracked for this genus.",
      "ref": "2-sample MR, Hu et al. 2025, Medicine (Baltimore) (PMID 40629566)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
     }
@@ -5598,7 +5635,7 @@
    "up": [
     {
      "symptom": "Emotional Dysregulation",
-     "note": "Higher abundance significantly associated with inhibitory-self-control risk (a facet of explicit emotion regulation) in 3-4 year olds, n=257 (26 ISC-risk / 231 non-risk) \u2014 the stronger of two genus-level findings in this study (p<0.001, q=0.006). Flagged by the authors as one of several inflammation-related taxa elevated in the risk group.",
+     "note": "Higher abundance significantly associated with inhibitory-self-control risk (a facet of explicit emotion regulation) in 3-4 year olds, n=257 (26 ISC-risk / 231 non-risk) — the stronger of two genus-level findings in this study (p<0.001, q=0.006). Flagged by the authors as one of several inflammation-related taxa elevated in the risk group.",
      "ref": "Fujihara et al. 2023, Microorganisms (PMID 37764088)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37764088/"
     }

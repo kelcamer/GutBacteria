@@ -21358,10 +21358,10 @@ select{-webkit-appearance:none;appearance:none}
     }]
   }];
   var GFA_SYMPTOM_DATA_SHIPPED = {
-    "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies", "Cold sores", "Emotional Dysregulation", "Coffee / Stimulants", "Psilocybin / Psychedelics", "Arterial stiffness / vascular aging", "2'-Fucosyllactose (HMO) supplementation"],
+    "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies", "Cold sores", "Emotional Dysregulation", "Coffee / Stimulants", "Psilocybin / Psychedelics", "Arterial stiffness / vascular aging", "2'-Fucosyllactose (HMO) supplementation", "Oral iron supplementation"],
     "bacteria": [{
       "name": "Bifidobacterium",
-      "count": 13,
+      "count": 14,
       "up": [{
         "symptom": "2'-Fucosyllactose (HMO) supplementation",
         "note": "2'-FL is the human-milk oligosaccharide Bifidobacteria specifically feed on, and supplementing it raised gut Bifidobacterium in a 6-week RCT of 89 healthy older adults (mean age 67.3), alongside higher serum insulin, HDL cholesterol and FGF21. Crucial caveat: the trial's PRIMARY endpoint (cytokine response) was NOT met, and the benefit split the cohort — Bifidobacterium \"responders\" got extra metabolic/proteomic changes and better visual-memory scores, while non-responders were the people who lacked Bifidobacterium at baseline. So 2'-FL appears to feed an existing population rather than establish a new one, which matters most for anyone structurally depleted (e.g. FUT2 non-secretors, who cannot make this glycan themselves). A second adult RCT found 2'-FL improved microbial resilience after vancomycin, but only transiently (present at 2 weeks, gone by 8), while lowering fasting IL-6.",
@@ -21399,6 +21399,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/19217682/"
       }],
       "down": [{
+        "symptom": "Oral iron supplementation",
+        "note": "Reduced by oral iron supplementation - the most consistently reported cost of correcting iron deficiency by mouth. Matters disproportionately for anyone whose Bifidobacterium is already structurally low, such as FUT2 non-secretors, since the same genus is being suppressed from two directions at once.",
+        "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+      }, {
         "symptom": "Bloating & gas",
         "note": "RCTs of B. infantis 35624 / B. longum / B. bifidum MIMBb75 reduced bloating & abdominal distension vs placebo.",
         "ref": "PMC7456408",
@@ -21803,7 +21808,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Lactobacillus",
-      "count": 12,
+      "count": 13,
       "up": [{
         "symptom": "Dizziness / orthostatic intolerance",
         "note": "Elevated in this app's iron-deficiency-state taxa; iron-deficiency anemia is a documented cause of orthostatic hypotension/dizziness, and low iron storage is elevated in adolescent POTS.",
@@ -21876,6 +21881,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/"
       }],
       "down": [{
+        "symptom": "Oral iron supplementation",
+        "note": "Reduced by oral iron. Notably this runs OPPOSITE to the iron-deficiency state itself, where Lactobacillus is reported increased - so treating the deficiency orally reverses that particular shift rather than restoring a neutral baseline.",
+        "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+      }, {
         "symptom": "Anxiety",
         "note": "Psychobiotic genus; depletion repeatedly linked to elevated anxiety/mood symptoms across gut-brain-axis reviews.",
         "ref": "PMC12044767",
@@ -22260,8 +22270,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Escherichia/Shigella",
-      "count": 11,
+      "count": 12,
       "up": [{
+        "symptom": "Oral iron supplementation",
+        "note": "Trending increase under ferrous bisglycinate in the same RCT. Separately, ferrous sulfate triggered detection of the enteropathogenic E. coli virulence marker bfpA - i.e. the iron form matters, not just the dose.",
+        "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+      }, {
         "symptom": "Systemic inflammation",
         "note": "Expansion raises LPS-driven endotoxemia; linked to elevated TNF-α/IL-6 and blood-brain-barrier tight-junction disruption.",
         "ref": "PMC9769903",
@@ -22385,8 +22400,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Enterobacteriaceae",
-      "count": 10,
+      "count": 11,
       "up": [{
+        "symptom": "Oral iron supplementation",
+        "note": "Ferrous bisglycinate significantly increased the relative abundance of this family over 12 weeks. Oral iron is poorly absorbed, so the unabsorbed remainder reaches the colon and raises luminal iron availability - Enterobacteriaceae are efficient iron scavengers and bloom on it. The authors explicitly raised this as a possible harm of blanket iron supplementation, since the family contains Salmonella, Shigella and pathogenic E. coli. Overall gut bacterial diversity was NOT affected.",
+        "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+      }, {
         "symptom": "Systemic inflammation",
         "note": "Family containing Escherichia/Shigella/Klebsiella; blooms are a recognized dysbiosis/endotoxemia signature.",
         "ref": "PMC9769903",
@@ -24043,8 +24063,13 @@ select{-webkit-appearance:none;appearance:none}
       "down": []
     }, {
       "name": "Bacteroides",
-      "count": 10,
+      "count": 11,
       "up": [{
+        "symptom": "Oral iron supplementation",
+        "note": "Increased under oral iron in some studies - and, like Lactobacillus, this is opposite to the direction seen in the untreated iron-deficiency state.",
+        "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/"
+      }, {
         "symptom": "Metabolic dysregulation",
         "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies — treat as weak evidence.",
         "ref": "PMID 27529273",
@@ -24470,7 +24495,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Oscillospira",
-      "count": 3,
+      "count": 4,
       "up": [{
         "symptom": "Cold sores",
         "note": "Genetically-predicted higher abundance increases HSV-1 infection risk (the virus that causes cold sores) in the same 2-sample Mendelian randomization study as this app's other Cold sores entries (OR=1.248, 95% CI 1.041-1.496, P=0.016, IVW).",
@@ -24478,6 +24503,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/40629566/"
       }],
       "down": [{
+        "symptom": "Oral iron supplementation",
+        "note": "Dose- and timing-dependent: DECREASED under standard-dose oral iron (100mg once daily with a meal) but INCREASED under low-dose (6mg twice daily, fasting). One of the clearest signals that how iron is dosed changes its microbiome cost, not just whether it is taken.",
+        "ref": "4-arm dose/timing comparison of oral iron regimens (PMID 42124000)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42124000/"
+      }, {
         "symptom": "Metabolic dysregulation",
         "note": "Associated with leanness/satiety signalling in diet-microbiome studies; depletion linked to metabolic shifts.",
         "ref": "PMID 28028921",
