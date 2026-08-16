@@ -148,6 +148,7 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
       className="relative"
       onDoubleClick={scrollToFullComparison}
       title="Double-click to jump to the full comparison table"
+      style={{ touchAction: 'manipulation' }}
     >
       <select
         value={value}
@@ -371,6 +372,14 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
                 className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5"
                 style={{
                   cursor: 'pointer',
+                  // Without this, mobile treats a double-tap as a
+                  // zoom gesture and the dblclick event either never
+                  // fires or arrives too late to be useful - which is
+                  // why the double-click-to-jump above appeared dead on
+                  // a phone. `manipulation` opts this element out of
+                  // double-tap zoom (pinch zoom elsewhere is unaffected)
+                  // and drops the legacy 300ms tap delay with it.
+                  touchAction: 'manipulation',
                   background: c.id === b.id ? theme.ink3 : theme.ink2,
                   border: `1px solid ${c.id === b.id ? c.color : theme.line}`,
                 }}

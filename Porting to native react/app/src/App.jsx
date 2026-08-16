@@ -474,7 +474,11 @@ export default function App() {
         ].includes(activeTab) && (
           <TabPlaceholder tab={activeTab} conditionCount={conditions.length} researchTargetId={researchTargetId} />
         )}
-        <JumpToTop />
+        {/* Only the Conditions tab has drilled-in state worth resetting on
+            the way back up - clearing it from another tab would silently
+            discard a selection you would expect to still be there when you
+            return. */}
+        <JumpToTop onJump={activeTab === 'conditions' ? () => setClickedConditionName(null) : undefined} />
       </main>
     </div>
   )
