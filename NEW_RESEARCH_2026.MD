@@ -146,6 +146,41 @@ flexibility and microbial *interactions* — not H2S alone — determine the har
 
 ---
 
+## Session 3 — 2'-FL intervention + further sweep
+
+### 2'-Fucosyllactose (HMO) supplementation → Bifidobacterium (**added**, new intervention)
+
+Two verified adult RCTs:
+
+- **PMID 40738103**, *Cell Reports Medicine* 2025, n=89 healthy older adults
+  (mean age 67.3), 6 weeks, NCT03690999. 2'-FL raised gut Bifidobacterium, plus
+  serum insulin, HDL and FGF21.
+- **PMID 41243448**, *Gut Microbes* 2025. 2'-FL after vancomycin improved microbial
+  resilience — but **transiently** (present at 2 weeks, gone by 8) — while lowering
+  fasting IL-6.
+
+**Two caveats deliberately preserved in the app entry**, because the headline alone
+would mislead: the first trial's **primary endpoint (cytokine response) was NOT met**,
+and **non-responders were specifically the people who lacked Bifidobacterium at
+baseline**. 2'-FL appears to *feed an existing population rather than establish one* —
+which matters enormously for FUT2 non-secretors, who can't make this glycan themselves
+and are therefore most likely to start from a depleted baseline.
+
+Only Bifidobacterium was linked, since it's the only genus either abstract names.
+
+### Checked, nothing added
+
+- **Klebsiella** — 2025–26 work has pivoted to *therapeutic* strains (ARO112,
+  *K. oxytoca* restoring colonization resistance). Interesting, but it's about
+  engineered//selected strains, not a shift in the genus-level disease direction the
+  app records.
+- **Eggerthella lenta** — a 2026 *Nature Reviews Microbiology* review and a 2025
+  *Sci Transl Med* paper (TUDCA metabolite impairing neutrophil function in lung
+  infection) are both substantial, but neither maps onto a symptom this app tracks.
+  The digoxin-inactivation pharmacology is well established and out of scope.
+
+---
+
 ## Rejected / unverified — NOT added
 
 Recorded so the same dead ends aren't re-walked.
@@ -172,3 +207,21 @@ Recorded so the same dead ends aren't re-walked.
   summaries but the primary source wasn't verified this pass. Deferred, not added.
 - **Apiotrichum / fungal arterial stiffness** (Aging Cell 2026) — real, but
   **fungal**, not bacterial. Out of scope for this app's schema.
+- **Fusobacterium nucleatum → cardiovascular / arterial stiffness** — a 2025 review
+  states F. nucleatum is "detected in atherosclerotic plaques… contributes to
+  endothelial dysfunction." Traced to primary data and it **did not hold up**: the
+  study found ASCVD patients had **similar** F. nucleatum levels to healthy subjects,
+  with *Porphyromonas gingivalis* being the taxon actually associated
+  ([PMID 36140246](https://pubmed.ncbi.nlm.nih.gov/36140246/)). A clean example of a
+  review overstating a primary finding. **Not added.**
+- **"2'-FL clinically proven to raise Bifidobacteria in non-secretors"** — widely
+  claimed by supplement retailers. **No human trial stratified by secretor status
+  exists.** The secretor-stratified literature is about breastfeeding mothers and
+  infants, not adult supplementation. The mechanism is sound and the adult RCT data
+  is real, but this specific claim is marketing ahead of evidence.
+- **"Alternate-day iron dosing is better"** — an 11-RCT meta-analysis (n=1,014)
+  actually found a small, non-significant advantage for **daily** dosing
+  ([PMID 40841680](https://pubmed.ncbi.nlm.nih.gov/40841680/)), and the PANDA trial
+  suggests daily best meets pregnancy demand ([PMID 42024457](https://pubmed.ncbi.nlm.nih.gov/42024457/)).
+  Alternate-day's clearer benefit is GI tolerability, not correction. The microbiome
+  rationale is plausible but was **not directly tested**.
