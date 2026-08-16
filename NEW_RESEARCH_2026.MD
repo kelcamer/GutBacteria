@@ -259,6 +259,62 @@ depression per a 2026 systematic review vs. reduced in active depression vs.
 
 ---
 
+## Session 5 — sweep continued
+
+### Parasutterella → Metabolic dysregulation (**added**, `up`)
+
+*Gut Microbes* 2026 ([PMID 41845563](https://pubmed.ncbi.nlm.nih.gov/41845563/)), 26-week
+obesity programme, **n=215 humans**. *P. excrementihominis* fell during weight loss and
+the size of that fall correlated with improved insulin sensitivity; higher baseline levels
+were inversely associated with CRP improvement; and during maintenance, **rising abundance
+was significantly linked to weight regain**. Authors frame it as *attenuating* metabolic
+and inflammatory improvement, not merely marking it.
+
+### Methanobrevibacter → Poor working memory + Brain fog (**added**, `down`)
+
+*Gut Microbes* 2025 ([PMID 39910065](https://pubmed.ncbi.nlm.nih.gov/39910065/)).
+Discovery n=125, validations n=942 and n=116. *M. smithii* **positively** associated with
+cognitive performance, and partly causal — FMT from high-*M. smithii* donors improved
+cognitive flexibility in animals. Mechanism proposed as indirect: shaping bacterial
+profiles and enhancing butyrate, histidine and phenylalanine metabolism.
+
+**Direction conflict noted in-entry:** this runs opposite the genus's constipation/SIBO
+associations already in the app. Recorded as an overgrowth-vs-normal-range distinction.
+
+### Oscillibacter (**NEW bacterium #127**) → Metabolic dysregulation + Arterial stiffness (`down`)
+
+*Cell* 2024 ([PMID 38569543](https://pubmed.ncbi.nlm.nih.gov/38569543/)), **Framingham
+Heart Study, n=1,429** — the largest cohort in this sweep. Oscillibacter species associated
+with **decreased faecal and plasma cholesterol**, with conserved, encoded cholesterol-
+metabolising machinery (uptake then glycosylation/dehydrogenation into cholestenone,
+glycosylated cholesterol, hydroxycholesterol).
+
+**Taxonomic care:** deliberately created as its own node rather than folded into the
+existing *Oscillospira* entry. They are **distinct genera** (both Oscillospiraceae), and
+merging them would misattribute the finding. The arterial-stiffness link is also flagged
+in-entry as **lipid-mediated, not a direct PWV measurement** — unlike every other taxon
+under that symptom.
+
+### Phascolarctobacterium → Metabolic dysregulation (**added**, `down`, animal data)
+
+*npj Biofilms and Microbiomes* 2025 ([PMID 40753182](https://pubmed.ncbi.nlm.nih.gov/40753182/)).
+Pigs (n=129) + mouse validation, **no human data** — stated first in the note.
+*P. succinatutens* enriched in low-backfat pigs; in mice it curbed weight gain, shrank
+adipocytes, attenuated gut inflammation. Mechanism: its propionate suppresses MYC chromatin
+accessibility → arginine synthesis → less fat deposition via PI3K/Akt/FOXO3a.
+
+### 🐛 Bug found and fixed during this session
+
+Inserting a `"down": [...]` array into a taxon that **already had one** created **duplicate
+JSON keys**. `json.load()` keeps only the *last* value, so an entire array was being
+silently discarded — no parse error, no warning. It hit *Oscillospira* and
+*Phascolarctobacterium* before being caught.
+
+Fixed by merging into the existing arrays, and prevented from recurring by
+`scripts/check_duplicate_keys.py`, now wired into `.githooks/pre-commit`.
+
+---
+
 ## Rejected / unverified — NOT added
 
 Recorded so the same dead ends aren't re-walked.

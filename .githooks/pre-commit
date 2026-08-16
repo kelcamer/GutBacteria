@@ -49,4 +49,16 @@ if ! scripts/check_syntax.sh "$TMPDIR/gut-flora-atlas.html" >&2; then
   exit 1
 fi
 
+# Duplicate JSON keys silently DROP data - json.load keeps only the last
+# value - so an inserted second "down": [...] in a taxon that already has
+# one wipes an entire array with no parse error. This makes it loud.
+if ! (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_duplicate_keys.py") >&2; then
+  echo "" >&2
+  echo "pre-commit: duplicate JSON keys in the staged data (see above)." >&2
+  echo "Merge the arrays instead of adding a second key - otherwise one of" >&2
+  echo "them is silently discarded when the JSON is parsed." >&2
+  echo "(Emergency bypass: git commit --no-verify)" >&2
+  exit 1
+fi
+
 exit 0

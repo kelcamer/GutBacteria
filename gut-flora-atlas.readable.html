@@ -23337,7 +23337,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Methanobrevibacter",
-      "count": 3,
+      "count": 5,
       "up": [{
         "symptom": "Constipation",
         "note": "Archaeal methane producer; overgrowth is the established mechanism behind constipation-predominant SIBO/IBS-C.",
@@ -23354,7 +23354,17 @@ select{-webkit-appearance:none;appearance:none}
         "ref": "Int J Mol Sci 2025 (PMID 40649930)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40649930/"
       }],
-      "down": []
+      "down": [{
+        "symptom": "Poor working memory",
+        "note": "M. smithii abundance was POSITIVELY associated with cognitive performance across a discovery cohort (n=125) and two validations (n=942 and n=116) — so depletion tracks with worse cognition. Partly causal: faecal transplants from high-M. smithii donors improved cognitive flexibility in animals. Proposed mechanism is indirect, via shaping bacterial profiles and enhancing butyrate, histidine and phenylalanine metabolism. Note this runs opposite the genus's constipation/SIBO associations recorded above — an methane-overgrowth vs. normal-range distinction, not a data error.",
+        "ref": "Gut Microbes 2025 — IRONMET + Aging Imageomics cohorts (PMID 39910065)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39910065/"
+      }, {
+        "symptom": "Brain fog",
+        "note": "Same multi-cohort analysis: higher M. smithii tracked with better overall cognitive function, positioning it as a candidate therapeutic target for cognition especially in people with obesity. Recorded as depletion-linked, with the same caveat that the genus's overgrowth associations point the other way.",
+        "ref": "Gut Microbes 2025 — IRONMET + Aging Imageomics cohorts (PMID 39910065)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39910065/"
+      }]
     }, {
       "name": "Flavonifractor",
       "count": 4,
@@ -23633,7 +23643,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Phascolarctobacterium",
-      "count": 4,
+      "count": 5,
       "up": [{
         "symptom": "Non-secretor status (FUT2)",
         "note": "Higher in FUT2-null (sese) IBD patients vs. functional-FUT2 patients.",
@@ -23641,6 +23651,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
       }],
       "down": [{
+        "symptom": "Metabolic dysregulation",
+        "note": "ANIMAL/LIVESTOCK DATA, no human studies included. P. succinatutens was the key genus enriched in low-backfat pigs (n=129) and correlated positively with serum arginine; given to mice it curbed weight gain, shrank adipocytes and attenuated gut inflammation. The mechanism is worked out in detail: its main metabolite propionate suppresses MYC chromatin accessibility, stimulating arginine synthesis, which reduces fat deposition via PI3K/Akt/FOXO3a. Recorded as depletion-linked on that basis, with human relevance untested.",
+        "ref": "npj Biofilms and Microbiomes 2025 — pigs (n=129) + mouse validation (PMID 40753182)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40753182/"
+      }, {
         "symptom": "Bloating & gas",
         "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
         "ref": "PMC6421268",
@@ -23878,8 +23893,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Parasutterella",
-      "count": 5,
+      "count": 6,
       "up": [{
+        "symptom": "Metabolic dysregulation",
+        "note": "P. excrementihominis tracked metabolic outcomes across a 26-week obesity programme in 215 people (12 weeks weight reduction, 14 weeks maintenance). Its abundance fell during weight loss, and the size of that fall correlated with improved insulin sensitivity; higher baseline levels were inversely associated with CRP improvement; and during maintenance, rising abundance was significantly linked to weight regain. The authors' framing is that it attenuates metabolic and inflammatory improvement rather than merely marking it. Same group previously found the species elevated in obesity and T2D and tied to abnormal triglyceride and L-cysteine handling affecting beta-cell function.",
+        "ref": "Gut Microbes 2026, 26-week obesity intervention, n=215 (PMID 41845563)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41845563/"
+      }, {
         "symptom": "Overstimulation",
         "note": "Same genus grouping as Sutterella; elevated in pediatric migraine's inflammatory dysbiosis pattern linked to photophobia/phonophobia, which clinically co-occurs with misophonia (comorbidity evidence, not a direct bacteria-misophonia study).",
         "ref": "PMC7001586 / PMC12308847",
@@ -24445,7 +24465,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Oscillospira",
-      "count": 2,
+      "count": 3,
       "up": [{
         "symptom": "Cold sores",
         "note": "Genetically-predicted higher abundance increases HSV-1 infection risk (the virus that causes cold sores) in the same 2-sample Mendelian randomization study as this app's other Cold sores entries (OR=1.248, 95% CI 1.041-1.496, P=0.016, IVW).",
@@ -25833,6 +25853,21 @@ select{-webkit-appearance:none;appearance:none}
         "note": "Same MiaGB cohort: depletion strongly associated with cognitive impairment in cancer survivors, the population in which \"chemobrain\" is described. Recorded here as the closest tracked analogue to that presentation, with the same caveat that the measured outcome was general cognitive impairment.",
         "ref": "GeroScience 2025, MiaGB consortium, n=150 (PMID 41175312)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41175312/"
+      }]
+    }, {
+      "name": "Oscillibacter",
+      "count": 2,
+      "up": [],
+      "down": [{
+        "symptom": "Metabolic dysregulation",
+        "note": "Associated with DECREASED faecal and plasma cholesterol across 1,429 Framingham Heart Study participants, so depletion tracks with higher cholesterol. The mechanism is encoded rather than incidental: these organisms carry conserved cholesterol-metabolising capacity, taking cholesterol up and transforming it via glycosylation and dehydrogenation into cholestenone, glycosylated cholesterol and hydroxycholesterol. Kept as its own node rather than folded into this app's Oscillospira entry — they are distinct genera, both in Oscillospiraceae, and merging them would misattribute the finding.",
+        "ref": "Cell 2024 — Framingham Heart Study, n=1,429 (PMID 38569543)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38569543/"
+      }, {
+        "symptom": "Arterial stiffness / vascular aging",
+        "note": "Same Framingham analysis positioned these cholesterol-metabolising organisms as relevant to lipid homeostasis and cardiovascular health. Recorded as a lipid-mediated cardiovascular link, NOT a direct arterial-stiffness measurement — unlike the other taxa under this symptom, pulse wave velocity was not the endpoint here.",
+        "ref": "Cell 2024 — Framingham Heart Study, n=1,429 (PMID 38569543)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38569543/"
       }]
     }]
   };
