@@ -21361,8 +21361,13 @@ select{-webkit-appearance:none;appearance:none}
     "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies", "Cold sores", "Emotional Dysregulation", "Coffee / Stimulants", "Psilocybin / Psychedelics", "Arterial stiffness / vascular aging", "2'-Fucosyllactose (HMO) supplementation", "Oral iron supplementation", "Sensory processing issues"],
     "bacteria": [{
       "name": "Bifidobacterium",
-      "count": 15,
+      "count": 16,
       "up": [{
+        "symptom": "Psilocybin / Psychedelics",
+        "note": "IN VITRO, but human-derived and genus-level. A single dose of Psilocybe cubensis extract (35 mg/L) was fermented in the SHIME colonic model using faecal microbiota from people with severe anxiety. Bifidobacterium - the predominant genus in these samples - increased markedly after 20 h and again between 3 and 15 days; family-level Bifidobacteriaceae rose from 39.73% to 43.88% at 20 h and from 43.93% to 48.70% over 3-12 days. Critically for the cross-feeding question, SCFAs rose in parallel: acetic 2.26-fold, propionic 2.69-fold and BUTYRIC 2.21-fold at 20 h. Psilocybin and psilocin themselves were depleted during fermentation, i.e. the microbiota metabolises them. Caveats: a fermentation vessel has no host, no absorption and no immune system, alpha-diversity fell slightly, and GABA levels DECREASED - so this is not a uniformly favourable profile.",
+        "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046)",
+        "url": "https://doi.org/10.3390/ddc5030046"
+      }, {
         "symptom": "2'-Fucosyllactose (HMO) supplementation",
         "note": "2'-FL is the human-milk oligosaccharide Bifidobacteria specifically feed on, and supplementing it raised gut Bifidobacterium in a 6-week RCT of 89 healthy older adults (mean age 67.3), alongside higher serum insulin, HDL cholesterol and FGF21. Crucial caveat: the trial's PRIMARY endpoint (cytokine response) was NOT met, and the benefit split the cohort — Bifidobacterium \"responders\" got extra metabolic/proteomic changes and better visual-memory scores, while non-responders were the people who lacked Bifidobacterium at baseline. So 2'-FL appears to feed an existing population rather than establish a new one, which matters most for anyone structurally depleted (e.g. FUT2 non-secretors, who cannot make this glycan themselves). A second adult RCT found 2'-FL improved microbial resilience after vancomycin, but only transiently (present at 2 weeks, gone by 8), while lowering fasting IL-6.",
         "ref": "Cell Reports Medicine 2025, RCT n=89, NCT03690999 (PMID 40738103); Gut Microbes 2025, vancomycin-recovery RCT (PMID 41243448)",
@@ -21896,11 +21901,6 @@ select{-webkit-appearance:none;appearance:none}
         "ref": "Microbiome Shifts and Their Impact on Gut Physiology in IBS, Int J Mol Sci 2024 (PMID 39596460); Comparative efficacy of probiotics in children with functional abdominal pain, systematic review/meta-analysis, Front Nutr 2026 (PMID 41883407)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41883407/"
       }, {
-        "symptom": "Psilocybin / Psychedelics",
-        "note": "ANIMAL DATA, and it points the OPPOSITE way to the intuitive 'psychedelics feed good bacteria' story. Chronic psilocybin REDUCED Lactobacillus murinus and L. animalis in male wild-type mice - not in females, and not in the SAPAP3 knockout model. Overall microbial diversity was unchanged. Psilocybin did increase sociability in those same male WT mice without psychosis-like behaviour, and the authors propose a host-microbiome feedback loop regulating serotonin signalling rather than a simple prebiotic effect.",
-        "ref": "Neuropharmacology 2025 - chronic psilocybin (0.1 and 1 mg/kg), wild-type vs SAPAP3-KO mice (PMID 40849086)",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/40849086/"
-      }, {
         "symptom": "Oral iron supplementation",
         "note": "Reduced by oral iron. Notably this runs OPPOSITE to the iron-deficiency state itself, where Lactobacillus is reported increased - so treating the deficiency orally reverses that particular shift rather than restoring a neutral baseline.",
         "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
@@ -21977,6 +21977,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/41518171/"
       }],
       "both": [{
+        "symptom": "Psilocybin / Psychedelics",
+        "note": "GENUINELY CONFLICTING between models. In the SHIME in-vitro system seeded with human faecal microbiota from anxious donors, Lactobacillus increased markedly after 20 h and showed a further marked rise by 15 days of fermentation. But chronic psilocybin in live mice REDUCED Lactobacillus murinus and L. animalis (male wild-type only, PMID 40849086). In vitro human-derived community versus live animal host is exactly the kind of split where neither result supersedes the other - the fermentation model isolates direct microbial effects, while the mouse retains host serotonin signalling and immune feedback that could push the other way.",
+        "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046) vs. Neuropharmacology 2025 (PMID 40849086)",
+        "url": "https://doi.org/10.3390/ddc5030046"
+      }, {
         "symptom": "Sleep disturbance",
         "note": "Enriched in 3 case-control studies, but the review explicitly notes \"conflicting patterns across studies\" for this genus specifically.",
         "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
@@ -22928,7 +22933,7 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
       }, {
         "symptom": "Psilocybin / Psychedelics",
-        "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (fecal 16S at 1 and 3 weeks). Preliminary, rat-only. IMPORTANT LIMIT: this is a PHYLUM-level result. Actinobacteria contains Bifidobacterium but also Collinsella, Eggerthella and Atopobium, several of which this app records as pro-inflammatory, so a phylum rise cannot be read as a Bifidobacterium rise. No psilocybin study has reported Bifidobacterium at genus level, and the only genus-level psilocybin data that exists (mice, PMID 40849086) found Lactobacillus DECREASED - i.e. the evidence currently runs against, not toward, a beneficial-bloom story.",
+        "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (PMID 38846751). Read this alongside the genus-level SHIME result now recorded on Bifidobacterium: a 2026 in-vitro study using human faecal microbiota found Bifidobacterium - an Actinobacteria member - rising markedly under psilocybin, with butyrate up 2.21-fold. So the phylum signal in rats is at least consistent with a Bifidobacterium-driven increase, though the rat study itself did not resolve to genus and Actinobacteria also contains Collinsella, Eggerthella and Atopobium.",
         "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/"
       }],
