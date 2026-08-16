@@ -5,6 +5,7 @@ import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
+import { stripDerived } from '../lib/crossFeedFilter'
 
 // Ported verbatim from `GFA_ConditionMap` in gut-flora-atlas.readable.html
 // (~line 26916-27095) - the per-condition scoped map that was placeholdered
@@ -15,15 +16,20 @@ export function ConditionMap({ condition }) {
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
+  // Cross-feeding-derived links are inferred, not measured here - hidden
+  // unless asked for. Filtering upstream of the engine, see crossFeedFilter.js
+  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
   const data = useMemo(() => conditionSymptomData(condition), [condition])
+
+  const shownData = stripDerived(data, showCrossFeed)
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current || !data.bacteria.length) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, data, 'all', 'bact', true, layoutState.scramble, hiddenNamesRef)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, 'all', 'bact', true, layoutState.scramble, hiddenNamesRef)
       graphRef.current = stop
     } catch {
       if (hostRef.current) {
@@ -38,7 +44,7 @@ export function ConditionMap({ condition }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- ported 1:1 from the original's own deps
-  }, [data, layoutState])
+  }, [data, layoutState, showCrossFeed])
 
   if (!data.bacteria.length) return null
 
@@ -95,10 +101,7 @@ export function ConditionMap({ condition }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
-        // Inert until buildSymptomMap/buildMap expose setCrossFeedVisible -
-        // optional chaining keeps it a safe no-op meanwhile. See
-        // CROSS_FEEDING_UI_PLAN.md for the build order.
-        onToggleCrossFeed={(v) => graphRef.current?.setCrossFeedVisible?.(v)}
+        onToggleCrossFeed={setShowCrossFeed}
       />
     </div>
   )

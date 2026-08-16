@@ -7,6 +7,7 @@ import { useZoom } from '../lib/useZoom'
 import { Italic } from './Italic'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
+import { stripDerived } from '../lib/crossFeedFilter'
 
 // New component (no minified-source equivalent), same shape as
 // ConditionMap.jsx (the per-condition scoped map) but inverted: given the
@@ -21,9 +22,14 @@ export function BacteriumFocusMap({ label, names, onClose }) {
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
+  // Cross-feeding-derived links are inferred, not measured here - hidden
+  // unless asked for. Filtering upstream of the engine, see crossFeedFilter.js
+  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
   const data = useMemo(() => buildBacteriumFocusData(names), [names])
+
+  const shownData = stripDerived(data, showCrossFeed)
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current || !data.bacteria.length) return
@@ -34,7 +40,7 @@ export function BacteriumFocusMap({ label, names, onClose }) {
       // every connection - so the bacterium this map is about ends up in
       // the middle, not fixed at a rim position (which, with only one or
       // two bacteria nodes, tended to land at the top instead of center).
-      stop = buildSymptomMap(hostRef.current, tipRef.current, data, 'all', 'symptom', true, layoutState.scramble, hiddenNamesRef)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, 'all', 'symptom', true, layoutState.scramble, hiddenNamesRef)
       graphRef.current = stop
     } catch {
       if (hostRef.current) {
@@ -49,7 +55,7 @@ export function BacteriumFocusMap({ label, names, onClose }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- matches ConditionMap.jsx's own deps ([data, layoutState])
-  }, [data, layoutState])
+  }, [data, layoutState, showCrossFeed])
 
   const nSym = data.bacteria.reduce((a, b) => a + (b.up || []).length + (b.down || []).length + (b.both || []).length, 0)
 
@@ -114,10 +120,7 @@ export function BacteriumFocusMap({ label, names, onClose }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
-        // Inert until buildSymptomMap/buildMap expose setCrossFeedVisible -
-        // optional chaining keeps it a safe no-op meanwhile. See
-        // CROSS_FEEDING_UI_PLAN.md for the build order.
-        onToggleCrossFeed={(v) => graphRef.current?.setCrossFeedVisible?.(v)}
+        onToggleCrossFeed={setShowCrossFeed}
       />
         </>
       )}

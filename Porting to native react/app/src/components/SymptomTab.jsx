@@ -7,6 +7,7 @@ import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { isIntervention } from '../lib/interventions'
 import { MapControls } from './MapControls'
+import { stripDerived } from '../lib/crossFeedFilter'
 
 // Module-level, not per-render: a stable list AND a stable default value
 // for useState below (symptomData is a static JSON import, so this never
@@ -39,6 +40,9 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
+  // Cross-feeding-derived links are inferred, not measured here - hidden
+  // unless asked for. Filtering upstream of the engine, see crossFeedFilter.js
+  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
@@ -93,11 +97,13 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
     setExtraConditionIds([])
   }
 
+  const shownData = stripDerived(mapData, showCrossFeed)
+
   useEffect(() => {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, mapData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, clearPicker, fullData)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, clearPicker, fullData)
       graphRef.current = stop
       // Nodes added/kept via the picker above aren't the result of a real
       // click, so they'd otherwise never end up in the graph's own
@@ -124,7 +130,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own dependency array (mode, pinType, layoutState) with mapData/fullData, the overlay inputs
-  }, [mode, pinType, layoutState, mapData, fullData])
+  }, [mode, pinType, layoutState, mapData, fullData, showCrossFeed])
 
   const nBact = (mapData.bacteria || []).length
   const nSym = (mapData.symptoms || []).length
@@ -310,10 +316,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
-        // Inert until buildSymptomMap/buildMap expose setCrossFeedVisible -
-        // optional chaining keeps it a safe no-op meanwhile. See
-        // CROSS_FEEDING_UI_PLAN.md for the build order.
-        onToggleCrossFeed={(v) => graphRef.current?.setCrossFeedVisible?.(v)}
+        onToggleCrossFeed={setShowCrossFeed}
       />
     </div>
   )
