@@ -50,12 +50,13 @@
   "Psilocybin / Psychedelics",
   "Arterial stiffness / vascular aging",
   "2'-Fucosyllactose (HMO) supplementation",
-  "Oral iron supplementation"
+  "Oral iron supplementation",
+  "Sensory processing issues"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 14,
+   "count": 15,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -101,6 +102,12 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Sensory processing issues",
+     "note": "Depleted in IBS alongside Lactobacillus, where visceral hypersensitivity - a measurable lowering of sensory threshold - is a core feature. Supplementation improved pain outcomes in a paediatric meta-analysis, and vagus-nerve-stimulation work associates elevated Bifidobacterium with reduced visceral hypersensitivity. Note this is SENSORY THRESHOLD evidence from gut-pain research, not a study that measured sensory processing as an autism/ADHD trait.",
+     "ref": "Microbiome Shifts and Their Impact on Gut Physiology in IBS, Int J Mol Sci 2024 (PMID 39596460); Comparative efficacy of probiotics in children with functional abdominal pain, systematic review/meta-analysis, Front Nutr 2026 (PMID 41883407)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39596460/"
+    },
     {
      "symptom": "Oral iron supplementation",
      "note": "Reduced by oral iron supplementation - the most consistently reported cost of correcting iron deficiency by mouth. Matters disproportionately for anyone whose Bifidobacterium is already structurally low, such as FUT2 non-secretors, since the same genus is being suppressed from two directions at once.",
@@ -507,7 +514,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 14,
+   "count": 15,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -517,6 +524,12 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Sensory processing issues",
+     "note": "Mechanistic anchor for gut-to-sensory signalling: R. intestinalis-derived butyrate activates vagal neurons via GPR41 and suppresses processing in the nucleus tractus solitarius and central amygdala, with the effect abolished in Gpr41-knockout vagal neurons. The NTS feeds the parabrachial nucleus and then the insula - the interoceptive pathway. Measured endpoint was neuropathic PAIN in mice, not sensory processing, so this is the mechanism rather than the outcome.",
+     "ref": "Roseburia intestinalis-derived butyrate alleviates neuropathic pain, Cell Host & Microbe 2025 (PMID 39706182)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39706182/"
+    },
     {
      "symptom": "Chronic pain",
      "note": "Shingles/postherpetic-neuralgia patients showed altered microbiota, and transferring their faecal samples into mice raised pain sensitivity — while administering R. intestinalis reduced nerve-injury pain. The mechanism is specific: R. intestinalis-derived butyrate activates vagal neurons via GPR41, suppressing pain processing in the nucleus tractus solitarius and central amygdala. Deleting Gpr41 from vagal neurons abolished the effect entirely. Human microbiota plus causal mouse work, so treat the human side as correlational and the mechanism as animal-established.",
@@ -599,7 +612,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 14,
+   "count": 15,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -687,6 +700,12 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Sensory processing issues",
+     "note": "Depleted in IBS alongside Bifidobacterium. L. reuteri DSM 17938 specifically reduced visceral hypersensitivity and crying time in infantile colic, and Lactobacillus strains improved pain outcomes in a paediatric functional-abdominal-pain meta-analysis. Threshold/visceral evidence, not direct sensory-processing measurement.",
+     "ref": "Microbiome Shifts and Their Impact on Gut Physiology in IBS, Int J Mol Sci 2024 (PMID 39596460); Comparative efficacy of probiotics in children with functional abdominal pain, systematic review/meta-analysis, Front Nutr 2026 (PMID 41883407)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41883407/"
+    },
     {
      "symptom": "Psilocybin / Psychedelics",
      "note": "ANIMAL DATA, and it points the OPPOSITE way to the intuitive 'psychedelics feed good bacteria' story. Chronic psilocybin REDUCED Lactobacillus murinus and L. animalis in male wild-type mice - not in females, and not in the SAPAP3 knockout model. Overall microbial diversity was unchanged. Psilocybin did increase sociability in those same male WT mice without psychosis-like behaviour, and the authors propose a host-microbiome feedback loop regulating serotonin signalling rather than a simple prebiotic effect.",
@@ -2285,8 +2304,14 @@
   },
   {
    "name": "Proteobacteria",
-   "count": 11,
+   "count": 12,
    "up": [
+    {
+     "symptom": "Sensory processing issues",
+     "note": "Elevated in IBS profiles where visceral hypersensitivity is characteristic; LPS-bearing expansion is a plausible route to sensory amplification via inflammatory signalling.",
+     "ref": "Microbiome Shifts and Their Impact on Gut Physiology in IBS, Int J Mol Sci 2024 (PMID 39596460)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39596460/"
+    },
     {
      "symptom": "Systemic inflammation",
      "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
@@ -4217,8 +4242,14 @@
   },
   {
    "name": "Sutterella",
-   "count": 8,
+   "count": 9,
    "up": [
+    {
+     "symptom": "Sensory processing issues",
+     "note": "Repeatedly flagged in autism sensory-over-responsivity brain-gut-microbiome models, and separately elevated in paediatric migraine's photophobia/phonophobia dysbiosis pattern. The source is a conceptual model paper rather than a study measuring taxa against a sensory scale.",
+     "ref": "Sensory Over-Responsivity in Autism: A Bidirectional Brain-Gut-Microbiome Model, J Autism Dev Disord 2026 (PMID 41779338)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41779338/"
+    },
     {
      "symptom": "Overstimulation",
      "note": "Elevated in pediatric migraine's inflammatory dysbiosis pattern; separately, Sutterella is repeatedly flagged in autism sensory over-responsivity brain-gut-microbiome models. Misophonia is a documented comorbidity of migraine's sensory-hypersensitivity phenotype (comorbidity evidence, not a direct bacteria-misophonia study).",
