@@ -203,7 +203,16 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
     </div>
   )
 
-  const neighborList = multiIds.length >= 2 ? multiNeighbors : neighbors
+  // For an INTERVENTION, "closest neighbour" is the wrong question. An
+  // intervention that raises Bifidobacterium is useful precisely for the
+  // conditions where Bifidobacterium is LOW - so the interesting ranking is
+  // by opposition (clash), not alignment. Same comparePair data, inverted
+  // sort, different heading.
+  const aIsIntervention = isIntervention(a.name) && multiIds.length < 2
+  const baseList = multiIds.length >= 2 ? multiNeighbors : neighbors
+  const neighborList = aIsIntervention && baseList
+    ? [...baseList].sort((x, y) => y.clash - x.clash || x.c.name.localeCompare(y.c.name))
+    : baseList
 
   return (
     <div className="p-4 safe-bottom">
@@ -382,12 +391,18 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
       <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', alignItems: 'flex-start' }}>
         <div style={{ flex: '1 1 280px', minWidth: 0, maxWidth: 400 }}>
           <h3 className="mb-1" style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 18 }}>
-            {multiIds.length >= 2 ? 'Closest neighbours to Multiple' : `Closest neighbours to ${a.name}`}
+            {multiIds.length >= 2
+              ? 'Closest neighbours to Multiple'
+              : aIsIntervention
+                ? `Most likely to help with — ${a.name}`
+                : `Closest neighbours to ${a.name}`}
           </h3>
           <p className="mb-3" style={{ color: theme.muted, fontSize: 13, maxWidth: 620 }}>
             {multiIds.length >= 2
               ? 'Ranked by combined alignment across your whole selected set. Click a condition to preview it against your set below — your selected set stays unchanged.'
-              : 'Ranked by how many taxa move the same direction in both. Opposed taxa are counted separately, not subtracted.'}
+              : aIsIntervention
+                ? 'Ranked by how many taxa this intervention pushes in the OPPOSITE direction to the condition — i.e. where it may counteract the dysbiosis. Directional overlap only; this is not evidence of clinical benefit, and it ignores dose, route and everything happening outside the gut.'
+                : 'Ranked by how many taxa move the same direction in both. Opposed taxa are counted separately, not subtracted.'}
           </p>
           <div className="space-y-2" style={{ maxWidth: 720 }}>
             {(neighborList || []).map(({ c, aligned, clash, total }) => (

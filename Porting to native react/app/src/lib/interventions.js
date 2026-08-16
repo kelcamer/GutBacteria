@@ -15,11 +15,11 @@
 // Ordering note: these are things a person DOES or TAKES, as opposed to
 // things they HAVE. That's the whole test for belonging on this list.
 //
-// Two deliberate exclusions, both requested explicitly: "Alcohol-related
-// dysbiosis" and "Smoking-related dysbiosis" stay under SYMPTOMS. By the
-// does-versus-has test they'd arguably qualify, but they're framed in the
-// data as the resulting dysbiosis pattern rather than the act, and they
-// read better alongside the other states.
+// Alcohol and smoking now sit here too. They were briefly under SYMPTOMS
+// on the grounds that the data describes the resulting dysbiosis pattern
+// rather than the act - but by the does-versus-has test they are things a
+// person does, and grouping them with the other exposures makes the
+// "which intervention helps what" comparison below actually useful.
 //
 // "Non-secretor status (FUT2)" is neither - it's a host genotype, not an
 // action or a symptom. It currently sits under SYMPTOMS for lack of a
@@ -32,6 +32,8 @@ export const INTERVENTION_NAMES = [
   'Psilocybin / Psychedelics',
   "2'-Fucosyllactose (HMO) supplementation",
   'Oral iron supplementation',
+  'Alcohol-related dysbiosis',
+  'Smoking-related dysbiosis',
 ]
 
 const INTERVENTION_SET = new Set(INTERVENTION_NAMES)
