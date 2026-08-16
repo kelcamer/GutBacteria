@@ -57,9 +57,34 @@ NON_HUMAN = re.compile(r"(pig|poultry|laying hen|broiler|baboon|insect|fish|shri
 ON_TOPIC = re.compile(r"(microbio|microbiota|gut|intestin|bacteri|probiotic|prebiotic|dysbiosis|SCFA|short-chain|faecal|fecal)", re.I)
 
 
-def conditions_from_seed(path="seed_data.json"):
-    with open(path) as fh:
-        return [c["name"] for c in json.load(fh)["conditions"]]
+STATE_PATH = "research_scan_state.json"
+
+
+def scan_targets():
+    """Every condition AND every symptom/intervention - the app's full surface.
+
+    Previously this only read seed_data.json's conditions, so all 49 entries
+    in symptom_data.json (including every intervention) were never swept.
+    """
+    with open("seed_data.json") as fh:
+        conds = [c["name"] for c in json.load(fh)["conditions"]]
+    with open("symptom_data.json") as fh:
+        syms = list(json.load(fh).get("symptoms", []))
+    return [("condition", c) for c in conds] + [("symptom", s) for s in syms]
+
+
+def load_state():
+    try:
+        with open(STATE_PATH) as fh:
+            return json.load(fh)
+    except FileNotFoundError:
+        return {"last_scanned": {}, "reviewed_dois": {}}
+
+
+def save_state(st):
+    with open(STATE_PATH, "w") as fh:
+        json.dump(st, fh, indent=1, sort_keys=True)
+        fh.write("\n")
 
 
 def query(term, since, rows=20):
@@ -91,17 +116,37 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=7)
     ap.add_argument("--condition", action="append", help="limit to specific condition(s)")
-    ap.add_argument("--rows", type=int, default=15, help="results per condition")
+    ap.add_argument("--rows", type=int, default=15, help="results per target")
+    ap.add_argument("--since-last", action="store_true",
+                    help="use each target's own last-scanned date instead of --days")
+    ap.add_argument("--fresh", action="store_true", help="ignore stored state")
+    ap.add_argument("--mark-reviewed", action="store_true",
+                    help="record every DOI shown so it never resurfaces")
     args = ap.parse_args()
 
-    since = (datetime.date.today() - datetime.timedelta(days=args.days)).isoformat()
-    conds = args.condition or conditions_from_seed()
+    today = datetime.date.today().isoformat()
+    default_since = (datetime.date.today() - datetime.timedelta(days=args.days)).isoformat()
+    state = load_state()
+    reviewed = set(state.get("reviewed_dois", {}))
 
-    print(f"Crossref scan: published since {since} ({args.days} days)")
-    print(f"Conditions: {len(conds)}\n")
+    targets = scan_targets()
+    if args.condition:
+        want = {c.lower() for c in args.condition}
+        targets = [t for t in targets if t[1].lower() in want]
+
+    print(f"Crossref scan across {len(targets)} targets (conditions + symptoms)")
+    print(f"Window: {args.days} days unless a target has been scanned before")
+    print(f"Already-reviewed DOIs on file: {len(reviewed)}\n")
 
     total = 0
-    for cond in conds:
+    for kind, cond in targets:
+        # Per-target incremental window: only look at what is new since this
+        # target was last swept, so repeat runs surface a genuine delta rather
+        # than the same papers every time.
+        since = state["last_scanned"].get(cond, default_since)
+        if not args.fresh:
+            since = max(since, default_since) if args.since_last else default_since
+        state["last_scanned"][cond] = today
         items = query(f"{cond} gut microbiota", since, args.rows)
         hits = []
         # Crossref relevance ranking is loose - without this, the same generic
@@ -124,14 +169,14 @@ def main():
             if keys and not all(re.search(re.escape(k), title, re.I) for k in keys):
                 continue
             doi = it.get("DOI")
-            if doi in SEEN:
+            if doi in SEEN or doi in reviewed:
                 continue
             SEEN.add(doi)
             journal = (it.get("container-title") or [""])[0]
             dt = "-".join(str(x) for x in it.get("created", {}).get("date-parts", [["?"]])[0])
             hits.append((dt, journal, doi, title))
         if hits:
-            print(f"=== {cond} ({len(hits)})")
+            print(f"=== [{kind}] {cond} ({len(hits)})")
             for dt, journal, doi, title in hits:
                 print(f"  {dt:10} {title[:88]}")
                 print(f"  {'':10} {journal[:55]} | {doi}")
@@ -139,7 +184,15 @@ def main():
             total += len(hits)
         time.sleep(0.4)  # be polite to the API
 
-    print(f"Total candidate papers: {total}")
+    if args.mark_reviewed:
+        for doi in SEEN:
+            state["reviewed_dois"][doi] = today
+        print(f"Marked {len(SEEN)} DOIs reviewed.")
+    save_state(state)
+
+    stale = sorted(state["last_scanned"].items(), key=lambda kv: kv[1])[:5]
+    print(f"\nTotal candidate papers: {total}")
+    print("Least recently scanned targets: " + ", ".join(f"{k} ({v})" for k, v in stale))
     print("\nNothing here is verified. Confirm design, direction and sample size")
     print("before adding anything to seed_data.json / symptom_data.json.")
 
