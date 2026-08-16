@@ -477,8 +477,23 @@ export default function App() {
         {/* Only the Conditions tab has drilled-in state worth resetting on
             the way back up - clearing it from another tab would silently
             discard a selection you would expect to still be there when you
-            return. */}
-        <JumpToTop onJump={activeTab === 'conditions' ? () => setClickedConditionName(null) : undefined} />
+            return.
+
+            Clears BOTH the click-highlight and the search box, because
+            ConditionsGrid filters on both independently. Clearing only the
+            highlight looked like a no-op whenever the condition had been
+            reached by searching for it first - the query filter was still
+            hiding every other card. */}
+        <JumpToTop
+          onJump={
+            activeTab === 'conditions'
+              ? () => {
+                  setClickedConditionName(null)
+                  setConditionsQuery('')
+                }
+              : undefined
+          }
+        />
       </main>
     </div>
   )
