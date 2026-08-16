@@ -8472,6 +8472,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/26789999/"
       }
      ]
+    },
+    {
+     "id": "new_cd_t20",
+     "name": "Eisenbergiella",
+     "dir": "up",
+     "refs": "PMID 42575094",
+     "note": "A massive global atlas (245,627 microbiome profiles across countries at different IBD epidemiologic stages) found gut microbial alpha diversity declines as IBD burden rises, and identified a specific IBD-enriched Eisenbergiella subclade via strain-level analysis \u2014 associated with elevated fecal cholic acid (a primary bile acid), a mechanistic link between this genus and IBD-altered bile acid metabolism rather than a plain abundance correlation. The atlas's own microbial inflammatory risk score (19 genera) distinguished IBD from controls at AUC=0.92. Study covers IBD generally rather than splitting CD/UC \u2014 added to both this app's Crohn's disease and Ulcerative colitis entries.",
+     "links": [
+      {
+       "id": "new_cd_t20_l1",
+       "label": "Zhai et al. 2026, Cell Rep Med \u2014 global gut microbiome atlas, n=245,627 profiles (PMID 42575094)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42575094/"
+      }
+     ]
     }
    ]
   },
@@ -8753,6 +8767,20 @@
        "id": "new_uc_t18_l1",
        "label": "n=191 CD/132 UC/125 controls, metagenomic (PMID 36268225)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36268225/"
+      }
+     ]
+    },
+    {
+     "id": "new_uc_t19",
+     "name": "Eisenbergiella",
+     "dir": "up",
+     "refs": "PMID 42575094",
+     "note": "A massive global atlas (245,627 microbiome profiles across countries at different IBD epidemiologic stages) found gut microbial alpha diversity declines as IBD burden rises, and identified a specific IBD-enriched Eisenbergiella subclade via strain-level analysis \u2014 associated with elevated fecal cholic acid (a primary bile acid), a mechanistic link to IBD-altered bile acid metabolism rather than a plain abundance correlation. The atlas's own microbial inflammatory risk score (19 genera) distinguished IBD from controls at AUC=0.92. Study covers IBD generally rather than splitting CD/UC \u2014 added to both this app's Crohn's disease and Ulcerative colitis entries.",
+     "links": [
+      {
+       "id": "new_uc_t19_l1",
+       "label": "Zhai et al. 2026, Cell Rep Med \u2014 global gut microbiome atlas, n=245,627 profiles (PMID 42575094)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42575094/"
       }
      ]
     }
