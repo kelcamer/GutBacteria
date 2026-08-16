@@ -14637,13 +14637,17 @@ Error generating stack: ` + r.message + `
         "taxa": [{
           "id": "new_t2d_t1",
           "name": "Akkermansia muciniphila",
-          "dir": "down",
-          "refs": "PMC12343160",
-          "note": "Consistently negatively associated with T2D across cohorts; mechanistic mouse/human work ties its loss to insulin resistance via ghrelin signalling.",
+          "dir": "both",
+          "refs": "PMC12343160 (cross-sectional/mechanistic) vs. PMID 42202790 (prospective cohort)",
+          "note": "Genuinely conflicting direction depending on study design. Cross-sectional/mechanistic mouse+human work found it depleted in established T2D, tying its loss to insulin resistance via ghrelin signalling. But a 2026 prospective Swedish cohort (n=4,685, 383 incident cases over median 5.3y) found the opposite: higher baseline abundance predicted increased future T2D risk, with a diet-dependent (fiber-modified) effect. Marked \"both\" since these measure different things (established-disease depletion vs. baseline-predicts-onset) and neither supersedes the other.",
           "links": [{
             "id": "new_t2d_t1_l1",
             "label": "Acylated ghrelin, Akkermansia & insulin resistance in T2D",
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12343160/"
+          }, {
+            "id": "new_t2d_t1_l2",
+            "label": "Toubon et al. 2026, Cell Reports Medicine — prospective cohort (PMID 42202790)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42202790/"
           }]
         }, {
           "id": "new_t2d_t2",
@@ -14853,6 +14857,61 @@ Error generating stack: ` + r.message + `
             "id": "audit_T2D_Streptococcus_thermophilus_l1",
             "label": "PMID 41927536",
             "url": "https://pubmed.ncbi.nlm.nih.gov/41927536/"
+          }]
+        }, {
+          "id": "new_t2d_t15",
+          "name": "Desulfovibrio piger",
+          "dir": "up",
+          "refs": "Swedish SIMPLER cohort, n=4,685, prospective, median 5.3y follow-up (PMID 42202790)",
+          "note": "One of 6 species whose higher baseline abundance was associated with increased incident T2D risk over a median 5.3-year follow-up (383 incident cases among 4,685 adults, mean age 73.9).",
+          "links": [{
+            "id": "new_t2d_t15_l1",
+            "label": "Toubon et al. 2026, Cell Reports Medicine (PMID 42202790)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42202790/"
+          }]
+        }, {
+          "id": "new_t2d_t16",
+          "name": "Alistipes communis",
+          "dir": "up",
+          "refs": "Swedish SIMPLER cohort, n=4,685, prospective, median 5.3y follow-up (PMID 42202790)",
+          "note": "One of 6 species whose higher baseline abundance was associated with increased incident T2D risk over a median 5.3-year follow-up.",
+          "links": [{
+            "id": "new_t2d_t16_l1",
+            "label": "Toubon et al. 2026, Cell Reports Medicine (PMID 42202790)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42202790/"
+          }]
+        }, {
+          "id": "new_t2d_t17",
+          "name": "Alistipes finegoldii",
+          "dir": "up",
+          "refs": "Swedish SIMPLER cohort, n=4,685, prospective, median 5.3y follow-up (PMID 42202790)",
+          "note": "One of 6 species whose higher baseline abundance was associated with increased incident T2D risk over a median 5.3-year follow-up.",
+          "links": [{
+            "id": "new_t2d_t17_l1",
+            "label": "Toubon et al. 2026, Cell Reports Medicine (PMID 42202790)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42202790/"
+          }]
+        }, {
+          "id": "new_t2d_t18",
+          "name": "Ruminococcus gnavus",
+          "dir": "up",
+          "refs": "Swedish SIMPLER cohort, n=4,685, prospective, median 5.3y follow-up (PMID 42202790)",
+          "note": "One of 6 species whose higher baseline abundance was associated with increased incident T2D risk over a median 5.3-year follow-up.",
+          "links": [{
+            "id": "new_t2d_t18_l1",
+            "label": "Toubon et al. 2026, Cell Reports Medicine (PMID 42202790)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42202790/"
+          }]
+        }, {
+          "id": "new_t2d_t19",
+          "name": "Coprococcus catus",
+          "dir": "down",
+          "refs": "Swedish SIMPLER cohort, n=4,685, prospective, median 5.3y follow-up (PMID 42202790)",
+          "note": "One of 3 species whose higher baseline abundance was associated with a lower (protective) incident T2D risk over a median 5.3-year follow-up.",
+          "links": [{
+            "id": "new_t2d_t19_l1",
+            "label": "Toubon et al. 2026, Cell Reports Medicine (PMID 42202790)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42202790/"
           }]
         }]
       }, {
