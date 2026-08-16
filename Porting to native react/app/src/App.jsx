@@ -112,7 +112,34 @@ export default function App() {
   // page on your way back to the full grid would fight the user.
   useEffect(() => {
     if (!clickedConditionName) return
-    conditionsMapRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    let cancelled = false
+    // Two rAFs before measuring, deliberately. Selecting a condition also
+    // collapses the grid above from ~41 cards down to 1, which changes the
+    // page height dramatically. Measuring in the effect body races that
+    // reflow: scrollIntoView resolves against a layout that is still
+    // mid-collapse, so it lands somewhere arbitrary.
+    //
+    // That is why this appeared to work for some conditions and not others
+    // - cards low in the list (ME/CFS, Menopause) were clicked from a
+    // scrolled-down position where the miscalculation still happened to
+    // leave the map on screen, while cards at the top (ADHD, Autism) were
+    // clicked at scroll 0 where it did not.
+    //
+    // Measuring manually rather than via scrollIntoView because we want an
+    // explicit window scroll to an absolute position, not "nearest
+    // scrollable ancestor, best effort".
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (cancelled) return
+        const el = conditionsMapRef.current
+        if (!el) return
+        const top = window.scrollY + el.getBoundingClientRect().top - 8
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
+      })
+    })
+    return () => {
+      cancelled = true
+    }
   }, [clickedConditionName])
 
   // CRUD helpers, ported from D/M/Q/S/z inside $u (~line 16832-16861).
