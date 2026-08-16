@@ -179,6 +179,29 @@ Only Bifidobacterium was linked, since it's the only genus either abstract names
   infection) are both substantial, but neither maps onto a symptom this app tracks.
   The digoxin-inactivation pharmacology is well established and out of scope.
 
+### Roseburia → Chronic pain + Paresthesia/numbness (**added**, `down`)
+
+*Cell Host & Microbe* 2025 ([PMID 39706182](https://pubmed.ncbi.nlm.nih.gov/39706182/)).
+Shingles/postherpetic-neuralgia patients had altered microbiota; transferring their
+faeces into mice **raised pain sensitivity**, and giving *R. intestinalis* **reduced**
+nerve-injury pain. Mechanism is unusually specific: R. intestinalis-derived butyrate
+activates vagal neurons via **GPR41**, suppressing pain processing in the nucleus
+tractus solitarius and central amygdala — and deleting *Gpr41* from vagal neurons
+**abolished the effect entirely**.
+
+Human microbiota + causal mouse work, recorded in-app with that split stated plainly.
+Roseburia had 12 links and no pain link at all, despite being a keystone butyrate
+producer — a real gap.
+
+### Alistipes — genuinely contradictory, deferred
+
+A July 2026 systematic review (89 studies, 2014–Mar 2025) lists Alistipes among
+**pro-inflammatory taxa enriched** in major depression. Other sources report it
+**significantly reduced** in active depression, and *A. putredinis* specifically
+**higher** in people *without* PTSD symptoms (i.e. stress-resilient). Strain/clade
+resolution appears to matter. Needs a clean primary source before recording a
+direction — not added this pass.
+
 ---
 
 ## Rejected / unverified — NOT added

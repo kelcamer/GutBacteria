@@ -494,7 +494,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 12,
+   "count": 14,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -504,6 +504,18 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Chronic pain",
+     "note": "Shingles/postherpetic-neuralgia patients showed altered microbiota, and transferring their faecal samples into mice raised pain sensitivity — while administering R. intestinalis reduced nerve-injury pain. The mechanism is specific: R. intestinalis-derived butyrate activates vagal neurons via GPR41, suppressing pain processing in the nucleus tractus solitarius and central amygdala. Deleting Gpr41 from vagal neurons abolished the effect entirely. Human microbiota plus causal mouse work, so treat the human side as correlational and the mechanism as animal-established.",
+     "ref": "Cell Host & Microbe 2025 (PMID 39706182)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39706182/"
+    },
+    {
+     "symptom": "Paresthesia / numbness",
+     "note": "Same postherpetic-neuralgia work: R. intestinalis-derived butyrate alleviated nerve-injury-induced neuropathic pain in mice via vagal GPR41 signalling, with the effect lost in Gpr41-knockout vagal neurons. Recorded here because postherpetic neuralgia is a nerve-injury syndrome presenting with abnormal sensation, not only pain.",
+     "ref": "Cell Host & Microbe 2025 (PMID 39706182)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39706182/"
+    },
     {
      "symptom": "Non-secretor status (FUT2)",
      "note": "Roseburia (an anti-inflammatory SCFA/butyrate producer) was significantly depleted in FUT2 heterozygotes and non-secretors vs. secretor homozygotes, in cecal/sigmoid mucosal samples from healthy volunteers; the same secretor-linked depletion is echoed in an IBD cohort's host-genetics/microbiota analysis.",
