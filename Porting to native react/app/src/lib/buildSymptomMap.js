@@ -121,6 +121,17 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       var bNode = {
         type: "bact",
         name: b.name,
+        // New (no minified-source equivalent): optional display override,
+        // separate from `name` (which stays the canonical bucket name
+        // used for matching/keying elsewhere - hiddenNamesRef,
+        // selectByNames, xref indices, etc. - untouched). Only
+        // conditionSymptomData.js currently supplies this, for the case
+        // where a condition's own taxon name is more specific than the
+        // canonical bucket it matched against (e.g. this condition only
+        // ever reported "Escherichia coli", not "Escherichia/Shigella" -
+        // showing the broader combined name implied Shigella was part of
+        // this condition's own research when it wasn't).
+        label: b.label || b.name,
         deg: 0,
         i: bi,
         pin: pinType === "bact",
@@ -331,7 +342,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       var acceptedBoxes = [];
 
       function bactBox(n) {
-        var nm = n.name.length > 22 ? n.name.slice(0, 21) + "…" : n.name,
+        var nm = n.label.length > 22 ? n.label.slice(0, 21) + "…" : n.label,
           w = nm.length * 4.6,
           h = 10,
           labelCy = n.y - n.r - 2.5 - h / 2;
@@ -444,7 +455,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           tb.setAttribute("font-size", "7.5");
           tb.setAttribute("fill", "#A08FC7");
           tb.setAttribute("pointer-events", "none");
-          tb.textContent = n.name.length > 22 ? n.name.slice(0, 21) + "…" : n.name;
+          tb.textContent = n.label.length > 22 ? n.label.slice(0, 21) + "…" : n.label;
           g.appendChild(tb);
         }
       }
@@ -805,7 +816,18 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           return '<div style="margin:4px 0;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.06)"><span style="display:inline-flex;align-items:center;gap:4px"><span style="width:7px;height:7px;border-radius:9px;background:' + (x.color || "#A08FC7") + ';display:inline-block"></span>' + esc(x.symptom) + ' <b style="color:' + dirColor(x.dir) + '">' + dirArrow(x.dir) + '</b></span>' + srcRow(x.note, x.ref, x.url) + '</div>';
         }).join("");
         rows = relatedLine + rows;
-        html = '<div style="font-weight:700;color:#F1EAFF">' + esc(node.name) + '</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">linked to ' + node.deg + ' symptom' + (node.deg > 1 ? "s" : "") + '</div><div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + rows + '</div>';
+        // If this node's display label differs from its internal/matching
+        // name, it's showing a more specific name than the canonical
+        // bucket it matched against (see conditionSymptomData.js's own
+        // comment) - surface that plainly rather than leaving it
+        // implicit, so it's clear WHY the two differ (usually: this app
+        // groups a few genera that 16S rRNA sequencing typically can't
+        // tell apart, e.g. Escherichia/Shigella) instead of it looking
+        // like a labeling inconsistency.
+        var canonNote = node.label !== node.name
+          ? '<div style="color:#7C6BA8;font-size:9.5px;margin-bottom:5px">Grouped in this app\'s data with ' + esc(node.name) + ' (taxa that standard sequencing typically can\'t distinguish) - shown here under the name this condition\'s own research specifically reported.</div>'
+          : "";
+        html = '<div style="font-weight:700;color:#F1EAFF">' + esc(node.label) + '</div>' + canonNote + '<div style="color:#A08FC7;font-size:10px;margin-bottom:3px">linked to ' + node.deg + ' symptom' + (node.deg > 1 ? "s" : "") + '</div><div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + rows + '</div>';
       }
       return html;
     }
