@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
 import { symptomData } from '../data'
 import { comparePair, buildSymptomPseudoConditions } from '../lib/compareConditions'
@@ -28,6 +28,18 @@ const KIND_ORDER = ['both-up', 'both-down', 'clash', 'only-a', 'only-b']
 export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
   const symptomPseudo = useMemo(() => buildSymptomPseudoConditions(symptomData), [])
   const combined = useMemo(() => [...conditions, ...symptomPseudo], [conditions, symptomPseudo])
+  // Double-clicking either picker jumps straight down to the Full
+  // comparison table, which otherwise sits well below the fold (past the
+  // multi-select panel and the closest-neighbours list) - the table is
+  // usually the thing you actually came here to read.
+  //
+  // Declared up here with the other hooks, ABOVE the early "add a second
+  // condition" return below. This component has documented
+  // Rules-of-Hooks history (see the header comment); every hook must stay
+  // unconditional, so this one goes before the return, not next to the
+  // JSX that uses it.
+  const fullComparisonRef = useRef(null)
+  const scrollToFullComparison = () => fullComparisonRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
   const a = combined.find((c) => c.id === aId) || conditions[0]
   const b = combined.find((c) => c.id === bId) || conditions[1]
@@ -113,7 +125,11 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
   }
 
   const Picker = ({ value, onChange, side }) => (
-    <div className="relative">
+    <div
+      className="relative"
+      onDoubleClick={scrollToFullComparison}
+      title="Double-click to jump to the full comparison table"
+    >
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -352,7 +368,7 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
           </div>
         </div>
 
-        <div style={{ flex: '1 1 460px', minWidth: 320, maxWidth: 640 }}>
+        <div ref={fullComparisonRef} style={{ flex: '1 1 460px', minWidth: 320, maxWidth: 640, scrollMarginTop: 12 }}>
           <h3 style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 18, marginBottom: 4 }}>Full comparison</h3>
           <p className="mb-3" style={{ color: theme.muted, fontSize: 13 }}>
             Every taxon shared or diverging between {a.abbr} and {b.abbr}.
