@@ -21368,6 +21368,11 @@ select{-webkit-appearance:none;appearance:none}
         "ref": "Cell Reports Medicine 2025, RCT n=89, NCT03690999 (PMID 40738103); Gut Microbes 2025, vancomycin-recovery RCT (PMID 41243448)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40738103/"
       }, {
+        "symptom": "2'-Fucosyllactose (HMO) supplementation",
+        "note": "Bifidobacterium is the primary and only directly-measured beneficiary in the human trials, but it is also the START of a cross-feeding chain rather than the end of the story. Degrading 2'-FL releases acetate and lactate from the lactose moiety and 1,2-propanediol from the fucose, and butyrate producers consume those downstream — see this app's Faecalibacterium prausnitzii and Eubacterium hallii entries under this same intervention. That chain is why a bifidogenic prebiotic can raise butyrate without directly feeding any butyrate producer.",
+        "ref": "Mechanism: PMID 40732214 (B. bifidum/F. prausnitzii), PMID 36938958 (B. infantis/E. hallii) — both in-vitro co-culture",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
+      }, {
         "symptom": "Exercise-associated microbiota changes",
         "note": "Significantly higher relative abundance in physically active adults vs. sedentary/pre-intervention baseline, across a 25-study meta-analysis of RCTs and crossover trials.",
         "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
@@ -24941,8 +24946,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Eubacterium hallii",
-      "count": 1,
+      "count": 2,
       "up": [{
+        "symptom": "2'-Fucosyllactose (HMO) supplementation",
+        "note": "INDIRECT / cross-fed, not a direct effect. Bifidobacterium infantis metabolises 2'-FL and releases acetate, lactate and 1,2-propanediol; E. hallii consumes those to produce butyrate. The syntrophy is structure- and strain-specific — it depends on which fucosylated HMO and which B. infantis strain is present. Shown in in-vitro co-culture and a modelled microbiome, not measured in a human supplementation trial. Notably, one study found the B. adolescentis to A. hallii to butyrate link only in ADULTS, so this cross-feeding route may matter more in adults than infants.",
+        "ref": "Mol Nutr Food Res 2023 — B. infantis/E. hallii syntrophy on 2'FL (PMID 36938958)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
+      }, {
         "symptom": "Sleep disturbance",
         "note": "The only species showing consensus enrichment across chronic insomnia cohorts; independently confirmed as significantly increased in a separate 14-study meta-analysis.",
         "ref": "Chen et al. 2026 meta-analysis, Sleep Medicine Reviews — 14 studies, 9,036 participants (PMID 41610732)",
@@ -25367,8 +25377,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Faecalibacterium prausnitzii",
-      "count": 4,
-      "up": [],
+      "count": 5,
+      "up": [{
+        "symptom": "2'-Fucosyllactose (HMO) supplementation",
+        "note": "INDIRECT / cross-fed, not a direct effect. 2'-FL is not consumed by F. prausnitzii itself — Bifidobacterium bifidum degrades the HMO and releases the constituent sugars plus acetate and lactate, which F. prausnitzii then converts to butyrate. Demonstrated in in-vitro co-culture, so this is a mechanism established in the lab rather than a measured outcome in people; the human 2'-FL RCTs in this app only reported Bifidobacterium itself. Worth noting the cross-feeding chain is the reason a bifidogenic prebiotic can raise butyrate without directly feeding any butyrate producer.",
+        "ref": "Microorganisms 2025 — B. bifidum/F. prausnitzii co-culture (PMID 40732214)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
+      }],
       "down": [{
         "symptom": "Arterial stiffness / vascular aging",
         "note": "Markedly depleted in elderly individuals, with a steeper decline in elderly heart-failure patients. This one is causal, not just correlational: oral administration of F. prausnitzii — or its metabolite butyrate alone — prevented age-related cardiac dysfunction by suppressing cardiomyocyte ferroptosis via downregulation of LCN2. A gene-edited strain unable to make butyrate LOST the cardioprotective effect, pinning the mechanism to butyrate specifically.",

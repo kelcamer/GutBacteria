@@ -226,7 +226,7 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
         {showMulti && (
           <div>
             <div className="mb-3">
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+              <div className="font-mono mb-1" style={{ fontSize: 11.5, color: theme.muted, letterSpacing: '.1em' }}>
                 CONDITIONS
               </div>
               <div className="flex flex-wrap gap-1.5 mb-2">
@@ -238,7 +238,7 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
                       <button
                         key={c.id}
                         onClick={() => setMultiIds(on ? multiIds.filter((x) => x !== c.id) : [...multiIds, c.id])}
-                        className="rounded-full px-2.5 py-1 text-xs"
+                        className="rounded-full px-3 py-1.5 text-sm"
                         style={{
                           background: on ? c.color + '33' : theme.ink2,
                           border: `1px solid ${on ? c.color : theme.line}`,
@@ -250,7 +250,7 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
                     )
                   })}
               </div>
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+              <div className="font-mono mb-1" style={{ fontSize: 11.5, color: theme.muted, letterSpacing: '.1em' }}>
                 INTERVENTIONS
               </div>
               <div className="flex flex-wrap gap-1.5 mb-2">
@@ -263,7 +263,7 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
                       <button
                         key={c.id}
                         onClick={() => setMultiIds(on ? multiIds.filter((x) => x !== c.id) : [...multiIds, c.id])}
-                        className="rounded-full px-2.5 py-1 text-xs"
+                        className="rounded-full px-3 py-1.5 text-sm"
                         style={{
                           background: on ? '#F5A62333' : theme.ink2,
                           border: `1px solid ${on ? '#F5A623' : theme.line}`,
@@ -275,7 +275,7 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
                     )
                   })}
               </div>
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+              <div className="font-mono mb-1" style={{ fontSize: 11.5, color: theme.muted, letterSpacing: '.1em' }}>
                 SYMPTOMS
               </div>
               <div className="flex flex-wrap gap-1.5">
@@ -288,7 +288,7 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
                       <button
                         key={c.id}
                         onClick={() => setMultiIds(on ? multiIds.filter((x) => x !== c.id) : [...multiIds, c.id])}
-                        className="rounded-full px-2.5 py-1 text-xs"
+                        className="rounded-full px-3 py-1.5 text-sm"
                         style={{
                           background: on ? c.color + '33' : theme.ink2,
                           border: `1px solid ${on ? c.color : theme.line}`,
