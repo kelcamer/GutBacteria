@@ -5,6 +5,7 @@ import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { buildOverlayMapData } from '../lib/symptomMapConditionOverlay'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
+import { isIntervention } from '../lib/interventions'
 import { MapControls } from './MapControls'
 
 // Module-level, not per-render: a stable list AND a stable default value
@@ -12,24 +13,11 @@ import { MapControls } from './MapControls'
 // needs to change after the module loads).
 const ALL_SYMPTOMS = [...(symptomData.symptoms || [])].sort((a, b) => a.localeCompare(b))
 
-// Substance/lifestyle-factor entries live in symptomData.symptoms
-// alongside real symptoms (buildOverlayMapData/buildSymptomMap don't
-// distinguish the two - they're all just "symptom" nodes to the data
-// layer), but they read as a different kind of thing to a person
-// scanning the picker. This is a UI-only split: pull these specific
-// names out into their own INTERVENTIONS section below, purely by
-// name match against this curated list - no schema change, no change
-// to how selectedSymptoms is stored or passed to buildOverlayMapData.
-const INTERVENTION_NAMES = [
-  'Coffee / Stimulants',
-  'Cannabis-related dysbiosis',
-  'Exercise-associated microbiota changes',
-  'Psilocybin / Psychedelics',
-  "2'-Fucosyllactose (HMO) supplementation",
-]
-const INTERVENTION_SET = new Set(INTERVENTION_NAMES)
-const ALL_INTERVENTIONS = ALL_SYMPTOMS.filter((s) => INTERVENTION_SET.has(s))
-const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !INTERVENTION_SET.has(s))
+// The symptoms/interventions split is a UI-only grouping over the same
+// symptomData.symptoms list - see lib/interventions.js for the reasoning
+// and the canonical list, shared with CompareTab's multi-select panel.
+const ALL_INTERVENTIONS = ALL_SYMPTOMS.filter((s) => isIntervention(s))
+const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !isIntervention(s))
 
 // Ported verbatim from `GFA_SymptomTab` in gut-flora-atlas.readable.html
 // (~line 25998-26211) - the React wrapper that mounts buildSymptomMap into

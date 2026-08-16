@@ -5,6 +5,7 @@ import { comparePair, buildSymptomPseudoConditions } from '../lib/compareConditi
 import { DirTriangle } from './DirTriangle'
 import { RankBadge } from './RankBadge'
 import { Italic } from './Italic'
+import { isIntervention } from '../lib/interventions'
 
 // Ported from `jm` in gut-flora-atlas.readable.html (~line 28986-29601,
 // 616 lines) - the Compare-two tab: pick any two conditions OR symptoms
@@ -172,8 +173,19 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
               </option>
             ))}
         </optgroup>
+        <optgroup label="Interventions">
+          {[...symptomPseudo]
+            .filter((c) => isIntervention(c.name))
+            .sort((sA, sB) => sA.name.localeCompare(sB.name))
+            .map((c) => (
+              <option key={c.id} value={c.id} style={{ background: theme.ink2 }}>
+                {c.name}
+              </option>
+            ))}
+        </optgroup>
         <optgroup label="Symptoms">
           {[...symptomPseudo]
+            .filter((c) => !isIntervention(c.name))
             .sort((sA, sB) => sA.name.localeCompare(sB.name))
             .map((c) => (
               <option key={c.id} value={c.id} style={{ background: theme.ink2 }}>
@@ -239,10 +251,36 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
                   })}
               </div>
               <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+                INTERVENTIONS
+              </div>
+              <div className="flex flex-wrap gap-1.5 mb-2">
+                {[...symptomPseudo]
+                  .filter((c) => isIntervention(c.name))
+                  .sort((cA, cB) => cA.name.localeCompare(cB.name))
+                  .map((c) => {
+                    const on = multiIds.includes(c.id)
+                    return (
+                      <button
+                        key={c.id}
+                        onClick={() => setMultiIds(on ? multiIds.filter((x) => x !== c.id) : [...multiIds, c.id])}
+                        className="rounded-full px-2.5 py-1 text-xs"
+                        style={{
+                          background: on ? '#F5A62333' : theme.ink2,
+                          border: `1px solid ${on ? '#F5A623' : theme.line}`,
+                          color: on ? theme.text : theme.muted,
+                        }}
+                      >
+                        {c.name}
+                      </button>
+                    )
+                  })}
+              </div>
+              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
                 SYMPTOMS
               </div>
               <div className="flex flex-wrap gap-1.5">
                 {[...symptomPseudo]
+                  .filter((c) => !isIntervention(c.name))
                   .sort((cA, cB) => cA.name.localeCompare(cB.name))
                   .map((c) => {
                     const on = multiIds.includes(c.id)
