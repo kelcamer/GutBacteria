@@ -46,7 +46,8 @@
   "Allergies",
   "Cold sores",
   "Emotional Dysregulation",
-  "Coffee / Stimulants"
+  "Coffee / Stimulants",
+  "Psilocybin / Psychedelics"
  ],
  "bacteria": [
   {
@@ -1866,7 +1867,7 @@
   },
   {
    "name": "Actinobacteria",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Mania",
@@ -1879,6 +1880,12 @@
      "note": "Phylum-level enrichment across 3 case-control studies, including 2 chronic-insomnia cohorts.",
      "ref": "Wang et al. 2025 systematic review, Life \u2014 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/"
+    },
+    {
+     "symptom": "Psilocybin / Psychedelics",
+     "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (fecal 16S rRNA at 1 and 3 weeks). Preliminary, rat/animal-only data \u2014 no human gut-microbiome studies of psilocybin were found in the literature searched.",
+     "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/"
     }
    ],
    "down": [
@@ -2195,7 +2202,7 @@
   },
   {
    "name": "Proteobacteria",
-   "count": 10,
+   "count": 11,
    "up": [
     {
      "symptom": "Systemic inflammation",
@@ -2252,6 +2259,12 @@
      "note": "Decreased in allergic rhinitis patients across 2 independent studies (phylum-level).",
      "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
+    },
+    {
+     "symptom": "Psilocybin / Psychedelics",
+     "note": "Dose- and time-dependent phylum-level decrease in male rats given oral psilocybin or norbaeocystin (fecal 16S rRNA at 1 and 3 weeks). Preliminary, rat/animal-only data — no human gut-microbiome studies of psilocybin were found in the literature searched.",
+     "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/"
     }
    ],
    "both": [
@@ -2835,8 +2848,15 @@
   },
   {
    "name": "Verrucomicrobia",
-   "count": 2,
-   "up": [],
+   "count": 3,
+   "up": [
+    {
+     "symptom": "Psilocybin / Psychedelics",
+     "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (fecal 16S rRNA at 1 and 3 weeks). Preliminary, rat/animal-only data — no human gut-microbiome studies of psilocybin were found in the literature searched.",
+     "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/"
+    }
+   ],
    "down": [
     {
      "symptom": "Gut barrier dysfunction",
