@@ -8,9 +8,9 @@ import { theme } from '../theme'
 // The mobile problem this solves: six buttons in a `flex-wrap` row become
 // three stacked rows on a ~375px phone, eating the vertical space above the
 // map you're actually trying to look at. Here the two most-used actions
-// (Snap back / Scramble) stay visible and the remaining four collapse behind
-// a "⋯ More" popover below 560px. On wider screens every button renders
-// inline exactly as before, so desktop is unchanged.
+// (Snap back / Connections) stay visible and the remaining four collapse
+// behind a "⋯ More" popover below 560px. On wider screens every button
+// renders inline exactly as before, so desktop is unchanged.
 //
 // Extracted as shared code deliberately - the per-map button rows were
 // identical apart from which callbacks they invoked, and keeping five copies
@@ -32,6 +32,28 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     return () => document.removeEventListener('pointerdown', onDown)
   }, [open])
 
+  // Every one of these actions triggers a graph rebuild, which tears down
+  // and re-inserts the SVG inside the map host. While the host is briefly
+  // empty the page gets shorter, the browser clamps scrollY to the new
+  // smaller maximum, and you get yanked back up the page - very obvious on
+  // mobile, where the map is tall relative to the viewport.
+  //
+  // These are view-manipulation controls; none of them should move the
+  // page. Capture scrollY, let React commit and the engine rebuild, then
+  // put it back. Two rAFs because the restore has to land after layout has
+  // settled at full height again, not while the host is still empty.
+  // Instant (not smooth) so it reads as "nothing moved" rather than a jump
+  // back.
+  const keepScroll = (fn) => () => {
+    const y = window.scrollY
+    fn?.()
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (window.scrollY !== y) window.scrollTo({ top: y, behavior: 'auto' })
+      })
+    })
+  }
+
   const btn = {
     background: 'transparent',
     border: `1px solid ${theme.line}`,
@@ -46,18 +68,18 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
   // collapse on narrow screens. Scramble sits in here rather than up front
   // because it's the least-reached-for of the six in practice.
   const overflow = [
-    { label: '🔀 Scramble', fn: onScramble },
-    { label: '🕸️ Hide Isolated', fn: onHideIsolated },
-    { label: '▲ Increased Only', fn: onIncreasedOnly },
-    { label: '▼ Decreased Only', fn: onDecreasedOnly },
+    { label: '🔀 Scramble', fn: keepScroll(onScramble) },
+    { label: '🕸️ Hide Isolated', fn: keepScroll(onHideIsolated) },
+    { label: '▲ Increased Only', fn: keepScroll(onIncreasedOnly) },
+    { label: '▼ Decreased Only', fn: keepScroll(onDecreasedOnly) },
   ]
 
   return (
     <div ref={wrapRef} className="mt-3 flex flex-wrap gap-2 items-center" style={{ position: 'relative' }}>
-      <button onClick={onSnapBack} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
+      <button onClick={keepScroll(onSnapBack)} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
         ↻ Snap back
       </button>
-      <button onClick={onConnections} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
+      <button onClick={keepScroll(onConnections)} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
         🔗 Connections
       </button>
 

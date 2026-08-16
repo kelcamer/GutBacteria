@@ -54,6 +54,9 @@ export default function App() {
   // handling and the focusNames useMemo below for how this and the search
   // box above combine.
   const [clickedConditionName, setClickedConditionName] = useState(null)
+  // Wraps ConditionsMap so a single-clicked condition card can scroll its
+  // map into view - see the effect below.
+  const conditionsMapRef = useRef(null)
 
   // New (no minified-source equivalent): GlobalSearch's own open/close
   // state, plus one "jump request" slot per destination tab that has its
@@ -98,6 +101,19 @@ export default function App() {
     if (q) return conditions.filter((c) => c.name.toLowerCase().includes(q)).map((c) => c.name)
     return clickedConditionName ? [clickedConditionName] : []
   }, [conditionsQuery, conditions, clickedConditionName])
+
+  // Single-clicking a condition card hides the other cards and highlights
+  // that condition down in the map below - but on a phone the map is well
+  // past the fold, so the useful half of the interaction was invisible
+  // until you scrolled. Bring it into view automatically. Same pattern as
+  // BacteriaIndex.jsx's focusMapRef scroll.
+  //
+  // Only fires on SELECTING a condition, not on clearing: scrolling the
+  // page on your way back to the full grid would fight the user.
+  useEffect(() => {
+    if (!clickedConditionName) return
+    conditionsMapRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [clickedConditionName])
 
   // CRUD helpers, ported from D/M/Q/S/z inside $u (~line 16832-16861).
   const updateCondition = (id, patch) =>
@@ -349,7 +365,9 @@ export default function App() {
                 setClickedConditionName(null)
               }}
             />
-            <ConditionsMap conditions={conditions} focusNames={conditionsQueryMatches} />
+            <div ref={conditionsMapRef}>
+              <ConditionsMap conditions={conditions} focusNames={conditionsQueryMatches} />
+            </div>
           </>
         )}
         {activeTab === 'conditions' && activeCondition && (
