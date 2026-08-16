@@ -5,6 +5,7 @@ import { makeId } from '../lib/id'
 import { Button } from './Button'
 import { Field } from './Field'
 import { Modal } from './Modal'
+import { Italic } from './Italic'
 
 // One click vs. two, disambiguated with a plain setTimeout debounce
 // rather than the browser's native dblclick event - the same reasoning
@@ -28,7 +29,7 @@ const DBLCLICK_WINDOW = 280
 // `query`/`onQueryChange` are controlled from App.jsx (not local state)
 // so ConditionsMap.jsx, rendered as this grid's sibling, can highlight
 // whatever's currently typed here - see App.jsx's own state comment.
-export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, query, onQueryChange }) {
+export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, highlightedName, query, onQueryChange }) {
   const [addOpen, setAddOpen] = useState(false)
   const [name, setName] = useState('')
   const [code, setCode] = useState('')
@@ -36,9 +37,15 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, query, 
   const clickTimers = useRef({})
 
   // Single click -> highlight this condition (and its connections) in
-  // ConditionsMap below, without leaving this screen. Double click (a
-  // second click on the SAME card within DBLCLICK_WINDOW) -> open it, the
-  // original behavior.
+  // ConditionsMap below, without leaving this screen - and, per explicit
+  // request, hide every OTHER card so the highlighted map is easy to see
+  // without scrolling past a full grid first (see the render below,
+  // filtered on highlightedName). Clicking the ALREADY-highlighted card
+  // again toggles it back off - the map's own background click does the
+  // same thing (App.jsx wires both to the same clearConditionHighlight),
+  // this is just a second, more-discoverable way to reach it without
+  // scrolling down to the map first. Double click (a second click on the
+  // SAME card within DBLCLICK_WINDOW) -> open it, the original behavior.
   const handleCardClick = (c) => {
     const timers = clickTimers.current
     if (timers[c.id]) {
@@ -48,7 +55,7 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, query, 
     } else {
       timers[c.id] = setTimeout(() => {
         delete timers[c.id]
-        onHighlight?.(c.name)
+        onHighlight?.(c.name === highlightedName ? null : c.name)
       }, DBLCLICK_WINDOW)
     }
   }
@@ -105,9 +112,17 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, query, 
           </p>
         )}
 
+      {highlightedName && (
+        <p className="mb-3" style={{ color: theme.muted, fontSize: 12.5 }}>
+          Showing just <Italic>{highlightedName}</Italic> — click it again, or click the map's background below, to
+          bring the rest back.
+        </p>
+      )}
+
       <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
         {[...conditions]
           .filter((c) => c.name.toLowerCase().includes(query.trim().toLowerCase()) || c.abbr.toLowerCase().includes(query.trim().toLowerCase()))
+          .filter((c) => !highlightedName || c.name === highlightedName)
           .sort((a, b) => a.name.localeCompare(b.name))
           .map((c) => {
           const up = c.taxa.filter((t) => t.dir === 'up').length
@@ -140,14 +155,16 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, query, 
           )
         })}
 
-        <button
-          onClick={() => setAddOpen(true)}
-          className="rounded-2xl p-4 flex flex-col items-center justify-center gap-2"
-          style={{ border: `1px dashed ${theme.line}`, color: theme.muted, minHeight: 128 }}
-        >
-          <Plus size={20} />
-          <span className="text-sm">Add a condition</span>
-        </button>
+        {!highlightedName && (
+          <button
+            onClick={() => setAddOpen(true)}
+            className="rounded-2xl p-4 flex flex-col items-center justify-center gap-2"
+            style={{ border: `1px dashed ${theme.line}`, color: theme.muted, minHeight: 128 }}
+          >
+            <Plus size={20} />
+            <span className="text-sm">Add a condition</span>
+          </button>
+        )}
       </div>
 
       {addOpen && (

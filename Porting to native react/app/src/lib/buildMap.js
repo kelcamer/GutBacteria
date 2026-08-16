@@ -74,7 +74,7 @@ function copyTipText(el, btn) {
   }
 }
 
-export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hiddenNamesRef, symptomXrefData) {
+export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hiddenNamesRef, onBackgroundClick, symptomXrefData) {
   pinType = pinType || 'cond'
   const NS = 'http://www.w3.org/2000/svg'
   const W = 1000, H = 820
@@ -822,9 +822,17 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
       }
       dragNode = null
       isDragging = false
-    } else if (bgDown && selectedNodes.size) {
-      closeAllPinned()
-      setHi(curr)
+    } else if (bgDown) {
+      // Mirrors buildSymptomMap.js's own onBackgroundClick exactly - fires
+      // on any genuine background click (not a drag), regardless of
+      // whether there was a prior selection, so a caller can use it as a
+      // general "clear whatever I'm doing" signal (e.g. ConditionsGrid.jsx
+      // un-hiding its other cards once the map's background is clicked).
+      if (selectedNodes.size) {
+        closeAllPinned()
+        setHi(curr)
+      }
+      if (typeof onBackgroundClick === 'function') onBackgroundClick()
     }
     bgDown = false
   }

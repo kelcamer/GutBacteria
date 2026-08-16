@@ -8,7 +8,7 @@ import { buildMap } from '../lib/buildMap'
 // the ConditionsGrid on the Conditions tab's list view (not its own nav
 // item). Reuses `buildMap`/`GFA_buildMap` with pinType left undefined,
 // which the engine defaults to "cond" (conditions on the rim).
-export function ConditionsMap({ conditions, focusNames }) {
+export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
@@ -25,7 +25,7 @@ export function ConditionsMap({ conditions, focusNames }) {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildMap(hostRef.current, tipRef.current, conditions, mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, symptomData)
+      stop = buildMap(hostRef.current, tipRef.current, conditions, mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, onBackgroundClick, symptomData)
       graphRef.current = stop
     } catch {
       if (hostRef.current) {
@@ -39,8 +39,8 @@ export function ConditionsMap({ conditions, focusNames }) {
         // best-effort cleanup, matches the original
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- ported 1:1 from the original's own deps ([sig, mode, layoutState])
-  }, [sig, mode, layoutState])
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own deps ([sig, mode, layoutState]) with onBackgroundClick, the new callback input
+  }, [sig, mode, layoutState, onBackgroundClick])
 
   // New (no minified-source equivalent): typing a condition name in
   // ConditionsGrid above (its sibling on this same tab) highlights it -
