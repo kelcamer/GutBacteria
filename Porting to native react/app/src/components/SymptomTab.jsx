@@ -289,6 +289,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
       <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
         <div ref={hostRef} style={{ width: '100%', transform: `scale(${zoom})`, transformOrigin: 'top center' }} />
         <div
+          className="gfa-tip"
           ref={tipRef}
           style={{
             position: 'absolute',
