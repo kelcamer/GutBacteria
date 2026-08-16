@@ -1,13 +1,16 @@
 name: Build & deploy (React port + existing site, combined)
 
-# Manual trigger only (workflow_dispatch) - this is the workflow currently
-# powering the live kelcamer.github.io/GutBacteria Pages deployment (Pages
-# source was switched from "Deploy from a branch" to "GitHub Actions" once
-# this was confirmed working end-to-end; see "Porting to native
-# react/PORTING_PLAN.md" for that history). Re-run it manually (Actions tab
-# -> this workflow -> Run) whenever the live site should pick up new
-# commits - there's no push trigger, so nothing deploys automatically as a
-# side effect of a routine commit.
+# Auto-deploys on every push to main, powering the live
+# kelcamer.github.io/GutBacteria Pages deployment (Pages source was
+# switched from "Deploy from a branch" to "GitHub Actions" once this was
+# confirmed working end-to-end; see "Porting to native
+# react/PORTING_PLAN.md" for that history). workflow_dispatch is kept
+# alongside push so it can still be re-run by hand (Actions tab -> this
+# workflow -> Run) without needing an empty commit - e.g. to pick up a
+# Pages config change, or retry a run that failed for an unrelated
+# infra reason. This used to be manual-only, on purpose, as a safety net
+# against a bad push reaching the live site unreviewed - switched to
+# auto-deploy by explicit request once that trade-off was weighed.
 #
 # Single checkout, on purpose: the React port used to live on a separate
 # `native-react-app` branch (which needed its own checkout, by explicit
@@ -17,6 +20,8 @@ name: Build & deploy (React port + existing site, combined)
 # checkout covers both.
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch: {}
 
 permissions:
