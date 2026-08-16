@@ -4,6 +4,7 @@ import { conditionSymptomData } from '../lib/conditionSymptomData'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
+import { MapControls } from './MapControls'
 
 // Ported verbatim from `GFA_ConditionMap` in gut-flora-atlas.readable.html
 // (~line 26916-27095) - the per-condition scoped map that was placeholdered
@@ -84,53 +85,17 @@ export function ConditionMap({ condition }) {
         />
       </div>
 
-      <div className="mt-3 flex flex-wrap gap-2 items-center">
-        <button
-          onClick={() => {
+      <MapControls
+        onSnapBack={() => {
             hiddenNamesRef.current?.clear()
             setLayoutState((s) => ({ key: s.key + 1, scramble: false }))
           }}
-          className="rounded-lg px-3 py-1.5 text-sm"
-          style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-        >
-          ↻ Snap back
-        </button>
-        <button
-          onClick={() => setLayoutState((s) => ({ key: s.key + 1, scramble: true }))}
-          className="rounded-lg px-3 py-1.5 text-sm"
-          style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-        >
-          🔀 Scramble
-        </button>
-        <button
-          onClick={() => graphRef.current?.hideIsolatedNodes?.()}
-          className="rounded-lg px-3 py-1.5 text-sm"
-          style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-        >
-          🕸️ Hide Isolated
-        </button>
-        <button
-          onClick={() => graphRef.current?.showIncreasedOnly?.()}
-          className="rounded-lg px-3 py-1.5 text-sm"
-          style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-        >
-          ▲ Increased Only
-        </button>
-        <button
-          onClick={() => graphRef.current?.showDecreasedOnly?.()}
-          className="rounded-lg px-3 py-1.5 text-sm"
-          style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-        >
-          ▼ Decreased Only
-        </button>
-        <button
-          onClick={() => graphRef.current?.showConnectionsOnly?.()}
-          className="rounded-lg px-3 py-1.5 text-sm ml-auto"
-          style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-        >
-          🔗 Connections
-        </button>
-      </div>
+        onScramble={() => setLayoutState((s) => ({ key: s.key + 1, scramble: true }))}
+        onHideIsolated={() => graphRef.current?.hideIsolatedNodes?.()}
+        onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
+        onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
+        onConnections={() => graphRef.current?.showConnectionsOnly?.()}
+      />
     </div>
   )
 }

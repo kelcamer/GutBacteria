@@ -152,6 +152,22 @@ select {
   }
 }
 
+/* Map control bar (MapControls.jsx): show four buttons inline on wide
+   screens, collapse them behind "⋯ More" on narrow ones. Done in CSS so
+   both variants stay mounted and no resize listener is needed. */
+.gfa-ctl-more {
+  display: none;
+}
+@media (max-width: 560px) {
+  .gfa-ctl-wide {
+    display: none;
+  }
+  .gfa-ctl-more {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;

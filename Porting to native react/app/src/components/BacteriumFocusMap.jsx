@@ -6,6 +6,7 @@ import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { useZoom } from '../lib/useZoom'
 import { Italic } from './Italic'
 import { ZoomButtons } from './ZoomButtons'
+import { MapControls } from './MapControls'
 
 // New component (no minified-source equivalent), same shape as
 // ConditionMap.jsx (the per-condition scoped map) but inverted: given the
@@ -103,53 +104,17 @@ export function BacteriumFocusMap({ label, names, onClose }) {
             />
           </div>
 
-          <div className="mt-3 flex flex-wrap gap-2 items-center">
-            <button
-              onClick={() => {
-                hiddenNamesRef.current?.clear()
-                setLayoutState((s) => ({ key: s.key + 1, scramble: false }))
-              }}
-              className="rounded-lg px-3 py-1.5 text-sm"
-              style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-            >
-              ↻ Snap back
-            </button>
-            <button
-              onClick={() => setLayoutState((s) => ({ key: s.key + 1, scramble: true }))}
-              className="rounded-lg px-3 py-1.5 text-sm"
-              style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-            >
-              🔀 Scramble
-            </button>
-            <button
-              onClick={() => graphRef.current?.hideIsolatedNodes?.()}
-              className="rounded-lg px-3 py-1.5 text-sm"
-              style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-            >
-              🕸️ Hide Isolated
-            </button>
-            <button
-              onClick={() => graphRef.current?.showIncreasedOnly?.()}
-              className="rounded-lg px-3 py-1.5 text-sm"
-              style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-            >
-              ▲ Increased Only
-            </button>
-            <button
-              onClick={() => graphRef.current?.showDecreasedOnly?.()}
-              className="rounded-lg px-3 py-1.5 text-sm"
-              style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-            >
-              ▼ Decreased Only
-            </button>
-            <button
-              onClick={() => graphRef.current?.showConnectionsOnly?.()}
-              className="rounded-lg px-3 py-1.5 text-sm ml-auto"
-              style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
-            >
-              🔗 Connections
-            </button>
-          </div>
+          <MapControls
+        onSnapBack={() => {
+            hiddenNamesRef.current?.clear()
+            setLayoutState((s) => ({ key: s.key + 1, scramble: false }))
+          }}
+        onScramble={() => setLayoutState((s) => ({ key: s.key + 1, scramble: true }))}
+        onHideIsolated={() => graphRef.current?.hideIsolatedNodes?.()}
+        onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
+        onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
+        onConnections={() => graphRef.current?.showConnectionsOnly?.()}
+      />
         </>
       )}
     </div>
