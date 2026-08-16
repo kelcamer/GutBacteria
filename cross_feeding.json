@@ -26,7 +26,11 @@
    "id": "cf_bifidum_fprausnitzii",
    "from": "Bifidobacterium",
    "to": "Faecalibacterium prausnitzii",
-   "metabolites": ["constituent sugars from HMO degradation", "acetate", "lactate"],
+   "metabolites": [
+    "constituent sugars from HMO degradation",
+    "acetate",
+    "lactate"
+   ],
    "product": "butyrate",
    "evidence": "in-vitro-coculture",
    "note": "B. bifidum degrades human milk oligosaccharides and releases the constituent sugars, which F. prausnitzii uses to produce butyrate. Mechanism differs by HMO type. This is the edge behind 2'-FL raising butyrate despite F. prausnitzii not consuming 2'-FL itself.",
@@ -37,7 +41,11 @@
    "id": "cf_infantis_ehallii",
    "from": "Bifidobacterium",
    "to": "Eubacterium hallii",
-   "metabolites": ["acetate", "lactate", "1,2-propanediol"],
+   "metabolites": [
+    "acetate",
+    "lactate",
+    "1,2-propanediol"
+   ],
    "product": "butyrate",
    "evidence": "in-vitro-coculture",
    "note": "B. infantis metabolises 2'-FL into acetate, lactate and 1,2-propanediol; E. hallii converts these to butyrate. Strain- and HMO-structure-specific - it depends which B. infantis strain and which fucosylated HMO are present. A separate report found the B. adolescentis to A. hallii butyrate link only in ADULTS, not infants.",
@@ -48,7 +56,9 @@
    "id": "cf_host_veillonella",
    "from": "host exercise-derived lactate",
    "to": "Veillonella",
-   "metabolites": ["lactate"],
+   "metabolites": [
+    "lactate"
+   ],
    "product": "propionate",
    "evidence": "animal",
    "note": "Not a bacterium-to-bacterium edge but the same logic, and unusually well demonstrated: serum lactate crosses the epithelial barrier into the gut lumen, Veillonella converts it to propionate, and the host uses the propionate. Causal in mice - V. atypica inoculation increased exhaustive treadmill run time, and intrarectal propionate alone reproduced the gain. Exercise manufactures this genus's substrate.",
@@ -59,19 +69,37 @@
    "id": "cf_psilocybin_community_butyrate",
    "from": "Bifidobacterium",
    "to": "community butyrate pool",
-   "metabolites": ["acetate", "lactate"],
+   "metabolites": [
+    "acetate",
+    "lactate"
+   ],
    "product": "butyrate",
    "evidence": "in-vitro-community",
    "note": "Not a named-pair demonstration, but the outputs move together: in a SHIME colonic model seeded with faecal microbiota from people with severe anxiety, psilocybin raised Bifidobacterium and Lactobacillus while acetic, propionic and butyric acid rose 2.26-, 2.69- and 2.21-fold. Consistent with the cross-feeding edges above operating in a whole community. Caveats: alpha-diversity fell slightly and GABA DECREASED.",
    "ref": "Salgaco et al. 2026, Drugs and Drug Candidates (DOI 10.3390/ddc5030046)",
    "url": "https://doi.org/10.3390/ddc5030046"
+  },
+  {
+   "id": "cf_badolescentis_lactate_utilisers",
+   "from": "Bifidobacterium",
+   "to": "Anaerostipes",
+   "metabolites": [
+    "lactate"
+   ],
+   "product": "butyrate",
+   "evidence": "in-vitro-coculture",
+   "note": "B. adolescentis feeds lactate to lactate-utilising butyrate producers. The demonstration is unusually clean: E. hallii and A. caccae FAILED to grow on starch in pure culture, but in coculture with B. adolescentis butyrate was formed - so the butyrate is only possible via the cross-feed, not by the partner alone. Promotes what was previously listed as an unverified candidate.",
+   "ref": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
   }
  ],
  "candidates": [
   {
    "from": "Christensenella",
    "to": "Methanobrevibacter",
-   "metabolites": ["hydrogen"],
+   "metabolites": [
+    "hydrogen"
+   ],
    "product": "methane; shifts Christensenella fermentation toward acetate",
    "why": "Interspecies H2 transfer proposed as the reason these two co-occur globally and both associate with lean BMI. Surfaced in search but NOT yet verified against the primary source.",
    "lead": "mBio 2020, interspecies H2 transfer Christensenella/Methanobrevibacter"
@@ -79,18 +107,23 @@
   {
    "from": "Bacteroides",
    "to": "Phascolarctobacterium",
-   "metabolites": ["succinate"],
+   "metabolites": [
+    "succinate"
+   ],
    "product": "propionate",
    "why": "Phascolarctobacterium is described as a dominant succinate consumer converting succinate to propionate faster than Dialister, with Bacteroides a major succinate producer. Would connect this app's existing Phascolarctobacterium metabolic entry to a source. NOT yet verified.",
    "lead": "P. faecium / B. thetaiotaomicron interaction studies"
-  },
-  {
-   "from": "Bifidobacterium",
-   "to": "Anaerostipes",
-   "metabolites": ["acetate", "lactate"],
-   "product": "butyrate",
-   "why": "Anaerostipes caccae repeatedly named alongside E. hallii as a lactate-utilising butyrate producer fed by bifidobacteria on HMOs. Deliberately NOT added to the app earlier tonight because no 2'-FL-specific primary source was pinned down.",
-   "lead": "HMO cross-feeding literature; needs a primary source naming the pair"
   }
- ]
+ ],
+ "_keystone_resource": {
+  "title": "Cross-feeding in the gut microbiome: Ecology and mechanisms",
+  "journal": "Cell Host & Microbe",
+  "url": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(23)00121-X",
+  "why": "The comprehensive review to mine for the remaining network. Start here rather than running 100 ad-hoc searches.",
+  "leads_already_surfaced": [
+   "Bacteroidota and Negativicutes convert succinate to propionate (supports the pending Bacteroides -> Phascolarctobacterium edge)",
+   "Anaerobutyricum hallii, Desulfovibrio piger and Coprococcus catus convert lactate to acetate/propionate/butyrate",
+   "Methanogens and acetogens remove hydrogen via methane and acetate (supports the pending Christensenella -> Methanobrevibacter edge)"
+  ]
+ }
 }
