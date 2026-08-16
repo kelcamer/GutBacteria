@@ -489,7 +489,13 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
         const more = related.length > CAP ? related.length - CAP : 0
         if (shown.length) {
           summaryHtml =
-            '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.08)"><b style="color:#8FD3F4;font-size:10.5px">Most Likely Related Symptoms</b><div style="color:#7C6BA8;font-size:9.5px;margin-bottom:2px">Symptoms whose own linked bacteria move the same way as this condition\'s, most-shared first — not a diagnostic claim.</div>' +
+            // Caveat strengthened after a user-reported case in the sibling
+            // buildSymptomMap.js popup came out backwards from the real,
+            // known biology (see that file's own comment) - this is the
+            // same shared-bacteria statistical inference, so it carries
+            // the same risk of contradicting real biology, not just being
+            // "non-diagnostic."
+            '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.08)"><b style="color:#8FD3F4;font-size:10.5px">Most Likely Related Symptoms</b><div style="color:#7C6BA8;font-size:9.5px;margin-bottom:2px">Inferred from shared bacteria moving the same direction, most-shared first — a statistical pattern, not a verified or causal claim.</div>' +
             esc(shown.map((x) => x.name).join(', ')) + (more ? ' <span style="color:#7C6BA8">+' + more + ' more</span>' : '') + '</div>'
         }
       }

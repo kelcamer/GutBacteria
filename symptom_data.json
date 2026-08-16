@@ -111,9 +111,15 @@
     },
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Depleted across the pooled human/animal ethanol-dysbiosis studies.",
-     "ref": "PMID 41011331",
+     "note": "Depleted across the pooled human/animal ethanol-dysbiosis studies. A separate mouse mechanistic study ties this specifically to FUT2 (non-secretor) status: Fut2-deficient mice showed markedly worsened alcohol-related liver disease, with Bifidobacterium (alongside Akkermansia and Allobaculum) among the bacteria most depleted.",
+     "ref": "PMID 41011331; Chen et al. 2025, Clin Transl Med (FUT2×alcohol mouse study, PMID 40817598)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
+    },
+    {
+     "symptom": "Non-secretor status (FUT2)",
+     "note": "The classic, most-cited FUT2 finding: non-secretors lack the fucosylated glycans Bifidobacteria feed on, genus-level abundance/diversity reduced accordingly (species-level detail - B. bifidum, adolescentis, pseudocatenulatum - tracked separately elsewhere in this app). Also the bacterium most consistently depleted in a FUT2-deficient mouse model specifically under alcohol exposure, alongside Akkermansia - direct mechanistic evidence FUT2 loss is a RISK factor for alcohol-related dysbiosis, not protective against it.",
+     "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
     },
     {
      "symptom": "Lack of impulse control",
@@ -1633,13 +1639,13 @@
     },
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Mucin-degrading, barrier-supportive species depleted alongside the broader loss of protective commensals in alcohol use disorder.",
-     "ref": "PMID 41011331",
+     "note": "Mucin-degrading, barrier-supportive species depleted alongside the broader loss of protective commensals in alcohol use disorder. A separate mouse mechanistic study specifically ties FUT2 (non-secretor) status to this: Fut2-deficient mice showed markedly worsened alcohol-related liver disease, with Akkermansia (alongside Allobaculum and Bifidobacterium) among the bacteria most depleted, disrupting nicotinamide-to-NAD+ metabolism in the liver — direct evidence FUT2 loss is a RISK factor here, not protective.",
+     "ref": "PMID 41011331; Chen et al. 2025, Clin Transl Med (FUT2×alcohol mouse study, PMID 40817598)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
     },
     {
      "symptom": "Non-secretor status (FUT2)",
-     "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) \u2014 a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors.",
+     "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) \u2014 a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors. A mouse mechanistic study directly ties FUT2 loss to WORSENED alcohol-related pathology through this exact bacterium \u2014 see this genus's own Alcohol-related dysbiosis entry above, and note this REVERSES an earlier, unsupported cross-reference this app briefly surfaced implying FUT2 was protective against alcohol; the real relationship runs the other way.",
      "ref": "Wacklin et al. 2014, PLOS ONE \u2014 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
     },

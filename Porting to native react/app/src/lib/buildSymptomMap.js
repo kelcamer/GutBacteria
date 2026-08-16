@@ -776,8 +776,22 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         var relatedMore = related.length > LIST_CAP ? related.length - LIST_CAP : 0;
         var protectiveShown = protective.slice(0, LIST_CAP).map(function(x) { return x.name; });
         var protectiveMore = protective.length > LIST_CAP ? protective.length - LIST_CAP : 0;
-        var relatedLine = relatedShown.length ? '<div style="color:#8FD3F4;font-size:10.5px;margin-bottom:4px"><b>Most Likely Related Symptoms:</b> ' + esc(relatedShown.join(", ")) + (relatedMore ? ' <span style="color:#7C6BA8">+' + relatedMore + ' more</span>' : '') + '</div>' : "";
-        var protectiveLine = protectiveShown.length ? '<div style="color:#3DDC97;font-size:10.5px;margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.08)"><b>Most likely protective to have ' + esc(node.name) + ':</b> ' + esc(protectiveShown.join(", ")) + (protectiveMore ? ' <span style="color:#7C6BA8">+' + protectiveMore + ' more</span>' : '') + '</div>' : "";
+        // CORRECTED after a user-reported case (FUT2 vs. Alcohol-related
+        // dysbiosis) came out flatly backwards from the real, known
+        // relationship (FUT2 non-secretor status is a documented RISK
+        // factor there, not protective). Root cause isn't a bug in the
+        // tally math - it's that "opposite direction on some shared
+        // bacteria" is a coincidental statistical correlation, not a
+        // causal or literature-verified claim, and it can contradict real
+        // biology, as it did here. The word "protective" asserted more
+        // than this computation can actually support. Relabeled to a
+        // plainly descriptive, non-causal framing (what the data literally
+        // shows: an opposite bacterial signature) with an explicit
+        // exploratory-only caveat, rather than trying to hand-exclude
+        // individual wrong-sounding cases one at a time - that wouldn't
+        // scale and wouldn't fix the next one this same shortcut produces.
+        var relatedLine = relatedShown.length ? '<div style="color:#8FD3F4;font-size:10.5px;margin-bottom:4px"><b>Most Likely Related Symptoms:</b> ' + esc(relatedShown.join(", ")) + (relatedMore ? ' <span style="color:#7C6BA8">+' + relatedMore + ' more</span>' : '') + '<div style="color:#7C6BA8;font-size:9.5px;margin-top:1px">Inferred from shared bacteria moving the same direction — not a verified or causal claim.</div></div>' : "";
+        var protectiveLine = protectiveShown.length ? '<div style="color:#3DDC97;font-size:10.5px;margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.08)"><b>Opposite Bacterial Signature (exploratory, not a protective claim):</b> ' + esc(protectiveShown.join(", ")) + (protectiveMore ? ' <span style="color:#7C6BA8">+' + protectiveMore + ' more</span>' : '') + '<div style="color:#7C6BA8;font-size:9.5px;margin-top:1px">These symptoms\' bacteria move the opposite direction on shared genera — a statistical pattern, not evidence this taxon protects against them; can contradict real biology.</div></div>' : "";
 
         html = '<div style="font-weight:700;color:#F1EAFF">' + esc(node.name) + '</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">' + node.deg + ' bacteria linked</div>' + relatedLine + protectiveLine + '<div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + srowsHtml + smore + '</div>';
       } else {
