@@ -15,8 +15,12 @@ import { theme } from '../theme'
 // Extracted as shared code deliberately - the per-map button rows were
 // identical apart from which callbacks they invoked, and keeping five copies
 // in sync (as the label-shortening pass had to) is pure overhead.
-export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncreasedOnly, onDecreasedOnly, onConnections }) {
+export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncreasedOnly, onDecreasedOnly, onConnections, onToggleCrossFeed }) {
   const [open, setOpen] = useState(false)
+  // Cross-feeding links are INFERRED from metabolic relationships rather than
+  // measured in the condition/symptom they appear under, so they stay hidden
+  // unless asked for. Default false = proven data only.
+  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const wrapRef = useRef(null)
 
   // Close the overflow popover on any outside pointer press. Uses
@@ -72,6 +76,14 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     { label: '🕸️ Hide Isolated', fn: keepScroll(onHideIsolated) },
     { label: '▲ Increased Only', fn: keepScroll(onIncreasedOnly) },
     { label: '▼ Decreased Only', fn: keepScroll(onDecreasedOnly) },
+    {
+      label: showCrossFeed ? '🚫 Hide Cross-Feeders' : '🔀 Show Cross-Feeders',
+      fn: keepScroll(() => {
+        const next = !showCrossFeed
+        setShowCrossFeed(next)
+        onToggleCrossFeed?.(next)
+      }),
+    },
   ]
 
   return (

@@ -203,6 +203,10 @@ export function BrainTab({ pinType, focusRegion }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
+        // Inert until buildSymptomMap/buildMap expose setCrossFeedVisible -
+        // optional chaining keeps it a safe no-op meanwhile. See
+        // CROSS_FEEDING_UI_PLAN.md for the build order.
+        onToggleCrossFeed={(v) => graphRef.current?.setCrossFeedVisible?.(v)}
       />
 
       <h3 style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 15, marginTop: 22, marginBottom: 4 }}>

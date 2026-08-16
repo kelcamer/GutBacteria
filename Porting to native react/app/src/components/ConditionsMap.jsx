@@ -150,6 +150,10 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
+        // Inert until buildSymptomMap/buildMap expose setCrossFeedVisible -
+        // optional chaining keeps it a safe no-op meanwhile. See
+        // CROSS_FEEDING_UI_PLAN.md for the build order.
+        onToggleCrossFeed={(v) => graphRef.current?.setCrossFeedVisible?.(v)}
       />
     </div>
   )
