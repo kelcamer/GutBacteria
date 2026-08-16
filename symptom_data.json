@@ -45,7 +45,8 @@
   "Panic attack",
   "Allergies",
   "Cold sores",
-  "Emotional Dysregulation"
+  "Emotional Dysregulation",
+  "Coffee / Stimulants"
  ],
  "bacteria": [
   {
@@ -75,6 +76,12 @@
      "note": "Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio.",
      "ref": "n=23 PCOS/24 non-PCOS controls (PMID 41882707)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/"
+    },
+    {
+     "symptom": "Coffee / Stimulants",
+     "note": "Small controlled human intervention: 16 healthy adults given 3 cups/day of instant coffee for 3 weeks showed a significant rise in Bifidobacterium spp. (P=.02), with no major shift to the dominant microbiota otherwise.",
+     "ref": "Jaquet et al. 2009, Int J Food Microbiol, n=16 (PMID 19217682)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/19217682/"
     }
    ],
    "down": [
@@ -3008,6 +3015,12 @@
      "note": "Higher genetically-predicted abundance associated with increased fibromyalgia susceptibility (risk factor). Causal/genetic evidence from bidirectional Mendelian randomization \u2014 lower confidence than direct case-control observational data.",
      "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/"
+    },
+    {
+     "symptom": "Coffee / Stimulants",
+     "note": "Human cohort microbiota-gut-brain-axis study: Eggerthella species relative abundance was elevated in coffee drinkers vs. non-drinkers, among several species whose abundance tracked coffee intake.",
+     "ref": "Boscaini et al. 2026, Nat Commun (PMID 42014402)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42014402/"
     }
    ],
    "down": []
@@ -5390,6 +5403,32 @@
      "note": "Higher abundance significantly associated with inhibitory-self-control risk (a facet of explicit emotion regulation) in 3-4 year olds, n=257 (26 ISC-risk / 231 non-risk) \u2014 the stronger of two genus-level findings in this study (p<0.001, q=0.006). Flagged by the authors as one of several inflammation-related taxa elevated in the risk group.",
      "ref": "Fujihara et al. 2023, Microorganisms (PMID 37764088)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37764088/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Lawsonibacter asaccharolyticus",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Coffee / Stimulants",
+     "note": "The single strongest, most reproducible coffee-microbiome finding in the literature: a massive multi-cohort, multi-omic analysis (22,867 participants with detailed diet data, integrated with public data from 211 further cohorts, 233 total) found coffee consumption's link to the gut microbiome is driven largely by this one species (AUC=0.89 across populations). In-vitro experiments confirmed coffee directly stimulates its growth; plasma quinic acid and derivatives are the proposed biochemical link.",
+     "ref": "Manghi et al. 2024, Nat Microbiol, n=22,867 + 211 cohorts (PMID 39558133)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39558133/"
+    }
+   ],
+   "down": []
+  },
+  {
+   "name": "Cryptobacterium",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Coffee / Stimulants",
+     "note": "Relative abundance elevated in coffee drinkers vs. non-drinkers in a human microbiota-gut-brain-axis cohort study — one of several species whose abundance tracked coffee intake closely enough to help predict consumption from microbiome profile alone. The only symptom link currently tracked for this genus.",
+     "ref": "Boscaini et al. 2026, Nat Commun (PMID 42014402)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42014402/"
     }
    ],
    "down": []
