@@ -204,6 +204,61 @@ direction — not added this pass.
 
 ---
 
+## Session 4 — sweep resumed
+
+### Streptococcus thermophilus → Poor working memory + Brain fog (**new bacterium added**, `down`)
+
+*GeroScience* 2025, MiaGB consortium ([PMID 41175312](https://pubmed.ncbi.nlm.nih.gov/41175312/)).
+Shotgun metagenomes from 150 adults aged 60+ (49 cancer survivors, 101 controls).
+*S. thermophilus* and Firmicutes bacterium CAG 114 were **significantly reduced in
+cancer survivors and strongly associated with cognitive impairment**. Microbial
+**neurotransmitter-synthesis pathways were depleted** in survivors, giving a mechanism.
+
+**Precision note:** the same paper found Tyzzerella, *Eggerthella lenta* and
+*Bacteroides vulgatus* were markers of **cancer survivorship**, *not* of cognitive
+impairment. Only the two CI-associated taxa were linked here — the survivorship markers
+were deliberately **not** added, since conflating the two would misstate the finding.
+Both entries also flag that the measured outcome was general CI, not working memory as
+an isolated domain.
+
+The genus *Streptococcus* already existed; *S. thermophilus* did not, so this is
+bacterium #126.
+
+### Veillonella → Exercise-associated microbiota changes (**added**, `up`)
+
+Scheiman et al. 2019, *Nature Medicine* ([PMID 31235964](https://pubmed.ncbi.nlm.nih.gov/31235964/)).
+Increased in marathon runners post-race, and **causal in mice**: inoculating
+*V. atypica* significantly increased exhaustive treadmill run time, and **intrarectal
+propionate alone reproduced the gain**. Mechanism is a clean loop — serum lactate
+crosses the epithelial barrier into the gut lumen, Veillonella converts it to propionate,
+the host uses the propionate. Exercise literally manufactures this genus's substrate.
+
+### Parabacteroides distasonis → Type 1 Diabetes (**added**, `up`, animal model)
+
+*J Molecular Endocrinology* 2025 ([PMID 40823966](https://pubmed.ncbi.nlm.nih.gov/40823966/)).
+**Female NOD mice, not human data** — recorded anyway because the mechanism is unusually
+specific. *P. distasonis* carries an **insB9-23 mimic in its hprt protein**; colonisation
+induced severe insulitis via molecular mimicry, activating insB9-23-specific T cells and
+accelerating diabetes onset. Strikingly targeted: it did **not** shift overall microbiome
+composition, metabolites, or general immune activation, and **heat-inactivated bacteria
+had no effect**. The in-app note leads with "ANIMAL MODEL, not human data."
+
+### Alistipes — still deferred
+
+A second pass found no species-level source resolving the contradiction (enriched in
+depression per a 2026 systematic review vs. reduced in active depression vs.
+*A. putredinis* higher in stress-resilient people). Still no direction recorded.
+
+### Checked, nothing added
+
+- **Blautia** — genus-level role in obesity is explicitly described as *controversial*
+  in the literature, with species-level effects (*B. producta* anti-hyperlipidemic)
+  pulling against genus-level obesity associations. The app already carries Blautia at
+  genus level; adding a contradictory obesity direction would reduce clarity, not
+  increase it. Needs species resolution.
+
+---
+
 ## Rejected / unverified — NOT added
 
 Recorded so the same dead ends aren't re-walked.

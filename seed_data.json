@@ -10677,6 +10677,20 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
       }
      ]
+    },
+    {
+     "id": "new_t1d_t10",
+     "name": "Parabacteroides distasonis",
+     "dir": "up",
+     "refs": "PMID 40823966",
+     "note": "ANIMAL MODEL, not human data \u2014 recorded because the mechanism is unusually specific. P. distasonis carries an insB9-23 mimic in its hprt protein, and colonising female NOD mice induced severe insulitis via molecular mimicry, activating insB9-23-specific T cells and accelerating diabetes onset. Notably targeted: it did NOT shift overall microbiome composition, metabolite profiles, or general immune activation, and heat-inactivated bacteria had no effect \u2014 so live organisms selectively activating diabetes-relevant autoimmunity, rather than broad inflammation. Human relevance untested.",
+     "links": [
+      {
+       "id": "new_t1d_t10_l1",
+       "label": "J Molecular Endocrinology 2025 \u2014 NOD mouse colonisation study (PMID 40823966)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40823966/"
+      }
+     ]
     }
    ]
   },

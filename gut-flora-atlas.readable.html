@@ -15995,6 +15995,17 @@ Error generating stack: ` + r.message + `
             "label": "Leiva-Gea et al. 2018, Diabetes Care — case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
           }]
+        }, {
+          "id": "new_t1d_t10",
+          "name": "Parabacteroides distasonis",
+          "dir": "up",
+          "refs": "PMID 40823966",
+          "note": "ANIMAL MODEL, not human data — recorded because the mechanism is unusually specific. P. distasonis carries an insB9-23 mimic in its hprt protein, and colonising female NOD mice induced severe insulitis via molecular mimicry, activating insB9-23-specific T cells and accelerating diabetes onset. Notably targeted: it did NOT shift overall microbiome composition, metabolite profiles, or general immune activation, and heat-inactivated bacteria had no effect — so live organisms selectively activating diabetes-relevant autoimmunity, rather than broad inflammation. Human relevance untested.",
+          "links": [{
+            "id": "new_t1d_t10_l1",
+            "label": "J Molecular Endocrinology 2025 — NOD mouse colonisation study (PMID 40823966)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40823966/"
+          }]
         }]
       }, {
         "id": "new_pcos_1",
@@ -23897,8 +23908,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Veillonella",
-      "count": 4,
+      "count": 5,
       "up": [{
+        "symptom": "Exercise-associated microbiota changes",
+        "note": "Increased in marathon runners after the marathon, and mechanistically explained rather than merely correlated: V. atypica metabolises lactate into propionate, and serum lactate was shown to cross the epithelial barrier into the gut lumen — giving the genus a substrate that exercise itself produces. Causal in mice: inoculating V. atypica significantly increased exhaustive treadmill run time, and intrarectal propionate alone reproduced that performance gain. One of the cleanest lactate-to-SCFA host-benefit loops described so far.",
+        "ref": "Scheiman et al. 2019, Nature Medicine (PMID 31235964)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31235964/"
+      }, {
         "symptom": "Headache / migraine",
         "note": "Elevated as part of the potentially-pathogenic dysbiosis pattern seen in migraine microbiome studies.",
         "ref": "PMC12096802",
@@ -25803,6 +25819,21 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pubmed.ncbi.nlm.nih.gov/42014402/"
       }],
       "down": []
+    }, {
+      "name": "Streptococcus thermophilus",
+      "count": 2,
+      "up": [],
+      "down": [{
+        "symptom": "Poor working memory",
+        "note": "Significantly reduced in older cancer survivors and strongly associated with cognitive impairment, in shotgun metagenomes from 150 adults aged 60+ (49 survivors, 101 controls). Microbial neurotransmitter-synthesis pathways were also depleted in survivors, offering a mechanistic route. Caveat kept explicit: the study measured cognitive impairment broadly, not working memory as an isolated domain, and the cohort is cancer survivors rather than the general population.",
+        "ref": "GeroScience 2025, MiaGB consortium, n=150 (PMID 41175312)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41175312/"
+      }, {
+        "symptom": "Brain fog",
+        "note": "Same MiaGB cohort: depletion strongly associated with cognitive impairment in cancer survivors, the population in which \"chemobrain\" is described. Recorded here as the closest tracked analogue to that presentation, with the same caveat that the measured outcome was general cognitive impairment.",
+        "ref": "GeroScience 2025, MiaGB consortium, n=150 (PMID 41175312)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41175312/"
+      }]
     }]
   };
   var GFA_SYMPTOM_DATA = GFA_SYMPTOM_DATA_SHIPPED;
