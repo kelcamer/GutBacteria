@@ -42,13 +42,14 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     touchAction: 'manipulation',
   }
 
-  // The four actions that collapse on narrow screens. Order preserved from
-  // the original row so muscle memory survives on desktop.
+  // Snap back and Connections are the two kept always-visible; the rest
+  // collapse on narrow screens. Scramble sits in here rather than up front
+  // because it's the least-reached-for of the six in practice.
   const overflow = [
+    { label: '🔀 Scramble', fn: onScramble },
     { label: '🕸️ Hide Isolated', fn: onHideIsolated },
     { label: '▲ Increased Only', fn: onIncreasedOnly },
     { label: '▼ Decreased Only', fn: onDecreasedOnly },
-    { label: '🔗 Connections', fn: onConnections },
   ]
 
   return (
@@ -56,18 +57,13 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
       <button onClick={onSnapBack} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
         ↻ Snap back
       </button>
-      <button onClick={onScramble} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
-        🔀 Scramble
+      <button onClick={onConnections} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
+        🔗 Connections
       </button>
 
-      {/* Wide screens: the remaining four inline, as before. */}
+      {/* Wide screens: the remaining four inline. */}
       {overflow.map((o) => (
-        <button
-          key={o.label}
-          onClick={() => o.fn?.()}
-          className="gfa-ctl-wide rounded-lg px-3 py-1.5 text-sm"
-          style={{ ...btn, ...(o.label === '🔗 Connections' ? { marginLeft: 'auto' } : null) }}
-        >
+        <button key={o.label} onClick={() => o.fn?.()} className="gfa-ctl-wide rounded-lg px-3 py-1.5 text-sm" style={btn}>
           {o.label}
         </button>
       ))}
