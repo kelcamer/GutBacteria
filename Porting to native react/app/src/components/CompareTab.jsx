@@ -39,7 +39,26 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
   // unconditional, so this one goes before the return, not next to the
   // JSX that uses it.
   const fullComparisonRef = useRef(null)
-  const scrollToFullComparison = () => fullComparisonRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  // Two rAFs before measuring, for the same reason as the condition-click
+  // scroll in App.jsx: the actions that trigger this also change what is
+  // on the page. Picking a different neighbour swaps condition B, which
+  // re-renders the whole comparison table at a different row count and
+  // therefore a different height. Measuring immediately races that reflow
+  // and lands somewhere arbitrary.
+  //
+  // Explicit window.scrollTo to an absolute offset rather than
+  // scrollIntoView, so it is not "nearest scrollable ancestor, best
+  // effort".
+  const scrollToFullComparison = () => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const el = fullComparisonRef.current
+        if (!el) return
+        const top = window.scrollY + el.getBoundingClientRect().top - 8
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
+      })
+    })
+  }
 
   const a = combined.find((c) => c.id === aId) || conditions[0]
   const b = combined.find((c) => c.id === bId) || conditions[1]
@@ -343,6 +362,12 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
                     setBId(c.id)
                   }
                 }}
+                // Single click already swaps this in as condition B; double
+                // click does that and jumps straight down to the resulting
+                // comparison table, which is the usual next thing you want
+                // and otherwise means scrolling past everything again.
+                onDoubleClick={scrollToFullComparison}
+                title="Double-click to compare and jump to the table below"
                 className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5"
                 style={{
                   cursor: 'pointer',
