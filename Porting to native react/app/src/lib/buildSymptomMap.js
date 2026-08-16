@@ -94,6 +94,19 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       H = Math.max(420, Math.min(920, 250 + (symptomsIn.length + bacteriaIn.length) * 7)),
       upC = "#FF5C86",
       downC = "#4FC3F7";
+    // Portrait-phone adaptation: the SVG is width:100%/height:auto with a
+    // fixed viewBox, so its rendered height is always just renderedWidth *
+    // (H/W) - on a narrow phone container that produced the SAME
+    // wide/short aspect ratio a desktop gets, squeezing nodes into a short
+    // strip instead of using the real vertical scroll room a phone screen
+    // actually has. Taller viewBox on narrow containers (host.clientWidth
+    // reflects the real rendered width here, read post-layout since this
+    // runs inside React's useEffect) spreads the rim/physics bounds
+    // (W/H-proportional throughout this file) out vertically instead,
+    // giving nodes more room and more separation between hit-targets.
+    if (host.clientWidth && host.clientWidth < 560) {
+      H = Math.round(H * 1.4);
+    }
     var PAL = ["#5B8DEF", "#B57BFF", "#FFA62B", "#FF6B6B", "#3DDC97", "#F45BAF", "#33C7E8", "#C3E88D", "#FF8FA3", "#8FD3F4", "#FFD166", "#9D8DF1"];
     host.innerHTML = "";
 

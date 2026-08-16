@@ -77,7 +77,17 @@ function copyTipText(el, btn) {
 export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hiddenNamesRef, onBackgroundClick, symptomXrefData) {
   pinType = pinType || 'cond'
   const NS = 'http://www.w3.org/2000/svg'
-  const W = 1000, H = 820
+  const W = 1000
+  let H = 820
+  // Portrait-phone adaptation - mirrors buildSymptomMap.js's identical fix
+  // (see its own comment): width:100%/height:auto plus a fixed viewBox
+  // means rendered height is always renderedWidth * (H/W), so a narrow
+  // phone container got the same wide/short aspect ratio a desktop does.
+  // Taller viewBox on narrow containers spreads the rim/physics bounds
+  // (W/H-proportional throughout this file) out vertically instead.
+  if (host.clientWidth && host.clientWidth < 560) {
+    H = Math.round(H * 1.4)
+  }
   host.innerHTML = ''
   // Matches the invisible hit-target circle radius set on every node below,
   // and floors the physics collision distance the same way
