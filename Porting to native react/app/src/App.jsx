@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Menu, X, TriangleAlert, Search } from 'lucide-react'
 import { theme } from './theme'
 import { NAV_ITEMS } from './navItems'
@@ -54,15 +54,6 @@ export default function App() {
   // handling and the focusNames useMemo below for how this and the search
   // box above combine.
   const [clickedConditionName, setClickedConditionName] = useState(null)
-  // Stable ref (useCallback, not a fresh arrow function every render) so
-  // ConditionsMap.jsx's own rebuild-effect (keyed in part on this
-  // callback's identity) doesn't tear down and rebuild the whole graph on
-  // every unrelated App re-render. Used both as the map's background-click
-  // handler and as a dedicated "clear" button next to the search box in
-  // ConditionsGrid - same action, two ways to reach it, since scrolling
-  // down to click the map's background isn't always the most discoverable
-  // way to get back to "show every card."
-  const clearConditionHighlight = useCallback(() => setClickedConditionName(null), [])
 
   // New (no minified-source equivalent): GlobalSearch's own open/close
   // state, plus one "jump request" slot per destination tab that has its
@@ -358,7 +349,7 @@ export default function App() {
                 setClickedConditionName(null)
               }}
             />
-            <ConditionsMap conditions={conditions} focusNames={conditionsQueryMatches} onBackgroundClick={clearConditionHighlight} />
+            <ConditionsMap conditions={conditions} focusNames={conditionsQueryMatches} />
           </>
         )}
         {activeTab === 'conditions' && activeCondition && (
