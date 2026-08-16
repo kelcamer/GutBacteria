@@ -174,9 +174,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
               Leave everything unpicked to see the full map. Check specific symptoms and/or conditions to narrow the
               map down to just those — conditions get overlaid as extra nodes wired to whichever bacteria they
               share, a focused way to see which conditions move the same bacteria as the symptoms you picked, from a
-              gut-flora perspective. Double-click the map's background at any time to clear back to the full map (a
-              single click won't, on purpose — so pinching or double-tapping to zoom in on the graph can't
-              accidentally clear it).
+              gut-flora perspective. Click the map's background at any time to clear back to the full map.
             </p>
             <div className="mb-3">
               <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>

@@ -501,7 +501,6 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     var lastClickIdx = null,
       lastClickTime = 0;
     var DBLCLICK_WINDOW = 400; // ms — our own double-click detection (matching node INDEX, not exact pixel position), replacing reliance on the browser's native dblclick event. Native dblclick failed to fire reliably here: its target-matching seems to be thrown off by a few px of cursor drift between the two clicks (or by the node itself drifting under force-directed physics between clicks), which a real click on a small node easily triggers.
-    var lastBgClickTime = 0; // New: background click now requires the same double-click pattern as node pinning (see onPointerUp's bgDown branch) - a single accidental click can't clear the selection anymore, by explicit request after a reported mobile zoom-related false clear.
     var selectedNodes = new Set();
     var pinnedEls = {};
     var zCounter = 10;
@@ -1090,7 +1089,18 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         bgDown = false;
         dragStartX = ev.clientX;
         dragStartY = ev.clientY;
-        svg.setPointerCapture(ev.pointerId);
+        // New: pointer capture is deferred to onPointerMove now, not
+        // claimed here - see that comment for why. Reported mobile bug:
+        // touching down ON a node (e.g. ADHD, sitting right where a thumb
+        // naturally lands) while trying to scroll PAST it deselected
+        // whatever was previously pinned. Root cause: capturing the
+        // pointer the instant a node is touched, before knowing whether
+        // the gesture is a drag or a scroll attempt, let a vertical swipe
+        // get claimed as "drag this node" (once past DRAG_THRESHOLD,
+        // preventDefault blocks the browser's own scroll entirely) instead
+        // of being released to the page - flinging the node somewhere via
+        // an accidental drag, not literally clearing selectedNodes, but
+        // looking exactly like "my selection is gone."
       } else {
         bgDown = true;
       }
@@ -1101,7 +1111,24 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         if (!isDragging) {
           var jitterDx = ev.clientX - dragStartX,
             jitterDy = ev.clientY - dragStartY;
-          if (Math.hypot(jitterDx, jitterDy) < DRAG_THRESHOLD) return; // still just a click, not a drag yet
+          var jitterDist = Math.hypot(jitterDx, jitterDy);
+          if (jitterDist < DRAG_THRESHOLD) return; // still just a click, not a drag yet
+          // Predominantly VERTICAL movement past the threshold reads as
+          // "trying to scroll the page," not "trying to drag this node" -
+          // this SVG's own touch-action already permits vertical panning
+          // (see its own setup), so release the node back and let the
+          // browser handle the rest of the gesture natively instead of
+          // preventDefault-ing it away below. A horizontal or diagonal
+          // drag still claims the node as before - only a clearly-vertical
+          // swipe gets read as scroll intent, so dragging a node up/down
+          // deliberately still works, just needs a bit of sideways motion
+          // too (matches how most drag-vs-scroll disambiguation on touch
+          // works elsewhere on the web).
+          if (Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
+            dragNode = null;
+            return;
+          }
+          svg.setPointerCapture(ev.pointerId);
         }
         if (ev.cancelable) ev.preventDefault();
         isDragging = true;
@@ -1143,7 +1170,14 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
 
     function onPointerUp(ev) {
       if (dragNode) {
-        svg.releasePointerCapture(ev.pointerId);
+        // Pointer capture is now only claimed once a real drag is
+        // confirmed (see onPointerMove) - a plain tap that never crossed
+        // DRAG_THRESHOLD never captured anything, so this release is a
+        // guaranteed no-op in that case. Modern browsers already treat
+        // releasing an uncaptured pointer as a silent no-op rather than
+        // throwing, but wrapped defensively anyway rather than assuming
+        // that behavior everywhere.
+        try { svg.releasePointerCapture(ev.pointerId); } catch { /* not captured, harmless */ }
         if (isDragging) {
           // A manually-dragged node sticks where you dropped it instead of the
           // springs immediately pulling it back to its computed position —
@@ -1188,24 +1222,18 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         dragNode = null;
         isDragging = false;
       } else if (bgDown) {
-        // Explicit request: clearing the selection on the background now
-        // needs a genuine double-click, same DBLCLICK_WINDOW/pattern as
-        // node pinning above (not the browser's native dblclick - same
-        // reasoning as that comment). A single accidental background
-        // click - e.g. a canceled touch gesture that still reaches here,
-        // or just a stray tap - no longer clears anything by itself.
-        var bgNow = Date.now();
-        var isDoubleBgClick = (bgNow - lastBgClickTime) < DBLCLICK_WINDOW;
-        if (isDoubleBgClick) {
-          lastBgClickTime = 0; // consumed - a 3rd quick click starts fresh
-          if (selectedNodes.size) {
-            closeAllPinned();
-            setHi(curr);
-          }
-          if (typeof onBackgroundClick === "function") onBackgroundClick();
-        } else {
-          lastBgClickTime = bgNow;
+        // REVERTED back to single-click: the double-click requirement was
+        // guarding against pointercancel (a canceled touch gesture, e.g.
+        // native pinch/double-tap-zoom taking over) reaching this branch -
+        // that's now fixed at its actual source (see onPointerCancel
+        // below, which handles cancels separately and never runs this
+        // logic at all), so single-click is safe again without needing
+        // the extra double-click layer on top.
+        if (selectedNodes.size) {
+          closeAllPinned();
+          setHi(curr);
         }
+        if (typeof onBackgroundClick === "function") onBackgroundClick();
       }
       bgDown = false;
     }
