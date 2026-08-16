@@ -119,20 +119,7 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, highlig
         </p>
       )}
 
-      <div
-        className="grid gap-3"
-        style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))', minHeight: highlightedName ? 128 : undefined }}
-        onClick={(e) => {
-          // Background click, not a bubbled click from a card/button inside
-          // it - e.target === e.currentTarget is the standard way to tell
-          // the two apart in React, same idea the SVG node maps' own bgDown
-          // detection uses for "click empty canvas to clear." minHeight
-          // above keeps this div tall enough to have real empty space to
-          // click once it's down to one card, instead of shrinking to fit
-          // just that card and leaving nothing to click beside it.
-          if (e.target === e.currentTarget && highlightedName) onHighlight?.(null)
-        }}
-      >
+      <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
         {[...conditions]
           .filter((c) => c.name.toLowerCase().includes(query.trim().toLowerCase()) || c.abbr.toLowerCase().includes(query.trim().toLowerCase()))
           .filter((c) => !highlightedName || c.name === highlightedName)
@@ -167,6 +154,36 @@ export function ConditionsGrid({ conditions, onOpen, onAdd, onHighlight, highlig
             </button>
           )
         })}
+
+        {highlightedName &&
+          // Two dedicated, card-sized "clear" targets right next to the
+          // highlighted card - not a click handler spanning the whole grid
+          // container (the earlier approach). Two things were actually
+          // wrong, not one:
+          // 1. A container-wide click zone gave a stray tap anywhere in
+          //    the leftover page space a chance to land on it. Shrinking
+          //    it to two small, card-sized boxes cuts that down, but this
+          //    alone doesn't explain WHY a zoom gesture would fire a click
+          //    at all - pinch-zoom itself doesn't normally dispatch one.
+          // 2. Mobile double-tap-to-zoom does: the browser holds a tap
+          //    open for a moment to see if a second tap follows nearby: if
+          //    it doesn't, THAT held tap still resolves as a normal click
+          //    on whatever's underneath it. touchAction: 'manipulation'
+          //    below tells the browser these two specific elements never
+          //    need double-tap-zoom disambiguation, so a tap on them
+          //    resolves immediately and unambiguously - deliberately NOT
+          //    applied anywhere else on this page, so pinch/double-tap
+          //    zoom stays fully working everywhere the user actually wants
+          //    it (the highlighted card itself, the map below).
+          [0, 1].map((i) => (
+            <button
+              key={'clear-' + i}
+              onClick={() => onHighlight?.(null)}
+              aria-label="Show every condition again"
+              className="rounded-2xl"
+              style={{ background: 'transparent', border: 'none', minHeight: 128, touchAction: 'manipulation' }}
+            />
+          ))}
 
         {!highlightedName && (
           <button
