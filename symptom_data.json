@@ -599,7 +599,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 13,
+   "count": 14,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -687,6 +687,12 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Psilocybin / Psychedelics",
+     "note": "ANIMAL DATA, and it points the OPPOSITE way to the intuitive 'psychedelics feed good bacteria' story. Chronic psilocybin REDUCED Lactobacillus murinus and L. animalis in male wild-type mice - not in females, and not in the SAPAP3 knockout model. Overall microbial diversity was unchanged. Psilocybin did increase sociability in those same male WT mice without psychosis-like behaviour, and the authors propose a host-microbiome feedback loop regulating serotonin signalling rather than a simple prebiotic effect.",
+     "ref": "Neuropharmacology 2025 - chronic psilocybin (0.1 and 1 mg/kg), wild-type vs SAPAP3-KO mice (PMID 40849086)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40849086/"
+    },
     {
      "symptom": "Oral iron supplementation",
      "note": "Reduced by oral iron. Notably this runs OPPOSITE to the iron-deficiency state itself, where Lactobacillus is reported increased - so treating the deficiency orally reverses that particular shift rather than restoring a neutral baseline.",
@@ -1954,7 +1960,7 @@
     },
     {
      "symptom": "Psilocybin / Psychedelics",
-     "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (fecal 16S rRNA at 1 and 3 weeks). Preliminary, rat/animal-only data — no human gut-microbiome studies of psilocybin were found in the literature searched.",
+     "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (fecal 16S at 1 and 3 weeks). Preliminary, rat-only. IMPORTANT LIMIT: this is a PHYLUM-level result. Actinobacteria contains Bifidobacterium but also Collinsella, Eggerthella and Atopobium, several of which this app records as pro-inflammatory, so a phylum rise cannot be read as a Bifidobacterium rise. No psilocybin study has reported Bifidobacterium at genus level, and the only genus-level psilocybin data that exists (mice, PMID 40849086) found Lactobacillus DECREASED - i.e. the evidence currently runs against, not toward, a beneficial-bloom story.",
      "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/"
     }
@@ -2160,7 +2166,7 @@
   },
   {
    "name": "Alistipes",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Anxiety",
@@ -2188,6 +2194,12 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Psilocybin / Psychedelics",
+     "note": "ANIMAL DATA. Alistipes dispar reduced by chronic psilocybin in male wild-type mice only - absent in females and in the SAPAP3 knockout model. Overall diversity unchanged.",
+     "ref": "Neuropharmacology 2025 - chronic psilocybin (0.1 and 1 mg/kg), wild-type vs SAPAP3-KO mice (PMID 40849086)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40849086/"
+    },
     {
      "symptom": "Smoking-related dysbiosis",
      "note": "Reduced by chronic cigarette smoke exposure; also a genus positively associated with healthy body weight.",
