@@ -92,42 +92,42 @@ export function ConditionMap({ condition }) {
           className="rounded-lg px-3 py-1.5 text-sm"
           style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
         >
-          ↻ Snap back into position
+          ↻ Snap back
         </button>
         <button
           onClick={() => setLayoutState((s) => ({ key: s.key + 1, scramble: true }))}
           className="rounded-lg px-3 py-1.5 text-sm"
           style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
         >
-          🔀 Scramble me
+          🔀 Scramble
         </button>
         <button
           onClick={() => graphRef.current?.hideIsolatedNodes?.()}
           className="rounded-lg px-3 py-1.5 text-sm"
           style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
         >
-          🕸️ Hide Isolated Nodes
+          🕸️ Hide Isolated
         </button>
         <button
           onClick={() => graphRef.current?.showIncreasedOnly?.()}
           className="rounded-lg px-3 py-1.5 text-sm"
           style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
         >
-          ▲ Show Increased Only
+          ▲ Increased Only
         </button>
         <button
           onClick={() => graphRef.current?.showDecreasedOnly?.()}
           className="rounded-lg px-3 py-1.5 text-sm"
           style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
         >
-          ▼ Show Decreased Only
+          ▼ Decreased Only
         </button>
         <button
           onClick={() => graphRef.current?.showConnectionsOnly?.()}
           className="rounded-lg px-3 py-1.5 text-sm ml-auto"
           style={{ background: 'transparent', border: `1px solid ${theme.line}`, color: theme.muted }}
         >
-          🔗 Show Connections
+          🔗 Connections
         </button>
       </div>
     </div>
