@@ -77,7 +77,7 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     { label: '▲ Increased Only', fn: keepScroll(onIncreasedOnly) },
     { label: '▼ Decreased Only', fn: keepScroll(onDecreasedOnly) },
     {
-      label: showCrossFeed ? '🚫 Hide Cross-Feeders' : '🔀 Show Cross-Feeders',
+      label: showCrossFeed ? '🚫 Hide Crossfeeding' : '🔀 Show Crossfeeding',
       fn: keepScroll(() => {
         const next = !showCrossFeed
         setShowCrossFeed(next)

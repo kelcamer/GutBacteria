@@ -100,7 +100,7 @@ That last row matters most: those are the exact behaviours previously broken.
 Superseded the earlier two-button idea. One toggle is simpler and encodes the
 right default: **proven data only, unless you ask otherwise.**
 
-- Single button that flips label: **🔀 Show Cross-Feeders** ⇄ **🚫 Hide Cross-Feeders**
+- Single button that flips label: **🔀 Show Crossfeeding** ⇄ **🚫 Hide Crossfeeding**
 - **Default: cross-feeders HIDDEN** (`showCrossFeed = false`)
 - Lives in `MapControls.jsx`'s `overflow` array, so it renders inline on desktop
   and inside the `⋯ More` popover on mobile, alongside the other filters
