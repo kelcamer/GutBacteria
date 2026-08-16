@@ -13016,7 +13016,7 @@ Error generating stack: ` + r.message + `
           "name": "Akkermansia muciniphila",
           "dir": "up",
           "refs": "iMSMS 2022; Jangi 2016",
-          "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment.",
+          "note": "Mucin-layer degrader; the most reproducible MS enrichment across cohorts. A lower Bifidobacterium(adolescentis):Akkermansia(muciniphila) ratio tracks higher EDSS disability (PNAS 2025). Note: some progression studies report Akkermansia falling in progressors, so within-MS direction is context-dependent. Cross-ref: also the single most consistent Parkinson's enrichment. A 2026 systematic review of 16 studies (2010-2023, nine countries) corroborates: \"most publications reported... increased levels of A. muciniphila in MS patients compared to controls.\"",
           "links": [{
             "id": "seed_new_l1",
             "label": "iMSMS 2022 (Cell; 576 MS patients + household controls, shotgun)",
@@ -13029,13 +13029,17 @@ Error generating stack: ` + r.message + `
             "id": "seed_new_l3",
             "label": "PNAS 2025 (Bifidobacterium:Akkermansia ratio & EDSS)",
             "url": "https://www.pnas.org/doi/10.1073/pnas.2413953122"
+          }, {
+            "id": "seed_new_l3b",
+            "label": "Ahmadi et al. 2026, Antonie van Leeuwenhoek — systematic review, 16 studies/9 countries (PMID 42020638)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42020638/"
           }]
         }, {
           "id": "seed_ms_t2",
           "name": "Faecalibacterium prausnitzii",
           "dir": "down",
           "refs": "iMSMS 2022",
-          "note": "Anti-inflammatory butyrate producer depleted in MS (iMSMS shotgun; an IgA-coated F. prausnitzii variant is also reduced at disease onset). Cross-ref: consistently ↓ in fibromyalgia, IBS and depression too — a shared 'loss of butyrate producers' theme.",
+          "note": "Anti-inflammatory butyrate producer depleted in MS (iMSMS shotgun; an IgA-coated F. prausnitzii variant is also reduced at disease onset). Cross-ref: consistently ↓ in fibromyalgia, IBS and depression too — a shared 'loss of butyrate producers' theme; see also this app's Lupus (SLE), Rheumatoid arthritis, Type 1 Diabetes, Crohn's disease, and Ulcerative colitis conditions for the same pattern. A 2026 systematic review of 16 studies (2010-2023, nine countries) corroborates: \"most publications reported decreased levels of F. prausnitzii... in MS patients compared to controls.\"",
           "links": [{
             "id": "seed_new_l4",
             "label": "iMSMS 2022 (Cell; 576 MS patients + household controls, shotgun)",
@@ -13044,6 +13048,10 @@ Error generating stack: ` + r.message + `
             "id": "seed_new_l5",
             "label": "Neurol Neuroimmunol Neuroinflamm 2025 (IgA-coated F. prausnitzii)",
             "url": "https://www.neurology.org/doi/10.1212/NXI.0000000000200355"
+          }, {
+            "id": "seed_new_l5b",
+            "label": "Ahmadi et al. 2026, Antonie van Leeuwenhoek — systematic review, 16 studies/9 countries (PMID 42020638)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42020638/"
           }]
         }, {
           "id": "seed_ms_t3",
@@ -13065,7 +13073,7 @@ Error generating stack: ` + r.message + `
           "name": "Eisenbergiella tayi",
           "dir": "up",
           "refs": "iMSMS 2022",
-          "note": "Enriched in MS (iMSMS shotgun). Cross-ref: Eisenbergiella (incl. E. tayi and E. massiliensis) is also ↑ in fibromyalgia (Minerbi) and rises in rodent learned-helplessness depression models — a recurring 'up' signal across pain / neuro-inflammatory conditions.",
+          "note": "Enriched in MS (iMSMS shotgun). Cross-ref: Eisenbergiella (incl. E. tayi and E. massiliensis) is also ↑ in fibromyalgia (Minerbi) and rises in rodent learned-helplessness depression models — a recurring 'up' signal across pain / neuro-inflammatory conditions. Upgraded from correlational to causal evidence by a 2025 PNAS study: ileal microbiota from the MS-affected twin in identical-twin pairs induced EAE (the standard MS mouse model) at substantially higher rates than microbiota from the healthy co-twin, and E. tayi (with Lachnoclostridium) was specifically identified as one of the likely active, disease-triggering organisms.",
           "links": [{
             "id": "seed_new_l8",
             "label": "iMSMS 2022 (Cell; 576 MS patients + household controls, shotgun)",
@@ -13074,6 +13082,10 @@ Error generating stack: ` + r.message + `
             "id": "seed_new_l9",
             "label": "Depression MGB review 2025 (Eisenbergiella ↑ in LH-susceptible rats)",
             "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2025.1644160/full"
+          }, {
+            "id": "seed_new_l9b",
+            "label": "Yoon et al. 2025, PNAS — MS-twin ileal microbiota transplant induces EAE in germ-free mice (PMID 40258140)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40258140/"
           }]
         }, {
           "id": "seed_ms_t5",
@@ -13335,6 +13347,50 @@ Error generating stack: ` + r.message + `
             "id": "new_ms_t27_l1",
             "label": "Systematic review (PMID 32172998)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/32172998/"
+          }]
+        }, {
+          "id": "new_ms_t28",
+          "name": "Lachnoclostridium",
+          "dir": "up",
+          "refs": "PMID 40258140",
+          "note": "Identified as one of two likely CAUSAL organisms (alongside Eisenbergiella tayi, tracked separately above) in a 2025 PNAS study: ileal microbiota from the MS-affected twin in identical-twin pairs induced EAE (the standard MS mouse model) in germ-free mice at substantially higher rates than microbiota from the healthy co-twin. Note this genus-level finding runs opposite this app's own Lachnospiraceae (family-level, down) entry for MS — both are real, from different studies at different taxonomic resolutions, not a data error; family-level aggregates can move one way while a specific member genus moves the other.",
+          "links": [{
+            "id": "new_ms_t28_l1",
+            "label": "Yoon et al. 2025, PNAS — twin-pair ileal microbiota transplant induces EAE (PMID 40258140)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40258140/"
+          }]
+        }, {
+          "id": "new_ms_t29",
+          "name": "Anaerotruncus colihominis",
+          "dir": "up",
+          "refs": "PMID 40258140",
+          "note": "Increased in the MS-affected twin vs. healthy co-twin in the same twin-pair study, corroborating an association already described elsewhere in the MS microbiome literature.",
+          "links": [{
+            "id": "new_ms_t29_l1",
+            "label": "Yoon et al. 2025, PNAS",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40258140/"
+          }]
+        }, {
+          "id": "new_ms_t30",
+          "name": "Copromonas",
+          "dir": "up",
+          "refs": "PMID 40258140",
+          "note": "Newly identified as increased in the MS-affected twin in the same twin-pair study — among the majority of differentially-abundant taxa in this study that fell within Firmicutes.",
+          "links": [{
+            "id": "new_ms_t30_l1",
+            "label": "Yoon et al. 2025, PNAS",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40258140/"
+          }]
+        }, {
+          "id": "new_ms_t31",
+          "name": "Acutalibacter",
+          "dir": "up",
+          "refs": "PMID 40258140",
+          "note": "Newly identified as increased in the MS-affected twin in the same twin-pair study.",
+          "links": [{
+            "id": "new_ms_t31_l1",
+            "label": "Yoon et al. 2025, PNAS",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40258140/"
           }]
         }]
       }, {
