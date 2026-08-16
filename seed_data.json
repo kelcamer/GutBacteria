@@ -6805,7 +6805,7 @@
    "name": "Multiple sclerosis",
    "abbr": "MS",
    "color": "#4FD1C5",
-   "note": "Autoimmune demyelinating CNS disease. The flagship iMSMS shotgun study (576 patients + genetically unrelated household controls) is the strongest dataset: it reports enrichment of Akkermansia muciniphila, Ruthenibacterium lactatiformans, Hungatella hathewayi and Eisenbergiella tayi, and depletion of Faecalibacterium prausnitzii and Blautia. The recurring theme is loss of butyrate producers (Faecalibacterium, Roseburia, Coprococcus, Butyricimonas) plus a mucin-degrader (Akkermansia) and methanogen (Methanobrevibacter) rise. Composition also shifts with disease-modifying therapy, so treatment status is a major confound.",
+   "note": "Autoimmune demyelinating CNS disease. The flagship iMSMS shotgun study (576 patients + genetically unrelated household controls) is the strongest dataset: it reports enrichment of Akkermansia muciniphila, Ruthenibacterium lactatiformans, Hungatella hathewayi and Eisenbergiella tayi, and depletion of Faecalibacterium prausnitzii and Blautia. The recurring theme is loss of butyrate producers (Faecalibacterium, Roseburia, Coprococcus, Butyricimonas) plus a mucin-degrader (Akkermansia) and methanogen (Methanobrevibacter) rise. Composition also shifts with disease-modifying therapy, so treatment status is a major confound. See also this app's Lupus (SLE), Rheumatoid arthritis, Type 1 Diabetes, Crohn's disease, and Ulcerative colitis conditions — Faecalibacterium depletion specifically recurs across all of them.",
    "links": [
     {
      "id": "seed_new_l22",
@@ -9069,7 +9069,7 @@
    "name": "Rheumatoid arthritis",
    "abbr": "RA",
    "color": "#F43F5E",
-   "note": "The Prevotella copri expansion is the single most-replicated finding in RA gut-microbiome research, first shown in new-onset untreated patients and since reproduced in mouse models of arthritis susceptibility.",
+   "note": "The Prevotella copri expansion is the single most-replicated finding in RA gut-microbiome research, first shown in new-onset untreated patients and since reproduced in mouse models of arthritis susceptibility. See also this app's Lupus (SLE) condition — Faecalibacterium (a primary butyrate producer) is reported depleted across both, part of a broader pattern this app also tracks in Multiple sclerosis, Type 1 Diabetes, Crohn's disease, and Ulcerative colitis.",
    "links": [
     {
      "id": "new_ra_l1",
@@ -11547,6 +11547,167 @@
        "id": "new_prog_t3_l1",
        "label": "McCurry et al. 2024, Cell",
        "url": "https://pubmed.ncbi.nlm.nih.gov/38795705/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "new_lupus",
+   "name": "Lupus (SLE)",
+   "abbr": "SLE",
+   "color": "#C084FC",
+   "note": "New condition, added after a user question about how broadly F. prausnitzii/butyrate-producer depletion is reported across autoimmune disease specifically flagged lupus as missing from this app. Two independent, directly-verified sources: a 2024 scoping review of human+animal controlled studies from 2013-2023, and a 2025 case-control study of active vs. stable SLE vs. healthy controls (16S rRNA, n=65 total). Fits the same cross-condition pattern this app already tracks for Rheumatoid arthritis, Multiple sclerosis, Type 1 Diabetes, Crohn's disease, and Ulcerative colitis — Faecalibacterium (a primary butyrate producer) reported depleted across all of them — see this app's Rheumatoid arthritis and Multiple sclerosis conditions for two large-scale reviews spanning several of these diseases at once (Wang et al. 2022, EBioMedicine, 92 studies/14 rheumatic diseases; Han et al. 2025, Clin Rev Allergy Immunol, 6 autoimmune diseases). A specific 'X% of studies' figure for this pattern was asked about directly but could not be independently verified in any source actually checked — not included here rather than guessed at.",
+   "links": [
+    {
+     "id": "new_lupus_l1",
+     "label": "McPhail et al. 2024, Cureus — scoping review, 2013-2023 human+animal controlled studies (PMID 38707123)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
+    },
+    {
+     "id": "new_lupus_l2",
+     "label": "Chu et al. 2025, Front Cell Infect Microbiol — active/stable SLE vs. healthy controls, n=65 (PMID 40521029)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40521029/"
+    }
+   ],
+   "taxa": [
+    {
+     "id": "new_lupus_t1",
+     "name": "Faecalibacterium",
+     "dir": "down",
+     "refs": "PMID 40521029",
+     "note": "Decreased in active SLE patients (16S rRNA, n=23 active/18 stable SLE/24 healthy controls) — the specific butyrate-producer finding this entry was added to capture, matching the same genus this app already tracks as depleted in Rheumatoid arthritis, Multiple sclerosis, Type 1 Diabetes, Crohn's disease, and Ulcerative colitis.",
+     "links": [
+      {
+       "id": "new_lupus_t1_l1",
+       "label": "Chu et al. 2025, Front Cell Infect Microbiol",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40521029/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t2",
+     "name": "Ruminococcus",
+     "dir": "down",
+     "refs": "PMID 40521029",
+     "note": "Decreased in active SLE in the same cohort.",
+     "links": [
+      {
+       "id": "new_lupus_t2_l1",
+       "label": "Chu et al. 2025, Front Cell Infect Microbiol",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40521029/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t3",
+     "name": "Escherichia/Shigella",
+     "dir": "up",
+     "refs": "PMID 40521029",
+     "note": "Reported directly (at this combined genus-pair resolution, not further resolved to species) as the dominant enriched microflora in active SLE in the same cohort — this study's own reported granularity, not a canonicalization from a more specific name (unlike some of this app's other Escherichia/Shigella entries).",
+     "links": [
+      {
+       "id": "new_lupus_t3_l1",
+       "label": "Chu et al. 2025, Front Cell Infect Microbiol",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40521029/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t4",
+     "name": "Bifidobacterium",
+     "dir": "down",
+     "refs": "PMID 38707123",
+     "note": "Named among the consistently-decreased genera across the controlled studies covered by this 2013-2023 scoping review.",
+     "links": [
+      {
+       "id": "new_lupus_t4_l1",
+       "label": "McPhail et al. 2024, Cureus",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t5",
+     "name": "Prevotella",
+     "dir": "down",
+     "refs": "PMID 38707123",
+     "note": "Named among the consistently-decreased genera in the same scoping review.",
+     "links": [
+      {
+       "id": "new_lupus_t5_l1",
+       "label": "McPhail et al. 2024, Cureus",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t6",
+     "name": "Clostridium",
+     "dir": "up",
+     "refs": "PMID 38707123",
+     "note": "Named among the consistently-increased genera in the same scoping review.",
+     "links": [
+      {
+       "id": "new_lupus_t6_l1",
+       "label": "McPhail et al. 2024, Cureus",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t7",
+     "name": "Lactobacillus",
+     "dir": "up",
+     "refs": "PMID 38707123",
+     "note": "Named among the consistently-increased genera in the same scoping review.",
+     "links": [
+      {
+       "id": "new_lupus_t7_l1",
+       "label": "McPhail et al. 2024, Cureus",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t8",
+     "name": "Streptococcus",
+     "dir": "up",
+     "refs": "PMID 38707123",
+     "note": "Named among the consistently-increased genera in the same scoping review.",
+     "links": [
+      {
+       "id": "new_lupus_t8_l1",
+       "label": "McPhail et al. 2024, Cureus",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t9",
+     "name": "Enterobacter",
+     "dir": "up",
+     "refs": "PMID 38707123",
+     "note": "Named among the consistently-increased genera in the same scoping review.",
+     "links": [
+      {
+       "id": "new_lupus_t9_l1",
+       "label": "McPhail et al. 2024, Cureus",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
+      }
+     ]
+    },
+    {
+     "id": "new_lupus_t10",
+     "name": "Klebsiella",
+     "dir": "up",
+     "refs": "PMID 38707123",
+     "note": "Named among the consistently-increased genera in the same scoping review.",
+     "links": [
+      {
+       "id": "new_lupus_t10_l1",
+       "label": "McPhail et al. 2024, Cureus",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
       }
      ]
     }
