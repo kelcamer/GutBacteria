@@ -8,6 +8,7 @@ import { ZoomButtons } from './ZoomButtons'
 import { isIntervention } from '../lib/interventions'
 import { MapControls } from './MapControls'
 import { PickerSection } from './PickerSection'
+import { FilteredEmptyState } from './FilteredEmptyState'
 import { filterSymptomData, filterConditions } from '../lib/studyFilters'
 
 // Module-level, not per-render: a stable list AND a stable default value
@@ -96,6 +97,17 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
   }
 
   const shownData = filterSymptomData(mapData, filters)
+  // Count what the filters removed, so an empty map can explain itself rather
+  // than looking broken - see FilteredEmptyState.
+  const rawLinks = (mapData.bacteria || []).reduce(
+    (a, b) => a + ['up', 'down', 'both'].reduce((x, k) => x + (b[k] || []).length, 0),
+    0
+  )
+  const shownLinks = (shownData.bacteria || []).reduce(
+    (a, b) => a + ['up', 'down', 'both'].reduce((x, k) => x + (b[k] || []).length, 0),
+    0
+  )
+  const filteredEmpty = rawLinks > 0 && shownLinks === 0
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current) return
@@ -249,6 +261,12 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
           </div>
         )}
       </div>
+
+      {filteredEmpty && (
+        <div className="mb-3" style={{ maxWidth: 700 }}>
+          <FilteredEmptyState hiddenCount={rawLinks} filters={filters} />
+        </div>
+      )}
 
       <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
 

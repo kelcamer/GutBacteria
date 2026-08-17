@@ -40,6 +40,10 @@ export const FILTER_LABELS = {
 // True when an entry survives the current filters.
 export function entryPasses(entry, f) {
   if (!entry) return true
+  // Defensive: a component rendered without the prop would otherwise crash the
+  // whole map on `f.hideDerived`. Falling back to defaults degrades to "show
+  // everything except crossfeeding" rather than a blank screen.
+  if (!f) f = DEFAULT_FILTERS
   const ev = entry.evidence
   const pop = entry.population
 

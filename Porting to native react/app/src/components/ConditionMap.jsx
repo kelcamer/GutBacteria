@@ -6,6 +6,7 @@ import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
 import { filterConditions } from '../lib/studyFilters'
+import { FilteredEmptyState } from './FilteredEmptyState'
 
 // Ported verbatim from `GFA_ConditionMap` in gut-flora-atlas.readable.html
 // (~line 26916-27095) - the per-condition scoped map that was placeholdered
@@ -46,7 +47,19 @@ export function ConditionMap({ condition, filters }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- ported 1:1 from the original's own deps
   }, [data, layoutState, filters])
 
-  if (!data.bacteria.length) return null
+  // Distinguish "this condition has no symptom-linked taxa" (render nothing,
+  // as before) from "your filters removed them all" (say so).
+  if (!data.bacteria.length) {
+    const raw = (condition?.taxa || []).length
+    if (raw > 0 && filterConditions(condition, filters)?.taxa?.length === 0) {
+      return (
+        <div className="mt-6" style={{ borderTop: `1px solid ${theme.line}`, paddingTop: 18, maxWidth: 700 }}>
+          <FilteredEmptyState hiddenCount={raw} filters={filters} />
+        </div>
+      )
+    }
+    return null
+  }
 
   return (
     <div className="mt-6" style={{ borderTop: `1px solid ${theme.line}`, paddingTop: 18 }}>
