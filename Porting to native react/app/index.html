@@ -6,6 +6,20 @@
     <title>Gut Flora Atlas</title>
     <meta name="description" content="Which bacterial taxa run high or low across neuropsychiatric conditions." />
     <meta name="theme-color" content="#160E2B" />
+
+    <!-- Home-screen install. Without apple-touch-icon iOS uses a screenshot of
+         the page, which reads as a blurry grey rectangle at icon size.
+         Relative paths throughout - the app is served from a subpath
+         (/GutBacteria/react-preview/), so absolute /icon.png would 404. -->
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- black-translucent lets the app paint under the status bar; the
+         safe-top/safe-bottom classes in index.css already reserve the insets. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Gut Atlas" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
