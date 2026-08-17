@@ -39,21 +39,51 @@ MALE = re.compile(r"\bmen\b|\bmale\b(?!\s*and)|\bboys\b", re.I)
 BOTHSEX = re.compile(r"both sexes|men and women|male and female|\bmixed[- ]sex\b", re.I)
 
 
-def tier(text, derived):
+def tier(ref, note, derived):
+    """Classify from the REF first, note only as fallback.
+
+    v1 read ref and note as one blob, which badly over-tagged `animal`. Notes
+    routinely describe a human finding and then its animal follow-up - e.g.
+    "depleted in fibromyalgia; FMT from patients into mice induced pain" is a
+    HUMAN study with a mouse validation. v1 saw "mice" and tagged the whole
+    entry animal, so "Human studies only" would have HIDDEN a human
+    fibromyalgia finding. Hiding real evidence is the dangerous direction:
+    the map still looks complete while quietly missing things.
+
+    Rules now:
+      - the ref describes the study design, so it decides when it can
+      - if the note carries BOTH human and animal markers, human wins, because
+        the animal part is nearly always a follow-up experiment
+      - animal/in-vitro from the note alone only when there is no human signal
+    """
     if derived:
         return "derived"
-    if INVITRO.search(text):
-        return "in-vitro"
-    if ANIMAL.search(text):
-        return "animal"
-    if META.search(text):
+
+    for src in (ref, ):                      # ref is authoritative
+        if INVITRO.search(src):
+            return "in-vitro"
+        if ANIMAL.search(src) and not HUMAN.search(src):
+            return "animal"
+        if META.search(src):
+            return "meta-analysis"
+        if RCT.search(src):
+            return "human-rct"
+        if MR.search(src):
+            return "mendelian"
+
+    both = ref + " " + note
+    if META.search(both):
         return "meta-analysis"
-    if RCT.search(text):
+    if RCT.search(both):
         return "human-rct"
-    if MR.search(text):
+    if MR.search(both):
         return "mendelian"
-    if HUMAN.search(text):
-        return "human-cohort"
+    if HUMAN.search(both):
+        return "human-cohort"          # human wins over a mouse follow-up
+    if INVITRO.search(note):
+        return "in-vitro"
+    if ANIMAL.search(note):
+        return "animal"
     return "unclassified"
 
 
@@ -83,9 +113,10 @@ def main(write):
     seed = json.load(open("seed_data.json"), object_pairs_hook=OrderedDict)
     for c in seed["conditions"]:
         for t in c.get("taxa", []):
-            text = blob(t.get("refs"), t.get("note"), json.dumps(t.get("links") or []))
-            ev = tier(text, t.get("derived"))
-            po = population(text, ev)
+            ref = blob(t.get("refs"), json.dumps(t.get("links") or []))
+            note = blob(t.get("note"))
+            ev = tier(ref, note, t.get("derived"))
+            po = population(ref + " " + note, ev)
             t["evidence"], t["population"] = ev, po
             tiers[ev] += 1
             pops[po] += 1
@@ -94,9 +125,10 @@ def main(write):
     for b in sd["bacteria"]:
         for k in ("up", "down", "both"):
             for e in b.get(k, []):
-                text = blob(e.get("ref"), e.get("note"), e.get("url"))
-                ev = tier(text, e.get("derived"))
-                po = population(text, ev)
+                ref = blob(e.get("ref"), e.get("url"))
+                note = blob(e.get("note"))
+                ev = tier(ref, note, e.get("derived"))
+                po = population(ref + " " + note, ev)
                 e["evidence"], e["population"] = ev, po
                 tiers[ev] += 1
                 pops[po] += 1

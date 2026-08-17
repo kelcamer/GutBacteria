@@ -1859,7 +1859,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36128620/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -3819,7 +3819,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41157257/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -5134,7 +5134,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36284437/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -6183,7 +6183,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "female"
     },
     {
@@ -6204,7 +6204,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36113426/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "female"
     },
     {
@@ -7454,7 +7454,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40846210/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -8437,7 +8437,7 @@
        "url": "https://www.pnas.org/doi/10.1073/pnas.2413953122"
       }
      ],
-     "evidence": "animal",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -8463,7 +8463,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40258140/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -10952,7 +10952,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/42202790/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -11112,7 +11112,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/42364055/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -11128,7 +11128,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/42364055/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -11617,7 +11617,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41764837/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -11633,7 +11633,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41764837/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -12359,7 +12359,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/35393390/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -12375,7 +12375,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/31866426/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -13009,7 +13009,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41617714/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     }
    ]
@@ -13567,7 +13567,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41112053/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -14634,7 +14634,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/30995472/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "female"
     },
     {
