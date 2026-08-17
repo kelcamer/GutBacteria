@@ -30,10 +30,10 @@ const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !isIntervention(s))
 // in dev rather than trusted.
 const DEFAULT_SYMPTOM_SELECTION = [
   'FUT2 (Non-secretor) status',
+  // 2'-FL only: the other three HMOs stay one tap away in the picker, but the
+  // default view is quieter with a single intervention than with four fanning
+  // into the same taxa.
   "2'-Fucosyllactose (HMO) supplementation",
-  'Lacto-N-tetraose (LNT) supplementation',
-  'Lacto-N-neotetraose (LNnT) supplementation',
-  'Galacto-N-biose (GNB, from host mucin)',
 ]
 // Conditions included in the default Symptom -> Bacteria view, by request.
 const DEFAULT_CONDITION_IDS = ['seed_76', 'seed_ida_state'] // ADHD, Iron deficiency (state)
@@ -422,7 +422,11 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters, onFilt
           setGroupGenus(next)
         }}
         onSnapBack={() => {
+            // Snap back means EVERYTHING back, by request: hidden nodes restored,
+            // the picker cleared to the full map, and the layout relaid. It is the
+            // one button that always returns you to a known state.
             hiddenNamesRef.current?.clear()
+            clearPicker()
             setLayoutState((s) => ({ key: s.key + 1, scramble: false }))
           }}
         onScramble={() => setLayoutState((s) => ({ key: s.key + 1, scramble: true }))}

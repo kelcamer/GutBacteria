@@ -31,6 +31,12 @@ export const DEFAULT_FILTERS = {
   // other things you set once for the whole atlas, and because it has to
   // persist - having to re-group every visit was the point of moving it.
   groupGenus: true,
+  // Both read as ON = SHOW, matching every other toggle here, so nothing is
+  // hidden until you ask for it. They filter LINKS by direction, not by
+  // evidence quality - a contested or null link is a real finding, just not
+  // an actionable one, which is exactly why being able to mute them helps.
+  showContested: true,
+  showNull: true,
 }
 
 export const FILTER_LABELS = {
@@ -42,11 +48,13 @@ export const FILTER_LABELS = {
   hideReview: ['Exclude narrative reviews', 'Secondary sources that summarise other studies rather than reporting new data'],
   womenOnly: ['Women only', 'Hides studies conducted in male-only populations'],
   menOnly: ['Men only', 'Hides studies conducted in female-only populations'],
+  showContested: ['Enable conflicting microbes?', 'Shows links where studies disagree about the direction (yellow). Turn off to hide them and leave only findings that point one way'],
+  showNull: ['Enable null findings?', 'Shows links that were tested and found NO reliable effect (grey). Turn off to hide them - useful once you have read them, since they are settled rather than open questions'],
   groupGenus: ['Genus grouping?', 'Shows one node per genus instead of separate genus and species nodes (Faecalibacterium and F. prausnitzii become one). Where members disagree the claim shows as contested rather than picking a side'],
 }
 
 // True when an entry survives the current filters.
-export function entryPasses(entry, f) {
+export function entryPasses(entry, f, dir) {
   if (!entry) return true
   // Defensive: a component rendered without the prop would otherwise crash the
   // whole map on `f.hideDerived`. Falling back to defaults degrades to "show
@@ -56,6 +64,10 @@ export function entryPasses(entry, f) {
   const pop = entry.population
 
   if (entry.derived && f.hideDerived) return false
+  // Direction-based muting. Defaults are true, and `!== false` keeps filters
+  // saved before these existed from silently hiding anything.
+  if (dir === 'both' && f.showContested === false) return false
+  if (dir === 'none' && f.showNull === false) return false
   if (f.hideAnimal && ev === 'animal') return false
   if (f.hideInVitro && ev === 'in-vitro') return false
   if (f.hideMeta && ev === 'meta-analysis') return false
@@ -74,7 +86,7 @@ export function filterSymptomData(data, f) {
     const next = { ...b }
     for (const dir of ['up', 'down', 'both', 'none']) {
       if (!Array.isArray(b[dir])) continue
-      const kept = b[dir].filter((e) => entryPasses(e, f))
+      const kept = b[dir].filter((e) => entryPasses(e, f, dir))
       if (kept.length !== b[dir].length) {
         removed += b[dir].length - kept.length
         next[dir] = kept

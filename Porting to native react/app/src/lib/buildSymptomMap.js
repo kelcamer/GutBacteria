@@ -249,7 +249,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // an organism left precisely BECAUSE something corrects it, which is the
         // opposite of the sort wanted: the row should say what is wrong, and the
         // intervention edges then visibly reach across it.
-        var up = 0, down = 0, total = 0;
+        var up = 0, down = 0, both = 0, none = 0, total = 0;
         n.adjE.forEach(function(ei) {
           var e = E[ei];
           var other = V[e.s === selfIdx ? e.t : e.s];
@@ -257,9 +257,20 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           total++;
           if (e.dir === "up") up++;
           else if (e.dir === "down") down++;
+          else if (e.dir === "both") both++;
+          else none++;
         });
-        var lean = total ? (down - up) / total : 0;   // +1 (all decreased) -> right
-        n.groupX = W * (0.5 + lean * 0.38);
+        // Contested and null links are parked at the edges, out of the reading
+        // path: yellow hard left, grey hard right. Neither tells you what an
+        // organism is doing, so neither should sit in the middle competing with
+        // the ones that do.
+        if (total && both / total >= 0.5) n.groupX = W * 0.06;
+        else if (total && none / total >= 0.5) n.groupX = W * 0.94;
+        else {
+          // Increased to the RIGHT, decreased to the LEFT.
+          var lean = total ? (up - down) / total : 0;
+          n.groupX = W * (0.5 + lean * 0.34);
+        }
       });
     }
 
@@ -381,6 +392,18 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       n.vx = 0;
       n.vy = 0;
     });
+    // Iron deficiency is dropped to sit level with LNT across the map: two nodes on
+    // the same baseline read as a pair the eye can compare without re-scanning
+    // vertically. Keeps its own x - only the height is borrowed. A view preference
+    // like the slot swaps, and a no-op if either node is absent.
+    if (rimAngles) {
+      var ironN = null, lntN = null;
+      rimV.forEach(function(n) {
+        if (/^Iron deficiency/.test(n.name)) ironN = n;
+        else if (/^Lacto-N-tetraose/.test(n.name)) lntN = n;
+      });
+      if (ironN && lntN) ironN.y = lntN.y;
+    }
     placeDynamic();
     // Barycenter crossing-reduction: re-sort the rim by the angle of each node's
     // neighbor centroid, then re-place dynamic nodes. A few passes converge to a
@@ -872,7 +895,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           eEls[i].setAttribute("stroke-opacity", "0.98");
           eEls[i].setAttribute("stroke-width", "2.1");
         } else {
-          eEls[i].setAttribute("stroke-opacity", "0.09");
+          eEls[i].setAttribute("stroke-opacity", "0.3");  // was 0.09 - deselecting a node made its links effectively invisible
           eEls[i].setAttribute("stroke-width", "0.7");
         }
       }
@@ -1408,7 +1431,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // A manually-dragged node sticks where you dropped it instead of the
           // springs immediately pulling it back to its computed position —
           // otherwise a drag looks like it silently does nothing.
-          dragNode.manualPin = true;
+          // Deliberately NOT setting manualPin any more. Sticking a dragged node
+          // froze it out of the forces, so the magnetism people like visibly
+          // switched off for whatever they had just touched. It now rejoins the
+          // simulation from wherever you dropped it.
           dragNode.vx = 0;
           dragNode.vy = 0;
         }
