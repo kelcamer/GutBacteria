@@ -65,10 +65,16 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
   const [mode, setMode] = useState('all')
-  // Genus grouping is a VIEW mode, off by default. See groupByGenus.js for why it
-  // must never become the default: across this dataset a genus and its own species
-  // point opposite ways in 37 of 92 overlapping claims.
-  const [groupGenus, setGroupGenus] = useState(false)
+  // Genus grouping is ON by default, by explicit request: seeing Faecalibacterium
+  // and F. prausnitzii as two unrelated dots, when they are the same organism at
+  // two ranks, was the single most persistent complaint about these maps.
+  //
+  // What makes that safe is the contested rendering, not the merge being lossless.
+  // Members still disagree in 4 genera, and those claims render as contested (an
+  // arrow is never invented over a disagreement) with each member's own evidence
+  // named in the popup. The banner above the map says which genera those are.
+  // Ungroup from the map controls to see the data as it is actually stored.
+  const [groupGenus, setGroupGenus] = useState(true)
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
   // Default view for the Symptom -> Bacteria direction, by request: the FUT2
@@ -363,7 +369,11 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
           <b style={{ color: theme.text }}>Grouped by genus</b> — {grouped.summary.merged} genera absorbed their species.{' '}
           {grouped.summary.conflicts > 0 ? (
             <>
-              <b style={{ color: '#FFC857' }}>{grouped.summary.conflicts} of them contain members that disagree</b> ({grouped.summary.conflictNames.join(', ')}).
+              <b style={{ color: '#FFC857' }}>
+                {grouped.summary.conflicts === 1
+                  ? 'one of them contains members that disagree'
+                  : `${grouped.summary.conflicts} of them contain members that disagree`}
+              </b>{' '}({grouped.summary.conflictNames.join(', ')}).
               Those claims render as contested (↔) rather than picking a winner — open the node to see each member's own evidence. Ungroup to see them as separate nodes, which is how the data is actually stored.
             </>
           ) : (

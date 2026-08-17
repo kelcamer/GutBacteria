@@ -1,7 +1,7 @@
 // Collapse species nodes into their genus, on demand.
 //
-// WHY THIS IS A TOGGLE AND NOT THE DEFAULT
-// ----------------------------------------
+// WHY THIS EXISTS, AND WHY IT IS NOW ON BY DEFAULT
+// ------------------------------------------------
 // Asked for because the map kept splitting one question in half: FUT2 attaches
 // to the genus Faecalibacterium (measured in colonic mucosa) while the HMO
 // interventions attach to F. prausnitzii (measured in stool), so the two halves
@@ -16,9 +16,15 @@
 // permanently merged node would have to paint a single arrow over that, and
 // would be wrong roughly half the time it mattered.
 //
-// So: grouping is something you switch on to see the shape of things, and when
-// members disagree the merged claim is rendered CONTESTED ("both") rather than
-// picking a winner. Nothing is quietly averaged away.
+// So the merge never invents an arrow: when members disagree the merged claim is
+// rendered CONTESTED ("both") rather than picking a winner, and nothing is quietly
+// averaged away. That safeguard is what makes it defensible as the default, which
+// it now is by explicit request - two dots for one organism at two ranks was the
+// most persistent complaint about these maps. The toggle still ungroups, and the
+// banner names which genera contain disagreeing members.
+//
+// Note the numbers above move as the data improves: after the FUT2 rank work,
+// Faecalibacterium and F. prausnitzii agree on 26 of their 28 overlapping claims.
 //
 // HOW ATTRIBUTION SURVIVES
 // ------------------------
