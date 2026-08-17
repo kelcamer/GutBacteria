@@ -67,6 +67,8 @@ A taxon connected to exactly one node is that node's satellite. It is pushed **a
 - **Dragging must not restart the simulation.** Resetting `alpha` to 1 on pointer-move re-fires every spring and the whole graph visibly expands. Top the energy up only enough for neighbours to give way (`alpha = max(alpha, 0.12)`) and leave the tick count alone.
 - **A dropped node rejoins the physics.** Freezing it (`manualPin`) switches the magnetism off for exactly the node the user just touched, which reads as the feature breaking.
 - **Snap back means everything back** — hidden nodes restored, picker cleared, layout relaid. One button, one known state.
+- **No rim node may sit level with the inner row.** A rim node on the row's line runs its edges *along* the row rather than across it, hiding the links behind the nodes they connect.
+- **Status text must not recite counts.** Any banner describing behaviour should describe the behaviour, not the current selection's numbers — those move on every change and read as stale even while correct.
 
 ---
 
@@ -80,7 +82,7 @@ Work through these in order. Most "the map is a mess" problems are one of the fi
 
 3. **Check the rank before adding.** Genus, species, family and phylum nodes all coexist here, and mixing them is the single largest source of nonsense — a phylum node averaging members that move in opposite directions is not a finding. See `MEMORY`/`taxonomic-rank-discipline`: check rank, sample site, and nomenclature era before believing two studies disagree. Prefer the rank the study actually measured.
 
-4. **Watch the row's node count.** A straight row and complete labels conflict at roughly **20 taxa** at current label widths. Past that, either accept overlap, or stagger into two rows using the same index parity that picks label sides. Do not solve it by dropping labels.
+4. **Watch the node count — the y-axis rules switch themselves off.** The single row, the vertical flattening, and the rim-clearance band all apply only at **5 or fewer rim nodes**; above that the map falls back to ordinary force layout, because there is no longer horizontal room for a row to hold the taxa. (Rim count is the trigger because it is knowable *before* layout; taxa count is not.) Within a small map, a straight row and complete labels still start conflicting at roughly **20 taxa** at current label widths — past that, accept overlap or stagger into two rows using the same index parity that picks label sides. Do not solve it by dropping labels.
 
 5. **Never add a direction you cannot source.** Four directions exist: up, down, contested (`both`), and null (`none` — tested, no reliable effect). Reach for `none` when studies looked and found nothing; reach for `both` only when studies genuinely disagree *after* you have ruled out rank/site/nomenclature differences. Do not use `both` as a shrug.
 
