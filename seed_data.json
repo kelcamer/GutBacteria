@@ -4459,6 +4459,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "seed_209_firmicutes_null",
+     "name": "Firmicutes",
+     "dir": "none",
+     "refs": "Wacklin et al. 2014, PLOS ONE - 71 adults screened, 24 sequenced (12 non-secretors / 12 secretors), pyrosequencing + HITChip (PMID 24733310)",
+     "note": "Tested, no phylum-level difference. The study this app leans on most for FUT2 measured it directly: 'at the phylum level, the non-secretors, secretors and FUT2 genotypes shared similar microbiota compositions, dominated by Firmicutes (on average 93%)' - same result by HITChip (84%). WHY IT LOOKS OTHERWISE: several individual Firmicutes genera ARE higher in non-secretors in that same study - Clostridium, Blautia, Dorea, Ruminococcus gnavus and C. sphenoides - so the impression that 'non-secretors have more Firmicutes' is right about the members and wrong about the total. Non-secretors also had significantly lower diversity (p=0.001).",
+     "links": [
+      {
+       "id": "seed_209_firmicutes_l1",
+       "label": "Wacklin et al. 2014 - no phylum-level difference by secretor status (PMID 24733310)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
     }
    ]
   },

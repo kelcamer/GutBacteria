@@ -2068,7 +2068,7 @@
   },
   {
    "name": "Firmicutes",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -2127,6 +2127,17 @@
      "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
      "evidence": "human-rct",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
+    }
+   ],
+   "none": [
+    {
+     "symptom": "FUT2 (Non-secretor) status",
+     "note": "Tested, no phylum-level difference. The study this app leans on most for FUT2 measured it directly: 'at the phylum level, the non-secretors, secretors and FUT2 genotypes shared similar microbiota compositions, dominated by Firmicutes (on average 93%)' - same result by HITChip (84%). WHY IT LOOKS OTHERWISE: several individual Firmicutes genera ARE higher in non-secretors in that same study - Clostridium, Blautia, Dorea, Ruminococcus gnavus and C. sphenoides - so the impression that 'non-secretors have more Firmicutes' is right about the members and wrong about the total. Non-secretors also had significantly lower diversity (p=0.001).",
+     "ref": "Wacklin et al. 2014, PLOS ONE - 71 adults screened, 24 sequenced (12 non-secretors / 12 secretors), pyrosequencing + HITChip (PMID 24733310)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/",
+     "evidence": "human-cohort",
      "evidence_source": "hand-classified",
      "population": "unknown"
     }
