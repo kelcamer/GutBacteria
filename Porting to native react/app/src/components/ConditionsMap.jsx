@@ -12,7 +12,7 @@ import { filterSymptomData, filterConditions } from '../lib/studyFilters'
 // the ConditionsGrid on the Conditions tab's list view (not its own nav
 // item). Reuses `buildMap`/`GFA_buildMap` with pinType left undefined,
 // which the engine defaults to "cond" (conditions on the rim).
-export function ConditionsMap({ conditions, focusNames, onBackgroundClick, filters }) {
+export function ConditionsMap({ conditions, focusNames, filters }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
@@ -30,7 +30,7 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick, filte
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildMap(hostRef.current, tipRef.current, filterConditions(conditions, filters), mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, onBackgroundClick, filterSymptomData(symptomData, filters))
+      stop = buildMap(hostRef.current, tipRef.current, filterConditions(conditions, filters), mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, filterSymptomData(symptomData, filters))
       graphRef.current = stop
     } catch {
       if (hostRef.current) {
@@ -44,8 +44,8 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick, filte
         // best-effort cleanup, matches the original
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own deps ([sig, mode, layoutState]) with onBackgroundClick, the new callback input
-  }, [sig, mode, layoutState, onBackgroundClick, filters])
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own deps ([sig, mode, layoutState]) with filters, the global study-filter input
+  }, [sig, mode, layoutState, filters])
 
   // New (no minified-source equivalent): typing a condition name in
   // ConditionsGrid above (its sibling on this same tab) highlights it -

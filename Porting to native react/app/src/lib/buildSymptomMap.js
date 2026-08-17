@@ -19,14 +19,14 @@
 // Not yet reviewed line-by-line against the live original in a browser -
 // see PORTING_PLAN.md's verification notes.
 //
-// One real addition since the port, not in the original: an optional 9th
-// param, `onBackgroundClick` - fired from onPointerUp whenever a plain
-// click lands on empty canvas (not a node, not a drag). Lets a caller
-// hook "user clicked the background" without adding a second click
-// listener of its own on top of this engine's existing pointer handling
-// (which already tracks bgDown/dragNode precisely to distinguish a real
-// background click from a node click or a drag) - SymptomTab.jsx uses it
-// to clear its symptom/condition picker selection.
+// A press on empty canvas does NOTHING here, on purpose. This engine used to
+// expose an `onBackgroundClick` callback (SymptomTab wired it to "reset the
+// picker"), and it also closed every pinned popup. Both were removed by
+// request: a stray click on empty space was silently discarding a map the user
+// had built by hand, and the resulting rebuild changed the document height
+// enough that the browser clamped the scroll and the page appeared to jump
+// upward on its own. Clearing is now only ever explicit - the popups' own x,
+// and the picker's own reset button. See onPointerUp.
 import { dirColor, dirArrow } from '../theme'
 
 function esc(s) {
@@ -65,7 +65,7 @@ function copyTipText(el, btn) {
   }
 }
 
-export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, onBackgroundClick, fullData) {
+export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, fullData) {
     pinType = pinType || "bact";
     // Optional 10th param: the UNFILTERED symptom+bacteria universe (every
     // real symptom, plus whatever conditions are currently overlaid) to
@@ -408,6 +408,19 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     svg.style.display = "block";
     svg.style.height = "auto";
     svg.style.touchAction = "pan-x pan-y pinch-zoom";
+    // Nothing in this SVG is selectable text, and letting it be selectable
+    // was an outright bug on desktop. Pressing a node starts the browser's
+    // own text-selection drag (pointerdown never preventDefaults - it can't,
+    // touch needs the default to scroll), and a selection drag AUTOSCROLLS
+    // the page as soon as the cursor nears a viewport edge. Reported symptom:
+    // grab a node, pull it slightly up, and the whole page rockets to
+    // scrollTop 0, taking the node you were dragging off screen with it -
+    // measured going 1720 -> 0 in about a second while the button was held.
+    // user-select:none stops the selection ever starting, which removes the
+    // autoscroll with it. It also stops a double-click on the map selecting
+    // a mouthful of node labels.
+    svg.style.userSelect = "none";
+    svg.style.webkitUserSelect = "none";
 
     var gE = document.createElementNS(NS, "g"),
       gN = document.createElementNS(NS, "g");
@@ -494,7 +507,6 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     var dragNode = null;
     var dragIdx = null; // V-array position of dragNode, NOT dragNode.i (see onPointerDown's comment) - what selectedNodes/showConnectionsOnly/hideNode/selectByNames all actually index by.
     var isDragging = false;
-    var bgDown = false;
     var dragStartX = 0,
       dragStartY = 0;
     var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
@@ -1086,7 +1098,6 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // here (not reading dragNode.i again in onPointerUp) fixes it.
         dragIdx = idx;
         isDragging = false;
-        bgDown = false;
         dragStartX = ev.clientX;
         dragStartY = ev.clientY;
         // New: pointer capture is deferred to onPointerMove now, not
@@ -1101,9 +1112,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // of being released to the page - flinging the node somewhere via
         // an accidental drag, not literally clearing selectedNodes, but
         // looking exactly like "my selection is gone."
-      } else {
-        bgDown = true;
       }
+      // No else branch any more: a press that misses every node used to be
+      // recorded (bgDown) so onPointerUp could treat it as a background click.
+      // Background clicks do nothing now, so there is nothing to record.
     }
 
     function onPointerMove(ev) {
@@ -1113,10 +1125,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
             jitterDy = ev.clientY - dragStartY;
           var jitterDist = Math.hypot(jitterDx, jitterDy);
           if (jitterDist < DRAG_THRESHOLD) return; // still just a click, not a drag yet
-          // Predominantly VERTICAL movement past the threshold reads as
-          // "trying to scroll the page," not "trying to drag this node" -
-          // this SVG's own touch-action already permits vertical panning
-          // (see its own setup), so release the node back and let the
+          // TOUCH ONLY: predominantly VERTICAL movement past the threshold
+          // reads as "trying to scroll the page," not "trying to drag this
+          // node" - this SVG's own touch-action already permits vertical
+          // panning (see its own setup), so release the node back and let the
           // browser handle the rest of the gesture natively instead of
           // preventDefault-ing it away below. A horizontal or diagonal
           // drag still claims the node as before - only a clearly-vertical
@@ -1124,7 +1136,16 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // deliberately still works, just needs a bit of sideways motion
           // too (matches how most drag-vs-scroll disambiguation on touch
           // works elsewhere on the web).
-          if (Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
+          //
+          // Deliberately NOT applied to a mouse. There is no drag-vs-scroll
+          // ambiguity to resolve there: a mouse scrolls with the wheel, so
+          // holding the button down on a node and moving is unambiguously a
+          // drag, whichever direction it goes. Applying the touch heuristic
+          // to mice made "drag this node upward" impossible - the node was
+          // released mid-gesture and never moved at all, and the abandoned
+          // gesture became a browser text-selection drag that autoscrolled
+          // the page instead (see the userSelect note in the SVG setup).
+          if (ev.pointerType !== "mouse" && Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
             dragNode = null;
             return;
           }
@@ -1221,21 +1242,17 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         }
         dragNode = null;
         isDragging = false;
-      } else if (bgDown) {
-        // REVERTED back to single-click: the double-click requirement was
-        // guarding against pointercancel (a canceled touch gesture, e.g.
-        // native pinch/double-tap-zoom taking over) reaching this branch -
-        // that's now fixed at its actual source (see onPointerCancel
-        // below, which handles cancels separately and never runs this
-        // logic at all), so single-click is safe again without needing
-        // the extra double-click layer on top.
-        if (selectedNodes.size) {
-          closeAllPinned();
-          setHi(curr);
-        }
-        if (typeof onBackgroundClick === "function") onBackgroundClick();
       }
-      bgDown = false;
+      // A press on the map's BACKGROUND is now deliberately inert. It used to
+      // close every pinned popup AND fire onBackgroundClick, which SymptomTab
+      // wired to "reset the picker to show everything" - so one stray click on
+      // empty canvas silently threw away a map you had built by hand (e.g.
+      // 2'-FL + FUT2), and rebuilding the full map shrank the document enough
+      // that the browser clamped the scroll position, which read as the page
+      // lurching upward on its own. Removed by request: nothing about clicking
+      // empty space says "discard my work." Both clearing paths remain
+      // available explicitly - the popups have their own x, and the picker has
+      // its own reset button.
     }
 
     // New: pointercancel used to be routed straight to onPointerUp, so a
@@ -1254,7 +1271,6 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       }
       dragNode = null;
       isDragging = false;
-      bgDown = false;
     }
 
     function onPointerLeave(ev) {

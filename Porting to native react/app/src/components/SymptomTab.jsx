@@ -32,10 +32,12 @@ const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !isIntervention(s))
 // to both directions after a positive verdict. Pick specific symptoms
 // and/or conditions to narrow the map down to exactly that selection
 // (leaving everything unpicked shows the full map, the original
-// default); clicking the graph's background clears the picker back to
-// that default too, without having to find the "clear all" button - see
-// symptomMapConditionOverlay.js's header comment for the data-layer side,
-// and buildSymptomMap.js's onBackgroundClick param for the engine side.
+// default). Clearing the picker is the reset button's job and only the
+// reset button's job - clicking the graph's background used to do it too,
+// which meant one stray click on empty canvas threw away a hand-built map
+// (and jumped the page, since rebuilding the full map changes the document
+// height). See symptomMapConditionOverlay.js's header comment for the
+// data-layer side, and buildSymptomMap.js's onPointerUp for the engine side.
 export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
@@ -113,7 +115,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, clearPicker, fullData)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, fullData)
       graphRef.current = stop
       // Nodes added/kept via the picker above aren't the result of a real
       // click, so they'd otherwise never end up in the graph's own
