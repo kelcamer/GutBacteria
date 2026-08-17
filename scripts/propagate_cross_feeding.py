@@ -73,15 +73,27 @@ def resolve_source(measured, src):
 
 
 def already_covered(measured, dst):
-    """True if dst - or its genus - is already measured.
+    """True if dst itself, or a measurement that genuinely speaks for it, exists.
 
-    A genus-level measurement covers its species: if Faecalibacterium is
-    measured, we do not infer Faecalibacterium prausnitzii on top of it.
+    A genus-level measurement covers its species: if Faecalibacterium is measured,
+    do not infer Faecalibacterium prausnitzii on top of it - that was the ADHD bug,
+    where an inference asserted "up" next to a measured genus saying "down".
+
+    A SIBLING species does not. Measuring Eubacterium xylanophilum says nothing
+    about Eubacterium hallii; they are different organisms that happen to share a
+    genus name. The old rule treated any same-genus name as coverage, which
+    silently suppressed ~20 legitimate inferences (E. hallii and Anaerostipes
+    across many conditions) for no defensible reason.
     """
     if dst in measured:
         return True
     g = genus_of(dst)
-    return g in measured or any(genus_of(n) == g for n in measured)
+    if g in measured:
+        return True                      # the genus node itself is measured
+    if dst == g:
+        # dst IS a genus, and a species of it is measured - that speaks for it.
+        return any(genus_of(n) == g and n != g for n in measured)
+    return False
 
 
 def collapse_multi_edge(grouped, label_of):
@@ -129,6 +141,62 @@ def multi_edge_note(edges):
             f"the same direction here - also {others}.")
 
 
+def strip_derived_symptoms(sd):
+    """Remove every derived entry, returning {(taxon, symptom): dir} of what was there.
+
+    Derived data is a FUNCTION of (measurements x edges). It was previously written
+    once and then skipped forever on re-runs ("already derived - must not
+    duplicate"), which meant that correcting a measurement left every inference
+    built on it frozen at the old direction. Real example: ADHD's Bifidobacterium
+    was corrected to `down`, and the F. prausnitzii and E. hallii inferences under
+    ADHD kept asserting "Bifidobacterium is up here" - stating the opposite of the
+    measurement sitting next to them on the same node.
+
+    So regeneration now starts from a clean slate every run. Nothing of value is
+    lost: these entries are machine-written, and the note text says so.
+    """
+    old = {}
+    for b in sd["bacteria"]:
+        for d in ("up", "down", "both"):
+            keep = []
+            for e in b.get(d, []):
+                if e.get("derived"):
+                    old[(b["name"], e["symptom"])] = d
+                    b["count"] = max(0, b.get("count", 1) - 1)
+                else:
+                    keep.append(e)
+            if d in b:
+                b[d] = keep
+    return old
+
+
+def strip_derived_conditions(seed):
+    """Same, for seed_data.json's conditions. See strip_derived_symptoms."""
+    old = {}
+    for c in seed["conditions"]:
+        keep = []
+        for t in c.get("taxa", []):
+            if t.get("derived"):
+                old[(c["name"], t["name"])] = t.get("dir")
+            else:
+                keep.append(t)
+        c["taxa"] = keep
+    return old
+
+
+def report_diff(label, old, new):
+    """Print only what actually moved - added, dropped, or flipped direction."""
+    added = [k for k in new if k not in old]
+    dropped = [k for k in old if k not in new]
+    flipped = [(k, old[k], new[k]) for k in new if k in old and old[k] != new[k]]
+    print(f"\n{label}: {len(new)} derived entries regenerated "
+          f"({len(added)} new, {len(dropped)} no longer supported, {len(flipped)} DIRECTION CHANGED)")
+    for k, o, n in flipped:
+        print(f"  FLIPPED {k[0]} / {k[1]}: {o} -> {n}  (the measurement it depends on changed)")
+    for k in dropped:
+        print(f"  DROPPED {k[0]} / {k[1]}: its source is no longer measured, or is now ambiguous")
+
+
 def usable_edges(cf, bacteria_names):
     out = []
     for e in cf["edges"]:
@@ -144,6 +212,9 @@ def main():
 
     cf = json.load(open(CF))
     sd = json.load(open(SYM), object_pairs_hook=collections.OrderedDict)
+    # Clean slate, so a corrected measurement propagates instead of leaving a
+    # stale inference behind it. See strip_derived_symptoms.
+    prior_symptoms = strip_derived_symptoms(sd)
     names = {b["name"] for b in sd["bacteria"]}
     edges = usable_edges(cf, names)
 
@@ -244,7 +315,14 @@ def main():
             added += 1
     json.dump(sd, open(SYM, "w"), indent=1, ensure_ascii=False)
     open(SYM, "a").write("\n")
-    print(f"\nWROTE {added} derived entries to {SYM}.")
+    now = {}
+    for b in sd["bacteria"]:
+        for d in ("up", "down", "both"):
+            for e in b.get(d, []):
+                if e.get("derived"):
+                    now[(b["name"], e["symptom"])] = d
+    report_diff("SYMPTOMS", prior_symptoms, now)
+    print(f"WROTE {added} derived entries to {SYM}.")
     propagate_conditions(json.load(open(CF)), args)
     print("Now verify: python3 scripts/check_duplicate_keys.py && python3 scripts/sync_embedded_data.py")
 
@@ -258,6 +336,7 @@ def propagate_conditions(cf, args):
     a condition, which is what people actually browse.
     """
     seed = json.load(open(SEED), object_pairs_hook=collections.OrderedDict)
+    prior_conditions = strip_derived_conditions(seed)
     sd = json.load(open(SYM))
     names = {b["name"] for b in sd["bacteria"]}
     edges = usable_edges(cf, names)
@@ -329,7 +408,10 @@ def propagate_conditions(cf, args):
         n += 1
     json.dump(seed, open(SEED, "w"), indent=1, ensure_ascii=False)
     open(SEED, "a").write("\n")
-    print(f"\nWROTE {n} derived taxa to {SEED}.")
+    now = {(c["name"], t["name"]): t.get("dir")
+           for c in seed["conditions"] for t in c.get("taxa", []) if t.get("derived")}
+    report_diff("CONDITIONS", prior_conditions, now)
+    print(f"WROTE {n} derived taxa to {SEED}.")
 
 
 if __name__ == "__main__":

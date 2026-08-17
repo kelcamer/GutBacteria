@@ -21,7 +21,7 @@ cd "$REPO_ROOT"
 TMPDIR="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR"' EXIT
 
-for f in gut-flora-atlas.html seed_data.json symptom_data.json; do
+for f in gut-flora-atlas.html seed_data.json symptom_data.json cross_feeding.json; do
   git show ":$f" > "$TMPDIR/$f" 2>/dev/null || cp "$f" "$TMPDIR/$f"
 done
 
@@ -66,6 +66,21 @@ if ! (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_derived_precedence.py") 
   echo "" >&2
   echo "pre-commit: a derived cross-feeding link is sitting on top of measured" >&2
   echo "data (see above). Measured data always wins - drop the derived entry." >&2
+  echo "(Emergency bypass: git commit --no-verify)" >&2
+  exit 1
+fi
+
+# Every inference must still agree with the measurement it was derived from.
+# Reported as a bug from the app: ADHD's popup asserted "Bifidobacterium is up
+# here" next to a measured Bifidobacterium of DOWN, because derived entries were
+# written once and never revisited when the measurement changed.
+if ! (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_derived_freshness.py") >&2; then
+  echo "" >&2
+  echo "pre-commit: a derived cross-feeding entry contradicts its own source" >&2
+  echo "(see above). Regenerate with:" >&2
+  echo "" >&2
+  echo "    python3 scripts/propagate_cross_feeding.py --write" >&2
+  echo "" >&2
   echo "(Emergency bypass: git commit --no-verify)" >&2
   exit 1
 fi
