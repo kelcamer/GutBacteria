@@ -11,6 +11,7 @@ import { PickerSection } from './PickerSection'
 import { FilteredEmptyState } from './FilteredEmptyState'
 import { filterSymptomData, filterConditions } from '../lib/studyFilters'
 import { groupByGenus } from '../lib/groupByGenus'
+import { TAXON_CANON } from '../data/taxonCanon'
 
 // Module-level, not per-render: a stable list AND a stable default value
 // for useState below (symptomData is a static JSON import, so this never
@@ -135,6 +136,41 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
     [extraConditions]
   )
 
+  // "Conditions which increase / decrease it", for the bacteria popups. Built from
+  // seed_data rather than from what is on the map, so the answer is the same
+  // whether or not you happen to have those conditions selected - the question
+  // ("what raises this organism?") is about the app's whole dataset.
+  //
+  // Condition taxa use raw research names; TAXON_CANON maps them onto the
+  // canonical names the symptom maps use, which is the same mapping
+  // conditionSymptomData.js relies on. Study filters are applied first, so a
+  // condition hidden by a filter cannot reappear here.
+  const conditionIndex = useMemo(() => {
+    const idx = {}
+    const put = (key, dir, condName) => {
+      if (!key) return
+      const slot = (idx[key] = idx[key] || { up: [], down: [], both: [] })
+      if (slot[dir] && !slot[dir].includes(condName)) slot[dir].push(condName)
+    }
+    for (const c of filterConditions(conditions, filters)) {
+      for (const t of c.taxa || []) {
+        if (t.derived) continue // inferences are not evidence that a condition raises this
+        const canon = TAXON_CANON[t.name] || t.name
+        put(canon, t.dir, c.name)
+        // With grouping on, the popup's node is a genus, so file species results
+        // under the genus too - otherwise a merged node would list nothing.
+        if (groupGenus) {
+          const genus = String(canon).split(' ')[0]
+          if (genus !== canon) put(genus, t.dir, c.name)
+        }
+      }
+    }
+    for (const k of Object.keys(idx)) {
+      idx[k].up.sort(); idx[k].down.sort(); idx[k].both.sort()
+    }
+    return idx
+  }, [conditions, filters, groupGenus])
+
   const clearPicker = () => {
     setSelectedSymptoms([]) // back to "nothing picked," the real default - shows everything
     setExtraConditionIds([])
@@ -162,7 +198,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, fullData)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, fullData, conditionIndex)
       graphRef.current = stop
       // Nodes added/kept via the picker above aren't the result of a real
       // click, so they'd otherwise never end up in the graph's own
@@ -189,7 +225,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own dependency array (mode, pinType, layoutState) with mapData/fullData, the overlay inputs
-  }, [mode, pinType, layoutState, mapData, fullData, filters, groupGenus])
+  }, [mode, pinType, layoutState, mapData, fullData, filters, groupGenus, conditionIndex])
 
   const nBact = (mapData.bacteria || []).length
   const nSym = (mapData.symptoms || []).length

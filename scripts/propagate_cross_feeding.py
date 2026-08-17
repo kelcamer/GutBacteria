@@ -308,7 +308,9 @@ def main():
                  f"relationship is real ({e['evidence']}); its presence in THIS "
                  f"condition/symptom is an inference. Source edge: {e['id']}."
                  + multi_edge_note(edges_for)),
-                ("ref", " | ".join(f"derived via {x['id']} - {x['ref']}" for x in edges_for)),
+                ("ref", "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this "
+                       "symptom/condition - nobody measured this taxon here): "
+                       + " | ".join(f"derived via {x['id']} - {x['ref']}" for x in edges_for)),
                 ("url", e["url"]),
             ]))
             b["count"] = b.get("count", 0) + 1
@@ -394,7 +396,9 @@ def propagate_conditions(cf, args):
             ("name", dst),
             ("dir", direction),
             ("derived", True),
-            ("refs", " | ".join(f"derived via {x['id']} - {x['ref']}" for x in edges_for)),
+            ("refs", "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this "
+                      "condition - nobody measured this taxon here): "
+                      + " | ".join(f"derived via {x['id']} - {x['ref']}" for x in edges_for)),
             ("note",
              f"FROM CROSS-FEEDING - inferred, not measured in this condition. "
              f"{e['from']} is {direction} here, and it feeds {dst} "
@@ -402,7 +406,7 @@ def propagate_conditions(cf, args):
              f"to follow. {conf.capitalize()}. The feeding relationship itself is real "
              f"({e['evidence']}); its presence in THIS condition is an inference."
              + multi_edge_note(edges_for)),
-            ("links", [{"id": f"cf_{cond['id']}_{x['id']}_l{i+1}", "label": x["ref"], "url": x["url"]}
+            ("links", [{"id": f"cf_{cond['id']}_{x['id']}_l{i+1}", "label": "Inferred source: " + x["ref"], "url": x["url"]}
                        for i, x in enumerate(edges_for)]),
         ]))
         n += 1

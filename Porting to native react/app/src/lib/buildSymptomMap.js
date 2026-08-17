@@ -65,7 +65,8 @@ function copyTipText(el, btn) {
   }
 }
 
-export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, fullData) {
+export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, fullData,
+  conditionIndex) {
     pinType = pinType || "bact";
     // Optional 10th param: the UNFILTERED symptom+bacteria universe (every
     // real symptom, plus whatever conditions are currently overlaid) to
@@ -840,7 +841,30 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         var rows = node.items.map(function(x) {
           return '<div style="margin:4px 0;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.06)"><span style="display:inline-flex;align-items:center;gap:4px"><span style="width:7px;height:7px;border-radius:9px;background:' + (x.color || "#A08FC7") + ';display:inline-block"></span>' + esc(x.symptom) + ' <b style="color:' + dirColor(x.dir) + '">' + dirArrow(x.dir) + '</b></span>' + srcRow(x.note, x.ref, x.url) + '</div>';
         }).join("");
-        rows = relatedLine + rows;
+        // Which of the app's CONDITIONS raise or lower this organism - the question
+        // people actually arrive with ("what makes this go up?"), which the
+        // per-symptom rows below answer only one row at a time. Built from
+        // seed_data by the caller (see SymptomTab), so it covers every condition
+        // in the app rather than only the ones currently drawn on this map.
+        var condLine = "";
+        if (conditionIndex && conditionIndex[node.name]) {
+          var ci = conditionIndex[node.name];
+          var block = function(label, list, color) {
+            if (!list || !list.length) return "";
+            var shown = list.slice(0, 14);
+            var more = list.length > shown.length ? " +" + (list.length - shown.length) + " more" : "";
+            return '<div style="margin-bottom:4px"><b style="color:' + color + '">' + label + '</b> ' +
+              '<span style="color:#D6CCF2">' + esc(shown.join(", ")) + esc(more) + '</span></div>';
+          };
+          var body = block("Conditions which increase it:", ci.up, dirColor("up")) +
+            block("Conditions which decrease it:", ci.down, dirColor("down")) +
+            block("Contested in:", ci.both, dirColor("both"));
+          if (body) {
+            condLine = '<div style="font-size:10.5px;margin-bottom:6px;padding-bottom:5px;' +
+              'border-bottom:1px solid rgba(255,255,255,.08)">' + body + '</div>';
+          }
+        }
+        rows = relatedLine + condLine + rows;
         // If this node's display label differs from its internal/matching
         // name, it's showing a more specific name than the canonical
         // bucket it matched against (see conditionSymptomData.js's own

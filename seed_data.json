@@ -624,39 +624,35 @@
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_seed_1_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_seed_1_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_1_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_1_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -1441,22 +1437,20 @@
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_seed_29_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_seed_29_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -1672,18 +1666,18 @@
     {
      "id": "seed_76_fp5",
      "name": "Ruminococcus gnavus",
-     "dir": "both",
-     "refs": "PMID 41075498; J Psychiatr Res 2025 systematic review (PMID 41075498)",
-     "note": "Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side. NEWER EVIDENCE, 2025: a systematic review of ADHD and the gut microbiome reports HIGHER relative abundance of Ruminococcus gnavus (alongside Agathobacter) and decreased Faecalibacterium in ADHD. It leans toward 'up' rather than settling it - the review notes these came from different individual studies rather than a pooled estimate, so this entry stays contested, but the newer weight is on the up side. (J Psychiatr Res 2025, PMID 41075498)",
+     "dir": "up",
+     "refs": "J Psychiatr Res 2025, systematic review of ADHD and the gut microbiome (PMID 41075498); dissenting: case-control n=17/17 (PMID 32132899)",
+     "note": "RAISED in ADHD. Resolved from 'contested' to 'up' on weight of evidence, not by discarding the dissent: a 2025 systematic review of ADHD and the gut microbiome reports HIGHER relative abundance of R. gnavus (alongside Agathobacter, with Faecalibacterium decreased), drawing on multiple included studies. THE DISSENTING STUDY, kept on the record: a single case-control study of 17 ADHD vs 17 controls found R. gnavus significantly REDUCED (P<0.05, PMID 32132899). It is not ignored - it is outweighed. 17 per arm is small enough that a relative-abundance difference in one genus is fragile to a handful of participants, and it stands against a review spanning several cohorts. If a larger primary study reproduces the 'down' direction, this should go back to contested. Worth knowing given the direction: R. gnavus is one of the taxa this app treats as consistently pro-inflammatory (mucin-degrading, and split out from bare Ruminococcus for exactly that reason), so 'up in ADHD' is the unfavourable direction rather than a neutral one.",
      "links": [
       {
-       "id": "seed_76_fp5_l1",
-       "label": "2025, J Psychiatric Research — ADHD systematic review (14 studies, n=1319)",
+       "id": "seed_76_rgnavus_l1",
+       "label": "J Psychiatr Res 2025 - systematic review, R. gnavus higher in ADHD (PMID 41075498)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41075498/"
       },
       {
-       "id": "seed_76_fp5_l2",
-       "label": "Case-control, n=17/17, R. gnavus reduced (PMID 32132899)",
+       "id": "seed_76_rgnavus_l2",
+       "label": "Dissenting: case-control n=17/17, R. gnavus reduced in ADHD (PMID 32132899)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/"
       }
      ],
@@ -2068,44 +2062,40 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_eubacterium_hall).",
      "links": [
       {
        "id": "cf_seed_76_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       },
       {
        "id": "cf_seed_76_cf_akkermansia_eubacterium_hall_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_76_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_seed_76_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_seed_76_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -3030,22 +3020,20 @@
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_seed_123_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_seed_123_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -3448,51 +3436,45 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_147_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_147_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_147_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_147_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_147_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -3784,17 +3766,15 @@
      "name": "Desulfovibrio",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_182_cf_fprausnitzii_dpiger_l1",
-       "label": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -4383,61 +4363,55 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_eubacterium_hall).",
      "links": [
       {
        "id": "cf_seed_209_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       },
       {
        "id": "cf_seed_209_cf_akkermansia_eubacterium_hall_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_209_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_seed_209_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_seed_209_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_209_cf_fprausnitzii_dpiger_Desulfovibrio",
      "name": "Desulfovibrio",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_209_cf_fprausnitzii_dpiger_l1",
-       "label": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -5579,22 +5553,20 @@
      "name": "Eubacterium hallii",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_eubacterium_hall).",
      "links": [
       {
        "id": "cf_seed_286_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       },
       {
        "id": "cf_seed_286_cf_akkermansia_eubacterium_hall_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -5915,68 +5887,60 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_325_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_325_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_325_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_325_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_325_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_325_cf_fprausnitzii_dpiger_Desulfovibrio",
      "name": "Desulfovibrio",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_325_cf_fprausnitzii_dpiger_l1",
-       "label": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -6259,68 +6223,60 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_353_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_353_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_353_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_353_cf_fprausnitzii_dpiger_Desulfovibrio",
      "name": "Desulfovibrio",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_353_cf_fprausnitzii_dpiger_l1",
-       "label": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_353_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_353_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -6624,51 +6580,45 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_380_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_380_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_380_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_380_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_380_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -7021,17 +6971,15 @@
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_405_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -7646,17 +7594,15 @@
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_roseburia_fprausnitzii_mannan - FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_roseburia_fprausnitzii_mannan - FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Roseburia is down here, and it feeds Faecalibacterium prausnitzii (beta-mannan breakdown products -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ida_state_cf_roseburia_fprausnitzii_mannan_l1",
-       "label": "FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+       "label": "Inferred source: FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42283799/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -7796,85 +7742,75 @@
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_fe_supp_cf_bifidum_fprausnitzii_l1",
-       "label": "Microorganisms 2025 (PMID 40732214)",
+       "label": "Inferred source: Microorganisms 2025 (PMID 40732214)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_fe_supp_cf_infantis_ehallii_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_fe_supp_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_fe_supp_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_fe_supp_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_fe_supp_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_fe_supp_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_fe_supp_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_fe_supp_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -8184,83 +8120,75 @@
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214) | derived via cf_akkermansia_faecalibacterium_prau - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214) | derived via cf_akkermansia_faecalibacterium_prau - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Faecalibacterium prausnitzii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_faecalibacterium_prau).",
      "links": [
       {
        "id": "cf_seed_480_cf_bifidum_fprausnitzii_l1",
-       "label": "Microorganisms 2025 (PMID 40732214)",
+       "label": "Inferred source: Microorganisms 2025 (PMID 40732214)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
       },
       {
        "id": "cf_seed_480_cf_akkermansia_faecalibacterium_prau_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_480_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_seed_480_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_seed_480_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_480_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_480_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_480_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695) | derived via cf_akkermansia_roseburia_mucin - Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695) | derived via cf_akkermansia_roseburia_mucin - Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Roseburia (mucin O-glycans, galacto-N-biose (GNB), in-vitro-coculture, cf_akkermansia_roseburia_mucin).",
      "links": [
       {
        "id": "cf_seed_480_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       },
       {
        "id": "cf_seed_480_cf_akkermansia_roseburia_mucin_l2",
-       "label": "Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+       "label": "Inferred source: Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -8844,68 +8772,60 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ms_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ms_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ms_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ms_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ms_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ms_cf_fprausnitzii_dpiger_Desulfovibrio",
      "name": "Desulfovibrio",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ms_cf_fprausnitzii_dpiger_l1",
-       "label": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -9484,68 +9404,60 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ibs_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ibs_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ibs_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ibs_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ibs_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ibs_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_ibs_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -10017,17 +9929,15 @@
      "name": "Phascolarctobacterium",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_endo_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -10395,17 +10305,15 @@
      "name": "Desulfovibrio",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_cd_cf_fprausnitzii_dpiger_l1",
-       "label": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -10747,61 +10655,55 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_eubacterium_hall).",
      "links": [
       {
        "id": "cf_new_uc_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       },
       {
        "id": "cf_new_uc_cf_akkermansia_eubacterium_hall_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_uc_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_new_uc_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_new_uc_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_uc_cf_fprausnitzii_dpiger_Desulfovibrio",
      "name": "Desulfovibrio",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_uc_cf_fprausnitzii_dpiger_l1",
-       "label": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -11239,51 +11141,45 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_t2d_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_t2d_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_t2d_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_t2d_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_t2d_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -11679,17 +11575,15 @@
      "name": "Phascolarctobacterium",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_ra_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -11892,85 +11786,75 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pso_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pso_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pso_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pso_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pso_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pso_cf_fprausnitzii_dpiger_Desulfovibrio",
      "name": "Desulfovibrio",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pso_cf_fprausnitzii_dpiger_l1",
-       "label": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pso_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pso_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -12243,61 +12127,55 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_eubacterium_hall).",
      "links": [
       {
        "id": "cf_new_aud_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       },
       {
        "id": "cf_new_aud_cf_akkermansia_eubacterium_hall_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_aud_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_new_aud_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_new_aud_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_aud_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_aud_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -12618,66 +12496,60 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_eubacterium_hall).",
      "links": [
       {
        "id": "cf_new_smk_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       },
       {
        "id": "cf_new_smk_cf_akkermansia_eubacterium_hall_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_smk_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_new_smk_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       },
       {
        "id": "cf_new_smk_cf_akkermansia_anaerostipes_l2",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_smk_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695) | derived via cf_akkermansia_roseburia_mucin - Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695) | derived via cf_akkermansia_roseburia_mucin - Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Roseburia (mucin O-glycans, galacto-N-biose (GNB), in-vitro-coculture, cf_akkermansia_roseburia_mucin).",
      "links": [
       {
        "id": "cf_new_smk_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       },
       {
        "id": "cf_new_smk_cf_akkermansia_roseburia_mucin_l2",
-       "label": "Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+       "label": "Inferred source: Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -13072,51 +12944,45 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_t1d_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_t1d_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_t1d_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_t1d_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_t1d_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -13443,51 +13309,45 @@
      "name": "Eubacterium hallii",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pcos_1_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pcos_1_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pcos_1_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pcos_1_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pcos_1_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -13843,51 +13703,45 @@
      "name": "Phascolarctobacterium",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_meno_1_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_meno_1_cf_akkermansia_anaerostipes_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Akkermansia is down here, and it feeds Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_meno_1_cf_akkermansia_anaerostipes_l1",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_meno_1_cf_akkermansia_eubacterium_hall_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Akkermansia is down here, and it feeds Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_meno_1_cf_akkermansia_eubacterium_hall_l1",
-       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -14003,68 +13857,60 @@
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_perimeno_cf_bifidum_fprausnitzii_l1",
-       "label": "Microorganisms 2025 (PMID 40732214)",
+       "label": "Inferred source: Microorganisms 2025 (PMID 40732214)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_perimeno_cf_infantis_ehallii_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_perimeno_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_perimeno_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_perimeno_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_perimeno_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_perimeno_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -14260,17 +14106,15 @@
      "name": "Phascolarctobacterium",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_estro_cf_bacteroides_phascolarctobacterium_l1",
-       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -14543,68 +14387,60 @@
      "name": "Faecalibacterium prausnitzii",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_prog_cf_bifidum_fprausnitzii_l1",
-       "label": "Microorganisms 2025 (PMID 40732214)",
+       "label": "Inferred source: Microorganisms 2025 (PMID 40732214)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_prog_cf_infantis_ehallii_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_prog_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_prog_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_prog_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_prog_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "up",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_prog_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -14792,51 +14628,45 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_lupus_cf_infantis_ehallii_l1",
-       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_lupus_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_lupus_cf_badolescentis_lactate_utilisers_l1",
-       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_lupus_cf_blongum_roseburia_acetate_Roseburia",
      "name": "Roseburia",
      "dir": "down",
      "derived": true,
-     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
      "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_lupus_cf_blongum_roseburia_acetate_l1",
-       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   }
