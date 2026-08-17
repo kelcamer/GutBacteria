@@ -26,6 +26,11 @@ export const DEFAULT_FILTERS = {
   hideReview: false,
   womenOnly: false,
   menOnly: false,
+  // Display, not evidence: it changes which NODES exist, never which entries
+  // pass entryPasses() below. Lives here anyway because it belongs with the
+  // other things you set once for the whole atlas, and because it has to
+  // persist - having to re-group every visit was the point of moving it.
+  groupGenus: true,
 }
 
 export const FILTER_LABELS = {
@@ -37,6 +42,7 @@ export const FILTER_LABELS = {
   hideReview: ['Exclude narrative reviews', 'Secondary sources that summarise other studies rather than reporting new data'],
   womenOnly: ['Women only', 'Hides studies conducted in male-only populations'],
   menOnly: ['Men only', 'Hides studies conducted in female-only populations'],
+  groupGenus: ['Genus grouping?', 'Shows one node per genus instead of separate genus and species nodes (Faecalibacterium and F. prausnitzii become one). Where members disagree the claim shows as contested rather than picking a side'],
 }
 
 // True when an entry survives the current filters.

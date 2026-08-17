@@ -58,23 +58,25 @@ if (import.meta.env?.DEV) {
 // (and jumped the page, since rebuilding the full map changes the document
 // height). See symptomMapConditionOverlay.js's header comment for the
 // data-layer side, and buildSymptomMap.js's onPointerUp for the engine side.
-export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
+export function SymptomTab({ pinType = 'bact', initialSelection, filters, onFiltersChange }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
   const [mode, setMode] = useState('all')
-  // Genus grouping is ON by default, by explicit request: seeing Faecalibacterium
-  // and F. prausnitzii as two unrelated dots, when they are the same organism at
-  // two ranks, was the single most persistent complaint about these maps.
+  // Genus grouping now lives in Settings (studyFilters.js), not in local state, so
+  // it persists and applies to every map at once - the map control below just
+  // writes to the same setting. Falls back to true when the stored filters predate
+  // the setting existing.
   //
-  // What makes that safe is the contested rendering, not the merge being lossless.
-  // Members still disagree in 4 genera, and those claims render as contested (an
-  // arrow is never invented over a disagreement) with each member's own evidence
-  // named in the popup. The banner above the map says which genera those are.
-  // Ungroup from the map controls to see the data as it is actually stored.
-  const [groupGenus, setGroupGenus] = useState(true)
+  // ON by default, by explicit request: seeing Faecalibacterium and F. prausnitzii
+  // as two unrelated dots, when they are the same organism at two ranks, was the
+  // most persistent complaint about these maps. What makes that safe is the
+  // contested rendering, not the merge being lossless - where members disagree an
+  // arrow is never invented, and the banner names those genera.
+  const groupGenus = filters?.groupGenus !== false
+  const setGroupGenus = (next) => onFiltersChange?.((f) => ({ ...f, groupGenus: next }))
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
   // Default view for the Symptom -> Bacteria direction, by request: the FUT2

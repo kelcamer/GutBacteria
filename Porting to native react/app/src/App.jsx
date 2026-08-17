@@ -449,8 +449,8 @@ export default function App() {
         {activeTab === 'crossfeed' && <CrossFeedingTab />}
         {activeTab === 'settings' && <SettingsTab filters={filters} setFilters={setFilters} />}
         {activeTab === 'glossary' && <Glossary />}
-        {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} filters={filters} />}
-        {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} filters={filters} />}
+        {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} filters={filters} onFiltersChange={setFilters} />}
+        {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} filters={filters} onFiltersChange={setFilters} />}
         {activeTab === 'brain' && <BrainTab pinType="cond" focusRegion={brainRegionFocusRequest} />}
         {activeTab === 'brain_r2c' && <BrainTab pinType="bact" />}
         {activeTab === 'compare' && (

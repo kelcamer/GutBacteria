@@ -95,6 +95,13 @@ export function SettingsTab({ filters, setFilters }) {
         <Toggle key={id} id={id} on={filters[id]} onChange={set(id)} />
       ))}
 
+      <div className="font-mono mt-4 mb-2" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
+        DISPLAY
+      </div>
+      {['groupGenus'].map((id) => (
+        <Toggle key={id} id={id} on={filters[id]} onChange={set(id)} />
+      ))}
+
       <button
         onClick={() => setFilters(DEFAULT_FILTERS)}
         className="rounded-lg px-3 py-2 text-sm mt-3"
