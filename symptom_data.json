@@ -459,6 +459,15 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/",
      "evidence": "human-cohort",
      "population": "unknown"
+    },
+    {
+     "symptom": "FUT2 (Non-secretor) status",
+     "note": "Genus level, and measured in COLONIC MUCOSA (sigmoid biopsies), not stool: an indicator-species analysis of 47 individuals (29 Crohn's, 18 controls) found a Faecalibacterium OTU among five OTUs characteristic of healthy NON-SECRETORS (sese). Treat as weak: an OTU-level indicator analysis inside an 18-person healthy subgroup, further split by genotype. IMPORTANT - this node used to be marked 'both' because a stool, SPECIES-level finding pointing the OPPOSITE way was filed here too. That finding is about F. prausnitzii specifically and now lives on its own node, where it belongs. The two are not necessarily contradictory: different taxonomic rank (genus vs species), different sample site (mucosa vs stool), different design. See the F. prausnitzii entry for the other half of the picture before concluding anything.",
+     "ref": "Rausch et al. 2011, PNAS - colonic mucosa-associated microbiota, FUT2 x Crohn's interaction, 47 sigmoid biopsies, indicator-species analysis (PMID 22068912)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/",
+     "evidence": "human-cohort",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
     }
    ],
    "down": [
@@ -704,14 +713,6 @@
     }
    ],
    "both": [
-    {
-     "symptom": "FUT2 (Non-secretor) status",
-     "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele in one cohort, implying lower abundance in non-secretors — but a separate indicator-species analysis found Faecalibacterium among the taxa characteristic of healthy non-secretor individuals, the opposite direction. Marked \"both\" given real, independently-sourced evidence on each side.",
-     "ref": "2023, Frontiers in Microbiology — FUT2 & rotavirus susceptibility; Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/",
-     "evidence": "human-cohort",
-     "population": "unknown"
-    },
     {
      "symptom": "Irritability",
      "note": "ADHD: From this app's ADHD condition data. (down) | Autism (ASD): Neurotypical siblings showed enrichment of Faecalibacterium relative to their ASD siblings in a household-matched design. (down) | Bipolar Disorder: Robust across most cohorts; Evans 2017 shows F. prausnitzii inversely correlates with SF12/PHQ9/PSQI/GAD7/ASRM within BD. But a systematic review of the Ruminococcaceae/Faecalibacterium/F. prausnitzii clade found it reduced in BD vs. controls in 3 studies and elevated in a 4th — marked \"both\" given real, independently-sourced evidence on each side. (both)",
@@ -5695,7 +5696,7 @@
   },
   {
    "name": "Desulfovibrio",
-   "count": 24,
+   "count": 25,
    "up": [
     {
      "symptom": "Abdominal pain",
@@ -5903,6 +5904,15 @@
     },
     {
      "symptom": "Hair loss",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "FUT2 (Non-secretor) status",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
      "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
@@ -8279,15 +8289,6 @@
      "population": "n/a"
     },
     {
-     "symptom": "FUT2 (Non-secretor) status",
-     "derived": true,
-     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
-     "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
-     "evidence": "derived",
-     "population": "n/a"
-    },
-    {
      "symptom": "Lack of impulse control",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
@@ -8376,6 +8377,15 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/",
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "symptom": "FUT2 (Non-secretor) status",
+     "note": "Measured at SPECIES level and in STOOL: the proportion of F. prausnitzii in feces was associated with the FUT2 wild-type (secretor) allele in a cohort of young healthy adults, which means lower in non-secretors. Context matters for how much weight to give it - the study's subject was DP8alpha regulatory T cells, which specifically recognise F. prausnitzii, and the FUT2/Treg association held only in individuals with anti-rotavirus antibodies; the F. prausnitzii abundance result is a secondary observation, not the primary endpoint. COUNTERWEIGHT, read before trusting the direction: a dedicated, well-powered study of 1,190 healthy individuals found FUT2 genotype and secretor status NOT associated with fecal microbial composition at all after multiple-testing correction, and explicitly noted that earlier positive results had not replicated (PMID 29533703). A GWAS of 8,956 people does confirm an ABO/FUT2-Faecalibacterium association without stating a direction (PMID 33462482). The best-replicated FUT2 effect on this organism is not abundance at all but STRAIN CONTENT: an F. prausnitzii structural variant carrying a GalNAc-utilisation cluster is commoner in people who secrete the GalNAc-terminated type-A antigen - jointly set by ABO and FUT2 - replicated in a Tanzanian cohort (PMID 38172637). Association, not a causal estimate: nobody has published one for FUT2 -> F. prausnitzii abundance.",
+     "ref": "Front Microbiol 2023 - FUT2, rotavirus immunity and microbiota-induced DP8alpha Tregs, young healthy adults (PMID 36922975). Counterweight: Gut Microbes 2018, n=1,190 healthy, null result (PMID 29533703); strain-level effect: Nature 2024 (PMID 38172637)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36922975/",
+     "evidence": "human-cohort",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
     }
    ],
    "both": []
