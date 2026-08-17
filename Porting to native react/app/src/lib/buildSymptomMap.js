@@ -346,10 +346,11 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       };
       swapSlots(/^FUT2/, /^ADHD$/);
       swapSlots(/^FUT2/, /^Iron deficiency/);
-      // ADHD sits further down its arc than even spacing would put it, by request -
-      // it carries the most satellites, and dropping it clears room for them below.
-      // A view preference, like the swap above, so it is named rather than derived.
-      var adhdNudge = -0.5;
+      swapSlots(/^ADHD$/, /^Iron deficiency/);
+      // No angular nudge any more: ADHD now sits in the upper slot, where outward
+      // (see the satellite rule) means UP - so its satellites land above it, which
+      // is what was wanted. Dropping it lower would have pushed them back down.
+      var adhdNudge = 0;
       var total = Math.max(haves.length + takes.length, 1);
       rimAngles = [];
       rimV = haves.concat(takes);
@@ -1361,8 +1362,13 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         dragNode.vx = 0;
         dragNode.vy = 0;
 
-        alpha = 1;
-        tick = 0;
+        // Dragging used to reset alpha to 1 and tick to 0 - a full restart of the
+        // simulation - so moving one node re-energised every spring and the whole
+        // graph visibly expanded and resettled. Reported as "the graph appears to
+        // expand when I move a node which looks weird". Now the drag only tops the
+        // energy up enough for neighbours to give way, and the tick count is left
+        // alone so the layout keeps cooling toward the arrangement it already had.
+        alpha = Math.max(alpha, 0.12);
         stopped = false;
         if (!raf) raf = requestAnimationFrame(step);
 
