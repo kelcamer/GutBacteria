@@ -422,11 +422,53 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     svg.style.userSelect = "none";
     svg.style.webkitUserSelect = "none";
 
+    // Taxonomic links (genus <-> its own species) live in their own layer,
+    // beneath the evidence edges. Reported repeatedly as a bug: FUT2 attaches to
+    // the genus Faecalibacterium while the HMO interventions attach to
+    // F. prausnitzii, so on screen the two halves of one question never met and
+    // the map looked broken.
+    //
+    // The fix is NOT to invent intervention -> genus edges. Those studies measured
+    // a species; promoting that to genus is exactly the rank inflation we just
+    // finished removing from the FUT2 data. What was actually missing is that the
+    // map had no concept of one node being a member of another.
+    //
+    // Deliberately NOT added to E: E drives adjacency, degree, "Show connections"
+    // and "Hide isolated", all of which mean "shares evidence with". A taxonomic
+    // line is a statement about naming, not evidence, so it stays a visual layer
+    // and leaves those filters meaning what they always meant.
+    var gT = document.createElementNS(NS, "g");
     var gE = document.createElementNS(NS, "g"),
       gN = document.createElementNS(NS, "g");
+    svg.appendChild(gT);
     svg.appendChild(gE);
     svg.appendChild(gN);
     host.appendChild(svg);
+    // genus node <-> species node of that same genus, whenever both are on screen.
+    // Matched on the name itself (first word), which is how this dataset encodes
+    // rank - there is no separate rank field to consult.
+    var TX = [];
+    (function() {
+      var byName = {};
+      V.forEach(function(n, i) { byName[n.name] = i; });
+      V.forEach(function(n, i) {
+        var first = String(n.name).split(" ")[0];
+        if (first === n.name) return;              // this IS a genus node
+        var g = byName[first];
+        if (g != null && g !== i) TX.push({ g: g, sp: i });
+      });
+    })();
+    var tEls = TX.map(function() {
+      var l = document.createElementNS(NS, "line");
+      l.setAttribute("stroke", "#8A7CB8");
+      l.setAttribute("stroke-opacity", "0.42");
+      l.setAttribute("stroke-width", "1.4");
+      l.setAttribute("stroke-dasharray", "2 4");   // dashed = "same organism, coarser name", not evidence
+      l.setAttribute("pointer-events", "none");
+      gT.appendChild(l);
+      return l;
+    });
+
     var eEls = E.map(function(e) {
       var l = document.createElementNS(NS, "line");
       l.setAttribute("stroke", dirColor(e.dir));
@@ -656,6 +698,19 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         l.setAttribute("y1", a.y);
         l.setAttribute("x2", b.x);
         l.setAttribute("y2", b.y);
+      }
+      for (var t = 0; t < TX.length; t++) {
+        var ga = V[TX[t].g],
+          sp = V[TX[t].sp],
+          tl = tEls[t];
+        tl.setAttribute("x1", ga.x);
+        tl.setAttribute("y1", ga.y);
+        tl.setAttribute("x2", sp.x);
+        tl.setAttribute("y2", sp.y);
+        // Hidden nodes (right-click, Hide Isolated, Show Connections) must take
+        // their taxonomic line with them, or it dangles to nothing.
+        var vis = nEls[TX[t].g].g.style.display !== "none" && nEls[TX[t].sp].g.style.display !== "none";
+        tl.setAttribute("visibility", vis ? "visible" : "hidden");
       }
       for (var q = 0; q < nEls.length; q++) {
         var ne = nEls[q];

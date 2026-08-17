@@ -42,6 +42,9 @@ export const INTERVENTION_NAMES = [
   'Lacto-N-tetraose (LNT) supplementation',
   'Lacto-N-biose (LNB, from LNT breakdown)',
   'Galacto-N-biose (GNB, from host mucin)',
+  // LNnT is NOT LNT - beta1-4 vs beta1-3, different bacterial enzymes. It has more human
+  // trial data than LNT/LNB/GNB combined and is what most commercial blends contain.
+  'Lacto-N-neotetraose (LNnT) supplementation',
   'Oral iron supplementation',
   'Alcohol-related dysbiosis',
   'Smoking-related dysbiosis',

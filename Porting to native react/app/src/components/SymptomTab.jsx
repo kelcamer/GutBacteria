@@ -22,6 +22,24 @@ const ALL_SYMPTOMS = [...(symptomData.symptoms || [])].sort((a, b) => a.localeCo
 const ALL_INTERVENTIONS = ALL_SYMPTOMS.filter((s) => isIntervention(s))
 const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !isIntervention(s))
 
+// The default Symptom -> Bacteria selection (see useState below for why).
+// Names must match symptom_data.json exactly - a typo here fails silently as
+// "that pill just never turns on", so they are asserted against ALL_SYMPTOMS
+// in dev rather than trusted.
+const DEFAULT_SYMPTOM_SELECTION = [
+  'FUT2 (Non-secretor) status',
+  "2'-Fucosyllactose (HMO) supplementation",
+  'Lacto-N-tetraose (LNT) supplementation',
+  'Lacto-N-neotetraose (LNnT) supplementation',
+  'Galacto-N-biose (GNB, from host mucin)',
+]
+const ADHD_CONDITION_ID = 'seed_76'
+
+if (import.meta.env?.DEV) {
+  const missing = DEFAULT_SYMPTOM_SELECTION.filter((s) => !ALL_SYMPTOMS.includes(s))
+  if (missing.length) console.warn('[SymptomTab] default selection names not in symptom data:', missing)
+}
+
 // Ported verbatim from `GFA_SymptomTab` in gut-flora-atlas.readable.html
 // (~line 25998-26211) - the React wrapper that mounts buildSymptomMap into
 // a plain <div> ref, used for both the global Bacteria->Symptom and
@@ -47,14 +65,33 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
-  const [extraConditionIds, setExtraConditionIds] = useState([])
+  // Default view for the Symptom -> Bacteria direction, by request: the FUT2
+  // picture with every HMO intervention on screen next to it, plus ADHD. That
+  // is the comparison this map keeps getting opened for, and rebuilding it by
+  // hand meant nine taps through three collapsed picker groups every time.
+  //
+  // Only for the Symptom -> Bacteria direction, which is pinType 'symptom'
+  // (the pin type names which node type sits pinned on the rim, so it reads
+  // backwards from the tab name - App.jsx renders 's2b' with pinType="symptom"
+  // and 'b2s' with pinType="bact"). Getting that backwards silently applies the
+  // default to the OTHER map, which is exactly what happened first time.
+  // The Bacteria -> Symptom map is a general browsing view; opening it
+  // pre-narrowed to one person's genotype question would be wrong there.
+  //
+  // Not a lock: open the picker and these pills are already lit, so one tap
+  // drops any of them, and "x clear all" returns to the full map.
+  const [extraConditionIds, setExtraConditionIds] = useState(
+    pinType === 'symptom' ? [ADHD_CONDITION_ID] : []
+  )
   // Defaults to nothing checked - so you never have to manually deselect
   // 44 pills just to get the useful default view. An empty selection
   // (of both symptoms AND conditions) means "show everything," handled by
   // buildOverlayMapData in symptomMapConditionOverlay.js; picking a
   // condition with zero symptoms checked still narrows for real (that
   // case is told apart from "nothing picked yet" there too).
-  const [selectedSymptoms, setSelectedSymptoms] = useState([])
+  const [selectedSymptoms, setSelectedSymptoms] = useState(
+    pinType === 'symptom' ? [...DEFAULT_SYMPTOM_SELECTION] : []
+  )
 
   // New (no minified-source equivalent): GlobalSearch.jsx jumping to a
   // specific symptom lands here with a fresh {symptoms: [name]} object -

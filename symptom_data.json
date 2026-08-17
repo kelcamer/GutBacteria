@@ -56,12 +56,13 @@
   "Antibiotics",
   "Lacto-N-tetraose (LNT) supplementation",
   "Lacto-N-biose (LNB, from LNT breakdown)",
-  "Galacto-N-biose (GNB, from host mucin)"
+  "Galacto-N-biose (GNB, from host mucin)",
+  "Lacto-N-neotetraose (LNnT) supplementation"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 46,
+   "count": 47,
    "up": [
     {
      "symptom": "Green tea / catechins",
@@ -81,8 +82,8 @@
     },
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
-     "note": "2'-FL is the human-milk oligosaccharide Bifidobacteria specifically feed on, and supplementing it raised gut Bifidobacterium in a 6-week RCT of 89 healthy older adults (mean age 67.3), alongside higher serum insulin, HDL cholesterol and FGF21. Crucial caveat: the trial's PRIMARY endpoint (cytokine response) was NOT met, and the benefit split the cohort — Bifidobacterium \"responders\" got extra metabolic/proteomic changes and better visual-memory scores, while non-responders were the people who lacked Bifidobacterium at baseline. So 2'-FL appears to feed an existing population rather than establish a new one, which matters most for anyone structurally depleted (e.g. FUT2 non-secretors, who cannot make this glycan themselves). A second adult RCT found 2'-FL improved microbial resilience after vancomycin, but only transiently (present at 2 weeks, gone by 8), while lowering fasting IL-6.",
-     "ref": "Cell Reports Medicine 2025, RCT n=89, NCT03690999 (PMID 40738103); Gut Microbes 2025, vancomycin-recovery RCT (PMID 41243448)",
+     "note": "2'-FL is the human-milk oligosaccharide Bifidobacteria specifically feed on, and supplementing it raised gut Bifidobacterium in a 6-week RCT of 89 healthy older adults (mean age 67.3), alongside higher serum insulin, HDL cholesterol and FGF21. Crucial caveat: the trial's PRIMARY endpoint (cytokine response) was NOT met, and the benefit split the cohort — Bifidobacterium \"responders\" got extra metabolic/proteomic changes and better visual-memory scores, while non-responders were the people who lacked Bifidobacterium at baseline. So 2'-FL appears to feed an existing population rather than establish a new one, which matters most for anyone structurally depleted (e.g. FUT2 non-secretors, who cannot make this glycan themselves). A second adult RCT found 2'-FL improved microbial resilience after vancomycin, but only transiently (present at 2 weeks, gone by 8), while lowering fasting IL-6. SPECIES HETEROGENEITY, important before reading this genus-level 'up' as universal: tested head-to-head on individual HMOs, B. longum subsp. infantis grew well on all of them, while B. longum subsp. longum and B. ADOLESCENTIS could not grow on the tested HMOs at all. That matters here because this app records B. adolescentis as one of the taxa LOWERED in FUT2 non-secretors - so 2'-FL is not the thing that corrects it. Which bifidobacteria you carry decides whether a 2'-FL supplement does anything (PMID 33193162). STRONGEST COUNTERWEIGHT TO DATE (EFFICAD, Am J Clin Nutr 2023): a 4-arm RCT in 92 adults compared oligofructose 8 g/d, 2'-FL 2 g/d ALONE, the combination, and maltodextrin placebo. The significant increases in Bifidobacterium, Bacteroides, Roseburia and F. prausnitzii occurred in the arms containing OLIGOFRUCTOSE; in the 2'-FL-alone arm 'changes in bacterial taxa were highly heterogeneous', and sole oligofructose and the combination outperformed sole 2'-FL on mood outcomes. Read together with the responder/non-responder split above, the honest summary is that 2'-FL's effect on an adult microbiota is real but inconsistent between people, and a cheaper inulin-type fructan matched or beat it on these endpoints.",
+     "ref": "Cell Reports Medicine 2025, RCT n=89, NCT03690999 (PMID 40738103); Gut Microbes 2025, vancomycin-recovery RCT (PMID 41243448); species comparison: Front Microbiol 2020 (PMID 33193162); EFFICAD trial, Am J Clin Nutr 2023, 4-arm RCT n=92, NCT05212545 (PMID 37657523)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40738103/",
      "evidence": "human-rct",
      "population": "unknown"
@@ -161,6 +162,15 @@
      "evidence": "in-vitro",
      "population": "n/a",
      "evidence_source": "hand-classified"
+    },
+    {
+     "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
+     "note": "The bifidogenic effect is the best-replicated HMO result in adults: a 100-person RCT (relative abundance of Bifidobacterium rose substantially), a SHIME fermentation model where 2'FL, LNnT and their mix all raised bifidobacteria with a rise in SCFAs, and a randomised IBS trial where a 2'FL/LNnT mix raised fecal bifidobacteria without worsening overall GI symptoms. LNnT has more human data behind it than LNT, LNB and GNB combined - and note it is a DIFFERENT molecule from LNT (beta1-4 vs beta1-3 linkage, different bacterial enzymes). ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean.",
+     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686); Suligoj et al. 2020, Nutrients - SHIME (PMID 32933181); Iribarren et al. 2020, Neurogastroenterol Motil - randomised IBS trial, 2'FL/LNnT (PMID 32536023)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
+     "evidence": "human-rct",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
     }
    ],
    "down": [
@@ -725,7 +735,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 42,
+   "count": 43,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -815,6 +825,15 @@
      "evidence": "in-vitro",
      "population": "n/a",
      "evidence_source": "hand-classified"
+    },
+    {
+     "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_blongum_roseburia_acetate.",
+     "ref": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/",
+     "evidence": "derived",
+     "population": "n/a"
     }
    ],
    "down": [
@@ -2047,7 +2066,7 @@
   },
   {
    "name": "Firmicutes",
-   "count": 5,
+   "count": 7,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -2089,6 +2108,24 @@
      "ref": "PMC3597605",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/",
      "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "note": "Relative abundance of Firmicutes fell in the same trial that raised Actinobacteria. COMPOSITIONALITY CAVEAT: these are RELATIVE abundances. A large bifidobacterial bloom mathematically shrinks everyone else's share, so a reported decrease here is not evidence that the organism was lost in absolute terms. ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean.",
+     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
+     "evidence": "human-rct",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
+     "note": "Relative abundance of Firmicutes fell. COMPOSITIONALITY CAVEAT: these are RELATIVE abundances. A large bifidobacterial bloom mathematically shrinks everyone else's share, so a reported decrease here is not evidence that the organism was lost in absolute terms. ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean.",
+     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
+     "evidence": "human-rct",
+     "evidence_source": "hand-classified",
      "population": "unknown"
     }
    ]
@@ -2590,7 +2627,7 @@
      "population": "unknown"
     },
     {
-     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "symptom": "Sleep disturbance",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Eubacterium hallii is up here, and Eubacterium hallii feeds Akkermansia (pseudovitamin B12 -> propionate), so Akkermansia is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_ehallii_akkermansia_b12.",
      "ref": "derived via cf_ehallii_akkermansia_b12 - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
@@ -2599,13 +2636,13 @@
      "population": "n/a"
     },
     {
-     "symptom": "Sleep disturbance",
-     "derived": true,
-     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Eubacterium hallii is up here, and Eubacterium hallii feeds Akkermansia (pseudovitamin B12 -> propionate), so Akkermansia is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_ehallii_akkermansia_b12.",
-     "ref": "derived via cf_ehallii_akkermansia_b12 - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/",
-     "evidence": "derived",
-     "population": "n/a"
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "note": "Upgraded from a cross-feeding inference to a measured (if animal) result: in an ovalbumin-sensitised mouse model, 2'-FL increased Akkermansia abundance alongside higher SCFAs, a strengthened gut barrier and reduced allergic markers. Mouse evidence - the direction agrees with the cross-feeding route this app already modelled via Eubacterium hallii, but it has not been demonstrated in humans.",
+     "ref": "Food Funct 2023 - 2'-FL in OVA-sensitised mice, gut microecology and Th1/Th2 balance (PMID 38009336)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38009336/",
+     "evidence": "animal",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
     }
    ],
    "down": [
@@ -2733,7 +2770,7 @@
   },
   {
    "name": "Lachnospiraceae",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "FUT2 (Non-secretor) status",
@@ -2741,6 +2778,15 @@
      "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/",
      "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "note": "2'-FL increased Lachnospiraceae (UCG-006) in an ovalbumin-sensitised mouse model. RECORDED BECAUSE IT CUTS THE WRONG WAY: this app lists Lachnospiraceae as already RAISED in FUT2 non-secretors, so if this animal result carries over, 2'-FL pushes it further in the same direction rather than correcting it. Mouse data, one model, and family-level.",
+     "ref": "Food Funct 2023 - 2'-FL in OVA-sensitised mice (PMID 38009336)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38009336/",
+     "evidence": "animal",
+     "evidence_source": "hand-classified",
      "population": "unknown"
     }
    ],
@@ -2922,7 +2968,7 @@
   },
   {
    "name": "Actinobacteria",
-   "count": 7,
+   "count": 9,
    "up": [
     {
      "symptom": "Mania",
@@ -2947,6 +2993,24 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/",
      "evidence": "in-vitro",
      "population": "n/a"
+    },
+    {
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "note": "Measured directly at PHYLUM level in people: HMO supplementation produced 'substantial increases in relative abundance of Actinobacteria and Bifidobacterium in particular'. READ THIS AS ONE FINDING, NOT TWO: Bifidobacterium IS an Actinobacteria, so this is the same organisms counted at a coarser rank, not independent corroboration of the genus-level result. ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean.",
+     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
+     "evidence": "human-rct",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
+     "note": "Same trial, same phylum-level increase; LNnT was given alone and mixed with 2'FL. ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean. As above, this is Bifidobacterium counted at phylum rank.",
+     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
+     "evidence": "human-rct",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
     }
    ],
    "down": [
@@ -3268,7 +3332,7 @@
   },
   {
    "name": "Anaerostipes",
-   "count": 43,
+   "count": 44,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -3361,6 +3425,15 @@
     },
     {
      "symptom": "Galacto-N-biose (GNB, from host mucin)",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
+     "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
      "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
@@ -3705,7 +3778,7 @@
   },
   {
    "name": "Proteobacteria",
-   "count": 12,
+   "count": 14,
    "up": [
     {
      "symptom": "Sensory processing issues",
@@ -3796,6 +3869,24 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/",
      "evidence": "animal",
      "population": "male"
+    },
+    {
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "note": "Relative abundance of Proteobacteria fell alongside the bifidogenic effect. COMPOSITIONALITY CAVEAT: these are RELATIVE abundances. A large bifidobacterial bloom mathematically shrinks everyone else's share, so a reported decrease here is not evidence that the organism was lost in absolute terms. NOT A CORRECTION FOR NON-SECRETORS: this app records Proteobacteria as already LOWER in FUT2 non-secretors, so pushing it down further compounds that direction rather than offsetting it. ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean.",
+     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
+     "evidence": "human-rct",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
+     "note": "Relative abundance of Proteobacteria fell. COMPOSITIONALITY CAVEAT: these are RELATIVE abundances. A large bifidobacterial bloom mathematically shrinks everyone else's share, so a reported decrease here is not evidence that the organism was lost in absolute terms. Same non-secretor caveat as the 2'-FL entry: FUT2 already associates with lower Proteobacteria. ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean.",
+     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
+     "evidence": "human-rct",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
     }
    ],
    "both": [
@@ -6918,8 +7009,18 @@
   },
   {
    "name": "Bifidobacterium Bifidum",
-   "count": 1,
-   "up": [],
+   "count": 2,
+   "up": [
+    {
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "note": "Species level: B. bifidum is one of the two species repeatedly shown to use human milk oligosaccharides as a sole carbon source in vitro (with B. longum subsp. infantis), which is why it is among the species a 2'-FL supplement can actually feed. Contrast the B. adolescentis picture noted on the genus entry - the genus-level 'up' hides real species-by-species differences.",
+     "ref": "Ruiz-Moyano et al. 2013, Appl Environ Microbiol - HMO consumption across infant-gut Bifidobacterium strains (PMID 23892749)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23892749/",
+     "evidence": "in-vitro",
+     "evidence_source": "hand-classified",
+     "population": "n/a"
+    }
+   ],
    "down": [
     {
      "symptom": "FUT2 (Non-secretor) status",
@@ -6965,7 +7066,7 @@
   },
   {
    "name": "Eubacterium hallii",
-   "count": 43,
+   "count": 44,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -7066,6 +7167,15 @@
     },
     {
      "symptom": "Galacto-N-biose (GNB, from host mucin)",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
+     "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
      "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
@@ -7992,12 +8102,12 @@
   },
   {
    "name": "Faecalibacterium prausnitzii",
-   "count": 46,
+   "count": 47,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
-     "note": "INDIRECT / cross-fed, not a direct effect. 2'-FL is not consumed by F. prausnitzii itself — Bifidobacterium bifidum degrades the HMO and releases the constituent sugars plus acetate and lactate, which F. prausnitzii then converts to butyrate. Demonstrated in in-vitro co-culture, so this is a mechanism established in the lab rather than a measured outcome in people; the human 2'-FL RCTs in this app only reported Bifidobacterium itself. Worth noting the cross-feeding chain is the reason a bifidogenic prebiotic can raise butyrate without directly feeding any butyrate producer.",
-     "ref": "Microorganisms 2025 — B. bifidum/F. prausnitzii co-culture (PMID 40732214)",
+     "note": "INDIRECT / cross-fed, not a direct effect. 2'-FL is not consumed by F. prausnitzii itself — Bifidobacterium bifidum degrades the HMO and releases the constituent sugars plus acetate and lactate, which F. prausnitzii then converts to butyrate. Demonstrated in in-vitro co-culture, so this is a mechanism established in the lab rather than a measured outcome in people; the human 2'-FL RCTs in this app only reported Bifidobacterium itself. Worth noting the cross-feeding chain is the reason a bifidogenic prebiotic can raise butyrate without directly feeding any butyrate producer. DOSE OF REALISM from the same head-to-head study: F. prausnitzii in monoculture reached a LOWER cell density on the HMOs than on glucose, and in coculture with B. longum subsp. infantis it was 6'-sialyllactose rather than 2'-FL that promoted growth. The cross-feeding route is real but 2'-FL is not obviously the best substrate for driving it (PMID 33193162).",
+     "ref": "Microorganisms 2025 — B. bifidum/F. prausnitzii co-culture (PMID 40732214); Front Microbiol 2020, HMO growth panel + coculture (PMID 33193162)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
      "evidence": "in-vitro",
      "population": "n/a"
@@ -8070,6 +8180,15 @@
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Roseburia -> Faecalibacterium prausnitzii (beta-mannan breakdown products, in-vitro-coculture, cf_roseburia_fprausnitzii_mannan).",
      "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214) | derived via cf_roseburia_fprausnitzii_mannan - FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
+     "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
      "evidence": "derived",
      "population": "n/a"
