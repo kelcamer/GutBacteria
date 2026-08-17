@@ -403,6 +403,16 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         else if (/^Lacto-N-tetraose/.test(n.name)) lntN = n;
       });
       if (ironN && lntN) ironN.y = lntN.y;
+      // No rim node may sit level with the inner row. The row is at H/2, and a rim
+      // node landing on that line puts its edges along the row instead of across
+      // it - the links disappear behind the very nodes they connect to. Reported of
+      // 2'-FL, which lands near the midline whenever it is the only intervention
+      // selected. Pushed clear on whichever side of the row it already sits.
+      var clearance = H * 0.13;
+      rimV.forEach(function(n) {
+        var gap = n.y - H / 2;
+        if (Math.abs(gap) < clearance) n.y = H / 2 + (gap >= 0 ? clearance : -clearance);
+      });
     }
     placeDynamic();
     // Barycenter crossing-reduction: re-sort the rim by the angle of each node's

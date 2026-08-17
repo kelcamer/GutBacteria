@@ -1470,8 +1470,8 @@
     },
     {
      "symptom": "FUT2 (Non-secretor) status",
-     "note": "One of five indicator OTUs (alongside unclassified Lachnospiraceae, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
-     "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "note": "One of five indicator OTUs (alongside unclassified Lachnospiraceae, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis. DISSENT, recorded not resolved: in 19 post-bariatric-surgery patients, Prevotella increased among SECRETORS - the opposite direction. Small, and a heavily confounded population, so it does not overturn the finding; it does mean this arrow is no longer unopposed (PMID 32872099).",
+     "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912); dissent (PMID 32872099)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -1856,8 +1856,8 @@
     },
     {
      "symptom": "FUT2 (Non-secretor) status",
-     "note": "Significant increase in Bacteroidetes among non-secretors (ANOVA, p=0.036) in a healthy-subject cohort comparison.",
-     "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
+     "note": "Significant increase in Bacteroidetes among non-secretors (ANOVA, p=0.036) in a healthy-subject cohort comparison. CORROBORATED: a second cohort (n=33, LEFSE, stool) found Bacteroides higher in non-secretors - genus level supporting a phylum claim, so not a perfect match, but it is an independent study pointing the same way (PMID 28710295).",
+     "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912); corroborated at genus level (PMID 28710295)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -6680,7 +6680,7 @@
     },
     {
      "symptom": "FUT2 (Non-secretor) status",
-     "note": "One of five indicator OTUs (alongside Prevotella, unclassified Lachnospiraceae, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "note": "One of five indicator OTUs (alongside Prevotella, unclassified Lachnospiraceae, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis. SEARCHED, NOTHING FOUND: a targeted search for any other study of Sutterella against secretor status returns nothing. This arrow rests entirely on one indicator-species analysis inside an 18-person healthy subgroup, and no corroboration exists to find. Treat accordingly.",
      "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/",
      "evidence": "human-cohort",

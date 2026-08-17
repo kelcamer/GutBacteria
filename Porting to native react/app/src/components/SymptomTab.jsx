@@ -362,26 +362,21 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters, onFilt
         </div>
       )}
 
-      {/* Grouping is lossy in one specific way - members can disagree - so the map
-          says so out loud rather than letting a merged arrow look unanimous. */}
+      {/* Deliberately general. This used to enumerate "13 genera absorbed their
+          species, 4 of them contain members that disagree (Akkermansia (6)...)",
+          which was precise for one selection and stale-looking the moment the map
+          changed - after Snap back most of all, since that reloads the full
+          dataset and every count in the sentence moves at once. The behaviour it
+          describes is constant, so the sentence should be too. */}
       {grouped && (
         <div
           className="rounded-xl mb-3 px-3 py-2"
-          style={{ background: theme.ink2, border: `1px solid ${grouped.summary.conflicts ? '#FFC857' : theme.line}`, fontSize: 12.5, color: theme.muted, maxWidth: 700 }}
+          style={{ background: theme.ink2, border: `1px solid ${theme.line}`, fontSize: 12.5, color: theme.muted, maxWidth: 700 }}
         >
-          <b style={{ color: theme.text }}>Grouped by genus</b> — {grouped.summary.merged} genera absorbed their species.{' '}
-          {grouped.summary.conflicts > 0 ? (
-            <>
-              <b style={{ color: '#FFC857' }}>
-                {grouped.summary.conflicts === 1
-                  ? 'one of them contains members that disagree'
-                  : `${grouped.summary.conflicts} of them contain members that disagree`}
-              </b>{' '}({grouped.summary.conflictNames.join(', ')}).
-              Those claims render as contested (↔) rather than picking a winner — open the node to see each member's own evidence. Ungroup to see them as separate nodes, which is how the data is actually stored.
-            </>
-          ) : (
-            <>No member disagreements in the current selection.</>
-          )}
+          <b style={{ color: theme.text }}>Grouped by genus</b> — species are folded into their genus node. Where a
+          genus's members disagree, that claim shows as <b style={{ color: '#FFC857' }}>contested (↔)</b> rather than
+          picking a winner; open the node to see each member's own evidence. Ungroup from the map controls to see them
+          as separate nodes, which is how the data is stored.
         </div>
       )}
 
