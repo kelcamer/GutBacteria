@@ -68,11 +68,11 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     touchAction: 'manipulation',
   }
 
-  // Snap back and Connections are the two kept always-visible; the rest
-  // collapse on narrow screens. Scramble sits in here rather than up front
-  // because it's the least-reached-for of the six in practice.
+  // Snap back, Connections and Scramble stay always-visible; the filters
+  // collapse on narrow screens. Crossfeeding is unshifted to the FRONT of
+  // that group below - it changes what data is on screen at all, which is a
+  // bigger deal than the view filters it sits above.
   const overflow = [
-    { label: '🔀 Scramble', fn: keepScroll(onScramble) },
     { label: '🕸️ Hide Isolated', fn: keepScroll(onHideIsolated) },
     { label: '▲ Increased Only', fn: keepScroll(onIncreasedOnly) },
     { label: '▼ Decreased Only', fn: keepScroll(onDecreasedOnly) },
@@ -83,7 +83,7 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
   // omit onToggleCrossFeed and the button is hidden rather than shown doing
   // nothing - a control that appears to work and doesn't is worse than absent.
   if (onToggleCrossFeed) {
-    overflow.push({
+    overflow.unshift({
       label: showCrossFeed ? '🚫 Hide Crossfeeding' : '🔀 Show Crossfeeding',
       fn: keepScroll(() => {
         const next = !showCrossFeed
@@ -100,6 +100,9 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
       </button>
       <button onClick={keepScroll(onConnections)} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
         🔗 Connections
+      </button>
+      <button onClick={keepScroll(onScramble)} className="rounded-lg px-3 py-1.5 text-sm" style={btn}>
+        🔀 Scramble
       </button>
 
       {/* Wide screens: the remaining four inline. */}

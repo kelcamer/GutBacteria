@@ -61,4 +61,13 @@ if ! (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_duplicate_keys.py") >&2;
   exit 1
 fi
 
+# Measured data must always beat inferred cross-feeding links.
+if ! (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_derived_precedence.py") >&2; then
+  echo "" >&2
+  echo "pre-commit: a derived cross-feeding link is sitting on top of measured" >&2
+  echo "data (see above). Measured data always wins - drop the derived entry." >&2
+  echo "(Emergency bypass: git commit --no-verify)" >&2
+  exit 1
+fi
+
 exit 0
