@@ -635,6 +635,28 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_seed_1_cf_badolescentis_lactate_utilisers_Anaerostipes",
+     "name": "Anaerostipes",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
+     "links": [
+      {
+       "id": "cf_seed_1_cf_badolescentis_lactate_utilisers_l1",
+       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      },
+      {
+       "id": "cf_seed_1_cf_akkermansia_anaerostipes_l2",
+       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -2120,6 +2142,28 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_seed_76_cf_badolescentis_lactate_utilisers_Anaerostipes",
+     "name": "Anaerostipes",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
+     "links": [
+      {
+       "id": "cf_seed_76_cf_badolescentis_lactate_utilisers_l1",
+       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      },
+      {
+       "id": "cf_seed_76_cf_akkermansia_anaerostipes_l2",
+       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -3068,6 +3112,28 @@
        "id": "cf_seed_123_cf_infantis_ehallii_l1",
        "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_seed_123_cf_badolescentis_lactate_utilisers_Anaerostipes",
+     "name": "Anaerostipes",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
+     "links": [
+      {
+       "id": "cf_seed_123_cf_badolescentis_lactate_utilisers_l1",
+       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      },
+      {
+       "id": "cf_seed_123_cf_akkermansia_anaerostipes_l2",
+       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
      ],
      "evidence": "derived",
@@ -6309,6 +6375,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_seed_353_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_353_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -7965,6 +8048,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_seed_fe_supp_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_fe_supp_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -8332,6 +8432,28 @@
        "id": "cf_seed_480_cf_bacteroides_phascolarctobacterium_l1",
        "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_seed_480_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695) | derived via cf_akkermansia_roseburia_mucin - Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Roseburia (mucin O-glycans, galacto-N-biose (GNB), in-vitro-coculture, cf_akkermansia_roseburia_mucin).",
+     "links": [
+      {
+       "id": "cf_seed_480_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      },
+      {
+       "id": "cf_seed_480_cf_akkermansia_roseburia_mucin_l2",
+       "label": "Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/"
       }
      ],
      "evidence": "derived",
@@ -9600,6 +9722,23 @@
        "id": "cf_seed_ibs_cf_bacteroides_phascolarctobacterium_l1",
        "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_seed_ibs_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_ibs_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
      ],
      "evidence": "derived",
@@ -12138,6 +12277,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_new_pso_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_pso_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -12816,6 +12972,28 @@
        "id": "cf_new_smk_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_new_smk_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695) | derived via cf_akkermansia_roseburia_mucin - Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Roseburia (mucin O-glycans, galacto-N-biose (GNB), in-vitro-coculture, cf_akkermansia_roseburia_mucin).",
+     "links": [
+      {
+       "id": "cf_new_smk_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      },
+      {
+       "id": "cf_new_smk_cf_akkermansia_roseburia_mucin_l2",
+       "label": "Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/"
       }
      ],
      "evidence": "derived",
@@ -13630,6 +13808,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_new_pcos_1_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_pcos_1_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -14207,6 +14402,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_new_perimeno_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_perimeno_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -14730,6 +14942,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_new_prog_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_prog_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -14958,6 +15187,23 @@
        "id": "cf_new_lupus_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_new_lupus_cf_blongum_roseburia_acetate_Roseburia",
+     "name": "Roseburia",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_lupus_cf_blongum_roseburia_acetate_l1",
+       "label": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
      ],
      "evidence": "derived",
