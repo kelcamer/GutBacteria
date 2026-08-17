@@ -520,6 +520,9 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       dragStartY = 0;
     // Roughly a short taxon label's width, and the vertical band within which two
     // labels would print over each other.
+    // Lay the inner nodes out as a horizontal band rather than a cloud - symptom
+    // rim only, where the taxa sit in the middle with room either side.
+    var flatten = pinType === "symptom";
     var LABEL_GAP = 78,
       LABEL_ROW = 13;
     var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
@@ -622,8 +625,15 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           n.vy = 0;
           continue;
         }
-        n.vx += (cx - n.x) * 0.006 * alpha;
-        n.vy += (cy - n.y) * 0.006 * alpha;
+        // The centring pull used to be equal in both axes, which gathers the taxa
+        // into a blob. On the symptom map they are pulled into a BAND instead:
+        // weak horizontally so they spread wide, strong vertically so they flatten
+        // onto a reading line. Eyes track left to right, labels are horizontal
+        // text, and a row of names is scannable in a way a cloud never is - so the
+        // axis with the most room should be the one carrying the most nodes.
+        // Slight label overlap is an accepted trade for that.
+        n.vx += (cx - n.x) * (flatten ? 0.0022 : 0.006) * alpha;
+        n.vy += (cy - n.y) * (flatten ? 0.055 : 0.006) * alpha;
         n.vx *= 0.85;
         n.vy *= 0.85;
         n.x += Math.max(-9, Math.min(9, n.vx));
