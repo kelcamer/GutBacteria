@@ -213,6 +213,33 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       V[e.t].adjE.push(ei);
     });
 
+    // COLOUR GROUPING. Nodes whose edges are the same colour are pulled to the
+    // same horizontal zone, so the taxa a condition DEPLETES sit together, the
+    // ones an intervention RAISES sit together, and the contested ones sit between.
+    // Two effects, both asked for: same-coloured nodes end up adjacent (easier to
+    // read as a group than scattered), and edges of one colour stop crossing edges
+    // of another to reach nodes on the far side.
+    //
+    // Zones run left to right: decreased, contested/null, increased. A node's zone
+    // is decided by which colour it carries MOST, so a taxon that is mostly
+    // depleted still reads as depleted even if one intervention raises it.
+    if (pinType === "symptom") {
+      var ZONE = { down: 0.26, both: 0.5, none: 0.5, up: 0.74 };
+      V.forEach(function(n) {
+        if (n.pin) return;
+        var tally = {};
+        n.adjE.forEach(function(ei) {
+          var dd = E[ei].dir;
+          tally[dd] = (tally[dd] || 0) + 1;
+        });
+        var best = null, bestN = -1;
+        Object.keys(tally).forEach(function(k) {
+          if (tally[k] > bestN) { bestN = tally[k]; best = k; }
+        });
+        n.groupX = W * (ZONE[best] != null ? ZONE[best] : 0.5);
+      });
+    }
+
     var rimV = V.filter(function(n) {
       return n.pin;
     });
@@ -485,7 +512,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // halves how many labels contend for any given row, and it is stable
           // (parity of a fixed index, not of a position that moves every frame),
           // so a label does not flip sides as the simulation settles.
-          var labelBelow = (n.i % 2) === 1;
+          // A node with no other connections gets its label ABOVE, always: it sits
+          // out on its own with clear space over it, and the crowding that makes
+          // alternating worthwhile is happening below among the connected nodes.
+          var labelBelow = n.deg > 1 && (n.i % 2) === 1;
           tb.setAttribute("dy", String(labelBelow ? rr + 8 : -(rr + 2.5)));
           tb.setAttribute("font-size", "7.5");
           tb.setAttribute("fill", "#A08FC7");
@@ -632,7 +662,11 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // text, and a row of names is scannable in a way a cloud never is - so the
         // axis with the most room should be the one carrying the most nodes.
         // Slight label overlap is an accepted trade for that.
-        n.vx += (cx - n.x) * (flatten ? 0.0022 : 0.006) * alpha;
+        // Deliberately WEAK: the zone is a bias, not a magnet. At 0.02 it beat the
+        // horizontal label separation and squeezed every taxon back into a knot -
+        // worse than no grouping at all. At 0.005 nodes drift toward their colour's
+        // zone while repulsion still spreads them out within it.
+        n.vx += ((flatten && n.groupX != null ? n.groupX : cx) - n.x) * (flatten ? 0.005 : 0.006) * alpha;
         n.vy += (cy - n.y) * (flatten ? 0.055 : 0.006) * alpha;
         n.vx *= 0.85;
         n.vy *= 0.85;
