@@ -17434,6 +17434,30 @@ Error generating stack: ` + r.message + `
             "label": "FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/42283799/"
           }]
+        }, {
+          "id": "cf_new_meno_1_cf_akkermansia_anaerostipes_Anaerostipes",
+          "name": "Anaerostipes",
+          "dir": "down",
+          "derived": true,
+          "refs": "derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+          "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Akkermansia is down here, and it feeds Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+          "links": [{
+            "id": "cf_new_meno_1_cf_akkermansia_anaerostipes_l1",
+            "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+          }]
+        }, {
+          "id": "cf_new_meno_1_cf_akkermansia_eubacterium_hall_Eubacterium_hallii",
+          "name": "Eubacterium hallii",
+          "dir": "down",
+          "derived": true,
+          "refs": "derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+          "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Akkermansia is down here, and it feeds Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+          "links": [{
+            "id": "cf_new_meno_1_cf_akkermansia_eubacterium_hall_l1",
+            "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+          }]
         }]
       }, {
         "id": "new_perimeno",
@@ -23833,7 +23857,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Akkermansia",
-      "count": 18,
+      "count": 20,
       "up": [{
         "symptom": "Green tea / catechins",
         "note": "Green tea and EGCG encouraged Akkermansia growth, with EGCG-fed mice showing increased Akkermansia alongside raised butyrate production. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
@@ -23849,6 +23873,18 @@ select{-webkit-appearance:none;appearance:none}
         "note": "Enriched specifically in patients with delayed colonic transit.",
         "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
         "url": "https://doi.org/10.3389/fmicb.2026.1817279"
+      }, {
+        "symptom": "2'-Fucosyllactose (HMO) supplementation",
+        "derived": true,
+        "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Eubacterium hallii is up here, and Eubacterium hallii feeds Akkermansia (pseudovitamin B12 -> propionate), so Akkermansia is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_ehallii_akkermansia_b12.",
+        "ref": "derived via cf_ehallii_akkermansia_b12 - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }, {
+        "symptom": "Sleep disturbance",
+        "derived": true,
+        "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Eubacterium hallii is up here, and Eubacterium hallii feeds Akkermansia (pseudovitamin B12 -> propionate), so Akkermansia is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_ehallii_akkermansia_b12.",
+        "ref": "derived via cf_ehallii_akkermansia_b12 - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }],
       "down": [{
         "symptom": "Gut barrier dysfunction",
@@ -24262,7 +24298,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Anaerostipes",
-      "count": 38,
+      "count": 40,
       "up": [{
         "symptom": "Exercise-associated microbiota changes",
         "note": "SCFA-producing Firmicutes genus with increased abundance after exercise intervention, positively correlated with insulin sensitivity and cardiorespiratory fitness.",
@@ -24487,6 +24523,18 @@ select{-webkit-appearance:none;appearance:none}
         "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
         "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }, {
+        "symptom": "Irritability",
+        "derived": true,
+        "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Akkermansia is down here, and Akkermansia feeds Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_akkermansia_anaerostipes.",
+        "ref": "derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }, {
+        "symptom": "Dizziness / orthostatic intolerance",
+        "derived": true,
+        "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Akkermansia is down here, and Akkermansia feeds Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_akkermansia_anaerostipes.",
+        "ref": "derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }]
     }, {
       "name": "Fusicatenibacter",
@@ -26478,7 +26526,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Eubacterium hallii",
-      "count": 38,
+      "count": 40,
       "up": [{
         "symptom": "2'-Fucosyllactose (HMO) supplementation",
         "note": "INDIRECT / cross-fed, not a direct effect. Bifidobacterium infantis metabolises 2'-FL and releases acetate, lactate and 1,2-propanediol; E. hallii consumes those to produce butyrate. The syntrophy is structure- and strain-specific — it depends on which fucosylated HMO and which B. infantis strain is present. Shown in in-vitro co-culture and a modelled microbiome, not measured in a human supplementation trial. Notably, one study found the B. adolescentis to A. hallii to butyrate link only in ADULTS, so this cross-feeding route may matter more in adults than infants.",
@@ -26706,6 +26754,18 @@ select{-webkit-appearance:none;appearance:none}
         "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
         "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
+      }, {
+        "symptom": "Irritability",
+        "derived": true,
+        "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Akkermansia is down here, and Akkermansia feeds Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_akkermansia_eubacterium_hall.",
+        "ref": "derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }, {
+        "symptom": "Dizziness / orthostatic intolerance",
+        "derived": true,
+        "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Akkermansia is down here, and Akkermansia feeds Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_akkermansia_eubacterium_hall.",
+        "ref": "derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }]
     }, {
       "name": "Alcaligenaceae",
@@ -27125,7 +27185,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Faecalibacterium prausnitzii",
-      "count": 42,
+      "count": 43,
       "up": [{
         "symptom": "2'-Fucosyllactose (HMO) supplementation",
         "note": "INDIRECT / cross-fed, not a direct effect. 2'-FL is not consumed by F. prausnitzii itself — Bifidobacterium bifidum degrades the HMO and releases the constituent sugars plus acetate and lactate, which F. prausnitzii then converts to butyrate. Demonstrated in in-vitro co-culture, so this is a mechanism established in the lab rather than a measured outcome in people; the human 2'-FL RCTs in this app only reported Bifidobacterium itself. Worth noting the cross-feeding chain is the reason a bifidogenic prebiotic can raise butyrate without directly feeding any butyrate producer.",
@@ -27356,6 +27416,12 @@ select{-webkit-appearance:none;appearance:none}
         "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
         "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
+      }, {
+        "symptom": "Irritability",
+        "derived": true,
+        "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Akkermansia is down here, and Akkermansia feeds Faecalibacterium prausnitzii (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_akkermansia_faecalibacterium_prau.",
+        "ref": "derived via cf_akkermansia_faecalibacterium_prau - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }],
       "both": []
     }, {

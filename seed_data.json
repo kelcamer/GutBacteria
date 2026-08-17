@@ -12488,6 +12488,36 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/42283799/"
       }
      ]
+    },
+    {
+     "id": "cf_new_meno_1_cf_akkermansia_anaerostipes_Anaerostipes",
+     "name": "Anaerostipes",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Akkermansia is down here, and it feeds Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_meno_1_cf_akkermansia_anaerostipes_l1",
+       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }
+     ]
+    },
+    {
+     "id": "cf_new_meno_1_cf_akkermansia_eubacterium_hall_Eubacterium_hallii",
+     "name": "Eubacterium hallii",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Akkermansia is down here, and it feeds Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_meno_1_cf_akkermansia_eubacterium_hall_l1",
+       "label": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }
+     ]
     }
    ]
   },
