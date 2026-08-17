@@ -328,6 +328,19 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       //
       // Screen angles: -PI/2 is top, 0 is right, +PI/2 is bottom, PI is left.
       // So -3PI/4 is top-left and +PI/4 is bottom-right.
+      // Swap FUT2 and ADHD's slots, by request. Named explicitly because it is a
+      // preference about this particular default view, not a rule the layout can
+      // derive - and a no-op on any selection that lacks one of them.
+      var iF = -1, iA = -1;
+      haves.forEach(function(n, i) {
+        if (/^FUT2/.test(n.name)) iF = i;
+        else if (n.name === "ADHD") iA = i;
+      });
+      if (iF >= 0 && iA >= 0) {
+        var swap = haves[iF];
+        haves[iF] = haves[iA];
+        haves[iA] = swap;
+      }
       var total = Math.max(haves.length + takes.length, 1);
       rimAngles = [];
       rimV = haves.concat(takes);
@@ -576,6 +589,8 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     // Lay the inner nodes out as a horizontal band rather than a cloud - symptom
     // rim only, where the taxa sit in the middle with room either side.
     var flatten = pinType === "symptom";
+    // How far above its parent a single-connection taxon floats.
+    var SATELLITE_RISE = 84;
     var LABEL_GAP = 78,
       LABEL_ROW = 13;
     var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
@@ -685,6 +700,24 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // text, and a row of names is scannable in a way a cloud never is - so the
         // axis with the most room should be the one carrying the most nodes.
         // Slight label overlap is an accepted trade for that.
+        // A taxon connected to exactly one thing is that node's satellite, and it
+        // belongs ABOVE it - up in the clear space, not tucked underneath where it
+        // collides with the node's own label and with the row below. Reported as
+        // "the ADHD ones that have nothing else connected are still BELOW".
+        if (flatten && n.deg < 2 && n.adj.length === 1) {
+          var par = V[n.adj[0]];
+          if (par && par.pin) {
+            n.vx += (par.x - n.x) * 0.03 * alpha;
+            n.vy += (par.y - SATELLITE_RISE - n.y) * 0.06 * alpha;
+            n.vx *= 0.85;
+            n.vy *= 0.85;
+            n.x += Math.max(-9, Math.min(9, n.vx));
+            n.y += Math.max(-9, Math.min(9, n.vy));
+            n.x = Math.max(14, Math.min(W - 14, n.x));
+            n.y = Math.max(28, Math.min(H - 14, n.y));
+            continue;
+          }
+        }
         // Deliberately WEAK: the zone is a bias, not a magnet. At 0.02 it beat the
         // horizontal label separation and squeezed every taxon back into a knot -
         // worse than no grouping at all. At 0.005 nodes drift toward their colour's
