@@ -315,6 +315,44 @@ Fixed by merging into the existing arrays, and prevented from recurring by
 
 ---
 
+## Data standard: when "both" is honest and when it is a cop-out
+
+Prompted by ADHD's Bifidobacterium entry, which was marked `both` and should
+not have been.
+
+**`both` means genuine equipoise** — two credible bodies of evidence pointing
+opposite ways, where neither supersedes the other. Legitimate examples already
+in this app:
+
+- **Akkermansia / T2D** — cross-sectional depletion in established disease vs.
+  a prospective cohort where high baseline predicts future onset. Different
+  questions, both well-powered.
+- **Collinsella / arterial stiffness** — two large cohorts (n=3,087 and n=617)
+  disagreeing outright.
+- **Lactobacillus / psilocybin** — human-derived in-vitro community vs. live
+  mice.
+
+**`both` is NOT for "a dissenting paper exists."** ADHD's Bifidobacterium had
+one small 2017 study with uncorrected p-values, which its own authors called
+"marginally significant", against a meta-analysis of 8 studies plus a 15-pair
+replication. Marking that `both` gave the weak claim equal visual weight on the
+map — a distortion in its own right, and one that hides a real signal behind
+false balance.
+
+Correct handling: set the direction the evidence supports, and keep the
+superseded claim **in the note**, explicitly labelled as superseded and with the
+reason. Nothing is deleted; it just stops being presented as a coin-flip.
+
+If every contested finding becomes `both`, the direction field stops carrying
+information.
+
+**Outstanding:** 35 condition-level `both` entries have not been audited against
+this standard. Some are genuine equipoise; others may be the ADHD pattern.
+Worth a pass — the tell is a `both` whose two sides differ sharply in study
+size or quality.
+
+---
+
 ## Rejected / unverified — NOT added
 
 Recorded so the same dead ends aren't re-walked.
