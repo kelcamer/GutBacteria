@@ -1,16 +1,21 @@
+import { useState } from 'react'
 import { theme } from '../theme'
 import crossFeeding from '../../../../cross_feeding.json'
 import { Italic } from './Italic'
+import { CrossFeedingGraph } from './CrossFeedingGraph'
 
 // The microbe-to-microbe layer on its own, with no conditions or symptoms in
 // the way. Everywhere else in the app these relationships only show up as
 // consequences - derived links scattered across conditions - so there was no
 // single place to see the network itself.
 //
-// Deliberately NOT a force graph. There are five edges. A force simulation of
-// five edges is less legible than a list, and it would mean touching the two
-// map engines, which is the riskiest code in this repo. If the network grows
-// past ~20 edges this decision is worth revisiting.
+// Layout is a node network first (CrossFeedingGraph), detail cards below.
+//
+// Still deliberately NOT buildSymptomMap/buildMap. A force simulation would
+// scatter a small directed network into a ring and destroy the left-to-right
+// feeder->fed reading, and it would mean touching the two map engines, which
+// are the riskiest code in this repo. CrossFeedingGraph is a self-contained
+// deterministic SVG instead.
 const EVIDENCE = {
   'in-vitro-coculture': ['Co-culture', '#4FC3F7', 'Two named organisms grown together — the strongest form of evidence here'],
   'in-vitro-community': ['Community model', '#A78BFA', 'Fermentation model; outputs moved together but no named pair was isolated'],
@@ -33,6 +38,7 @@ function Badge({ evidence }) {
 }
 
 export function CrossFeedingTab() {
+  const [selectedId, setSelectedId] = useState(null)
   const edges = crossFeeding.edges || []
   const candidates = crossFeeding.candidates || []
   const keystone = crossFeeding._keystone_resource
@@ -49,11 +55,28 @@ export function CrossFeedingTab() {
         <b style={{ color: theme.text }}>derived</b> links you can toggle on the maps.
       </p>
 
+      <div
+        className="rounded-2xl mb-4"
+        style={{ background: theme.ink2, border: `1px solid ${theme.line}`, padding: 12, maxWidth: 820, overflowX: 'auto' }}
+      >
+        <CrossFeedingGraph edges={edges} onSelect={setSelectedId} selectedId={selectedId} />
+        <p className="mt-1" style={{ color: theme.muted, fontSize: 11.5 }}>
+          Arrows point from feeder to fed — the relationship is one-way. Line colour is evidence
+          strength; the label is the product. Tap an arrow to isolate it and highlight its card below.
+        </p>
+      </div>
+
       {edges.map((e) => (
         <div
           key={e.id}
           className="rounded-2xl mb-3"
-          style={{ background: theme.ink2, border: `1px solid ${theme.line}`, padding: 14, maxWidth: 720 }}
+          style={{
+            background: theme.ink2,
+            border: `1px solid ${selectedId === e.id ? '#A78BFA' : theme.line}`,
+            padding: 14,
+            maxWidth: 720,
+            opacity: selectedId && selectedId !== e.id ? 0.45 : 1,
+          }}
         >
           <div className="flex items-center flex-wrap gap-2 mb-2">
             <span style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 15 }}>
