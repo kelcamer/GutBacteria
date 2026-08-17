@@ -3697,14 +3697,6 @@
    ],
    "down": [
     {
-     "symptom": "FUT2 (Non-secretor) status",
-     "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
-     "ref": "Paper URL",
-     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5463037/",
-     "evidence": "unclassified",
-     "population": "unknown"
-    },
-    {
      "symptom": "Intrusive thoughts",
      "note": "Causal protective factor for OCD in a two-sample Mendelian randomization analysis (OR=0.545, 95%CI 0.345-0.855, P=0.008) — a broader OCD-wide finding, not specific to the obsessions subscale like the Lachnospira pectinoschiza entry above.",
      "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
@@ -3755,6 +3747,15 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/",
      "evidence": "mendelian",
      "population": "unknown"
+    },
+    {
+     "symptom": "FUT2 (Non-secretor) status",
+     "note": "READ THE MEMBER NODES, NOT THIS ONE. This phylum-level arrow is the least trustworthy claim on the FUT2 map and is now marked contested for two reasons. FIRST, it was the only entry in this entire dataset with no citation at all - its reference field literally read 'Paper URL', a placeholder that was never filled in, and its note was generic text about FUT2 rather than anything measured about Proteobacteria. SECOND, and more important, this phylum's own members disagree with it inside this very app: Escherichia/Shigella is DOWN in non-secretors, while Enterobacteriaceae, Klebsiella and Sutterella are all UP - and Enterobacteriaceae contains Escherichia and Klebsiella, so even the family and its genera do not line up. A single phylum arrow averaged over organisms moving in opposite directions is not a finding. The one genuinely relevant genotype study measured a GENUS, not this phylum: in 81 genotyped IBD patients, Escherichia - which attaches to fucosylated glycoconjugates non-secretors cannot make - was the ONLY abundant genus with decreased abundance in sese individuals (PMID 34419617). That supports the Escherichia/Shigella node, and says nothing about Proteobacteria as a whole. Honest state: no reliable phylum-level effect has been shown. Contested is the closest this app can currently get to saying that.",
+     "ref": "No phylum-level source exists; the field previously held the placeholder 'Paper URL'. Nearest real evidence, at genus level: 81 genotyped IBD patients, Escherichia decreased in non-secretors (PMID 34419617)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5463037/",
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     }
    ]
   },
