@@ -45,6 +45,45 @@ SYM = "symptom_data.json"
 
 # Edges whose endpoints are not real taxon nodes (host lactate, community
 # butyrate pool) cannot propagate - there is nothing to match against.
+def genus_of(name):
+    """First word of a taxon name. 'Bifidobacterium adolescentis' -> 'Bifidobacterium'."""
+    return (name or "").split()[0] if name else ""
+
+
+def resolve_source(measured, src):
+    """Direction for a genus-level edge source against species-level data.
+
+    Conditions frequently list species (Bifidobacterium adolescentis,
+    B. pseudocatenulatum, B. bifidum) but never the bare genus, while
+    cross_feeding.json's edges are genus-level. Without this, no match is
+    found and propagation silently skips - which is exactly why FUT2 received
+    zero derived taxa despite having three Bifidobacterium species, all down.
+
+    Returns a direction only when every matching entry AGREES. Mixed
+    directions across species are ambiguous, so nothing is inferred.
+    """
+    if src in measured:
+        d = measured[src]
+        return None if d == "both" else d
+    dirs = {d for n, d in measured.items() if genus_of(n) == src}
+    if len(dirs) == 1:
+        only = dirs.pop()
+        return None if only == "both" else only
+    return None
+
+
+def already_covered(measured, dst):
+    """True if dst - or its genus - is already measured.
+
+    A genus-level measurement covers its species: if Faecalibacterium is
+    measured, we do not infer Faecalibacterium prausnitzii on top of it.
+    """
+    if dst in measured:
+        return True
+    g = genus_of(dst)
+    return g in measured or any(genus_of(n) == g for n in measured)
+
+
 def usable_edges(cf, bacteria_names):
     out = []
     for e in cf["edges"]:
@@ -164,14 +203,14 @@ def propagate_conditions(cf, args):
         have = {t["name"]: t.get("dir") for t in cond.get("taxa", []) if not t.get("derived")}
         for e in edges:
             src, dst = e["from"], e["to"]
-            direction = have.get(src)
-            if not direction or direction == "both":
+            direction = resolve_source(have, src)
+            if not direction:
                 continue
             if any(t.get("name") == dst and t.get("derived") for t in cond.get("taxa", [])):
                 continue  # already derived - re-running must not duplicate
-            if dst in have:
+            if already_covered(have, dst):
                 skipped += 1
-                if have[dst] != direction:
+                if have.get(dst) and have[dst] != direction:
                     conflicts.append((cond["name"], src, direction, dst, have[dst]))
                 continue
             proposals.append((cond, dst, direction, e))

@@ -4042,6 +4042,36 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/26231005/"
       }
      ]
+    },
+    {
+     "id": "cf_seed_209_cf_infantis_ehallii_Eubacterium_hallii",
+     "name": "Eubacterium hallii",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_209_cf_infantis_ehallii_l1",
+       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
+      }
+     ]
+    },
+    {
+     "id": "cf_seed_209_cf_badolescentis_lactate_utilisers_Anaerostipes",
+     "name": "Anaerostipes",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_209_cf_badolescentis_lactate_utilisers_l1",
+       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ]
     }
    ]
   },
@@ -11106,6 +11136,36 @@
        "id": "audit_Smoking_Lactobacillus_l1",
        "label": "PMID 42052326",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42052326/"
+      }
+     ]
+    },
+    {
+     "id": "cf_new_smk_cf_infantis_ehallii_Eubacterium_hallii",
+     "name": "Eubacterium hallii",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_smk_cf_infantis_ehallii_l1",
+       "label": "Mol Nutr Food Res 2023 (PMID 36938958)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
+      }
+     ]
+    },
+    {
+     "id": "cf_new_smk_cf_badolescentis_lactate_utilisers_Anaerostipes",
+     "name": "Anaerostipes",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_smk_cf_badolescentis_lactate_utilisers_l1",
+       "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
      ]
     }
