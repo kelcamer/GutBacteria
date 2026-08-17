@@ -1382,64 +1382,64 @@
    "both": [
     {
      "symptom": "Psilocybin / Psychedelics",
-     "note": "GENUINELY CONFLICTING between models. In the SHIME in-vitro system seeded with human faecal microbiota from anxious donors, Lactobacillus increased markedly after 20 h and showed a further marked rise by 15 days of fermentation. But chronic psilocybin in live mice REDUCED Lactobacillus murinus and L. animalis (male wild-type only, PMID 40849086). In vitro human-derived community versus live animal host is exactly the kind of split where neither result supersedes the other - the fermentation model isolates direct microbial effects, while the mouse retains host serotonin signalling and immune feedback that could push the other way.",
-     "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046) vs. Neuropharmacology 2025 (PMID 40849086)",
+     "note": "GENUINELY CONFLICTING between models. In the SHIME in-vitro system seeded with human faecal microbiota from anxious donors, Lactobacillus increased markedly after 20 h and showed a further marked rise by 15 days of fermentation. But chronic psilocybin in live mice REDUCED Lactobacillus murinus and L. animalis (male wild-type only, PMID 40849086). In vitro human-derived community versus live animal host is exactly the kind of split where neither result supersedes the other - the fermentation model isolates direct microbial effects, while the mouse retains host serotonin signalling and immune feedback that could push the other way. WHY THIS GENUS CONTRADICTS ITSELF - a naming problem, not an evidence problem: 'Lactobacillus' held 261 species that were 'extremely diverse at phenotypic, ecological and genotypic levels', and in 2020 it was formally split into 25 GENERA. Studies published either side of that split, or using different sequencing references, can attach the same label to organisms that are no longer even the same genus - so two papers disagreeing about 'Lactobacillus' may not be describing the same bacteria at all. Expect this entry to stay contested until the underlying studies are re-read at species level; more research at genus level cannot resolve it. (Zheng et al. 2020, Int J Syst Evol Microbiol, PMID 32293557)",
+     "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046) vs. Neuropharmacology 2025 (PMID 40849086); genus heterogeneity: PMID 32293557",
      "url": "https://doi.org/10.3390/ddc5030046",
      "evidence": "in-vitro",
      "population": "n/a"
     },
     {
      "symptom": "Sleep disturbance",
-     "note": "Enriched in 3 case-control studies, but the review explicitly notes \"conflicting patterns across studies\" for this genus specifically.",
-     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
+     "note": "Enriched in 3 case-control studies, but the review explicitly notes \"conflicting patterns across studies\" for this genus specifically. WHY THIS GENUS CONTRADICTS ITSELF - a naming problem, not an evidence problem: 'Lactobacillus' held 261 species that were 'extremely diverse at phenotypic, ecological and genotypic levels', and in 2020 it was formally split into 25 GENERA. Studies published either side of that split, or using different sequencing references, can attach the same label to organisms that are no longer even the same genus - so two papers disagreeing about 'Lactobacillus' may not be describing the same bacteria at all. Expect this entry to stay contested until the underlying studies are re-read at species level; more research at genus level cannot resolve it. (Zheng et al. 2020, Int J Syst Evol Microbiol, PMID 32293557)",
+     "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588); genus heterogeneity: PMID 32293557",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/",
      "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "symptom": "Headache / migraine",
-     "note": "Mendelian randomization found increased Lactobacillus causally linked to higher migraine-with-aura risk (He et al. 2023), but a separate pediatric cohort found it decreased in migraine (Liu et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "note": "Mendelian randomization found increased Lactobacillus causally linked to higher migraine-with-aura risk (He et al. 2023), but a separate pediatric cohort found it decreased in migraine (Liu et al. 2024). WHY THIS GENUS CONTRADICTS ITSELF - a naming problem, not an evidence problem: 'Lactobacillus' held 261 species that were 'extremely diverse at phenotypic, ecological and genotypic levels', and in 2020 it was formally split into 25 GENERA. Studies published either side of that split, or using different sequencing references, can attach the same label to organisms that are no longer even the same genus - so two papers disagreeing about 'Lactobacillus' may not be describing the same bacteria at all. Expect this entry to stay contested until the underlying studies are re-read at species level; more research at genus level cannot resolve it. (Zheng et al. 2020, Int J Syst Evol Microbiol, PMID 32293557)",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024; genus heterogeneity: PMID 32293557",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/",
      "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "symptom": "Depressed mood",
-     "note": "Depression: Majority direction across reviewed studies (2 of 3 addressing this genus found it decreased in MDD, corroborated by Aizawa et al. 2016 PMID 27288567 — lower counts, cutoff-based comparison significant though the continuous-value comparison was only trend-level, P=0.067). Review authors note results for specific taxa in depression remain inconclusive overall — flagged honestly rather than overstated. (down) | Bipolar Disorder: Greatest genus-level fold-change increase in BD vs healthy controls in an Iranian case-control study (n=30 vs 30); a separate systematic review of 12 studies flags Lactobacillus as one of the most consistently *studied* genera in BD but notes its reported direction is not consistent across all studies. (up)",
-     "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries",
+     "note": "Depression: Majority direction across reviewed studies (2 of 3 addressing this genus found it decreased in MDD, corroborated by Aizawa et al. 2016 PMID 27288567 — lower counts, cutoff-based comparison significant though the continuous-value comparison was only trend-level, P=0.067). Review authors note results for specific taxa in depression remain inconclusive overall — flagged honestly rather than overstated. (down) | Bipolar Disorder: Greatest genus-level fold-change increase in BD vs healthy controls in an Iranian case-control study (n=30 vs 30); a separate systematic review of 12 studies flags Lactobacillus as one of the most consistently *studied* genera in BD but notes its reported direction is not consistent across all studies. (up) WHY THIS GENUS CONTRADICTS ITSELF - a naming problem, not an evidence problem: 'Lactobacillus' held 261 species that were 'extremely diverse at phenotypic, ecological and genotypic levels', and in 2020 it was formally split into 25 GENERA. Studies published either side of that split, or using different sequencing references, can attach the same label to organisms that are no longer even the same genus - so two papers disagreeing about 'Lactobacillus' may not be describing the same bacteria at all. Expect this entry to stay contested until the underlying studies are re-read at species level; more research at genus level cannot resolve it. (Zheng et al. 2020, Int J Syst Evol Microbiol, PMID 32293557)",
+     "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries; genus heterogeneity: PMID 32293557",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/",
      "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Fibromyalgia: Genetically-predicted higher abundance increases fibromyalgia risk (OR=1.576, 95% CI 1.073-2.315, P=0.020) — counterintuitive given Lactobacillus's usual probiotic reputation, but the genus is species-heterogeneous (e.g. L. plantarum upregulates serotonin, while L. acidophilus/L. rhamnosus downregulate it), which may explain the direction. Causal/genetic evidence — lower confidence than direct case-control data per this app's MR convention. (up) | Depression: Majority direction across reviewed studies (2 of 3 addressing this genus found it decreased in MDD, corroborated by Aizawa et al. 2016 PMID 27288567 — lower counts, cutoff-based comparison significant though the continuous-value comparison was only trend-level, P=0.067). Review authors note results for specific taxa in depression remain inconclusive overall — flagged honestly rather than overstated. (down)",
-     "ref": "Multiple sources across Depression, Fibromyalgia — see individual condition entries",
+     "note": "Fibromyalgia: Genetically-predicted higher abundance increases fibromyalgia risk (OR=1.576, 95% CI 1.073-2.315, P=0.020) — counterintuitive given Lactobacillus's usual probiotic reputation, but the genus is species-heterogeneous (e.g. L. plantarum upregulates serotonin, while L. acidophilus/L. rhamnosus downregulate it), which may explain the direction. Causal/genetic evidence — lower confidence than direct case-control data per this app's MR convention. (up) | Depression: Majority direction across reviewed studies (2 of 3 addressing this genus found it decreased in MDD, corroborated by Aizawa et al. 2016 PMID 27288567 — lower counts, cutoff-based comparison significant though the continuous-value comparison was only trend-level, P=0.067). Review authors note results for specific taxa in depression remain inconclusive overall — flagged honestly rather than overstated. (down) WHY THIS GENUS CONTRADICTS ITSELF - a naming problem, not an evidence problem: 'Lactobacillus' held 261 species that were 'extremely diverse at phenotypic, ecological and genotypic levels', and in 2020 it was formally split into 25 GENERA. Studies published either side of that split, or using different sequencing references, can attach the same label to organisms that are no longer even the same genus - so two papers disagreeing about 'Lactobacillus' may not be describing the same bacteria at all. Expect this entry to stay contested until the underlying studies are re-read at species level; more research at genus level cannot resolve it. (Zheng et al. 2020, Int J Syst Evol Microbiol, PMID 32293557)",
+     "ref": "Multiple sources across Depression, Fibromyalgia — see individual condition entries; genus heterogeneity: PMID 32293557",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38260871/",
      "evidence": "mendelian",
      "population": "unknown"
     },
     {
      "symptom": "Panic attack",
-     "note": "PTSD: Lactobacillus casei reduced in PTSD patients (n=40) vs controls (n=42) in a culturomic cohort study. (down) | Anxiety: From this app's Anxiety condition data. (up)",
-     "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
+     "note": "PTSD: Lactobacillus casei reduced in PTSD patients (n=40) vs controls (n=42) in a culturomic cohort study. (down) | Anxiety: From this app's Anxiety condition data. (up) WHY THIS GENUS CONTRADICTS ITSELF - a naming problem, not an evidence problem: 'Lactobacillus' held 261 species that were 'extremely diverse at phenotypic, ecological and genotypic levels', and in 2020 it was formally split into 25 GENERA. Studies published either side of that split, or using different sequencing references, can attach the same label to organisms that are no longer even the same genus - so two papers disagreeing about 'Lactobacillus' may not be describing the same bacteria at all. Expect this entry to stay contested until the underlying studies are re-read at species level; more research at genus level cannot resolve it. (Zheng et al. 2020, Int J Syst Evol Microbiol, PMID 32293557)",
+     "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries; genus heterogeneity: PMID 32293557",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41518171/",
      "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Hair loss",
-     "note": "Genuine split: 3 studies found increased, 2 found decreased.",
-     "ref": "37559119",
+     "note": "Genuine split: 3 studies found increased, 2 found decreased. WHY THIS GENUS CONTRADICTS ITSELF - a naming problem, not an evidence problem: 'Lactobacillus' held 261 species that were 'extremely diverse at phenotypic, ecological and genotypic levels', and in 2020 it was formally split into 25 GENERA. Studies published either side of that split, or using different sequencing references, can attach the same label to organisms that are no longer even the same genus - so two papers disagreeing about 'Lactobacillus' may not be describing the same bacteria at all. Expect this entry to stay contested until the underlying studies are re-read at species level; more research at genus level cannot resolve it. (Zheng et al. 2020, Int J Syst Evol Microbiol, PMID 32293557)",
+     "ref": "37559119; genus heterogeneity: PMID 32293557",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "symptom": "Anxiety",
-     "note": "RECONCILED - reported in both directions. As a psychobiotic genus its depletion is repeatedly linked to elevated anxiety across gut-brain-axis reviews; other work reports increases. Previously this app showed DOWN here and UP on the Conditions screen, contradicting itself.",
-     "ref": "PMC12044767 (depletion) vs. PMC9656367 (increase)",
+     "note": "RECONCILED - reported in both directions. As a psychobiotic genus its depletion is repeatedly linked to elevated anxiety across gut-brain-axis reviews; other work reports increases. Previously this app showed DOWN here and UP on the Conditions screen, contradicting itself. WHY THIS GENUS CONTRADICTS ITSELF - a naming problem, not an evidence problem: 'Lactobacillus' held 261 species that were 'extremely diverse at phenotypic, ecological and genotypic levels', and in 2020 it was formally split into 25 GENERA. Studies published either side of that split, or using different sequencing references, can attach the same label to organisms that are no longer even the same genus - so two papers disagreeing about 'Lactobacillus' may not be describing the same bacteria at all. Expect this entry to stay contested until the underlying studies are re-read at species level; more research at genus level cannot resolve it. (Zheng et al. 2020, Int J Syst Evol Microbiol, PMID 32293557)",
+     "ref": "PMC12044767 (depletion) vs. PMC9656367 (increase); genus heterogeneity: PMID 32293557",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12044767/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -1664,56 +1664,56 @@
    "both": [
     {
      "symptom": "Restlessness",
-     "note": "A peer-reviewed 2022 case-control study found Prevotella significantly increased in children with tic disorder (p<0.05). An earlier conference abstract reported the opposite — Prevotella lower in Tourette syndrome and negatively correlated with tic severity (p=0.026 and p=0.041). Marked \"both\" given the genuine conflict; weighted toward the peer-reviewed source but the abstract's severity-correlation finding is worth keeping visible.",
-     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424); Lee & Wong 2018, MDS International Congress (conference abstract, not yet peer-reviewed journal publication)",
+     "note": "A peer-reviewed 2022 case-control study found Prevotella significantly increased in children with tic disorder (p<0.05). An earlier conference abstract reported the opposite — Prevotella lower in Tourette syndrome and negatively correlated with tic severity (p=0.026 and p=0.041). Marked \"both\" given the genuine conflict; weighted toward the peer-reviewed source but the abstract's severity-correlation finding is worth keeping visible. WHY THIS GENUS CONTRADICTS ITSELF: Prevotella is not one functional entity. 83 human P. copri isolates from 11 donors fall into distinct clades of the P. copri COMPLEX with defined, DIFFERENT polysaccharide-utilisation repertoires - so which Prevotella you carry decides what it does, and cohorts differing in diet or geography are effectively studying different organisms under one name. Genus-level contradiction here is expected rather than surprising. (Cell Host Microbe 2019, PMID 31726030)",
+     "ref": "Wang et al. 2022, Frontiers in Pediatrics — 28 children with tic disorder vs. 21 matched controls, 16S sequencing (PMID 35601424); Lee & Wong 2018, MDS International Congress (conference abstract, not yet peer-reviewed journal publication); genus heterogeneity: PMID 31726030",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35601424/",
      "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Headache / migraine",
-     "note": "This review explicitly flags Prevotella as conflicting: associated with higher migraine-with-aura risk in one MR study (He et al. 2023) but decreased in another cohort (Meng et al. 2024).",
-     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
+     "note": "This review explicitly flags Prevotella as conflicting: associated with higher migraine-with-aura risk in one MR study (He et al. 2023) but decreased in another cohort (Meng et al. 2024). WHY THIS GENUS CONTRADICTS ITSELF: Prevotella is not one functional entity. 83 human P. copri isolates from 11 donors fall into distinct clades of the P. copri COMPLEX with defined, DIFFERENT polysaccharide-utilisation repertoires - so which Prevotella you carry decides what it does, and cohorts differing in diet or geography are effectively studying different organisms under one name. Genus-level contradiction here is expected rather than surprising. (Cell Host Microbe 2019, PMID 31726030)",
+     "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024; genus heterogeneity: PMID 31726030",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/",
      "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "symptom": "Depressed mood",
-     "note": "Depression: Depleted in depressed adolescents vs. healthy adolescent controls (genus-level; distinct from the already-tracked Prevotellaceae family-level entry). Inversely correlated with depression/mood in four studies, but positively correlated in others, per a systematic review — no clear overall tendency despite earlier proposals to use Prevotella shifts as a depression biomarker. (both) | Bipolar Disorder: Bacteroides-Prevotella cluster enriched in untreated BD depression patients vs. healthy controls (Hu 2019 shotgun sequencing) — same study already cited for Bacteroidetes/Bacteroides/Parabacteroides here. (up)",
-     "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries",
+     "note": "Depression: Depleted in depressed adolescents vs. healthy adolescent controls (genus-level; distinct from the already-tracked Prevotellaceae family-level entry). Inversely correlated with depression/mood in four studies, but positively correlated in others, per a systematic review — no clear overall tendency despite earlier proposals to use Prevotella shifts as a depression biomarker. (both) | Bipolar Disorder: Bacteroides-Prevotella cluster enriched in untreated BD depression patients vs. healthy controls (Hu 2019 shotgun sequencing) — same study already cited for Bacteroidetes/Bacteroides/Parabacteroides here. (up) WHY THIS GENUS CONTRADICTS ITSELF: Prevotella is not one functional entity. 83 human P. copri isolates from 11 donors fall into distinct clades of the P. copri COMPLEX with defined, DIFFERENT polysaccharide-utilisation repertoires - so which Prevotella you carry decides what it does, and cohorts differing in diet or geography are effectively studying different organisms under one name. Genus-level contradiction here is expected rather than surprising. (Cell Host Microbe 2019, PMID 31726030)",
+     "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries; genus heterogeneity: PMID 31726030",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42495140/",
      "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Fibromyalgia: From this app's Fibromyalgia condition data. (down) | Depression: Depleted in depressed adolescents vs. healthy adolescent controls (genus-level; distinct from the already-tracked Prevotellaceae family-level entry). Inversely correlated with depression/mood in four studies, but positively correlated in others, per a systematic review — no clear overall tendency despite earlier proposals to use Prevotella shifts as a depression biomarker. (both)",
-     "ref": "Multiple sources across Depression, Fibromyalgia — see individual condition entries",
+     "note": "Fibromyalgia: From this app's Fibromyalgia condition data. (down) | Depression: Depleted in depressed adolescents vs. healthy adolescent controls (genus-level; distinct from the already-tracked Prevotellaceae family-level entry). Inversely correlated with depression/mood in four studies, but positively correlated in others, per a systematic review — no clear overall tendency despite earlier proposals to use Prevotella shifts as a depression biomarker. (both) WHY THIS GENUS CONTRADICTS ITSELF: Prevotella is not one functional entity. 83 human P. copri isolates from 11 donors fall into distinct clades of the P. copri COMPLEX with defined, DIFFERENT polysaccharide-utilisation repertoires - so which Prevotella you carry decides what it does, and cohorts differing in diet or geography are effectively studying different organisms under one name. Genus-level contradiction here is expected rather than surprising. (Cell Host Microbe 2019, PMID 31726030)",
+     "ref": "Multiple sources across Depression, Fibromyalgia — see individual condition entries; genus heterogeneity: PMID 31726030",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31219947/",
      "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "symptom": "Irritability",
-     "note": "Autism (ASD): From this app's Autism (ASD) condition data. (down) | Bipolar Disorder: Bacteroides-Prevotella cluster enriched in untreated BD depression patients vs. healthy controls (Hu 2019 shotgun sequencing) — same study already cited for Bacteroidetes/Bacteroides/Parabacteroides here. (up)",
-     "ref": "Multiple sources across Autism (ASD), Bipolar Disorder — see individual condition entries",
+     "note": "Autism (ASD): From this app's Autism (ASD) condition data. (down) | Bipolar Disorder: Bacteroides-Prevotella cluster enriched in untreated BD depression patients vs. healthy controls (Hu 2019 shotgun sequencing) — same study already cited for Bacteroidetes/Bacteroides/Parabacteroides here. (up) WHY THIS GENUS CONTRADICTS ITSELF: Prevotella is not one functional entity. 83 human P. copri isolates from 11 donors fall into distinct clades of the P. copri COMPLEX with defined, DIFFERENT polysaccharide-utilisation repertoires - so which Prevotella you carry decides what it does, and cohorts differing in diet or geography are effectively studying different organisms under one name. Genus-level contradiction here is expected rather than surprising. (Cell Host Microbe 2019, PMID 31726030)",
+     "ref": "Multiple sources across Autism (ASD), Bipolar Disorder — see individual condition entries; genus heterogeneity: PMID 31726030",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
      "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Brain fog",
-     "note": "Anxiety: From this app's Anxiety condition data. (down) | Alzheimer's: Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern — higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side. (both)",
-     "ref": "Multiple sources across Alzheimer's, Anxiety — see individual condition entries",
+     "note": "Anxiety: From this app's Anxiety condition data. (down) | Alzheimer's: Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern — higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side. (both) WHY THIS GENUS CONTRADICTS ITSELF: Prevotella is not one functional entity. 83 human P. copri isolates from 11 donors fall into distinct clades of the P. copri COMPLEX with defined, DIFFERENT polysaccharide-utilisation repertoires - so which Prevotella you carry decides what it does, and cohorts differing in diet or geography are effectively studying different organisms under one name. Genus-level contradiction here is expected rather than surprising. (Cell Host Microbe 2019, PMID 31726030)",
+     "ref": "Multiple sources across Alzheimer's, Anxiety — see individual condition entries; genus heterogeneity: PMID 31726030",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/",
      "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Poor working memory",
-     "note": "Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern — higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side.",
-     "ref": "PMID 36102237 (up) / PMID 40604345 (down/protective)",
+     "note": "Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern — higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side. WHY THIS GENUS CONTRADICTS ITSELF: Prevotella is not one functional entity. 83 human P. copri isolates from 11 donors fall into distinct clades of the P. copri COMPLEX with defined, DIFFERENT polysaccharide-utilisation repertoires - so which Prevotella you carry decides what it does, and cohorts differing in diet or geography are effectively studying different organisms under one name. Genus-level contradiction here is expected rather than surprising. (Cell Host Microbe 2019, PMID 31726030)",
+     "ref": "PMID 36102237 (up) / PMID 40604345 (down/protective); genus heterogeneity: PMID 31726030",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36102237/",
      "evidence": "human-cohort",
      "population": "unknown"

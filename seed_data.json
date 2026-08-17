@@ -1702,8 +1702,8 @@
      "id": "seed_76_fp5",
      "name": "Ruminococcus gnavus",
      "dir": "both",
-     "refs": "PMID 41075498",
-     "note": "Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side.",
+     "refs": "PMID 41075498; J Psychiatr Res 2025 systematic review (PMID 41075498)",
+     "note": "Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side. NEWER EVIDENCE, 2025: a systematic review of ADHD and the gut microbiome reports HIGHER relative abundance of Ruminococcus gnavus (alongside Agathobacter) and decreased Faecalibacterium in ADHD. It leans toward 'up' rather than settling it - the review notes these came from different individual studies rather than a pooled estimate, so this entry stays contested, but the newer weight is on the up side. (J Psychiatr Res 2025, PMID 41075498)",
      "links": [
       {
        "id": "seed_76_fp5_l1",
