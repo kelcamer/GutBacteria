@@ -973,14 +973,6 @@
      "population": "female"
     },
     {
-     "symptom": "Anxiety",
-     "note": "Psychobiotic genus; depletion repeatedly linked to elevated anxiety/mood symptoms across gut-brain-axis reviews.",
-     "ref": "PMC12044767",
-     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12044767/",
-     "evidence": "unclassified",
-     "population": "unknown"
-    },
-    {
      "symptom": "Immune dysregulation",
      "note": "Loss of Lactobacillus linked to reduced mucosal immune modulation.",
      "ref": "PMC12044767",
@@ -1140,6 +1132,14 @@
      "ref": "37559119",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "RECONCILED - reported in both directions. As a psychobiotic genus its depletion is repeatedly linked to elevated anxiety across gut-brain-axis reviews; other work reports increases. Previously this app showed DOWN here and UP on the Conditions screen, contradicting itself.",
+     "ref": "PMC12044767 (depletion) vs. PMC9656367 (increase)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12044767/",
+     "evidence": "unclassified",
      "population": "unknown"
     }
    ]

@@ -70,4 +70,13 @@ if ! (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_derived_precedence.py") 
   exit 1
 fi
 
+# Structural invariants - duplicates, cross-file direction conflicts,
+# orphaned symptoms, self-contradictions, count drift.
+if ! (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_data_integrity.py") >&2; then
+  echo "" >&2
+  echo "pre-commit: data integrity failure (see above)." >&2
+  echo "(Emergency bypass: git commit --no-verify)" >&2
+  exit 1
+fi
+
 exit 0

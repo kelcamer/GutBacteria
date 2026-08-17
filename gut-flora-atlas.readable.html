@@ -7724,23 +7724,6 @@ Error generating stack: ` + r.message + `
           "evidence": "unclassified",
           "population": "unknown"
         }, {
-          "id": "seed_9",
-          "name": "Alistipes",
-          "dir": "up",
-          "refs": "19,22",
-          "note": "",
-          "links": [{
-            "id": "seed_10",
-            "label": "Jiang 2015 (Brain Behav Immun; Enterobacteriaceae & Alistipes ↑, Faecalibacterium ↓ in MDD)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/25882912/"
-          }, {
-            "id": "seed_11",
-            "label": "Naseribafrouei 2014 (Neurogastroenterol Motil; Bacteroidales, Alistipes, Oscillibacter in depression)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/24888394/"
-          }],
-          "evidence": "unclassified",
-          "population": "unknown"
-        }, {
           "id": "seed_14",
           "name": "Faecalibacterium",
           "dir": "down",
@@ -10265,13 +10248,17 @@ Error generating stack: ` + r.message + `
         }, {
           "id": "seed_171",
           "name": "Lactobacillus",
-          "dir": "up",
-          "refs": "PMC9656367",
-          "note": "",
+          "dir": "both",
+          "refs": "PMC9656367 (increase) vs. PMC12044767 (depletion linked to anxiety)",
+          "note": "RECONCILED - this app previously showed Lactobacillus as UP here on the Conditions screen and DOWN on the Symptom map, i.e. opposite answers depending on which screen you were on. Both directions are reported in the literature: as a psychobiotic genus its depletion is repeatedly linked to elevated anxiety across gut-brain-axis reviews, while other work reports increases. Marked \"both\" on both screens rather than letting the app contradict itself.",
           "links": [{
-            "id": "seed_171_link",
-            "label": "PMC9656367",
-            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf"
+            "id": "anx_lacto_l1",
+            "label": "PMC9656367 (increase reported)",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9656367/"
+          }, {
+            "id": "anx_lacto_l2",
+            "label": "PMC12044767 (depletion linked to anxiety)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12044767/"
           }],
           "evidence": "unclassified",
           "population": "unknown"
@@ -10957,9 +10944,9 @@ Error generating stack: ` + r.message + `
         }, {
           "id": "seed_209_fp10",
           "name": "Streptococcus",
-          "dir": "up",
-          "refs": "PMID 30345375 / PMID 35892094",
-          "note": "Non-secretors have increased susceptibility to Streptococcus pneumoniae specifically — stated directly in the abstract of a 7,582-person ALSPAC cohort study (Azad et al. 2018): \"Being homozygous for the inactive 'non-secretor' rs601338(A) allele confers resistance to certain infections (e.g. Norovirus, Rotavirus) and susceptibility to others (e.g. Haemophilus influenza, Streptococcus pneumonia).\" A separate 2022 review (Kaur et al.) makes a broader claim in its full text — \"non-secretors are often more commonly related to low-level infections including yeast (Candida) and Streptococcus\" — though that specific sentence is in the body text, not the abstract PubMed displays. Circumstantial support: Type 1 Diabetes, itself strongly linked to non-secretor status (Smyth et al. 2011, OR=1.29, P=4.3×10⁻¹⁸), independently shows elevated Streptococcus vs. healthy controls. One narrower counter-finding exists in a different body-fluid context: Streptococcus was lower in non-secretor vs. secretor BREAST MILK specifically (n=25) — not treated as a competing direction here since it's a distinct, tangential context.",
+          "dir": "down",
+          "refs": "2019, J Pediatr Gastroenterol Nutr - milk microbiota abundance (n=25); susceptibility data: PMID 30345375 / PMID 35892094",
+          "note": "CATEGORY ERROR CORRECTED. This entry previously read UP, citing increased susceptibility to Streptococcus pneumoniae INFECTION in non-secretors. That is a clinical susceptibility finding, not a measurement of gut Streptococcus abundance - and this field encodes abundance. The abundance evidence points the other way: Streptococcus was LOWER in non-secretor vs. secretor milk samples, which is what this app's own symptom map already said. Direction now matches abundance on both screens; the pneumococcal susceptibility finding is real and retained here as context rather than as a direction.",
           "links": [{
             "id": "seed_209_fp10_l1",
             "label": "Azad et al. 2018, Wellcome Open Res — ALSPAC cohort, n=7,582 (PMID 30345375)",
@@ -11738,13 +11725,17 @@ Error generating stack: ` + r.message + `
         }, {
           "id": "seed_pd_t2",
           "name": "Escherichia/Shigella",
-          "dir": "down",
-          "refs": "Cheng 2026 (Front Cell Infect Microbiol; GMrepo n=378 PD vs n=293 healthy; ↑Bacteroides/Akkermansia/Parabacteroides/Phascolarctobacterium/Bifidobacterium, ↓Escherichia-Shigella/Faecalibacterium/Prevotella in PD)",
-          "note": "Corrected from an uncited 'up' placeholder: a large GMrepo cross-sectional analysis (PD n=378 vs healthy n=293) found Escherichia-Shigella significantly decreased in PD, alongside Faecalibacterium/Agathobacterium/Prevotella — all already tracked as down here.",
+          "dir": "both",
+          "refs": "Cheng 2026, Front Cell Infect Microbiol - GMrepo, n=378 PD vs 293 healthy vs. systematic review of 26 studies (PMID 36284437)",
+          "note": "MERGED FROM TWO CONTRADICTORY ENTRIES that were both live in this condition - the map was drawing this taxon as increased AND decreased at the same time. A large GMrepo cross-sectional analysis (PD n=378 vs healthy n=293) found it DECREASED; a systematic review of 26 studies lists it among 9 genera consistently reported INCREASED, with a PD-duration correlation. Both are substantial and neither supersedes the other, so this is genuine equipoise rather than a weak dissent.",
           "links": [{
-            "id": "seed_523",
-            "label": "Cheng 2026 (Front Cell Infect Microbiol; GMrepo n=378 PD vs n=293 healthy; ↑Bacteroides/Akkermansia/Parabacteroides/Phascolarctobacterium/Bifidobacterium, ↓Escherichia-Shigella/Faecalibacterium/Prevotella in PD)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/42564147/"
+            "id": "pd_es_l1",
+            "label": "Cheng 2026, Front Cell Infect Microbiol - GMrepo n=378/293",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36284437/"
+          }, {
+            "id": "pd_es_l2",
+            "label": "Systematic review, 26 studies (PMID 36284437)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36284437/"
           }],
           "evidence": "human-cohort",
           "population": "unknown"
@@ -11990,12 +11981,16 @@ Error generating stack: ` + r.message + `
           "id": "seed_531",
           "name": "Klebsiella",
           "dir": "up",
-          "refs": "NPJ Parkinsons Dis meta-analysis 2025 (5 case-control studies, n=1007; ↑Klebsiella variicola, ↑Streptococcus anginosus, ↑Evtepia gabavorus in PD)",
-          "note": "Klebsiella variicola (pro-inflammatory, potentially promoting α-synuclein accumulation) identified as elevated in a meta-analysis consolidating 5 homogeneous case-control 16S studies (1,007 fecal samples total).",
+          "refs": "npj Parkinsons Dis meta-analysis 2025 (5 case-control studies, n=1,007) + n=39 PD/39 healthy spouses (PMID 34650532)",
+          "note": "Merged from two duplicate entries that agreed. K. variicola identified as elevated in a 5-study meta-analysis (n=1,007), proposed as pro-inflammatory and potentially promoting alpha-synuclein accumulation. A separate spouse-controlled study (n=39/39) found abundance correlated with both PD duration (R2=0.573, P=0.0001) and severity by H&Y stage.",
           "links": [{
             "id": "seed_532",
             "label": "NPJ Parkinsons Dis meta-analysis 2025 (5 case-control studies, n=1007; ↑Klebsiella variicola, ↑Streptococcus anginosus, ↑Evtepia gabavorus in PD)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/40461531/"
+          }, {
+            "id": "pd_kleb_l2",
+            "label": "Spouse-controlled cohort, n=39/39 (PMID 34650532)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34650532/"
           }],
           "evidence": "meta-analysis",
           "population": "unknown"
@@ -12048,32 +12043,6 @@ Error generating stack: ` + r.message + `
             "id": "seed_pd_t25_l1",
             "label": "Meta-analysis, n=1,007 (PMID 40461531)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/40461531/"
-          }],
-          "evidence": "meta-analysis",
-          "population": "unknown"
-        }, {
-          "id": "seed_pd_t26",
-          "name": "Escherichia/Shigella",
-          "dir": "up",
-          "refs": "Systematic review, 26 studies (PMID 36284437)",
-          "note": "One of 9 genera consistently reported increased in PD across multiple studies; PD-duration correlation also reported for this genus/family Enterobacteriaceae in 2 studies.",
-          "links": [{
-            "id": "seed_pd_t26_l1",
-            "label": "Systematic review, 26 studies (PMID 36284437)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36284437/"
-          }],
-          "evidence": "meta-analysis",
-          "population": "unknown"
-        }, {
-          "id": "seed_pd_t27",
-          "name": "Klebsiella",
-          "dir": "up",
-          "refs": "n=39 PD/39 healthy spouses (PMID 34650532)",
-          "note": "Abundance positively correlated with both PD duration (R2=0.573, P=0.0001) and disease severity/H&Y stage (R2=0.349, P=0.030) — within-cohort severity correlation rather than a simple baseline up/down, but a real dose-relationship. Consistent with K. variicola being separately flagged as a proinflammatory PD-associated species in a broader meta-analysis.",
-          "links": [{
-            "id": "seed_pd_t27_l1",
-            "label": "n=39/39, central China cohort (PMID 34650532)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/34650532/"
           }],
           "evidence": "meta-analysis",
           "population": "unknown"
@@ -24862,13 +24831,6 @@ select{-webkit-appearance:none;appearance:none}
         "evidence": "human-rct",
         "population": "female"
       }, {
-        "symptom": "Anxiety",
-        "note": "Psychobiotic genus; depletion repeatedly linked to elevated anxiety/mood symptoms across gut-brain-axis reviews.",
-        "ref": "PMC12044767",
-        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12044767/",
-        "evidence": "unclassified",
-        "population": "unknown"
-      }, {
         "symptom": "Immune dysregulation",
         "note": "Loss of Lactobacillus linked to reduced mucosal immune modulation.",
         "ref": "PMC12044767",
@@ -25008,6 +24970,13 @@ select{-webkit-appearance:none;appearance:none}
         "ref": "37559119",
         "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
         "evidence": "meta-analysis",
+        "population": "unknown"
+      }, {
+        "symptom": "Anxiety",
+        "note": "RECONCILED - reported in both directions. As a psychobiotic genus its depletion is repeatedly linked to elevated anxiety across gut-brain-axis reviews; other work reports increases. Previously this app showed DOWN here and UP on the Conditions screen, contradicting itself.",
+        "ref": "PMC12044767 (depletion) vs. PMC9656367 (increase)",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12044767/",
+        "evidence": "unclassified",
         "population": "unknown"
       }]
     }, {
