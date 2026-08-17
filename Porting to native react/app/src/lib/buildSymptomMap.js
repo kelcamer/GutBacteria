@@ -267,17 +267,22 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       rimV.forEach(function(n) {
         (isIntervention(n.name) ? takes : haves).push(n);
       });
-      // Each group gets its own arc, CENTRED - conditions on top, interventions on
-      // the bottom - rather than one group simply following the other around the
-      // circle. Copied from a hand-arranged screenshot: FUT2 top-centre with the
-      // other conditions either side of it, the interventions spread along the
-      // bottom, and the shared taxa in the band between. Centring is what makes it
-      // symmetrical instead of lopsided, and it holds as either group grows.
+      // Each group gets its own arc, CENTRED on a diagonal: everything you HAVE
+      // (conditions, symptoms, genotype) around the top-LEFT, everything you TAKE
+      // around the bottom-RIGHT, with the shared taxa in the band between them.
+      // Requested that way, and the diagonal reads better than top/bottom did -
+      // the band of shared taxa runs corner to corner, which is the longest line
+      // available and so the one with the most room for labels. Centring each arc
+      // (rather than letting one group follow the other around the circle) is what
+      // keeps it symmetrical, and it holds as either group grows.
+      //
+      // Screen angles: -PI/2 is top, 0 is right, +PI/2 is bottom, PI is left.
+      // So -3PI/4 is top-left and +PI/4 is bottom-right.
       var total = Math.max(haves.length + takes.length, 1);
       rimAngles = [];
       rimV = haves.concat(takes);
       var span = function(count) { return 2 * Math.PI * count / total; };
-      [[haves, -Math.PI / 2], [takes, Math.PI / 2]].forEach(function(pair) {
+      [[haves, -3 * Math.PI / 4], [takes, Math.PI / 4]].forEach(function(pair) {
         var group = pair[0], centre = pair[1], arc = span(group.length);
         var step = group.length > 1 ? arc / group.length : 0;
         var start = centre - (arc - step) / 2;
@@ -473,7 +478,15 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         if (n.showLabel) {
           var tb = document.createElementNS(NS, "text");
           tb.setAttribute("text-anchor", "middle");
-          tb.setAttribute("dy", String(-(rr + 2.5)));
+          // Every taxon label used to sit ABOVE its circle, so in the crowded band
+          // they all competed for one strip of pixels while the space directly
+          // below every node went unused - including on the isolated nodes, whose
+          // labels pointed up into the crush for no reason. Alternating by index
+          // halves how many labels contend for any given row, and it is stable
+          // (parity of a fixed index, not of a position that moves every frame),
+          // so a label does not flip sides as the simulation settles.
+          var labelBelow = (n.i % 2) === 1;
+          tb.setAttribute("dy", String(labelBelow ? rr + 8 : -(rr + 2.5)));
           tb.setAttribute("font-size", "7.5");
           tb.setAttribute("fill", "#A08FC7");
           tb.setAttribute("pointer-events", "none");
@@ -505,6 +518,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     var isDragging = false;
     var dragStartX = 0,
       dragStartY = 0;
+    // Roughly a short taxon label's width, and the vertical band within which two
+    // labels would print over each other.
+    var LABEL_GAP = 78,
+      LABEL_ROW = 13;
     var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
     var lastClickIdx = null,
       lastClickTime = 0;
@@ -565,6 +582,18 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           if (d < mind) force += (mind - d) * 0.35;
           var fx = dx / d * force,
             fy = dy / d * force;
+          // Labels are HORIZONTAL text, so crowding hurts sideways far more than
+          // it does vertically: two taxa a comfortable distance apart on a circle
+          // can still have their names printed straight through each other. The
+          // circles were never the problem - "align the overlapping nodes
+          // horizontally" is the fix, so enforce a wider gap along x, and only
+          // between taxa that are close to sharing a row (|dy| small), which is
+          // exactly when their labels collide. Vertical stacking is left alone;
+          // labels sit clear of each other there already.
+          if (bothDynamic && Math.abs(dy) < LABEL_ROW && Math.abs(dx) < LABEL_GAP) {
+            var pushX = (LABEL_GAP - Math.abs(dx)) * 0.10 * alpha;
+            fx += (dx >= 0 ? 1 : -1) * pushX;
+          }
           a.vx += fx;
           a.vy += fy;
           b.vx -= fx;
