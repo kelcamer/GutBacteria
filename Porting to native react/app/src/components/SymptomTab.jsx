@@ -7,7 +7,7 @@ import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { isIntervention } from '../lib/interventions'
 import { MapControls } from './MapControls'
-import { stripDerived, stripDerivedConditions } from '../lib/crossFeedFilter'
+import { filterSymptomData, filterConditions } from '../lib/studyFilters'
 
 // Module-level, not per-render: a stable list AND a stable default value
 // for useState below (symptomData is a static JSON import, so this never
@@ -34,15 +34,12 @@ const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !isIntervention(s))
 // that default too, without having to find the "clear all" button - see
 // symptomMapConditionOverlay.js's header comment for the data-layer side,
 // and buildSymptomMap.js's onBackgroundClick param for the engine side.
-export function SymptomTab({ pinType = 'bact', initialSelection }) {
+export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
-  // Cross-feeding-derived links are inferred, not measured here - hidden
-  // unless asked for. Filtering upstream of the engine, see crossFeedFilter.js
-  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
@@ -74,8 +71,8 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
   // defeat extraConditions' memoization below.
   const conditions = seedData.conditions
   const extraConditions = useMemo(
-    () => stripDerivedConditions(conditions.filter((c) => extraConditionIds.includes(c.id)), showCrossFeed),
-    [conditions, extraConditionIds, showCrossFeed]
+    () => filterConditions(conditions.filter((c) => extraConditionIds.includes(c.id)), filters),
+    [conditions, extraConditionIds, filters]
   )
   const mapData = useMemo(
     () => buildOverlayMapData(symptomData, selectedSymptoms, extraConditions),
@@ -97,7 +94,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
     setExtraConditionIds([])
   }
 
-  const shownData = stripDerived(mapData, showCrossFeed)
+  const shownData = filterSymptomData(mapData, filters)
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current) return
@@ -130,7 +127,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own dependency array (mode, pinType, layoutState) with mapData/fullData, the overlay inputs
-  }, [mode, pinType, layoutState, mapData, fullData, showCrossFeed])
+  }, [mode, pinType, layoutState, mapData, fullData, filters])
 
   const nBact = (mapData.bacteria || []).length
   const nSym = (mapData.symptoms || []).length
@@ -316,7 +313,6 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
-        onToggleCrossFeed={setShowCrossFeed}
       />
     </div>
   )

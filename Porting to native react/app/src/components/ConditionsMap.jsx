@@ -5,24 +5,19 @@ import { buildMap } from '../lib/buildMap'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
-import { stripDerived, stripDerivedConditions } from '../lib/crossFeedFilter'
+import { filterSymptomData, filterConditions } from '../lib/studyFilters'
 
 // Ported from `Gfx` in gut-flora-atlas.readable.html (~line 28119-28372) -
 // the all-conditions "Condition <-> bacteria map", rendered directly below
 // the ConditionsGrid on the Conditions tab's list view (not its own nav
 // item). Reuses `buildMap`/`GFA_buildMap` with pinType left undefined,
 // which the engine defaults to "cond" (conditions on the rim).
-export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
+export function ConditionsMap({ conditions, focusNames, onBackgroundClick, filters }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
-  // Derived cross-feeding links reach this map through the symptomData xref
-  // (10th buildMap arg), which powers the Related Symptoms cross-reference in
-  // condition popups. Filtering it here keeps this map consistent with the
-  // symptom maps rather than leaking inferred links into popups.
-  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const [mode, setMode] = useState('all')
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
@@ -35,7 +30,7 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildMap(hostRef.current, tipRef.current, stripDerivedConditions(conditions, showCrossFeed), mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, onBackgroundClick, stripDerived(symptomData, showCrossFeed))
+      stop = buildMap(hostRef.current, tipRef.current, filterConditions(conditions, filters), mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, onBackgroundClick, filterSymptomData(symptomData, filters))
       graphRef.current = stop
     } catch {
       if (hostRef.current) {
@@ -50,7 +45,7 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own deps ([sig, mode, layoutState]) with onBackgroundClick, the new callback input
-  }, [sig, mode, layoutState, onBackgroundClick, showCrossFeed])
+  }, [sig, mode, layoutState, onBackgroundClick, filters])
 
   // New (no minified-source equivalent): typing a condition name in
   // ConditionsGrid above (its sibling on this same tab) highlights it -
@@ -156,7 +151,6 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
-        onToggleCrossFeed={setShowCrossFeed}
       />
     </div>
   )

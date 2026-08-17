@@ -29,7 +29,7 @@ function newTaxon(dir) {
   return { id: crypto.randomUUID?.() ?? Math.random().toString(36).slice(2, 9), name: '', dir, refs: '', note: '', links: [] }
 }
 
-export function ConditionDetail({ condition, onBack, onUpdate, onUpsertTaxon, onRemoveTaxon, onDelete, onResearch, onCompare }) {
+export function ConditionDetail({ filters, condition, onBack, onUpdate, onUpsertTaxon, onRemoveTaxon, onDelete, onResearch, onCompare }) {
   const [editingTaxon, setEditingTaxon] = useState(null)
   const [confirmDelete, setConfirmDelete] = useState(false)
   const [notesOpen, setNotesOpen] = useState(false)
@@ -144,7 +144,7 @@ export function ConditionDetail({ condition, onBack, onUpdate, onUpsertTaxon, on
         })}
       </div>
 
-      <ConditionMap condition={condition} />
+      <ConditionMap condition={condition} filters={filters} />
 
       {/* New (no minified-source equivalent): jumps to Compare with this
           condition pre-loaded as side A - the natural next question after

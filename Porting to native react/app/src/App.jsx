@@ -13,6 +13,8 @@ import { SymptomTab } from './components/SymptomTab'
 import { BrainTab } from './components/BrainTab'
 import { CompareTab } from './components/CompareTab'
 import { CrossFeedingTab } from './components/CrossFeedingTab'
+import { SettingsTab } from './components/SettingsTab'
+import { DEFAULT_FILTERS } from './lib/studyFilters'
 import { BacteriaIndex } from './components/BacteriaIndex'
 import { SourcesTab } from './components/SourcesTab'
 import { BackupTab } from './components/BackupTab'
@@ -58,6 +60,26 @@ export default function App() {
   // Wraps ConditionsMap so a single-clicked condition card can scroll its
   // map into view - see the effect below.
   const conditionsMapRef = useRef(null)
+
+  // Global study filters (Settings tab). Persisted so a chosen evidence
+  // standard survives a reload - it is a stance about what you trust, not a
+  // transient view toggle. Passed down to every map rather than held per-map,
+  // so "human only" means human only everywhere.
+  const [filters, setFilters] = useState(() => {
+    try {
+      const raw = localStorage.getItem('gfa_study_filters')
+      return raw ? { ...DEFAULT_FILTERS, ...JSON.parse(raw) } : DEFAULT_FILTERS
+    } catch {
+      return DEFAULT_FILTERS
+    }
+  })
+  useEffect(() => {
+    try {
+      localStorage.setItem('gfa_study_filters', JSON.stringify(filters))
+    } catch {
+      // private mode / quota - filters still work for this session
+    }
+  }, [filters])
 
   // New (no minified-source equivalent): GlobalSearch's own open/close
   // state, plus one "jump request" slot per destination tab that has its
@@ -394,12 +416,13 @@ export default function App() {
               }}
             />
             <div ref={conditionsMapRef}>
-              <ConditionsMap conditions={conditions} focusNames={conditionsQueryMatches} />
+              <ConditionsMap conditions={conditions} focusNames={conditionsQueryMatches} filters={filters} />
             </div>
           </>
         )}
         {activeTab === 'conditions' && activeCondition && (
           <ConditionDetail
+            filters={filters}
             condition={activeCondition}
             onBack={() => setActiveConditionId(null)}
             onUpdate={updateCondition}
@@ -419,9 +442,10 @@ export default function App() {
           />
         )}
         {activeTab === 'crossfeed' && <CrossFeedingTab />}
+        {activeTab === 'settings' && <SettingsTab filters={filters} setFilters={setFilters} />}
         {activeTab === 'glossary' && <Glossary />}
-        {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} />}
-        {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} />}
+        {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} filters={filters} />}
+        {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} filters={filters} />}
         {activeTab === 'brain' && <BrainTab pinType="cond" focusRegion={brainRegionFocusRequest} />}
         {activeTab === 'brain_r2c' && <BrainTab pinType="bact" />}
         {activeTab === 'compare' && (
@@ -435,7 +459,7 @@ export default function App() {
           />
         )}
         {activeTab === 'index' && (
-          <BacteriaIndex
+          <BacteriaIndex filters={filters}
             conditions={conditions}
             loose={looseMatching}
             focusRequest={bacteriaFocusRequest}

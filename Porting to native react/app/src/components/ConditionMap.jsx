@@ -5,28 +5,25 @@ import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
-import { stripDerived, stripDerivedConditions } from '../lib/crossFeedFilter'
+import { filterConditions } from '../lib/studyFilters'
 
 // Ported verbatim from `GFA_ConditionMap` in gut-flora-atlas.readable.html
 // (~line 26916-27095) - the per-condition scoped map that was placeholdered
 // in ConditionDetail.jsx pending the graph engine, now real.
-export function ConditionMap({ condition }) {
+export function ConditionMap({ condition, filters }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
-  // Cross-feeding-derived links are inferred, not measured here - hidden
-  // unless asked for. Filtering upstream of the engine, see crossFeedFilter.js
-  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
   const data = useMemo(
-    () => conditionSymptomData(stripDerivedConditions(condition, showCrossFeed)),
-    [condition, showCrossFeed]
+    () => conditionSymptomData(filterConditions(condition, filters)),
+    [condition, filters]
   )
 
-  const shownData = stripDerived(data, showCrossFeed)
+  const shownData = data
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current || !data.bacteria.length) return
@@ -47,7 +44,7 @@ export function ConditionMap({ condition }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- ported 1:1 from the original's own deps
-  }, [data, layoutState, showCrossFeed])
+  }, [data, layoutState, filters])
 
   if (!data.bacteria.length) return null
 
@@ -104,7 +101,6 @@ export function ConditionMap({ condition }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
-        onToggleCrossFeed={setShowCrossFeed}
       />
     </div>
   )

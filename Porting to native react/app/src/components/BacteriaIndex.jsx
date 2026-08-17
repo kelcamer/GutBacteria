@@ -30,7 +30,7 @@ const SORTS = [
   ['alpha', 'A–Z'],
 ]
 
-export function BacteriaIndex({ conditions, loose, onOpen, focusRequest }) {
+export function BacteriaIndex({ filters, conditions, loose, onOpen, focusRequest }) {
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState('all')
   const [sortBy, setSortBy] = useState('connections')
@@ -250,7 +250,7 @@ export function BacteriaIndex({ conditions, loose, onOpen, focusRequest }) {
 
       <div ref={focusMapRef}>
         {focusedGroup && (
-          <BacteriumFocusMap
+          <BacteriumFocusMap filters={filters}
             key={focusedGroup.label}
             label={focusedGroup.label}
             names={focusedGroup.names}

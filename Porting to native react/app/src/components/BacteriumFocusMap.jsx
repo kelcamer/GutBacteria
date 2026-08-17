@@ -7,7 +7,7 @@ import { useZoom } from '../lib/useZoom'
 import { Italic } from './Italic'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
-import { stripDerived } from '../lib/crossFeedFilter'
+import { filterSymptomData } from '../lib/studyFilters'
 
 // New component (no minified-source equivalent), same shape as
 // ConditionMap.jsx (the per-condition scoped map) but inverted: given the
@@ -16,20 +16,17 @@ import { stripDerived } from '../lib/crossFeedFilter'
 // bottom of BacteriaIndex.jsx, which scrolls to it when a bacterium's
 // name is clicked - see that file for the click/scroll wiring, and
 // bacteriumFocusMap.js for the matching logic.
-export function BacteriumFocusMap({ label, names, onClose }) {
+export function BacteriumFocusMap({ label, names, onClose, filters }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
-  // Cross-feeding-derived links are inferred, not measured here - hidden
-  // unless asked for. Filtering upstream of the engine, see crossFeedFilter.js
-  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
   const data = useMemo(() => buildBacteriumFocusData(names), [names])
 
-  const shownData = stripDerived(data, showCrossFeed)
+  const shownData = filterSymptomData(data, filters)
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current || !data.bacteria.length) return
@@ -55,7 +52,7 @@ export function BacteriumFocusMap({ label, names, onClose }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- matches ConditionMap.jsx's own deps ([data, layoutState])
-  }, [data, layoutState, showCrossFeed])
+  }, [data, layoutState, filters])
 
   const nSym = data.bacteria.reduce((a, b) => a + (b.up || []).length + (b.down || []).length + (b.both || []).length, 0)
 
@@ -120,7 +117,6 @@ export function BacteriumFocusMap({ label, names, onClose }) {
         onIncreasedOnly={() => graphRef.current?.showIncreasedOnly?.()}
         onDecreasedOnly={() => graphRef.current?.showDecreasedOnly?.()}
         onConnections={() => graphRef.current?.showConnectionsOnly?.()}
-        onToggleCrossFeed={setShowCrossFeed}
       />
         </>
       )}
