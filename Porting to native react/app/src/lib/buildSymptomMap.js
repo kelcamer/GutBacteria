@@ -28,6 +28,7 @@
 // upward on its own. Clearing is now only ever explicit - the popups' own x,
 // and the picker's own reset button. See onPointerUp.
 import { dirColor, dirArrow } from '../theme'
+import { isIntervention } from './interventions'
 
 function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
@@ -248,6 +249,24 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           n.vy = 0;
         }
       });
+    }
+    // Rim order is meaningful, not decorative. Placed in raw data order the
+    // conditions and the interventions interleave around the circle, and the
+    // shared taxa get pulled in every direction at once. Grouped - everything you
+    // HAVE on one arc, everything you TAKE on the opposite arc - the taxa they
+    // share settle in the middle between them, and "these two conditions deplete
+    // the same organisms those three feed" becomes something you can see rather
+    // than something you have to trace edge by edge.
+    //
+    // Only for the symptom rim: when bacteria are on the rim there are far more of
+    // them and the barycenter crossing-reduction below is the better tool. Stable
+    // partition, so within each group the data order is preserved.
+    if (!scramble && pinType === "symptom") {
+      var haves = [], takes = [];
+      rimV.forEach(function(n) {
+        (isIntervention(n.name) ? takes : haves).push(n);
+      });
+      rimV = haves.concat(takes);
     }
     if (scramble) {
       // Fisher-Yates shuffle so the rim order itself is randomized too, not
