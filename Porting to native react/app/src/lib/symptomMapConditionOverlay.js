@@ -47,7 +47,7 @@ export function withExtraConditions(data, extraConditions) {
     const dupSymptomPattern = new RegExp('^' + cond.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ' symptoms?$', 'i')
     symptoms = symptoms.filter((s) => !dupSymptomPattern.test(s))
     // Second, separate near-duplicate pattern (same bug, different
-    // wording): "Non-secretor (FUT2)" the condition vs. "Non-secretor
+    // wording): "FUT2 (Non-secretor)" the condition vs. "Non-secretor
     // status (FUT2)" the symptom - not caught by the suffix check above
     // since the wording doesn't match, but both share the same
     // parenthetical abbreviation and nothing else in this app's data

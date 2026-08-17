@@ -5,7 +5,7 @@ import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
-import { stripDerived } from '../lib/crossFeedFilter'
+import { stripDerived, stripDerivedConditions } from '../lib/crossFeedFilter'
 
 // Ported verbatim from `GFA_ConditionMap` in gut-flora-atlas.readable.html
 // (~line 26916-27095) - the per-condition scoped map that was placeholdered
@@ -21,7 +21,10 @@ export function ConditionMap({ condition }) {
   const [showCrossFeed, setShowCrossFeed] = useState(false)
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
-  const data = useMemo(() => conditionSymptomData(condition), [condition])
+  const data = useMemo(
+    () => conditionSymptomData(stripDerivedConditions(condition, showCrossFeed)),
+    [condition, showCrossFeed]
+  )
 
   const shownData = stripDerived(data, showCrossFeed)
 

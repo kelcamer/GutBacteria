@@ -21,7 +21,7 @@
 // person does, and grouping them with the other exposures makes the
 // "which intervention helps what" comparison below actually useful.
 //
-// "Non-secretor status (FUT2)" is neither - it's a host genotype, not an
+// "FUT2 (Non-secretor) status" is neither - it's a host genotype, not an
 // action or a symptom. It currently sits under SYMPTOMS for lack of a
 // better bucket; a third "host traits" grouping would be the honest fix
 // if more genotype entries ever get added.

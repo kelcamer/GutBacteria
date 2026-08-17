@@ -35,7 +35,7 @@
   "Cannabis-related dysbiosis",
   "Exercise-associated microbiota changes",
   "Lack of impulse control",
-  "Non-secretor status (FUT2)",
+  "FUT2 (Non-secretor) status",
   "Poor working memory",
   "Oral cavities",
   "Strep throat history",
@@ -58,7 +58,7 @@
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 18,
+   "count": 43,
    "up": [
     {
      "symptom": "Green tea / catechins",
@@ -165,7 +165,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "The classic, most-cited FUT2 finding: non-secretors lack the fucosylated glycans Bifidobacteria feed on, genus-level abundance/diversity reduced accordingly (species-level detail - B. bifidum, adolescentis, pseudocatenulatum - tracked separately elsewhere in this app). Also the bacterium most consistently depleted in a FUT2-deficient mouse model specifically under alcohol exposure, alongside Akkermansia - direct mechanistic evidence FUT2 loss is a RISK factor for alcohol-related dysbiosis, not protective against it.",
      "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
@@ -326,7 +326,7 @@
   },
   {
    "name": "Faecalibacterium",
-   "count": 20,
+   "count": 34,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -525,7 +525,7 @@
    ],
    "both": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "F. prausnitzii proportion in feces was associated with the FUT2 wild-type (secretor) allele in one cohort, implying lower abundance in non-secretors — but a separate indicator-species analysis found Faecalibacterium among the taxa characteristic of healthy non-secretor individuals, the opposite direction. Marked \"both\" given real, independently-sourced evidence on each side.",
      "ref": "2023, Frontiers in Microbiology — FUT2 & rotavirus susceptibility; Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
@@ -569,7 +569,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/39706182/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Roseburia (an anti-inflammatory SCFA/butyrate producer) was significantly depleted in FUT2 heterozygotes and non-secretors vs. secretor homozygotes, in cecal/sigmoid mucosal samples from healthy volunteers; the same secretor-linked depletion is echoed in an IBD cohort's host-genetics/microbiota analysis.",
      "ref": "2014, ISME Journal — FUT2 & gut microbiome energy metabolism, healthy volunteers (n=39)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24781901/"
@@ -646,7 +646,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 16,
+   "count": 38,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -789,7 +789,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/33288871/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Growth was promoted by fucosylated HMOs present in secretor milk, implying lower abundance with non-secretor status; consistent with a separate cohort (PMID 30540710) finding Lactobacillus spp. lower in non-secretor milk.",
      "ref": "2018, mSystems — Chinese mothers' milk glycans (n=56)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30637338/"
@@ -884,7 +884,7 @@
   },
   {
    "name": "Prevotella",
-   "count": 10,
+   "count": 33,
    "up": [
     {
      "symptom": "Joint pain",
@@ -899,7 +899,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/36323929/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "One of five indicator OTUs (alongside unclassified Lachnospiraceae, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
      "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
@@ -1136,7 +1136,7 @@
   },
   {
    "name": "Blautia",
-   "count": 6,
+   "count": 7,
    "up": [
     {
      "symptom": "Arterial stiffness / vascular aging",
@@ -1145,7 +1145,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/37587126/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
      "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
@@ -1195,7 +1195,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Significant increase in Bacteroidetes among non-secretors (ANOVA, p=0.036) in a healthy-subject cohort comparison.",
      "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
@@ -1230,7 +1230,7 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 13,
+   "count": 20,
    "up": [
     {
      "symptom": "Antibiotics",
@@ -1349,7 +1349,7 @@
    ],
    "down": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Non-secretor children had lower Escherichia/Shigella than secretor children (0.56% vs 1.35% median, p=0.002).",
      "ref": "2025, Clin Microbiol Infect — Copenhagen birth cohort (n=700)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/"
@@ -1393,7 +1393,7 @@
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "derived",
      "url": ""
@@ -1429,7 +1429,7 @@
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11488462/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Higher relative abundance in non-secretor milk samples.",
      "ref": "2019, J Pediatr Gastroenterol Nutr — milk microbiota (n=25)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
@@ -1532,7 +1532,7 @@
   },
   {
    "name": "Clostridium",
-   "count": 6,
+   "count": 27,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -1689,7 +1689,7 @@
    ],
    "both": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "C. coccoides group (cluster XIVa) counts significantly decreased in non-secretors vs. secretors (p=0.02) in a pregnancy cohort — but a separate adult cohort found Clostridium sphenoides et rel. significantly higher in non-secretors (p<0.05), plus a non-significant trend toward higher Clostridium clusters IV/XIVa overall in non-secretors. Marked \"both\" given real, independently-sourced evidence pointing opposite directions, likely reflecting different sub-clades within the genus.",
      "ref": "2015, PLOS ONE — secretor status in pregnancy (n=123); Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
@@ -1762,7 +1762,7 @@
   },
   {
    "name": "Akkermansia",
-   "count": 8,
+   "count": 18,
    "up": [
     {
      "symptom": "Green tea / catechins",
@@ -1809,7 +1809,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) — a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors. A mouse mechanistic study directly ties FUT2 loss to WORSENED alcohol-related pathology through this exact bacterium — see this genus's own Alcohol-related dysbiosis entry above, and note this REVERSES an earlier, unsupported cross-reference this app briefly surfaced implying FUT2 was protective against alcohol; the real relationship runs the other way.",
      "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
@@ -1878,10 +1878,10 @@
   },
   {
    "name": "Lachnospiraceae",
-   "count": 6,
+   "count": 7,
    "up": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Correction: an earlier version of this entry listed Lachnospiraceae as lower in non-secretors with no real citation behind it. The actual literature found points the other way — unclassified Lachnospiraceae was one of five indicator OTUs (alongside Prevotella, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
      "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
@@ -2062,7 +2062,7 @@
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Lower in non-secretor mothers' milk/gut microbiota across two independent cohorts.",
      "ref": "2019, J Pediatr Gastroenterol Nutr (n=25) + PMID 26231005, PLOS ONE (n=123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
@@ -2077,7 +2077,7 @@
   },
   {
    "name": "Streptococcus",
-   "count": 9,
+   "count": 27,
    "up": [
     {
      "symptom": "Brain fog",
@@ -2196,7 +2196,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Lower in non-secretor vs. secretor milk samples.",
      "ref": "2019, J Pediatr Gastroenterol Nutr — milk microbiota (n=25)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/"
@@ -2293,7 +2293,7 @@
   },
   {
    "name": "Anaerostipes",
-   "count": 36,
+   "count": 38,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -2338,6 +2338,13 @@
     },
     {
      "symptom": "Coffee / Stimulants",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
+     "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+    },
+    {
+     "symptom": "Green tea / catechins",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
      "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
@@ -2412,7 +2419,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
      "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
@@ -2543,6 +2550,13 @@
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
      "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+    },
+    {
+     "symptom": "Antibiotics",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
+     "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
     }
    ]
   },
@@ -2632,7 +2646,7 @@
    ],
    "down": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Paper URL",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5463037/"
@@ -2762,7 +2776,7 @@
   },
   {
    "name": "Eisenbergiella",
-   "count": 2,
+   "count": 3,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -2993,7 +3007,7 @@
   },
   {
    "name": "Prevotellaceae",
-   "count": 4,
+   "count": 13,
    "up": [
     {
      "symptom": "Joint pain",
@@ -3111,7 +3125,7 @@
   },
   {
    "name": "Dorea",
-   "count": 8,
+   "count": 12,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -3120,7 +3134,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Dorea formicigenerans et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
      "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
@@ -3221,7 +3235,7 @@
    "count": 5,
    "up": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Higher in FUT2-null (sese) IBD patients vs. functional-FUT2 patients.",
      "ref": "2021, J Genet Genomics — FUT2 loss-of-function in IBD (n=81)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
@@ -3326,7 +3340,7 @@
   },
   {
    "name": "Ruminococcus gnavus",
-   "count": 5,
+   "count": 17,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -3341,7 +3355,7 @@
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6601261/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Ruminococcus gnavus et rel. significantly higher in non-secretors (p<0.05), HITChip analysis — distinct from the bare Ruminococcus genus, which showed no single clean direction and isn't tracked here for that reason.",
      "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
@@ -3436,7 +3450,7 @@
   },
   {
    "name": "Eggerthella",
-   "count": 5,
+   "count": 6,
    "up": [
     {
      "symptom": "Depressed mood",
@@ -3681,7 +3695,7 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Higher in mice receiving microbiota from infants of non-secretor mothers vs. secretor mothers.",
      "ref": "2024, mSystems — infant-donor microbiota in germ-free mice",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/"
@@ -3710,7 +3724,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 11,
+   "count": 39,
    "up": [
     {
      "symptom": "Oral iron supplementation",
@@ -3805,7 +3819,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "B. plebeius et rel. and B. fragilis et rel. co-occurred specifically in secretors (implying lower abundance in non-secretors); consistent with an earlier study from the same group reporting higher Bacteroides diversity/abundance in secretors.",
      "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
@@ -4450,7 +4464,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/35895832/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia.",
      "ref": "2024, mSystems — infant-donor microbiota in germ-free mice",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/"
@@ -4523,7 +4537,7 @@
   },
   {
    "name": "Sutterella",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Sensory processing issues",
@@ -4556,7 +4570,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/31752095/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "One of five indicator OTUs (alongside Prevotella, unclassified Lachnospiraceae, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
      "ref": "Rausch et al. 2011, PNAS — healthy + Crohn's cohort, indicator-species analysis (PMID 22068912)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/"
@@ -4625,7 +4639,7 @@
   },
   {
    "name": "Erysipelotrichaceae",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -4640,7 +4654,7 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Th17-inducing family higher in FUT2-null (sese) IBD patients.",
      "ref": "2021, J Genet Genomics — FUT2 loss-of-function in IBD (n=81)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
@@ -4670,7 +4684,7 @@
   },
   {
    "name": "Bacteroides uniformis",
-   "count": 2,
+   "count": 8,
    "up": [
     {
      "symptom": "Irritability",
@@ -4785,11 +4799,11 @@
   },
   {
    "name": "Bifidobacterium adolescentis",
-   "count": 2,
+   "count": 3,
    "up": [],
    "down": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
@@ -4814,7 +4828,7 @@
    "up": [],
    "down": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
@@ -4827,7 +4841,7 @@
    "up": [],
    "down": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Baseline host-genotype profile, not a diagnosis — non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on, reshaping the microbiome regardless of disease status.",
      "ref": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
@@ -4836,10 +4850,10 @@
   },
   {
    "name": "Bacteroides vulgatus",
-   "count": 1,
+   "count": 3,
    "up": [
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "note": "Non-secretor children had higher fecal B. vulgatus than secretor children (5.00% vs 1.00% median, p=0.023); mediated 14% of secretor-status' effect on gastroenteritis risk.",
      "ref": "2025, Clin Microbiol Infect — Copenhagen birth cohort (n=700)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/"
@@ -4862,7 +4876,7 @@
   },
   {
    "name": "Eubacterium hallii",
-   "count": 36,
+   "count": 38,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -4913,6 +4927,13 @@
     },
     {
      "symptom": "Coffee / Stimulants",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
+     "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
+    },
+    {
+     "symptom": "Green tea / catechins",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
      "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
@@ -4970,7 +4991,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
      "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
@@ -5111,6 +5132,13 @@
     },
     {
      "symptom": "Chronic pain",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
+     "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
+    },
+    {
+     "symptom": "Antibiotics",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
      "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
@@ -5277,7 +5305,7 @@
   },
   {
    "name": "Ruminococcus",
-   "count": 3,
+   "count": 27,
    "up": [
     {
      "symptom": "Hair loss",
@@ -5609,7 +5637,7 @@
   },
   {
    "name": "Bacteroides ovatus",
-   "count": 1,
+   "count": 4,
    "up": [],
    "down": [
     {
@@ -5642,7 +5670,7 @@
   },
   {
    "name": "Faecalibacterium prausnitzii",
-   "count": 22,
+   "count": 42,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -5673,6 +5701,13 @@
     },
     {
      "symptom": "Coffee / Stimulants",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
+     "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
+    },
+    {
+     "symptom": "Green tea / catechins",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
      "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
@@ -5841,7 +5876,7 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
     },
     {
-     "symptom": "Non-secretor status (FUT2)",
+     "symptom": "FUT2 (Non-secretor) status",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
      "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
@@ -5902,13 +5937,20 @@
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
      "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
+    },
+    {
+     "symptom": "Antibiotics",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
+     "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
     }
    ],
    "both": []
   },
   {
    "name": "Escherichia",
-   "count": 1,
+   "count": 25,
    "up": [
     {
      "symptom": "Allergies",
@@ -6081,7 +6123,7 @@
   },
   {
    "name": "Akkermansia muciniphila",
-   "count": 1,
+   "count": 22,
    "up": [
     {
      "symptom": "Joint pain",

@@ -82,6 +82,11 @@ def main():
         for symptom, direction in observed.get(src, {}).items():
             if direction == "both":
                 continue  # ambiguous source, nothing to propagate
+            if any(en.get("symptom") == symptom
+                   for b in sd["bacteria"] if b["name"] == dst
+                   for dd in ("up", "down", "both") for en in b.get(dd, [])
+                   if en.get("derived")):
+                continue  # already derived - re-running must not duplicate
             existing = observed.get(dst, {}).get(symptom)
             if existing:
                 skipped += 1
@@ -107,8 +112,8 @@ def main():
         print(f"  {n:3}  {s}")
 
     if not args.write:
-        print("\nDRY RUN - nothing written. Re-run with --write once")
-        print("setCrossFeedVisible() exists in both graph engines.")
+        print("\nDRY RUN - nothing written (symptoms).")
+        propagate_conditions(cf, args)
         return
 
     added = 0
@@ -137,7 +142,73 @@ def main():
     json.dump(sd, open(SYM, "w"), indent=1, ensure_ascii=False)
     open(SYM, "a").write("\n")
     print(f"\nWROTE {added} derived entries to {SYM}.")
+    propagate_conditions(json.load(open(CF)), args)
     print("Now verify: python3 scripts/check_duplicate_keys.py && python3 scripts/sync_embedded_data.py")
+
+
+def propagate_conditions(cf, args):
+    """Same three rules, applied to seed_data.json's conditions.
+
+    Conditions were missed on the first pass - propagation only ever wrote to
+    symptom_data.json, so all 41 conditions had zero derived links while the
+    symptom side had 82. That made the toggle look broken to anyone testing on
+    a condition, which is what people actually browse.
+    """
+    seed = json.load(open(SEED), object_pairs_hook=collections.OrderedDict)
+    sd = json.load(open(SYM))
+    names = {b["name"] for b in sd["bacteria"]}
+    edges = usable_edges(cf, names)
+
+    proposals, conflicts, skipped = [], [], 0
+    for cond in seed["conditions"]:
+        have = {t["name"]: t.get("dir") for t in cond.get("taxa", []) if not t.get("derived")}
+        for e in edges:
+            src, dst = e["from"], e["to"]
+            direction = have.get(src)
+            if not direction or direction == "both":
+                continue
+            if any(t.get("name") == dst and t.get("derived") for t in cond.get("taxa", [])):
+                continue  # already derived - re-running must not duplicate
+            if dst in have:
+                skipped += 1
+                if have[dst] != direction:
+                    conflicts.append((cond["name"], src, direction, dst, have[dst]))
+                continue
+            proposals.append((cond, dst, direction, e))
+
+    print(f"\n--- CONDITIONS ---")
+    print(f"proposed derived taxa      : {len(proposals)}")
+    print(f"skipped (already measured) : {skipped}")
+    print(f"  of which DISAGREE        : {len(conflicts)}")
+    for c, src, sdir, dst, edir in conflicts[:15]:
+        print(f"  {c}: {src} {sdir} implies {dst} {sdir}, but {dst} is measured {edir}")
+
+    if not args.write:
+        print("\nDRY RUN - no conditions written.")
+        return
+
+    n = 0
+    for cond, dst, direction, e in proposals:
+        conf = ("lower confidence - the reverse direction was not tested"
+                if direction == "down" else "same direction as the demonstrated cross-feed")
+        cond["taxa"].append(collections.OrderedDict([
+            ("id", f"cf_{cond['id']}_{e['id']}_{dst.replace(' ', '_')}"),
+            ("name", dst),
+            ("dir", direction),
+            ("derived", True),
+            ("refs", f"derived via {e['id']} - {e['ref']}"),
+            ("note",
+             f"FROM CROSS-FEEDING - inferred, not measured in this condition. "
+             f"{e['from']} is {direction} here, and it feeds {dst} "
+             f"({', '.join(e['metabolites'])} -> {e['product']}), so {dst} is expected "
+             f"to follow. {conf.capitalize()}. The feeding relationship itself is real "
+             f"({e['evidence']}); its presence in THIS condition is an inference."),
+            ("links", [{"id": f"cf_{cond['id']}_{e['id']}_l1", "label": e["ref"], "url": e["url"]}]),
+        ]))
+        n += 1
+    json.dump(seed, open(SEED, "w"), indent=1, ensure_ascii=False)
+    open(SEED, "a").write("\n")
+    print(f"\nWROTE {n} derived taxa to {SEED}.")
 
 
 if __name__ == "__main__":

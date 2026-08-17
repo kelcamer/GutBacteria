@@ -480,7 +480,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
         // Same near-duplicate-concept exclusion as
         // symptomMapConditionOverlay.js's withExtraConditions: a condition
         // sharing its exact parenthetical abbreviation with a symptom (only
-        // "Non-secretor (FUT2)" the condition vs. "Non-secretor status
+        // "FUT2 (Non-secretor)" the condition vs. "Non-secretor status
         // (FUT2)" the symptom, checked - the only such pair app-wide) is
         // the same underlying concept represented twice, so it'll always
         // land at/near the top of "related" by sheer near-total agreement -

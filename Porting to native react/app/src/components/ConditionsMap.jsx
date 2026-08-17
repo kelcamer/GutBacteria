@@ -5,7 +5,7 @@ import { buildMap } from '../lib/buildMap'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
-import { stripDerived } from '../lib/crossFeedFilter'
+import { stripDerived, stripDerivedConditions } from '../lib/crossFeedFilter'
 
 // Ported from `Gfx` in gut-flora-atlas.readable.html (~line 28119-28372) -
 // the all-conditions "Condition <-> bacteria map", rendered directly below
@@ -35,7 +35,7 @@ export function ConditionsMap({ conditions, focusNames, onBackgroundClick }) {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildMap(hostRef.current, tipRef.current, conditions, mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, onBackgroundClick, stripDerived(symptomData, showCrossFeed))
+      stop = buildMap(hostRef.current, tipRef.current, stripDerivedConditions(conditions, showCrossFeed), mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, onBackgroundClick, stripDerived(symptomData, showCrossFeed))
       graphRef.current = stop
     } catch {
       if (hostRef.current) {

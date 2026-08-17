@@ -70,7 +70,7 @@ export const GLOSSARY = [
     "Different ways papers get identified online. PMID is PubMed's own ID; PMC is PubMed Central's free-full-text ID (not every paper has one); DOI is a universal identifier used across all of academic publishing, not just biomedicine. This app tries to link every citation to one of these directly, rather than to a search page."
   ],
   [
-    "Non-secretor (FUT2)",
+    "FUT2 (Non-secretor)",
     "A genetic trait (not a disease) where someone doesn't secrete certain sugar molecules into their gut lining, which changes which bacteria can attach and thrive there — included in this app as its own 'condition' because it reliably reshapes the microbiome regardless of disease status."
   ]
 ]

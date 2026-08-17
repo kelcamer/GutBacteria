@@ -34,3 +34,25 @@ export function stripDerived(data, showCrossFeed) {
   if (removed === 0) return data
   return { ...data, bacteria }
 }
+
+// Condition-side equivalent. seed_data.json conditions carry `taxa` rather
+// than the `bacteria` + up/down/both shape symptom_data.json uses, so it
+// needs its own pass. Accepts either a single condition or an array.
+export function stripDerivedConditions(input, showCrossFeed) {
+  if (showCrossFeed || !input) return input
+
+  const one = (c) => {
+    if (!c || !Array.isArray(c.taxa)) return c
+    const kept = c.taxa.filter((t) => !t.derived)
+    return kept.length === c.taxa.length ? c : { ...c, taxa: kept }
+  }
+
+  if (!Array.isArray(input)) return one(input)
+  let changed = false
+  const out = input.map((c) => {
+    const n = one(c)
+    if (n !== c) changed = true
+    return n
+  })
+  return changed ? out : input
+}

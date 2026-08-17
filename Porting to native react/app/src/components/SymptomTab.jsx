@@ -7,7 +7,7 @@ import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { isIntervention } from '../lib/interventions'
 import { MapControls } from './MapControls'
-import { stripDerived } from '../lib/crossFeedFilter'
+import { stripDerived, stripDerivedConditions } from '../lib/crossFeedFilter'
 
 // Module-level, not per-render: a stable list AND a stable default value
 // for useState below (symptomData is a static JSON import, so this never
@@ -74,8 +74,8 @@ export function SymptomTab({ pinType = 'bact', initialSelection }) {
   // defeat extraConditions' memoization below.
   const conditions = seedData.conditions
   const extraConditions = useMemo(
-    () => conditions.filter((c) => extraConditionIds.includes(c.id)),
-    [conditions, extraConditionIds]
+    () => stripDerivedConditions(conditions.filter((c) => extraConditionIds.includes(c.id)), showCrossFeed),
+    [conditions, extraConditionIds, showCrossFeed]
   )
   const mapData = useMemo(
     () => buildOverlayMapData(symptomData, selectedSymptoms, extraConditions),
