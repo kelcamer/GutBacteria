@@ -12,6 +12,7 @@ import { Glossary } from './components/Glossary'
 import { SymptomTab } from './components/SymptomTab'
 import { BrainTab } from './components/BrainTab'
 import { CompareTab } from './components/CompareTab'
+import { CrossFeedingTab } from './components/CrossFeedingTab'
 import { BacteriaIndex } from './components/BacteriaIndex'
 import { SourcesTab } from './components/SourcesTab'
 import { BackupTab } from './components/BackupTab'
@@ -417,6 +418,7 @@ export default function App() {
             }}
           />
         )}
+        {activeTab === 'crossfeed' && <CrossFeedingTab />}
         {activeTab === 'glossary' && <Glossary />}
         {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} />}
         {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} />}

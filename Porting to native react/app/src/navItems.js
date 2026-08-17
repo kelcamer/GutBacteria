@@ -14,6 +14,7 @@ export const NAV_ITEMS = [
   { id: 'index', label: 'Bacteria index', icon: List },
   { id: 's2b', label: 'Symptom to Bacteria Map', icon: Activity },
   { id: 'b2s', label: 'Bacteria to Symptom Map', icon: Activity },
+  { id: 'crossfeed', label: 'Crossfeeding Network', icon: Activity },
   { id: 'brain', label: 'Condition to Brain Region', icon: Activity },
   { id: 'brain_r2c', label: 'Brain Region to Condition', icon: Activity },
   { id: 'sources', label: 'Sources', icon: Link2 },
