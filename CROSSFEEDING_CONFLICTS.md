@@ -57,6 +57,56 @@ the same way.
 
 ---
 
+## INVESTIGATED: why "Bifido up, Faecalibacterium down" happens
+
+The four conditions where the pair moves in opposite directions — ADHD,
+Parkinson's, Alzheimer's, PCOS — turned out to have **two separate
+explanations**, and neither is a broken supply chain.
+
+### Parkinson's: the Bifidobacterium rise is the DRUG, not the disease
+
+*Bifidobacterium* abundance is **positively correlated with L-DOPA dose** and
+negatively with serum tyrosine in PD patients. Three species — *B. bifidum*,
+*B. breve*, *B. longum* — metabolise levodopa directly, converting it via
+deamination and reduction to DHPLA.
+([PMID 37932328](https://pubmed.ncbi.nlm.nih.gov/37932328/), *Scientific Reports* 2023)
+
+So the "prep cook" is not thriving because the gut is healthy. It is being fed
+by **medication**. A long-standing puzzle in the PD literature — the paper
+calls the Bifidobacterium increase "consistent and unexplained" — has a
+pharmacological answer.
+
+This matters for the atlas: a taxon can rise for reasons entirely unrelated to
+the disease process, and cross-feeding predictions built on it will fail.
+
+### The general pattern: the line cook is SUFFOCATING, not starving
+
+*F. prausnitzii* is **extremely oxygen-sensitive** — among the most
+oxygen-intolerant organisms in the human gut. It survives near the mucosa only
+because epithelial hypoxia keeps local oxygen near zero, using an extracellular
+electron shuttle to cope at the oxic–anoxic boundary.
+
+Inflammation breaks exactly that. Inflamed epithelium leaks oxygen into the
+lumen, and F. prausnitzii cannot tolerate it. *Bifidobacterium* is
+considerably more aerotolerant and persists.
+
+**So the supply chain is not broken — the customer is dying of something else.**
+Feeding it more makes no difference if the environment has become uninhabitable.
+That explains why the pattern appears across four conditions that share an
+inflammatory component but little else.
+
+### Why this is the most useful thing in this file
+
+Both explanations are invisible to the cross-feeding model, because it only
+knows who feeds whom. It has no concept of **medication** or **oxygen**. The
+conflicts were the only signal that something outside the model was dominating,
+and they only exist because measured data is never overwritten by inference.
+
+**Practical read:** where a derived link conflicts with measurement, suspect an
+environmental or pharmacological driver before suspecting bad data.
+
+---
+
 ## What this is good for
 
 The cross-feeding model is built from **in-vitro co-culture**, where two
