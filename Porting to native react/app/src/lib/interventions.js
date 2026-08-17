@@ -34,6 +34,7 @@ export const INTERVENTION_NAMES = [
   'Oral iron supplementation',
   'Alcohol-related dysbiosis',
   'Smoking-related dysbiosis',
+  'Green tea / catechins',
 ]
 
 const INTERVENTION_SET = new Set(INTERVENTION_NAMES)

@@ -21358,11 +21358,16 @@ select{-webkit-appearance:none;appearance:none}
     }]
   }];
   var GFA_SYMPTOM_DATA_SHIPPED = {
-    "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies", "Cold sores", "Emotional Dysregulation", "Coffee / Stimulants", "Psilocybin / Psychedelics", "Arterial stiffness / vascular aging", "2'-Fucosyllactose (HMO) supplementation", "Oral iron supplementation", "Sensory processing issues"],
+    "symptoms": ["Bloating & gas", "Abdominal pain", "Diarrhea", "Constipation", "Nausea", "Loss of appetite", "Gut barrier dysfunction", "Systemic inflammation", "Immune dysregulation", "Chronic pain", "Joint pain", "Metabolic dysregulation", "Fatigue", "Headache / migraine", "Overstimulation", "Understimulation", "Restlessness", "Paresthesia / numbness", "Dizziness / orthostatic intolerance", "Brain fog", "Anxiety", "Depressed mood", "Mania", "OCD symptoms", "Irritability", "Sleep disturbance", "Reduced socializing", "Histamine reactions", "Acne / skin flares", "Alcohol-related dysbiosis", "Smoking-related dysbiosis", "Cannabis-related dysbiosis", "Exercise-associated microbiota changes", "Lack of impulse control", "Non-secretor status (FUT2)", "Poor working memory", "Oral cavities", "Strep throat history", "Intrusive thoughts", "Urinary tract infections (UTI)", "Hair loss", "Panic attack", "Allergies", "Cold sores", "Emotional Dysregulation", "Coffee / Stimulants", "Psilocybin / Psychedelics", "Arterial stiffness / vascular aging", "2'-Fucosyllactose (HMO) supplementation", "Oral iron supplementation", "Sensory processing issues", "Green tea / catechins"],
     "bacteria": [{
       "name": "Bifidobacterium",
-      "count": 16,
+      "count": 17,
       "up": [{
+        "symptom": "Green tea / catechins",
+        "note": "Green tea consumption improved the Bifidobacterium-to-Enterobacteriaceae ratio and raised the proportion of Bifidobacterium in faecal samples; B. adolescentis specifically increased with EGCG supplementation. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
+        "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies",
+        "url": "https://www.mdpi.com/2072-6643/11/10/2364"
+      }, {
         "symptom": "Psilocybin / Psychedelics",
         "note": "IN VITRO, but human-derived and genus-level. A single dose of Psilocybe cubensis extract (35 mg/L) was fermented in the SHIME colonic model using faecal microbiota from people with severe anxiety. Bifidobacterium - the predominant genus in these samples - increased markedly after 20 h and again between 3 and 15 days; family-level Bifidobacteriaceae rose from 39.73% to 43.88% at 20 h and from 43.93% to 48.70% over 3-12 days. Critically for the cross-feeding question, SCFAs rose in parallel: acetic 2.26-fold, propionic 2.69-fold and BUTYRIC 2.21-fold at 20 h. Psilocybin and psilocin themselves were depleted during fermentation, i.e. the microbiota metabolises them. Two further metabolic effects: ammonia production fell 19-25% (ammonia is a gut irritant, so a reduction is favourable), while GABA levels DECREASED - counterintuitive for an anxiety-donor microbiota. Caveats: a fermentation vessel has no host, no absorption and no immune system; alpha-diversity fell slightly; and the authors are explicit that the cytokine and intestinal-barrier responses reflected a COMPLEX IMMUNOMODULATORY PATTERN rather than a uniform anti-inflammatory effect. They state plainly that these in vitro findings do not establish clinical benefit for intestinal or mental health.",
         "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046)",
@@ -22395,7 +22400,7 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Firmicutes",
-      "count": 5,
+      "count": 6,
       "up": [{
         "symptom": "Metabolic dysregulation",
         "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies — treat as weak evidence.",
@@ -22413,6 +22418,11 @@ select{-webkit-appearance:none;appearance:none}
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
       }],
       "down": [{
+        "symptom": "Green tea / catechins",
+        "note": "EGCG reduced Firmicutes abundance. Worth noting it also reduced overall alpha-diversity in the same work - a lower Firmicutes/Bacteroidetes ratio is often read as favourable, but diversity loss is not. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
+        "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies",
+        "url": "https://www.mdpi.com/2072-6643/11/10/2364"
+      }, {
         "symptom": "Smoking-related dysbiosis",
         "note": "Lower in current smokers; increased after smoking cessation in the same cohort.",
         "ref": "PMC3597605",
@@ -22712,8 +22722,13 @@ select{-webkit-appearance:none;appearance:none}
       }]
     }, {
       "name": "Akkermansia",
-      "count": 7,
+      "count": 8,
       "up": [{
+        "symptom": "Green tea / catechins",
+        "note": "Green tea and EGCG encouraged Akkermansia growth, with EGCG-fed mice showing increased Akkermansia alongside raised butyrate production. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
+        "ref": "Jeong et al. 2020, Journal of Medicinal Food - Green Tea Encourages Growth of Akkermansia muciniphila",
+        "url": "https://journals.sagepub.com/doi/full/10.1089/jmf.2019.4662"
+      }, {
         "symptom": "Exercise-associated microbiota changes",
         "note": "Consistently increased with exercise across both a general-adult meta-analysis and a separate obesity/T2D-specific meta-analysis — one of the most reproducible exercise-microbiome findings; this genus is tracked as depleted in several conditions elsewhere in this app, making it a strong 'exercise counteracts X' candidate.",
         "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
