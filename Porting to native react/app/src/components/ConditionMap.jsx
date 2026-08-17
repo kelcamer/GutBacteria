@@ -79,7 +79,7 @@ export function ConditionMap({ condition, filters }) {
 
       <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
 
-      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
+      <div className="gfa-scroll-x" style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
         <div ref={hostRef} style={{ width: '100%', transform: `scale(${zoom})`, transformOrigin: 'top center' }} />
         <div
           className="gfa-tip"
