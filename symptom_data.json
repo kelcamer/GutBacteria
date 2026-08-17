@@ -52,12 +52,13 @@
   "2'-Fucosyllactose (HMO) supplementation",
   "Oral iron supplementation",
   "Sensory processing issues",
-  "Green tea / catechins"
+  "Green tea / catechins",
+  "Antibiotics"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 17,
+   "count": 18,
    "up": [
     {
      "symptom": "Green tea / catechins",
@@ -115,6 +116,12 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Antibiotics",
+     "note": "Reduced after ciprofloxacin and consistently depleted by beta-lactams. Matters disproportionately for anyone already structurally low - FUT2 non-secretors - since it is the genus that seeds the whole butyrate cross-feeding chain. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
+     "ref": "Dethlefsen & Relman 2011, PNAS - repeated ciprofloxacin courses, longitudinal (PMID 20847294)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/20847294/"
+    },
     {
      "symptom": "Sensory processing issues",
      "note": "Depleted in IBS alongside Lactobacillus, where visceral hypersensitivity - a measurable lowering of sensory threshold - is a core feature. Supplementation improved pain outcomes in a paediatric meta-analysis, and vagus-nerve-stimulation work associates elevated Bifidobacterium with reduced visceral hypersensitivity. Note this is SENSORY THRESHOLD evidence from gut-pain research, not a study that measured sensory processing as an autism/ADHD trait.",
@@ -319,7 +326,7 @@
   },
   {
    "name": "Faecalibacterium",
-   "count": 19,
+   "count": 20,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -335,6 +342,12 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Antibiotics",
+     "note": "Reduced at the end of ciprofloxacin treatment, alongside Oscillospira, Ruminococcus and Dialister. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
+     "ref": "Culture-free gut microbiota analysis, ciprofloxacin vs nitrofurantoin in outpatients with UTI, Clin Microbiol Infect",
+     "url": "https://www.sciencedirect.com/science/article/pii/S1198743X14001025"
+    },
     {
      "symptom": "Abdominal pain",
      "note": "F. prausnitzii shows anti-nociceptive effects in IBS-like rodent models; reduced in IBD vs healthy controls.",
@@ -527,7 +540,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 15,
+   "count": 16,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -621,11 +634,19 @@
      "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/"
     }
+   ],
+   "both": [
+    {
+     "symptom": "Antibiotics",
+     "note": "GENUINELY DIRECTION-DEPENDENT, and worth knowing before assuming antibiotics simply kill butyrate producers. After ciprofloxacin, Roseburia relative abundance INCREASED (alongside Bacteroides, Blautia and Eubacterium), while Bifidobacterium, Faecalibacterium, Alistipes, Oscillospira, Ruminococcus and Dialister fell. Relative abundance also rises when competitors are removed, which is not the same as growth. Other perturbations push the other way - oral vancomycin reduced overall richness, diversity and faecal SCFA concentrations. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
+     "ref": "Culture-free gut microbiota analysis, ciprofloxacin vs nitrofurantoin in outpatients with UTI, Clin Microbiol Infect vs. Gut Microbes 2025 - oral vancomycin perturbation arm of the 2'-FL resilience RCT (PMID 41243448)",
+     "url": "https://www.sciencedirect.com/science/article/pii/S1198743X14001025"
+    }
    ]
   },
   {
    "name": "Lactobacillus",
-   "count": 15,
+   "count": 16,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -713,6 +734,12 @@
     }
    ],
    "down": [
+    {
+     "symptom": "Antibiotics",
+     "note": "Depleted by beta-lactam exposure and in antibiotic-associated diarrhoea models. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
+     "ref": "Early-life beta-lactam exposure and the developing microbiome, Microorganisms 2026 (PMID 41753726)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41753726/"
+    },
     {
      "symptom": "Sensory processing issues",
      "note": "Depleted in IBS alongside Bifidobacterium. L. reuteri DSM 17938 specifically reduced visceral hypersensitivity and crying time in infantile colic, and Lactobacillus strains improved pain outcomes in a paediatric functional-abdominal-pain meta-analysis. Threshold/visceral evidence, not direct sensory-processing measurement.",
@@ -1203,8 +1230,14 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 12,
+   "count": 13,
    "up": [
+    {
+     "symptom": "Antibiotics",
+     "note": "Expanded alongside the broader Enterobacteriaceae bloom after antibiotic exposure. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
+     "ref": "Early-life beta-lactam exposure and the developing microbiome, Microorganisms 2026 (PMID 41753726)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41753726/"
+    },
     {
      "symptom": "Oral iron supplementation",
      "note": "Trending increase under ferrous bisglycinate in the same RCT. Separately, ferrous sulfate triggered detection of the enteropathogenic E. coli virulence marker bfpA - i.e. the iron form matters, not just the dose.",
@@ -1369,8 +1402,14 @@
   },
   {
    "name": "Enterobacteriaceae",
-   "count": 11,
+   "count": 12,
    "up": [
+    {
+     "symptom": "Antibiotics",
+     "note": "The most consistent antibiotic signature across sources: these facultative anaerobes bloom into the vacuum left by depleted obligate anaerobes. Reported after beta-lactams, in antibiotic-treated C. difficile models, and in a primate chronic-diarrhoea case where multidrug-resistant Enterobacteriaceae expanded. This bloom, not the killing, is what drives most post-antibiotic harm. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
+     "ref": "Early-life beta-lactam exposure and the developing microbiome, Microorganisms 2026 (PMID 41753726)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41753726/"
+    },
     {
      "symptom": "Oral iron supplementation",
      "note": "Ferrous bisglycinate significantly increased the relative abundance of this family over 12 weeks. Oral iron is poorly absorbed, so the unabsorbed remainder reaches the colon and raises luminal iron availability - Enterobacteriaceae are efficient iron scavengers and bloom on it. The authors explicitly raised this as a possible harm of blanket iron supplementation, since the family contains Salmonella, Shigella and pathogenic E. coli. Overall gut bacterial diversity was NOT affected.",

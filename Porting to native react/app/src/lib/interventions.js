@@ -35,6 +35,7 @@ export const INTERVENTION_NAMES = [
   'Alcohol-related dysbiosis',
   'Smoking-related dysbiosis',
   'Green tea / catechins',
+  'Antibiotics',
 ]
 
 const INTERVENTION_SET = new Set(INTERVENTION_NAMES)
