@@ -130,7 +130,18 @@ def main(write):
             for e in b.get(k, []):
                 ref = blob(e.get("ref"), e.get("url"))
                 note = blob(e.get("note"))
-                ev = tier(ref, note, e.get("derived"))
+                # Same hand-classified escape hatch the conditions loop above
+                # has. It was missing here, which made the symptom side strictly
+                # worse than the condition side: the classifier reads keywords
+                # out of ref/note, so a lab study whose ref says "growth panel
+                # on purified HMOs" or "N-acetylhexosamine 1-kinase structures"
+                # lands as `unclassified` - and an unclassified in-vitro entry
+                # SURVIVES the "Exclude lab-dish studies" filter, which is the
+                # dangerous direction: the filter looks applied and isn't.
+                # Being conservative is right for a guess; it is not right when
+                # someone has actually read the paper and knows the design.
+                ev = (e["evidence"] if e.get("evidence_source") == "hand-classified"
+                      else tier(ref, note, e.get("derived")))
                 po = population(ref + " " + note, ev)
                 e["evidence"], e["population"] = ev, po
                 tiers[ev] += 1

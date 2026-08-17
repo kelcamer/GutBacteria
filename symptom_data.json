@@ -53,12 +53,15 @@
   "Oral iron supplementation",
   "Sensory processing issues",
   "Green tea / catechins",
-  "Antibiotics"
+  "Antibiotics",
+  "Lacto-N-tetraose (LNT) supplementation",
+  "Lacto-N-biose (LNB, from LNT breakdown)",
+  "Galacto-N-biose (GNB, from host mucin)"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 43,
+   "count": 46,
    "up": [
     {
      "symptom": "Green tea / catechins",
@@ -131,6 +134,33 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/19217682/",
      "evidence": "human-cohort",
      "population": "unknown"
+    },
+    {
+     "symptom": "Lacto-N-tetraose (LNT) supplementation",
+     "note": "LNT is the main component of the human-milk oligosaccharide pool, and lacto-N-biosidase (LNBase) is the key bifidobacterial enzyme that cleaves it into lacto-N-biose I plus lactose - the first step in using it at all. STRAIN-SPECIFIC, not a genus-wide given: LNBase activity is found in B. bifidum and only SOME B. longum subsp. longum strains, and the B. longum enzyme (LnbX/LnbY) is not even a homolog of B. bifidum's GH20 version. So an LNT supplement only benefits a Bifidobacterium population that happens to carry the enzyme.",
+     "ref": "Sakurama et al. 2013, J Biol Chem - lacto-N-biosidase (LnbX/LnbY) from B. longum subsp. longum JCM1217; LNBase activity previously identified in B. bifidum and some B. longum strains (PMID 23843461)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23843461/",
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
+    },
+    {
+     "symptom": "Lacto-N-biose (LNB, from LNT breakdown)",
+     "note": "LNB is the disaccharide LNT is cleaved into, and infant-gut-associated bifidobacteria have a dedicated GNB/LNB pathway for importing and phosphorylating it (N-acetylhexosamine 1-kinase, NahK). This is the intracellular half of HMO use: LNBase releases LNB outside the cell, this pathway consumes it. Described for infant-gut bifidobacteria specifically, so do not assume it of every adult-gut Bifidobacterium.",
+     "ref": "Sakurama/Nishimoto et al. 2015, Biochim Biophys Acta - N-acetylhexosamine 1-kinase (NahK) structures; infant-gut bifidobacteria use a dedicated GNB/LNB pathway for these two disaccharides (PMID 25644306)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25644306/",
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
+    },
+    {
+     "symptom": "Galacto-N-biose (GNB, from host mucin)",
+     "note": "GNB enters the SAME bifidobacterial pathway as LNB (that is why it is called the GNB/LNB pathway) - one transport and phosphorylation route serving a milk-derived sugar and a host-mucin-derived one. This is the mechanism behind bifidobacteria persisting after weaning: when milk oligosaccharides stop arriving, host mucin O-glycans supply the same substrate class.",
+     "ref": "Sakurama/Nishimoto et al. 2015, Biochim Biophys Acta - N-acetylhexosamine 1-kinase (NahK) structures; infant-gut bifidobacteria use a dedicated GNB/LNB pathway for these two disaccharides (PMID 25644306)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25644306/",
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
     }
    ],
    "down": [
@@ -694,7 +724,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 39,
+   "count": 42,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -757,6 +787,33 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/",
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-tetraose (LNT) supplementation",
+     "note": "Directly measured growth, NOT a cross-feeding inference: R. hominis DSM 16839 grew on LNT (umax 0.22 +/- 0.02 h-1), as did E. ramulus. SPECIES SPLIT WORTH KNOWING: R. inulinivorans did NOT grow on LNT, though it did grow on LNT's LNB unit and on fucosylated LNT variants via its own fucosidases. Same paper is the reason 2'-FL does not appear here as a direct effect - none of these strains grew on 2'-FL or 3-FL.",
+     "ref": "Pichler et al. 2020, Nat Commun - growth panel on purified HMOs, R. hominis DSM 16839 / R. inulinivorans DSM 16841 / E. ramulus DSM 15684 (PMID 32620774)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/",
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
+    },
+    {
+     "symptom": "Lacto-N-biose (LNB, from LNT breakdown)",
+     "note": "Directly measured growth, not inferred: BOTH R. hominis and R. inulinivorans grew on the LNB unit of LNT - the more reliable of the two routes into this genus, since unlike intact LNT it does not depend on which Roseburia species is present. Note the dependency this creates: LNB reaches the colon mainly because bifidobacterial lacto-N-biosidase cleaves LNT, so this is a bifidobacteria-first effect in practice.",
+     "ref": "Pichler et al. 2020, Nat Commun - growth panel on purified HMOs, R. hominis DSM 16839 / R. inulinivorans DSM 16841 / E. ramulus DSM 15684 (PMID 32620774)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/",
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
+    },
+    {
+     "symptom": "Galacto-N-biose (GNB, from host mucin)",
+     "note": "Directly measured growth on mucin-derived galacto-N-biose, via the same catabolic loci these strains use for milk oligosaccharides - which is what makes the Akkermansia route work: A. muciniphila liberates GNB from host mucin and Roseburia ferments it, giving 4.5-fold higher butyrate in coculture than Roseburia alone. Diet-independent, since the substrate is host-derived rather than swallowed. See edge cf_akkermansia_roseburia_mucin.",
+     "ref": "Pichler et al. 2020, Nat Commun - growth panel on purified HMOs, R. hominis DSM 16839 / R. inulinivorans DSM 16841 / E. ramulus DSM 15684 (PMID 32620774)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/",
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
     }
    ],
    "down": [
@@ -1039,7 +1096,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 38,
+   "count": 40,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -1152,6 +1209,24 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/",
      "evidence": "unclassified",
      "population": "unknown"
+    },
+    {
+     "symptom": "Lacto-N-biose (LNB, from LNT breakdown)",
+     "note": "L. casei BL23 catabolises LNB through a gene cluster (gnbREFGBCDA) and a PTS transporter entirely different from the bifidobacterial route - knocking out gnbC or ptsI abolished growth. Worth noting because it means this substrate is not bifidobacteria-exclusive, and the two genera are in competition for it rather than cross-feeding.",
+     "ref": "Bidart et al. 2014, Mol Microbiol - gnbREFGBCDA cluster in L. casei BL23; knockouts of gnbC/ptsI abolished growth on GNB, LNB and GalNAc (PMID 24942885)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24942885/",
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
+    },
+    {
+     "symptom": "Galacto-N-biose (GNB, from host mucin)",
+     "note": "Same L. casei gnb cluster handles GNB (and N-acetylgalactosamine), with GnbF and GnbE required for GNB but not LNB fermentation. Demonstrated in one probiotic species, L. casei BL23 - not established for the genus as a whole.",
+     "ref": "Bidart et al. 2014, Mol Microbiol - gnbREFGBCDA cluster in L. casei BL23; knockouts of gnbC/ptsI abolished growth on GNB, LNB and GalNAc (PMID 24942885)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24942885/",
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
     }
    ],
    "down": [
@@ -3192,7 +3267,7 @@
   },
   {
    "name": "Anaerostipes",
-   "count": 40,
+   "count": 43,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -3258,6 +3333,33 @@
     },
     {
      "symptom": "Green tea / catechins",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
+     "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-tetraose (LNT) supplementation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
+     "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-biose (LNB, from LNT breakdown)",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
+     "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Galacto-N-biose (GNB, from host mucin)",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
      "ref": "derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
@@ -6853,7 +6955,7 @@
   },
   {
    "name": "Eubacterium hallii",
-   "count": 40,
+   "count": 43,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -6927,6 +7029,33 @@
     },
     {
      "symptom": "Green tea / catechins",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
+     "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-tetraose (LNT) supplementation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
+     "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-biose (LNB, from LNT breakdown)",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
+     "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Galacto-N-biose (GNB, from host mucin)",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
      "ref": "derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
@@ -7853,7 +7982,7 @@
   },
   {
    "name": "Faecalibacterium prausnitzii",
-   "count": 43,
+   "count": 46,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -7904,6 +8033,33 @@
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
      "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-tetraose (LNT) supplementation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Roseburia -> Faecalibacterium prausnitzii (beta-mannan breakdown products, in-vitro-coculture, cf_roseburia_fprausnitzii_mannan).",
+     "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214) | derived via cf_roseburia_fprausnitzii_mannan - FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Lacto-N-biose (LNB, from LNT breakdown)",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Roseburia -> Faecalibacterium prausnitzii (beta-mannan breakdown products, in-vitro-coculture, cf_roseburia_fprausnitzii_mannan).",
+     "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214) | derived via cf_roseburia_fprausnitzii_mannan - FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Galacto-N-biose (GNB, from host mucin)",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is up here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Roseburia -> Faecalibacterium prausnitzii (beta-mannan breakdown products, in-vitro-coculture, cf_roseburia_fprausnitzii_mannan).",
+     "ref": "derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214) | derived via cf_roseburia_fprausnitzii_mannan - FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
      "evidence": "derived",
      "population": "n/a"

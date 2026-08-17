@@ -31,6 +31,17 @@ export const INTERVENTION_NAMES = [
   'Exercise-associated microbiota changes',
   'Psilocybin / Psychedelics',
   "2'-Fucosyllactose (HMO) supplementation",
+  // The LNT/LNB/GNB trio, added alongside 2'-FL. Only the first is really
+  // something you TAKE: LNT is sold as a purified HMO (and as part of
+  // multi-HMO blends). LNB and GNB are substrates rather than products - LNB
+  // is what bifidobacterial lacto-N-biosidase cleaves LNT INTO, and GNB comes
+  // off your own mucin via Akkermansia. They sit here anyway because what a
+  // person wants to ask of them is the same question ("what does this feed?"),
+  // and the alternative bucket - SYMPTOMS - would be a worse lie than this
+  // one. Their labels say where they come from for exactly that reason.
+  'Lacto-N-tetraose (LNT) supplementation',
+  'Lacto-N-biose (LNB, from LNT breakdown)',
+  'Galacto-N-biose (GNB, from host mucin)',
   'Oral iron supplementation',
   'Alcohol-related dysbiosis',
   'Smoking-related dysbiosis',
