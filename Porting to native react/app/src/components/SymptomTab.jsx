@@ -10,6 +10,7 @@ import { MapControls } from './MapControls'
 import { PickerSection } from './PickerSection'
 import { FilteredEmptyState } from './FilteredEmptyState'
 import { filterSymptomData, filterConditions } from '../lib/studyFilters'
+import { groupByGenus } from '../lib/groupByGenus'
 
 // Module-level, not per-render: a stable list AND a stable default value
 // for useState below (symptomData is a static JSON import, so this never
@@ -63,6 +64,10 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
   const [mode, setMode] = useState('all')
+  // Genus grouping is a VIEW mode, off by default. See groupByGenus.js for why it
+  // must never become the default: across this dataset a genus and its own species
+  // point opposite ways in 37 of 92 overlapping claims.
+  const [groupGenus, setGroupGenus] = useState(false)
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
   // Default view for the Symptom -> Bacteria direction, by request: the FUT2
@@ -135,7 +140,12 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
     setExtraConditionIds([])
   }
 
-  const shownData = filterSymptomData(mapData, filters)
+  const filteredData = filterSymptomData(mapData, filters)
+  // Grouping runs AFTER the study filters, so a merged claim can only ever be built
+  // from evidence that survived them - otherwise a hidden animal study could
+  // reappear inside a genus node.
+  const grouped = groupGenus ? groupByGenus(filteredData) : null
+  const shownData = grouped ? grouped.data : filteredData
   // Count what the filters removed, so an empty map can explain itself rather
   // than looking broken - see FilteredEmptyState.
   const rawLinks = (mapData.bacteria || []).reduce(
@@ -179,7 +189,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own dependency array (mode, pinType, layoutState) with mapData/fullData, the overlay inputs
-  }, [mode, pinType, layoutState, mapData, fullData, filters])
+  }, [mode, pinType, layoutState, mapData, fullData, filters, groupGenus])
 
   const nBact = (mapData.bacteria || []).length
   const nSym = (mapData.symptoms || []).length
@@ -307,6 +317,25 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
         </div>
       )}
 
+      {/* Grouping is lossy in one specific way - members can disagree - so the map
+          says so out loud rather than letting a merged arrow look unanimous. */}
+      {grouped && (
+        <div
+          className="rounded-xl mb-3 px-3 py-2"
+          style={{ background: theme.ink2, border: `1px solid ${grouped.summary.conflicts ? '#FFC857' : theme.line}`, fontSize: 12.5, color: theme.muted, maxWidth: 700 }}
+        >
+          <b style={{ color: theme.text }}>Grouped by genus</b> — {grouped.summary.merged} genera absorbed their species.{' '}
+          {grouped.summary.conflicts > 0 ? (
+            <>
+              <b style={{ color: '#FFC857' }}>{grouped.summary.conflicts} of them contain members that disagree</b> ({grouped.summary.conflictNames.join(', ')}).
+              Those claims render as contested (↔) rather than picking a winner — open the node to see each member's own evidence. Ungroup to see them as separate nodes, which is how the data is actually stored.
+            </>
+          ) : (
+            <>No member disagreements in the current selection.</>
+          )}
+        </div>
+      )}
+
       <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
 
       <div className="gfa-scroll-x" style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
@@ -335,6 +364,14 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
       </div>
 
       <MapControls
+        groupGenus={groupGenus}
+        onToggleGroupGenus={(next) => {
+          // Hidden-node memory is keyed by NAME, and grouping changes which names
+          // exist ("Faecalibacterium prausnitzii" becomes part of "Faecalibacterium").
+          // Carrying the old set across would hide the wrong things.
+          hiddenNamesRef.current?.clear()
+          setGroupGenus(next)
+        }}
         onSnapBack={() => {
             hiddenNamesRef.current?.clear()
             setLayoutState((s) => ({ key: s.key + 1, scramble: false }))

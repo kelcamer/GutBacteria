@@ -15,7 +15,8 @@ import { theme } from '../theme'
 // Extracted as shared code deliberately - the per-map button rows were
 // identical apart from which callbacks they invoked, and keeping five copies
 // in sync (as the label-shortening pass had to) is pure overhead.
-export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncreasedOnly, onDecreasedOnly, onConnections }) {
+export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncreasedOnly, onDecreasedOnly, onConnections,
+  onToggleGroupGenus, groupGenus }) {
   const [open, setOpen] = useState(false)
   const wrapRef = useRef(null)
 
@@ -76,6 +77,18 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     { label: '▲ Increased Only', fn: keepScroll(onIncreasedOnly) },
     { label: '▼ Decreased Only', fn: keepScroll(onDecreasedOnly) },
   ]
+
+  // Genus grouping sits at the FRONT of the overflow group when the host map
+  // supports it: like the old crossfeeding toggle, it changes what counts as a
+  // node at all, which is a bigger deal than the view filters below it. Hidden
+  // entirely on maps that do not pass the handler, rather than shown doing
+  // nothing.
+  if (onToggleGroupGenus) {
+    overflow.unshift({
+      label: groupGenus ? '🧬 Ungroup species' : '🧬 Group by genus',
+      fn: keepScroll(() => onToggleGroupGenus(!groupGenus)),
+    })
+  }
 
 
   return (
