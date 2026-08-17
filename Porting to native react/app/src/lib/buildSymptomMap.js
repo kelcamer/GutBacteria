@@ -408,8 +408,9 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       // it - the links disappear behind the very nodes they connect to. Reported of
       // 2'-FL, which lands near the midline whenever it is the only intervention
       // selected. Pushed clear on whichever side of the row it already sits.
-      var clearance = H * 0.13;
+      var clearance = rimV.length <= 5 ? H * 0.13 : 0;   // same small-map rule as `flatten`
       rimV.forEach(function(n) {
+        if (!clearance) return;
         var gap = n.y - H / 2;
         if (Math.abs(gap) < clearance) n.y = H / 2 + (gap >= 0 ? clearance : -clearance);
       });
@@ -633,7 +634,12 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     // labels would print over each other.
     // Lay the inner nodes out as a horizontal band rather than a cloud - symptom
     // rim only, where the taxa sit in the middle with room either side.
-    var flatten = pinType === "symptom";
+    // The y-axis rules - one hard row, the flattening pull, rim nodes pushed clear
+    // of the row - only make sense on a SMALL map. Past about five rim nodes there
+    // is not enough horizontal space for one row to hold the taxa without stacking
+    // labels, and forcing it does more harm than the ordinary force layout. Above
+    // the threshold the map falls back to normal physics.
+    var flatten = pinType === "symptom" && rimV.length <= 5;
     // How far above its parent a single-connection taxon floats.
     var SATELLITE_RISE = 84;
     var LABEL_GAP = 78,
