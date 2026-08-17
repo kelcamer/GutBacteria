@@ -93,6 +93,36 @@ def symptom_span(html):
     return find_bracket_span(html, obj_start, "{", "}")
 
 
+def strip_derived(seed_conditions, sym_bacteria):
+    """Remove cross-feeding-derived entries before embedding into the old app.
+
+    The React port distinguishes derived (inferred) links from measured ones and
+    hides them by default behind a Settings toggle. gut-flora-atlas.html has no
+    such UI - it would render all 236 inferred links identically to measured
+    findings, with nothing to tell them apart. Since the landing page still
+    labels that file "current app", it is the version most people would open.
+
+    Presenting inference as measurement in the app with no way to filter it is
+    the exact failure the derived flag exists to prevent, so the old app gets
+    measured data only. Nothing is lost: the derived links live in the JSON and
+    in the React port, which can actually express the distinction.
+    """
+    conds = []
+    for c in seed_conditions:
+        c2 = dict(c)
+        c2["taxa"] = [t for t in c.get("taxa", []) if not t.get("derived")]
+        conds.append(c2)
+    bact = []
+    for b in sym_bacteria:
+        b2 = dict(b)
+        for d in ("up", "down", "both"):
+            if d in b2:
+                b2[d] = [e for e in b2[d] if not e.get("derived")]
+        b2["count"] = sum(len(b2.get(d, [])) for d in ("up", "down", "both"))
+        bact.append(b2)
+    return conds, bact
+
+
 def sync(html_path, seed_path, symptom_path, check=False):
     """Returns (in_sync_before, new_html). Does not write to disk."""
     html = open(html_path, encoding="utf-8").read()
@@ -103,7 +133,7 @@ def sync(html_path, seed_path, symptom_path, check=False):
 
     a0, a1 = qf_span(html)
     current_conditions = json.loads(html[a0 : a1 + 1])
-    target_conditions = seed["conditions"]
+    target_conditions, target_bacteria = strip_derived(seed["conditions"], sym["bacteria"])
     if current_conditions != target_conditions:
         in_sync = False
         new_arr = json.dumps(target_conditions, ensure_ascii=False, separators=(",", ":"))
@@ -111,7 +141,7 @@ def sync(html_path, seed_path, symptom_path, check=False):
 
     o0, o1 = symptom_span(html)  # re-find: offsets may have shifted after the qf() edit above
     current_sym = json.loads(html[o0 : o1 + 1])
-    target_sym = {"symptoms": sym["symptoms"], "bacteria": sym["bacteria"]}
+    target_sym = {"symptoms": sym["symptoms"], "bacteria": target_bacteria}
     if current_sym.get("symptoms") != target_sym["symptoms"] or current_sym.get("bacteria") != target_sym["bacteria"]:
         in_sync = False
         new_obj = json.dumps(target_sym, ensure_ascii=False, separators=(",", ":"))
