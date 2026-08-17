@@ -21,7 +21,7 @@ with open("symptom_data.json") as fh:
 
 for b in data.get("bacteria", []):
     seen = defaultdict(list)
-    for direction in ("up", "down", "both"):
+    for direction in ("up", "down", "both", "none"):
         for entry in b.get(direction, []):
             seen[entry.get("symptom")].append((direction, bool(entry.get("derived"))))
     for symptom, rows in seen.items():
@@ -46,7 +46,7 @@ if bad:
 n = sum(
     1
     for b in data.get("bacteria", [])
-    for d in ("up", "down", "both")
+    for d in ("up", "down", "both", "none")
     for e in b.get(d, [])
     if e.get("derived")
 )

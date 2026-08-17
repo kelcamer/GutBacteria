@@ -637,9 +637,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_1_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -654,9 +652,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -1454,9 +1450,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -2102,9 +2096,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_76_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -2124,9 +2116,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -3064,9 +3054,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -3477,9 +3465,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_147_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -3494,9 +3480,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_147_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -3511,9 +3495,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -3813,9 +3795,7 @@
        "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -3902,9 +3882,9 @@
     {
      "id": "seed_215",
      "name": "Lachnospiraceae",
-     "dir": "up",
-     "refs": "PMID 22068912",
-     "note": "Correction: an earlier version of this entry listed Lachnospiraceae as lower in non-secretors with no real citation behind it. The actual literature found points the other way — unclassified Lachnospiraceae was one of five indicator OTUs (alongside Prevotella, Sutterella, Faecalibacterium) identified for healthy non-secretor individuals in an indicator-species analysis.",
+     "dir": "both",
+     "refs": "Physiol Genomics 2017, n=33 (27 secretors / 6 non-secretors), LEFSE, stool (PMID 28710295); vs Rausch et al. 2011, PNAS, colonic biopsies, indicator-species analysis (PMID 22068912)",
+     "note": "Genuinely unresolved - two small studies point opposite ways and neither wins. Stool, 33 subjects (only 6 non-secretors): Lachnospiraceae significantly HIGHER in secretors, i.e. lower in non-secretors. Colonic biopsies, indicator analysis inside an 18-person healthy subgroup: unclassified Lachnospiraceae characteristic of NON-secretors. Different sample sites, both tiny.",
      "links": [
       {
        "id": "seed_215_l1",
@@ -3918,9 +3898,9 @@
     {
      "id": "seed_216",
      "name": "Proteobacteria",
-     "dir": "both",
-     "refs": "No phylum-level source exists; the field previously held the placeholder 'Paper URL'. Nearest real evidence, at genus level: 81 genotyped IBD patients, Escherichia decreased in non-secretors (PMID 34419617)",
-     "note": "Don't trust this arrow - read the member nodes instead. Proteobacteria is a whole phylum and its members disagree here: Escherichia/Shigella is down, but Enterobacteriaceae, Klebsiella and Sutterella are up. No phylum-level study exists; the nearest real evidence is genus-level.",
+     "dir": "none",
+     "refs": "No phylum-level source exists. Nearest real evidence is genus level: Escherichia decreased in non-secretors, 81 genotyped IBD patients (PMID 34419617)",
+     "note": "Tested, nothing reliable at this rank. No phylum-level study of FUT2 exists, and this phylum's own members disagree here: Escherichia/Shigella down, Enterobacteriaceae, Klebsiella and Sutterella up. Read those nodes instead - a phylum average over organisms moving in opposite directions is not a finding.",
      "links": [
       {
        "id": "seed_209_proteo_l1",
@@ -4081,9 +4061,9 @@
     {
      "id": "seed_209_fp7",
      "name": "Faecalibacterium",
-     "dir": "down",
-     "refs": "Direction from the species-level stool measurement (PMID 36922975); dissent: Rausch et al. 2011, PNAS, colonic biopsies, indicator-species analysis (PMID 22068912); counterweights: PMID 29533703, PMID 34419617, PMID 33462482, PMID 41688638, PMID 38172637; mechanism: PMID 23692866",
-     "note": "Lower in non-secretors, but weakly. The one study that actually measured it (stool, species level) found F. prausnitzii higher with the secretor allele. A mucosal-biopsy study pointed the other way, and a dedicated study of 1,190 people found no FUT2 effect on composition at all - so the true effect here may be nil.",
+     "dir": "none",
+     "refs": "n=1,190 null (PMID 29533703); 81 genotyped IBD patients (PMID 34419617); GWAS association without direction (PMID 33462482, PMID 41688638); species-level stool finding (PMID 36922975); strain-level effect (PMID 38172637)",
+     "note": "Tested, no reliable effect. The best-powered study - 1,190 healthy people - found no association between secretor status and composition at all, and in 81 genotyped IBD patients Escherichia was the only abundant genus that moved. The species-level stool finding (F. prausnitzii tracking the secretor allele) is the one directional result, and it is a secondary observation.",
      "links": [
       {
        "id": "seed_209_fp7_l2",
@@ -4258,8 +4238,8 @@
      "id": "seed_209_fp15",
      "name": "Blautia",
      "dir": "up",
-     "refs": "PMID 24733310",
-     "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
+     "refs": "PMID 24733310; dissent: PMID 28710295",
+     "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis. Dissent, outweighed: a 33-subject study (6 non-secretors) found Blautia higher in SECRETORS, the opposite direction - smaller, and only 6 people on the side that matters (PMID 28710295).",
      "links": [
       {
        "id": "seed_209_fp15_l1",
@@ -4306,8 +4286,8 @@
      "id": "seed_209_fp18",
      "name": "Bacteroides",
      "dir": "down",
-     "refs": "PMID 24733310",
-     "note": "B. plebeius et rel. and B. fragilis et rel. co-occurred specifically in secretors (implying lower abundance in non-secretors); consistent with an earlier study from the same group reporting higher Bacteroides diversity/abundance in secretors.",
+     "refs": "PMID 24733310; dissent: PMID 28710295",
+     "note": "B. plebeius et rel. and B. fragilis et rel. co-occurred specifically in secretors (implying lower abundance in non-secretors); consistent with an earlier study from the same group reporting higher Bacteroides diversity/abundance in secretors. Dissent, outweighed: a 33-subject study (6 non-secretors) found Bacteroides higher in NON-secretors, the opposite direction - smaller, and only 6 people on the side that matters (PMID 28710295).",
      "links": [
       {
        "id": "seed_209_fp18_l1",
@@ -4417,9 +4397,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_209_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -4439,9 +4417,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_209_cf_fprausnitzii_dpiger_Desulfovibrio",
@@ -4456,9 +4432,7 @@
        "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -5613,9 +5587,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -5944,9 +5916,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_325_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -5961,9 +5931,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_325_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -5978,9 +5946,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_325_cf_fprausnitzii_dpiger_Desulfovibrio",
@@ -5995,9 +5961,7 @@
        "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -6288,9 +6252,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_353_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -6305,9 +6267,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_353_cf_fprausnitzii_dpiger_Desulfovibrio",
@@ -6322,9 +6282,7 @@
        "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_353_cf_blongum_roseburia_acetate_Roseburia",
@@ -6339,9 +6297,7 @@
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -6653,9 +6609,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_380_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -6670,9 +6624,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_380_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -6687,9 +6639,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -7050,9 +7000,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -7675,9 +7623,7 @@
        "label": "Inferred source: FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42283799/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -7825,9 +7771,7 @@
        "label": "Inferred source: Microorganisms 2025 (PMID 40732214)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_fe_supp_cf_infantis_ehallii_Eubacterium_hallii",
@@ -7842,9 +7786,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_fe_supp_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -7859,9 +7801,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_fe_supp_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -7876,9 +7816,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_fe_supp_cf_blongum_roseburia_acetate_Roseburia",
@@ -7893,9 +7831,7 @@
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -8218,9 +8154,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_480_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -8240,9 +8174,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_480_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -8257,9 +8189,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_480_cf_blongum_roseburia_acetate_Roseburia",
@@ -8279,9 +8209,7 @@
        "label": "Inferred source: Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -8873,9 +8801,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ms_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -8890,9 +8816,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ms_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -8907,9 +8831,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ms_cf_fprausnitzii_dpiger_Desulfovibrio",
@@ -8924,9 +8846,7 @@
        "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -9513,9 +9433,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ibs_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -9530,9 +9448,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ibs_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -9547,9 +9463,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_seed_ibs_cf_blongum_roseburia_acetate_Roseburia",
@@ -9564,9 +9478,7 @@
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -10046,9 +9958,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -10424,9 +10334,7 @@
        "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -10781,9 +10689,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_uc_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -10803,9 +10709,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_uc_cf_fprausnitzii_dpiger_Desulfovibrio",
@@ -10820,9 +10724,7 @@
        "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -11268,9 +11170,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_t2d_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -11285,9 +11185,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_t2d_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -11302,9 +11200,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -11708,9 +11604,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -11921,9 +11815,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pso_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -11938,9 +11830,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pso_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -11955,9 +11845,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pso_cf_fprausnitzii_dpiger_Desulfovibrio",
@@ -11972,9 +11860,7 @@
        "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pso_cf_blongum_roseburia_acetate_Roseburia",
@@ -11989,9 +11875,7 @@
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -12277,9 +12161,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_aud_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -12299,9 +12181,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_aud_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -12316,9 +12196,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -12652,9 +12530,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_smk_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -12674,9 +12550,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_smk_cf_blongum_roseburia_acetate_Roseburia",
@@ -12696,9 +12570,7 @@
        "label": "Inferred source: Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -13101,9 +12973,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_t1d_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -13118,9 +12988,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_t1d_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -13135,9 +13003,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -13472,9 +13338,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pcos_1_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -13489,9 +13353,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_pcos_1_cf_blongum_roseburia_acetate_Roseburia",
@@ -13506,9 +13368,7 @@
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -13872,9 +13732,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_meno_1_cf_akkermansia_anaerostipes_Anaerostipes",
@@ -13889,9 +13747,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_meno_1_cf_akkermansia_eubacterium_hall_Eubacterium_hallii",
@@ -13906,9 +13762,7 @@
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -14032,9 +13886,7 @@
        "label": "Inferred source: Microorganisms 2025 (PMID 40732214)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_perimeno_cf_infantis_ehallii_Eubacterium_hallii",
@@ -14049,9 +13901,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_perimeno_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -14066,9 +13916,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_perimeno_cf_blongum_roseburia_acetate_Roseburia",
@@ -14083,9 +13931,7 @@
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -14289,9 +14135,7 @@
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -14572,9 +14416,7 @@
        "label": "Inferred source: Microorganisms 2025 (PMID 40732214)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_prog_cf_infantis_ehallii_Eubacterium_hallii",
@@ -14589,9 +14431,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_prog_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -14606,9 +14446,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_prog_cf_blongum_roseburia_acetate_Roseburia",
@@ -14623,9 +14461,7 @@
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   },
@@ -14821,9 +14657,7 @@
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_lupus_cf_badolescentis_lactate_utilisers_Anaerostipes",
@@ -14838,9 +14672,7 @@
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     },
     {
      "id": "cf_new_lupus_cf_blongum_roseburia_acetate_Roseburia",
@@ -14855,9 +14687,7 @@
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
       }
-     ],
-     "evidence": "derived",
-     "population": "n/a"
+     ]
     }
    ]
   }

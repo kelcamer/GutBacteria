@@ -35,7 +35,8 @@ const DEFAULT_SYMPTOM_SELECTION = [
   'Lacto-N-neotetraose (LNnT) supplementation',
   'Galacto-N-biose (GNB, from host mucin)',
 ]
-const ADHD_CONDITION_ID = 'seed_76'
+// Conditions included in the default Symptom -> Bacteria view, by request.
+const DEFAULT_CONDITION_IDS = ['seed_76', 'seed_ida_state'] // ADHD, Iron deficiency (state)
 
 if (import.meta.env?.DEV) {
   const missing = DEFAULT_SYMPTOM_SELECTION.filter((s) => !ALL_SYMPTOMS.includes(s))
@@ -95,7 +96,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters, onFilt
   // Not a lock: open the picker and these pills are already lit, so one tap
   // drops any of them, and "x clear all" returns to the full map.
   const [extraConditionIds, setExtraConditionIds] = useState(
-    pinType === 'symptom' ? [ADHD_CONDITION_ID] : []
+    pinType === 'symptom' ? [...DEFAULT_CONDITION_IDS] : []
   )
   // Defaults to nothing checked - so you never have to manually deselect
   // 44 pills just to get the useful default view. An empty selection
@@ -193,11 +194,11 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters, onFilt
   // Count what the filters removed, so an empty map can explain itself rather
   // than looking broken - see FilteredEmptyState.
   const rawLinks = (mapData.bacteria || []).reduce(
-    (a, b) => a + ['up', 'down', 'both'].reduce((x, k) => x + (b[k] || []).length, 0),
+    (a, b) => a + ['up', 'down', 'both', 'none'].reduce((x, k) => x + (b[k] || []).length, 0),
     0
   )
   const shownLinks = (shownData.bacteria || []).reduce(
-    (a, b) => a + ['up', 'down', 'both'].reduce((x, k) => x + (b[k] || []).length, 0),
+    (a, b) => a + ['up', 'down', 'both', 'none'].reduce((x, k) => x + (b[k] || []).length, 0),
     0
   )
   const filteredEmpty = rawLinks > 0 && shownLinks === 0

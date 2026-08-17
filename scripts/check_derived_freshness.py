@@ -71,12 +71,12 @@ def main():
 
     observed = {}
     for b in sym["bacteria"]:
-        for d in ("up", "down", "both"):
+        for d in ("up", "down", "both", "none"):
             for l in b.get(d, []):
                 if not l.get("derived"):
                     observed.setdefault(b["name"], {})[l["symptom"]] = d
     for b in sym["bacteria"]:
-        for d in ("up", "down", "both"):
+        for d in ("up", "down", "both", "none"):
             for l in b.get(d, []):
                 if not l.get("derived"):
                     continue

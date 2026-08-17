@@ -152,70 +152,30 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         items: []
       };
       nodes.push(bNode);
-      (b.up || []).forEach(function(x) {
-        var si = symIdx[x.symptom];
-        if (si == null) return;
-        nodes[si].deg++;
-        bNode.deg++;
-        bNode.items.push({
-          symptom: x.symptom,
-          color: nodes[si].color,
-          dir: "up",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-        edges.push({
-          s: si,
-          t: bi,
-          dir: "up",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-      });
-      (b.down || []).forEach(function(x) {
-        var si = symIdx[x.symptom];
-        if (si == null) return;
-        nodes[si].deg++;
-        bNode.deg++;
-        bNode.items.push({
-          symptom: x.symptom,
-          color: nodes[si].color,
-          dir: "down",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-        edges.push({
-          s: si,
-          t: bi,
-          dir: "down",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-      });
-      (b.both || []).forEach(function(x) {
-        var si = symIdx[x.symptom];
-        if (si == null) return;
-        nodes[si].deg++;
-        bNode.deg++;
-        bNode.items.push({
-          symptom: x.symptom,
-          color: nodes[si].color,
-          dir: "both",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-        edges.push({
-          s: si,
-          t: bi,
-          dir: "both",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
+      // One loop over the four directions, replacing three near-identical copies.
+      // "none" is the fourth: tested, no reliable effect - see dirColor in theme.js.
+      ["up", "down", "both", "none"].forEach(function(dir) {
+        (b[dir] || []).forEach(function(x) {
+          var si = symIdx[x.symptom];
+          if (si == null) return;
+          nodes[si].deg++;
+          bNode.deg++;
+          bNode.items.push({
+            symptom: x.symptom,
+            color: nodes[si].color,
+            dir: dir,
+            note: x.note,
+            ref: x.ref,
+            url: x.url
+          });
+          edges.push({
+            s: si,
+            t: bi,
+            dir: dir,
+            note: x.note,
+            ref: x.ref,
+            url: x.url
+          });
         });
       });
     });
@@ -713,9 +673,9 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       xrefSymptomToBact = {};
     (xrefData.bacteria || []).forEach(function(b) {
       var list = [];
-      (b.up || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "up" }); });
-      (b.down || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "down" }); });
-      (b.both || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "both" }); });
+      ["up", "down", "both", "none"].forEach(function(dir) {
+        (b[dir] || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: dir }); });
+      });
       xrefBactToSymptoms[b.name] = list;
       list.forEach(function(x) {
         var arr = xrefSymptomToBact[x.symptom] || (xrefSymptomToBact[x.symptom] = []);

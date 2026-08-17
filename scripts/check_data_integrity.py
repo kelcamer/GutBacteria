@@ -39,7 +39,7 @@ for c in seed["conditions"]:
 # 2
 sym = {}
 for b in sd["bacteria"]:
-    for d in ("up", "down", "both"):
+    for d in ("up", "down", "both", "none"):
         for e in b.get(d, []):
             sym[(b["name"], e.get("symptom"))] = d
 for c in seed["conditions"]:
@@ -57,7 +57,7 @@ for c in seed["conditions"]:
 # 3
 valid = set(sd.get("symptoms", []))
 for b in sd["bacteria"]:
-    for d in ("up", "down", "both"):
+    for d in ("up", "down", "both", "none"):
         for e in b.get(d, []):
             if e.get("symptom") not in valid:
                 fail.append(f"ORPHANED SYMPTOM: {b['name']} -> {e.get('symptom')!r}")
@@ -65,7 +65,7 @@ for b in sd["bacteria"]:
 # 4
 for b in sd["bacteria"]:
     seen = defaultdict(set)
-    for d in ("up", "down", "both"):
+    for d in ("up", "down", "both", "none"):
         for e in b.get(d, []):
             seen[e.get("symptom")].add(d)
     for s, dirs in seen.items():
@@ -74,7 +74,7 @@ for b in sd["bacteria"]:
 
 # 5
 for b in sd["bacteria"]:
-    actual = sum(len(b.get(d, [])) for d in ("up", "down", "both"))
+    actual = sum(len(b.get(d, [])) for d in ("up", "down", "both", "none"))
     if b.get("count") != actual:
         fail.append(f"COUNT DRIFT: {b['name']} count={b.get('count')} actual={actual}")
 
@@ -85,5 +85,5 @@ if fail:
     sys.exit(1)
 print(
     f"Data integrity OK: {sum(len(c.get('taxa', [])) for c in seed['conditions'])} condition taxa, "
-    f"{sum(len(b.get(d, [])) for b in sd['bacteria'] for d in ('up', 'down', 'both'))} symptom links."
+    f"{sum(len(b.get(d, [])) for b in sd['bacteria'] for d in ('up', 'down', 'both', 'none'))} symptom links."
 )

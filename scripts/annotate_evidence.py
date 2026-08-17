@@ -126,7 +126,7 @@ def main(write):
 
     sd = json.load(open("symptom_data.json"), object_pairs_hook=OrderedDict)
     for b in sd["bacteria"]:
-        for k in ("up", "down", "both"):
+        for k in ("up", "down", "both", "none"):
             for e in b.get(k, []):
                 ref = blob(e.get("ref"), e.get("url"))
                 note = blob(e.get("note"))

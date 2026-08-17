@@ -33,7 +33,7 @@
 // engine at all. A merged claim built from a disagreement leads with the
 // disagreement, then gives each member's own evidence in full.
 
-const DIR_ARROW = { up: '▲', down: '▼', both: '↔' }
+const DIR_ARROW = { up: '▲', down: '▼', both: '↔', none: '○' }
 
 // The genus is the first whitespace-delimited word. That is how rank is encoded
 // in this dataset - there is no rank field to consult. Names with no space
@@ -69,7 +69,7 @@ export function groupByGenus(data) {
     // symptom -> [{member, dir, note, ref, url, derived}]
     const claims = new Map()
     for (const m of members) {
-      for (const dir of ['up', 'down', 'both']) {
+      for (const dir of ['up', 'down', 'both', 'none']) {
         for (const e of m[dir] || []) {
           if (!claims.has(e.symptom)) claims.set(e.symptom, [])
           claims.get(e.symptom).push({ member: m.name, dir, ...e })
@@ -82,10 +82,21 @@ export function groupByGenus(data) {
     const memberList = members.map((m) => m.name).join(', ')
 
     for (const [symptom, rows] of claims) {
-      const dirs = new Set(rows.map((r) => r.dir))
+      // "none" (tested, no reliable effect) is not an opposing direction - it is the
+      // absence of one. A member reporting nothing does not contradict a member
+      // reporting a decrease, it is just weaker evidence about the same organism.
+      // Counting it as disagreement turned a careful grey + down pair into yellow,
+      // which is exactly the overloading the grey state was added to end. So a
+      // directional member wins over a null one, and the merged claim is only
+      // "none" when every member is.
+      const directional = rows.filter((r) => r.dir !== 'none')
+      const voting = directional.length ? directional : rows
+      const dirs = new Set(voting.map((r) => r.dir))
       const disagrees = dirs.size > 1
       if (disagrees) conflicted++
 
+      // Every member is still shown, including the null ones - they are part of the
+      // picture even when they do not set the arrow.
       const perMember = rows
         .map((r) => `[${r.member} ${DIR_ARROW[r.dir] || r.dir}] ${r.note || '(no note)'}`)
         .join('  ||  ')
@@ -101,7 +112,7 @@ export function groupByGenus(data) {
           `Grouping is a display choice; the evidence below was measured at the rank named here, ` +
           `not at genus level. `
 
-      const dir = disagrees ? 'both' : rows[0].dir
+      const dir = disagrees ? 'both' : voting[0].dir
       node[dir].push({
         symptom,
         note: header + perMember,

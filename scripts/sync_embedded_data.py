@@ -115,10 +115,10 @@ def strip_derived(seed_conditions, sym_bacteria):
     bact = []
     for b in sym_bacteria:
         b2 = dict(b)
-        for d in ("up", "down", "both"):
+        for d in ("up", "down", "both", "none"):
             if d in b2:
                 b2[d] = [e for e in b2[d] if not e.get("derived")]
-        b2["count"] = sum(len(b2.get(d, [])) for d in ("up", "down", "both"))
+        b2["count"] = sum(len(b2.get(d, [])) for d in ("up", "down", "both", "none"))
         bact.append(b2)
     return conds, bact
 

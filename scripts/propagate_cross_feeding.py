@@ -157,7 +157,7 @@ def strip_derived_symptoms(sd):
     """
     old = {}
     for b in sd["bacteria"]:
-        for d in ("up", "down", "both"):
+        for d in ("up", "down", "both", "none"):
             keep = []
             for e in b.get(d, []):
                 if e.get("derived"):
@@ -226,7 +226,7 @@ def main():
     # index: taxon -> {symptom: direction} as OBSERVED today
     observed = collections.defaultdict(dict)
     for b in sd["bacteria"]:
-        for d in ("up", "down", "both"):
+        for d in ("up", "down", "both", "none"):
             for en in b.get(d, []):
                 if not en.get("derived"):
                     observed[b["name"]][en["symptom"]] = d
@@ -239,7 +239,7 @@ def main():
                 continue  # ambiguous source, nothing to propagate
             if any(en.get("symptom") == symptom
                    for b in sd["bacteria"] if b["name"] == dst
-                   for dd in ("up", "down", "both") for en in b.get(dd, [])
+                   for dd in ("up", "down", "both", "none") for en in b.get(dd, [])
                    if en.get("derived")):
                 continue  # already derived - re-running must not duplicate
             existing = observed.get(dst, {}).get(symptom)
@@ -319,7 +319,7 @@ def main():
     open(SYM, "a").write("\n")
     now = {}
     for b in sd["bacteria"]:
-        for d in ("up", "down", "both"):
+        for d in ("up", "down", "both", "none"):
             for e in b.get(d, []):
                 if e.get("derived"):
                     now[(b["name"], e["symptom"])] = d

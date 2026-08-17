@@ -72,7 +72,7 @@ export function filterSymptomData(data, f) {
   let removed = 0
   const bacteria = data.bacteria.map((b) => {
     const next = { ...b }
-    for (const dir of ['up', 'down', 'both']) {
+    for (const dir of ['up', 'down', 'both', 'none']) {
       if (!Array.isArray(b[dir])) continue
       const kept = b[dir].filter((e) => entryPasses(e, f))
       if (kept.length !== b[dir].length) {
@@ -114,7 +114,7 @@ export function filterStats(seedConditions, symptomData, f) {
   }
   ;(seedConditions || []).forEach((c) => (c.taxa || []).forEach(count))
   ;(symptomData?.bacteria || []).forEach((b) =>
-    ['up', 'down', 'both'].forEach((d) => (b[d] || []).forEach(count))
+    ['up', 'down', 'both', 'none'].forEach((d) => (b[d] || []).forEach(count))
   )
   return { total, hidden, shown: total - hidden }
 }
