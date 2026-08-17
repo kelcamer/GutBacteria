@@ -450,6 +450,7 @@ export default function App() {
         {activeTab === 'brain_r2c' && <BrainTab pinType="bact" />}
         {activeTab === 'compare' && (
           <CompareTab
+            filters={filters}
             conditions={conditions}
             loose={looseMatching}
             aId={compareAId}

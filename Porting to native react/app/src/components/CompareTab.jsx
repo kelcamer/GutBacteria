@@ -6,7 +6,7 @@ import { DirTriangle } from './DirTriangle'
 import { RankBadge } from './RankBadge'
 import { Italic } from './Italic'
 import { isIntervention } from '../lib/interventions'
-import { stripDerived } from '../lib/crossFeedFilter'
+import { filterSymptomData, filterConditions } from '../lib/studyFilters'
 
 // Ported from `jm` in gut-flora-atlas.readable.html (~line 28986-29601,
 // 616 lines) - the Compare-two tab: pick any two conditions OR symptoms
@@ -27,21 +27,15 @@ import { stripDerived } from '../lib/crossFeedFilter'
 // 28966).
 const KIND_ORDER = ['both-up', 'both-down', 'clash', 'only-a', 'only-b']
 
-export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
-  // Derived cross-feeding links were silently entering every comparison here:
-  // this tab builds its pseudo-conditions straight from symptomData, so the
-  // aligned/clash arithmetic behind both the neighbours list and the new
-  // "Most likely to help with" ranking was counting inferred links as if they
-  // were measured. Hidden by default, matching the maps.
-  //
-  // Declared above every other hook and far above this component's early
-  // return - see the header note on its Rules-of-Hooks history.
-  const [showCrossFeed, setShowCrossFeed] = useState(false)
+export function CompareTab({ conditions, loose, aId, bId, setAId, setBId, filters }) {
   const symptomPseudo = useMemo(
-    () => buildSymptomPseudoConditions(stripDerived(symptomData, showCrossFeed)),
-    [showCrossFeed]
+    () => buildSymptomPseudoConditions(filterSymptomData(symptomData, filters)),
+    [filters]
   )
-  const combined = useMemo(() => [...conditions, ...symptomPseudo], [conditions, symptomPseudo])
+  const combined = useMemo(
+    () => [...filterConditions(conditions, filters), ...symptomPseudo],
+    [conditions, symptomPseudo, filters]
+  )
   // Double-clicking either picker jumps straight down to the Full
   // comparison table, which otherwise sits well below the fold (past the
   // multi-select panel and the closest-neighbours list) - the table is
@@ -237,26 +231,6 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId }) {
         <Picker value={b.id} onChange={onChangeB} side={b.color} />
       </div>
 
-      <div className="mb-3">
-        <button
-          onClick={() => setShowCrossFeed((v) => !v)}
-          className="rounded-lg px-3 py-1.5 text-sm"
-          style={{
-            background: showCrossFeed ? theme.ink3 : 'transparent',
-            border: `1px solid ${showCrossFeed ? '#A78BFA' : theme.line}`,
-            color: showCrossFeed ? theme.text : theme.muted,
-            touchAction: 'manipulation',
-          }}
-          title="Cross-feeding links are inferred from metabolic relationships, not measured in these entries"
-        >
-          {showCrossFeed ? '🚫 Hide Crossfeeding' : '🔀 Show Crossfeeding'}
-        </button>
-        {showCrossFeed && (
-          <span className="ml-2" style={{ color: theme.muted, fontSize: 11.5 }}>
-            Counting inferred cross-feeding links in the comparison below.
-          </span>
-        )}
-      </div>
 
       <div className="mb-5" style={{ maxWidth: 720 }}>
         <button

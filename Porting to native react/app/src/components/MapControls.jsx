@@ -15,12 +15,8 @@ import { theme } from '../theme'
 // Extracted as shared code deliberately - the per-map button rows were
 // identical apart from which callbacks they invoked, and keeping five copies
 // in sync (as the label-shortening pass had to) is pure overhead.
-export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncreasedOnly, onDecreasedOnly, onConnections, onToggleCrossFeed }) {
+export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncreasedOnly, onDecreasedOnly, onConnections }) {
   const [open, setOpen] = useState(false)
-  // Cross-feeding links are INFERRED from metabolic relationships rather than
-  // measured in the condition/symptom they appear under, so they stay hidden
-  // unless asked for. Default false = proven data only.
-  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const wrapRef = useRef(null)
 
   // Close the overflow popover on any outside pointer press. Uses
@@ -68,30 +64,19 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     touchAction: 'manipulation',
   }
 
-  // Snap back, Connections and Scramble stay always-visible; the filters
-  // collapse on narrow screens. Crossfeeding is unshifted to the FRONT of
-  // that group below - it changes what data is on screen at all, which is a
-  // bigger deal than the view filters it sits above.
+  // Snap back, Connections and Scramble stay always-visible; the view
+  // filters collapse on narrow screens.
+  //
+  // Crossfeeding is deliberately NOT here any more. It moved to the Settings
+  // tab alongside the evidence and population filters, so there is one place
+  // that decides what data is on screen instead of a per-map toggle that can
+  // disagree with a global setting.
   const overflow = [
     { label: '🕸️ Hide Isolated', fn: keepScroll(onHideIsolated) },
     { label: '▲ Increased Only', fn: keepScroll(onIncreasedOnly) },
     { label: '▼ Decreased Only', fn: keepScroll(onDecreasedOnly) },
   ]
 
-  // Only offer the toggle where the host map actually filters derived links.
-  // ConditionsMap and BrainTab build from seed/brain data and do not, so they
-  // omit onToggleCrossFeed and the button is hidden rather than shown doing
-  // nothing - a control that appears to work and doesn't is worse than absent.
-  if (onToggleCrossFeed) {
-    overflow.unshift({
-      label: showCrossFeed ? '🚫 Hide Crossfeeding' : '🔀 Show Crossfeeding',
-      fn: keepScroll(() => {
-        const next = !showCrossFeed
-        setShowCrossFeed(next)
-        onToggleCrossFeed(next)
-      }),
-    })
-  }
 
   return (
     <div ref={wrapRef} className="mt-3 flex flex-wrap gap-2 items-center" style={{ position: 'relative' }}>
