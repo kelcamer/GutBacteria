@@ -520,7 +520,14 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // just because they're both large circles. Only rim-involved pairs
           // need the full repulsion to keep the rim legible.
           var bothDynamic = !a.pin && !b.pin;
-          var kRepPair = bothDynamic ? kRep * 0.35 : kRep;
+          // 0.35 let taxa with near-identical neighbour sets settle almost on top
+          // of each other. Their circles coped; their LABELS did not - the middle
+          // of the map became a stack of overlapping text you could only read by
+          // dragging nodes apart one at a time. Raised to 0.8 for the symptom rim,
+          // where the taxa cluster in the middle and there is empty canvas going
+          // spare; the bacteria rim keeps the original value, since there the
+          // clustering is the point and the rim itself provides the spacing.
+          var kRepPair = bothDynamic ? kRep * (pinType === "symptom" ? 0.8 : 0.35) : kRep;
           var force = kRepPair / d2 * alpha;
           // BUG FIX: this floor used to be plain `a.r + b.r + 2` - fine for
           // keeping the visible circles from overlapping, but the invisible
