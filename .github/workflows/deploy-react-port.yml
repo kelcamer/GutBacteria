@@ -54,11 +54,15 @@ jobs:
         with:
           path: branchsite
 
+      # npm cache deliberately OFF. This job now runs `npm ci` twice, in two
+      # separate checkouts, and setup-node's cache is keyed to a single
+      # lockfile path. The first branch run succeeded on a cold cache and every
+      # run since has failed, which points at the one piece of state that
+      # differs between them. Two clean installs cost ~20s; a deploy that fails
+      # intermittently costs far more.
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
-          cache-dependency-path: "mainsite/Porting to native react/app/package-lock.json"
 
       - name: Build main site's React port
         working-directory: "mainsite/Porting to native react/app"
