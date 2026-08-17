@@ -7,6 +7,7 @@ import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { isIntervention } from '../lib/interventions'
 import { MapControls } from './MapControls'
+import { PickerSection } from './PickerSection'
 import { filterSymptomData, filterConditions } from '../lib/studyFilters'
 
 // Module-level, not per-render: a stable list AND a stable default value
@@ -192,76 +193,49 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
               full map.
             </p>
             <div className="mb-3">
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
-                SYMPTOMS
-              </div>
-              <div className="flex flex-wrap gap-1.5 mb-2">
-                {ALL_SYMPTOMS_ONLY.map((s) => {
-                  const on = selectedSymptoms.includes(s)
-                  return (
-                    <button
-                      key={s}
-                      onClick={() => setSelectedSymptoms(on ? selectedSymptoms.filter((x) => x !== s) : [...selectedSymptoms, s])}
-                      className="rounded-full px-2.5 py-1 text-xs"
-                      style={{
-                        background: on ? '#2DD4BF33' : theme.ink2,
-                        border: `1px solid ${on ? '#2DD4BF' : theme.line}`,
-                        color: on ? theme.text : theme.muted,
-                      }}
-                    >
-                      {s}
-                    </button>
+              <PickerSection
+                label="SYMPTOMS"
+                accent="#2DD4BF"
+                items={ALL_SYMPTOMS_ONLY.map((s) => ({ key: s, label: s }))}
+                isSelected={(it) => selectedSymptoms.includes(it.key)}
+                onToggle={(it) =>
+                  setSelectedSymptoms(
+                    selectedSymptoms.includes(it.key)
+                      ? selectedSymptoms.filter((x) => x !== it.key)
+                      : [...selectedSymptoms, it.key]
                   )
-                })}
-              </div>
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
-                INTERVENTIONS
-              </div>
-              <div className="flex flex-wrap gap-1.5 mb-2">
-                {ALL_INTERVENTIONS.map((s) => {
-                  const on = selectedSymptoms.includes(s)
-                  return (
-                    <button
-                      key={s}
-                      onClick={() => setSelectedSymptoms(on ? selectedSymptoms.filter((x) => x !== s) : [...selectedSymptoms, s])}
-                      className="rounded-full px-2.5 py-1 text-xs"
-                      style={{
-                        background: on ? '#F5A62333' : theme.ink2,
-                        border: `1px solid ${on ? '#F5A623' : theme.line}`,
-                        color: on ? theme.text : theme.muted,
-                      }}
-                    >
-                      {s}
-                    </button>
+                }
+              />
+              <PickerSection
+                label="INTERVENTIONS"
+                accent="#F5A623"
+                defaultOpen
+                items={ALL_INTERVENTIONS.map((s) => ({ key: s, label: s }))}
+                isSelected={(it) => selectedSymptoms.includes(it.key)}
+                onToggle={(it) =>
+                  setSelectedSymptoms(
+                    selectedSymptoms.includes(it.key)
+                      ? selectedSymptoms.filter((x) => x !== it.key)
+                      : [...selectedSymptoms, it.key]
                   )
-                })}
-              </div>
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
-                CONDITIONS
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {[...conditions]
+                }
+              />
+              <PickerSection
+                label="CONDITIONS"
+                accent="#8FD3F4"
+                items={[...conditions]
                   .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((c) => {
-                    const on = extraConditionIds.includes(c.id)
-                    return (
-                      <button
-                        key={c.id}
-                        onClick={() =>
-                          setExtraConditionIds(on ? extraConditionIds.filter((x) => x !== c.id) : [...extraConditionIds, c.id])
-                        }
-                        className="rounded-full px-2.5 py-1 text-xs"
-                        style={{
-                          background: on ? c.color + '33' : theme.ink2,
-                          border: `1px solid ${on ? c.color : theme.line}`,
-                          color: on ? theme.text : theme.muted,
-                        }}
-                      >
-                        {c.name}
-                      </button>
-                    )
-                  })}
-              </div>
+                  .map((c) => ({ key: c.id, label: c.name, color: c.color }))}
+                colorFor={(it) => it.color}
+                isSelected={(it) => extraConditionIds.includes(it.key)}
+                onToggle={(it) =>
+                  setExtraConditionIds(
+                    extraConditionIds.includes(it.key)
+                      ? extraConditionIds.filter((x) => x !== it.key)
+                      : [...extraConditionIds, it.key]
+                  )
+                }
+              />
             </div>
             {isCustomized && (
               <button

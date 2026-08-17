@@ -6,6 +6,7 @@ import { DirTriangle } from './DirTriangle'
 import { RankBadge } from './RankBadge'
 import { Italic } from './Italic'
 import { isIntervention } from '../lib/interventions'
+import { PickerSection } from './PickerSection'
 import { filterSymptomData, filterConditions } from '../lib/studyFilters'
 
 // Ported from `jm` in gut-flora-atlas.readable.html (~line 28986-29601,
@@ -243,81 +244,45 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId, filter
         {showMulti && (
           <div>
             <div className="mb-3">
-              <div className="font-mono mb-1" style={{ fontSize: 11.5, color: theme.muted, letterSpacing: '.1em' }}>
-                CONDITIONS
-              </div>
-              <div className="flex flex-wrap gap-1.5 mb-2">
-                {[...conditions]
-                  .sort((cA, cB) => cA.name.localeCompare(cB.name))
-                  .map((c) => {
-                    const on = multiIds.includes(c.id)
-                    return (
-                      <button
-                        key={c.id}
-                        onClick={() => setMultiIds(on ? multiIds.filter((x) => x !== c.id) : [...multiIds, c.id])}
-                        className="rounded-full px-3 py-1.5 text-sm"
-                        style={{
-                          background: on ? c.color + '33' : theme.ink2,
-                          border: `1px solid ${on ? c.color : theme.line}`,
-                          color: on ? theme.text : theme.muted,
-                        }}
-                      >
-                        {c.name}
-                      </button>
-                    )
-                  })}
-              </div>
-              <div className="font-mono mb-1" style={{ fontSize: 11.5, color: theme.muted, letterSpacing: '.1em' }}>
-                INTERVENTIONS
-              </div>
-              <div className="flex flex-wrap gap-1.5 mb-2">
-                {[...symptomPseudo]
+              <PickerSection
+                label="CONDITIONS"
+                accent="#8FD3F4"
+                items={[...conditions]
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((c) => ({ key: c.id, label: c.name, color: c.color }))}
+                colorFor={(it) => it.color}
+                isSelected={(it) => multiIds.includes(it.key)}
+                onToggle={(it) =>
+                  setMultiIds(multiIds.includes(it.key) ? multiIds.filter((x) => x !== it.key) : [...multiIds, it.key])
+                }
+              />
+              <PickerSection
+                label="INTERVENTIONS"
+                accent="#F5A623"
+                defaultOpen
+                items={[...symptomPseudo]
                   .filter((c) => isIntervention(c.name))
-                  .sort((cA, cB) => cA.name.localeCompare(cB.name))
-                  .map((c) => {
-                    const on = multiIds.includes(c.id)
-                    return (
-                      <button
-                        key={c.id}
-                        onClick={() => setMultiIds(on ? multiIds.filter((x) => x !== c.id) : [...multiIds, c.id])}
-                        className="rounded-full px-3 py-1.5 text-sm"
-                        style={{
-                          background: on ? '#F5A62333' : theme.ink2,
-                          border: `1px solid ${on ? '#F5A623' : theme.line}`,
-                          color: on ? theme.text : theme.muted,
-                        }}
-                      >
-                        {c.name}
-                      </button>
-                    )
-                  })}
-              </div>
-              <div className="font-mono mb-1" style={{ fontSize: 11.5, color: theme.muted, letterSpacing: '.1em' }}>
-                SYMPTOMS
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {[...symptomPseudo]
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((c) => ({ key: c.id, label: c.name }))}
+                isSelected={(it) => multiIds.includes(it.key)}
+                onToggle={(it) =>
+                  setMultiIds(multiIds.includes(it.key) ? multiIds.filter((x) => x !== it.key) : [...multiIds, it.key])
+                }
+              />
+              <PickerSection
+                label="SYMPTOMS"
+                accent="#2DD4BF"
+                items={[...symptomPseudo]
                   .filter((c) => !isIntervention(c.name))
-                  .sort((cA, cB) => cA.name.localeCompare(cB.name))
-                  .map((c) => {
-                    const on = multiIds.includes(c.id)
-                    return (
-                      <button
-                        key={c.id}
-                        onClick={() => setMultiIds(on ? multiIds.filter((x) => x !== c.id) : [...multiIds, c.id])}
-                        className="rounded-full px-3 py-1.5 text-sm"
-                        style={{
-                          background: on ? c.color + '33' : theme.ink2,
-                          border: `1px solid ${on ? c.color : theme.line}`,
-                          color: on ? theme.text : theme.muted,
-                        }}
-                      >
-                        {c.name}
-                      </button>
-                    )
-                  })}
-              </div>
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((c) => ({ key: c.id, label: c.name }))}
+                isSelected={(it) => multiIds.includes(it.key)}
+                onToggle={(it) =>
+                  setMultiIds(multiIds.includes(it.key) ? multiIds.filter((x) => x !== it.key) : [...multiIds, it.key])
+                }
+              />
             </div>
+
             {multiIds.length >= 2 && (
               <div style={{ overflowX: 'auto', border: `1px solid ${theme.line}`, borderRadius: 12 }}>
                 <table style={{ borderCollapse: 'collapse', fontSize: 11.5 }}>
