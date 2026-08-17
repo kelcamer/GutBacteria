@@ -328,19 +328,24 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       //
       // Screen angles: -PI/2 is top, 0 is right, +PI/2 is bottom, PI is left.
       // So -3PI/4 is top-left and +PI/4 is bottom-right.
-      // Swap FUT2 and ADHD's slots, by request. Named explicitly because it is a
-      // preference about this particular default view, not a rule the layout can
-      // derive - and a no-op on any selection that lacks one of them.
-      var iF = -1, iA = -1;
-      haves.forEach(function(n, i) {
-        if (/^FUT2/.test(n.name)) iF = i;
-        else if (n.name === "ADHD") iA = i;
-      });
-      if (iF >= 0 && iA >= 0) {
-        var swap = haves[iF];
-        haves[iF] = haves[iA];
-        haves[iA] = swap;
-      }
+      // Hand-chosen slot order for this default view. These are preferences about
+      // where a person wants to look, not anything the layout can derive, so they
+      // are named - and each is a no-op on any selection missing one of the pair.
+      // Applied in sequence, so the second swap acts on the result of the first.
+      var swapSlots = function(matchA, matchB) {
+        var ia = -1, ib = -1;
+        haves.forEach(function(n, i) {
+          if (ia < 0 && matchA.test(n.name)) ia = i;
+          else if (ib < 0 && matchB.test(n.name)) ib = i;
+        });
+        if (ia >= 0 && ib >= 0) {
+          var t = haves[ia];
+          haves[ia] = haves[ib];
+          haves[ib] = t;
+        }
+      };
+      swapSlots(/^FUT2/, /^ADHD$/);
+      swapSlots(/^FUT2/, /^Iron deficiency/);
       // ADHD sits further down its arc than even spacing would put it, by request -
       // it carries the most satellites, and dropping it clears room for them below.
       // A view preference, like the swap above, so it is named rather than derived.
