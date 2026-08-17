@@ -261,12 +261,28 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     // Only for the symptom rim: when bacteria are on the rim there are far more of
     // them and the barycenter crossing-reduction below is the better tool. Stable
     // partition, so within each group the data order is preserved.
+    var rimAngles = null;
     if (!scramble && pinType === "symptom") {
       var haves = [], takes = [];
       rimV.forEach(function(n) {
         (isIntervention(n.name) ? takes : haves).push(n);
       });
+      // Each group gets its own arc, CENTRED - conditions on top, interventions on
+      // the bottom - rather than one group simply following the other around the
+      // circle. Copied from a hand-arranged screenshot: FUT2 top-centre with the
+      // other conditions either side of it, the interventions spread along the
+      // bottom, and the shared taxa in the band between. Centring is what makes it
+      // symmetrical instead of lopsided, and it holds as either group grows.
+      var total = Math.max(haves.length + takes.length, 1);
+      rimAngles = [];
       rimV = haves.concat(takes);
+      var span = function(count) { return 2 * Math.PI * count / total; };
+      [[haves, -Math.PI / 2], [takes, Math.PI / 2]].forEach(function(pair) {
+        var group = pair[0], centre = pair[1], arc = span(group.length);
+        var step = group.length > 1 ? arc / group.length : 0;
+        var start = centre - (arc - step) / 2;
+        group.forEach(function(_, i) { rimAngles.push(start + i * step); });
+      });
     }
     if (scramble) {
       // Fisher-Yates shuffle so the rim order itself is randomized too, not
@@ -279,7 +295,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       }
     }
     rimV.forEach(function(n, k) {
-      var a = 2 * Math.PI * k / Math.max(rimV.length, 1) - Math.PI / 2;
+      var a = rimAngles ? rimAngles[k] : 2 * Math.PI * k / Math.max(rimV.length, 1) - Math.PI / 2;
       n.x = W / 2 + Math.cos(a) * W * rimRad;
       n.y = H / 2 + Math.sin(a) * H * rimRad;
       n.vx = 0;
