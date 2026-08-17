@@ -224,7 +224,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     // is decided by which colour it carries MOST, so a taxon that is mostly
     // depleted still reads as depleted even if one intervention raises it.
     if (pinType === "symptom") {
-      V.forEach(function(n) {
+      V.forEach(function(n, selfIdx) {
         if (n.pin) return;
         // A CONTINUOUS left-to-right axis rather than three buckets: score each
         // taxon by how far its edges lean increased vs decreased, and place it
@@ -237,14 +237,28 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // Contested and null edges count toward the total but not the lean, so a
         // taxon with one up, one down and one contested sits at centre rather
         // than being dragged by whichever it happens to have more of.
+        // Ordered by what the CONDITIONS do to it, not by every edge it has:
+        // decreased by them to the RIGHT, increased by them to the LEFT, as asked
+        // ("the ones that are all pink from FUT2 on right and all blue from FUT2 on
+        // left"). Keyed on the conditions/symptoms group generally rather than on
+        // FUT2 by name, so the row still sorts sensibly when the picker selection
+        // changes - with FUT2, ADHD and Iron deficiency selected they all point the
+        // same way anyway.
+        //
+        // Edges to the interventions are deliberately ignored here. They would pull
+        // an organism left precisely BECAUSE something corrects it, which is the
+        // opposite of the sort wanted: the row should say what is wrong, and the
+        // intervention edges then visibly reach across it.
         var up = 0, down = 0, total = 0;
         n.adjE.forEach(function(ei) {
-          var dd = E[ei].dir;
+          var e = E[ei];
+          var other = V[e.s === selfIdx ? e.t : e.s];
+          if (!other || !other.pin || isIntervention(other.name)) return;
           total++;
-          if (dd === "up") up++;
-          else if (dd === "down") down++;
+          if (e.dir === "up") up++;
+          else if (e.dir === "down") down++;
         });
-        var lean = total ? (up - down) / total : 0;   // -1 (all down) .. +1 (all up)
+        var lean = total ? (down - up) / total : 0;   // +1 (all decreased) -> right
         n.groupX = W * (0.5 + lean * 0.38);
       });
     }
