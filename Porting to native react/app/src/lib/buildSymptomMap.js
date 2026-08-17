@@ -676,7 +676,13 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // worse than no grouping at all. At 0.005 nodes drift toward their colour's
         // zone while repulsion still spreads them out within it.
         n.vx += ((flatten && n.groupX != null ? n.groupX : cx) - n.x) * (flatten ? 0.005 : 0.006) * alpha;
-        n.vy += (cy - n.y) * (flatten ? 0.055 : 0.006) * alpha;
+        // Nodes carrying 2+ connections are the ones worth comparing, so they are
+        // held on ONE horizontal line - a single row you read across, with the
+        // increased/decreased gradient running along it. Singly-connected taxa get
+        // a much weaker pull and settle above and below the row, which also stops
+        // them competing for space with the nodes that matter most.
+        var rowPull = flatten ? (n.deg >= 2 ? 0.22 : 0.03) : 0.006;
+        n.vy += (cy - n.y) * rowPull * alpha;
         n.vx *= 0.85;
         n.vy *= 0.85;
         n.x += Math.max(-9, Math.min(9, n.vx));
@@ -722,6 +728,25 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
               b2.x -= ux * push;
               b2.y -= uy * push;
             }
+          }
+        }
+      }
+      // HARD ROW. A spring toward the midline gets you a band, not a line - the
+      // repulsion and overlap passes keep nudging nodes off it. Taxa with 2+
+      // connections are therefore held at exactly one y, every frame, after all
+      // other forces have run. They still move freely along x, so the
+      // increased/decreased gradient and the label spacing both still work; they
+      // just do it on a single readable row.
+      //
+      // A node you have dragged (manualPin) is exempt - if you place it somewhere,
+      // it stays there.
+      if (flatten) {
+        for (var rr2 = 0; rr2 < V.length; rr2++) {
+          var rn = V[rr2];
+          if (rn.pin || rn.manualPin || rn === dragNode) continue;
+          if (rn.deg >= 2) {
+            rn.y = cy;
+            rn.vy = 0;
           }
         }
       }
