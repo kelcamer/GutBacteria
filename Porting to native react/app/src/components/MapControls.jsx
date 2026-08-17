@@ -45,12 +45,30 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
   // settled at full height again, not while the host is still empty.
   // Instant (not smooth) so it reads as "nothing moved" rather than a jump
   // back.
+  // Undo the scroll shift a control's OWN effect causes (hiding half the nodes
+  // makes the map shorter, which moves the page under you). It restores the
+  // position you were at when you pressed the button.
+  //
+  // But it must never fight a deliberate scroll. Reported as "sometimes I scroll
+  // slightly and it launches upwards": press a control, start swiping, and this
+  // fires afterwards and drags you back to the pre-press position. The two rAFs
+  // are not the ~32ms they look like either - during a touch scroll the browser
+  // can defer them well past the start of your swipe, so the yank arrives mid-scroll.
+  //
+  // So: any sign of the user scrolling on purpose cancels the restore. Capture
+  // phase, so it is seen even if something stops propagation.
   const keepScroll = (fn) => () => {
     const y = window.scrollY
     fn?.()
+    let cancelled = false
+    const events = ['wheel', 'touchstart', 'touchmove', 'keydown']
+    const cancel = () => { cancelled = true; detach() }
+    const detach = () => events.forEach((e) => window.removeEventListener(e, cancel, true))
+    events.forEach((e) => window.addEventListener(e, cancel, true))
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        if (window.scrollY !== y) window.scrollTo({ top: y, behavior: 'auto' })
+        detach()
+        if (!cancelled && window.scrollY !== y) window.scrollTo({ top: y, behavior: 'auto' })
       })
     })
   }

@@ -189,6 +189,16 @@ select {
 .gfa-scroll-x {
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  /* Reported: "sometimes I scroll slightly and it launches upwards."
+     The maps change height constantly - grouping on/off, a different selection,
+     a picker opening - and the browser's scroll anchoring responds by shifting
+     the scroll position to keep the pre-change content in view. Measured here:
+     opening the picker grew the document 1350 -> 2079px and moved scrollY by
+     738px in one frame. Anchoring is a good default for a document of text; for
+     a block that resizes on its own it reads as the page lurching.
+     Opting this subtree out means map height changes never move your scroll
+     position - the map grows or shrinks in place. */
+  overflow-anchor: none;
 }
 
 /* Tap highlight: iOS paints a grey box over every button by default, which
