@@ -76,15 +76,22 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     { label: '🕸️ Hide Isolated', fn: keepScroll(onHideIsolated) },
     { label: '▲ Increased Only', fn: keepScroll(onIncreasedOnly) },
     { label: '▼ Decreased Only', fn: keepScroll(onDecreasedOnly) },
-    {
+  ]
+
+  // Only offer the toggle where the host map actually filters derived links.
+  // ConditionsMap and BrainTab build from seed/brain data and do not, so they
+  // omit onToggleCrossFeed and the button is hidden rather than shown doing
+  // nothing - a control that appears to work and doesn't is worse than absent.
+  if (onToggleCrossFeed) {
+    overflow.push({
       label: showCrossFeed ? '🚫 Hide Crossfeeding' : '🔀 Show Crossfeeding',
       fn: keepScroll(() => {
         const next = !showCrossFeed
         setShowCrossFeed(next)
-        onToggleCrossFeed?.(next)
+        onToggleCrossFeed(next)
       }),
-    },
-  ]
+    })
+  }
 
   return (
     <div ref={wrapRef} className="mt-3 flex flex-wrap gap-2 items-center" style={{ position: 'relative' }}>
