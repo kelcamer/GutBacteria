@@ -341,6 +341,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         haves[iF] = haves[iA];
         haves[iA] = swap;
       }
+      // ADHD sits further down its arc than even spacing would put it, by request -
+      // it carries the most satellites, and dropping it clears room for them below.
+      // A view preference, like the swap above, so it is named rather than derived.
+      var adhdNudge = -0.5;
       var total = Math.max(haves.length + takes.length, 1);
       rimAngles = [];
       rimV = haves.concat(takes);
@@ -349,7 +353,9 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         var group = pair[0], centre = pair[1], arc = span(group.length);
         var step = group.length > 1 ? arc / group.length : 0;
         var start = centre - (arc - step) / 2;
-        group.forEach(function(_, i) { rimAngles.push(start + i * step); });
+        group.forEach(function(gn, i) {
+          rimAngles.push(start + i * step + (gn.name === "ADHD" ? adhdNudge : 0));
+        });
       });
     }
     if (scramble) {
@@ -707,8 +713,16 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         if (flatten && n.deg < 2 && n.adj.length === 1) {
           var par = V[n.adj[0]];
           if (par && par.pin) {
-            n.vx += (par.x - n.x) * 0.03 * alpha;
-            n.vy += (par.y - SATELLITE_RISE - n.y) * 0.06 * alpha;
+            // Away from the crowd, not simply upward. A satellite is pushed along
+            // the line from the map's centre out through its parent, so it lands on
+            // the far side of that node from everything else - above FUT2 at the top
+            // of the arc, BELOW ADHD once ADHD sits low. "Flip the ones that do not
+            // connect to anything else AWAY from the other connections" generalised:
+            // outward is always away, whichever side of the map the parent is on.
+            var ox = par.x - cx, oy = par.y - cy;
+            var om = Math.sqrt(ox * ox + oy * oy) || 1;
+            n.vx += (par.x + (ox / om) * SATELLITE_RISE - n.x) * 0.045 * alpha;
+            n.vy += (par.y + (oy / om) * SATELLITE_RISE - n.y) * 0.06 * alpha;
             n.vx *= 0.85;
             n.vy *= 0.85;
             n.x += Math.max(-9, Math.min(9, n.vx));
