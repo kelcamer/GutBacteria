@@ -63,7 +63,7 @@
        "url": "https://www.nature.com/articles/s41467-022-34502-3"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -2908,7 +2908,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40944763/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -2924,7 +2924,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40944763/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -2956,7 +2956,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40944763/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -2972,7 +2972,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/40944763/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -3966,8 +3966,9 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_219",
@@ -3982,8 +3983,9 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_221",
@@ -3998,8 +4000,9 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_209_fp1",
@@ -4375,8 +4378,9 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/35892094/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_209_fp30",
@@ -5684,7 +5688,7 @@
        "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5700,7 +5704,7 @@
        "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5716,7 +5720,7 @@
        "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5764,7 +5768,7 @@
        "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5780,7 +5784,7 @@
        "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5796,7 +5800,7 @@
        "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -7642,8 +7646,9 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/28615260/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "review",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "taxa_ida_2",
@@ -7674,8 +7679,9 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/28615260/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "review",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "taxa_ida_4",
@@ -7690,7 +7696,7 @@
        "url": "https://www.ajog.org/article/S0002-9378(23)01643-5/fulltext"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "animal",
      "population": "unknown"
     },
     {
@@ -8004,7 +8010,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11275248/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -8020,7 +8026,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11275248/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -8036,7 +8042,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11275248/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -8148,7 +8154,7 @@
        "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1708940/full"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -8164,7 +8170,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11275248/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -9284,7 +9290,7 @@
        "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2019.01136/full"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -9300,7 +9306,7 @@
        "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2019.01136/full"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -9706,8 +9712,9 @@
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10265574/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_endo_t5",
@@ -9780,8 +9787,9 @@
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9962481/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "review",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_endo_t9",
@@ -9843,8 +9851,9 @@
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12153989/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_endo_t12",
@@ -9864,8 +9873,9 @@
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10265574/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_endo_t13",
@@ -9896,8 +9906,9 @@
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12153989/"
       }
      ],
-     "evidence": "unclassified",
-     "population": "unknown"
+     "evidence": "human-cohort",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "id": "seed_endo_t15",
@@ -10267,7 +10278,7 @@
        "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2022.733992/full"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -11473,7 +11484,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9499173/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -11489,7 +11500,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9499173/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -12311,7 +12322,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -12327,7 +12338,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -12501,7 +12512,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -12517,7 +12528,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -12533,7 +12544,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -12549,7 +12560,7 @@
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14111,7 +14122,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "female"
     },
     {
@@ -14127,7 +14138,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14143,7 +14154,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14802,7 +14813,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14818,7 +14829,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14834,7 +14845,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14850,7 +14861,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14866,7 +14877,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14882,7 +14893,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -14898,7 +14909,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {

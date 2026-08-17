@@ -29,6 +29,7 @@ from collections import Counter, OrderedDict
 
 META = re.compile(r"meta-analys|systematic review|pooled|\b\d+\s+studies\b", re.I)
 RCT = re.compile(r"\brandomi[sz]ed\b|\bRCT\b|placebo-controlled|double-blind|crossover trial|NCT\d+", re.I)
+REVIEW = re.compile(r"narrative review|\breview\b(?!ed)|scoping review", re.I)
 MR = re.compile(r"mendelian randomi|two-sample MR|\bMR\b(?!NA)", re.I)
 INVITRO = re.compile(r"in vitro|in-vitro|co-?culture|SHIME|fermentation model|ex vivo|batch culture", re.I)
 ANIMAL = re.compile(r"\bmice\b|\bmouse\b|\brats?\b|murine|germ-free|NOD mice|piglet|\bpigs?\b|primate|macaque|animal model|rodent", re.I)
@@ -80,6 +81,8 @@ def tier(ref, note, derived):
         return "mendelian"
     if HUMAN.search(both):
         return "human-cohort"          # human wins over a mouse follow-up
+    if REVIEW.search(both):
+        return "review"                # narrative review: secondary, weaker than a meta-analysis
     if INVITRO.search(note):
         return "in-vitro"
     if ANIMAL.search(note):
@@ -115,7 +118,7 @@ def main(write):
         for t in c.get("taxa", []):
             ref = blob(t.get("refs"), json.dumps(t.get("links") or []))
             note = blob(t.get("note"))
-            ev = tier(ref, note, t.get("derived"))
+            ev = t["evidence"] if t.get("evidence_source") == "hand-classified" else tier(ref, note, t.get("derived"))
             po = population(ref + " " + note, ev)
             t["evidence"], t["population"] = ev, po
             tiers[ev] += 1

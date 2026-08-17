@@ -84,7 +84,7 @@ export function SettingsTab({ filters, setFilters }) {
       <div className="font-mono mb-2" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
         EVIDENCE TYPE
       </div>
-      {['hideAnimal', 'hideInVitro', 'hideDerived', 'hideMendelian', 'hideMeta'].map((id) => (
+      {['hideAnimal', 'hideInVitro', 'hideDerived', 'hideReview', 'hideMendelian', 'hideMeta'].map((id) => (
         <Toggle key={id} id={id} on={filters[id]} onChange={set(id)} />
       ))}
 

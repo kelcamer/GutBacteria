@@ -23,6 +23,7 @@ export const DEFAULT_FILTERS = {
   hideDerived: true, // cross-feeding inference stays off by default, as before
   hideMeta: false,
   hideMendelian: false,
+  hideReview: false,
   womenOnly: false,
   menOnly: false,
 }
@@ -33,6 +34,7 @@ export const FILTER_LABELS = {
   hideDerived: ['Hide crossfeeding', 'Hides inferred links generated from metabolic relationships'],
   hideMeta: ['Exclude meta-analyses', 'Rarely wanted — meta-analyses are usually the strongest evidence here'],
   hideMendelian: ['Exclude Mendelian randomisation', 'Genetic-instrument studies; human, but inferential rather than observed'],
+  hideReview: ['Exclude narrative reviews', 'Secondary sources that summarise other studies rather than reporting new data'],
   womenOnly: ['Women only', 'Hides studies conducted in male-only populations'],
   menOnly: ['Men only', 'Hides studies conducted in female-only populations'],
 }
@@ -52,6 +54,7 @@ export function entryPasses(entry, f) {
   if (f.hideInVitro && ev === 'in-vitro') return false
   if (f.hideMeta && ev === 'meta-analysis') return false
   if (f.hideMendelian && ev === 'mendelian') return false
+  if (f.hideReview && ev === 'review') return false
   if (f.womenOnly && pop === 'male') return false
   if (f.menOnly && pop === 'female') return false
   return true

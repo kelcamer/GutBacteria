@@ -123,8 +123,12 @@ emptied, 16 bacteria left with no links, 3 symptoms left with none.
 
 ## Still open
 
-- **~30 `both` entries citing only one source.** Equipoise needs two sides; a
-  single citation suggests some are weak dissent mislabelled as balance.
+- ~~**~30 `both` entries citing only one source.**~~ **CHECKED — clean.** A
+  naive source-count flagged 30 as suspect; reading them, **38 of 38 document
+  their conflict explicitly** ("Genuine split: 7 studies found increased, 3
+  found decreased", "But a systematic review found…"). My keyword detector was
+  simply too narrow. That is now the *third* time tonight a check was wrong and
+  the data was right.
 - **512 entries still `unclassified`** by evidence tier. The classifier refuses
   to guess, which is right, but hand-checking the ~80 touching the personally
   relevant conditions would pay off most.
