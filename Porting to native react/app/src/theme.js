@@ -21,10 +21,22 @@ export const palette = [
 // GFA_dirArrow (gut-flora-atlas.readable.html ~line 27192). Note "both" is
 // the fallback branch (anything that isn't exactly "up" or "down"), not a
 // strict equality check, matching the original.
+// "none" = TESTED, NO RELIABLE EFFECT. A fourth state, added because yellow was
+// carrying two different meanings: "studies disagree" (real conflict, worth your
+// attention) and "we looked and found nothing" (settled, and not interesting).
+// Reading the second as the first makes a null result look like an open question.
+// Grey, because it should recede rather than draw the eye - it is the one state
+// that means you can stop wondering.
 export function dirColor(dir) {
-  return dir === 'up' ? theme.up : dir === 'down' ? theme.down : '#FBBF24'
+  if (dir === 'up') return theme.up
+  if (dir === 'down') return theme.down
+  if (dir === 'none') return '#8A8598'
+  return '#FBBF24'
 }
 
 export function dirArrow(dir) {
-  return dir === 'up' ? '▲' : dir === 'down' ? '▼' : '↕'
+  if (dir === 'up') return '▲'
+  if (dir === 'down') return '▼'
+  if (dir === 'none') return '○'   // deliberately not an arrow: nothing moved
+  return '↕'
 }

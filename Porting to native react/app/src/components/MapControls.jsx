@@ -15,12 +15,9 @@ import { theme } from '../theme'
 // Extracted as shared code deliberately - the per-map button rows were
 // identical apart from which callbacks they invoked, and keeping five copies
 // in sync (as the label-shortening pass had to) is pure overhead.
-export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncreasedOnly, onDecreasedOnly, onConnections, onToggleCrossFeed }) {
+export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncreasedOnly, onDecreasedOnly, onConnections,
+  onToggleGroupGenus, groupGenus }) {
   const [open, setOpen] = useState(false)
-  // Cross-feeding links are INFERRED from metabolic relationships rather than
-  // measured in the condition/symptom they appear under, so they stay hidden
-  // unless asked for. Default false = proven data only.
-  const [showCrossFeed, setShowCrossFeed] = useState(false)
   const wrapRef = useRef(null)
 
   // Close the overflow popover on any outside pointer press. Uses
@@ -48,12 +45,30 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
   // settled at full height again, not while the host is still empty.
   // Instant (not smooth) so it reads as "nothing moved" rather than a jump
   // back.
+  // Undo the scroll shift a control's OWN effect causes (hiding half the nodes
+  // makes the map shorter, which moves the page under you). It restores the
+  // position you were at when you pressed the button.
+  //
+  // But it must never fight a deliberate scroll. Reported as "sometimes I scroll
+  // slightly and it launches upwards": press a control, start swiping, and this
+  // fires afterwards and drags you back to the pre-press position. The two rAFs
+  // are not the ~32ms they look like either - during a touch scroll the browser
+  // can defer them well past the start of your swipe, so the yank arrives mid-scroll.
+  //
+  // So: any sign of the user scrolling on purpose cancels the restore. Capture
+  // phase, so it is seen even if something stops propagation.
   const keepScroll = (fn) => () => {
     const y = window.scrollY
     fn?.()
+    let cancelled = false
+    const events = ['wheel', 'touchstart', 'touchmove', 'keydown']
+    const cancel = () => { cancelled = true; detach() }
+    const detach = () => events.forEach((e) => window.removeEventListener(e, cancel, true))
+    events.forEach((e) => window.addEventListener(e, cancel, true))
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        if (window.scrollY !== y) window.scrollTo({ top: y, behavior: 'auto' })
+        detach()
+        if (!cancelled && window.scrollY !== y) window.scrollTo({ top: y, behavior: 'auto' })
       })
     })
   }
@@ -68,30 +83,31 @@ export function MapControls({ onSnapBack, onScramble, onHideIsolated, onIncrease
     touchAction: 'manipulation',
   }
 
-  // Snap back, Connections and Scramble stay always-visible; the filters
-  // collapse on narrow screens. Crossfeeding is unshifted to the FRONT of
-  // that group below - it changes what data is on screen at all, which is a
-  // bigger deal than the view filters it sits above.
+  // Snap back, Connections and Scramble stay always-visible; the view
+  // filters collapse on narrow screens.
+  //
+  // Crossfeeding is deliberately NOT here any more. It moved to the Settings
+  // tab alongside the evidence and population filters, so there is one place
+  // that decides what data is on screen instead of a per-map toggle that can
+  // disagree with a global setting.
   const overflow = [
     { label: '🕸️ Hide Isolated', fn: keepScroll(onHideIsolated) },
     { label: '▲ Increased Only', fn: keepScroll(onIncreasedOnly) },
     { label: '▼ Decreased Only', fn: keepScroll(onDecreasedOnly) },
   ]
 
-  // Only offer the toggle where the host map actually filters derived links.
-  // ConditionsMap and BrainTab build from seed/brain data and do not, so they
-  // omit onToggleCrossFeed and the button is hidden rather than shown doing
-  // nothing - a control that appears to work and doesn't is worse than absent.
-  if (onToggleCrossFeed) {
+  // Genus grouping sits at the FRONT of the overflow group when the host map
+  // supports it: like the old crossfeeding toggle, it changes what counts as a
+  // node at all, which is a bigger deal than the view filters below it. Hidden
+  // entirely on maps that do not pass the handler, rather than shown doing
+  // nothing.
+  if (onToggleGroupGenus) {
     overflow.unshift({
-      label: showCrossFeed ? '🚫 Hide Crossfeeding' : '🔀 Show Crossfeeding',
-      fn: keepScroll(() => {
-        const next = !showCrossFeed
-        setShowCrossFeed(next)
-        onToggleCrossFeed(next)
-      }),
+      label: groupGenus ? '🧬 Ungroup species' : '🧬 Group by genus',
+      fn: keepScroll(() => onToggleGroupGenus(!groupGenus)),
     })
   }
+
 
   return (
     <div ref={wrapRef} className="mt-3 flex flex-wrap gap-2 items-center" style={{ position: 'relative' }}>

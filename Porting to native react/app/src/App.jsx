@@ -14,7 +14,7 @@ import { BrainTab } from './components/BrainTab'
 import { CompareTab } from './components/CompareTab'
 import { CrossFeedingTab } from './components/CrossFeedingTab'
 import { SettingsTab } from './components/SettingsTab'
-import { DEFAULT_FILTERS } from './lib/studyFilters'
+import { DEFAULT_FILTERS, filterConditions } from './lib/studyFilters'
 import { BacteriaIndex } from './components/BacteriaIndex'
 import { SourcesTab } from './components/SourcesTab'
 import { BackupTab } from './components/BackupTab'
@@ -110,6 +110,11 @@ export default function App() {
   }, [])
 
   const conditions = data?.conditions ?? EMPTY_CONDITIONS
+  // Display-only view of the conditions, with study filters applied. Handed to
+  // the read-only screens (card grid, sources list) so a filter set in Settings
+  // is reflected everywhere, not just on the node maps. Editing paths keep the
+  // raw `conditions` - a filter must never be able to delete data by hiding it.
+  const shownConditions = useMemo(() => filterConditions(conditions, filters), [conditions, filters])
   const activeCondition = conditions.find((c) => c.id === activeConditionId) ?? null
 
   // Memoized so ConditionsMap's own focusNames effect only re-fires when
@@ -401,7 +406,7 @@ export default function App() {
         {activeTab === 'conditions' && !activeCondition && (
           <>
             <ConditionsGrid
-              conditions={conditions}
+              conditions={shownConditions}
               onOpen={setActiveConditionId}
               onAdd={addCondition}
               onHighlight={setClickedConditionName}
@@ -444,12 +449,13 @@ export default function App() {
         {activeTab === 'crossfeed' && <CrossFeedingTab />}
         {activeTab === 'settings' && <SettingsTab filters={filters} setFilters={setFilters} />}
         {activeTab === 'glossary' && <Glossary />}
-        {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} filters={filters} />}
-        {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} filters={filters} />}
+        {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} filters={filters} onFiltersChange={setFilters} />}
+        {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} filters={filters} onFiltersChange={setFilters} />}
         {activeTab === 'brain' && <BrainTab pinType="cond" focusRegion={brainRegionFocusRequest} />}
         {activeTab === 'brain_r2c' && <BrainTab pinType="bact" />}
         {activeTab === 'compare' && (
           <CompareTab
+            filters={filters}
             conditions={conditions}
             loose={looseMatching}
             aId={compareAId}
@@ -469,7 +475,7 @@ export default function App() {
             }}
           />
         )}
-        {activeTab === 'sources' && <SourcesTab conditions={conditions} />}
+        {activeTab === 'sources' && <SourcesTab conditions={shownConditions} />}
         {activeTab === 'data' && <BackupTab data={data} commit={commit} />}
         {activeTab === 'research' && (
           <FindInPapersTab

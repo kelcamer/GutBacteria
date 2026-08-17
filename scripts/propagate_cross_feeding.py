@@ -73,15 +73,128 @@ def resolve_source(measured, src):
 
 
 def already_covered(measured, dst):
-    """True if dst - or its genus - is already measured.
+    """True if dst itself, or a measurement that genuinely speaks for it, exists.
 
-    A genus-level measurement covers its species: if Faecalibacterium is
-    measured, we do not infer Faecalibacterium prausnitzii on top of it.
+    A genus-level measurement covers its species: if Faecalibacterium is measured,
+    do not infer Faecalibacterium prausnitzii on top of it - that was the ADHD bug,
+    where an inference asserted "up" next to a measured genus saying "down".
+
+    A SIBLING species does not. Measuring Eubacterium xylanophilum says nothing
+    about Eubacterium hallii; they are different organisms that happen to share a
+    genus name. The old rule treated any same-genus name as coverage, which
+    silently suppressed ~20 legitimate inferences (E. hallii and Anaerostipes
+    across many conditions) for no defensible reason.
     """
     if dst in measured:
         return True
     g = genus_of(dst)
-    return g in measured or any(genus_of(n) == g for n in measured)
+    if g in measured:
+        return True                      # the genus node itself is measured
+    if dst == g:
+        # dst IS a genus, and a species of it is measured - that speaks for it.
+        return any(genus_of(n) == g and n != g for n in measured)
+    return False
+
+
+def collapse_multi_edge(grouped, label_of):
+    """Resolve several edges proposing the SAME target in the same place.
+
+    Two edges can independently imply the same taxon - Bifidobacterium feeds
+    Roseburia acetate AND Akkermansia feeds Roseburia mucin O-glycans, so any
+    condition measuring both sources proposes Roseburia twice. Left unhandled
+    that wrote the taxon in twice (and, when the two sources were measured in
+    OPPOSITE directions, wrote it in as both up and down - a node contradicting
+    itself). Neither was caught before because until now no two edges shared a
+    target.
+
+    Resolution follows the same principle as rule 1:
+      - edges AGREE  -> one entry, crediting every contributing edge, so the
+                        corroboration is visible rather than collapsed away
+      - edges DISAGREE -> infer NOTHING and report it. Two real feeding
+                        relationships pulling opposite ways is a finding about
+                        the evidence, not something to resolve by picking the
+                        edge that happens to sort first.
+
+    Returns (resolved, ambiguous) where resolved values carry every edge that
+    voted for them.
+    """
+    resolved, ambiguous = [], []
+    for key, items in grouped.items():
+        directions = {d for d, _e in items}
+        if len(directions) > 1:
+            ambiguous.append((label_of(key), sorted(directions), [e["id"] for _d, e in items]))
+            continue
+        direction = directions.pop()
+        resolved.append((key, direction, [e for _d, e in items]))
+    return resolved, ambiguous
+
+
+def multi_edge_note(edges):
+    """The 'and this second edge says the same thing' clause, or nothing."""
+    if len(edges) < 2:
+        return ""
+    others = "; ".join(
+        f"{e['from']} -> {e['to']} ({', '.join(e['metabolites'])}, {e['evidence']}, {e['id']})"
+        for e in edges[1:]
+    )
+    return (f" INDEPENDENTLY CORROBORATED: {len(edges)} separate feeding routes imply "
+            f"the same direction here - also {others}.")
+
+
+def strip_derived_symptoms(sd):
+    """Remove every derived entry, returning {(taxon, symptom): dir} of what was there.
+
+    Derived data is a FUNCTION of (measurements x edges). It was previously written
+    once and then skipped forever on re-runs ("already derived - must not
+    duplicate"), which meant that correcting a measurement left every inference
+    built on it frozen at the old direction. Real example: ADHD's Bifidobacterium
+    was corrected to `down`, and the F. prausnitzii and E. hallii inferences under
+    ADHD kept asserting "Bifidobacterium is up here" - stating the opposite of the
+    measurement sitting next to them on the same node.
+
+    So regeneration now starts from a clean slate every run. Nothing of value is
+    lost: these entries are machine-written, and the note text says so.
+    """
+    old = {}
+    for b in sd["bacteria"]:
+        for d in ("up", "down", "both", "none"):
+            keep = []
+            for e in b.get(d, []):
+                if e.get("derived"):
+                    old[(b["name"], e["symptom"])] = d
+                    b["count"] = max(0, b.get("count", 1) - 1)
+                else:
+                    keep.append(e)
+            if d in b:
+                b[d] = keep
+    return old
+
+
+def strip_derived_conditions(seed):
+    """Same, for seed_data.json's conditions. See strip_derived_symptoms."""
+    old = {}
+    for c in seed["conditions"]:
+        keep = []
+        for t in c.get("taxa", []):
+            if t.get("derived"):
+                old[(c["name"], t["name"])] = t.get("dir")
+            else:
+                keep.append(t)
+        c["taxa"] = keep
+    return old
+
+
+def report_diff(label, old, new):
+    """Print only what actually moved - added, dropped, or flipped direction."""
+    added = [k for k in new if k not in old]
+    dropped = [k for k in old if k not in new]
+    flipped = [(k, old[k], new[k]) for k in new if k in old and old[k] != new[k]]
+    print(f"\n{label}: {len(new)} derived entries regenerated "
+          f"({len(added)} new, {len(dropped)} no longer supported, {len(flipped)} DIRECTION CHANGED)")
+    for k, o, n in flipped:
+        print(f"  FLIPPED {k[0]} / {k[1]}: {o} -> {n}  (the measurement it depends on changed)")
+    for k in dropped:
+        print(f"  DROPPED {k[0]} / {k[1]}: its source is no longer measured, or is now ambiguous")
 
 
 def usable_edges(cf, bacteria_names):
@@ -99,6 +212,9 @@ def main():
 
     cf = json.load(open(CF))
     sd = json.load(open(SYM), object_pairs_hook=collections.OrderedDict)
+    # Clean slate, so a corrected measurement propagates instead of leaving a
+    # stale inference behind it. See strip_derived_symptoms.
+    prior_symptoms = strip_derived_symptoms(sd)
     names = {b["name"] for b in sd["bacteria"]}
     edges = usable_edges(cf, names)
 
@@ -110,7 +226,7 @@ def main():
     # index: taxon -> {symptom: direction} as OBSERVED today
     observed = collections.defaultdict(dict)
     for b in sd["bacteria"]:
-        for d in ("up", "down", "both"):
+        for d in ("up", "down", "both", "none"):
             for en in b.get(d, []):
                 if not en.get("derived"):
                     observed[b["name"]][en["symptom"]] = d
@@ -123,7 +239,7 @@ def main():
                 continue  # ambiguous source, nothing to propagate
             if any(en.get("symptom") == symptom
                    for b in sd["bacteria"] if b["name"] == dst
-                   for dd in ("up", "down", "both") for en in b.get(dd, [])
+                   for dd in ("up", "down", "both", "none") for en in b.get(dd, [])
                    if en.get("derived")):
                 continue  # already derived - re-running must not duplicate
             existing = observed.get(dst, {}).get(symptom)
@@ -133,6 +249,22 @@ def main():
                     conflicts.append((symptom, src, direction, dst, existing))
                 continue
             proposals.append((symptom, src, dst, direction, e))
+
+    # Collapse edges that propose the SAME taxon for the SAME symptom before
+    # anything is written - see collapse_multi_edge.
+    grouped = collections.OrderedDict()
+    for symptom, src, dst, direction, e in proposals:
+        grouped.setdefault((dst, symptom), []).append((direction, e))
+    resolved, ambiguous = collapse_multi_edge(grouped, lambda k: f"{k[0]} / {k[1]}")
+    proposals = [(symptom, dst, direction, edges_for)
+                 for (dst, symptom), direction, edges_for in resolved]
+
+    if ambiguous:
+        print("AMBIGUOUS - two feeding routes imply OPPOSITE directions, so nothing")
+        print("was inferred for these. Worth a look: both edges are real.")
+        for label, dirs, ids in ambiguous:
+            print(f"  {label}: {' vs '.join(dirs)} (edges: {', '.join(ids)})")
+        print()
 
     print(f"proposed derived entries : {len(proposals)}")
     print(f"skipped (already measured): {skipped}")
@@ -156,7 +288,9 @@ def main():
         return
 
     added = 0
-    for symptom, src, dst, direction, e in proposals:
+    for symptom, dst, direction, edges_for in proposals:
+        e = edges_for[0]
+        src = e["from"]
         for b in sd["bacteria"]:
             if b["name"] != dst:
                 continue
@@ -172,15 +306,25 @@ def main():
                  f"({', '.join(e['metabolites'])} -> {e['product']}), so {dst} is "
                  f"expected to follow. {conf.capitalize()}. The underlying feeding "
                  f"relationship is real ({e['evidence']}); its presence in THIS "
-                 f"condition/symptom is an inference. Source edge: {e['id']}."),
-                ("ref", f"derived via {e['id']} - {e['ref']}"),
+                 f"condition/symptom is an inference. Source edge: {e['id']}."
+                 + multi_edge_note(edges_for)),
+                ("ref", "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this "
+                       "symptom/condition - nobody measured this taxon here): "
+                       + " | ".join(f"derived via {x['id']} - {x['ref']}" for x in edges_for)),
                 ("url", e["url"]),
             ]))
             b["count"] = b.get("count", 0) + 1
             added += 1
     json.dump(sd, open(SYM, "w"), indent=1, ensure_ascii=False)
     open(SYM, "a").write("\n")
-    print(f"\nWROTE {added} derived entries to {SYM}.")
+    now = {}
+    for b in sd["bacteria"]:
+        for d in ("up", "down", "both", "none"):
+            for e in b.get(d, []):
+                if e.get("derived"):
+                    now[(b["name"], e["symptom"])] = d
+    report_diff("SYMPTOMS", prior_symptoms, now)
+    print(f"WROTE {added} derived entries to {SYM}.")
     propagate_conditions(json.load(open(CF)), args)
     print("Now verify: python3 scripts/check_duplicate_keys.py && python3 scripts/sync_embedded_data.py")
 
@@ -194,6 +338,7 @@ def propagate_conditions(cf, args):
     a condition, which is what people actually browse.
     """
     seed = json.load(open(SEED), object_pairs_hook=collections.OrderedDict)
+    prior_conditions = strip_derived_conditions(seed)
     sd = json.load(open(SYM))
     names = {b["name"] for b in sd["bacteria"]}
     edges = usable_edges(cf, names)
@@ -215,7 +360,22 @@ def propagate_conditions(cf, args):
                 continue
             proposals.append((cond, dst, direction, e))
 
+    # Same collapse as the symptom side: one condition can measure two sources
+    # that both feed the same target.
+    grouped = collections.OrderedDict()
+    for cond, dst, direction, e in proposals:
+        grouped.setdefault((cond["id"], dst), []).append((direction, e))
+    cond_by_id = {c["id"]: c for c in seed["conditions"]}
+    resolved, ambiguous = collapse_multi_edge(
+        grouped, lambda k: f"{cond_by_id[k[0]]['name']} / {k[1]}")
+    proposals = [(cond_by_id[cid], dst, direction, edges_for)
+                 for (cid, dst), direction, edges_for in resolved]
+
     print(f"\n--- CONDITIONS ---")
+    if ambiguous:
+        print("AMBIGUOUS - opposite directions from two real edges, nothing inferred:")
+        for label, dirs, ids in ambiguous:
+            print(f"  {label}: {' vs '.join(dirs)} (edges: {', '.join(ids)})")
     print(f"proposed derived taxa      : {len(proposals)}")
     print(f"skipped (already measured) : {skipped}")
     print(f"  of which DISAGREE        : {len(conflicts)}")
@@ -227,7 +387,8 @@ def propagate_conditions(cf, args):
         return
 
     n = 0
-    for cond, dst, direction, e in proposals:
+    for cond, dst, direction, edges_for in proposals:
+        e = edges_for[0]
         conf = ("lower confidence - the reverse direction was not tested"
                 if direction == "down" else "same direction as the demonstrated cross-feed")
         cond["taxa"].append(collections.OrderedDict([
@@ -235,19 +396,26 @@ def propagate_conditions(cf, args):
             ("name", dst),
             ("dir", direction),
             ("derived", True),
-            ("refs", f"derived via {e['id']} - {e['ref']}"),
+            ("refs", "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this "
+                      "condition - nobody measured this taxon here): "
+                      + " | ".join(f"derived via {x['id']} - {x['ref']}" for x in edges_for)),
             ("note",
              f"FROM CROSS-FEEDING - inferred, not measured in this condition. "
              f"{e['from']} is {direction} here, and it feeds {dst} "
              f"({', '.join(e['metabolites'])} -> {e['product']}), so {dst} is expected "
              f"to follow. {conf.capitalize()}. The feeding relationship itself is real "
-             f"({e['evidence']}); its presence in THIS condition is an inference."),
-            ("links", [{"id": f"cf_{cond['id']}_{e['id']}_l1", "label": e["ref"], "url": e["url"]}]),
+             f"({e['evidence']}); its presence in THIS condition is an inference."
+             + multi_edge_note(edges_for)),
+            ("links", [{"id": f"cf_{cond['id']}_{x['id']}_l{i+1}", "label": "Inferred source: " + x["ref"], "url": x["url"]}
+                       for i, x in enumerate(edges_for)]),
         ]))
         n += 1
     json.dump(seed, open(SEED, "w"), indent=1, ensure_ascii=False)
     open(SEED, "a").write("\n")
-    print(f"\nWROTE {n} derived taxa to {SEED}.")
+    now = {(c["name"], t["name"]): t.get("dir")
+           for c in seed["conditions"] for t in c.get("taxa", []) if t.get("derived")}
+    report_diff("CONDITIONS", prior_conditions, now)
+    print(f"WROTE {n} derived taxa to {SEED}.")
 
 
 if __name__ == "__main__":

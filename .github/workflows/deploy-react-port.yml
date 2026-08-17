@@ -21,7 +21,7 @@ name: Build & deploy (React port + existing site, combined)
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'overnight-audit-*', 'preview/**']
   workflow_dispatch: {}
 
 permissions:
@@ -37,21 +37,41 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Two checkouts, on purpose. Pages replaces the ENTIRE site with one
+      # artifact, so deploying a branch naively would take the live main site
+      # down and replace it with unreviewed work. Instead: main always builds
+      # the site as normal, and a non-main branch is additionally published to
+      # /branch-preview/ alongside it. The live site is untouched either way.
+      #
+      # This exists because the Actions "Run workflow" ref picker frequently
+      # fails to load on mobile, leaving no way to preview a branch at all.
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: mainsite
 
+      - uses: actions/checkout@v4
+        with:
+          path: branchsite
+
+      # npm cache deliberately OFF. This job now runs `npm ci` twice, in two
+      # separate checkouts, and setup-node's cache is keyed to a single
+      # lockfile path. The first branch run succeeded on a cold cache and every
+      # run since has failed, which points at the one piece of state that
+      # differs between them. Two clean installs cost ~20s; a deploy that fails
+      # intermittently costs far more.
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
-          cache-dependency-path: "Porting to native react/app/package-lock.json"
 
-      - name: Install React port dependencies
-        working-directory: "Porting to native react/app"
-        run: npm ci
+      - name: Build main site's React port
+        working-directory: "mainsite/Porting to native react/app"
+        run: npm ci && npm run build
 
-      - name: Build React port
-        working-directory: "Porting to native react/app"
-        run: npm run build
+      - name: Build branch preview (skipped when this IS main)
+        if: github.ref_name != 'main'
+        working-directory: "branchsite/Porting to native react/app"
+        run: npm ci && npm run build
 
       - name: Assemble combined Pages artifact
         run: |
@@ -67,10 +87,17 @@ jobs:
             --exclude='.venv-readable' \
             --exclude='Porting to native react' \
             --exclude='_site' \
-            ./ _site/
+            mainsite/ _site/
           # New React port, at its own subpath, alongside the old app.
           mkdir -p "_site/react-preview"
-          cp -r "Porting to native react/app/dist/." "_site/react-preview/"
+          cp -r "mainsite/Porting to native react/app/dist/." "_site/react-preview/"
+          # Branch preview, if this run came from a branch. Lives at its own
+          # path so the live site above is never replaced by unreviewed work.
+          if [ "${{ github.ref_name }}" != "main" ]; then
+            mkdir -p "_site/branch-preview"
+            cp -r "branchsite/Porting to native react/app/dist/." "_site/branch-preview/"
+            echo "branch preview published from ${{ github.ref_name }}"
+          fi
           # There's no index.html at the repo root - the classic "Deploy
           # from a branch" source used to paper over that with Jekyll
           # auto-rendering README.md into a landing page, but

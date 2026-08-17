@@ -7,7 +7,11 @@ import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { isIntervention } from '../lib/interventions'
 import { MapControls } from './MapControls'
+import { PickerSection } from './PickerSection'
+import { FilteredEmptyState } from './FilteredEmptyState'
 import { filterSymptomData, filterConditions } from '../lib/studyFilters'
+import { groupByGenus } from '../lib/groupByGenus'
+import { TAXON_CANON } from '../data/taxonCanon'
 
 // Module-level, not per-render: a stable list AND a stable default value
 // for useState below (symptomData is a static JSON import, so this never
@@ -20,6 +24,25 @@ const ALL_SYMPTOMS = [...(symptomData.symptoms || [])].sort((a, b) => a.localeCo
 const ALL_INTERVENTIONS = ALL_SYMPTOMS.filter((s) => isIntervention(s))
 const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !isIntervention(s))
 
+// The default Symptom -> Bacteria selection (see useState below for why).
+// Names must match symptom_data.json exactly - a typo here fails silently as
+// "that pill just never turns on", so they are asserted against ALL_SYMPTOMS
+// in dev rather than trusted.
+const DEFAULT_SYMPTOM_SELECTION = [
+  'FUT2 (Non-secretor) status',
+  // 2'-FL only: the other three HMOs stay one tap away in the picker, but the
+  // default view is quieter with a single intervention than with four fanning
+  // into the same taxa.
+  "2'-Fucosyllactose (HMO) supplementation",
+]
+// Conditions included in the default Symptom -> Bacteria view, by request.
+const DEFAULT_CONDITION_IDS = ['seed_76', 'seed_ida_state'] // ADHD, Iron deficiency (state)
+
+if (import.meta.env?.DEV) {
+  const missing = DEFAULT_SYMPTOM_SELECTION.filter((s) => !ALL_SYMPTOMS.includes(s))
+  if (missing.length) console.warn('[SymptomTab] default selection names not in symptom data:', missing)
+}
+
 // Ported verbatim from `GFA_SymptomTab` in gut-flora-atlas.readable.html
 // (~line 25998-26211) - the React wrapper that mounts buildSymptomMap into
 // a plain <div> ref, used for both the global Bacteria->Symptom and
@@ -30,27 +53,60 @@ const ALL_SYMPTOMS_ONLY = ALL_SYMPTOMS.filter((s) => !isIntervention(s))
 // to both directions after a positive verdict. Pick specific symptoms
 // and/or conditions to narrow the map down to exactly that selection
 // (leaving everything unpicked shows the full map, the original
-// default); clicking the graph's background clears the picker back to
-// that default too, without having to find the "clear all" button - see
-// symptomMapConditionOverlay.js's header comment for the data-layer side,
-// and buildSymptomMap.js's onBackgroundClick param for the engine side.
-export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
+// default). Clearing the picker is the reset button's job and only the
+// reset button's job - clicking the graph's background used to do it too,
+// which meant one stray click on empty canvas threw away a hand-built map
+// (and jumped the page, since rebuilding the full map changes the document
+// height). See symptomMapConditionOverlay.js's header comment for the
+// data-layer side, and buildSymptomMap.js's onPointerUp for the engine side.
+export function SymptomTab({ pinType = 'bact', initialSelection, filters, onFiltersChange }) {
   const hostRef = useRef(null)
   const tipRef = useRef(null)
   const hiddenNamesRef = useRef(new Set())
   const graphRef = useRef(null)
   const { zoom, zoomIn, zoomOut } = useZoom()
   const [mode, setMode] = useState('all')
+  // Genus grouping now lives in Settings (studyFilters.js), not in local state, so
+  // it persists and applies to every map at once - the map control below just
+  // writes to the same setting. Falls back to true when the stored filters predate
+  // the setting existing.
+  //
+  // ON by default, by explicit request: seeing Faecalibacterium and F. prausnitzii
+  // as two unrelated dots, when they are the same organism at two ranks, was the
+  // most persistent complaint about these maps. What makes that safe is the
+  // contested rendering, not the merge being lossless - where members disagree an
+  // arrow is never invented, and the banner names those genera.
+  const groupGenus = filters?.groupGenus !== false
+  const setGroupGenus = (next) => onFiltersChange?.((f) => ({ ...f, groupGenus: next }))
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
   const [showPicker, setShowPicker] = useState(false)
-  const [extraConditionIds, setExtraConditionIds] = useState([])
+  // Default view for the Symptom -> Bacteria direction, by request: the FUT2
+  // picture with every HMO intervention on screen next to it, plus ADHD. That
+  // is the comparison this map keeps getting opened for, and rebuilding it by
+  // hand meant nine taps through three collapsed picker groups every time.
+  //
+  // Only for the Symptom -> Bacteria direction, which is pinType 'symptom'
+  // (the pin type names which node type sits pinned on the rim, so it reads
+  // backwards from the tab name - App.jsx renders 's2b' with pinType="symptom"
+  // and 'b2s' with pinType="bact"). Getting that backwards silently applies the
+  // default to the OTHER map, which is exactly what happened first time.
+  // The Bacteria -> Symptom map is a general browsing view; opening it
+  // pre-narrowed to one person's genotype question would be wrong there.
+  //
+  // Not a lock: open the picker and these pills are already lit, so one tap
+  // drops any of them, and "x clear all" returns to the full map.
+  const [extraConditionIds, setExtraConditionIds] = useState(
+    pinType === 'symptom' ? [...DEFAULT_CONDITION_IDS] : []
+  )
   // Defaults to nothing checked - so you never have to manually deselect
   // 44 pills just to get the useful default view. An empty selection
   // (of both symptoms AND conditions) means "show everything," handled by
   // buildOverlayMapData in symptomMapConditionOverlay.js; picking a
   // condition with zero symptoms checked still narrows for real (that
   // case is told apart from "nothing picked yet" there too).
-  const [selectedSymptoms, setSelectedSymptoms] = useState([])
+  const [selectedSymptoms, setSelectedSymptoms] = useState(
+    pinType === 'symptom' ? [...DEFAULT_SYMPTOM_SELECTION] : []
+  )
 
   // New (no minified-source equivalent): GlobalSearch.jsx jumping to a
   // specific symptom lands here with a fresh {symptoms: [name]} object -
@@ -89,18 +145,69 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
     [extraConditions]
   )
 
+  // "Conditions which increase / decrease it", for the bacteria popups. Built from
+  // seed_data rather than from what is on the map, so the answer is the same
+  // whether or not you happen to have those conditions selected - the question
+  // ("what raises this organism?") is about the app's whole dataset.
+  //
+  // Condition taxa use raw research names; TAXON_CANON maps them onto the
+  // canonical names the symptom maps use, which is the same mapping
+  // conditionSymptomData.js relies on. Study filters are applied first, so a
+  // condition hidden by a filter cannot reappear here.
+  const conditionIndex = useMemo(() => {
+    const idx = {}
+    const put = (key, dir, condName) => {
+      if (!key) return
+      const slot = (idx[key] = idx[key] || { up: [], down: [], both: [] })
+      if (slot[dir] && !slot[dir].includes(condName)) slot[dir].push(condName)
+    }
+    for (const c of filterConditions(conditions, filters)) {
+      for (const t of c.taxa || []) {
+        if (t.derived) continue // inferences are not evidence that a condition raises this
+        const canon = TAXON_CANON[t.name] || t.name
+        put(canon, t.dir, c.name)
+        // With grouping on, the popup's node is a genus, so file species results
+        // under the genus too - otherwise a merged node would list nothing.
+        if (groupGenus) {
+          const genus = String(canon).split(' ')[0]
+          if (genus !== canon) put(genus, t.dir, c.name)
+        }
+      }
+    }
+    for (const k of Object.keys(idx)) {
+      idx[k].up.sort(); idx[k].down.sort(); idx[k].both.sort()
+    }
+    return idx
+  }, [conditions, filters, groupGenus])
+
   const clearPicker = () => {
     setSelectedSymptoms([]) // back to "nothing picked," the real default - shows everything
     setExtraConditionIds([])
   }
 
-  const shownData = filterSymptomData(mapData, filters)
+  const filteredData = filterSymptomData(mapData, filters)
+  // Grouping runs AFTER the study filters, so a merged claim can only ever be built
+  // from evidence that survived them - otherwise a hidden animal study could
+  // reappear inside a genus node.
+  const grouped = groupGenus ? groupByGenus(filteredData) : null
+  const shownData = grouped ? grouped.data : filteredData
+  // Count what the filters removed, so an empty map can explain itself rather
+  // than looking broken - see FilteredEmptyState.
+  const rawLinks = (mapData.bacteria || []).reduce(
+    (a, b) => a + ['up', 'down', 'both', 'none'].reduce((x, k) => x + (b[k] || []).length, 0),
+    0
+  )
+  const shownLinks = (shownData.bacteria || []).reduce(
+    (a, b) => a + ['up', 'down', 'both', 'none'].reduce((x, k) => x + (b[k] || []).length, 0),
+    0
+  )
+  const filteredEmpty = rawLinks > 0 && shownLinks === 0
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, clearPicker, fullData)
+      stop = buildSymptomMap(hostRef.current, tipRef.current, shownData, mode, pinType, true, layoutState.scramble, hiddenNamesRef, fullData, conditionIndex)
       graphRef.current = stop
       // Nodes added/kept via the picker above aren't the result of a real
       // click, so they'd otherwise never end up in the graph's own
@@ -127,7 +234,7 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- extends the original's own dependency array (mode, pinType, layoutState) with mapData/fullData, the overlay inputs
-  }, [mode, pinType, layoutState, mapData, fullData, filters])
+  }, [mode, pinType, layoutState, mapData, fullData, filters, groupGenus, conditionIndex])
 
   const nBact = (mapData.bacteria || []).length
   const nSym = (mapData.symptoms || []).length
@@ -192,76 +299,49 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
               full map.
             </p>
             <div className="mb-3">
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
-                SYMPTOMS
-              </div>
-              <div className="flex flex-wrap gap-1.5 mb-2">
-                {ALL_SYMPTOMS_ONLY.map((s) => {
-                  const on = selectedSymptoms.includes(s)
-                  return (
-                    <button
-                      key={s}
-                      onClick={() => setSelectedSymptoms(on ? selectedSymptoms.filter((x) => x !== s) : [...selectedSymptoms, s])}
-                      className="rounded-full px-2.5 py-1 text-xs"
-                      style={{
-                        background: on ? '#2DD4BF33' : theme.ink2,
-                        border: `1px solid ${on ? '#2DD4BF' : theme.line}`,
-                        color: on ? theme.text : theme.muted,
-                      }}
-                    >
-                      {s}
-                    </button>
+              <PickerSection
+                label="SYMPTOMS"
+                accent="#2DD4BF"
+                items={ALL_SYMPTOMS_ONLY.map((s) => ({ key: s, label: s }))}
+                isSelected={(it) => selectedSymptoms.includes(it.key)}
+                onToggle={(it) =>
+                  setSelectedSymptoms(
+                    selectedSymptoms.includes(it.key)
+                      ? selectedSymptoms.filter((x) => x !== it.key)
+                      : [...selectedSymptoms, it.key]
                   )
-                })}
-              </div>
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
-                INTERVENTIONS
-              </div>
-              <div className="flex flex-wrap gap-1.5 mb-2">
-                {ALL_INTERVENTIONS.map((s) => {
-                  const on = selectedSymptoms.includes(s)
-                  return (
-                    <button
-                      key={s}
-                      onClick={() => setSelectedSymptoms(on ? selectedSymptoms.filter((x) => x !== s) : [...selectedSymptoms, s])}
-                      className="rounded-full px-2.5 py-1 text-xs"
-                      style={{
-                        background: on ? '#F5A62333' : theme.ink2,
-                        border: `1px solid ${on ? '#F5A623' : theme.line}`,
-                        color: on ? theme.text : theme.muted,
-                      }}
-                    >
-                      {s}
-                    </button>
+                }
+              />
+              <PickerSection
+                label="INTERVENTIONS"
+                accent="#F5A623"
+                defaultOpen
+                items={ALL_INTERVENTIONS.map((s) => ({ key: s, label: s }))}
+                isSelected={(it) => selectedSymptoms.includes(it.key)}
+                onToggle={(it) =>
+                  setSelectedSymptoms(
+                    selectedSymptoms.includes(it.key)
+                      ? selectedSymptoms.filter((x) => x !== it.key)
+                      : [...selectedSymptoms, it.key]
                   )
-                })}
-              </div>
-              <div className="font-mono mb-1" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
-                CONDITIONS
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {[...conditions]
+                }
+              />
+              <PickerSection
+                label="CONDITIONS"
+                accent="#8FD3F4"
+                items={[...conditions]
                   .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((c) => {
-                    const on = extraConditionIds.includes(c.id)
-                    return (
-                      <button
-                        key={c.id}
-                        onClick={() =>
-                          setExtraConditionIds(on ? extraConditionIds.filter((x) => x !== c.id) : [...extraConditionIds, c.id])
-                        }
-                        className="rounded-full px-2.5 py-1 text-xs"
-                        style={{
-                          background: on ? c.color + '33' : theme.ink2,
-                          border: `1px solid ${on ? c.color : theme.line}`,
-                          color: on ? theme.text : theme.muted,
-                        }}
-                      >
-                        {c.name}
-                      </button>
-                    )
-                  })}
-              </div>
+                  .map((c) => ({ key: c.id, label: c.name, color: c.color }))}
+                colorFor={(it) => it.color}
+                isSelected={(it) => extraConditionIds.includes(it.key)}
+                onToggle={(it) =>
+                  setExtraConditionIds(
+                    extraConditionIds.includes(it.key)
+                      ? extraConditionIds.filter((x) => x !== it.key)
+                      : [...extraConditionIds, it.key]
+                  )
+                }
+              />
             </div>
             {isCustomized && (
               <button
@@ -276,9 +356,38 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
         )}
       </div>
 
+      {filteredEmpty && (
+        <div className="mb-3" style={{ maxWidth: 700 }}>
+          <FilteredEmptyState hiddenCount={rawLinks} filters={filters} />
+        </div>
+      )}
+
+      {/* Grouping is lossy in one specific way - members can disagree - so the map
+          says so out loud rather than letting a merged arrow look unanimous. */}
+      {grouped && (
+        <div
+          className="rounded-xl mb-3 px-3 py-2"
+          style={{ background: theme.ink2, border: `1px solid ${grouped.summary.conflicts ? '#FFC857' : theme.line}`, fontSize: 12.5, color: theme.muted, maxWidth: 700 }}
+        >
+          <b style={{ color: theme.text }}>Grouped by genus</b> — {grouped.summary.merged} genera absorbed their species.{' '}
+          {grouped.summary.conflicts > 0 ? (
+            <>
+              <b style={{ color: '#FFC857' }}>
+                {grouped.summary.conflicts === 1
+                  ? 'one of them contains members that disagree'
+                  : `${grouped.summary.conflicts} of them contain members that disagree`}
+              </b>{' '}({grouped.summary.conflictNames.join(', ')}).
+              Those claims render as contested (↔) rather than picking a winner — open the node to see each member's own evidence. Ungroup to see them as separate nodes, which is how the data is actually stored.
+            </>
+          ) : (
+            <>No member disagreements in the current selection.</>
+          )}
+        </div>
+      )}
+
       <ZoomButtons onZoomIn={zoomIn} onZoomOut={zoomOut} />
 
-      <div style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
+      <div className="gfa-scroll-x" style={{ position: 'relative', width: '100%', background: theme.ink2, border: `1px solid ${theme.line}`, borderRadius: 16, overflow: 'auto' }}>
         <div ref={hostRef} style={{ width: '100%', transform: `scale(${zoom})`, transformOrigin: 'top center' }} />
         <div
           className="gfa-tip"
@@ -304,8 +413,20 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters }) {
       </div>
 
       <MapControls
+        groupGenus={groupGenus}
+        onToggleGroupGenus={(next) => {
+          // Hidden-node memory is keyed by NAME, and grouping changes which names
+          // exist ("Faecalibacterium prausnitzii" becomes part of "Faecalibacterium").
+          // Carrying the old set across would hide the wrong things.
+          hiddenNamesRef.current?.clear()
+          setGroupGenus(next)
+        }}
         onSnapBack={() => {
+            // Snap back means EVERYTHING back, by request: hidden nodes restored,
+            // the picker cleared to the full map, and the layout relaid. It is the
+            // one button that always returns you to a known state.
             hiddenNamesRef.current?.clear()
+            clearPicker()
             setLayoutState((s) => ({ key: s.key + 1, scramble: false }))
           }}
         onScramble={() => setLayoutState((s) => ({ key: s.key + 1, scramble: true }))}

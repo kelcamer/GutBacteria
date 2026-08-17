@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ArrowLeft, Microscope, Link2, Trash2, Plus, Pencil, ArrowLeftRight } from 'lucide-react'
 import { theme } from '../theme'
+import { filterConditions } from '../lib/studyFilters'
 import { Button } from './Button'
 import { Modal } from './Modal'
 import { RankBadge } from './RankBadge'
@@ -33,6 +34,19 @@ export function ConditionDetail({ filters, condition, onBack, onUpdate, onUpsert
   const [editingTaxon, setEditingTaxon] = useState(null)
   const [confirmDelete, setConfirmDelete] = useState(false)
   const [notesOpen, setNotesOpen] = useState(false)
+
+  // The taxa LIST is what people actually click through to a source, so it has
+  // to respect the study filters too - not just the map underneath it. Without
+  // this, turning on "Human studies only" filtered the graph while the list
+  // above it still offered mouse studies, which is worse than not filtering at
+  // all: the setting looks applied and isn't.
+  //
+  // Filtering display only. Edits still operate on the real condition object,
+  // so nothing can be lost by having a filter on while editing - and the
+  // banner below states how many are hidden, so the list never silently
+  // under-reports what is on file.
+  const shownTaxa = (filterConditions(condition, filters)?.taxa) || condition.taxa
+  const hiddenByFilters = (condition.taxa?.length || 0) - shownTaxa.length
 
   return (
     <div className="p-4 safe-bottom">
@@ -71,9 +85,19 @@ export function ConditionDetail({ filters, condition, onBack, onUpdate, onUpsert
         </p>
       )}
 
+      {hiddenByFilters > 0 && (
+        <div
+          className="rounded-xl mb-3 px-3 py-2"
+          style={{ background: theme.ink2, border: `1px solid ${theme.line}`, fontSize: 12.5, color: theme.muted }}
+        >
+          <b style={{ color: theme.text }}>{hiddenByFilters}</b> taxa hidden by your study filters — the list below
+          reflects your Settings, not everything on file.
+        </div>
+      )}
+
       <div className="grid gap-4" style={{ gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))' }}>
         {SECTIONS.map(({ dir, title, color }) => {
-          const taxa = condition.taxa.filter((t) => t.dir === dir)
+          const taxa = shownTaxa.filter((t) => t.dir === dir)
           return (
             <section key={dir} className="rounded-2xl overflow-hidden" style={{ background: theme.ink2, border: `1px solid ${theme.line}` }}>
               <div

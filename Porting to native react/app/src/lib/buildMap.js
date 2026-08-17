@@ -74,7 +74,7 @@ function copyTipText(el, btn) {
   }
 }
 
-export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hiddenNamesRef, onBackgroundClick, symptomXrefData) {
+export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hiddenNamesRef, symptomXrefData) {
   pinType = pinType || 'cond'
   const NS = 'http://www.w3.org/2000/svg'
   const W = 1000
@@ -200,6 +200,13 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
   svg.style.display = 'block'
   svg.style.height = 'auto'
   svg.style.touchAction = 'pan-x pan-y pinch-zoom'
+  // Same fix as buildSymptomMap.js - see its own comment here for the full
+  // account. Short version: a selectable SVG means pressing a node starts the
+  // browser's text-selection drag, and a selection drag autoscrolls the page
+  // the moment the cursor nears a viewport edge, which threw the page to the
+  // top mid-drag and took the dragged node off screen with it.
+  svg.style.userSelect = 'none'
+  svg.style.webkitUserSelect = 'none'
 
   const gE = document.createElementNS(NS, 'g')
   const gN = document.createElementNS(NS, 'g')
@@ -271,7 +278,6 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
   let dragNode = null
   let dragIdx = null // V-array position of dragNode, NOT dragNode.i - see onPointerDown's comment (same fix as buildSymptomMap.js's identical bug: clicking a node could select a DIFFERENT one whenever an earlier zero-degree node had been filtered out of V, shifting every later node's true V-position below its stale .i)
   let isDragging = false
-  let bgDown = false
   let dragStartX = 0, dragStartY = 0
   const DRAG_THRESHOLD = 4 // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
   let lastClickIdx = null, lastClickTime = 0
@@ -739,7 +745,6 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
       dragNode = V[idx]
       dragIdx = idx
       isDragging = false
-      bgDown = false
       dragStartX = ev.clientX
       dragStartY = ev.clientY
       // Pointer capture deferred to onPointerMove now, not claimed here -
@@ -749,9 +754,10 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
       // instant a node is touched (before knowing drag-vs-scroll intent)
       // let a vertical swipe get claimed as a drag once past
       // DRAG_THRESHOLD, blocking the browser's own scroll entirely.
-    } else {
-      bgDown = true
     }
+    // No else branch any more: a press that misses every node used to be
+    // recorded (bgDown) so onPointerUp could treat it as a background click.
+    // Background clicks do nothing now, so there is nothing to record.
   }
 
   function onPointerMove(ev) {
@@ -760,12 +766,18 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
         const jitterDx = ev.clientX - dragStartX, jitterDy = ev.clientY - dragStartY
         const jitterDist = Math.hypot(jitterDx, jitterDy)
         if (jitterDist < DRAG_THRESHOLD) return // still just a click, not a drag yet
-        // Predominantly vertical movement past the threshold reads as
-        // "trying to scroll the page," not "trying to drag this node" -
+        // TOUCH ONLY: predominantly vertical movement past the threshold reads
+        // as "trying to scroll the page," not "trying to drag this node" -
         // release it back to the browser's own touch-action pan handling
         // instead of claiming/preventDefault-ing it below. A horizontal or
         // diagonal drag still claims the node as before.
-        if (Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
+        //
+        // Not applied to a mouse: a mouse scrolls with the wheel, so a held
+        // button moving over a node is unambiguously a drag in any direction.
+        // Applying it there made upward drags impossible and handed the
+        // abandoned gesture to the browser as an autoscrolling text-selection
+        // drag - see buildSymptomMap.js's matching comment.
+        if (ev.pointerType !== 'mouse' && Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
           dragNode = null
           return
         }
@@ -855,21 +867,12 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
       }
       dragNode = null
       isDragging = false
-    } else if (bgDown) {
-      // REVERTED back to single-click: the double-click requirement was
-      // guarding against pointercancel (a canceled touch gesture, e.g.
-      // native pinch/double-tap-zoom taking over) reaching this branch -
-      // that's now fixed at its actual source (see onPointerCancel below,
-      // which handles cancels separately and never runs this logic at
-      // all), so single-click is safe again without needing the extra
-      // double-click layer on top.
-      if (selectedNodes.size) {
-        closeAllPinned()
-        setHi(curr)
-      }
-      if (typeof onBackgroundClick === 'function') onBackgroundClick()
     }
-    bgDown = false
+    // A press on the map's BACKGROUND is deliberately inert now - it used to
+    // close every pinned popup and fire onBackgroundClick. See
+    // buildSymptomMap.js's matching comment for the full reasoning; both
+    // engines had to change together or the two maps would disagree about what
+    // empty canvas means.
   }
 
   // New: pointercancel used to be routed straight to onPointerUp, so a
@@ -891,7 +894,6 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     }
     dragNode = null
     isDragging = false
-    bgDown = false
   }
 
   function onPointerLeave(ev) {

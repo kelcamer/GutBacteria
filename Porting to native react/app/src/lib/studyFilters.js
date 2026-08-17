@@ -23,8 +23,20 @@ export const DEFAULT_FILTERS = {
   hideDerived: true, // cross-feeding inference stays off by default, as before
   hideMeta: false,
   hideMendelian: false,
+  hideReview: false,
   womenOnly: false,
   menOnly: false,
+  // Display, not evidence: it changes which NODES exist, never which entries
+  // pass entryPasses() below. Lives here anyway because it belongs with the
+  // other things you set once for the whole atlas, and because it has to
+  // persist - having to re-group every visit was the point of moving it.
+  groupGenus: true,
+  // Both read as ON = SHOW, matching every other toggle here, so nothing is
+  // hidden until you ask for it. They filter LINKS by direction, not by
+  // evidence quality - a contested or null link is a real finding, just not
+  // an actionable one, which is exactly why being able to mute them helps.
+  showContested: true,
+  showNull: true,
 }
 
 export const FILTER_LABELS = {
@@ -33,21 +45,34 @@ export const FILTER_LABELS = {
   hideDerived: ['Hide crossfeeding', 'Hides inferred links generated from metabolic relationships'],
   hideMeta: ['Exclude meta-analyses', 'Rarely wanted — meta-analyses are usually the strongest evidence here'],
   hideMendelian: ['Exclude Mendelian randomisation', 'Genetic-instrument studies; human, but inferential rather than observed'],
+  hideReview: ['Exclude narrative reviews', 'Secondary sources that summarise other studies rather than reporting new data'],
   womenOnly: ['Women only', 'Hides studies conducted in male-only populations'],
   menOnly: ['Men only', 'Hides studies conducted in female-only populations'],
+  showContested: ['Enable conflicting microbes?', 'Shows links where studies disagree about the direction (yellow). Turn off to hide them and leave only findings that point one way'],
+  showNull: ['Enable null findings?', 'Shows links that were tested and found NO reliable effect (grey). Turn off to hide them - useful once you have read them, since they are settled rather than open questions'],
+  groupGenus: ['Genus grouping?', 'Shows one node per genus instead of separate genus and species nodes (Faecalibacterium and F. prausnitzii become one). Where members disagree the claim shows as contested rather than picking a side'],
 }
 
 // True when an entry survives the current filters.
-export function entryPasses(entry, f) {
+export function entryPasses(entry, f, dir) {
   if (!entry) return true
+  // Defensive: a component rendered without the prop would otherwise crash the
+  // whole map on `f.hideDerived`. Falling back to defaults degrades to "show
+  // everything except crossfeeding" rather than a blank screen.
+  if (!f) f = DEFAULT_FILTERS
   const ev = entry.evidence
   const pop = entry.population
 
   if (entry.derived && f.hideDerived) return false
+  // Direction-based muting. Defaults are true, and `!== false` keeps filters
+  // saved before these existed from silently hiding anything.
+  if (dir === 'both' && f.showContested === false) return false
+  if (dir === 'none' && f.showNull === false) return false
   if (f.hideAnimal && ev === 'animal') return false
   if (f.hideInVitro && ev === 'in-vitro') return false
   if (f.hideMeta && ev === 'meta-analysis') return false
   if (f.hideMendelian && ev === 'mendelian') return false
+  if (f.hideReview && ev === 'review') return false
   if (f.womenOnly && pop === 'male') return false
   if (f.menOnly && pop === 'female') return false
   return true
@@ -59,9 +84,9 @@ export function filterSymptomData(data, f) {
   let removed = 0
   const bacteria = data.bacteria.map((b) => {
     const next = { ...b }
-    for (const dir of ['up', 'down', 'both']) {
+    for (const dir of ['up', 'down', 'both', 'none']) {
       if (!Array.isArray(b[dir])) continue
-      const kept = b[dir].filter((e) => entryPasses(e, f))
+      const kept = b[dir].filter((e) => entryPasses(e, f, dir))
       if (kept.length !== b[dir].length) {
         removed += b[dir].length - kept.length
         next[dir] = kept
@@ -101,7 +126,7 @@ export function filterStats(seedConditions, symptomData, f) {
   }
   ;(seedConditions || []).forEach((c) => (c.taxa || []).forEach(count))
   ;(symptomData?.bacteria || []).forEach((b) =>
-    ['up', 'down', 'both'].forEach((d) => (b[d] || []).forEach(count))
+    ['up', 'down', 'both', 'none'].forEach((d) => (b[d] || []).forEach(count))
   )
   return { total, hidden, shown: total - hidden }
 }

@@ -32,6 +32,7 @@ minifier's `let[`/`var[` (no-space-before-bracket) shorthand that the
 beautifier correctly expands to `let [`/`var [`.
 """
 import json
+import os
 import sys
 
 try:
@@ -96,8 +97,19 @@ def find_bracket_span(text, open_idx, open_ch, close_ch):
 
 
 def verify(pretty_js):
-    seed = json.load(open("seed_data.json"))["conditions"]
-    sym = json.load(open("symptom_data.json"))
+    # Compare against the SAME stripped target sync_embedded_data.py writes.
+    # The old single-file app deliberately excludes cross-feeding-derived
+    # entries, because it has no UI to distinguish inference from measurement -
+    # see strip_derived() there. Verifying against the raw JSON would report a
+    # permanent, expected mismatch and make this check useless.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from sync_embedded_data import strip_derived
+
+    raw_seed = json.load(open("seed_data.json"))["conditions"]
+    sym_raw = json.load(open("symptom_data.json"))
+    stripped_conditions, stripped_bacteria = strip_derived(raw_seed, sym_raw["bacteria"])
+    seed = stripped_conditions
+    sym = {"symptoms": sym_raw["symptoms"], "bacteria": stripped_bacteria}
 
     m = pretty_js.find("qf = () => ({")
     if m == -1:

@@ -103,6 +103,7 @@ export function filterToSymptoms(data, selectedSymptomNames) {
     up: (b.up || []).filter((e) => keep.has(e.symptom)),
     down: (b.down || []).filter((e) => keep.has(e.symptom)),
     both: (b.both || []).filter((e) => keep.has(e.symptom)),
+    none: (b.none || []).filter((e) => keep.has(e.symptom)),
   }))
   return { ...data, symptoms, bacteria }
 }
@@ -136,6 +137,7 @@ export function buildOverlayMapData(data, selectedSymptomNames, extraConditions)
     up: (b.up || []).filter((e) => keep.has(e.symptom)),
     down: (b.down || []).filter((e) => keep.has(e.symptom)),
     both: (b.both || []).filter((e) => keep.has(e.symptom)),
+    none: (b.none || []).filter((e) => keep.has(e.symptom)),
   }))
   // Bacteria are kept around (by name) even with every link stripped, so
   // withExtraConditions below can still find and attach to them - a

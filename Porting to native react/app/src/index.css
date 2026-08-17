@@ -168,9 +168,80 @@ select {
   }
 }
 
+/* ---------------------------------------------------------------------------
+   Mobile polish. Small things, but they are what separates "a web page on a
+   phone" from "an app".
+   --------------------------------------------------------------------------- */
+
+/* iOS zooms the page in when a focused input is under 16px. The picker filter
+   boxes were 14px, so tapping one silently zoomed the whole layout and left
+   the user pinching back out. */
+@media (max-width: 560px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Momentum scrolling inside the horizontally-scrolling map wrappers, and stop
+   a horizontal drag there from also dragging the page. */
+.gfa-scroll-x {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  /* Reported: "sometimes I scroll slightly and it launches upwards."
+     The maps change height constantly - grouping on/off, a different selection,
+     a picker opening - and the browser's scroll anchoring responds by shifting
+     the scroll position to keep the pre-change content in view. Measured here:
+     opening the picker grew the document 1350 -> 2079px and moved scrollY by
+     738px in one frame. Anchoring is a good default for a document of text; for
+     a block that resizes on its own it reads as the page lurching.
+     Opting this subtree out means map height changes never move your scroll
+     position - the map grows or shrinks in place. */
+  overflow-anchor: none;
+}
+
+/* Tap highlight: iOS paints a grey box over every button by default, which
+   looks broken on a dark theme. Replace with something intentional. */
+button,
+a,
+[role='button'] {
+  -webkit-tap-highlight-color: rgba(45, 212, 191, 0.18);
+}
+
+/* Buttons feel dead on touch without an active state - there is no hover to
+   fall back on. A tiny scale is enough to register as "that press landed". */
+@media (hover: none) {
+  button:active,
+  [role='button']:active {
+    transform: scale(0.975);
+  }
+}
+button,
+[role='button'] {
+  transition: transform 0.08s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+/* Long taxon names were breaking layout in narrow cards. */
+.gfa-wrap-anywhere {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Selection colour matched the theme rather than the browser default blue. */
+::selection {
+  background: rgba(143, 211, 244, 0.32);
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
     animation: none !important;
+  }
+  /* The press-scale above would otherwise still fire, just instantly - which
+     is more jarring than not moving at all. */
+  button:active,
+  [role='button']:active {
+    transform: none !important;
   }
 }

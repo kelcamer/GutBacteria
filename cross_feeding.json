@@ -201,6 +201,33 @@
    "note": "Return leg of the F. prausnitzii / D. piger mutualism. Uncomfortable tension worth stating: Desulfovibrio is recorded in this app as UP in Parkinson's, with hydrogen sulfide, LPS and magnetite proposed as alpha-synuclein aggregation triggers (PMID 34012926). So the same genus is a butyrate-supporting partner in vitro and a suspected neurodegeneration driver in vivo. Both can be true - species and context differ, and D. piger is not the whole genus - but it is a good reminder that a cross-feeding edge is not an endorsement.",
    "ref": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+  },
+  {
+   "id": "cf_blongum_roseburia_acetate",
+   "from": "Bifidobacterium",
+   "to": "Roseburia",
+   "metabolites": [
+    "acetate"
+   ],
+   "product": "butyrate",
+   "evidence": "in-vitro-coculture",
+   "note": "R. intestinalis is a net acetate CONSUMER, and the demonstration is clean: in pure culture it could not ferment oligofructose at all until acetate was added to the medium, while in coculture B. longum BB536's own acetate production was what unlocked oligofructose breakdown by R. intestinalis. The authors frame this as the mechanism behind the combined bifidogenic/butyrogenic effect of inulin-type fructans. The acetate dependence is substrate-independent: butyryl-CoA:acetate CoA-transferase is the dominant butyrate route and was present in all 38 human colonic butyrate producers tested, and it requires exogenous acetate - so any bifidogenic substrate whose degradation liberates acetate feeds this edge, 2'-FL included (degrading 2'-FL releases acetate and lactate from the lactose moiety). TWO CAVEATS, do not overread: the coculture was run on OLIGOFRUCTOSE, not on an HMO, and no human trial has measured Roseburia after 2'-FL supplementation. Roseburia also cannot eat 2'-FL itself - see cf_akkermansia_roseburia_mucin, which tested exactly that and found it does not grow.",
+   "ref": "Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+  },
+  {
+   "id": "cf_akkermansia_roseburia_mucin",
+   "from": "Akkermansia",
+   "to": "Roseburia",
+   "metabolites": [
+    "mucin O-glycans",
+    "galacto-N-biose (GNB)"
+   ],
+   "product": "butyrate",
+   "evidence": "in-vitro-coculture",
+   "note": "A. muciniphila DSM 22959 liberates mucin O-glycans, which R. hominis DSM 16839 and R. inulinivorans DSM 16841 then ferment using the SAME catabolic loci they use for milk oligosaccharides (that HMO locus was among the most upregulated proteins in the mucin coculture proteome). Butyrate was 4.5-fold higher in coculture supernatant than Roseburia alone at 24 h. Host-derived and diet-independent, the same keystone role Akkermansia already plays for Anaerostipes, E. hallii and F. prausnitzii here. This paper is ALSO the direct refutation of a claim commonly made for HMO supplements: these Roseburia grow on LNT, its LNB unit and mucin-derived GNB, but 'none of the strains grew on the top abundant fucosyl-lactose (FL) HMOs' - neither 2'-FL nor 3-FL supported growth. So Roseburia benefits from 2'-FL only indirectly, via Bifidobacterium acetate (cf_blongum_roseburia_acetate), never by consuming the 2'-FL itself.",
+   "ref": "Pichler et al. 2020, Nat Commun - R. hominis DSM 16839 and R. inulinivorans DSM 16841 cocultured with A. muciniphila DSM 22959 on mucin; HMO growth panel in the same paper (PMID 32620774)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32620774/"
   }
  ],
  "candidates": [

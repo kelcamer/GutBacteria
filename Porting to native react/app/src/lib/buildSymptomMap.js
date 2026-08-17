@@ -19,15 +19,16 @@
 // Not yet reviewed line-by-line against the live original in a browser -
 // see PORTING_PLAN.md's verification notes.
 //
-// One real addition since the port, not in the original: an optional 9th
-// param, `onBackgroundClick` - fired from onPointerUp whenever a plain
-// click lands on empty canvas (not a node, not a drag). Lets a caller
-// hook "user clicked the background" without adding a second click
-// listener of its own on top of this engine's existing pointer handling
-// (which already tracks bgDown/dragNode precisely to distinguish a real
-// background click from a node click or a drag) - SymptomTab.jsx uses it
-// to clear its symptom/condition picker selection.
+// A press on empty canvas does NOTHING here, on purpose. This engine used to
+// expose an `onBackgroundClick` callback (SymptomTab wired it to "reset the
+// picker"), and it also closed every pinned popup. Both were removed by
+// request: a stray click on empty space was silently discarding a map the user
+// had built by hand, and the resulting rebuild changed the document height
+// enough that the browser clamped the scroll and the page appeared to jump
+// upward on its own. Clearing is now only ever explicit - the popups' own x,
+// and the picker's own reset button. See onPointerUp.
 import { dirColor, dirArrow } from '../theme'
+import { isIntervention } from './interventions'
 
 function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
@@ -65,7 +66,8 @@ function copyTipText(el, btn) {
   }
 }
 
-export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, onBackgroundClick, fullData) {
+export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, scramble, hiddenNamesRef, fullData,
+  conditionIndex) {
     pinType = pinType || "bact";
     // Optional 10th param: the UNFILTERED symptom+bacteria universe (every
     // real symptom, plus whatever conditions are currently overlaid) to
@@ -151,70 +153,30 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         items: []
       };
       nodes.push(bNode);
-      (b.up || []).forEach(function(x) {
-        var si = symIdx[x.symptom];
-        if (si == null) return;
-        nodes[si].deg++;
-        bNode.deg++;
-        bNode.items.push({
-          symptom: x.symptom,
-          color: nodes[si].color,
-          dir: "up",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-        edges.push({
-          s: si,
-          t: bi,
-          dir: "up",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-      });
-      (b.down || []).forEach(function(x) {
-        var si = symIdx[x.symptom];
-        if (si == null) return;
-        nodes[si].deg++;
-        bNode.deg++;
-        bNode.items.push({
-          symptom: x.symptom,
-          color: nodes[si].color,
-          dir: "down",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-        edges.push({
-          s: si,
-          t: bi,
-          dir: "down",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-      });
-      (b.both || []).forEach(function(x) {
-        var si = symIdx[x.symptom];
-        if (si == null) return;
-        nodes[si].deg++;
-        bNode.deg++;
-        bNode.items.push({
-          symptom: x.symptom,
-          color: nodes[si].color,
-          dir: "both",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
-        });
-        edges.push({
-          s: si,
-          t: bi,
-          dir: "both",
-          note: x.note,
-          ref: x.ref,
-          url: x.url
+      // One loop over the four directions, replacing three near-identical copies.
+      // "none" is the fourth: tested, no reliable effect - see dirColor in theme.js.
+      ["up", "down", "both", "none"].forEach(function(dir) {
+        (b[dir] || []).forEach(function(x) {
+          var si = symIdx[x.symptom];
+          if (si == null) return;
+          nodes[si].deg++;
+          bNode.deg++;
+          bNode.items.push({
+            symptom: x.symptom,
+            color: nodes[si].color,
+            dir: dir,
+            note: x.note,
+            ref: x.ref,
+            url: x.url
+          });
+          edges.push({
+            s: si,
+            t: bi,
+            dir: dir,
+            note: x.note,
+            ref: x.ref,
+            url: x.url
+          });
         });
       });
     });
@@ -250,6 +212,67 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       V[e.s].adjE.push(ei);
       V[e.t].adjE.push(ei);
     });
+
+    // COLOUR GROUPING. Nodes whose edges are the same colour are pulled to the
+    // same horizontal zone, so the taxa a condition DEPLETES sit together, the
+    // ones an intervention RAISES sit together, and the contested ones sit between.
+    // Two effects, both asked for: same-coloured nodes end up adjacent (easier to
+    // read as a group than scattered), and edges of one colour stop crossing edges
+    // of another to reach nodes on the far side.
+    //
+    // Zones run left to right: decreased, contested/null, increased. A node's zone
+    // is decided by which colour it carries MOST, so a taxon that is mostly
+    // depleted still reads as depleted even if one intervention raises it.
+    if (pinType === "symptom") {
+      V.forEach(function(n, selfIdx) {
+        if (n.pin) return;
+        // A CONTINUOUS left-to-right axis rather than three buckets: score each
+        // taxon by how far its edges lean increased vs decreased, and place it
+        // along x accordingly. Purely depleted taxa sit far left, purely raised
+        // ones far right, mixed and contested ones in between - so the row reads
+        // as a gradient of "what this is doing to me", and the organism the
+        // interventions raise most (Roseburia, fed by every HMO here) ends up
+        // furthest right with the others trailing left along the same axis.
+        //
+        // Contested and null edges count toward the total but not the lean, so a
+        // taxon with one up, one down and one contested sits at centre rather
+        // than being dragged by whichever it happens to have more of.
+        // Ordered by what the CONDITIONS do to it, not by every edge it has:
+        // decreased by them to the RIGHT, increased by them to the LEFT, as asked
+        // ("the ones that are all pink from FUT2 on right and all blue from FUT2 on
+        // left"). Keyed on the conditions/symptoms group generally rather than on
+        // FUT2 by name, so the row still sorts sensibly when the picker selection
+        // changes - with FUT2, ADHD and Iron deficiency selected they all point the
+        // same way anyway.
+        //
+        // Edges to the interventions are deliberately ignored here. They would pull
+        // an organism left precisely BECAUSE something corrects it, which is the
+        // opposite of the sort wanted: the row should say what is wrong, and the
+        // intervention edges then visibly reach across it.
+        var up = 0, down = 0, both = 0, none = 0, total = 0;
+        n.adjE.forEach(function(ei) {
+          var e = E[ei];
+          var other = V[e.s === selfIdx ? e.t : e.s];
+          if (!other || !other.pin || isIntervention(other.name)) return;
+          total++;
+          if (e.dir === "up") up++;
+          else if (e.dir === "down") down++;
+          else if (e.dir === "both") both++;
+          else none++;
+        });
+        // Contested and null links are parked at the edges, out of the reading
+        // path: yellow hard left, grey hard right. Neither tells you what an
+        // organism is doing, so neither should sit in the middle competing with
+        // the ones that do.
+        if (total && both / total >= 0.5) n.groupX = W * 0.06;
+        else if (total && none / total >= 0.5) n.groupX = W * 0.94;
+        else {
+          // Increased to the RIGHT, decreased to the LEFT.
+          var lean = total ? (up - down) / total : 0;
+          n.groupX = W * (0.5 + lean * 0.34);
+        }
+      });
+    }
 
     var rimV = V.filter(function(n) {
       return n.pin;
@@ -288,6 +311,70 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         }
       });
     }
+    // Rim order is meaningful, not decorative. Placed in raw data order the
+    // conditions and the interventions interleave around the circle, and the
+    // shared taxa get pulled in every direction at once. Grouped - everything you
+    // HAVE on one arc, everything you TAKE on the opposite arc - the taxa they
+    // share settle in the middle between them, and "these two conditions deplete
+    // the same organisms those three feed" becomes something you can see rather
+    // than something you have to trace edge by edge.
+    //
+    // Only for the symptom rim: when bacteria are on the rim there are far more of
+    // them and the barycenter crossing-reduction below is the better tool. Stable
+    // partition, so within each group the data order is preserved.
+    var rimAngles = null;
+    if (!scramble && pinType === "symptom") {
+      var haves = [], takes = [];
+      rimV.forEach(function(n) {
+        (isIntervention(n.name) ? takes : haves).push(n);
+      });
+      // Each group gets its own arc, CENTRED on a diagonal: everything you HAVE
+      // (conditions, symptoms, genotype) around the top-LEFT, everything you TAKE
+      // around the bottom-RIGHT, with the shared taxa in the band between them.
+      // Requested that way, and the diagonal reads better than top/bottom did -
+      // the band of shared taxa runs corner to corner, which is the longest line
+      // available and so the one with the most room for labels. Centring each arc
+      // (rather than letting one group follow the other around the circle) is what
+      // keeps it symmetrical, and it holds as either group grows.
+      //
+      // Screen angles: -PI/2 is top, 0 is right, +PI/2 is bottom, PI is left.
+      // So -3PI/4 is top-left and +PI/4 is bottom-right.
+      // Hand-chosen slot order for this default view. These are preferences about
+      // where a person wants to look, not anything the layout can derive, so they
+      // are named - and each is a no-op on any selection missing one of the pair.
+      // Applied in sequence, so the second swap acts on the result of the first.
+      var swapSlots = function(matchA, matchB) {
+        var ia = -1, ib = -1;
+        haves.forEach(function(n, i) {
+          if (ia < 0 && matchA.test(n.name)) ia = i;
+          else if (ib < 0 && matchB.test(n.name)) ib = i;
+        });
+        if (ia >= 0 && ib >= 0) {
+          var t = haves[ia];
+          haves[ia] = haves[ib];
+          haves[ib] = t;
+        }
+      };
+      swapSlots(/^FUT2/, /^ADHD$/);
+      swapSlots(/^FUT2/, /^Iron deficiency/);
+      swapSlots(/^ADHD$/, /^Iron deficiency/);
+      // No angular nudge any more: ADHD now sits in the upper slot, where outward
+      // (see the satellite rule) means UP - so its satellites land above it, which
+      // is what was wanted. Dropping it lower would have pushed them back down.
+      var adhdNudge = 0;
+      var total = Math.max(haves.length + takes.length, 1);
+      rimAngles = [];
+      rimV = haves.concat(takes);
+      var span = function(count) { return 2 * Math.PI * count / total; };
+      [[haves, -3 * Math.PI / 4], [takes, Math.PI / 4]].forEach(function(pair) {
+        var group = pair[0], centre = pair[1], arc = span(group.length);
+        var step = group.length > 1 ? arc / group.length : 0;
+        var start = centre - (arc - step) / 2;
+        group.forEach(function(gn, i) {
+          rimAngles.push(start + i * step + (gn.name === "ADHD" ? adhdNudge : 0));
+        });
+      });
+    }
     if (scramble) {
       // Fisher-Yates shuffle so the rim order itself is randomized too, not
       // just the inward-drifting nodes — a real "new arrangement" each click.
@@ -299,12 +386,24 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       }
     }
     rimV.forEach(function(n, k) {
-      var a = 2 * Math.PI * k / Math.max(rimV.length, 1) - Math.PI / 2;
+      var a = rimAngles ? rimAngles[k] : 2 * Math.PI * k / Math.max(rimV.length, 1) - Math.PI / 2;
       n.x = W / 2 + Math.cos(a) * W * rimRad;
       n.y = H / 2 + Math.sin(a) * H * rimRad;
       n.vx = 0;
       n.vy = 0;
     });
+    // Iron deficiency is dropped to sit level with LNT across the map: two nodes on
+    // the same baseline read as a pair the eye can compare without re-scanning
+    // vertically. Keeps its own x - only the height is borrowed. A view preference
+    // like the slot swaps, and a no-op if either node is absent.
+    if (rimAngles) {
+      var ironN = null, lntN = null;
+      rimV.forEach(function(n) {
+        if (/^Iron deficiency/.test(n.name)) ironN = n;
+        else if (/^Lacto-N-tetraose/.test(n.name)) lntN = n;
+      });
+      if (ironN && lntN) ironN.y = lntN.y;
+    }
     placeDynamic();
     // Barycenter crossing-reduction: re-sort the rim by the angle of each node's
     // neighbor centroid, then re-place dynamic nodes. A few passes converge to a
@@ -408,6 +507,19 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     svg.style.display = "block";
     svg.style.height = "auto";
     svg.style.touchAction = "pan-x pan-y pinch-zoom";
+    // Nothing in this SVG is selectable text, and letting it be selectable
+    // was an outright bug on desktop. Pressing a node starts the browser's
+    // own text-selection drag (pointerdown never preventDefaults - it can't,
+    // touch needs the default to scroll), and a selection drag AUTOSCROLLS
+    // the page as soon as the cursor nears a viewport edge. Reported symptom:
+    // grab a node, pull it slightly up, and the whole page rockets to
+    // scrollTop 0, taking the node you were dragging off screen with it -
+    // measured going 1720 -> 0 in about a second while the button was held.
+    // user-select:none stops the selection ever starting, which removes the
+    // autoscroll with it. It also stops a double-click on the map selecting
+    // a mouthful of node labels.
+    svg.style.userSelect = "none";
+    svg.style.webkitUserSelect = "none";
 
     var gE = document.createElementNS(NS, "g"),
       gN = document.createElementNS(NS, "g");
@@ -464,7 +576,18 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         if (n.showLabel) {
           var tb = document.createElementNS(NS, "text");
           tb.setAttribute("text-anchor", "middle");
-          tb.setAttribute("dy", String(-(rr + 2.5)));
+          // Every taxon label used to sit ABOVE its circle, so in the crowded band
+          // they all competed for one strip of pixels while the space directly
+          // below every node went unused - including on the isolated nodes, whose
+          // labels pointed up into the crush for no reason. Alternating by index
+          // halves how many labels contend for any given row, and it is stable
+          // (parity of a fixed index, not of a position that moves every frame),
+          // so a label does not flip sides as the simulation settles.
+          // A node with no other connections gets its label ABOVE, always: it sits
+          // out on its own with clear space over it, and the crowding that makes
+          // alternating worthwhile is happening below among the connected nodes.
+          var labelBelow = n.deg > 1 && (n.i % 2) === 1;
+          tb.setAttribute("dy", String(labelBelow ? rr + 8 : -(rr + 2.5)));
           tb.setAttribute("font-size", "7.5");
           tb.setAttribute("fill", "#A08FC7");
           tb.setAttribute("pointer-events", "none");
@@ -494,9 +617,17 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     var dragNode = null;
     var dragIdx = null; // V-array position of dragNode, NOT dragNode.i (see onPointerDown's comment) - what selectedNodes/showConnectionsOnly/hideNode/selectByNames all actually index by.
     var isDragging = false;
-    var bgDown = false;
     var dragStartX = 0,
       dragStartY = 0;
+    // Roughly a short taxon label's width, and the vertical band within which two
+    // labels would print over each other.
+    // Lay the inner nodes out as a horizontal band rather than a cloud - symptom
+    // rim only, where the taxa sit in the middle with room either side.
+    var flatten = pinType === "symptom";
+    // How far above its parent a single-connection taxon floats.
+    var SATELLITE_RISE = 84;
+    var LABEL_GAP = 78,
+      LABEL_ROW = 13;
     var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
     var lastClickIdx = null,
       lastClickTime = 0;
@@ -528,7 +659,14 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // just because they're both large circles. Only rim-involved pairs
           // need the full repulsion to keep the rim legible.
           var bothDynamic = !a.pin && !b.pin;
-          var kRepPair = bothDynamic ? kRep * 0.35 : kRep;
+          // 0.35 let taxa with near-identical neighbour sets settle almost on top
+          // of each other. Their circles coped; their LABELS did not - the middle
+          // of the map became a stack of overlapping text you could only read by
+          // dragging nodes apart one at a time. Raised to 0.8 for the symptom rim,
+          // where the taxa cluster in the middle and there is empty canvas going
+          // spare; the bacteria rim keeps the original value, since there the
+          // clustering is the point and the rim itself provides the spacing.
+          var kRepPair = bothDynamic ? kRep * (pinType === "symptom" ? 0.8 : 0.35) : kRep;
           var force = kRepPair / d2 * alpha;
           // BUG FIX: this floor used to be plain `a.r + b.r + 2` - fine for
           // keeping the visible circles from overlapping, but the invisible
@@ -550,6 +688,18 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           if (d < mind) force += (mind - d) * 0.35;
           var fx = dx / d * force,
             fy = dy / d * force;
+          // Labels are HORIZONTAL text, so crowding hurts sideways far more than
+          // it does vertically: two taxa a comfortable distance apart on a circle
+          // can still have their names printed straight through each other. The
+          // circles were never the problem - "align the overlapping nodes
+          // horizontally" is the fix, so enforce a wider gap along x, and only
+          // between taxa that are close to sharing a row (|dy| small), which is
+          // exactly when their labels collide. Vertical stacking is left alone;
+          // labels sit clear of each other there already.
+          if (bothDynamic && Math.abs(dy) < LABEL_ROW && Math.abs(dx) < LABEL_GAP) {
+            var pushX = (LABEL_GAP - Math.abs(dx)) * 0.10 * alpha;
+            fx += (dx >= 0 ? 1 : -1) * pushX;
+          }
           a.vx += fx;
           a.vy += fy;
           b.vx -= fx;
@@ -578,8 +728,51 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           n.vy = 0;
           continue;
         }
-        n.vx += (cx - n.x) * 0.006 * alpha;
-        n.vy += (cy - n.y) * 0.006 * alpha;
+        // The centring pull used to be equal in both axes, which gathers the taxa
+        // into a blob. On the symptom map they are pulled into a BAND instead:
+        // weak horizontally so they spread wide, strong vertically so they flatten
+        // onto a reading line. Eyes track left to right, labels are horizontal
+        // text, and a row of names is scannable in a way a cloud never is - so the
+        // axis with the most room should be the one carrying the most nodes.
+        // Slight label overlap is an accepted trade for that.
+        // A taxon connected to exactly one thing is that node's satellite, and it
+        // belongs ABOVE it - up in the clear space, not tucked underneath where it
+        // collides with the node's own label and with the row below. Reported as
+        // "the ADHD ones that have nothing else connected are still BELOW".
+        if (flatten && n.deg < 2 && n.adj.length === 1) {
+          var par = V[n.adj[0]];
+          if (par && par.pin) {
+            // Away from the crowd, not simply upward. A satellite is pushed along
+            // the line from the map's centre out through its parent, so it lands on
+            // the far side of that node from everything else - above FUT2 at the top
+            // of the arc, BELOW ADHD once ADHD sits low. "Flip the ones that do not
+            // connect to anything else AWAY from the other connections" generalised:
+            // outward is always away, whichever side of the map the parent is on.
+            var ox = par.x - cx, oy = par.y - cy;
+            var om = Math.sqrt(ox * ox + oy * oy) || 1;
+            n.vx += (par.x + (ox / om) * SATELLITE_RISE - n.x) * 0.045 * alpha;
+            n.vy += (par.y + (oy / om) * SATELLITE_RISE - n.y) * 0.06 * alpha;
+            n.vx *= 0.85;
+            n.vy *= 0.85;
+            n.x += Math.max(-9, Math.min(9, n.vx));
+            n.y += Math.max(-9, Math.min(9, n.vy));
+            n.x = Math.max(14, Math.min(W - 14, n.x));
+            n.y = Math.max(28, Math.min(H - 14, n.y));
+            continue;
+          }
+        }
+        // Deliberately WEAK: the zone is a bias, not a magnet. At 0.02 it beat the
+        // horizontal label separation and squeezed every taxon back into a knot -
+        // worse than no grouping at all. At 0.005 nodes drift toward their colour's
+        // zone while repulsion still spreads them out within it.
+        n.vx += ((flatten && n.groupX != null ? n.groupX : cx) - n.x) * (flatten ? 0.005 : 0.006) * alpha;
+        // Nodes carrying 2+ connections are the ones worth comparing, so they are
+        // held on ONE horizontal line - a single row you read across, with the
+        // increased/decreased gradient running along it. Singly-connected taxa get
+        // a much weaker pull and settle above and below the row, which also stops
+        // them competing for space with the nodes that matter most.
+        var rowPull = flatten ? (n.deg >= 2 ? 0.22 : 0.03) : 0.006;
+        n.vy += (cy - n.y) * rowPull * alpha;
         n.vx *= 0.85;
         n.vy *= 0.85;
         n.x += Math.max(-9, Math.min(9, n.vx));
@@ -625,6 +818,25 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
               b2.x -= ux * push;
               b2.y -= uy * push;
             }
+          }
+        }
+      }
+      // HARD ROW. A spring toward the midline gets you a band, not a line - the
+      // repulsion and overlap passes keep nudging nodes off it. Taxa with 2+
+      // connections are therefore held at exactly one y, every frame, after all
+      // other forces have run. They still move freely along x, so the
+      // increased/decreased gradient and the label spacing both still work; they
+      // just do it on a single readable row.
+      //
+      // A node you have dragged (manualPin) is exempt - if you place it somewhere,
+      // it stays there.
+      if (flatten) {
+        for (var rr2 = 0; rr2 < V.length; rr2++) {
+          var rn = V[rr2];
+          if (rn.pin || rn.manualPin || rn === dragNode) continue;
+          if (rn.deg >= 2) {
+            rn.y = cy;
+            rn.vy = 0;
           }
         }
       }
@@ -683,7 +895,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           eEls[i].setAttribute("stroke-opacity", "0.98");
           eEls[i].setAttribute("stroke-width", "2.1");
         } else {
-          eEls[i].setAttribute("stroke-opacity", "0.09");
+          eEls[i].setAttribute("stroke-opacity", "0.3");  // was 0.09 - deselecting a node made its links effectively invisible
           eEls[i].setAttribute("stroke-width", "0.7");
         }
       }
@@ -700,9 +912,9 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       xrefSymptomToBact = {};
     (xrefData.bacteria || []).forEach(function(b) {
       var list = [];
-      (b.up || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "up" }); });
-      (b.down || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "down" }); });
-      (b.both || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: "both" }); });
+      ["up", "down", "both", "none"].forEach(function(dir) {
+        (b[dir] || []).forEach(function(x) { list.push({ symptom: x.symptom, dir: dir }); });
+      });
       xrefBactToSymptoms[b.name] = list;
       list.forEach(function(x) {
         var arr = xrefSymptomToBact[x.symptom] || (xrefSymptomToBact[x.symptom] = []);
@@ -828,7 +1040,30 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         var rows = node.items.map(function(x) {
           return '<div style="margin:4px 0;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.06)"><span style="display:inline-flex;align-items:center;gap:4px"><span style="width:7px;height:7px;border-radius:9px;background:' + (x.color || "#A08FC7") + ';display:inline-block"></span>' + esc(x.symptom) + ' <b style="color:' + dirColor(x.dir) + '">' + dirArrow(x.dir) + '</b></span>' + srcRow(x.note, x.ref, x.url) + '</div>';
         }).join("");
-        rows = relatedLine + rows;
+        // Which of the app's CONDITIONS raise or lower this organism - the question
+        // people actually arrive with ("what makes this go up?"), which the
+        // per-symptom rows below answer only one row at a time. Built from
+        // seed_data by the caller (see SymptomTab), so it covers every condition
+        // in the app rather than only the ones currently drawn on this map.
+        var condLine = "";
+        if (conditionIndex && conditionIndex[node.name]) {
+          var ci = conditionIndex[node.name];
+          var block = function(label, list, color) {
+            if (!list || !list.length) return "";
+            var shown = list.slice(0, 14);
+            var more = list.length > shown.length ? " +" + (list.length - shown.length) + " more" : "";
+            return '<div style="margin-bottom:4px"><b style="color:' + color + '">' + label + '</b> ' +
+              '<span style="color:#D6CCF2">' + esc(shown.join(", ")) + esc(more) + '</span></div>';
+          };
+          var body = block("Conditions which increase it:", ci.up, dirColor("up")) +
+            block("Conditions which decrease it:", ci.down, dirColor("down")) +
+            block("Contested in:", ci.both, dirColor("both"));
+          if (body) {
+            condLine = '<div style="font-size:10.5px;margin-bottom:6px;padding-bottom:5px;' +
+              'border-bottom:1px solid rgba(255,255,255,.08)">' + body + '</div>';
+          }
+        }
+        rows = relatedLine + condLine + rows;
         // If this node's display label differs from its internal/matching
         // name, it's showing a more specific name than the canonical
         // bucket it matched against (see conditionSymptomData.js's own
@@ -1086,7 +1321,6 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // here (not reading dragNode.i again in onPointerUp) fixes it.
         dragIdx = idx;
         isDragging = false;
-        bgDown = false;
         dragStartX = ev.clientX;
         dragStartY = ev.clientY;
         // New: pointer capture is deferred to onPointerMove now, not
@@ -1101,9 +1335,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // of being released to the page - flinging the node somewhere via
         // an accidental drag, not literally clearing selectedNodes, but
         // looking exactly like "my selection is gone."
-      } else {
-        bgDown = true;
       }
+      // No else branch any more: a press that misses every node used to be
+      // recorded (bgDown) so onPointerUp could treat it as a background click.
+      // Background clicks do nothing now, so there is nothing to record.
     }
 
     function onPointerMove(ev) {
@@ -1113,10 +1348,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
             jitterDy = ev.clientY - dragStartY;
           var jitterDist = Math.hypot(jitterDx, jitterDy);
           if (jitterDist < DRAG_THRESHOLD) return; // still just a click, not a drag yet
-          // Predominantly VERTICAL movement past the threshold reads as
-          // "trying to scroll the page," not "trying to drag this node" -
-          // this SVG's own touch-action already permits vertical panning
-          // (see its own setup), so release the node back and let the
+          // TOUCH ONLY: predominantly VERTICAL movement past the threshold
+          // reads as "trying to scroll the page," not "trying to drag this
+          // node" - this SVG's own touch-action already permits vertical
+          // panning (see its own setup), so release the node back and let the
           // browser handle the rest of the gesture natively instead of
           // preventDefault-ing it away below. A horizontal or diagonal
           // drag still claims the node as before - only a clearly-vertical
@@ -1124,7 +1359,16 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // deliberately still works, just needs a bit of sideways motion
           // too (matches how most drag-vs-scroll disambiguation on touch
           // works elsewhere on the web).
-          if (Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
+          //
+          // Deliberately NOT applied to a mouse. There is no drag-vs-scroll
+          // ambiguity to resolve there: a mouse scrolls with the wheel, so
+          // holding the button down on a node and moving is unambiguously a
+          // drag, whichever direction it goes. Applying the touch heuristic
+          // to mice made "drag this node upward" impossible - the node was
+          // released mid-gesture and never moved at all, and the abandoned
+          // gesture became a browser text-selection drag that autoscrolled
+          // the page instead (see the userSelect note in the SVG setup).
+          if (ev.pointerType !== "mouse" && Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
             dragNode = null;
             return;
           }
@@ -1141,8 +1385,13 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         dragNode.vx = 0;
         dragNode.vy = 0;
 
-        alpha = 1;
-        tick = 0;
+        // Dragging used to reset alpha to 1 and tick to 0 - a full restart of the
+        // simulation - so moving one node re-energised every spring and the whole
+        // graph visibly expanded and resettled. Reported as "the graph appears to
+        // expand when I move a node which looks weird". Now the drag only tops the
+        // energy up enough for neighbours to give way, and the tick count is left
+        // alone so the layout keeps cooling toward the arrangement it already had.
+        alpha = Math.max(alpha, 0.12);
         stopped = false;
         if (!raf) raf = requestAnimationFrame(step);
 
@@ -1182,7 +1431,10 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // A manually-dragged node sticks where you dropped it instead of the
           // springs immediately pulling it back to its computed position —
           // otherwise a drag looks like it silently does nothing.
-          dragNode.manualPin = true;
+          // Deliberately NOT setting manualPin any more. Sticking a dragged node
+          // froze it out of the forces, so the magnetism people like visibly
+          // switched off for whatever they had just touched. It now rejoins the
+          // simulation from wherever you dropped it.
           dragNode.vx = 0;
           dragNode.vy = 0;
         }
@@ -1221,21 +1473,17 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         }
         dragNode = null;
         isDragging = false;
-      } else if (bgDown) {
-        // REVERTED back to single-click: the double-click requirement was
-        // guarding against pointercancel (a canceled touch gesture, e.g.
-        // native pinch/double-tap-zoom taking over) reaching this branch -
-        // that's now fixed at its actual source (see onPointerCancel
-        // below, which handles cancels separately and never runs this
-        // logic at all), so single-click is safe again without needing
-        // the extra double-click layer on top.
-        if (selectedNodes.size) {
-          closeAllPinned();
-          setHi(curr);
-        }
-        if (typeof onBackgroundClick === "function") onBackgroundClick();
       }
-      bgDown = false;
+      // A press on the map's BACKGROUND is now deliberately inert. It used to
+      // close every pinned popup AND fire onBackgroundClick, which SymptomTab
+      // wired to "reset the picker to show everything" - so one stray click on
+      // empty canvas silently threw away a map you had built by hand (e.g.
+      // 2'-FL + FUT2), and rebuilding the full map shrank the document enough
+      // that the browser clamped the scroll position, which read as the page
+      // lurching upward on its own. Removed by request: nothing about clicking
+      // empty space says "discard my work." Both clearing paths remain
+      // available explicitly - the popups have their own x, and the picker has
+      // its own reset button.
     }
 
     // New: pointercancel used to be routed straight to onPointerUp, so a
@@ -1254,7 +1502,6 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       }
       dragNode = null;
       isDragging = false;
-      bgDown = false;
     }
 
     function onPointerLeave(ev) {
