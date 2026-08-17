@@ -3232,13 +3232,97 @@
   },
   {
    "name": "Phascolarctobacterium",
-   "count": 5,
+   "count": 28,
    "up": [
     {
      "symptom": "FUT2 (Non-secretor) status",
      "note": "Higher in FUT2-null (sese) IBD patients vs. functional-FUT2 patients.",
      "ref": "2021, J Genet Genomics — FUT2 loss-of-function in IBD (n=81)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
+    },
+    {
+     "symptom": "Oral iron supplementation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Anxiety",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Irritability",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Headache / migraine",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Alcohol-related dysbiosis",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Fatigue",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Brain fog",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Abdominal pain",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Diarrhea",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Coffee / Stimulants",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is up here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
     }
    ],
    "down": [
@@ -3265,6 +3349,83 @@
      "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "PMC6421268",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/"
+    },
+    {
+     "symptom": "Exercise-associated microbiota changes",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Hair loss",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Panic attack",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Joint pain",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Paresthesia / numbness",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Reduced socializing",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Overstimulation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Understimulation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+    },
+    {
+     "symptom": "Nausea",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
+     "ref": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
     }
    ]
   },

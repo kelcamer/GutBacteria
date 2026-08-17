@@ -585,6 +585,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/37174640/"
       }
      ]
+    },
+    {
+     "id": "cf_seed_1_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_1_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -1978,6 +1993,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
       }
      ]
+    },
+    {
+     "id": "cf_seed_76_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_76_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -3278,6 +3308,21 @@
        "id": "cf_seed_147_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ]
+    },
+    {
+     "id": "cf_seed_147_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_147_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ]
     }
@@ -5439,6 +5484,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
      ]
+    },
+    {
+     "id": "cf_seed_325_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_325_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -6027,6 +6087,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
      ]
+    },
+    {
+     "id": "cf_seed_380_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_380_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -6346,6 +6421,21 @@
        "id": "cf_seed_405_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ]
+    },
+    {
+     "id": "cf_seed_405_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_405_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ]
     }
@@ -6904,6 +6994,36 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/41045077/"
       }
      ]
+    },
+    {
+     "id": "cf_seed_ida_state_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_ida_state_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
+    },
+    {
+     "id": "cf_seed_ida_state_cf_roseburia_fprausnitzii_mannan_Faecalibacterium_prausnitzii",
+     "name": "Faecalibacterium prausnitzii",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_roseburia_fprausnitzii_mannan - FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Roseburia is down here, and it feeds Faecalibacterium prausnitzii (beta-mannan breakdown products -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_ida_state_cf_roseburia_fprausnitzii_mannan_l1",
+       "label": "FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42283799/"
+      }
+     ]
     }
    ]
   },
@@ -7036,6 +7156,21 @@
        "id": "cf_seed_fe_supp_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ]
+    },
+    {
+     "id": "cf_seed_fe_supp_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_fe_supp_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ]
     }
@@ -7350,6 +7485,21 @@
        "id": "cf_seed_480_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ]
+    },
+    {
+     "id": "cf_seed_480_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_480_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ]
     }
@@ -7897,6 +8047,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
      ]
+    },
+    {
+     "id": "cf_seed_ms_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_ms_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -8439,6 +8604,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
      ]
+    },
+    {
+     "id": "cf_seed_ibs_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_ibs_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -8894,6 +9074,21 @@
        "id": "cf_seed_endo_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ]
+    },
+    {
+     "id": "cf_seed_endo_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_endo_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ]
     }
@@ -9985,6 +10180,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
      ]
+    },
+    {
+     "id": "cf_new_t2d_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_t2d_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -10373,6 +10583,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
      ]
+    },
+    {
+     "id": "cf_new_ra_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_ra_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -10577,6 +10802,21 @@
        "id": "cf_new_pso_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ]
+    },
+    {
+     "id": "cf_new_pso_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_pso_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ]
     }
@@ -10858,6 +11098,21 @@
        "id": "cf_new_aud_cf_badolescentis_lactate_utilisers_l1",
        "label": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ]
+    },
+    {
+     "id": "cf_new_aud_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_aud_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ]
     }
@@ -11561,6 +11816,21 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
       }
      ]
+    },
+    {
+     "id": "cf_new_t1d_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_t1d_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
     }
    ]
   },
@@ -12188,6 +12458,36 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
       }
      ]
+    },
+    {
+     "id": "cf_new_meno_1_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_meno_1_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ]
+    },
+    {
+     "id": "cf_new_meno_1_cf_roseburia_fprausnitzii_mannan_Faecalibacterium_prausnitzii",
+     "name": "Faecalibacterium prausnitzii",
+     "dir": "up",
+     "derived": true,
+     "refs": "derived via cf_roseburia_fprausnitzii_mannan - FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Roseburia is up here, and it feeds Faecalibacterium prausnitzii (beta-mannan breakdown products -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_meno_1_cf_roseburia_fprausnitzii_mannan_l1",
+       "label": "FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42283799/"
+      }
+     ]
     }
    ]
   },
@@ -12507,6 +12807,21 @@
        "id": "new_estro_t9_l1",
        "label": "Insenser et al. 2018, JCEM (via review PMID 35283442)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/29897462/"
+      }
+     ]
+    },
+    {
+     "id": "cf_new_estro_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "down",
+     "derived": true,
+     "refs": "derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_estro_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ]
     }

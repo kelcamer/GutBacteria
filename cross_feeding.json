@@ -91,6 +91,32 @@
    "note": "B. adolescentis feeds lactate to lactate-utilising butyrate producers. The demonstration is unusually clean: E. hallii and A. caccae FAILED to grow on starch in pure culture, but in coculture with B. adolescentis butyrate was formed - so the butyrate is only possible via the cross-feed, not by the partner alone. Promotes what was previously listed as an unverified candidate.",
    "ref": "Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+  },
+  {
+   "id": "cf_bacteroides_phascolarctobacterium",
+   "from": "Bacteroides",
+   "to": "Phascolarctobacterium",
+   "metabolites": [
+    "succinate"
+   ],
+   "product": "propionate",
+   "evidence": "in-vitro-coculture",
+   "note": "Promotes a previously unverified candidate. B. thetaiotaomicron's succinate supported P. faecium growth and propionate production, and the succinate was COMPLETELY converted to propionate - co-culture growth matched monoculture supplied with equivalent succinate. P. faecium is asaccharolytic: it barely uses carbohydrates and depends on succinate from others, so this is obligate rather than opportunistic cross-feeding. RNA-Seq showed P. faecium upregulating succinate-transport genes specifically in co-culture.",
+   "ref": "Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+  },
+  {
+   "id": "cf_roseburia_fprausnitzii_mannan",
+   "from": "Roseburia",
+   "to": "Faecalibacterium prausnitzii",
+   "metabolites": [
+    "beta-mannan breakdown products"
+   ],
+   "product": "butyrate",
+   "evidence": "in-vitro-coculture",
+   "note": "A second, substrate-independent route into F. prausnitzii. R. intestinalis, R. faecis and Coprococcus eutactus degrade beta-mannans (carob galactomannan, konjac glucomannan); F. prausnitzii CANNOT - it grew only on enzyme-predigested beta-mannans - but coexisted with the degraders in co-culture, with butyrate a major product. Note this makes F. prausnitzii dependent on Roseburia for this substrate class, the reverse of the direction people usually assume between two butyrate producers.",
+   "ref": "FEMS Microbiology Ecology 2026 - twelve-strain panel, six-strain co-cultures (PMID 42283799)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42283799/"
   }
  ],
  "candidates": [
@@ -103,16 +129,6 @@
    "product": "methane; shifts Christensenella fermentation toward acetate",
    "why": "Interspecies H2 transfer proposed as the reason these two co-occur globally and both associate with lean BMI. Surfaced in search but NOT yet verified against the primary source.",
    "lead": "mBio 2020, interspecies H2 transfer Christensenella/Methanobrevibacter"
-  },
-  {
-   "from": "Bacteroides",
-   "to": "Phascolarctobacterium",
-   "metabolites": [
-    "succinate"
-   ],
-   "product": "propionate",
-   "why": "Phascolarctobacterium is described as a dominant succinate consumer converting succinate to propionate faster than Dialister, with Bacteroides a major succinate producer. Would connect this app's existing Phascolarctobacterium metabolic entry to a source. NOT yet verified.",
-   "lead": "P. faecium / B. thetaiotaomicron interaction studies"
   }
  ],
  "_keystone_resource": {
