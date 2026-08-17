@@ -8684,13 +8684,17 @@ Error generating stack: ` + r.message + `
         "taxa": [{
           "id": "seed_adhd_t1",
           "name": "Bifidobacterium",
-          "dir": "up",
-          "refs": "Frontiers",
-          "note": "Mechanistically interesting dopamine-precursor story, though treatment-sensitive.",
+          "dir": "both",
+          "refs": "Aarts et al. 2017, PLoS One (PMID 28863139) vs. 2026 meta-analysis, 8 studies (PMID 40828192)",
+          "note": "GENUINELY CONTRADICTORY, and the older claim is the weaker one. The increase comes from Aarts et al. 2017 - the dopamine-precursor story, where higher Bifidobacterium was proposed to raise phenylalanine synthesis, a precursor to dopamine. That study was small, used uncorrected p-values, and its own authors described the result as \"marginally significant\". Against it, a 2026 meta-analysis of 8 studies found the parent phylum Actinobacteria REDUCED in ADHD (5.78% vs 4.89%, p<0.001), and a separate 15-pair study found the phylum AND Bifidobacterium within it reduced. This app's own Actinobacteria entry for ADHD records that decrease. Marked \"both\" rather than silently keeping the direction that made a nicer story - but note the weight of evidence now favours DOWN. Also flagged as treatment-sensitive: stimulant medication is a plausible confounder that none of these studies fully separate.",
           "links": [{
-            "id": "seed_adhd_t1_l1",
-            "label": "Frontiers Endocrinology",
-            "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.838941/full"
+            "id": "adhd_bifido_l1",
+            "label": "Aarts et al. 2017, PLoS One - increase, marginally significant (PMID 28863139)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28863139/"
+          }, {
+            "id": "adhd_bifido_l2",
+            "label": "2026 meta-analysis, 8 studies - Actinobacteria/Bifidobacterium reduced (PMID 40828192)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40828192/"
           }]
         }, {
           "id": "seed_adhd_t2",
