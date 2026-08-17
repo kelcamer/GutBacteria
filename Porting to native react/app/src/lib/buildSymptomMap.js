@@ -224,19 +224,28 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     // is decided by which colour it carries MOST, so a taxon that is mostly
     // depleted still reads as depleted even if one intervention raises it.
     if (pinType === "symptom") {
-      var ZONE = { down: 0.26, both: 0.5, none: 0.5, up: 0.74 };
       V.forEach(function(n) {
         if (n.pin) return;
-        var tally = {};
+        // A CONTINUOUS left-to-right axis rather than three buckets: score each
+        // taxon by how far its edges lean increased vs decreased, and place it
+        // along x accordingly. Purely depleted taxa sit far left, purely raised
+        // ones far right, mixed and contested ones in between - so the row reads
+        // as a gradient of "what this is doing to me", and the organism the
+        // interventions raise most (Roseburia, fed by every HMO here) ends up
+        // furthest right with the others trailing left along the same axis.
+        //
+        // Contested and null edges count toward the total but not the lean, so a
+        // taxon with one up, one down and one contested sits at centre rather
+        // than being dragged by whichever it happens to have more of.
+        var up = 0, down = 0, total = 0;
         n.adjE.forEach(function(ei) {
           var dd = E[ei].dir;
-          tally[dd] = (tally[dd] || 0) + 1;
+          total++;
+          if (dd === "up") up++;
+          else if (dd === "down") down++;
         });
-        var best = null, bestN = -1;
-        Object.keys(tally).forEach(function(k) {
-          if (tally[k] > bestN) { bestN = tally[k]; best = k; }
-        });
-        n.groupX = W * (ZONE[best] != null ? ZONE[best] : 0.5);
+        var lean = total ? (up - down) / total : 0;   // -1 (all down) .. +1 (all up)
+        n.groupX = W * (0.5 + lean * 0.38);
       });
     }
 
