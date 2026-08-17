@@ -4182,7 +4182,7 @@
   },
   {
    "name": "Desulfovibrio",
-   "count": 5,
+   "count": 24,
    "up": [
     {
      "symptom": "Abdominal pain",
@@ -4207,6 +4207,13 @@
      "note": "Sulfate-reducing, H2S-producing genus increased by cigarette smoke exposure.",
      "ref": "PMC11658948",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/"
+    },
+    {
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is up here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Same direction as the demonstrated cross-feed. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
     }
    ],
    "down": [
@@ -4215,6 +4222,132 @@
      "note": "Decreased in a pediatric migraine cohort (Liu et al. 2024).",
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/"
+    },
+    {
+     "symptom": "Arterial stiffness / vascular aging",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Joint pain",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Fatigue",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Allergies",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "OCD symptoms",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Gut barrier dysfunction",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Chronic pain",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Brain fog",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Bloating & gas",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Constipation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Paresthesia / numbness",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Loss of appetite",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Immune dysregulation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Metabolic dysregulation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Intrusive thoughts",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Dizziness / orthostatic intolerance",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Acne / skin flares",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+    },
+    {
+     "symptom": "Hair loss",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Faecalibacterium prausnitzii is down here, and Faecalibacterium prausnitzii feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_fprausnitzii_dpiger.",
+     "ref": "derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
     }
    ]
   },

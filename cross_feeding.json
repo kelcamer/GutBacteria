@@ -175,6 +175,32 @@
    "note": "The return leg of the Akkermansia syntrophy, and the only edge in this network pointing backwards. E. hallii supplies pseudovitamin B12 and A. muciniphila uses it to produce propionate - so the relationship is mutualistic rather than one organism simply feeding on another's waste.",
    "ref": "Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+  },
+  {
+   "id": "cf_fprausnitzii_dpiger",
+   "from": "Faecalibacterium prausnitzii",
+   "to": "Desulfovibrio",
+   "metabolites": [
+    "lactate (as electron donor)"
+   ],
+   "product": "acetate; supports D. piger growth",
+   "evidence": "in-vitro-coculture",
+   "note": "The ONLY edge where F. prausnitzii is a feeder rather than a recipient - everywhere else in this network it is fed. The pair was co-isolated and cross-feeds for growth and butyrate production. Reported mechanism is reciprocal: F. prausnitzii's lactate serves as electron donor for D. piger, and D. piger's acetate is used by F. prausnitzii for butyrate. HONEST LIMIT: the Nature abstract confirms co-isolation and cross-feeding but does not itself state the directional split or the fold-changes (butyrate ~1.5x up, lactate ~2.3x down) - those come from secondary summaries of the same work and were not confirmed against the full text.",
+   "ref": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+  },
+  {
+   "id": "cf_dpiger_fprausnitzii",
+   "from": "Desulfovibrio",
+   "to": "Faecalibacterium prausnitzii",
+   "metabolites": [
+    "acetate"
+   ],
+   "product": "butyrate",
+   "evidence": "in-vitro-coculture",
+   "note": "Return leg of the F. prausnitzii / D. piger mutualism. Uncomfortable tension worth stating: Desulfovibrio is recorded in this app as UP in Parkinson's, with hydrogen sulfide, LPS and magnetite proposed as alpha-synuclein aggregation triggers (PMID 34012926). So the same genus is a butyrate-supporting partner in vitro and a suspected neurodegeneration driver in vivo. Both can be true - species and context differ, and D. piger is not the whole genus - but it is a good reminder that a cross-feeding edge is not an endorsement.",
+   "ref": "Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
   }
  ],
  "candidates": [
