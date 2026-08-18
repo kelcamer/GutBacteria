@@ -160,6 +160,7 @@ def main():
     ap.add_argument("--detector", help="print every hit for one detector")
     ap.add_argument("--limit", type=int, default=12)
     ap.add_argument("--json", metavar="PATH")
+    ap.add_argument("--counts", action="store_true", help="print just the per-detector counts (for the pre-commit report)")
     args = ap.parse_args()
 
     claims, _ = load_claims(args.seed, args.symptom)
@@ -172,6 +173,18 @@ def main():
                  "site-mismatch", "rank-mismatch", "animal-only"):
         print(f"  {name:<16} {len(found.get(name, [])):>5}")
     print()
+
+    if args.counts:
+        # The two accuracy-critical detectors, spelled out for the committer.
+        tb = len(found.get("template-block", []))
+        rm = len(found.get("rank-mismatch", []))
+        if tb:
+            print(f"  ! {tb} template-block entries (citation may not measure the claim) - "
+                  f"run: python3 scripts/check_claim_source_match.py --detector template-block")
+        if rm:
+            print(f"  ! {rm} rank-mismatch entries (species claim cited at genus) - "
+                  f"run: python3 scripts/check_claim_source_match.py --detector rank-mismatch")
+        return
 
     if args.detector:
         hits = found.get(args.detector, [])

@@ -104,4 +104,11 @@ fi
 (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_citation_coverage.py" --top 3 \
    --cache "$REPO_ROOT/.citation_cache.json") >&2 || true
 
+# Accuracy detectors, also REPORT ONLY. Surfaces the claim/source-match counts
+# at commit time - template-block (a citation that may not measure the claim,
+# the 57-entry class) and rank-mismatch (a species claim cited only at genus) -
+# so a data edit's accuracy consequences are visible in the commit that makes
+# them, not months later during a lucky audit. Runs against STAGED content.
+(cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_claim_source_match.py" --counts) >&2 || true
+
 exit 0
