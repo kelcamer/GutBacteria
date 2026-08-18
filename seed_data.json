@@ -13442,6 +13442,22 @@
      "population": "unknown"
     },
     {
+     "id": "new_smk_tyzzerella_4",
+     "name": "Tyzzerella 4",
+     "dir": "up",
+     "refs": "Multicenter CRC-screening cohort, 3,827 participants (PMID 40981487)",
+     "note": "Enriched with heavy smoking (>30 pack-years) and identified as a partial mediator of smoking-associated colorectal high-risk adenoma in a 3,827-participant cohort.",
+     "links": [
+      {
+       "id": "new_smk_tyzzerella_4_l1",
+       "label": "Multicenter CRC-screening cohort, 3,827 participants (PMID 40981487)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40981487/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
      "id": "cf_new_smk_cf_infantis_ehallii_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "down",

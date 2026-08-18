@@ -266,6 +266,7 @@ export const PDF_LINKS = {
   "https://pubmed.ncbi.nlm.nih.gov/40849086/": "https://doi.org/10.1016/j.neuropharm.2025.110648",
   "https://pubmed.ncbi.nlm.nih.gov/40944763/": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/s12888-025-07461-4",
   "https://pubmed.ncbi.nlm.nih.gov/40980320/": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2025.1617288/pdf",
+  "https://pubmed.ncbi.nlm.nih.gov/40981487/": "https://doi.org/10.1128/msystems.00933-25",
   "https://pubmed.ncbi.nlm.nih.gov/41011331/": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ctm2.70447",
   "https://pubmed.ncbi.nlm.nih.gov/41015193/": "https://academic.oup.com/ajcn/article-pdf/106/suppl_1/402S/42754299/ajcn_106_suppl1_402s.pdf",
   "https://pubmed.ncbi.nlm.nih.gov/41037094/": "https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2024.1422350/pdf",
