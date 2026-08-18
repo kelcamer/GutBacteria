@@ -4420,7 +4420,7 @@ export const BRAIN_DATA = [
       "name": "Perimenopause",
       "abbr": "PERI",
       "color": "#D946A6",
-      "note": "Not a diagnosed condition like this map's other entries — matches this app's gut-flora Perimenopause condition (Conditions tab). Deliberately kept to 2 taxa rather than padded: the one study that specifically isolates perimenopause (rather than lumping it with postmenopause) as the phase where a distinct brain bioenergetic phenotype first emerges is Mosconi et al. 2017 - see this map's separate Menopause entry for the broader postmenopausal-vs-premenopausal neuroimaging literature this one deliberately doesn't duplicate.",
+      "note": "Not a diagnosed condition like this map\'s other entries; matches this app\'s gut-flora Perimenopause condition. Perimenopause is where the sharpest brain changes emerge: FDG-PET shows the Alzheimer\'s-like bioenergetic phenotype first appearing here (Mosconi 2017), and 2026 studies add structural hippocampal loss (2.8% volume) and a compensatory functional reorganization across the default-mode network, insula, posterior cingulate and middle frontal gyri. Expanded from 2 to 6 regions as that peri-specific neuroimaging literature matured.",
       "links": [
         {
           "id": "brain_perimeno_l1",
@@ -4447,13 +4447,79 @@ export const BRAIN_DATA = [
           "id": "brain_perimeno_t2",
           "name": "Hippocampus",
           "dir": "down",
-          "refs": "PMID 29016679",
-          "note": "Same FDG-PET bioenergetic-emergence finding as this entry's Prefrontal cortex, in the same perimenopausal cohort.",
+          "refs": "PMID 29016679; PMID 42364668",
+          "note": "Bioenergetic decline (Mosconi FDG-PET) plus STRUCTURAL loss: a 12-month longitudinal MRI study of 150 perimenopausal women vs 80 controls found 2.8% bilateral hippocampal volume reduction and decreased activation during memory encoding, tracking estradiol and BDNF decline (PMID 42364668).",
           "links": [
             {
               "id": "brain_perimeno_t2_l1",
               "label": "Mosconi et al. 2017, PLoS One",
               "url": "https://pubmed.ncbi.nlm.nih.gov/29016679/"
+            },
+            {
+              "id": "brain_perimeno_t2_l2",
+              "label": "Longitudinal 3T MRI, 150 perimenopausal women (PMID 42364668)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42364668/"
+            }
+          ]
+        },
+        {
+          "id": "brain_perimeno_t3",
+          "name": "Default mode network",
+          "dir": "both",
+          "refs": "PMID 42254985",
+          "note": "Functional reorganization, not simple loss: resting-state fMRI (16 peri vs 15 premenopausal) found altered DMN connectivity, read as a compensatory shift amid fluctuating estradiol rather than a uniform decline.",
+          "links": [
+            {
+              "id": "brain_perimeno_t3_l1",
+              "label": "Resting-state fMRI, DMN in perimenopause (PMID 42254985)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42254985/"
+            }
+          ]
+        },
+        {
+          "id": "brain_perimeno_t4",
+          "name": "Insula",
+          "dir": "up",
+          "refs": "PMID 42254985",
+          "note": "Enhanced left-insula connectivity in perimenopausal vs premenopausal women (resting-state fMRI), part of a compensatory DMN reorganization amid estradiol decline and fluctuation.",
+          "links": [
+            {
+              "id": "brain_perimeno_t4_l1",
+              "label": "Resting-state fMRI, perimenopause (PMID 42254985)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42254985/"
+            }
+          ]
+        },
+        {
+          "id": "brain_perimeno_t5",
+          "name": "Posterior cingulate cortex",
+          "dir": "up",
+          "refs": "PMID 42254985",
+          "note": "Enhanced connectivity in the PCC (core posterior-DMN hub) in perimenopausal women, alongside the insula and middle frontal gyri (resting-state fMRI).",
+          "links": [
+            {
+              "id": "brain_perimeno_t5_l1",
+              "label": "Resting-state fMRI, perimenopause (PMID 42254985)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42254985/"
+            }
+          ]
+        },
+        {
+          "id": "brain_perimeno_t6",
+          "name": "Middle frontal gyrus",
+          "dir": "up",
+          "refs": "PMID 42254985; PMID 42499590",
+          "note": "Enhanced bilateral middle-frontal-gyrus connectivity (PMID 42254985); a separate effective-connectivity study identified perimenopause as a distinct stage of FRONTAL network organization for emotion regulation (PMID 42499590, 76 women). Compensatory frontal recruitment is the recurring perimenopause signature.",
+          "links": [
+            {
+              "id": "brain_perimeno_t6_l1",
+              "label": "Resting-state fMRI, perimenopause DMN (PMID 42254985)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42254985/"
+            },
+            {
+              "id": "brain_perimeno_t6_l2",
+              "label": "Effective-connectivity, emotion-regulation network across menopause (PMID 42499590)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42499590/"
             }
           ]
         }
