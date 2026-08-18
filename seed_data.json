@@ -10396,32 +10396,57 @@
      "id": "new_cd_t1",
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
-     "refs": "PNAS",
-     "note": "Landmark finding: depleted, and the degree of depletion at surgery predicts risk of post-operative recurrence. Its butyrate/anti-inflammatory output is a major loss.",
+     "refs": "PNAS; corroborated PMID 39314611, PMID 27687331, PMID 36839534",
+     "note": "Landmark finding: depleted, and the degree of depletion at surgery predicts risk of post-operative recurrence. Its butyrate/anti-inflammatory output is a major loss. Corroborated three ways: an 11-study systematic review, an activity-gradient meta-analysis (active vs remission, not vs healthy), and treatment studies where recovery raises it back.",
      "links": [
       {
        "id": "new_cd_t1_l1",
        "label": "Sokol et al. 2008, PNAS",
        "url": "https://www.pnas.org/doi/10.1073/pnas.0804812105"
+      },
+      {
+       "id": "new_cd_t1_l2",
+       "label": "Systematic review 2024 (Cureus, PRISMA, 11 studies: CD reduces Faecalibacterium and Roseburia, raises Escherichia and Proteus; PMID 39314611)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39314611/"
+      },
+      {
+       "id": "new_cd_t1_l3",
+       "label": "Systematic review + meta-analysis 2017 (Scand J Gastroenterol; 5 CD studies, 231 patients — ACTIVE vs REMISSION, not vs healthy controls: active CD has fewer C. leptum, F. prausnitzii and Bifidobacterium; PMID 27687331)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/27687331/"
+      },
+      {
+       "id": "new_cd_t1_l4",
+       "label": "Systematic review + meta-analysis 2023 (Pathogens; 39 longitudinal studies — IBD TREATMENT enriches SCFA producers incl. F. prausnitzii and reduces Proteobacteria, so the disease direction is inferred from the reversal; PMID 36839534)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36839534/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "id": "new_cd_t2",
      "name": "Escherichia coli",
      "dir": "up",
-     "refs": "Gastroenterology",
-     "note": "Adherent-invasive E. coli (AIEC) found in ~22% of ileal CD lesions vs ~6% of controls; invades epithelial cells and survives inside macrophages.",
+     "refs": "Gastroenterology; corroborated PMID 39314611, PMID 30587114",
+     "note": "Adherent-invasive E. coli (AIEC) found in ~22% of ileal CD lesions vs ~6% of controls; invades epithelial cells and survives inside macrophages. Corroborated twice. Caveat worth carrying: the adherent-invasive pathotype usually blamed for this was found in only a few samples, and CD-associated E. coli was as strain-diverse as in healthy people.",
      "links": [
       {
        "id": "new_cd_t2_l1",
        "label": "Darfeuille-Michaud et al. 2004",
        "url": "https://pubmed.ncbi.nlm.nih.gov/15300573/"
+      },
+      {
+       "id": "new_cd_t2_l2",
+       "label": "Systematic review 2024 (Cureus, PRISMA, 11 studies: CD reduces Faecalibacterium and Roseburia, raises Escherichia and Proteus; PMID 39314611)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39314611/"
+      },
+      {
+       "id": "new_cd_t2_l3",
+       "label": "Metagenomics 2019 (BMC Genomics; E. coli increased in CD, but only a few samples carried the adherent-invasive pathotype usually blamed — strain diversity was as high as in healthy subjects; PMID 30587114)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30587114/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -10444,16 +10469,21 @@
      "id": "new_cd_t4",
      "name": "Roseburia",
      "dir": "down",
-     "refs": "Nat Commun",
-     "note": "Depleted, especially in ileal disease — loss of a major butyrate producer.",
+     "refs": "Nat Commun; corroborated PMID 39314611",
+     "note": "Depleted, especially in ileal disease — loss of a major butyrate producer. Corroborated by an 11-study systematic review.",
      "links": [
       {
        "id": "new_cd_t4_l1",
        "label": "Nat Commun multi-biome CD/UC signature study (s41467-024-54797-8)",
        "url": "https://www.nature.com/articles/s41467-024-54797-8"
+      },
+      {
+       "id": "new_cd_t4_l2",
+       "label": "Systematic review 2024 (Cureus, PRISMA, 11 studies: CD reduces Faecalibacterium and Roseburia, raises Escherichia and Proteus; PMID 39314611)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39314611/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -10614,32 +10644,47 @@
      "id": "seed_683",
      "name": "Proteobacteria",
      "dir": "up",
-     "refs": "Front Cell Infect Microbiol 2025 (16S, n=567 samples/383 CD patients across CR/CM/CS severity strata; ↑Proteobacteria with severity)",
-     "note": "Increased abundance tracked with disease severity across a large cohort (567 fecal samples from 383 CD patients spanning remission/mild-moderate/severe disease states), 16S profiling.",
+     "refs": "Front Cell Infect Microbiol 2025 (16S, n=567 samples/383 CD patients across CR/CM/CS severity strata; ↑Proteobacteria with severity); supported PMID 36839534; one rank down PMID 39314611",
+     "note": "Increased abundance tracked with disease severity across a large cohort (567 fecal samples from 383 CD patients spanning remission/mild-moderate/severe disease states), 16S profiling. Support is indirect on both sides: treatment REDUCES Proteobacteria as patients improve (39 studies), and the 11-study review names Escherichia and Proteus specifically — members, one rank down from the phylum.",
      "links": [
       {
        "id": "seed_684",
        "label": "Front Cell Infect Microbiol 2025 (16S, n=567 samples/383 CD patients across CR/CM/CS severity strata; ↑Proteobacteria with severity)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40007605/"
+      },
+      {
+       "id": "seed_683_l2",
+       "label": "Systematic review + meta-analysis 2023 (Pathogens; 39 longitudinal studies — IBD TREATMENT enriches SCFA producers incl. F. prausnitzii and reduces Proteobacteria, so the disease direction is inferred from the reversal; PMID 36839534)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36839534/"
+      },
+      {
+       "id": "seed_683_l3",
+       "label": "Systematic review 2024 (Cureus, PRISMA, 11 studies: CD reduces Faecalibacterium and Roseburia, raises Escherichia and Proteus; PMID 39314611)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39314611/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "id": "new_cd_t15",
      "name": "Bifidobacterium",
      "dir": "down",
-     "refs": "n=16 active/5 quiescent CD vs. 14 controls (PMID 9125655)",
-     "note": "Significantly reduced in both active (P<0.01) and quiescent (P<0.02) Crohn's disease vs. healthy controls — classic early finding, still widely cited.",
+     "refs": "n=16 active/5 quiescent CD vs. 14 controls (PMID 9125655); supported PMID 27687331",
+     "note": "Significantly reduced in both active (P<0.01) and quiescent (P<0.02) Crohn's disease vs. healthy controls — classic early finding, still widely cited. Support is an ACTIVITY gradient, not a case-control difference: active CD has less than CD in remission (231 patients). That is a different question from CD vs healthy.",
      "links": [
       {
        "id": "new_cd_t15_l1",
        "label": "Favier et al., n=16/5/14 (PMID 9125655)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/9125655/"
+      },
+      {
+       "id": "new_cd_t15_l2",
+       "label": "Systematic review + meta-analysis 2017 (Scand J Gastroenterol; 5 CD studies, 231 patients — ACTIVE vs REMISSION, not vs healthy controls: active CD has fewer C. leptum, F. prausnitzii and Bifidobacterium; PMID 27687331)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/27687331/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
