@@ -39,6 +39,9 @@ const DIR_ARROW = { up: '▲', down: '▼', both: '↔', none: '○' }
 // in this dataset - there is no rank field to consult. Names with no space
 // ("Escherichia/Shigella", "Lachnospiraceae") are their own group of one and are
 // left exactly as they are.
+// A real binomial species: Capitalised genus + a lowercase epithet. Excludes
+// "Family XIII" (roman-numeral placeholder) and "Prevotella 9" (cluster number).
+const STRICT_SPECIES = /^[A-Z][a-z]+\s+[a-z][a-z-]+$/
 function genusOf(name) {
   return String(name || '').split(' ')[0]
 }
@@ -62,7 +65,19 @@ export function groupByGenus(data) {
 
   for (const [genus, members] of buckets) {
     if (members.length === 1) {
-      out.push(members[0])
+      const only = members[0]
+      // A lone species with no bare-genus sibling is shown AT its genus, so it
+      // connects to genus-level entries the same way the condition maps do.
+      // Its own name is kept in the popup via a genus-level relabel note.
+      if (STRICT_SPECIES.test(only.name) && genus !== only.name) {
+        out.push({
+          ...only,
+          name: genus,
+          _speciesOrigin: only.name,
+        })
+      } else {
+        out.push(only)
+      }
       continue
     }
     merged++

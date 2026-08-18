@@ -19,8 +19,9 @@ const DIR_ARROW = { up: '▲', down: '▼', both: '↔', none: '○' }
 
 // A species name has a genus word + an epithet that isn't a bare cluster number.
 function isSpecies(name) {
-  const raw = String(name || '').trim()
-  return /\s/.test(raw) && !/^\S+\s+\d+$/.test(raw) && !/aceae$|ales$/.test(raw)
+  // Capitalised genus + lowercase epithet only. Excludes "Family XIII",
+  // "Prevotella 9", family/order names.
+  return /^[A-Z][a-z]+\s+[a-z][a-z-]+$/.test(String(name || '').trim())
 }
 
 function genusOf(name) {
