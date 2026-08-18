@@ -8,3 +8,5 @@ IMPLEMENTED.md
 NEED_TO_IMPLEMENT.md
 ARCHITECTURE.md
 __pycache__/
+
+.citation_cache.json

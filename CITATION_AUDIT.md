@@ -145,3 +145,82 @@ them.
 
 **0 measured taxa without a resolvable identifier.** Every remaining
 non-derived entry in `seed_data.json` carries a PMID, PMC ID, DOI or source URL.
+
+
+---
+
+# Whole-dataset coverage — 2026-08-17
+
+The audit above covered `seed_data.json` only, and was run by hand. It is now a
+saved script that covers **both** data files:
+
+```
+python3 scripts/check_citation_coverage.py            # the report
+python3 scripts/check_citation_coverage.py --verify   # resolve every id at NCBI/Crossref
+python3 scripts/check_citation_coverage.py --selftest # regression tests
+```
+
+It runs as a **non-blocking report** in `.githooks/pre-commit`. Thin sourcing is
+a fact about the literature, not an error in the commit.
+
+## 1,528 measured claims (252 derived entries excluded)
+
+717 condition taxa + 811 symptom links.
+
+| Bucket | Count | Share |
+|---|---|---|
+| No citation of any kind | 0 | 0% |
+| Named paper, no identifier | 59 | 3.9% |
+| Exactly one identifier | 1,335 | 87.4% |
+| Two or more | 134 | 8.8% |
+| **Single-sourced (first three rows)** | **1,394** | **91.2%** |
+
+**429 distinct identifiers** (338 PMID, 66 PMC, 25 DOI) back the whole dataset.
+The single most load-bearing source is **PMC6421268** (Parada Venegas 2019,
+*Front Immunol* — the SCFA review), carrying **57 claims** on its own.
+
+### This corrects the numbers in the earlier ad-hoc pass
+
+That pass reported 519 "named, no identifier" and 332 distinct identifiers. It
+read only the `refs` / `ref` text and ignored the `url` fields — and **540
+claims (35.3%) state their identifier only in the URL**. A
+`pubmed.ncbi.nlm.nih.gov/37199608` URL is an identifier; not reading it
+understated coverage by roughly 460 claims.
+
+The old number is not worthless, though — it is a *hygiene* metric rather than a
+coverage one, and the script still reports it. An identifier a reader can only
+find by hovering a link is worse than one written in the ref line.
+
+## Verification: every identifier resolves
+
+`--verify` looks each identifier up in **its own namespace** — `db=pubmed` for
+PMIDs, `db=pmc` for PMC IDs, Crossref for DOIs — and caches results.
+
+**0 of 429 failed to resolve.** No fabricated, mistyped or dead identifiers in
+the dataset.
+
+Two extraction bugs were found and fixed while getting to that zero, both of
+which had made *good* citations look bad:
+
+- **`PMC6421268` read as PMID 6421268.** Different namespaces, same digit width.
+  PMID 6421268 is a real record — an unrelated 1984 nursing newsletter — so the
+  check "confirmed" a fabrication that never existed. PMC spans are now masked
+  out of the text before PMIDs are scanned, and `--selftest` pins it.
+- **Publisher URL junk captured as part of the DOI** — `10.3389/fcimb.2019.00470/full`
+  and medRxiv's `…25335213v1`. Both fail to resolve while naming real papers.
+
+Also worth knowing: a bare 7–9 digit number in a ref field *is* a PMID stated
+without its prefix (23 entries do this), but a 1–3 digit one is an orphaned
+bibliography number pointing at a reference list that no longer exists.
+**65 claims still carry one** — `115`, `220`, `20–22`. They are not uncited (the
+URL is fine), but the ref text borrows credibility it cannot back.
+
+## Corroboration is rarer than the bucket count suggests
+
+The crosswalk from `--verify` collapses the same paper's PMID / PMC ID / DOI
+into one work: **429 identifiers → 417 distinct works**. One claim (Migraine /
+Prevotella) cites the same paper twice under two identifiers and so was counted
+as corroborated when it is not.
+
+**133 claims (8.7%) rest on two or more genuinely different papers.** The other
+91.3% have no second opinion anywhere in the dataset.

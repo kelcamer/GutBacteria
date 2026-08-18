@@ -94,4 +94,10 @@ if ! (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_data_integrity.py") >&2;
   exit 1
 fi
 
+# REPORT ONLY - never a blocker. Thin sourcing is a fact about the literature,
+# not a mistake in the commit, so this prints the citation-coverage summary and
+# gets out of the way. Offline by design: no --verify here, so no network call
+# sits between you and a commit.
+(cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_citation_coverage.py" --top 3) >&2 || true
+
 exit 0

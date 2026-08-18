@@ -6,27 +6,26 @@ Everything below is on `main` as of 2026-08-17. Live at `kelcamer.github.io/GutB
 
 ---
 
-## 1. Write the citation-coverage audit properly
+## 1. ~~Write the citation-coverage audit properly~~ — DONE 2026-08-17
 
-**Why first:** it is the measuring tool the whole sourcing effort depends on, and the ad-hoc version I ran had a bug that produced a false alarm.
+`scripts/check_citation_coverage.py`. Runs as a non-blocking report in `.githooks/pre-commit`; `--verify` resolves every identifier at NCBI/Crossref; `--selftest` pins the namespace bug. Full write-up in [CITATION_AUDIT.md](CITATION_AUDIT.md).
 
-The audit was inline Python, never saved. Recreate it as `scripts/check_citation_coverage.py`.
-
-**The bug to avoid:** the regex captured digits from `PMC6421268` and then looked them up as a **PMID**, which returned an unrelated 1984 nursing newsletter and made a good citation look fabricated. **PMC IDs and PMIDs are different namespaces.** Count them separately; when verifying an ID against NCBI, query `db=pmc` for PMC and `db=pubmed` for PMID.
-
-**What the corrected numbers were** (1,528 measured, non-derived claims across `symptom_data.json` + `seed_data.json`):
+**The numbers below replace the ones this file used to carry** (519 named / 902 one / 107 multi / 332 identifiers). That pass read only the `refs`/`ref` text and ignored `url` — and 540 claims state their identifier *only* in the URL. Coverage was understated by ~460 claims. 1,528 measured claims:
 
 | Bucket | Count | Share |
 |---|---|---|
 | No citation of any kind | 0 | 0% |
-| Named paper, no identifier | 519 | 34.0% |
-| Exactly one identifier | 902 | 59.0% |
-| Two or more | 107 | 7.0% |
-| **Single-sourced (first two rows)** | **1,421** | **93.5%** |
+| Named paper, no identifier | 59 | 3.9% |
+| Exactly one identifier | 1,335 | 87.4% |
+| Two or more | 134 | 8.8% |
+| **Single-sourced** | **1,394** | **91.2%** |
 
-332 distinct identifiers back the whole dataset.
+429 distinct identifiers, **all 429 resolve** — no fabricated or dead citations. After crosswalking PMID/PMC/DOI of the same paper: **417 distinct works**, and only **133 claims (8.7%) rest on two genuinely different papers**.
 
-**Ship it as a script, not a one-off**, and consider wiring it into `.githooks/pre-commit` as a *report* (never a blocker — thin sourcing is a fact about the literature, not an error).
+**Still open, surfaced by the audit:**
+- **65 claims carry an orphaned bibliography number as their ref text** (`115`, `220`, `20–22`). The URL is fine, so they are not uncited — but the ref line borrows credibility it cannot back. `--list orphan` prints them.
+- **540 claims hide their identifier in the URL only.** Backfilling the ref text is mechanical.
+- **PMC6421268 alone carries 57 claims** (Parada Venegas 2019 SCFA review). One review, 57 arrows.
 
 ## 2. Iron deficiency → Firmicutes
 
@@ -48,7 +47,7 @@ Done so far: **Faecalibacterium** (7 sources, resolved to grey/null), **2'-FL** 
 
 **Method that worked:** search → **read every abstract before citing it**. In the 2'-FL batch, 4 of 12 candidates were unusable (porcine milk oligosaccharides in pigs; a Parkinson's trial not using 2'-FL; a vitamin-D milk-composition paper; a Lactiplantibacillus NEC study). All four would have looked fine in a citation list. Verification is the work, not the search.
 
-## 4. The real prize: 1,421 single-sourced claims
+## 4. The real prize: 1,394 single-sourced claims
 
 Bigger lever than deepening entries that are already the best-sourced in the app. A single citation means no second opinion exists in the dataset — if that paper was small, measured a different rank or sample site, or used superseded nomenclature, the claim inherits the error and the map still draws a confident arrow.
 
@@ -56,9 +55,13 @@ Bigger lever than deepening entries that are already the best-sourced in the app
 
 Prioritise by **what a person would act on**: personally relevant conditions first (FUT2, endometriosis, iron deficiency, ADHD), then anything with an intervention attached.
 
+`check_citation_coverage.py --list one --group "ADHD"` prints the queue for any one condition or symptom; the report's "thinnest coverage" table ranks them. Worst offenders right now: Systemic inflammation (51/51 single-sourced), Gut barrier dysfunction (50/51), Autism (38/42), Bloating & gas (31/31), ADHD (30/35).
+
 ## 5. UI: corroboration marker
 
-Offered, never started. Show source count on an entry — a small marker for 2+ independent sources — so fragility is visible at a glance instead of requiring every popup to be opened. Roughly an hour. It would change how the map reads more than another twenty citations would, because it makes the 7% that *are* corroborated usable as a different class of claim.
+Offered, never started. Show source count on an entry — a small marker for 2+ independent sources — so fragility is visible at a glance instead of requiring every popup to be opened. Roughly an hour. It would change how the map reads more than another twenty citations would, because it makes the 8.7% that *are* corroborated usable as a different class of claim.
+
+**Count works, not identifiers** — a PMID and the same paper's DOI is one source, not two. `check_citation_coverage.py --verify --json` emits the crosswalk the marker should be driven from.
 
 ## 6. Known data-model gaps
 
