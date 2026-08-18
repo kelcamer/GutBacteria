@@ -986,7 +986,7 @@
     },
     {
      "id": "seed_61",
-     "name": "Escherichia-Shigella",
+     "name": "Escherichia/Shigella",
      "dir": "up",
      "refs": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
      "note": "",
@@ -3149,7 +3149,7 @@
     },
     {
      "id": "seed_153",
-     "name": "Escherichia-Shigella",
+     "name": "Escherichia/Shigella",
      "dir": "up",
      "refs": "168,169",
      "note": "",
@@ -3184,7 +3184,7 @@
      "name": "Prevotella 9",
      "dir": "down",
      "refs": "168",
-     "note": "",
+     "note": " Not mirrored onto the symptom map: Prevotella 9 is a SILVA-specific genus split, distinct from the Prevotella node already there, and giving it its own node would imply a resolution the rest of the map does not use.",
      "links": [
       {
        "id": "seed_160",
@@ -3374,7 +3374,7 @@
      "name": "Eubacterium rectale",
      "dir": "down",
      "refs": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
-     "note": "",
+     "note": " Not mirrored onto the symptom map: the map carries a combined 'Roseburia / Eubacterium rectale' node, and adding a second E. rectale node would draw one organism twice.",
      "links": [
       {
        "id": "seed_179",
@@ -4455,7 +4455,7 @@
      "name": "Candida albicans",
      "dir": "up",
      "refs": "PMID 35892094",
-     "note": "A 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus,\" and separately cites a case-control study finding non-secretor status predisposes to vaginal candidiasis (Kulkarni & Venkatesh 2004) and non-secretion of blood group antigens associated with susceptibility to Candida species infection (Thom et al. 1989).",
+     "note": "A 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus,\" and separately cites a case-control study finding non-secretor status predisposes to vaginal candidiasis (Kulkarni & Venkatesh 2004) and non-secretion of blood group antigens associated with susceptibility to Candida species infection (Thom et al. 1989). Not on the symptom map by design: it is a fungus, and that map is bacterial.",
      "links": [
       {
        "id": "seed_209_fp28_l1",
@@ -4471,7 +4471,7 @@
      "name": "Helicobacter pylori",
      "dir": "down",
      "refs": "PMID 35892094",
-     "note": "Opposite pattern from most pathogens on this map: SECRETORS (not non-secretors) are more susceptible. Positive-BabA-adhesin H. pylori strains require the secretor phenotype's fucosylated glycans to adhere to and infect gastric epithelium in both humans and rhesus monkeys (Azevedo et al. 2008, J Pathol) — so non-secretors are relatively protected from this specific colonization route.",
+     "note": "Opposite pattern from most pathogens on this map: SECRETORS (not non-secretors) are more susceptible. Positive-BabA-adhesin H. pylori strains require the secretor phenotype's fucosylated glycans to adhere to and infect gastric epithelium in both humans and rhesus monkeys (Azevedo et al. 2008, J Pathol) — so non-secretors are relatively protected from this specific colonization route. Not on the symptom map by design: it colonises the stomach, not the gut this map describes.",
      "links": [
       {
        "id": "seed_209_fp29_l1",
@@ -7012,7 +7012,7 @@
     },
     {
      "id": "seed_420",
-     "name": "Escherichia-Shigella",
+     "name": "Escherichia/Shigella",
      "dir": "up",
      "refs": "Hemmings 2017",
      "note": "'Unhealthy' microbes reported higher in PTSD.",
@@ -10144,7 +10144,7 @@
     },
     {
      "id": "seed_endo_t15",
-     "name": "Escherichia-Shigella",
+     "name": "Escherichia/Shigella",
      "dir": "up",
      "refs": "2019 review; SR 2026 (PMID 41752750)",
      "note": "More endometriosis patients show gut Shigella/Escherichia dominance. Cross-ref: Escherichia-Shigella is ↑ in autism and (as E. coli) in IBS. Corroborated: 19-study SR 2026 lists E. coli among the consistently enriched opportunists.",

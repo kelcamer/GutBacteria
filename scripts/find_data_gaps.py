@@ -148,6 +148,19 @@ def gaps(seed, sd, cf, claims):
                 cf_taxa.add(edge[key])
     out["cross-feeding-orphans"] = sorted(t for t in cf_taxa if t not in named)
 
+    # --- 7b. One taxon, two spellings -------------------------------------
+    # Found the hard way: "Escherichia-Shigella" (4 conditions) and
+    # "Escherichia/Shigella" (7 conditions + 20 symptom links) were the same
+    # organism drawn as two separate nodes, splitting its cross-condition
+    # context in half. Normalising away punctuation and case catches the class.
+    import re as _re
+    all_names = {t["name"] for c in seed["conditions"] for t in c.get("taxa", [])}
+    all_names |= {b["name"] for b in sd["bacteria"]}
+    by_norm = defaultdict(set)
+    for n in all_names:
+        by_norm[_re.sub(r"[^a-z0-9]", "", n.lower())].add(n)
+    out["split-identity"] = [" / ".join(sorted(v)) for v in by_norm.values() if len(v) > 1]
+
     # --- 8. Taxa that appear exactly once in the whole atlas ---------------
     # No cross-condition context: nothing to compare the direction against.
     counts = Counter(c.taxon for c in claims)
@@ -167,7 +180,7 @@ def gaps(seed, sd, cf, claims):
 
 ORDER = ["cross-file", "empty-symptoms", "thin-symptoms", "thin-conditions",
          "direction-monoculture", "coarse-rank-only", "no-null-recorded",
-         "cross-feeding-orphans", "single-appearance-taxa", "no-condition-note",
+         "split-identity", "cross-feeding-orphans", "single-appearance-taxa", "no-condition-note",
          "contested-clusters"]
 
 BLURB = {
@@ -178,6 +191,7 @@ BLURB = {
     "direction-monoculture": "conditions where every taxon points the same way",
     "coarse-rank-only": "conditions described mostly at phylum/family/order level",
     "no-null-recorded": "conditions with no grey 'tested, found nothing' entry",
+    "split-identity": "one taxon spelled two ways - drawn as two nodes, context split in half",
     "cross-feeding-orphans": "cross-feeding partners that appear nowhere in the atlas",
     "single-appearance-taxa": "taxa appearing exactly once - no cross-condition context",
     "no-condition-note": "conditions with a note under 80 characters",

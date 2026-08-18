@@ -1780,7 +1780,7 @@
   },
   {
    "name": "Blautia",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "Arterial stiffness / vascular aging",
@@ -1813,6 +1813,14 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/25809126/",
      "evidence": "in-vitro",
      "population": "n/a"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "Significant overgrowth (alongside Streptococcus, Romboutsia) in high-trait-anxiety young adults vs. controls.",
+     "ref": "n=21 high-trait-anxiety/29 controls (PMID 35281444)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35281444/",
+     "evidence": "human-cohort",
+     "population": "unknown"
     }
    ],
    "down": [
@@ -2068,7 +2076,7 @@
   },
   {
    "name": "Firmicutes",
-   "count": 8,
+   "count": 9,
    "up": [
     {
      "symptom": "Metabolic dysregulation",
@@ -2128,6 +2136,14 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
      "evidence": "human-rct",
      "evidence_source": "hand-classified",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "",
+     "ref": "168,169",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
+     "evidence": "unclassified",
      "population": "unknown"
     }
    ],
@@ -2925,7 +2941,7 @@
   },
   {
    "name": "Lachnospira",
-   "count": 6,
+   "count": 7,
    "up": [],
    "down": [
     {
@@ -2967,6 +2983,14 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/41610732/",
      "evidence": "meta-analysis",
      "population": "unknown"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "",
+     "ref": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
+     "evidence": "unclassified",
+     "population": "unknown"
     }
    ],
    "both": [
@@ -2982,7 +3006,7 @@
   },
   {
    "name": "Actinobacteria",
-   "count": 9,
+   "count": 10,
    "up": [
     {
      "symptom": "Mania",
@@ -3058,6 +3082,14 @@
      "ref": "Multiple studies within a 2025 systematic review, J Headache Pain (PMC12096802) — He 2023, Bai 2023, Yong 2023, Chen 2020, Liu 2024",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12096802/",
      "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "DIRECTION CORRECTED during the citation audit. The previous entry said UP on the strength of an orphaned bibliography number with no recoverable source. The only citable evidence found says the opposite: Actinobacteria was significantly REDUCED in anxiety versus healthy controls. An unsourced claim does not outrank a sourced one, so this was flipped rather than marked \"both\".",
+     "ref": "Comparative Analysis of Gut Microbiota Patterns in IBS, Anxiety and Autoimmune Disorders, Biomedicines 2026 (PMID 42193332)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42193332/",
+     "evidence": "unclassified",
      "population": "unknown"
     }
    ]
@@ -3727,7 +3759,7 @@
   },
   {
    "name": "Fusicatenibacter",
-   "count": 5,
+   "count": 6,
    "up": [],
    "down": [
     {
@@ -3768,6 +3800,14 @@
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/",
      "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "",
+     "ref": "BioMed",
+     "url": "https://link.springer.com/article/10.1186/s12888-025-06871-8",
+     "evidence": "unclassified",
      "population": "unknown"
     }
    ]
@@ -3949,7 +3989,7 @@
   },
   {
    "name": "Dialister",
-   "count": 1,
+   "count": 2,
    "up": [],
    "down": [
     {
@@ -3958,6 +3998,14 @@
      "ref": "Nat Microbiol s41564-018-0337-x",
      "url": "https://www.nature.com/articles/s41564-018-0337-x",
      "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "",
+     "ref": "168",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
+     "evidence": "unclassified",
      "population": "unknown"
     }
    ]
@@ -4074,7 +4122,7 @@
   },
   {
    "name": "Agathobacter",
-   "count": 4,
+   "count": 5,
    "up": [],
    "down": [
     {
@@ -4106,6 +4154,14 @@
      "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
      "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
+     "evidence": "unclassified",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "",
+     "ref": "168",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
      "evidence": "unclassified",
      "population": "unknown"
     }
@@ -4256,7 +4312,7 @@
   },
   {
    "name": "Butyricicoccus",
-   "count": 6,
+   "count": 7,
    "up": [],
    "down": [
     {
@@ -4305,6 +4361,14 @@
      "ref": "Bidirectional Mendelian randomization (PMID 40116178)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40116178/",
      "evidence": "mendelian",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Anxiety",
+     "note": "",
+     "ref": "BioMed",
+     "url": "https://link.springer.com/article/10.1186/s12888-025-06871-8",
+     "evidence": "unclassified",
      "population": "unknown"
     }
    ]
@@ -6908,8 +6972,17 @@
   },
   {
    "name": "Lachnospiraceae UCG-001",
-   "count": 1,
-   "up": [],
+   "count": 2,
+   "up": [
+    {
+     "symptom": "Intrusive thoughts",
+     "note": "Causal risk factor for OCD (OR=1.384, 95%CI 1.003-1.910, P=0.048) in the same Mendelian randomization analysis.",
+     "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/",
+     "evidence": "mendelian",
+     "population": "unknown"
+    }
+   ],
    "down": [
     {
      "symptom": "Lack of impulse control",
@@ -6919,7 +6992,9 @@
      "evidence": "human-cohort",
      "population": "unknown"
     }
-   ]
+   ],
+   "both": [],
+   "none": []
   },
   {
    "name": "Eubacterium siraeum",
@@ -7464,7 +7539,7 @@
   },
   {
    "name": "Clostridiaceae",
-   "count": 3,
+   "count": 4,
    "up": [
     {
      "symptom": "Allergies",
@@ -7489,6 +7564,14 @@
      "note": "Two Clostridiaceae OTUs were among 7 OTUs negatively associated with carotid-femoral pulse wave velocity in 617 middle-aged women — i.e. their depletion tracks with stiffer arteries.",
      "ref": "Menni et al. 2018, European Heart Journal — TwinsUK, n=617 (PMID 29750272)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/29750272/",
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "symptom": "FUT2 (Non-secretor) status",
+     "note": "Family-level abundance decreased significantly more across pregnancy in non-secretors vs. secretors (p=0.05, n=123 pregnant women, 108 secretors/15 non-secretors); C. coccoides group counts specifically decreased more in non-secretors (qPCR, p=0.02), and Clostridium species richness was also reduced (DGGE). Study population is pregnant women specifically, not general population — noted as a caveat. This directly matters for cognition: Clostridiaceae is one of only two bacteria this app links to Poor working memory (its depletion associated with worse working memory quality, PMID 35010939) — so non-secretor status may plausibly extend to reduced working memory via this same pathway.",
+     "ref": "PMID 26231005",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26231005/",
      "evidence": "human-cohort",
      "population": "female"
     }
@@ -7533,22 +7616,6 @@
     {
      "symptom": "Intrusive thoughts",
      "note": "Causal risk factor for OCD (OR=1.347, 95%CI 1.012-1.794, P=0.041) in the same Mendelian randomization analysis.",
-     "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/",
-     "evidence": "mendelian",
-     "population": "unknown"
-    }
-   ],
-   "down": [],
-   "both": []
-  },
-  {
-   "name": "Lachnospiraceae UCG001",
-   "count": 1,
-   "up": [
-    {
-     "symptom": "Intrusive thoughts",
-     "note": "Causal risk factor for OCD (OR=1.384, 95%CI 1.003-1.910, P=0.048) in the same Mendelian randomization analysis.",
      "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/",
      "evidence": "mendelian",
