@@ -1731,6 +1731,20 @@ export const BRAIN_DATA = [
             "url": "https://pubmed.ncbi.nlm.nih.gov/34599145/"
           }
         ]
+      },
+      {
+        "id": "brain_anx_hipp",
+        "name": "Hippocampus",
+        "dir": "up",
+        "refs": "PMID 42007490",
+        "note": "Hippocampal hyperactivity (elevated ReHo) in GAD that normalises with treatment; part of the amygdala-hippocampal anxiety circuit.",
+        "links": [
+          {
+            "id": "brain_anx_hipp_l1",
+            "label": "GAD: elevated hippocampal ReHo, normalises with treatment",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42007490/"
+          }
+        ]
       }
     ]
   },
@@ -1943,6 +1957,25 @@ export const BRAIN_DATA = [
             "id": "brain_dep_dlpfc_l2",
             "label": "Connectivity-guided DLPFC rTMS RCT for MDD, Am J Psychiatry 2026 (PMID 42581396)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/42581396/"
+          }
+        ]
+      },
+      {
+        "id": "brain_dep_nacc",
+        "name": "Nucleus accumbens",
+        "dir": "down",
+        "refs": "PMID 42562177; PMID 42611368",
+        "note": "Blunted nucleus-accumbens reward-anticipation activation underlies anhedonia; lower activation predicts conversion to MDD.",
+        "links": [
+          {
+            "id": "brain_dep_nacc_l1",
+            "label": "Lower NAcc reward activation predicts MDD conversion",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42562177/"
+          },
+          {
+            "id": "brain_dep_nacc_l2",
+            "label": "Anhedonia rsFC meta-analysis, NAcc-centered",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42611368/"
           }
         ]
       }
@@ -3161,6 +3194,25 @@ export const BRAIN_DATA = [
             "url": "https://pubmed.ncbi.nlm.nih.gov/28116559/"
           }
         ]
+      },
+      {
+        "id": "brain_mig_insula",
+        "name": "Insula",
+        "dir": "down",
+        "refs": "PMID 40247072; PMID 42099305",
+        "note": "Reduced gray matter in the dorsal anterior insula; the insula-abnormality hypothesis of migraine pain encoding.",
+        "links": [
+          {
+            "id": "brain_mig_insula_l1",
+            "label": "VBM: reduced dorsal-anterior-insula GMV in migraine",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40247072/"
+          },
+          {
+            "id": "brain_mig_insula_l2",
+            "label": "IPD meta-analysis, chronic pain incl. migraine",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42099305/"
+          }
+        ]
       }
     ]
   },
@@ -3584,6 +3636,25 @@ export const BRAIN_DATA = [
             "url": "https://pubmed.ncbi.nlm.nih.gov/22114193/"
           }
         ]
+      },
+      {
+        "id": "brain_med_amyg",
+        "name": "Amygdala",
+        "dir": "down",
+        "refs": "PMID 41534731; PMID 33856149",
+        "note": "Meditation lowers amygdala threat reactivity (RCT) and blunts its age-related volume loss in long-term practitioners.",
+        "links": [
+          {
+            "id": "brain_med_amyg_l1",
+            "label": "RCT: mindfulness reduces amygdala threat reactivity",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41534731/"
+          },
+          {
+            "id": "brain_med_amyg_l2",
+            "label": "Long-term meditators: less amygdala atrophy with age",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/33856149/"
+          }
+        ]
       }
     ]
   },
@@ -3843,6 +3914,25 @@ export const BRAIN_DATA = [
             "id": "brain_endo_t9_l1",
             "label": "Maulitz et al. 2024, Hum Reprod — 53 endometriosis patients vs. 25 pain-free controls, structural MRI (PMID 39241806)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/39241806/"
+          }
+        ]
+      },
+      {
+        "id": "brain_endo_insula",
+        "name": "Insula",
+        "dir": "both",
+        "refs": "PMID 36375399; PMID 42033133",
+        "note": "Altered anterior-insula pain-network connectivity in endometriosis-associated pain; evidence of central sensitization.",
+        "links": [
+          {
+            "id": "brain_endo_insula_l1",
+            "label": "Decreased anterior-insula connectivity in EAP",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36375399/"
+          },
+          {
+            "id": "brain_endo_insula_l2",
+            "label": "Pain-network connectivity in endometriosis pelvic pain",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42033133/"
           }
         ]
       }
