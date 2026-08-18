@@ -421,6 +421,18 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     return bits.join('')
   }
 
+  function rankWord(nm) {
+    const n = String(nm || '').trim().toLowerCase()
+    if (/aceae$/.test(n)) return 'Family'
+    if (/ales$/.test(n)) return 'Order'
+    if (/(cutes|detes|bacteria|microbia|mycetes|chaetes)$/.test(n) ||
+        ['bacteroidota','actinobacteriota','pseudomonadota','bacillota','verrucomicrobiota',
+         'fusobacteriota','lentisphaerae','synergistota','tenericutes','cyanobacteria'].includes(n)) return 'Phylum'
+    const raw = String(nm).trim()
+    if (/\s/.test(raw) && !/^\S+\s+\d+$/.test(raw)) return 'Species'
+    return 'Genus'
+  }
+
   function buildTipHtml(idx) {
     const node = V[idx]
     let html
@@ -541,8 +553,9 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
           (upItems ? '<div style="margin-bottom:3px"><b style="color:' + dirColor('up') + '">▲ If increased:</b><ul style="margin:2px 0 0 16px;padding:0;color:#A08FC7">' + upItems + '</ul></div>' : '') +
           (downItems ? '<div style="margin-bottom:6px"><b style="color:' + dirColor('down') + '">▼ If decreased:</b><ul style="margin:2px 0 0 16px;padding:0;color:#A08FC7">' + downItems + '</ul></div>' : '')
       }
+      const rankTag = info ? '' : '<span style="font-weight:600;color:#A08FC7;font-size:11px">' + rankWord(node.name) + ': </span>'
       html =
-        '<div style="font-weight:700;color:#F1EAFF">' + esc(node.name) + '</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">in ' +
+        '<div style="font-weight:700;color:#F1EAFF">' + rankTag + esc(node.name) + '</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">in ' +
         node.deg + ' condition' + (node.deg > 1 ? 's' : '') + '</div><div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + infoHtml + rows + '</div>'
     }
     return html

@@ -969,6 +969,23 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
       return bits.join("");
     };
 
+    // Rank word for a taxon name, matching taxonRank.js so the popup label and
+    // the little G/S/F/O/P badge can never disagree. Shown in bacterium popups
+    // as "Genus: Bacteroides" so a reader knows how specific the name is - a
+    // genus is a whole group, a species is one organism within it.
+    function rankWord(nm) {
+      var n = String(nm || "").trim().toLowerCase();
+      if (/aceae$/.test(n)) return "Family";
+      if (/ales$/.test(n)) return "Order";
+      if (/(cutes|detes|bacteria|microbia|mycetes|chaetes)$/.test(n) ||
+          ["bacteroidota","actinobacteriota","pseudomonadota","bacillota",
+           "verrucomicrobiota","fusobacteriota","lentisphaerae","synergistota",
+           "tenericutes","cyanobacteria"].indexOf(n) >= 0) return "Phylum";
+      // "Prevotella 9" is a genus with a cluster number, not a species.
+      if (/\s/.test(String(nm).trim()) && !/^\S+\s+\d+$/.test(String(nm).trim())) return "Species";
+      return "Genus";
+    }
+
     function buildTipHtml(idx) {
       var node = V[idx],
         html;
@@ -1112,7 +1129,7 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         var canonNote = node.label !== node.name
           ? '<div style="color:#7C6BA8;font-size:9.5px;margin-bottom:5px">Grouped in this app\'s data with ' + esc(node.name) + ' (taxa that standard sequencing typically can\'t distinguish) - shown here under the name this condition\'s own research specifically reported.</div>'
           : "";
-        html = '<div style="font-weight:700;color:#F1EAFF">' + esc(node.label) + '</div>' + canonNote + '<div style="color:#A08FC7;font-size:10px;margin-bottom:3px">linked to ' + node.deg + ' symptom' + (node.deg > 1 ? "s" : "") + '</div><div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + rows + '</div>';
+        html = '<div style="font-weight:700;color:#F1EAFF"><span style="font-weight:600;color:#A08FC7;font-size:11px">' + rankWord(node.label) + ': </span>' + esc(node.label) + '</div>' + canonNote + '<div style="color:#A08FC7;font-size:10px;margin-bottom:3px">linked to ' + node.deg + ' symptom' + (node.deg > 1 ? "s" : "") + '</div><div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + rows + '</div>';
       }
       return html;
     }
