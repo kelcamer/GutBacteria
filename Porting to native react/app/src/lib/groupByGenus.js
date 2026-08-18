@@ -116,16 +116,12 @@ export function groupByGenus(data) {
         .map((r) => `[${r.member} ${DIR_ARROW[r.dir] || r.dir}] ${r.note || '(no note)'}`)
         .join('  ||  ')
 
+      const members = [...new Set(rows.map((r) => r.member))]
       const header = disagrees
-        ? `GROUPED NODE - MEMBERS DISAGREE: ${rows
-            .map((r) => `${r.member} ${r.dir}`)
-            .join(' vs ')}. Shown as contested rather than picking a winner, because collapsing ` +
-          `a genus onto one arrow cannot represent two members pointing opposite ways. ` +
-          `Each member's own evidence follows, unaltered. Switch grouping OFF to see them as ` +
-          `separate nodes, which is how the underlying data is actually stored. `
-        : `GROUPED NODE - this claim comes from: ${rows.map((r) => r.member).join(', ')}. ` +
-          `Grouping is a display choice; the evidence below was measured at the rank named here, ` +
-          `not at genus level. `
+        ? `Contested — members disagree (${rows.map((r) => `${r.member} ${r.dir}`).join(' vs ')}). Turn off Group by genus to separate them. `
+        : members.length > 1
+          ? `Genus group of ${members.join(', ')}. `
+          : "" 
 
       const dir = disagrees ? 'both' : voting[0].dir
       node[dir].push({

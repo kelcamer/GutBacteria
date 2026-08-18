@@ -355,6 +355,25 @@ export const BRAIN_DATA = [
             "url": "https://pubmed.ncbi.nlm.nih.gov/27125303/"
           }
         ]
+      },
+      {
+        "id": "brain_asd_t22",
+        "name": "Supplementary motor area",
+        "dir": "both",
+        "refs": "PMID 42317472; PMID 42192759",
+        "note": "MOTOR-SYSTEM region, previously missing because this entry was built from social-cognition and cognitive-control meta-analyses (Tamon 2024, PMID 39815640, Lukito 2020) that foreground limbic/prefrontal areas - autism's well-documented motor involvement lives in a separate praxis/imitation/coordination literature. Autism shows atypical supplementary/premotor activation during sensorimotor processing (PRISMA review, 72 studies, PMID 42317472) and increased premotor grey-matter volume with altered premotor white-matter tracts (VBM+DTI, 30 ASD/30 NT boys, PMID 42192759). Marked 'both' because direction is mixed - increased GMV but reduced task activation in imitation paradigms. Motor difficulties affect the majority of autistic people.",
+        "links": [
+          {
+            "id": "brain_asd_t22_l1",
+            "label": "DCD/ASD/ADHD neuroimaging PRISMA review, 72 studies (PMID 42317472)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42317472/"
+          },
+          {
+            "id": "brain_asd_t22_l2",
+            "label": "VBM + diffusion MRI, 30 ASD vs 30 NT boys, premotor GMV/connectivity (PMID 42192759)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42192759/"
+          }
+        ]
       }
     ]
   },
@@ -1886,6 +1905,25 @@ export const BRAIN_DATA = [
             "id": "brain_dep_t11_l2",
             "label": "Tamm et al. 2022, Am J Psychiatry — UK Biobank, n=28,638 (PMID 35775158)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/35775158/"
+          }
+        ]
+      },
+      {
+        "id": "brain_dep_dlpfc",
+        "name": "Dorsolateral prefrontal cortex",
+        "dir": "down",
+        "refs": "PMID 42570731; PMID 42581396",
+        "note": "THE clinically central prefrontal region in depression, previously missing because this entry drew on subgenual-ACC and emotion/reward meta-analyses that captured medial PFC and sgACC but not the lateral executive cortex. Left DLPFC is hypoactive/hypoconnective in depression - reduced DLPFC-ventral-striatal connectivity tracks cognitive psychomotor retardation (n=172 patients, PMID 42570731) - and is the FDA-approved target of high-frequency rTMS for treatment-resistant MDD (PMID 42581396). Down = reduced activity/connectivity, which excitatory rTMS is designed to raise.",
+        "links": [
+          {
+            "id": "brain_dep_dlpfc_l1",
+            "label": "Striato-cortical connectivity in psychomotor retardation, n=172/387/297 (PMID 42570731)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42570731/"
+          },
+          {
+            "id": "brain_dep_dlpfc_l2",
+            "label": "Connectivity-guided DLPFC rTMS RCT for MDD, Am J Psychiatry 2026 (PMID 42581396)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42581396/"
           }
         ]
       }

@@ -38,12 +38,12 @@ function mergeTaxa(genus, members) {
   const perMember = members
     .map((t) => `[${t.name} ${DIR_ARROW[t.dir] || t.dir}] ${t.note || '(no note)'}`)
     .join('  ||  ')
+  const distinct = [...new Set(members.map((t) => t.name))]
   const header = disagrees
-    ? `GROUPED NODE - MEMBERS DISAGREE: ${members.map((t) => `${t.name} ${t.dir}`).join(' vs ')}. ` +
-      `Shown as contested rather than picking a winner. Each member's own evidence follows. ` +
-      `Switch grouping OFF to see them as separate nodes. `
-    : `GROUPED NODE - this claim comes from: ${members.map((t) => t.name).join(', ')}. ` +
-      `Grouping is a display choice; the evidence below was measured at the rank named here, not at genus level. `
+    ? `Contested — members disagree (${members.map((t) => `${t.name} ${t.dir}`).join(' vs ')}). Turn off Group by genus to separate them. `
+    : distinct.length > 1
+      ? `Genus group of ${distinct.join(', ')}. `
+      : "" 
 
   const links = []
   const seen = new Set()
@@ -93,8 +93,7 @@ export function groupConditionTaxa(condition) {
         taxa.push({
           ...t,
           name: g,
-          note: `Shown at genus level (Group by genus). The evidence here is specifically for ${t.name}. ` +
-            `Switch to Group by species to see it under its own name. ` + (t.note || ''),
+          note: `Shown at genus level; the evidence is for ${t.name} specifically. ` + (t.note || ''),
           groupedFrom: [{ member: t.name, dir: t.dir }],
         })
         changed = true
