@@ -122,6 +122,27 @@ def gaps(seed, sd, cf, claims):
             coarse.append(f"{c['name']} ({ranks['phylum']}p/{ranks['family']}f/{ranks['order']}o of {total})")
     out["coarse-rank-only"] = coarse
 
+    # --- 5b. Confident phylum arrows -------------------------------------
+    # A phylum averages thousands of species that move in opposite directions,
+    # so a directional (non-null) phylum claim is the rank most likely to be
+    # hiding a real genus-level story - or to be simply washed out. Iron
+    # deficiency, FUT2 and the estrobolome were all null at phylum and real one
+    # or two ranks down. A GREY phylum entry is fine (it records that null on
+    # purpose); a confident up/down/both phylum arrow is what to scrutinise.
+    PHYLA = ("Firmicutes", "Bacteroidetes", "Proteobacteria", "Actinobacteria",
+             "Verrucomicrobia", "Verrucomicrobiota", "Fusobacteria", "Fusobacteriota",
+             "Tenericutes", "Cyanobacteria", "Bacteroidota", "Actinobacteriota",
+             "Pseudomonadota", "Bacillota", "Lentisphaerae", "Synergistota")
+    phylum_arrows = []
+    for c in seed["conditions"]:
+        for t in c.get("taxa", []):
+            if t.get("derived"):
+                continue
+            if t["name"] in PHYLA and t.get("dir") != "none":
+                phylum_arrows.append(f"{c['name']} / {t['name']} [{t.get('dir')}]")
+    out["confident-phylum-arrows"] = phylum_arrows
+
+
     # --- 6. Unclassified evidence and unknown population --------------------
     ev = Counter()
     pop = Counter()
@@ -180,7 +201,8 @@ def gaps(seed, sd, cf, claims):
 
 ORDER = ["cross-file", "empty-symptoms", "thin-symptoms", "thin-conditions",
          "direction-monoculture", "coarse-rank-only", "no-null-recorded",
-         "split-identity", "cross-feeding-orphans", "single-appearance-taxa", "no-condition-note",
+         "confident-phylum-arrows", "split-identity", "cross-feeding-orphans",
+         "single-appearance-taxa", "no-condition-note",
          "contested-clusters"]
 
 BLURB = {
@@ -190,6 +212,7 @@ BLURB = {
     "thin-conditions": "conditions with fewer than 8 taxa",
     "direction-monoculture": "conditions where every taxon points the same way",
     "coarse-rank-only": "conditions described mostly at phylum/family/order level",
+    "confident-phylum-arrows": "directional phylum claims - a phylum averages opposite-moving species, review for a genus-level entry that should supersede",
     "no-null-recorded": "conditions with no grey 'tested, found nothing' entry",
     "split-identity": "one taxon spelled two ways - drawn as two nodes, context split in half",
     "cross-feeding-orphans": "cross-feeding partners that appear nowhere in the atlas",
