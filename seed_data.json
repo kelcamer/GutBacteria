@@ -14005,17 +14005,54 @@
      "population": "female"
     },
     {
+     "id": "new_t1d_akkermansia_muciniphila",
+     "name": "Akkermansia muciniphila",
+     "dir": "down",
+     "refs": "Leiva-Gea / Int J Mol Sci 2022",
+     "note": "Decreased vs controls in new-onset T1D (52 patients) and in at-risk children; a mucin-degrading, barrier-protective taxon.",
+     "links": [
+      {
+       "id": "new_t1d_akkermansia_muciniphila_l1",
+       "label": "Leiva-Gea / Int J Mol Sci 2022",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36142163/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "id": "new_t1d_dialister",
+     "name": "Dialister",
+     "dir": "down",
+     "refs": "Leiva-Gea / Int J Mol Sci 2022",
+     "note": "Decreased in new-onset T1D patients and at-risk siblings vs healthy controls in the same cohort.",
+     "links": [
+      {
+       "id": "new_t1d_dialister_l1",
+       "label": "Leiva-Gea / Int J Mol Sci 2022",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36142163/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
      "id": "cf_new_t1d_cf_infantis_ehallii_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_eubacterium_hall).",
      "links": [
       {
        "id": "cf_new_t1d_cf_infantis_ehallii_l1",
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
+      },
+      {
+       "id": "cf_new_t1d_cf_akkermansia_eubacterium_hall_l2",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
      ],
      "evidence": "derived",
@@ -14026,13 +14063,18 @@
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
      "links": [
       {
        "id": "cf_new_t1d_cf_badolescentis_lactate_utilisers_l1",
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      },
+      {
+       "id": "cf_new_t1d_cf_akkermansia_anaerostipes_l2",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
      ],
      "evidence": "derived",
@@ -16033,6 +16075,22 @@
       }
      ],
      "evidence": "review",
+     "population": "unknown"
+    },
+    {
+     "id": "new_lupus_ruminococcus_gnavus",
+     "name": "Ruminococcus gnavus",
+     "dir": "up",
+     "refs": "Azzouz/Ann Rheum Dis 2026",
+     "note": "Gut expansion of R. gnavus tracks lupus-nephritis flares; its lipoglycan toxin drives thromboinflammation (TLR2-dependent).",
+     "links": [
+      {
+       "id": "new_lupus_ruminococcus_gnavus_l1",
+       "label": "Azzouz/Ann Rheum Dis 2026",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42031645/"
+      }
+     ],
+     "evidence": "unclassified",
      "population": "unknown"
     },
     {
