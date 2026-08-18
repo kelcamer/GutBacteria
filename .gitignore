@@ -11,3 +11,7 @@ __pycache__/
 
 .citation_cache.json
 .pdf_links_cache.json
+
+# Markdown docs kept local only, never pushed (per request)
+*.md
+*.MD
