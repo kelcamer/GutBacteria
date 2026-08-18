@@ -223,6 +223,7 @@ export const PDF_LINKS = {
   "https://pubmed.ncbi.nlm.nih.gov/39838369/": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-025-03852-2",
   "https://pubmed.ncbi.nlm.nih.gov/39856212/": "https://www.nature.com/articles/s41598-025-87546-y.pdf",
   "https://pubmed.ncbi.nlm.nih.gov/39910065/": "https://www.tandfonline.com/doi/pdf/10.1080/19490976.2025.2455506?needAccess=true",
+  "https://pubmed.ncbi.nlm.nih.gov/39991125/": "https://doi.org/10.1016/j.smhs.2024.02.005",
   "https://pubmed.ncbi.nlm.nih.gov/39993092/": "https://doi.org/10.1097/md.0000000000041617",
   "https://pubmed.ncbi.nlm.nih.gov/40007605/": "https://www.mdpi.com/2076-0817/12/2/262/pdf?version=1676856110",
   "https://pubmed.ncbi.nlm.nih.gov/40056996/": "https://macsphere.mcmaster.ca/bitstream/11375/26793/2/Jung2018_ChangesMicrobiota_BP-17-110_R1%281%29.pdf",

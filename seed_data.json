@@ -14614,6 +14614,22 @@
      "population": "female"
     },
     {
+     "id": "new_perimeno_phasco",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "refs": "perimenopause vs youth 16S (PMID 39991125)",
+     "note": "Significantly increased in perimenopausal women vs younger women (16S; p<0.05), alongside Paraprevotella, Flavonifractor and Intestinimonas. A propionate producer — note this atlas also infers Phascolarctobacterium up in the Menopause transition via cross-feeding, and here it is actually measured, one life-stage earlier.",
+     "links": [
+      {
+       "id": "new_perimeno_phasco_l1",
+       "label": "Perimenopausal vs youth women, 16S, physical-activity cohort (PMID 39991125)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39991125/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
      "id": "cf_new_perimeno_cf_bifidum_fprausnitzii_Faecalibacterium_prausnitzii",
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
