@@ -20,9 +20,21 @@ const EV_COLOR = {
   inferred: '#A08FC7',
 }
 
-const W = 820
 const ROW = 96
 const PAD = 60
+
+// Label geometry. The left column's labels are right-anchored and grow LEFTWARD
+// from the node, so a long one runs past x=0 and is clipped by the viewBox -
+// reported as "the F in Faecalibacterium is hidden". The gutter is therefore
+// measured from the longest name actually being drawn rather than assumed.
+const LABEL_SIZE = 11.5
+const LABEL_GAP = 16       // node centre to first glyph
+const MAX_LABEL_CHARS = 26 // names longer than this are truncated below
+// Italic sans at 11.5px averages ~0.52em per character across these names.
+// Rounded up deliberately: a slightly wide gutter costs whitespace, a narrow
+// one costs a letter.
+const CHAR_W = 0.56 * LABEL_SIZE
+const labelWidth = (name) => Math.min(name.length, MAX_LABEL_CHARS + 1) * CHAR_W
 
 export function CrossFeedingGraph({ edges, onSelect, selectedId }) {
   const [hover, setHover] = useState(null)
@@ -41,20 +53,27 @@ export function CrossFeedingGraph({ edges, onSelect, selectedId }) {
     const rows = Math.max(sources.length, targets.length)
     const H = Math.max(280, rows * ROW + PAD * 2)
     const pos = {}
+    // Each side gets exactly the gutter its longest label needs, and the canvas
+    // widens to keep the columns the same distance apart however long the names
+    // are - so nothing is ever clipped and the edges never get shorter.
+    const leftGutter = Math.max(...sources.map(labelWidth), 0) + LABEL_GAP + 12
+    const rightGutter = Math.max(...targets.map(labelWidth), 0) + LABEL_GAP + 12
+    const leftX = Math.max(150, leftGutter)
+    const W = leftX + 520 + rightGutter
     // Sources centred vertically against the taller column so a single hub
     // (Bifidobacterium feeds four things) sits level with its fan-out.
     sources.forEach((n, i) => {
       const span = (H - PAD * 2) / Math.max(1, sources.length)
-      pos[n] = { x: 150, y: PAD + span * (i + 0.5), side: 'L' }
+      pos[n] = { x: leftX, y: PAD + span * (i + 0.5), side: 'L' }
     })
     targets.forEach((n, i) => {
       const span = (H - PAD * 2) / Math.max(1, targets.length)
-      pos[n] = { x: W - 150, y: PAD + span * (i + 0.5), side: 'R' }
+      pos[n] = { x: W - rightGutter, y: PAD + span * (i + 0.5), side: 'R' }
     })
-    return { pos, H }
+    return { pos, H, W }
   }, [edges])
 
-  const { pos, H } = layout
+  const { pos, H, W } = layout
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
@@ -124,12 +143,12 @@ export function CrossFeedingGraph({ edges, onSelect, selectedId }) {
         <g key={name}>
           <circle cx={p.x} cy={p.y} r={9} fill={p.side === 'L' ? '#2DD4BF' : '#A78BFA'} fillOpacity={0.9} />
           <text
-            x={p.side === 'L' ? p.x - 16 : p.x + 16}
+            x={p.side === 'L' ? p.x - LABEL_GAP : p.x + LABEL_GAP}
             y={p.y + 4}
             textAnchor={p.side === 'L' ? 'end' : 'start'}
-            style={{ fontSize: 11.5, fill: theme.text, fontStyle: 'italic' }}
+            style={{ fontSize: LABEL_SIZE, fill: theme.text, fontStyle: 'italic' }}
           >
-            {name.length > 26 ? name.slice(0, 25) + '…' : name}
+            {name.length > MAX_LABEL_CHARS ? name.slice(0, MAX_LABEL_CHARS - 1) + '…' : name}
           </text>
         </g>
       ))}
