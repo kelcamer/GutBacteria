@@ -13452,14 +13452,24 @@
     {
      "id": "new_pcos_t1",
      "name": "Bacteroides",
-     "dir": "both",
-     "refs": "37559119",
-     "note": "Genuine split: 7 studies found increased, 3 found decreased — kept as \"both\" rather than pick a side.",
+     "dir": "up",
+     "refs": "37559119; meta-analysis PMID 42321548; dissent PMID 38990031",
+     "note": "Genuine split: 7 studies found increased, 3 found decreased — kept as \"both\" rather than pick a side. RESOLVED to up: a 10-cohort meta-analysis (858 people) finds Bacteroides increased, and the split was already 7 studies up vs 3 down. The minority stays named — a 17-vs-17 case-control found it depleted — but 7-vs-3 plus a meta-analysis is not a tie.",
      "links": [
       {
        "id": "new_pcos_t1_l1",
        "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      },
+      {
+       "id": "new_pcos_t1_l2",
+       "label": "Meta-analysis 2026 (Reprod Sci; 10 PCOS cohorts, 858 individuals, genus level: ↑Bacteroides, ↓Subdoligranulum/NK4A214_group/Collinsella; PMID 42321548)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42321548/"
+      },
+      {
+       "id": "new_pcos_t1_l3",
+       "label": "Case-control 2024 (Microbiol Spectr; 17 PCOS vs 17 matched controls: ↓Firmicutes/Bacteroidota, ↑Actinobacteriota/Proteobacteria, Bifidobacterium enriched, Bacteroides depleted; PMID 38990031)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38990031/"
       }
      ],
      "evidence": "meta-analysis",
@@ -13533,13 +13543,28 @@
      "id": "new_pcos_t6",
      "name": "Escherichia/Shigella",
      "dir": "up",
-     "refs": "37559119",
-     "note": "Increased across 5 studies.",
+     "refs": "37559119; corroborated PMID 42327471, PMID 41648005, PMID 40185172",
+     "note": "Increased across 5 studies. Corroborated three times: two case-control cohorts and an intervention that lowered it while symptoms improved.",
      "links": [
       {
        "id": "new_pcos_t6_l1",
        "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      },
+      {
+       "id": "new_pcos_t6_l2",
+       "label": "16S reanalysis 2026 (Health Sci Rep; PCOS n=98 vs HC n=71 pooled with own n=24/12: ↑Ruminococcus/Lachnospiraceae/Escherichia-Shigella, ↓Prevotella; PMID 42327471)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42327471/"
+      },
+      {
+       "id": "new_pcos_t6_l3",
+       "label": "RCT 2026 (Front Microbiol; 60 PCOS + 30 healthy controls; PCOS gut dominated by Lachnospiraceae, Blautia and Escherichia-Shigella; PMID 41648005)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41648005/"
+      },
+      {
+       "id": "new_pcos_t6_l4",
+       "label": "Intervention 2025 (Microb Pathog; a treatment that improved PCOS raised Lachnospira and Faecalibacterium and lowered Escherichia-Shigella — direction inferred from the intervention, not a case-control measurement; PMID 40185172)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40185172/"
       }
      ],
      "evidence": "meta-analysis",
@@ -13549,13 +13574,18 @@
      "id": "new_pcos_t7",
      "name": "Lachnospira",
      "dir": "down",
-     "refs": "37559119",
-     "note": "Decreased across 4 studies.",
+     "refs": "37559119; supported PMID 40185172",
+     "note": "Decreased across 4 studies. Support is indirect: a treatment that improved PCOS RAISED Lachnospira. Not a case-control measurement.",
      "links": [
       {
        "id": "new_pcos_t7_l1",
        "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      },
+      {
+       "id": "new_pcos_t7_l2",
+       "label": "Intervention 2025 (Microb Pathog; a treatment that improved PCOS raised Lachnospira and Faecalibacterium and lowered Escherichia-Shigella — direction inferred from the intervention, not a case-control measurement; PMID 40185172)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40185172/"
       }
      ],
      "evidence": "meta-analysis",
@@ -13565,13 +13595,23 @@
      "id": "new_pcos_t8",
      "name": "Prevotella",
      "dir": "down",
-     "refs": "37559119",
-     "note": "5 studies found decreased vs. 1 found increased — majority direction used, minority noted rather than hidden.",
+     "refs": "37559119; corroborated PMID 42327471, PMID 39408965",
+     "note": "5 studies found decreased vs. 1 found increased — majority direction used, minority noted rather than hidden. Corroborated twice more (2026 16S reanalysis; 69-vs-18 case-control).",
      "links": [
       {
        "id": "new_pcos_t8_l1",
        "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      },
+      {
+       "id": "new_pcos_t8_l2",
+       "label": "16S reanalysis 2026 (Health Sci Rep; PCOS n=98 vs HC n=71 pooled with own n=24/12: ↑Ruminococcus/Lachnospiraceae/Escherichia-Shigella, ↓Prevotella; PMID 42327471)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42327471/"
+      },
+      {
+       "id": "new_pcos_t8_l3",
+       "label": "Case-control 2024 (Int J Mol Sci; 69 PCOS vs 18 controls: reduced Prevotella spp. and C. leptum group, overgrowth of Streptococcus/Staphylococcus/C. difficile; PMID 39408965)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39408965/"
       }
      ],
      "evidence": "meta-analysis",
@@ -13645,13 +13685,18 @@
      "id": "new_pcos_t13",
      "name": "Streptococcaceae",
      "dir": "up",
-     "refs": "37559119",
-     "note": "Family-level increase across included studies.",
+     "refs": "37559119; supported one rank down PMID 39408965",
+     "note": "Family-level increase across included studies. Support is one rank down: Streptococcus spp. overgrew in a 69-vs-18 case-control. A genus result does not strictly corroborate a family claim.",
      "links": [
       {
        "id": "new_pcos_t13_l1",
        "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      },
+      {
+       "id": "new_pcos_t13_l2",
+       "label": "Case-control 2024 (Int J Mol Sci; 69 PCOS vs 18 controls: reduced Prevotella spp. and C. leptum group, overgrowth of Streptococcus/Staphylococcus/C. difficile; PMID 39408965)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39408965/"
       }
      ],
      "evidence": "meta-analysis",
@@ -13661,13 +13706,18 @@
      "id": "new_pcos_t14",
      "name": "Firmicutes",
      "dir": "down",
-     "refs": "37559119",
-     "note": "Phylum-level decrease across included studies.",
+     "refs": "37559119; corroborated PMID 38990031",
+     "note": "Phylum-level decrease across included studies. Corroborated in a 17-vs-17 case-control.",
      "links": [
       {
        "id": "new_pcos_t14_l1",
        "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      },
+      {
+       "id": "new_pcos_t14_l2",
+       "label": "Case-control 2024 (Microbiol Spectr; 17 PCOS vs 17 matched controls: ↓Firmicutes/Bacteroidota, ↑Actinobacteriota/Proteobacteria, Bifidobacterium enriched, Bacteroides depleted; PMID 38990031)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38990031/"
       }
      ],
      "evidence": "meta-analysis",
@@ -13677,13 +13727,18 @@
      "id": "new_pcos_t15",
      "name": "Proteobacteria",
      "dir": "up",
-     "refs": "37559119",
-     "note": "Phylum-level increase across included studies.",
+     "refs": "37559119; corroborated PMID 38990031",
+     "note": "Phylum-level increase across included studies. Corroborated in a 17-vs-17 case-control.",
      "links": [
       {
        "id": "new_pcos_t15_l1",
        "label": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/"
+      },
+      {
+       "id": "new_pcos_t15_l2",
+       "label": "Case-control 2024 (Microbiol Spectr; 17 PCOS vs 17 matched controls: ↓Firmicutes/Bacteroidota, ↑Actinobacteriota/Proteobacteria, Bifidobacterium enriched, Bacteroides depleted; PMID 38990031)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38990031/"
       }
      ],
      "evidence": "meta-analysis",
@@ -13709,13 +13764,18 @@
      "id": "audit_PCOS_Faecalibacterium",
      "name": "Faecalibacterium",
      "dir": "down",
-     "refs": "n=26 PCOS+hyperandrogenemia/149 without HA, incl. 19 healthy controls (PMID 41977159)",
-     "note": "Eastern Siberia PCOS Epidemiology and Phenotype (ESPEP) cohort: lower Faecalibacterium relative abundance (cutoff ≤0.043%) associated with the hyperandrogenemia phenotype of PCOS.",
+     "refs": "n=26 PCOS+hyperandrogenemia/149 without HA, incl. 19 healthy controls (PMID 41977159); supported PMID 40185172",
+     "note": "Eastern Siberia PCOS Epidemiology and Phenotype (ESPEP) cohort: lower Faecalibacterium relative abundance (cutoff ≤0.043%) associated with the hyperandrogenemia phenotype of PCOS. Support is indirect: a treatment that improved PCOS RAISED Faecalibacterium. Not a case-control measurement.",
      "links": [
       {
        "id": "audit_PCOS_Faecalibacterium_l1",
        "label": "PMID 41977159",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41977159/"
+      },
+      {
+       "id": "audit_PCOS_Faecalibacterium_l2",
+       "label": "Intervention 2025 (Microb Pathog; a treatment that improved PCOS raised Lachnospira and Faecalibacterium and lowered Escherichia-Shigella — direction inferred from the intervention, not a case-control measurement; PMID 40185172)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40185172/"
       }
      ],
      "evidence": "human-cohort",
@@ -13741,16 +13801,53 @@
      "id": "audit_PCOS_Bifidobacterium",
      "name": "Bifidobacterium",
      "dir": "up",
-     "refs": "n=23 PCOS/24 non-PCOS controls (PMID 41882707)",
-     "note": "Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio.",
+     "refs": "n=23 PCOS/24 non-PCOS controls (PMID 41882707); corroborated PMID 38990031",
+     "note": "Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio. Corroborated: enriched again in a 17-vs-17 case-control, so the counterintuitive direction now has two independent cohorts behind it.",
      "links": [
       {
        "id": "audit_PCOS_Bifidobacterium_l1",
        "label": "PMID 41882707",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/"
+      },
+      {
+       "id": "audit_PCOS_Bifidobacterium_l2",
+       "label": "Case-control 2024 (Microbiol Spectr; 17 PCOS vs 17 matched controls: ↓Firmicutes/Bacteroidota, ↑Actinobacteriota/Proteobacteria, Bifidobacterium enriched, Bacteroides depleted; PMID 38990031)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38990031/"
       }
      ],
      "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "id": "new_pcos_subdoli",
+     "name": "Subdoligranulum",
+     "dir": "down",
+     "refs": "meta-analysis (PMID 42321548)",
+     "note": "Significantly decreased across 10 PCOS cohorts (858 individuals) in a 2026 genus-level meta-analysis.",
+     "links": [
+      {
+       "id": "new_pcos_subdoli_l1",
+       "label": "Meta-analysis 2026 (Reprod Sci; 10 PCOS cohorts, 858 individuals, genus level: ↑Bacteroides, ↓Subdoligranulum/NK4A214_group/Collinsella; PMID 42321548)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42321548/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "female"
+    },
+    {
+     "id": "new_pcos_collinsella",
+     "name": "Collinsella",
+     "dir": "down",
+     "refs": "meta-analysis (PMID 42321548)",
+     "note": "Significantly decreased across 10 PCOS cohorts (858 individuals) in a 2026 genus-level meta-analysis.",
+     "links": [
+      {
+       "id": "new_pcos_collinsella_l1",
+       "label": "Meta-analysis 2026 (Reprod Sci; 10 PCOS cohorts, 858 individuals, genus level: ↑Bacteroides, ↓Subdoligranulum/NK4A214_group/Collinsella; PMID 42321548)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42321548/"
+      }
+     ],
+     "evidence": "meta-analysis",
      "population": "female"
     },
     {
@@ -13782,6 +13879,23 @@
        "id": "cf_new_pcos_1_cf_badolescentis_lactate_utilisers_l1",
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_new_pcos_1_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_pcos_1_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ],
      "evidence": "derived",
