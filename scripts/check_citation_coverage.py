@@ -166,11 +166,16 @@ class Claim:
         """No identifier, but an author-year that a person could resolve."""
         return bool(AUTHOR_YEAR.search(self.ref_text))
 
-    @property
-    def bucket(self):
+    def works(self, canon=None):
+        """Identifiers collapsed to distinct papers. A PMC id and the same
+        paper's PMID are ONE source, not two - counting them separately is how
+        an entry looks corroborated when it cites one review twice."""
+        return {(canon or {}).get(i, i) for i in self.ids}
+
+    def bucket(self, canon=None):
         if not self.ids:
             return "none" if not self.has_text else "named"
-        return "one" if len(self.ids) == 1 else "multi"
+        return "one" if len(self.works(canon)) == 1 else "multi"
 
 
 def load_claims(seed_path, symptom_path):
@@ -315,8 +320,8 @@ def canonical_map(cache):
 BUCKET_LABEL = {
     "none": "No citation of any kind",
     "named": "Named paper, no identifier",
-    "one": "Exactly one identifier",
-    "multi": "Two or more identifiers",
+    "one": "Exactly one source",
+    "multi": "Two or more sources",
 }
 
 
@@ -326,7 +331,8 @@ def pct(n, total):
 
 def report(claims, derived, cache=None, top=10):
     total = len(claims)
-    buckets = Counter(c.bucket for c in claims)
+    canon = canonical_map(cache) if cache else {}
+    buckets = Counter(c.bucket(canon) for c in claims)
     single = buckets["none"] + buckets["named"] + buckets["one"]
 
     print(f"CITATION COVERAGE - {total} measured claims "
@@ -355,7 +361,7 @@ def report(claims, derived, cache=None, top=10):
     # Hygiene, not coverage: is the identifier stated where a human reads it?
     url_only = sum(1 for c in claims if c.ids and not c.ref_ids)
     orphan = [c for c in claims if c.orphan_bib_ref]
-    traceable = [c for c in claims if c.bucket == "named" and c.traceable_text]
+    traceable = [c for c in claims if c.bucket(canon) == "named" and c.traceable_text]
     print("  Ref-field hygiene")
     print(f"    identifier only in the URL, not the ref text : {url_only} ({pct(url_only, total)})")
     print(f"    ref text is an orphaned bibliography number  : {len(orphan)}")
@@ -367,7 +373,7 @@ def report(claims, derived, cache=None, top=10):
     by_group = defaultdict(lambda: [0, 0])
     for c in claims:
         by_group[(c.source, c.group)][1] += 1
-        if c.bucket != "multi":
+        if c.bucket(canon) != "multi":
             by_group[(c.source, c.group)][0] += 1
     rows = sorted(by_group.items(), key=lambda kv: (-kv[1][0], kv[0][1]))[:top]
     for (source, group), (thin, n) in rows:
@@ -376,12 +382,10 @@ def report(claims, derived, cache=None, top=10):
     print()
 
     if cache is not None:
-        canon = canonical_map(cache)
         unresolved = sorted(i for i in all_ids if i in cache and not cache[i]["ok"])
         unchecked = sorted(i for i in all_ids if i not in cache)
         works = {canon.get(i, i) for i in all_ids}
-        inflated = [c for c in claims
-                    if len(c.ids) > 1 and len({canon.get(i, i) for i in c.ids}) == 1]
+        inflated = [c for c in claims if len(c.ids) > 1 and len(c.works(canon)) == 1]
         print("  Verification")
         print(f"    identifiers checked                : {len(all_ids) - len(unchecked)}")
         print(f"    DID NOT RESOLVE                    : {len(unresolved)}")
@@ -392,9 +396,7 @@ def report(claims, derived, cache=None, top=10):
               f" (from {len(all_ids)} identifiers)")
         print(f"    claims that look 2+ but cite one work: {len(inflated)}")
         if inflated:
-            real_multi = buckets["multi"] - len(inflated)
-            print(f"    genuinely corroborated (2+ works)  : {real_multi}"
-                  f" ({pct(real_multi, total)})")
+            print(f"    claims citing one paper under 2 ids: {len(inflated)} (already excluded above)")
             for c in inflated[:10]:
                 print(f"      {c.label}: {', '.join(sorted(c.ids))}")
         if unchecked:
@@ -491,6 +493,12 @@ def main():
     claims, derived = load_claims(args.seed, args.symptom)
 
     cache = None
+    try:
+        cache = json.load(open(args.cache, encoding="utf-8"))
+        print(f"(using {args.cache} to collapse ids of the same paper; "
+              f"--verify refreshes it)")
+    except (OSError, ValueError):
+        pass
     if args.verify:
         ids = set()
         for c in claims:
@@ -504,7 +512,7 @@ def main():
         wanted = [c for c in claims
                   if (c.orphan_bib_ref if args.list == "orphan"
                       else (c.bucket == "named" and c.traceable_text) if args.list == "traceable"
-                      else c.bucket == args.list)]
+                      else c.bucket(canonical_map(cache) if cache else {}) == args.list)]
         if args.group:
             wanted = [c for c in wanted if c.group.lower() == args.group.lower()]
         print(f"  --- {len(wanted)} claim(s) in '{args.list}' ---")

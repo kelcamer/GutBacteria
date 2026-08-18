@@ -5,6 +5,7 @@ import { filterConditions } from '../lib/studyFilters'
 import { Button } from './Button'
 import { Modal } from './Modal'
 import { RankBadge } from './RankBadge'
+import { SourceBadge } from './SourceBadge'
 import { Italic } from './Italic'
 import { DirTriangle } from './DirTriangle'
 import { LinksEditor } from './LinksEditor'
@@ -124,6 +125,7 @@ export function ConditionDetail({ filters, condition, onBack, onUpdate, onUpsert
                       style={{ borderBottom: `1px solid ${theme.ink3}` }}
                     >
                       <RankBadge name={t.name} />
+                      <SourceBadge entry={t} derived={t.derived} />
                       <Italic className="text-sm truncate flex-1">{t.name}</Italic>
                       {t.links?.length > 0 ? (
                         <a
