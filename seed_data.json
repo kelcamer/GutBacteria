@@ -1465,7 +1465,7 @@
    "name": "ADHD",
    "abbr": "ADHD",
    "color": "#FFA62B",
-   "note": "",
+   "note": "Near-even split by design of the literature, not by indecision: 18 taxa up, 15 down, 2 contested across 20 papers — one of the better-sourced conditions here (23% of entries have two independent papers behind them). The most consistent signals are DEPLETION of butyrate producers (Faecalibacterium, Bifidobacterium, Alistipes) and enrichment of Ruminococcus gnavus and the R. torques group. MEDICATION IS THE BIG CONFOUND: stimulants alter gut microbial growth and metabolism directly, and most cohorts here do not separate medicated from drug-naive children, so some of these arrows may be treatment effects rather than ADHD effects (PMID 42532353). History worth knowing: 10 ADHD taxa were REMOVED from this app in an earlier audit because their only source was an orphaned bibliography number, and a current 23-study systematic review of ADHD microbiota did not name any of them — see CITATION_AUDIT.md. What survives is what could be re-sourced.",
    "links": [
     {
      "id": "seed_77",
@@ -2135,7 +2135,7 @@
    "name": "Alzheimer's",
    "abbr": "AD",
    "color": "#FF6B6B",
-   "note": "",
+   "note": "The most contested condition in the atlas: 5 of 29 taxa are genuinely split (Bacteroides, Bifidobacterium, Dialister, Alistipes, Prevotella), which is a real property of this literature rather than a shortfall of reading. The reproducible core is loss of butyrate producers — Faecalibacterium, Roseburia, Lachnospiraceae, Blautia, Anaerostipes all down — alongside enrichment of Escherichia/Shigella, which Cattaneo 2017 tied specifically to amyloid-positive patients with peripheral inflammation. CAUSALITY IS UNRESOLVED AND THE DIRECTION MAY RUN BACKWARDS: dementia changes diet, mobility, medication and continence long before it is diagnosed, all of which reshape the microbiome, so a cross-sectional difference cannot tell you which came first. Akkermansia muciniphila appearing UP here while it is down in most other conditions is the clearest sign this pattern is not simply generic dysbiosis.",
    "links": [
     {
      "id": "seed_95",
@@ -2665,7 +2665,7 @@
    "name": "Schizophrenia",
    "abbr": "SCZ",
    "color": "#3DDC97",
-   "note": "",
+   "note": "Balanced 11 up / 11 down with nothing contested — unusually tidy for a psychiatric microbiome literature, and worth treating as a warning rather than a reassurance: only 14% of these entries have a second paper behind them, so the tidiness may reflect thin sourcing rather than agreement. ANTIPSYCHOTICS ARE THE DOMINANT CONFOUND. Olanzapine and clozapine change gut microbial composition and drive weight gain on their own, and most cohorts here are medicated, so an unknown share of these arrows belongs to the drug rather than the illness (PMID 42532353). The strongest causal evidence is not observational: transplanting stool from drug-free patients into mice produced schizophrenia-like behaviour and disturbed the glutamate-glutamine-GABA cycle and kynurenine pathway (Zheng 2019, Zhu 2020) — animal work, but it is the part of this literature that survives the medication objection.",
    "links": [
     {
      "id": "seed_124",
@@ -3075,7 +3075,7 @@
    "name": "Anxiety",
    "abbr": "ANX",
    "color": "#F45BAF",
-   "note": "",
+   "note": "The best-corroborated of the four psychiatric conditions in this atlas: 45% of entries rest on two independent papers, against 14-23% for ADHD, Alzheimer's and schizophrenia. The pattern is lopsided and coherent — 14 taxa down against 5 up — and it is essentially a butyrate-producer depletion (Faecalibacterium, Roseburia, Butyricicoccus, Subdoligranulum, Fusicatenibacter, Agathobacter, Eubacterium rectale) with Escherichia-Shigella and Ruminococcus gnavus rising in their place. Mechanistically that fits: butyrate feeds the gut lining and damps inflammation, and several of these genera also produce or regulate GABA. TWO CAVEATS. Most cohorts here measure generalised anxiety disorder specifically, not anxiety as a symptom, so read the arrows as GAD findings. And anxiety travels with IBS often enough that a shared gut phenotype may be doing some of the work in both — see this app's Irritable bowel syndrome entry for the overlap.",
    "links": [
     {
      "id": "seed_148",
