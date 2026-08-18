@@ -1738,26 +1738,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -1818,26 +1818,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity. PREMISE FLAGGED: this genus is an acetate/hydrogen producer rather than a butyrate producer, so the 'lost butyrate' reasoning above may not apply to it at all - and hydrogen production is itself a bloating mechanism, which would point the opposite way. Needs a real measurement.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity. PREMISE FLAGGED: this genus is an acetate/hydrogen producer rather than a butyrate producer, so the 'lost butyrate' reasoning above may not apply to it at all - and hydrogen production is itself a bloating mechanism, which would point the opposite way. Needs a real measurement.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states. PREMISE FLAGGED: this genus is an acetate/hydrogen producer rather than a butyrate producer, so the 'lost butyrate' reasoning above may not apply to it at all - and hydrogen production is itself a bloating mechanism, which would point the opposite way. Needs a real measurement.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ]
@@ -2569,26 +2569,26 @@
     },
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -2798,26 +2798,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -2930,26 +2930,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -3450,26 +3450,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -3732,26 +3732,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -4079,26 +4079,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -4261,26 +4261,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -4437,26 +4437,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ]
@@ -4485,26 +4485,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity. PREMISE FLAGGED: this genus is an acetate/hydrogen producer rather than a butyrate producer, so the 'lost butyrate' reasoning above may not apply to it at all - and hydrogen production is itself a bloating mechanism, which would point the opposite way. Needs a real measurement.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity. PREMISE FLAGGED: this genus is an acetate/hydrogen producer rather than a butyrate producer, so the 'lost butyrate' reasoning above may not apply to it at all - and hydrogen production is itself a bloating mechanism, which would point the opposite way. Needs a real measurement.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states. PREMISE FLAGGED: this genus is an acetate/hydrogen producer rather than a butyrate producer, so the 'lost butyrate' reasoning above may not apply to it at all - and hydrogen production is itself a bloating mechanism, which would point the opposite way. Needs a real measurement.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -4574,26 +4574,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ]
@@ -4730,26 +4730,26 @@
     },
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -4909,26 +4909,26 @@
     },
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5147,26 +5147,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -6384,26 +6384,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ]
@@ -6415,26 +6415,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ]
@@ -6610,26 +6610,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ]
@@ -6740,26 +6740,26 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "SCFA loss weakens colonocyte energy supply and barrier integrity.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Reduced SCFA output is consistently tied to low-grade inflammatory states.",
-     "ref": "PMC6421268",
+     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ]
