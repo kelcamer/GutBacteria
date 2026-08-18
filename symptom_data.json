@@ -2317,18 +2317,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -3786,18 +3786,18 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -3905,18 +3905,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -4024,18 +4024,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -4055,18 +4055,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -4165,18 +4165,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -4213,18 +4213,18 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature. LINEAGE ERROR: Enterococcus is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue. LINEAGE ERROR: Enterococcus is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5281,18 +5281,18 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature. LINEAGE ERROR: Veillonella is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue. LINEAGE ERROR: Veillonella is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5312,18 +5312,18 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature. LINEAGE ERROR: Fusobacterium is Fusobacteriota, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue. LINEAGE ERROR: Fusobacterium is Fusobacteriota, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5360,18 +5360,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -5383,18 +5383,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -5414,18 +5414,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -5759,18 +5759,18 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature. LINEAGE ERROR: Bacteroidales is Bacteroidetes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue. LINEAGE ERROR: Bacteroidales is Bacteroidetes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -6018,18 +6018,18 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature. LINEAGE ERROR: Veillonellaceae is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue. LINEAGE ERROR: Veillonellaceae is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -6072,18 +6072,18 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -6137,18 +6137,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -6169,18 +6169,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -6192,18 +6192,18 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -6215,18 +6215,18 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature. LINEAGE ERROR: Megasphaera is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue. LINEAGE ERROR: Megasphaera is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -6238,18 +6238,18 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -6354,18 +6354,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -6445,18 +6445,18 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature. LINEAGE ERROR: Mitsuokella is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue. LINEAGE ERROR: Mitsuokella is Firmicutes, not a Proteobacterium — the review this cites is about the Proteobacteria phylum and does not cover it.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     }
    ],
@@ -6522,18 +6522,18 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Fatigue",
-     "note": "Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
-     "ref": "PMC5688358",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -6561,18 +6561,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -6770,18 +6770,18 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Blooms of this group co-occur with flares of GI pain and inflammation.",
-     "ref": "PMC7524151",
+     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
