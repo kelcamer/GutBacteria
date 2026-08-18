@@ -14567,6 +14567,22 @@
      ],
      "evidence": "human-cohort",
      "population": "female"
+    },
+    {
+     "id": "new_pmdd_1_bacteroidetes",
+     "name": "Bacteroidetes",
+     "dir": "down",
+     "refs": "Case-control 16S, 21 PMDs/22 controls (PMID 35622782)",
+     "note": "Phylum-level relative abundance lower in premenstrual-disorder women vs controls (16S, n=21 vs 22). Same study behind this condition's genus entries; note its genus differences lost significance after FDR correction, surviving only in LEfSe.",
+     "links": [
+      {
+       "id": "new_pmdd_1_bacteroidetes_l1",
+       "label": "Case-control 16S, 21 PMDs/22 controls (PMID 35622782)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35622782/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
     }
    ]
   },
@@ -14819,6 +14835,38 @@
       }
      ],
      "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "id": "new_meno_1_firmicutes",
+     "name": "Firmicutes",
+     "dir": "none",
+     "refs": "Meta-analysis, 7 studies (PMID 42006274)",
+     "note": "Tested, no reliable effect at phylum level: a 7-study meta-analysis (45 POI + 1,222 postmenopausal women vs 463 premenopausal controls) found no significant difference in Firmicutes, Bacteroidetes/Firmicutes ratio, or α-diversity by estrogen status. Heterogeneity was high. Same shape as iron deficiency and FUT2 — the estrogen-microbiome link, if real, is not visible at the phylum rank.",
+     "links": [
+      {
+       "id": "new_meno_1_firmicutes_l1",
+       "label": "Meta-analysis, 7 studies (PMID 42006274)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42006274/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "female"
+    },
+    {
+     "id": "new_meno_1_bacteroidetes",
+     "name": "Bacteroidetes",
+     "dir": "none",
+     "refs": "Meta-analysis, 7 studies (PMID 42006274)",
+     "note": "Tested, no reliable effect at phylum level: a 7-study meta-analysis (45 POI + 1,222 postmenopausal women vs 463 premenopausal controls) found no significant difference in Bacteroidetes, Bacteroidetes/Firmicutes ratio, or α-diversity by estrogen status. Heterogeneity was high. Same shape as iron deficiency and FUT2 — the estrogen-microbiome link, if real, is not visible at the phylum rank.",
+     "links": [
+      {
+       "id": "new_meno_1_bacteroidetes_l1",
+       "label": "Meta-analysis, 7 studies (PMID 42006274)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42006274/"
+      }
+     ],
+     "evidence": "meta-analysis",
      "population": "female"
     },
     {
@@ -15349,6 +15397,38 @@
      ],
      "evidence": "human-cohort",
      "population": "mixed"
+    },
+    {
+     "id": "new_estro_firmicutes",
+     "name": "Firmicutes",
+     "dir": "none",
+     "refs": "Meta-analysis, 7 studies (PMID 42006274)",
+     "note": "Tested, no reliable effect at phylum level: a 7-study meta-analysis (45 POI + 1,222 postmenopausal women vs 463 premenopausal controls) found no significant difference in Firmicutes, Bacteroidetes/Firmicutes ratio, or α-diversity by estrogen status. Heterogeneity was high. Same shape as iron deficiency and FUT2 — the estrogen-microbiome link, if real, is not visible at the phylum rank.",
+     "links": [
+      {
+       "id": "new_estro_firmicutes_l1",
+       "label": "Meta-analysis, 7 studies (PMID 42006274)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42006274/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "female"
+    },
+    {
+     "id": "new_estro_bacteroidetes",
+     "name": "Bacteroidetes",
+     "dir": "none",
+     "refs": "Meta-analysis, 7 studies (PMID 42006274)",
+     "note": "Tested, no reliable effect at phylum level: a 7-study meta-analysis (45 POI + 1,222 postmenopausal women vs 463 premenopausal controls) found no significant difference in Bacteroidetes, Bacteroidetes/Firmicutes ratio, or α-diversity by estrogen status. Heterogeneity was high. Same shape as iron deficiency and FUT2 — the estrogen-microbiome link, if real, is not visible at the phylum rank.",
+     "links": [
+      {
+       "id": "new_estro_bacteroidetes_l1",
+       "label": "Meta-analysis, 7 studies (PMID 42006274)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42006274/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "female"
     },
     {
      "id": "cf_new_estro_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",

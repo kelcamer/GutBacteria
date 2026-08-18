@@ -325,6 +325,7 @@ export const PDF_LINKS = {
   "https://pubmed.ncbi.nlm.nih.gov/41978167/": "https://www.mdpi.com/2072-6643/18/7/1117/pdf?version=1774949762",
   "https://pubmed.ncbi.nlm.nih.gov/41987898/": "https://public-pages-files-2025.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2026.1772977/pdf",
   "https://pubmed.ncbi.nlm.nih.gov/41995552/": "https://doi.org/10.1097/md.0000000000048225",
+  "https://pubmed.ncbi.nlm.nih.gov/42006274/": "https://public-pages-files-2025.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1780806/pdf",
   "https://pubmed.ncbi.nlm.nih.gov/42006367/": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2025.1552134/pdf",
   "https://pubmed.ncbi.nlm.nih.gov/42014402/": "https://www.nature.com/articles/s41467-026-71264-8.pdf",
   "https://pubmed.ncbi.nlm.nih.gov/42020426/": "https://www.mdpi.com/2072-6643/17/17/2837/pdf?version=1756632039",
