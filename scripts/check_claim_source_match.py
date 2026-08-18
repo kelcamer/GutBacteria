@@ -60,6 +60,9 @@ ANIMAL_WORDS = re.compile(r"\b(mice|mouse|murine|rats?|germ-free|piglets?|in vit
 ANIMAL_DECLARED = re.compile(r"\b(mouse|mice|rat|animal|in vitro|in-vitro|germ-free|MODEL)\b", re.I)
 # "Bifidobacterium adolescentis" -> the genus half is "Bifidobacterium"
 SPECIES = re.compile(r"^([A-Z][a-z]+)\s+([a-z][a-z-]+)$")
+# Genera whose dominant species is effectively the genus in practice, so
+# "Akkermansia" in a paper means A. muciniphila and is not an over-claim.
+DOMINANT_SPECIES_GENERA = {"Akkermansia", "Faecalibacterium"}
 
 
 def citation_text(claim):
@@ -114,8 +117,18 @@ def detect(claims):
             out["site-mismatch"].append((c, f"citation is about '{hit}', claim is gut"))
 
         m = SPECIES.match(name)
-        if m and not re.search(re.escape(m.group(2)), text, re.I):
-            out["rank-mismatch"].append((c, f"species claim, citation names only '{m.group(1)}'"))
+        if m:
+            genus, epithet = m.group(1), m.group(2)
+            epithet_present = re.search(re.escape(epithet), text, re.I)
+            genus_present = re.search(rf"\b{re.escape(genus)}\b", text)
+            # Only a real over-claim when the paper NAMED the genus but not the
+            # species, AND the genus is not one whose dominant species is
+            # effectively synonymous with it (a paper saying "Akkermansia" means
+            # A. muciniphila). Firing on every terse PMID-only citation - 142 of
+            # them, mostly correct - was noise, not signal (Rule 3).
+            if genus not in DOMINANT_SPECIES_GENERA and genus_present and not epithet_present:
+                out["rank-mismatch"].append(
+                    (c, f"species claim '{name}', but the citation names only the genus '{genus}'"))
 
         if ANIMAL_WORDS.search(text) and not ANIMAL_DECLARED.search(c.ref_text):
             hit = ANIMAL_WORDS.search(text).group(0)

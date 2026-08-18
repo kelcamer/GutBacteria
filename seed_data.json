@@ -4673,7 +4673,7 @@
      "name": "Candida albicans",
      "dir": "up",
      "refs": "PMID 35892094",
-     "note": "A 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus,\" and separately cites a case-control study finding non-secretor status predisposes to vaginal candidiasis (Kulkarni & Venkatesh 2004) and non-secretion of blood group antigens associated with susceptibility to Candida species infection (Thom et al. 1989). Not on the symptom map by design: it is a fungus, and that map is bacterial.",
+     "note": "A 2022 review states non-secretors are \"often more commonly related to low-level infections including yeast (Candida) and Streptococcus,\" and separately cites a case-control study finding non-secretor status predisposes to vaginal candidiasis (Kulkarni & Venkatesh 2004) and non-secretion of blood group antigens associated with susceptibility to Candida species infection (Thom et al. 1989). Not on the symptom map by design: it is a fungus, and that map is bacterial. RANK CAVEAT: the cited sources say 'Candida species' / yeast generally, not C. albicans specifically — shown under the dominant pathogenic species, but the evidence is genus-level.",
      "links": [
       {
        "id": "seed_209_fp28_l1",
