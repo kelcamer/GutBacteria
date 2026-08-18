@@ -1196,6 +1196,25 @@ export const BRAIN_DATA = [
             "url": "https://pubmed.ncbi.nlm.nih.gov/18952675/"
           }
         ]
+      },
+      {
+        "id": "brain_ocd_sma",
+        "name": "Supplementary motor area",
+        "dir": "up",
+        "refs": "PMID 42217473; PMID 42273591",
+        "note": "Motor-planning hub, a standard OCD rTMS target that was missing here despite the full cortico-striatal-thalamic circuit being present. SMA/pre-SMA is hyperactive in OCD (excess motor-inhibition/error-monitoring demand driving compulsions), which is why low-frequency (inhibitory) rTMS to the left pre-SMA is used - directly tested in a 58-patient refractory-OCD trial (PMID 42217473); treatment-naive OCD also shows altered ACC-SMA connectivity (PMID 42273591).",
+        "links": [
+          {
+            "id": "brain_ocd_sma_l1",
+            "label": "Pre-SMA vs DLPFC rTMS trial in refractory OCD, n=58 (PMID 42217473)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42217473/"
+          },
+          {
+            "id": "brain_ocd_sma_l2",
+            "label": "ACC-SMA connectivity in treatment-naive OCD (PMID 42273591)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42273591/"
+          }
+        ]
       }
     ]
   },
@@ -2304,6 +2323,25 @@ export const BRAIN_DATA = [
             "url": "https://pubmed.ncbi.nlm.nih.gov/38682011/"
           }
         ]
+      },
+      {
+        "id": "brain_ptsd_vmpfc",
+        "name": "Ventral medial frontal cortex",
+        "dir": "down",
+        "refs": "PMID 42296671; PMID 42369511",
+        "note": "The fear-extinction region, and the textbook PTSD prefrontal finding that was missing here despite amygdala/hippocampus/ACC all being present. vmPFC normally inhibits the amygdala to extinguish learned fear; in PTSD it is HYPOACTIVE - a longitudinal fMRI study found PTSD survivors developed decreased vmPFC activation during fear acquisition and safe-cue learning over the post-trauma year (PMID 42296671), with reduced pulvinar-vmPFC connectivity during contextual fear renewal (PMID 42369511).",
+        "links": [
+          {
+            "id": "brain_ptsd_vmpfc_l1",
+            "label": "Longitudinal fear-learning fMRI, PTSD vs trauma-exposed (PMID 42296671)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42296671/"
+          },
+          {
+            "id": "brain_ptsd_vmpfc_l2",
+            "label": "Thalamocortical/vmPFC connectivity in fear renewal, n=524 (PMID 42369511)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42369511/"
+          }
+        ]
       }
     ]
   },
@@ -2473,6 +2511,25 @@ export const BRAIN_DATA = [
             "id": "brain_scz_t10_l2",
             "label": "Voxel-based meta-analysis, n=996/1,109 (PMID 36620665)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/36620665/"
+          }
+        ]
+      },
+      {
+        "id": "brain_scz_stg",
+        "name": "Superior temporal gyrus",
+        "dir": "down",
+        "refs": "PMID 42332027; PMID 41645532",
+        "note": "Auditory cortex, most tied to auditory hallucinations and a temporoparietal rTMS target - missing despite being one of the most replicated structural findings in schizophrenia. Reduced grey-matter volume in a transdiagnostic meta-analysis of 221 studies / 10,485 patients (more pronounced in SZ; PMID 42332027); STG-cingulate structural alterations correlate with auditory-hallucination severity (PMID 41645532).",
+        "links": [
+          {
+            "id": "brain_scz_stg_l1",
+            "label": "Transdiagnostic GMV meta-analysis, 221 studies/10,485 patients (PMID 42332027)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42332027/"
+          },
+          {
+            "id": "brain_scz_stg_l2",
+            "label": "STG-ACC neurite structure vs auditory hallucination score (PMID 41645532)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41645532/"
           }
         ]
       }
@@ -2842,6 +2899,25 @@ export const BRAIN_DATA = [
             "id": "brain_aud_t15_l1",
             "label": "Sullivan et al., n=44/39, cerebellar white matter (PMID 27130832)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/27130832/"
+          }
+        ]
+      },
+      {
+        "id": "brain_alc_dlpfc",
+        "name": "Dorsolateral prefrontal cortex",
+        "dir": "down",
+        "refs": "PMID 42142798; PMID 42475940",
+        "note": "Hypoactive in AUD and the rTMS/cTBS/tDCS target: right-DLPFC cTBS cut return-to-drinking risk over 12 months.",
+        "links": [
+          {
+            "id": "brain_alc_dlpfc_l1",
+            "label": "Right DLPFC cTBS, 12-mo drinking outcome (2026)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42142798/"
+          },
+          {
+            "id": "brain_alc_dlpfc_l2",
+            "label": "DLPFC tDCS for alcohol use disorder",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42475940/"
           }
         ]
       }
