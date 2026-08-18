@@ -77,6 +77,7 @@ Holds a verified scroll fix for the old `gut-flora-atlas.html` (`user-select: no
 
 ## Working rules — read before touching data
 
+- **[RULES.MD](RULES.MD)** — how to decide what an entry says. Rule 1: yellow is a last resort, weigh the evidence and use the stronger direction. Rule 2: data integrity and accuracy above all else.
 - **[MAP_LAYOUT_RULES.md](MAP_LAYOUT_RULES.md)** — layout rules and the checklist for adding nodes without creating a hairball.
 - **Check three axes before believing two studies disagree:** rank (genus vs species), sample site (stool vs mucosa), nomenclature era. Four FUT2 "contradictions" dissolved this way today — including one where "C. coccoides group (cluster XIVa)" turned out to *be* the Lachnospiraceae family, so a pregnancy cohort was sitting on the *Clostridium* node corroborating a *Lachnospiraceae* claim.
 - **Don't default to yellow.** The stronger study sets the arrow; the dissent stays named in the note with its *n* and why it is outweighed, plus what would flip it back. Use the grey `none` state when studies looked and found nothing — that is a different fact from disagreement.
