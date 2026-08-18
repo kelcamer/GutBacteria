@@ -4400,6 +4400,23 @@
      "population": "female"
     },
     {
+     "id": "seed_209_firmicutes_null",
+     "name": "Firmicutes",
+     "dir": "none",
+     "refs": "Wacklin et al. 2014, PLOS ONE - 71 adults screened, 24 sequenced (12 non-secretors / 12 secretors), pyrosequencing + HITChip (PMID 24733310)",
+     "note": "Tested, no phylum-level difference. The study this app leans on most for FUT2 measured it directly: 'at the phylum level, the non-secretors, secretors and FUT2 genotypes shared similar microbiota compositions, dominated by Firmicutes (on average 93%)' - same result by HITChip (84%). WHY IT LOOKS OTHERWISE: several individual Firmicutes genera ARE higher in non-secretors in that same study - Clostridium, Blautia, Dorea, Ruminococcus gnavus and C. sphenoides - so the impression that 'non-secretors have more Firmicutes' is right about the members and wrong about the total. Non-secretors also had significantly lower diversity (p=0.001).",
+     "links": [
+      {
+       "id": "seed_209_firmicutes_l1",
+       "label": "Wacklin et al. 2014 - no phylum-level difference by secretor status (PMID 24733310)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "evidence_source": "hand-classified",
+     "population": "unknown"
+    },
+    {
      "id": "cf_seed_209_cf_infantis_ehallii_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "down",
@@ -4459,23 +4476,6 @@
      ],
      "evidence": "derived",
      "population": "n/a"
-    },
-    {
-     "id": "seed_209_firmicutes_null",
-     "name": "Firmicutes",
-     "dir": "none",
-     "refs": "Wacklin et al. 2014, PLOS ONE - 71 adults screened, 24 sequenced (12 non-secretors / 12 secretors), pyrosequencing + HITChip (PMID 24733310)",
-     "note": "Tested, no phylum-level difference. The study this app leans on most for FUT2 measured it directly: 'at the phylum level, the non-secretors, secretors and FUT2 genotypes shared similar microbiota compositions, dominated by Firmicutes (on average 93%)' - same result by HITChip (84%). WHY IT LOOKS OTHERWISE: several individual Firmicutes genera ARE higher in non-secretors in that same study - Clostridium, Blautia, Dorea, Ruminococcus gnavus and C. sphenoides - so the impression that 'non-secretors have more Firmicutes' is right about the members and wrong about the total. Non-secretors also had significantly lower diversity (p=0.001).",
-     "links": [
-      {
-       "id": "seed_209_firmicutes_l1",
-       "label": "Wacklin et al. 2014 - no phylum-level difference by secretor status (PMID 24733310)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
-      }
-     ],
-     "evidence": "human-cohort",
-     "evidence_source": "hand-classified",
-     "population": "unknown"
     }
    ]
   },
@@ -9592,7 +9592,7 @@
    "name": "Endometriosis",
    "abbr": "ENDO",
    "color": "#ED64A6",
-   "note": "Estrogen-dependent inflammatory disease (endometrial-like tissue outside the uterus); frequently comorbid with IBS. Two microbiomes matter — gut and reproductive tract — and the 'estrobolome' (gut microbes that deconjugate estrogens via β-glucuronidase) is the proposed mechanistic link. Gut findings (this atlas' focus): a higher Firmicutes/Bacteroidetes ratio, phylum-level rises in Actinobacteria/Proteobacteria/Verrucomicrobia, loss of Lactobacilli and butyrate producers (Ruminococcaceae, Lachnospira), and severity-dependent shifts (Dialister ↓, Streptococcus/Lactobacillus ↑ with stage; Prevotella/Bacteroides ↓ in advanced disease). Directions are frequently contested between Shan 2020, Svensson 2021 and the 2025 meta-analysis, so several taxa here carry explicit caveats. See also this app's Estrogen condition, which tracks the same estrobolome mechanism from the opposite direction — bacteria correlated with circulating estrogen level generally, rather than this entry's endometriosis-specific dysbiosis pattern.",
+   "note": "Estrogen-dependent inflammatory disease (endometrial-like tissue outside the uterus); frequently comorbid with IBS. Two microbiomes matter — gut and reproductive tract — and the 'estrobolome' (gut microbes that deconjugate estrogens via β-glucuronidase) is the proposed mechanistic link. Gut findings (this atlas' focus): a higher Firmicutes/Bacteroidetes ratio, phylum-level rises in Actinobacteria/Proteobacteria/Verrucomicrobia, loss of Lactobacilli and butyrate producers (Ruminococcaceae, Lachnospira), and severity-dependent shifts (Dialister ↓, Streptococcus/Lactobacillus ↑ with stage; Prevotella/Bacteroides ↓ in advanced disease). Directions are frequently contested between Shan 2020, Svensson 2021 and the 2025 meta-analysis, so several taxa here carry explicit caveats. See also this app's Estrogen condition, which tracks the same estrobolome mechanism from the opposite direction — bacteria correlated with circulating estrogen level generally, rather than this entry's endometriosis-specific dysbiosis pattern. Field-level caveat (2025-2026): a 36-study scoping review concluded there is no reproducible gut dysbiosis profile in endometriosis — the largest shotgun study, once corrected for multiple testing, found nothing — and an FDR-corrected Mendelian randomization of 119 genera left no genus standing. Read every arrow below as an association from small cohorts.",
    "links": [
     {
      "id": "seed_new_l78",
@@ -9613,6 +9613,16 @@
      "id": "seed_new_l81",
      "label": "Bidirectional review 2023 (Front Endocrinol; 2019 systematic review results)",
      "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2023.1110824/full"
+    },
+    {
+     "id": "seed_endo_l5",
+     "label": "Scoping review 2025 (Hum Reprod Open; 36 studies — no reproducible gut profile, largest shotgun study null after multiple-testing correction; PMID 41216332)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41216332/"
+    },
+    {
+     "id": "seed_endo_l6",
+     "label": "Mendelian randomization 2026 (J Med Microbiol; 119 genera, 8,288 cases — no genus survived FDR correction; PMID 42384549)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42384549/"
     }
    ],
    "taxa": [
@@ -9641,13 +9651,18 @@
      "id": "seed_endo_t2",
      "name": "Proteobacteria",
      "dir": "up",
-     "refs": "2019 review",
-     "note": "Phylum higher in the endometriosis gut; more patients show Shigella/Escherichia dominance.",
+     "refs": "2019 review; SR 2026 (PMID 41752750)",
+     "note": "Phylum higher in the endometriosis gut; more patients show Shigella/Escherichia dominance. Corroborated by a 19-study systematic review (2026).",
      "links": [
       {
        "id": "seed_new_l56",
        "label": "Bidirectional review 2023 (Front Endocrinol; 2019 systematic review results)",
        "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2023.1110824/full"
+      },
+      {
+       "id": "seed_endo_t2_l2",
+       "label": "Systematic review 2026 (Medicina; 19 human studies: ↑Proteobacteria/Firmicutes, ↓Bacteroidetes/Lactobacillus/Bifidobacterium, ↑E. coli/Streptococcus/Klebsiella; PMID 41752750)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41752750/"
       }
      ],
      "evidence": "meta-analysis",
@@ -9678,8 +9693,8 @@
      "id": "seed_endo_t4",
      "name": "Lactobacillus",
      "dir": "down",
-     "refs": "Talwar 2022; 2019 review",
-     "note": "Loss of beneficial Lactobacilli is a hallmark of endometriosis (most pronounced in the reproductive tract; Lactobacillaceae also ↓ in gut). Severity twist: with increasing disease stage some studies report Lactobacillus (and Streptococcus) rising while Dialister falls — so 'low Lactobacillus' is the baseline signal, not a monotonic one.",
+     "refs": "Talwar 2022; 2019 review; SR 2026 (PMID 41752750)",
+     "note": "Loss of beneficial Lactobacilli is a hallmark of endometriosis (most pronounced in the reproductive tract; Lactobacillaceae also ↓ in gut). Severity twist: with increasing disease stage some studies report Lactobacillus (and Streptococcus) rising while Dialister falls — so 'low Lactobacillus' is the baseline signal, not a monotonic one. Corroborated by the 19-study SR 2026.",
      "links": [
       {
        "id": "seed_new_l59",
@@ -9690,6 +9705,11 @@
        "id": "seed_new_l60",
        "label": "Gut+reproductive tract review 2023 (severity associations)",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10265574/"
+      },
+      {
+       "id": "seed_endo_t4_l3",
+       "label": "Systematic review 2026 (Medicina; 19 human studies: ↑Proteobacteria/Firmicutes, ↓Bacteroidetes/Lactobacillus/Bifidobacterium, ↑E. coli/Streptococcus/Klebsiella; PMID 41752750)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41752750/"
       }
      ],
      "evidence": "human-cohort",
@@ -9700,8 +9720,8 @@
      "id": "seed_endo_t5",
      "name": "Bifidobacterium",
      "dir": "down",
-     "refs": "meta 2025 (Shan 2021)",
-     "note": "Reduced mucosa-adherent barrier taxon in endometriosis per the 2025 meta-analysis (Shan 2021). Contested: Shan 2020 reported Bifidobacterium ↑ — direction is not settled.",
+     "refs": "meta 2025 (Shan 2021); SR 2026 (PMID 41752750); SR 2023 (PMID 36837548)",
+     "note": "Reduced mucosa-adherent barrier taxon in endometriosis per the 2025 meta-analysis (Shan 2021). Contested: Shan 2020 reported Bifidobacterium ↑ — direction is not settled. The 19-study SR 2026 also reports ↓; the 10-study SR 2023 reports ↑. Unsettled.",
      "links": [
       {
        "id": "seed_new_l61",
@@ -9712,6 +9732,16 @@
        "id": "seed_new_l62",
        "label": "Dysbiosis review incl. Shan 2020 findings",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12153989/"
+      },
+      {
+       "id": "seed_endo_t5_l3",
+       "label": "Systematic review 2026 (Medicina; 19 human studies: ↑Proteobacteria/Firmicutes, ↓Bacteroidetes/Lactobacillus/Bifidobacterium, ↑E. coli/Streptococcus/Klebsiella; PMID 41752750)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41752750/"
+      },
+      {
+       "id": "seed_endo_t5_l4",
+       "label": "Systematic review 2023 (Medicina; 10 studies, genus level: ↑Prevotella/Blautia/Bifidobacterium, ↓Paraprevotella/Ruminococcus/Lachnospira; PMID 36837548)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36837548/"
       }
      ],
      "evidence": "meta-analysis",
@@ -9721,8 +9751,8 @@
      "id": "seed_endo_t6",
      "name": "Lachnospira",
      "dir": "down",
-     "refs": "meta 2025; Shan 2020",
-     "note": "Depleted mucosa-adherent barrier taxon (Svensson 2021 via meta-analysis; Shan 2020). A newer, smaller case-control study (n=32 infertile endometriosis vs 13 controls, PMID 41660430) found Lachnospira significantly enriched rather than depleted — conflicting with the meta-analysis/Shan 2020 depletion finding above.",
+     "refs": "meta 2025; Shan 2020; scoping review 2025 (PMID 41216332); SR 2023 (PMID 36837548)",
+     "note": "Depleted mucosa-adherent barrier taxon (Svensson 2021 via meta-analysis; Shan 2020). A newer, smaller case-control study (n=32 infertile endometriosis vs 13 controls, PMID 41660430) found Lachnospira significantly enriched rather than depleted — conflicting with the meta-analysis/Shan 2020 depletion finding above. Strongest gut signal in this condition: the only taxon a 36-study scoping review found consistently depleted.",
      "links": [
       {
        "id": "seed_new_l63",
@@ -9733,6 +9763,16 @@
        "id": "seed_new_l64",
        "label": "Dysbiosis review incl. Shan 2020 findings",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12153989/"
+      },
+      {
+       "id": "seed_endo_t6_l3",
+       "label": "Scoping review 2025 (Hum Reprod Open; 36 studies — no reproducible gut profile, largest shotgun study null after multiple-testing correction; PMID 41216332)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41216332/"
+      },
+      {
+       "id": "seed_endo_t6_l4",
+       "label": "Systematic review 2023 (Medicina; 10 studies, genus level: ↑Prevotella/Blautia/Bifidobacterium, ↓Paraprevotella/Ruminococcus/Lachnospira; PMID 36837548)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36837548/"
       }
      ],
      "evidence": "meta-analysis",
@@ -9742,13 +9782,28 @@
      "id": "seed_endo_t7",
      "name": "Ruminococcus",
      "dir": "down",
-     "refs": "meta 2025 (Iavarone review)",
-     "note": "Decreased at genus level (Iavarone review, incorporated in the 2025 meta-analysis).",
+     "refs": "meta 2025 (Iavarone review); SR 2023 (PMID 36837548); metagenomics 2026 (PMID 41488762)",
+     "note": "Decreased at genus level (Iavarone review, incorporated in the 2025 meta-analysis). Corroborated twice (10-study SR 2023; 2026 gut metagenomics), but a 36-study scoping review still lists Ruminococcus as inconsistent across studies.",
      "links": [
       {
        "id": "seed_new_l65",
        "label": "Systematic review & meta-analysis 2025 (endometriosis gut microbiota)",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12092452/"
+      },
+      {
+       "id": "seed_endo_t7_l2",
+       "label": "Systematic review 2023 (Medicina; 10 studies, genus level: ↑Prevotella/Blautia/Bifidobacterium, ↓Paraprevotella/Ruminococcus/Lachnospira; PMID 36837548)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36837548/"
+      },
+      {
+       "id": "seed_endo_t7_l3",
+       "label": "Metagenomics 2026 (Int J Womens Health; 22 paired gut+vaginal samples: ↓Ruminococcus/Prevotella, ↑Dialister; PMID 41488762)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41488762/"
+      },
+      {
+       "id": "seed_endo_t7_l4",
+       "label": "Scoping review 2025 (Hum Reprod Open; 36 studies — no reproducible gut profile, largest shotgun study null after multiple-testing correction; PMID 41216332)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41216332/"
       }
      ],
      "evidence": "meta-analysis",
@@ -9758,13 +9813,18 @@
      "id": "seed_endo_t8",
      "name": "Ruminococcaceae",
      "dir": "down",
-     "refs": "narrative review",
-     "note": "Butyrate-producing family decreased in endometriosis — loss of anti-inflammatory SCFA capacity, a pattern shared with autoimmune dysbiosis. Cross-ref: Ruminococcaceae also ↓ in autism.",
+     "refs": "narrative review; rat model (PMID 38277707)",
+     "note": "Butyrate-producing family decreased in endometriosis — loss of anti-inflammatory SCFA capacity, a pattern shared with autoimmune dysbiosis. Cross-ref: Ruminococcaceae also ↓ in autism. Animal support: Ruminococcaceae also depleted in endometriotic rats.",
      "links": [
       {
        "id": "seed_new_l66",
        "label": "Narrative review 2023 (Ruminococcaceae / SCFA)",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9962481/"
+      },
+      {
+       "id": "seed_endo_t8_l2",
+       "label": "Rat model 2024 (J Pharm Biomed Anal; ↓Ruminococcaceae and ↑F/B ratio in endometriotic rats; PMID 38277707)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38277707/"
       }
      ],
      "evidence": "review",
@@ -9775,8 +9835,8 @@
      "id": "seed_endo_t9",
      "name": "Prevotella",
      "dir": "both",
-     "refs": "meta 2025 (Iavarone)",
-     "note": "Increased at genus level per the Iavarone review. Stage twist: in advanced / late-stage disease Prevotella (and Bacteroides) instead decrease. Cross-ref: Prevotella direction is strongly condition- and severity-dependent (↓ in autism/MS/PD). A newer, smaller case-control study (n=22 infertile endometriosis vs 13 controls, PMID 41488762) found the opposite — depleted Prevotella — reinforcing that direction is unsettled rather than resolving it. Genuine stage-dependent contradiction: a 2025 study (n=75, 39 early-stage/36 late-stage) found Bacteroides AND Prevotella decreased specifically in late-stage (Stage III/IV) disease with dysmenorrhea, while Bartonella/Snodgrassella were enriched instead (PMID 40189515) — opposite the existing 'up' citation here, which doesn't stratify by stage.",
+     "refs": "meta 2025 (Iavarone); metagenomics 2026 (PMID 41488762)",
+     "note": "Increased at genus level per the Iavarone review. Stage twist: in advanced / late-stage disease Prevotella (and Bacteroides) instead decrease. Cross-ref: Prevotella direction is strongly condition- and severity-dependent (↓ in autism/MS/PD). A newer, smaller case-control study (n=22 infertile endometriosis vs 13 controls, PMID 41488762) found the opposite — depleted Prevotella — reinforcing that direction is unsettled rather than resolving it. Genuine stage-dependent contradiction: a 2025 study (n=75, 39 early-stage/36 late-stage) found Bacteroides AND Prevotella decreased specifically in late-stage (Stage III/IV) disease with dysmenorrhea, while Bartonella/Snodgrassella were enriched instead (PMID 40189515) — opposite the existing 'up' citation here, which doesn't stratify by stage. 2026 gut metagenomics (n=22 paired) also found Prevotella depleted.",
      "links": [
       {
        "id": "seed_new_l67",
@@ -9792,6 +9852,11 @@
        "id": "seed_endo_t9_l2",
        "label": "Early- vs. late-stage endometriosis, n=75, Prevotella decreased late-stage (PMID 40189515)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40189515/"
+      },
+      {
+       "id": "seed_endo_t9_l4",
+       "label": "Metagenomics 2026 (Int J Womens Health; 22 paired gut+vaginal samples: ↓Ruminococcus/Prevotella, ↑Dialister; PMID 41488762)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41488762/"
       }
      ],
      "evidence": "meta-analysis",
@@ -9801,8 +9866,8 @@
      "id": "seed_endo_t10",
      "name": "Blautia",
      "dir": "up",
-     "refs": "Shan 2020; meta 2025",
-     "note": "Enriched in the endometriosis gut (Shan 2020; Iavarone). Cross-ref: opposite to the Blautia ↓ seen in autism and MS.",
+     "refs": "Shan 2020; meta 2025; SR 2023 (PMID 36837548); Endo-IBD 2026 (PMID 42006367)",
+     "note": "Enriched in the endometriosis gut (Shan 2020; Iavarone). Cross-ref: opposite to the Blautia ↓ seen in autism and MS. Corroborated: 10-study SR 2023, and enriched again in endometriosis+IBD (2026).",
      "links": [
       {
        "id": "seed_new_l69",
@@ -9813,6 +9878,16 @@
        "id": "seed_new_l70",
        "label": "Systematic review & meta-analysis 2025 (endometriosis gut microbiota)",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12092452/"
+      },
+      {
+       "id": "seed_endo_t10_l3",
+       "label": "Systematic review 2023 (Medicina; 10 studies, genus level: ↑Prevotella/Blautia/Bifidobacterium, ↓Paraprevotella/Ruminococcus/Lachnospira; PMID 36837548)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36837548/"
+      },
+      {
+       "id": "seed_endo_t10_l4",
+       "label": "16S 2026 (iScience; endometriosis vs endometriosis+IBD: Akkermansia/Alistipes depleted, Blautia enriched in Endo-IBD; PMID 42006367)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42006367/"
       }
      ],
      "evidence": "meta-analysis",
@@ -9822,13 +9897,18 @@
      "id": "seed_endo_t11",
      "name": "Dorea",
      "dir": "up",
-     "refs": "Shan 2020",
-     "note": "Enriched in the endometriosis gut (Shan 2020).",
+     "refs": "Shan 2020; scoping review 2025 (PMID 41216332)",
+     "note": "Enriched in the endometriosis gut (Shan 2020). A 36-study scoping review lists Dorea as inconsistent across studies.",
      "links": [
       {
        "id": "seed_new_l71",
        "label": "Dysbiosis review incl. Shan 2020 findings",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12153989/"
+      },
+      {
+       "id": "seed_endo_t11_l2",
+       "label": "Scoping review 2025 (Hum Reprod Open; 36 studies — Dorea listed among genera with inconsistent direction; PMID 41216332)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41216332/"
       }
      ],
      "evidence": "human-cohort",
@@ -9839,8 +9919,8 @@
      "id": "seed_endo_t12",
      "name": "Streptococcus",
      "dir": "up",
-     "refs": "Shan 2020; severity",
-     "note": "Enriched, and rises with disease severity alongside Lactobacillus while Dialister falls. Cross-ref: Streptococcus is also IBS-enriched.",
+     "refs": "Shan 2020; severity; SR 2026 (PMID 41752750)",
+     "note": "Enriched, and rises with disease severity alongside Lactobacillus while Dialister falls. Cross-ref: Streptococcus is also IBS-enriched. Corroborated by the 19-study SR 2026.",
      "links": [
       {
        "id": "seed_new_l72",
@@ -9851,6 +9931,11 @@
        "id": "seed_new_l73",
        "label": "Gut+reproductive tract review 2023 (severity associations)",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10265574/"
+      },
+      {
+       "id": "seed_endo_t12_l3",
+       "label": "Systematic review 2026 (Medicina; 19 human studies: ↑Proteobacteria/Firmicutes, ↓Bacteroidetes/Lactobacillus/Bifidobacterium, ↑E. coli/Streptococcus/Klebsiella; PMID 41752750)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41752750/"
       }
      ],
      "evidence": "human-cohort",
@@ -9860,14 +9945,19 @@
     {
      "id": "seed_endo_t13",
      "name": "Dialister",
-     "dir": "down",
-     "refs": "severity review",
-     "note": "Decreasing Dialister tracks increasing endometriosis severity (advanced stage, deep infiltrating disease, symptom burden). Cross-ref: Dialister is ↓ in depression and autism as well. A newer, smaller case-control study (n=22 vs 13, PMID 41488762) found Dialister enriched rather than depleted, and a bidirectional MR study (PMID 39650192) also linked higher Dialister to higher EMs risk — conflicting with the severity-based depletion pattern above.",
+     "dir": "both",
+     "refs": "severity review; metagenomics 2026 (PMID 41488762)",
+     "note": "Decreasing Dialister tracks increasing endometriosis severity (advanced stage, deep infiltrating disease, symptom burden). Cross-ref: Dialister is ↓ in depression and autism as well. A newer, smaller case-control study (n=22 vs 13, PMID 41488762) found Dialister enriched rather than depleted, and a bidirectional MR study (PMID 39650192) also linked higher Dialister to higher EMs risk — conflicting with the severity-based depletion pattern above. Now 'both': 2026 gut metagenomics found Dialister ENRICHED vs controls. Not necessarily a contradiction — that is a case-control comparison, this entry's ↓ is a severity gradient.",
      "links": [
       {
        "id": "seed_new_l74",
        "label": "Gut+reproductive tract review 2023 (severity associations)",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10265574/"
+      },
+      {
+       "id": "seed_endo_t13_l2",
+       "label": "Metagenomics 2026 (Int J Womens Health; 22 paired gut+vaginal samples: ↓Ruminococcus/Prevotella, ↑Dialister; PMID 41488762)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41488762/"
       }
      ],
      "evidence": "mendelian",
@@ -9877,13 +9967,18 @@
      "id": "seed_endo_t14",
      "name": "Eubacterium",
      "dir": "down",
-     "refs": "Shan 2020",
-     "note": "Decreased in the endometriosis gut (Shan 2020).",
+     "refs": "Shan 2020; ovarian endometriosis 2026 (PMID 42136892)",
+     "note": "Decreased in the endometriosis gut (Shan 2020). Contested one rank down: [Eubacterium] coprostanoligenes group was ↑ in ovarian endometriosis (2026).",
      "links": [
       {
        "id": "seed_new_l75",
        "label": "Dysbiosis review incl. Shan 2020 findings",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12153989/"
+      },
+      {
+       "id": "seed_endo_t14_l2",
+       "label": "Case-control 2026 (Reprod Med Biol; 24 ovarian endometriosis vs 14 controls: ↑[Eubacterium] coprostanoligenes group, ↑Megamonas; PMID 42136892)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42136892/"
       }
      ],
      "evidence": "human-cohort",
@@ -9894,13 +9989,18 @@
      "id": "seed_endo_t15",
      "name": "Escherichia-Shigella",
      "dir": "up",
-     "refs": "2019 review",
-     "note": "More endometriosis patients show gut Shigella/Escherichia dominance. Cross-ref: Escherichia-Shigella is ↑ in autism and (as E. coli) in IBS.",
+     "refs": "2019 review; SR 2026 (PMID 41752750)",
+     "note": "More endometriosis patients show gut Shigella/Escherichia dominance. Cross-ref: Escherichia-Shigella is ↑ in autism and (as E. coli) in IBS. Corroborated: 19-study SR 2026 lists E. coli among the consistently enriched opportunists.",
      "links": [
       {
        "id": "seed_new_l76",
        "label": "Bidirectional review 2023 (Front Endocrinol; 2019 systematic review results)",
        "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2023.1110824/full"
+      },
+      {
+       "id": "seed_endo_t15_l2",
+       "label": "Systematic review 2026 (Medicina; 19 human studies: ↑Proteobacteria/Firmicutes, ↓Bacteroidetes/Lactobacillus/Bifidobacterium, ↑E. coli/Streptococcus/Klebsiella; PMID 41752750)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41752750/"
       }
      ],
      "evidence": "meta-analysis",
@@ -9910,16 +10010,21 @@
      "id": "seed_endo_t16",
      "name": "Bacteroides",
      "dir": "down",
-     "refs": "late-stage 2025",
-     "note": "Decreased in advanced / late-stage endometriosis microbiomes; advanced disease is instead marked by enrichment of Bartonella and Snodgrassella and suppressed steroid-biosynthesis pathways.",
+     "refs": "late-stage 2025; scoping review 2025 (PMID 41216332)",
+     "note": "Decreased in advanced / late-stage endometriosis microbiomes; advanced disease is instead marked by enrichment of Bartonella and Snodgrassella and suppressed steroid-biosynthesis pathways. A 36-study scoping review lists Bacteroides as inconsistent across studies.",
      "links": [
       {
        "id": "seed_new_l77",
        "label": "Early- vs late-stage endometriosis microbiome (75 patients)",
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11974225/"
+      },
+      {
+       "id": "seed_endo_t16_l2",
+       "label": "Scoping review 2025 (Hum Reprod Open; 36 studies — no reproducible gut profile, largest shotgun study null after multiple-testing correction; PMID 41216332)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41216332/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -9927,7 +10032,7 @@
      "name": "Bacilli",
      "dir": "up",
      "refs": "Front Cell Infect Microbiol 2026 (n=32 endometriosis vs 13 controls, 16S; enrichment of Lachnospira/Bacilli/Lactobacillales/Parasutterella/Enterococcus/Veillonella)",
-     "note": "Class-level enrichment in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing.",
+     "note": "Class-level enrichment in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing. Single-sourced: searched again 2026-08, no other study reports this taxon in endometriosis.",
      "links": [
       {
        "id": "seed_660",
@@ -9943,7 +10048,7 @@
      "name": "Lactobacillales",
      "dir": "up",
      "refs": "Front Cell Infect Microbiol 2026 (n=32 endometriosis vs 13 controls, 16S; enrichment of Lachnospira/Bacilli/Lactobacillales/Parasutterella/Enterococcus/Veillonella)",
-     "note": "Order-level enrichment in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing — note this is gut, distinct from the well-known vaginal Lactobacillus depletion pattern.",
+     "note": "Order-level enrichment in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing — note this is gut, distinct from the well-known vaginal Lactobacillus depletion pattern. Single-sourced: searched again 2026-08, no other study reports this taxon in endometriosis.",
      "links": [
       {
        "id": "seed_662",
@@ -9959,7 +10064,7 @@
      "name": "Parasutterella",
      "dir": "up",
      "refs": "Front Cell Infect Microbiol 2026 (n=32 endometriosis vs 13 controls, 16S; enrichment of Lachnospira/Bacilli/Lactobacillales/Parasutterella/Enterococcus/Veillonella)",
-     "note": "Enriched in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing.",
+     "note": "Enriched in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing. Single-sourced: searched again 2026-08, no other study reports this taxon in endometriosis.",
      "links": [
       {
        "id": "seed_664",
@@ -9975,7 +10080,7 @@
      "name": "Enterococcus",
      "dir": "up",
      "refs": "Front Cell Infect Microbiol 2026 (n=32 endometriosis vs 13 controls, 16S; enrichment of Lachnospira/Bacilli/Lactobacillales/Parasutterella/Enterococcus/Veillonella)",
-     "note": "Enriched in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing.",
+     "note": "Enriched in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing. Single-sourced: searched again 2026-08, no other study reports this taxon in endometriosis.",
      "links": [
       {
        "id": "seed_666",
@@ -9991,7 +10096,7 @@
      "name": "Veillonella",
      "dir": "up",
      "refs": "Front Cell Infect Microbiol 2026 (n=32 endometriosis vs 13 controls, 16S; enrichment of Lachnospira/Bacilli/Lactobacillales/Parasutterella/Enterococcus/Veillonella)",
-     "note": "Enriched in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing.",
+     "note": "Enriched in infertile women with endometriosis (n=32) vs male-factor-infertility controls (n=13), 16S rRNA sequencing. Single-sourced: searched again 2026-08, no other study reports this taxon in endometriosis.",
      "links": [
       {
        "id": "seed_668",
@@ -10006,16 +10111,21 @@
      "id": "seed_669",
      "name": "Bacteroidetes",
      "dir": "down",
-     "refs": "Front Cell Infect Microbiol 2024 (high-throughput sequencing; EMT vs CTL; ↑Proteobacteria, ↓Bacteroidota/Firmicutes_A/Roseburia)",
-     "note": "Phylum-level (as Bacteroidota) significantly lower in endometriosis patients vs healthy controls by high-throughput sequencing — consistent in direction with the genus-level Bacteroides entry already tracked here as down.",
+     "refs": "Front Cell Infect Microbiol 2024 (high-throughput sequencing; EMT vs CTL; ↑Proteobacteria, ↓Bacteroidota/Firmicutes_A/Roseburia); SR 2026 (PMID 41752750)",
+     "note": "Phylum-level (as Bacteroidota) significantly lower in endometriosis patients vs healthy controls by high-throughput sequencing — consistent in direction with the genus-level Bacteroides entry already tracked here as down. Corroborated: 19-study systematic review 2026 also finds Bacteroidetes depleted.",
      "links": [
       {
        "id": "seed_670",
        "label": "Front Cell Infect Microbiol 2024 (high-throughput sequencing; EMT vs CTL; ↑Proteobacteria, ↓Bacteroidota/Firmicutes_A/Roseburia)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/39544278/"
+      },
+      {
+       "id": "seed_669_l2",
+       "label": "Systematic review 2026 (Medicina; 19 human studies: ↑Proteobacteria/Firmicutes, ↓Bacteroidetes/Lactobacillus/Bifidobacterium, ↑E. coli/Streptococcus/Klebsiella; PMID 41752750)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41752750/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -10023,7 +10133,7 @@
      "name": "Roseburia",
      "dir": "down",
      "refs": "Front Cell Infect Microbiol 2024 (high-throughput sequencing; EMT vs CTL; ↓Bacteroidales/Roseburia, correlated with CA125/CA199)",
-     "note": "Significantly lower relative abundance in endometriosis patients vs healthy controls, negatively correlated with CA125/CA199 tumor markers.",
+     "note": "Significantly lower relative abundance in endometriosis patients vs healthy controls, negatively correlated with CA125/CA199 tumor markers. Single-sourced: searched again 2026-08, no other study reports this taxon in endometriosis.",
      "links": [
       {
        "id": "seed_672",
@@ -10038,13 +10148,23 @@
      "id": "seed_673",
      "name": "Akkermansia muciniphila",
      "dir": "up",
-     "refs": "Hum Reprod 2026 (multi-omics, gut+vagina+endometrium+peritoneal fluid, n=22 vs 22 + validation n=20 vs 20; ↑Akkermansia muciniphila correlated with peritoneal serotonin)",
-     "note": "Significantly enriched in endometriosis patients (n=22, shared between gut and reproductive tract) vs uterine-fibroid surgical controls (n=22), positively correlated with peritoneal serotonin levels; Mendelian randomization linked both to elevated endometriosis risk.",
+     "refs": "Hum Reprod 2026 (multi-omics, gut+vagina+endometrium+peritoneal fluid, n=22 vs 22 + validation n=20 vs 20; ↑Akkermansia muciniphila correlated with peritoneal serotonin); Endo-IBD 2026 (PMID 42006367); mouse 2026 (PMID 42221483)",
+     "note": "Significantly enriched in endometriosis patients (n=22, shared between gut and reproductive tract) vs uterine-fibroid surgical controls (n=22), positively correlated with peritoneal serotonin levels; Mendelian randomization linked both to elevated endometriosis risk. Contested: Akkermansia was DEPLETED in endometriosis+IBD (2026), and in mice A. muciniphila supplementation shrank lesions — enrichment here may not be causal.",
      "links": [
       {
        "id": "seed_674",
        "label": "Hum Reprod 2026 (multi-omics, gut+vagina+endometrium+peritoneal fluid, n=22 vs 22 + validation n=20 vs 20; ↑Akkermansia muciniphila correlated with peritoneal serotonin)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/41903570/"
+      },
+      {
+       "id": "seed_673_l2",
+       "label": "16S 2026 (iScience; endometriosis vs endometriosis+IBD: Akkermansia/Alistipes depleted, Blautia enriched in Endo-IBD; PMID 42006367)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42006367/"
+      },
+      {
+       "id": "seed_673_l3",
+       "label": "Mouse model 2026 (Front Microbiol; oral A. muciniphila supplementation REDUCED lesion growth; PMID 42221483)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42221483/"
       }
      ],
      "evidence": "mendelian",
