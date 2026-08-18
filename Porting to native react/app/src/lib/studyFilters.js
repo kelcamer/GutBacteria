@@ -31,6 +31,12 @@ export const DEFAULT_FILTERS = {
   // other things you set once for the whole atlas, and because it has to
   // persist - having to re-group every visit was the point of moving it.
   groupGenus: true,
+  // Phylum is HIDDEN by default. A phylum averages thousands of species that
+  // move in opposite directions, so a phylum arrow is the rank most likely to
+  // wash out or mislead (iron deficiency, FUT2 and the estrobolome were all
+  // null at phylum, real one rank down). The finest-rank story is the default
+  // view; phylum is one toggle away for anyone who wants it.
+  hidePhylum: true,
   // Both read as ON = SHOW, matching every other toggle here, so nothing is
   // hidden until you ask for it. They filter LINKS by direction, not by
   // evidence quality - a contested or null link is a real finding, just not
@@ -51,10 +57,24 @@ export const FILTER_LABELS = {
   showContested: ['Enable conflicting microbes?', 'Shows links where studies disagree about the direction (yellow). Turn off to hide them and leave only findings that point one way'],
   showNull: ['Enable null findings?', 'Shows links that were tested and found NO reliable effect (grey). Turn off to hide them - useful once you have read them, since they are settled rather than open questions'],
   groupGenus: ['Genus grouping?', 'Shows one node per genus instead of separate genus and species nodes (Faecalibacterium and F. prausnitzii become one). Where members disagree the claim shows as contested rather than picking a side'],
+  hidePhylum: ['Hide phylum-level', 'Hidden by default. A phylum lumps together thousands of species that move in opposite directions, so a phylum arrow often washes out the real genus-level story (iron deficiency, FUT2 and estrogen were all null at phylum, real one rank down). Turn off to show phylum nodes'],
+}
+
+// A phylum-rank name, by suffix convention plus the handful that break it.
+// Mirrors taxonRank so the two never disagree about what a phylum is.
+const PHYLA = new Set([
+  'firmicutes', 'bacteroidetes', 'proteobacteria', 'actinobacteria',
+  'verrucomicrobia', 'verrucomicrobiota', 'fusobacteria', 'fusobacteriota',
+  'tenericutes', 'cyanobacteria', 'bacteroidota', 'actinobacteriota',
+  'pseudomonadota', 'bacillota', 'lentisphaerae', 'synergistota',
+])
+export function isPhylum(name) {
+  const n = String(name || '').trim().toLowerCase()
+  return PHYLA.has(n) || /(cutes|detes|bacteria|microbia|mycetes|chaetes)$/.test(n)
 }
 
 // True when an entry survives the current filters.
-export function entryPasses(entry, f, dir) {
+export function entryPasses(entry, f, dir, name) {
   if (!entry) return true
   // Defensive: a component rendered without the prop would otherwise crash the
   // whole map on `f.hideDerived`. Falling back to defaults degrades to "show
@@ -64,6 +84,9 @@ export function entryPasses(entry, f, dir) {
   const pop = entry.population
 
   if (entry.derived && f.hideDerived) return false
+  // Rank filter. name is the taxon (condition side) or its parent bacterium
+  // (symptom side); either way, drop phylum nodes when hidePhylum is on.
+  if (f.hidePhylum && isPhylum(name != null ? name : entry.name)) return false
   // Direction-based muting. Defaults are true, and `!== false` keeps filters
   // saved before these existed from silently hiding anything.
   if (dir === 'both' && f.showContested === false) return false
@@ -86,7 +109,7 @@ export function filterSymptomData(data, f) {
     const next = { ...b }
     for (const dir of ['up', 'down', 'both', 'none']) {
       if (!Array.isArray(b[dir])) continue
-      const kept = b[dir].filter((e) => entryPasses(e, f, dir))
+      const kept = b[dir].filter((e) => entryPasses(e, f, dir, b.name))
       if (kept.length !== b[dir].length) {
         removed += b[dir].length - kept.length
         next[dir] = kept
@@ -102,7 +125,7 @@ export function filterConditions(input, f) {
   if (!input) return input
   const one = (c) => {
     if (!c || !Array.isArray(c.taxa)) return c
-    const kept = c.taxa.filter((t) => entryPasses(t, f))
+    const kept = c.taxa.filter((t) => entryPasses(t, f, undefined, t.name))
     return kept.length === c.taxa.length ? c : { ...c, taxa: kept }
   }
   if (!Array.isArray(input)) return one(input)
@@ -120,13 +143,13 @@ export function filterConditions(input, f) {
 export function filterStats(seedConditions, symptomData, f) {
   let total = 0
   let hidden = 0
-  const count = (e) => {
+  const count = (e, name) => {
     total += 1
-    if (!entryPasses(e, f)) hidden += 1
+    if (!entryPasses(e, f, undefined, name)) hidden += 1
   }
-  ;(seedConditions || []).forEach((c) => (c.taxa || []).forEach(count))
+  ;(seedConditions || []).forEach((c) => (c.taxa || []).forEach((t) => count(t, t.name)))
   ;(symptomData?.bacteria || []).forEach((b) =>
-    ['up', 'down', 'both', 'none'].forEach((d) => (b[d] || []).forEach(count))
+    ['up', 'down', 'both', 'none'].forEach((d) => (b[d] || []).forEach((e) => count(e, b.name)))
   )
   return { total, hidden, shown: total - hidden }
 }

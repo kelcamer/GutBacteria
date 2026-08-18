@@ -98,7 +98,7 @@ export function SettingsTab({ filters, setFilters }) {
       <div className="font-mono mt-4 mb-2" style={{ fontSize: 10, color: theme.muted, letterSpacing: '.1em' }}>
         DISPLAY
       </div>
-      {['groupGenus', 'showContested', 'showNull'].map((id) => (
+      {['groupGenus', 'hidePhylum', 'showContested', 'showNull'].map((id) => (
         <Toggle key={id} id={id} on={filters[id]} onChange={set(id)} />
       ))}
 
