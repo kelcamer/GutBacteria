@@ -3824,7 +3824,7 @@
    "name": "FUT2 (Non-secretor)",
    "abbr": "FUT2",
    "color": "#C3E88D",
-   "note": "Baseline host-genotype profile, not a diagnosis. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on — so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3×10⁻¹⁸, n=8,344 T1D cases) that isn't just genetic on its own — a 2020 mini-review (PMID 33425974) reports non-secretor children share the SAME low-Bifidobacterium/high-Bacteroides gut-microbiota signature as children with T1D itself, proposing FUT2-shaped early-life bifidobacteria colonization as a plausible mechanistic bridge between the two. See also this app's Type 1 Diabetes condition. Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each. Cognitive link worth flagging: Clostridiaceae — reduced in non-secretors (Kumar et al. 2015) — is one of only two bacteria this app links to Poor working memory (PMID 35010939, its depletion associated with worse working memory quality), so non-secretor status may plausibly extend to reduced working memory via this shared bacterial pathway, though this specific chain hasn't been tested directly in one study.",
+   "note": "Baseline host-genotype profile, not a diagnosis. POWER CAVEAT, read first: the largest study of this question — 1,503 UK twins — found NO robust association between secretor status and gut microbiome composition, diversity or any individual taxon (PMID 27871240), and a 35-adult study was also null (PMID 28358023). Most taxon arrows below come from cohorts of 12-14 non-secretors. Treat them as small-study signals, not settled facts. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on — so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3×10⁻¹⁸, n=8,344 T1D cases) that isn't just genetic on its own — a 2020 mini-review (PMID 33425974) reports non-secretor children share the SAME low-Bifidobacterium/high-Bacteroides gut-microbiota signature as children with T1D itself, proposing FUT2-shaped early-life bifidobacteria colonization as a plausible mechanistic bridge between the two. See also this app's Type 1 Diabetes condition. Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each. Cognitive link worth flagging: Clostridiaceae — reduced in non-secretors (Kumar et al. 2015) — is one of only two bacteria this app links to Poor working memory (PMID 35010939, its depletion associated with worse working memory quality), so non-secretor status may plausibly extend to reduced working memory via this shared bacterial pathway, though this specific chain hasn't been tested directly in one study.",
    "links": [
     {
      "id": "seed_210",
@@ -3880,6 +3880,16 @@
      "id": "seed_209_fp30_l9",
      "label": "Type 1 Diabetes (non-secretor A/A genotype, OR=1.29) — Smyth et al. 2011, Diabetes (PMID 22025780)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22025780/"
+    },
+    {
+     "id": "seed_209_l12",
+     "label": "Null result, largest cohort: 1,503 UK twins — no robust association between secretor status and gut microbiome composition, diversity or any individual taxon (PMID 27871240)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27871240/"
+    },
+    {
+     "id": "seed_209_l13",
+     "label": "Null result: 35 adults genotyped for secretor status — no significant microbiota differences between FUT2 genotype groups (PMID 28358023)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28358023/"
     }
    ],
    "taxa": [
@@ -3935,13 +3945,18 @@
      "id": "seed_217",
      "name": "Bifidobacterium adolescentis",
      "dir": "down",
-     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
-     "note": "",
+     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum); genus-level support PMID 30214024",
+     "note": " Species-level evidence is this one paper; corroboration exists only one rank up, at the Bifidobacterium genus (PMID 30214024). Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_218",
        "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+      },
+      {
+       "id": "seed_217_l2",
+       "label": "Sci Rep 2019 (76 secretor vs 15 non-secretor mothers; in caesarean-born infants of non-secretor mothers bifidobacteria strongly depleted and Akkermansia lower; no effect in vaginally born; PMID 30214024)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30214024/"
       }
      ],
      "evidence": "human-cohort",
@@ -3952,13 +3967,18 @@
      "id": "seed_219",
      "name": "Bifidobacterium Pseudocatenulatum",
      "dir": "down",
-     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
-     "note": "",
+     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum); genus-level support PMID 30214024",
+     "note": " Species-level evidence is this one paper; corroboration exists only one rank up, at the Bifidobacterium genus (PMID 30214024). Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_220",
        "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+      },
+      {
+       "id": "seed_219_l2",
+       "label": "Sci Rep 2019 (76 secretor vs 15 non-secretor mothers; in caesarean-born infants of non-secretor mothers bifidobacteria strongly depleted and Akkermansia lower; no effect in vaginally born; PMID 30214024)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30214024/"
       }
      ],
      "evidence": "human-cohort",
@@ -3969,13 +3989,18 @@
      "id": "seed_221",
      "name": "Bifidobacterium Bifidum",
      "dir": "down",
-     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
-     "note": "",
+     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum); genus-level support PMID 30214024",
+     "note": " Species-level evidence is this one paper; corroboration exists only one rank up, at the Bifidobacterium genus (PMID 30214024). Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_222",
        "label": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/"
+      },
+      {
+       "id": "seed_221_l2",
+       "label": "Sci Rep 2019 (76 secretor vs 15 non-secretor mothers; in caesarean-born infants of non-secretor mothers bifidobacteria strongly depleted and Akkermansia lower; no effect in vaginally born; PMID 30214024)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30214024/"
       }
      ],
      "evidence": "human-cohort",
@@ -3987,7 +4012,7 @@
      "name": "Bacteroides vulgatus",
      "dir": "up",
      "refs": "PMID 40339805",
-     "note": "Non-secretor children had higher fecal B. vulgatus than secretor children (5.00% vs 1.00% median, p=0.023); mediated 14% of secretor-status' effect on gastroenteritis risk.",
+     "note": "Non-secretor children had higher fecal B. vulgatus than secretor children (5.00% vs 1.00% median, p=0.023); mediated 14% of secretor-status' effect on gastroenteritis risk. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp1_l1",
@@ -4002,13 +4027,18 @@
      "id": "seed_209_fp2",
      "name": "Escherichia/Shigella",
      "dir": "down",
-     "refs": "PMID 40339805",
+     "refs": "PMID 40339805; corroborated PMID 34419617",
      "note": "Non-secretor children had lower Escherichia/Shigella than secretor children (0.56% vs 1.35% median, p=0.002).",
      "links": [
       {
        "id": "seed_209_fp2_l1",
        "label": "2025, Clin Microbiol Infect — Copenhagen birth cohort (n=700)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/"
+      },
+      {
+       "id": "seed_209_fp2_l2",
+       "label": "Corroborated in 81 genotyped IBD patients (PMID 34419617)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34419617/"
       }
      ],
      "evidence": "human-cohort",
@@ -4019,7 +4049,7 @@
      "name": "Enterocloster",
      "dir": "up",
      "refs": "PMID 38530054",
-     "note": "Higher in mice receiving microbiota from infants of non-secretor mothers vs. secretor mothers.",
+     "note": "Higher in mice receiving microbiota from infants of non-secretor mothers vs. secretor mothers. Mouse-only. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp3_l1",
@@ -4035,7 +4065,7 @@
      "name": "Klebsiella",
      "dir": "up",
      "refs": "PMID 38530054",
-     "note": "Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia.",
+     "note": "Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia. Mouse-only. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp4_l1",
@@ -4051,7 +4081,7 @@
      "name": "Phascolarctobacterium",
      "dir": "up",
      "refs": "PMID 34419617",
-     "note": "Higher in FUT2-null (sese) IBD patients vs. functional-FUT2 patients.",
+     "note": "Higher in FUT2-null (sese) IBD patients vs. functional-FUT2 patients. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp5_l1",
@@ -4067,7 +4097,7 @@
      "name": "Erysipelotrichaceae",
      "dir": "up",
      "refs": "PMID 34419617",
-     "note": "Th17-inducing family higher in FUT2-null (sese) IBD patients.",
+     "note": "Th17-inducing family higher in FUT2-null (sese) IBD patients. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp6_l1",
@@ -4143,7 +4173,7 @@
      "name": "Enterobacteriaceae",
      "dir": "up",
      "refs": "PMID 30540710",
-     "note": "Higher relative abundance in non-secretor milk samples.",
+     "note": "Higher relative abundance in non-secretor milk samples. Sample-site caveat: measured in MILK, not gut. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp9_l1",
@@ -4242,13 +4272,23 @@
      "id": "seed_209_fp14",
      "name": "Akkermansia",
      "dir": "down",
-     "refs": "PMID 24733310",
-     "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) — a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors.",
+     "refs": "PMID 24733310; PMID 30214024; dissent PMID 38530054",
+     "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) — a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors. Corroborated in infants of non-secretor mothers, caesarean-born only (PMID 30214024). Dissent, outweighed: germ-free mice colonised from non-secretor-mother infants had MORE Akkermansia (PMID 38530054) — mouse, so the human data set the arrow.",
      "links": [
       {
        "id": "seed_209_fp14_l1",
        "label": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      },
+      {
+       "id": "seed_209_fp14_l2",
+       "label": "Sci Rep 2019 (76 secretor vs 15 non-secretor mothers; in caesarean-born infants of non-secretor mothers bifidobacteria strongly depleted and Akkermansia lower; no effect in vaginally born; PMID 30214024)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30214024/"
+      },
+      {
+       "id": "seed_209_fp14_l3",
+       "label": "Germ-free mice colonised from infants of non-secretor mothers 2024 (mSystems; higher Akkermansia/Enterocloster/Klebsiella, lower Bacteroides/Bifidobacterium/Blautia; PMID 38530054)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/"
       }
      ],
      "evidence": "human-cohort",
@@ -4258,13 +4298,18 @@
      "id": "seed_209_fp15",
      "name": "Blautia",
      "dir": "up",
-     "refs": "PMID 24733310; dissent: PMID 28710295",
-     "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis. Dissent, outweighed: a 33-subject study (6 non-secretors) found Blautia higher in SECRETORS, the opposite direction - smaller, and only 6 people on the side that matters (PMID 28710295).",
+     "refs": "PMID 24733310; dissent: PMID 28710295; second dissent PMID 38530054",
+     "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis. Dissent, outweighed: a 33-subject study (6 non-secretors) found Blautia higher in SECRETORS, the opposite direction - smaller, and only 6 people on the side that matters (PMID 28710295). Second dissent: those same mice had LOWER Blautia (PMID 38530054) — mouse, outweighed.",
      "links": [
       {
        "id": "seed_209_fp15_l1",
        "label": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/"
+      },
+      {
+       "id": "seed_209_fp15_l2",
+       "label": "Germ-free mice colonised from infants of non-secretor mothers 2024 (mSystems; higher Akkermansia/Enterocloster/Klebsiella, lower Bacteroides/Bifidobacterium/Blautia; PMID 38530054)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/"
       }
      ],
      "evidence": "human-cohort",
@@ -4275,7 +4320,7 @@
      "name": "Dorea",
      "dir": "up",
      "refs": "PMID 24733310",
-     "note": "Dorea formicigenerans et rel. significantly higher in non-secretors (p<0.05), HITChip analysis.",
+     "note": "Dorea formicigenerans et rel. significantly higher in non-secretors (p<0.05), HITChip analysis. Rests on the 12-vs-12 deep-sequenced subset of PMID 24733310. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp16_l1",
@@ -4291,7 +4336,7 @@
      "name": "Ruminococcus gnavus",
      "dir": "up",
      "refs": "PMID 24733310",
-     "note": "Ruminococcus gnavus et rel. significantly higher in non-secretors (p<0.05), HITChip analysis — distinct from the bare Ruminococcus genus, which showed no single clean direction and isn't tracked here for that reason.",
+     "note": "Ruminococcus gnavus et rel. significantly higher in non-secretors (p<0.05), HITChip analysis — distinct from the bare Ruminococcus genus, which showed no single clean direction and isn't tracked here for that reason. Rests on the 12-vs-12 deep-sequenced subset of PMID 24733310. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp17_l1",

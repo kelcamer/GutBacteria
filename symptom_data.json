@@ -241,7 +241,7 @@
     {
      "symptom": "FUT2 (Non-secretor) status",
      "note": "The classic, most-cited FUT2 finding: non-secretors lack the fucosylated glycans Bifidobacteria feed on, genus-level abundance/diversity reduced accordingly (species-level detail - B. bifidum, adolescentis, pseudocatenulatum - tracked separately elsewhere in this app). Also the bacterium most consistently depleted in a FUT2-deficient mouse model specifically under alcohol exposure, alongside Akkermansia - direct mechanistic evidence FUT2 loss is a RISK factor for alcohol-related dysbiosis, not protective against it.",
-     "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598)",
+     "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598); genus-level support in infants of non-secretor mothers (PMID 30214024); TWAS association (PMID 34922623)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/",
      "evidence": "animal",
      "population": "unknown"
@@ -866,7 +866,7 @@
     {
      "symptom": "FUT2 (Non-secretor) status",
      "note": "Roseburia (an anti-inflammatory SCFA/butyrate producer) was significantly depleted in FUT2 heterozygotes and non-secretors vs. secretor homozygotes, in cecal/sigmoid mucosal samples from healthy volunteers; the same secretor-linked depletion is echoed in an IBD cohort's host-genetics/microbiota analysis.",
-     "ref": "2014, ISME Journal — FUT2 & gut microbiome energy metabolism, healthy volunteers (n=39)",
+     "ref": "2014, ISME Journal — FUT2 & gut microbiome energy metabolism, healthy volunteers (n=39); ISME J 2014 (PMID 24781901); Imhann et al. 2018, Gut — host genetics & IBD microbiota (PMID 27802154)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24781901/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -2522,7 +2522,7 @@
     {
      "symptom": "FUT2 (Non-secretor) status",
      "note": "Contested because the genus spans clades that genuinely differ, not because anyone is wrong. One cohort found C. sphenoides et rel. higher in non-secretors; another found the C. coccoides group (cluster XIVa) decreased in them. Those are different organisms sharing an obsolete genus label - and the cluster XIVa half is modern Lachnospiraceae, where it now corroborates that entry's 'down'. Read the Lachnospiraceae node for that half.",
-     "ref": "2015, PLOS ONE — secretor status in pregnancy (n=123); Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
+     "ref": "2015, PLOS ONE — secretor status in pregnancy (n=123); Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310); Wacklin et al. 2015, PLOS ONE — secretor status in pregnancy, n=123 (PMID 26231005)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/",
      "evidence": "human-cohort",
      "population": "female"
@@ -2694,7 +2694,7 @@
     {
      "symptom": "FUT2 (Non-secretor) status",
      "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) — a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors. A mouse mechanistic study directly ties FUT2 loss to WORSENED alcohol-related pathology through this exact bacterium — see this genus's own Alcohol-related dysbiosis entry above, and note this REVERSES an earlier, unsupported cross-reference this app briefly surfaced implying FUT2 was protective against alcohol; the real relationship runs the other way.",
-     "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310)",
+     "ref": "Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310); PMID 30214024; dissent PMID 38530054 (mouse)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -3223,7 +3223,7 @@
     {
      "symptom": "FUT2 (Non-secretor) status",
      "note": "Lower in non-secretor vs. secretor milk samples.",
-     "ref": "2019, J Pediatr Gastroenterol Nutr — milk microbiota (n=25)",
+     "ref": "2019, J Pediatr Gastroenterol Nutr — milk microbiota (n=25); Azad et al. 2018, Wellcome Open Res — ALSPAC n=7,582 (PMID 30345375); Kaur et al. 2022 review (PMID 35892094)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30540710/",
      "evidence": "human-cohort",
      "population": "unknown"
