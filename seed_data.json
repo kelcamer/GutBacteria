@@ -5828,16 +5828,21 @@
      "id": "seed_339",
      "name": "Firmicutes",
      "dir": "down",
-     "refs": "review 2024",
-     "note": "Phylum-level reduction.",
+     "refs": "review 2024; corroborated PMID 41387992",
+     "note": "Phylum-level reduction. Corroborated in a 40-vs-40 matched case-control with SCFA measurement, where acetate and butyrate were also significantly lower.",
      "links": [
       {
        "id": "seed_340",
        "label": "Retrospective review 2024 (Eur J Med Res; phylum-level: Bacteroidetes ↑, Firmicutes ↓)",
        "url": "https://link.springer.com/article/10.1186/s40001-024-01747-1"
+      },
+      {
+       "id": "seed_339_l2",
+       "label": "Case-control 2025 (Sci Rep; 40 CFS vs 40 age/sex-matched controls, 16S + SCFA mass spec: ↓Firmicutes, ↓Rikenellaceae/Ruminococcaceae, and acetate/butyrate significantly lower after FDR; PMID 41387992)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41387992/"
       }
      ],
-     "evidence": "review",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -5988,13 +5993,18 @@
      "id": "seed_545",
      "name": "Alistipes",
      "dir": "up",
-     "refs": "Frémont 2013 (Anaerobe; Belgian+Norwegian ME/CFS cohorts; Norwegian patients ↑Lactonifactor/Alistipes vs Norwegian controls)",
-     "note": "Increased in Norwegian ME/CFS patients vs Norwegian healthy controls (16S, n=43 patients total across Belgian+Norwegian cohorts vs n=36 controls); the patient/control separation was less pronounced in the Belgian sub-cohort, so treat as a moderate-confidence finding.",
+     "refs": "Frémont 2013 (Anaerobe; Belgian+Norwegian ME/CFS cohorts; Norwegian patients ↑Lactonifactor/Alistipes vs Norwegian controls); caveat PMID 41387992",
+     "note": "Increased in Norwegian ME/CFS patients vs Norwegian healthy controls (16S, n=43 patients total across Belgian+Norwegian cohorts vs n=36 controls); the patient/control separation was less pronounced in the Belgian sub-cohort, so treat as a moderate-confidence finding. Caveat from a 2025 case-control: within CFS patients, LOWER Alistipes tracked worse fatigue and quality-of-life scores. That is a within-disease correlation, not a case-control direction, so it does not overturn this entry — but the two point opposite ways and a case-control replication would settle it.",
      "links": [
       {
        "id": "seed_546",
        "label": "Frémont 2013 (Anaerobe; Belgian+Norwegian ME/CFS cohorts; Norwegian patients ↑Lactonifactor/Alistipes vs Norwegian controls)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/23791918/"
+      },
+      {
+       "id": "seed_545_l2",
+       "label": "Case-control 2025 (Sci Rep; 40 CFS vs 40 age/sex-matched controls, 16S + SCFA mass spec: ↓Firmicutes, ↓Rikenellaceae/Ruminococcaceae, and acetate/butyrate significantly lower after FDR; PMID 41387992)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41387992/"
       }
      ],
      "evidence": "human-cohort",
@@ -13377,16 +13387,21 @@
      "id": "new_t1d_t1",
      "name": "Bacteroides",
      "dir": "up",
-     "refs": "PMID 30224347",
-     "note": "Significantly higher relative abundance vs. healthy children.",
+     "refs": "PMID 30224347; corroborated PMID 40904962",
+     "note": "Significantly higher relative abundance vs. healthy children. Corroborated by a 6-study systematic review of children with T1D.",
      "links": [
       {
        "id": "new_t1d_t1_l1",
        "label": "Leiva-Gea et al. 2018, Diabetes Care — case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      },
+      {
+       "id": "new_t1d_t1_l2",
+       "label": "Systematic review 2025 (Cureus; 6 studies of children with T1D: reduced diversity, ↓Faecalibacterium and ↓Roseburia, ↑Bacteroides/Blautia/Dorea; PMID 40904962)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40904962/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -13425,16 +13440,21 @@
      "id": "new_t1d_t4",
      "name": "Blautia",
      "dir": "up",
-     "refs": "PMID 30224347",
-     "note": "Significantly higher relative abundance vs. healthy children.",
+     "refs": "PMID 30224347; corroborated PMID 40904962",
+     "note": "Significantly higher relative abundance vs. healthy children. Corroborated by a 6-study systematic review of children with T1D.",
      "links": [
       {
        "id": "new_t1d_t4_l1",
        "label": "Leiva-Gea et al. 2018, Diabetes Care — case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      },
+      {
+       "id": "new_t1d_t4_l2",
+       "label": "Systematic review 2025 (Cureus; 6 studies of children with T1D: reduced diversity, ↓Faecalibacterium and ↓Roseburia, ↑Bacteroides/Blautia/Dorea; PMID 40904962)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40904962/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -13457,48 +13477,63 @@
      "id": "new_t1d_t6",
      "name": "Bifidobacterium",
      "dir": "down",
-     "refs": "PMID 30224347",
-     "note": "Significantly lower relative abundance vs. healthy children.",
+     "refs": "PMID 30224347; genetic support PMID 41737649",
+     "note": "Significantly lower relative abundance vs. healthy children. Genetic support, not observational: an umbrella of 53 Mendelian randomization studies finds Bifidobacterium PROTECTIVE against T1D (OR 0.82), which is consistent with it being depleted in patients.",
      "links": [
       {
        "id": "new_t1d_t6_l1",
        "label": "Leiva-Gea et al. 2018, Diabetes Care — case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      },
+      {
+       "id": "new_t1d_t6_l2",
+       "label": "Umbrella MR 2026 (Diabetes Metab Syndr Obes; 53 Mendelian randomization studies, 243 exposures: Bifidobacterium protective against T1D, OR 0.82 95% CI 0.71-0.95; Prevotella 9 raises risk, OR 1.18; PMID 41737649)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41737649/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "mendelian",
      "population": "unknown"
     },
     {
      "id": "new_t1d_t7",
      "name": "Roseburia",
      "dir": "down",
-     "refs": "PMID 30224347",
-     "note": "Significantly lower relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability).",
+     "refs": "PMID 30224347; corroborated PMID 40904962",
+     "note": "Significantly lower relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability). Corroborated by a 6-study systematic review of children with T1D.",
      "links": [
       {
        "id": "new_t1d_t7_l1",
        "label": "Leiva-Gea et al. 2018, Diabetes Care — case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      },
+      {
+       "id": "new_t1d_t7_l2",
+       "label": "Systematic review 2025 (Cureus; 6 studies of children with T1D: reduced diversity, ↓Faecalibacterium and ↓Roseburia, ↑Bacteroides/Blautia/Dorea; PMID 40904962)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40904962/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
      "id": "new_t1d_t8",
      "name": "Faecalibacterium",
      "dir": "down",
-     "refs": "PMID 30224347",
-     "note": "Significantly lower relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability).",
+     "refs": "PMID 30224347; corroborated PMID 40904962",
+     "note": "Significantly lower relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability). Corroborated by a 6-study systematic review of children with T1D.",
      "links": [
       {
        "id": "new_t1d_t8_l1",
        "label": "Leiva-Gea et al. 2018, Diabetes Care — case-control, 15 T1D/15 MODY2/13 healthy children, 16S rRNA (PMID 30224347)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30224347/"
+      },
+      {
+       "id": "new_t1d_t8_l2",
+       "label": "Systematic review 2025 (Cureus; 6 studies of children with T1D: reduced diversity, ↓Faecalibacterium and ↓Roseburia, ↑Bacteroides/Blautia/Dorea; PMID 40904962)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40904962/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -15323,16 +15358,21 @@
      "id": "new_lupus_t8",
      "name": "Streptococcus",
      "dir": "up",
-     "refs": "PMID 38707123",
-     "note": "Named among the consistently-increased genera in the same scoping review.",
+     "refs": "PMID 38707123; corroborated PMID 42491138",
+     "note": "Named among the consistently-increased genera in the same scoping review. Corroborated by a 33-study systematic review, with a mechanism attached: Streptococcus is DECREASED in the mouth and INCREASED in the gut of SLE patients, consistent with oral-to-gut relocation rather than simple overgrowth.",
      "links": [
       {
        "id": "new_lupus_t8_l1",
        "label": "McPhail et al. 2024, Cureus",
        "url": "https://pubmed.ncbi.nlm.nih.gov/38707123/"
+      },
+      {
+       "id": "new_lupus_t8_l2",
+       "label": "Systematic review 2026 (Front Immunol; 33 studies, 1,385 SLE/Sjögren patients vs 2,131 controls: gut α-diversity reduced, and Streptococcus shows DECREASED oral with INCREASED intestinal abundance — an oral-to-gut relocation pattern; PMID 42491138)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42491138/"
       }
      ],
-     "evidence": "review",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
