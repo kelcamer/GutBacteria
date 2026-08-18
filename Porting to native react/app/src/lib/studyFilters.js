@@ -56,7 +56,8 @@ export const FILTER_LABELS = {
   menOnly: ['Men only', 'Hides studies conducted in female-only populations'],
   showContested: ['Enable conflicting microbes?', 'Shows links where studies disagree about the direction (yellow). Turn off to hide them and leave only findings that point one way'],
   showNull: ['Enable null findings?', 'Shows links that were tested and found NO reliable effect (grey). Turn off to hide them - useful once you have read them, since they are settled rather than open questions'],
-  groupGenus: ['Genus grouping?', 'Shows one node per genus instead of separate genus and species nodes (Faecalibacterium and F. prausnitzii become one). Where members disagree the claim shows as contested rather than picking a side'],
+  groupGenus: ['Group by genus?', 'One node per genus: Faecalibacterium and F. prausnitzii become a single dot, so conditions studied at genus level connect to those studied at species level. Where members disagree the merged node shows as contested rather than picking a side. The default.'],
+  groupSpecies: ['Group by species?', 'Keeps every genus and species as its own node (Faecalibacterium separate from F. prausnitzii). More precise, but a condition measured at genus level will not connect to one measured at species level. Turning this on turns genus grouping off.'],
   hidePhylum: ['Hide phylum-level', 'Hidden by default. A phylum lumps together thousands of species that move in opposite directions, so a phylum arrow often washes out the real genus-level story (iron deficiency, FUT2 and estrogen were all null at phylum, real one rank down). Turn off to show phylum nodes'],
 }
 
