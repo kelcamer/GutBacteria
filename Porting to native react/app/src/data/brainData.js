@@ -374,6 +374,44 @@ export const BRAIN_DATA = [
             "url": "https://pubmed.ncbi.nlm.nih.gov/42192759/"
           }
         ]
+      },
+      {
+        "id": "brain_asd_fusiform",
+        "name": "Fusiform gyrus",
+        "dir": "down",
+        "refs": "PMID 40138749; PMID 40304890",
+        "note": "Fusiform (face area) hypoactivation in ASD; underlies difficulty reading faces and emotional expressions.",
+        "links": [
+          {
+            "id": "brain_asd_fusiform_l1",
+            "label": "Meta-analysis: fusiform hypoactivation in ASD emotion processing",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40138749/"
+          },
+          {
+            "id": "brain_asd_fusiform_l2",
+            "label": "FFA cortical-thickness abnormality specific to autism",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40304890/"
+          }
+        ]
+      },
+      {
+        "id": "brain_asd_hypothal",
+        "name": "Hypothalamus",
+        "dir": "both",
+        "refs": "PMID 26445284; PMID 38228703",
+        "note": "Contested: one VBM study found decreased hypothalamic GM density (+enlarged third ventricle) in ASD, a later study found no volume difference but an altered oxytocin association.",
+        "links": [
+          {
+            "id": "brain_asd_hypothal_l1",
+            "label": "Decreased hypothalamic GM density in ASD",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26445284/"
+          },
+          {
+            "id": "brain_asd_hypothal_l2",
+            "label": "No GMV difference but altered OXT association",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38228703/"
+          }
+        ]
       }
     ]
   },
@@ -1564,6 +1602,25 @@ export const BRAIN_DATA = [
             "url": "https://pubmed.ncbi.nlm.nih.gov/36093787/"
           }
         ]
+      },
+      {
+        "id": "brain_bd_dlpfc",
+        "name": "Dorsolateral prefrontal cortex",
+        "dir": "both",
+        "refs": "PMID 41881116; PMID 42090938",
+        "note": "Abnormal DLPFC connectivity in bipolar disorder and the high-frequency rTMS target for bipolar depression.",
+        "links": [
+          {
+            "id": "brain_bd_dlpfc_l1",
+            "label": "Abnormal insula-DLPFC connectivity in BD",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41881116/"
+          },
+          {
+            "id": "brain_bd_dlpfc_l2",
+            "label": "Left-DLPFC rTMS in bipolar/MDD",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42090938/"
+          }
+        ]
       }
     ]
   },
@@ -2563,6 +2620,25 @@ export const BRAIN_DATA = [
             "id": "brain_scz_stg_l2",
             "label": "STG-ACC neurite structure vs auditory hallucination score (PMID 41645532)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/41645532/"
+          }
+        ]
+      },
+      {
+        "id": "brain_scz_phg",
+        "name": "Parahippocampal gyrus",
+        "dir": "down",
+        "refs": "PMID 40701114; PMID 40010110",
+        "note": "Reduced parahippocampal activation (memory encoding) and grey-matter volume in schizophrenia and first-episode psychosis.",
+        "links": [
+          {
+            "id": "brain_scz_phg_l1",
+            "label": "Meta-analysis (59 studies): reduced parahippocampal encoding activation",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40701114/"
+          },
+          {
+            "id": "brain_scz_phg_l2",
+            "label": "Reduced left parahippocampal GM in first-episode psychosis",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40010110/"
           }
         ]
       }
