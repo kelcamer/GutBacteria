@@ -241,9 +241,9 @@
     {
      "symptom": "FUT2 (Non-secretor) status",
      "note": "The classic, most-cited FUT2 finding: non-secretors lack the fucosylated glycans Bifidobacteria feed on, genus-level abundance/diversity reduced accordingly (species-level detail - B. bifidum, adolescentis, pseudocatenulatum - tracked separately elsewhere in this app). Also the bacterium most consistently depleted in a FUT2-deficient mouse model specifically under alcohol exposure, alongside Akkermansia - direct mechanistic evidence FUT2 loss is a RISK factor for alcohol-related dysbiosis, not protective against it.",
-     "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598); genus-level support in infants of non-secretor mothers (PMID 30214024); TWAS association (PMID 34922623)",
+     "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598); genus-level support in infants of non-secretor mothers (PMID 30214024); TWAS association (PMID 34922623); HMP whole-genome sequencing ties secretor status to B. longum specifically (PMID 29378630); two infant cohorts found NO association (PMID 38838470, 37741856)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/",
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {

@@ -3824,7 +3824,7 @@
    "name": "FUT2 (Non-secretor)",
    "abbr": "FUT2",
    "color": "#C3E88D",
-   "note": "Baseline host-genotype profile, not a diagnosis. POWER CAVEAT, read first: the largest study of this question — 1,503 UK twins — found NO robust association between secretor status and gut microbiome composition, diversity or any individual taxon (PMID 27871240), and a 35-adult study was also null (PMID 28358023). Most taxon arrows below come from cohorts of 12-14 non-secretors. Treat them as small-study signals, not settled facts. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on — so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3×10⁻¹⁸, n=8,344 T1D cases) that isn't just genetic on its own — a 2020 mini-review (PMID 33425974) reports non-secretor children share the SAME low-Bifidobacterium/high-Bacteroides gut-microbiota signature as children with T1D itself, proposing FUT2-shaped early-life bifidobacteria colonization as a plausible mechanistic bridge between the two. See also this app's Type 1 Diabetes condition. Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each. Cognitive link worth flagging: Clostridiaceae — reduced in non-secretors (Kumar et al. 2015) — is one of only two bacteria this app links to Poor working memory (PMID 35010939, its depletion associated with worse working memory quality), so non-secretor status may plausibly extend to reduced working memory via this shared bacterial pathway, though this specific chain hasn't been tested directly in one study.",
+   "note": "Baseline host-genotype profile, not a diagnosis. HOW SOLID IS ANY OF THIS, read first: the effect is real but small, and whether you see it depends on method. Stool 16S found nothing in 1,503 UK twins (PMID 27871240), 35 adults (PMID 28358023), 350 mother-infant pairs (PMID 38838470) or exclusively breastfed infants (PMID 37741856). But the large genetic studies with species-level resolution do find FUT2 reproducibly — 12,652 people plus Nordic replication (PMID 41688637) and 7,738 in the Dutch Microbiome Project (PMID 35115690) — and whole-genome sequencing ties secretor status specifically to B. longum (PMID 29378630). Mucosal biopsies show a difference where stool does not (PMID 42355923), which fits the mechanism: FUT2 glycans are on the mucosa. Most individual arrows below still rest on 12-14 non-secretors, so read them as small-study signals. Non-secretors can't make the fucosylated oligosaccharides Bifidobacteria feed on — so Bifido runs low, and with it GABA. Non-secretor status is also linked in the literature to a wider set of conditions beyond gut bacteria: oral/dental (dental caries, periodontal disease, oral submucous fibrosis, precancerous oral lesions), gastrointestinal (peptic ulcers, Crohn's disease, necrotizing enterocolitis), genitourinary (vaginal candidiasis), and a strong genetic link to Type 1 Diabetes (nonsecretor A/A genotype confers susceptibility, OR=1.29, P=4.3×10⁻¹⁸, n=8,344 T1D cases) that isn't just genetic on its own — a 2020 mini-review (PMID 33425974) reports non-secretor children share the SAME low-Bifidobacterium/high-Bacteroides gut-microbiota signature as children with T1D itself, proposing FUT2-shaped early-life bifidobacteria colonization as a plausible mechanistic bridge between the two. See also this app's Type 1 Diabetes condition. Non-secretors also show a distinct infection-susceptibility PATTERN rather than uniformly \"worse\": protected from Norovirus, Rotavirus symptomatic infection, and H. pylori adhesion, but more susceptible to Cholera and (per the same review) low-level Candida/Streptococcus infections; secretors, conversely, show higher HIV progression risk and more severe respiratory viral illness (influenza). See linked citations below for each. Cognitive link worth flagging: Clostridiaceae — reduced in non-secretors (Kumar et al. 2015) — is one of only two bacteria this app links to Poor working memory (PMID 35010939, its depletion associated with worse working memory quality), so non-secretor status may plausibly extend to reduced working memory via this shared bacterial pathway, though this specific chain hasn't been tested directly in one study.",
    "links": [
     {
      "id": "seed_210",
@@ -3890,6 +3890,56 @@
      "id": "seed_209_l13",
      "label": "Null result: 35 adults genotyped for secretor status — no significant microbiota differences between FUT2 genotype groups (PMID 28358023)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/28358023/"
+    },
+    {
+     "id": "seed_209_l14",
+     "label": "POSITIVE, largest genetic study: HUNT GWAS n=12,652 with Nordic replication n=16,017-21,976 — FUT2 is one of six reproducible loci associated with gut microbiota species AND functional modules (PMID 41688637)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41688637/"
+    },
+    {
+     "id": "seed_209_l15",
+     "label": "POSITIVE: Dutch Microbiome Project GWAS n=7,738, replicated in two independent cohorts — the ABO signal is explained by participant secretor status via FUT2 genotype (PMID 35115690)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35115690/"
+    },
+    {
+     "id": "seed_209_l16",
+     "label": "POSITIVE, taxon-specific: Human Microbiome Project whole-genome sequencing (n=298) validates the FUT2 secretor-status association with Bifidobacterium longum abundance in stool (PMID 29378630)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29378630/"
+    },
+    {
+     "id": "seed_209_l17",
+     "label": "POSITIVE, mucosal: 87 genotyped PSC transplant patients (28 non-secretors) — distinct colonic MUCOSAL microbiome, and 43% vs 15% post-transplant bacteremia; authors call it exploratory (PMID 42355923)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42355923/"
+    },
+    {
+     "id": "seed_209_l18",
+     "label": "NULL, large infant cohort: HELMi, 350 mothers and 823 shotgun-sequenced infant stool samples — neither maternal nor infant secretor status associated with infant gut microbiota (PMID 38838470)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38838470/"
+    },
+    {
+     "id": "seed_209_l19",
+     "label": "NULL on taxa, positive on metabolites: exclusively breastfed Indonesian infants — maternal secretor status changed no diversity or genus abundance, but shifted succinate and 1,2-propanediol (PMID 37741856)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37741856/"
+    },
+    {
+     "id": "seed_209_l20",
+     "label": "Mechanism, mouse: Fut2KO vs Fut2WT littermates — only B. infantis, which internalises α1,2-fucosylated glycans, showed FUT2-dependent persistence; B. breve and B. bifidum did not (PMID 38896583)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38896583/"
+    },
+    {
+     "id": "seed_209_l21",
+     "label": "Review 2026 (Mol Biol Rep; FUT2 in IBD — human association data relatively robust, but most causal evidence is mouse and interventional evidence is limited; PMID 42484923)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42484923/"
+    },
+    {
+     "id": "seed_209_l22",
+     "label": "Review 2022 (Front Microbiol; FUT2/HBGA-microbiota interaction, non-secretor as IBD risk factor and norovirus/rotavirus protective factor; PMID 35923409)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35923409/"
+    },
+    {
+     "id": "seed_209_l23",
+     "label": "Maternal secretor status and infant infection: 240 breastfed Bangladeshi infants — fewer acute respiratory infections to 6 months (IRR 0.66), but the nasopharyngeal microbiome did not mediate it (PMID 34756056)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34756056/"
     }
    ],
    "taxa": [
@@ -3989,8 +4039,8 @@
      "id": "seed_221",
      "name": "Bifidobacterium Bifidum",
      "dir": "down",
-     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum); genus-level support PMID 30214024",
-     "note": " Species-level evidence is this one paper; corroboration exists only one rank up, at the Bifidobacterium genus (PMID 30214024). Searched 2026-08: no second study reports this taxon by secretor status.",
+     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum); genus-level support PMID 30214024; mechanistic dissent PMID 38896583",
+     "note": "Species-level evidence is this one paper; corroboration exists only one rank up, at the Bifidobacterium genus (PMID 30214024). Searched 2026-08: no second study reports this taxon by secretor status. Mechanistic dissent: in Fut2KO mice only B. infantis showed FUT2-dependent persistence — B. bifidum and B. breve, which cannot internalise α1,2-fucosylated glycans, did not (PMID 38896583, mouse).",
      "links": [
       {
        "id": "seed_222",
@@ -4001,6 +4051,11 @@
        "id": "seed_221_l2",
        "label": "Sci Rep 2019 (76 secretor vs 15 non-secretor mothers; in caesarean-born infants of non-secretor mothers bifidobacteria strongly depleted and Akkermansia lower; no effect in vaginally born; PMID 30214024)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30214024/"
+      },
+      {
+       "id": "seed_221_l3",
+       "label": "Mechanism, mouse: Fut2KO vs Fut2WT littermates — only B. infantis, which internalises α1,2-fucosylated glycans, showed FUT2-dependent persistence; B. breve and B. bifidum did not (PMID 38896583)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38896583/"
       }
      ],
      "evidence": "human-cohort",
