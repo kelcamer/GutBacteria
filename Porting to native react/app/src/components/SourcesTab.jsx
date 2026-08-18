@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, ArrowDownToLine } from 'lucide-react'
 import { theme, dirColor, dirArrow } from '../theme'
 import { Italic } from './Italic'
+import { PDF_LINKS } from '../lib/pdfLinks'
 
 // Ported from `Km` in gut-flora-atlas.readable.html (~line 29806-29954,
 // 149 lines) - every attached link across every condition (both a
@@ -108,9 +109,29 @@ export function SourcesTab({ conditions }) {
               <ExternalLink size={15} style={{ color: theme.muted, flexShrink: 0, marginTop: 3 }} />
               <span style={{ fontFamily: 'var(--display)', fontWeight: 600, fontSize: 15 }}>{s.label}</span>
             </a>
-            <p className="font-mono mb-3 truncate" style={{ fontSize: 10, color: theme.muted }}>
-              {s.url}
-            </p>
+            <div className="flex items-center gap-2 mb-3">
+              <p className="font-mono truncate flex-1" style={{ fontSize: 10, color: theme.muted }}>
+                {s.url}
+              </p>
+              {PDF_LINKS[s.url] && (
+                <a
+                  href={PDF_LINKS[s.url]}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Open the free PDF"
+                  aria-label="Open the free PDF"
+                  className="rounded-lg flex items-center justify-center"
+                  style={{
+                    width: 30, height: 30, flexShrink: 0,
+                    background: theme.ink,
+                    border: `1px solid ${theme.line}`,
+                    color: theme.muted,
+                  }}
+                >
+                  <ArrowDownToLine size={14} />
+                </a>
+              )}
+            </div>
             <div className="flex flex-wrap gap-1.5">
               {s.uses.map(({ c, taxon }, n) => (
                 <span

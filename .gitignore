@@ -10,3 +10,4 @@ ARCHITECTURE.md
 __pycache__/
 
 .citation_cache.json
+.pdf_links_cache.json
