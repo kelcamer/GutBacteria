@@ -98,6 +98,10 @@ fi
 # not a mistake in the commit, so this prints the citation-coverage summary and
 # gets out of the way. Offline by design: no --verify here, so no network call
 # sits between you and a commit.
-(cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_citation_coverage.py" --top 3) >&2 || true
+# --cache must point back at the real repo: the hook runs in a temp dir, and
+# without the crosswalk the report counts IDENTIFIERS instead of papers, which
+# silently inflates "corroborated" (PMC6421268 and PMID 30915065 are one paper).
+(cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_citation_coverage.py" --top 3 \
+   --cache "$REPO_ROOT/.citation_cache.json") >&2 || true
 
 exit 0

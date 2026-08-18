@@ -7662,7 +7662,7 @@
    "name": "Iron deficiency (state)",
    "abbr": "IDA",
    "color": "#B45309",
-   "note": "Host nutrient-state entry. Evidence mostly animal models + limited human. Clinically, iron-deficiency states are linked to two symptoms tracked elsewhere in this app's Symptom Map: hair loss/telogen effluvium (evidence mixed across studies but a recognized association, PMID 16635664) and panic attacks (serum iron significantly lower in panic/hyperventilation-attack patients vs. controls, PMID 23603926) — see the \"Hair loss\" and \"Panic attack\" entries in the Symptom Map, whose bacteria links here are carried over via this iron-deficiency mechanism, not independent direct evidence.",
+   "note": "Host nutrient-state entry. Evidence mostly animal models + limited human. Clinically, iron-deficiency states are linked to two symptoms tracked elsewhere in this app's Symptom Map: hair loss/telogen effluvium (evidence mixed across studies but a recognized association, PMID 16635664) and panic attacks (serum iron significantly lower in panic/hyperventilation-attack patients vs. controls, PMID 23603926) — see the \"Hair loss\" and \"Panic attack\" entries in the Symptom Map, whose bacteria links here are carried over via this iron-deficiency mechanism, not independent direct evidence. FIRMICUTES AT PHYLUM LEVEL: searched repeatedly (2026-08) and it does not exist — every phylum-level result in this literature is iron SUPPLEMENTATION, which floods the colon with unabsorbed iron and is a different exposure from being deficient. What does exist is one rank down: two Firmicutes genera, Flavonifractor and Enterococcus, are raised in anemic pregnant women (n=218, PMID 41015193). Same shape as FUT2, where 'non-secretors have more Firmicutes' was null at phylum level but true of member genera.",
    "links": [
     {
      "id": "link_ida_state_1",
@@ -7678,6 +7678,16 @@
      "id": "link_ida_state_3",
      "label": "Iron deficiency → panic/hyperventilation attack (PMID 23603926)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23603926/"
+    },
+    {
+     "id": "seed_ida_l4",
+     "label": "Am J Clin Nutr 2025 — 218 pregnant women, Pune longitudinal cohort; maternal anemia associated with higher Flavonifractor (LFC 0.52) and Enterococcus (LFC 0.82); α/β diversity unchanged (PMID 41015193)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41015193/"
+    },
+    {
+     "id": "seed_ida_l5",
+     "label": "Iran J Microbiol 2026 — cross-sectional IDA vs healthy controls, adults 18-30, 16S; reports distinct microbiome signatures but the abstract names no taxon, so nothing here is sourced to it (PMID 42183327)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42183327/"
     }
    ],
    "taxa": [
@@ -7718,17 +7728,22 @@
      "id": "taxa_ida_3",
      "name": "Enterococcus",
      "dir": "up",
-     "refs": "Paganini & Zimmermann 2017, Am J Clin Nutr - review of iron supplementation effects on the infant and child gut microbiome (PMID 28615260)",
-     "note": "Reported increased in iron-deficient states alongside Enterobacteriaceae.",
+     "refs": "Paganini & Zimmermann 2017, Am J Clin Nutr - review of iron supplementation effects on the infant and child gut microbiome (PMID 28615260); corroborated in maternal anemia (PMID 41015193)",
+     "note": "Reported increased in iron-deficient states alongside Enterobacteriaceae. Corroborated in a deficiency STATE rather than a supplementation trial: higher in anemic pregnant women (n=218, LFC 0.82).",
      "links": [
       {
        "id": "fix_seed_ida_state_taxa_ida_3_l1",
        "label": "Paganini & Zimmermann 2017, Am J Clin Nutr - review of iron supplementation effects on the infant and child gut microbiome (PMID 28615260)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28615260/"
+      },
+      {
+       "id": "seed_ida_ent_l2",
+       "label": "Am J Clin Nutr 2025 — 218 pregnant women, Pune longitudinal cohort; maternal anemia associated with higher Flavonifractor (LFC 0.52) and Enterococcus (LFC 0.82); α/β diversity unchanged (PMID 41015193)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41015193/"
       }
      ],
      "evidence": "review",
-     "population": "unknown",
+     "population": "female",
      "evidence_source": "hand-classified"
     },
     {
@@ -7778,6 +7793,43 @@
      ],
      "evidence": "mendelian",
      "population": "unknown"
+    },
+    {
+     "id": "seed_ida_flavo",
+     "name": "Flavonifractor",
+     "dir": "up",
+     "refs": "maternal anemia cohort (PMID 41015193)",
+     "note": "Higher in anemic pregnant women (n=218, LFC 0.52, 95% CI 0.27-0.77); diversity itself was unchanged. A Firmicutes genus — see the condition note on why the phylum-level claim still has no support.",
+     "links": [
+      {
+       "id": "seed_ida_flavo_l1",
+       "label": "Am J Clin Nutr 2025 — 218 pregnant women, Pune longitudinal cohort; maternal anemia associated with higher Flavonifractor (LFC 0.52) and Enterococcus (LFC 0.82); α/β diversity unchanged (PMID 41015193)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41015193/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "id": "seed_ida_firm",
+     "name": "Firmicutes",
+     "dir": "none",
+     "refs": "no phylum-level study exists (searched 2026-08)",
+     "note": "NOT FOUND, repeatedly searched. No study reports Firmicutes at phylum level in iron deficiency — every phylum-level hit is iron SUPPLEMENTATION, a different exposure. Two member genera are up (Flavonifractor, Enterococcus; PMID 41015193), so the effect may be real one rank down.",
+     "links": [
+      {
+       "id": "seed_ida_firm_l1",
+       "label": "Am J Clin Nutr 2025 — 218 pregnant women, Pune longitudinal cohort; maternal anemia associated with higher Flavonifractor (LFC 0.52) and Enterococcus (LFC 0.82); α/β diversity unchanged (PMID 41015193)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41015193/"
+      },
+      {
+       "id": "seed_ida_firm_l2",
+       "label": "Iran J Microbiol 2026 — cross-sectional IDA vs healthy controls, adults 18-30, 16S; reports distinct microbiome signatures but the abstract names no taxon, so nothing here is sourced to it (PMID 42183327)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42183327/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
     },
     {
      "id": "cf_seed_ida_state_cf_roseburia_fprausnitzii_mannan_Faecalibacterium_prausnitzii",
