@@ -12508,6 +12508,102 @@
      "population": "unknown"
     },
     {
+     "id": "new_pso_firmicutes",
+     "name": "Firmicutes",
+     "dir": "up",
+     "refs": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+     "note": "Increased in psoriasis (16S, 55 patients vs 27 controls, LDA>2).",
+     "links": [
+      {
+       "id": "new_pso_firmicutes_l1",
+       "label": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32728075/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "id": "new_pso_bacteroidetes",
+     "name": "Bacteroidetes",
+     "dir": "down",
+     "refs": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+     "note": "Depleted in psoriasis (16S, 55 patients vs 27 controls).",
+     "links": [
+      {
+       "id": "new_pso_bacteroidetes_l1",
+       "label": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32728075/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "id": "new_pso_blautia",
+     "name": "Blautia",
+     "dir": "up",
+     "refs": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+     "note": "Higher in psoriasis patients (LDA>2). Note the psoriasis gut pattern is unusual — Faecalibacterium and Blautia, normally beneficial, are both raised here.",
+     "links": [
+      {
+       "id": "new_pso_blautia_l1",
+       "label": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32728075/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "id": "new_pso_bacteroides",
+     "name": "Bacteroides",
+     "dir": "down",
+     "refs": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+     "note": "Higher in non-psoriasis controls, i.e. lower in psoriasis (LDA>2).",
+     "links": [
+      {
+       "id": "new_pso_bacteroides_l1",
+       "label": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32728075/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "id": "new_pso_paraprevotella",
+     "name": "Paraprevotella",
+     "dir": "down",
+     "refs": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+     "note": "Higher in non-psoriasis controls, i.e. lower in psoriasis (LDA>2).",
+     "links": [
+      {
+       "id": "new_pso_paraprevotella_l1",
+       "label": "Case-control 16S, 55 patients/27 controls (PMID 32728075)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32728075/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "id": "new_pso_eubacterium_fissicatena_group",
+     "name": "Eubacterium fissicatena group",
+     "dir": "up",
+     "refs": "Two-sample Mendelian randomization, MiBioGen n=13,266 (PMID 38419189)",
+     "note": "Genetically predicted higher abundance is a causal RISK factor for psoriasis (MR, OR 1.22, FDR-corrected). Genetic, not observational abundance.",
+     "links": [
+      {
+       "id": "new_pso_eubacterium_fissicatena_group_l1",
+       "label": "Two-sample Mendelian randomization, MiBioGen n=13,266 (PMID 38419189)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38419189/"
+      }
+     ],
+     "evidence": "mendelian",
+     "population": "unknown"
+    },
+    {
      "id": "cf_new_pso_cf_infantis_ehallii_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "down",
@@ -12544,10 +12640,10 @@
     {
      "id": "cf_new_pso_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
      "name": "Phascolarctobacterium",
-     "dir": "up",
+     "dir": "down",
      "derived": true,
      "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_new_pso_cf_bacteroides_phascolarctobacterium_l1",
