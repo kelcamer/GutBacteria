@@ -14,13 +14,19 @@ propagate_cross_feeding.py and inherit their evidence from the entry they were
 derived from, so counting their citations would double-count the parent's.
 
 WHERE IT LOOKS FOR IDENTIFIERS
-  seed taxa      refs, links[].label, links[].url
-  symptom links  ref, url
+  seed taxa      refs, note, links[].label, links[].url
+  symptom links  ref, note, url
 A pubmed.ncbi.nlm.nih.gov/12345 URL *is* an identifier, so URLs are read as
 citation-bearing text and not merely as decoration. Reading only `refs` (as an
 earlier ad-hoc pass did) undercounts coverage badly: hundreds of entries state
 the identifier only in the URL. Both numbers are reported - the second one,
 "stated in the ref field", is a hygiene metric, not a coverage metric.
+
+`note` counts too, and missing it was a real bug: the Endometriosis/Dialister
+note named the two PMIDs behind a contested direction while the ref field named
+neither, so the entry was reported as single-sourced when it was not. 30 claims
+carry an identifier only in their note, and 26 of them are not single-sourced
+at all. A citation a reader can see in the popup is a citation.
 
 THE BUG THIS SCRIPT EXISTS TO NOT REPEAT
   An earlier version captured the digits out of `PMC6421268` and looked them up
@@ -180,7 +186,8 @@ def load_claims(seed_path, symptom_path):
             links = taxon.get("links") or []
             other = [l.get("label") for l in links] + [l.get("url") for l in links]
             claims.append(Claim("conditions", cond["name"], taxon["name"],
-                                taxon.get("dir", "?"), taxon.get("refs"), other))
+                                taxon.get("dir", "?"), taxon.get("refs"),
+                                other + [taxon.get("note")]))
 
     sd = json.load(open(symptom_path, encoding="utf-8"))
     for bact in sd["bacteria"]:
@@ -190,7 +197,8 @@ def load_claims(seed_path, symptom_path):
                     derived += 1
                     continue
                 claims.append(Claim("symptoms", entry.get("symptom", "?"), bact["name"],
-                                    direction, entry.get("ref"), [entry.get("url")]))
+                                    direction, entry.get("ref"),
+                                    [entry.get("url"), entry.get("note")]))
     return claims, derived
 
 
