@@ -2190,7 +2190,7 @@
      "name": "Bacteroides / Bacteroidetes",
      "dir": "both",
      "refs": "Vogt 2017",
-     "note": "Genuine geographic contradiction: increased in American and Egyptian AD cohorts (SMD=0.79, 95% CI 0.29-1.28) but not replicated in Chinese cohorts (SMD=-0.75, 95% CI -1.58-0.07, opposite-direction point estimate) in a 2024 meta-analysis. Vogt 2017's US-cohort finding (kept as the original citation) is one side of this split, not a universal direction.",
+     "note": "Contested along a POPULATION axis rather than a quality one: increased in American and Egyptian AD cohorts (SMD=0.79, 95% CI 0.29-1.28) but the point estimate reverses in Chinese cohorts (SMD=-0.75, 95% CI -1.58-0.07) in the same 2024 meta-analysis (PMID 39175809). Neither side is the weaker study; they are different populations, so Vogt 2017's US finding is one side of a split, not a universal direction.",
      "links": [
       {
        "id": "seed_ad_t2_l1",
@@ -2214,9 +2214,9 @@
     {
      "id": "seed_ad_t3",
      "name": "Bifidobacterium",
-     "dir": "both",
+     "dir": "none",
      "refs": "Vogt 2017 / PMID 39175809",
-     "note": "Conflicted direction, now with a real citation for the conflict: pooled effect across cohorts is non-significant (SMD=0.1, 95% CI -0.42-0.63) in a 2024 meta-analysis, but Chinese cohorts specifically show a positive correlation with AD (i.e. up) once adjusted for country, while the original Vogt 2017 finding here was 'down'.",
+     "note": "Tested, no reliable effect: the pooled estimate across cohorts is non-significant (SMD=0.1, 95% CI -0.42 to 0.63) in a 2024 meta-analysis. Was marked contested, but a confidence interval straddling zero is a null, not a disagreement. Two real subgroup signals survive underneath it - Chinese cohorts trend up once adjusted for country, and Vogt 2017's US cohort found it down - so the country axis is where any effect lives, if one does.",
      "links": [
       {
        "id": "seed_ad_t3_l1",
@@ -2578,7 +2578,7 @@
      "name": "Prevotella",
      "dir": "both",
      "refs": "PMID 36102237 (up) / PMID 40604345 (down/protective)",
-     "note": "Genuine contradiction: a Kazakhstan cohort (n=41 AD/43 controls, 16S) found Prevotella enriched in AD patients (PMID 36102237). A separate, larger US cohort (Microbiome in AD Risk Study, n=239 clinical/93 amyloid-status-confirmed) found the opposite pattern — higher Prevotella positively associated with cognitive performance (Animal-Naming beta=0.3 P=0.03, Trail-Making beta=0.3 P=0.04) specifically in amyloid-positive individuals, i.e. protective (PMID 40604345). Kept both rather than pick a side.",
+     "note": "Contested, and the two sides are not even measuring the same thing. The only case-control abundance comparison is small: a Kazakhstan cohort (n=41 AD/43 controls) found Prevotella enriched (PMID 36102237). The larger US study (n=239 clinical, 93 amyloid-confirmed) did not compare abundance between groups at all - it found higher Prevotella tracking BETTER cognition in amyloid-positive people (PMID 40604345), which is a protective correlation, not a depletion. Stays yellow because the abundance question rests on 41 patients. A case-control cohort of US or European size would settle it.",
      "links": [
       {
        "id": "seed_ad_t26_l1",
@@ -7749,9 +7749,9 @@
     {
      "id": "taxa_ida_4",
      "name": "Bacteroides",
-     "dir": "both",
-     "refs": "Rodent models (decrease) vs. human ferritin-stratified data (increase) - AJOG (S0002-9378(23)01643-5)",
-     "note": "SPECIES-SPLIT CONFLICT, and the previous entry showed the ANIMAL direction as the headline. Bacteroides is reported DOWN in rodent models of iron deficiency but UP in humans when ferritin is low. The map previously rendered only the rodent direction, which is backwards for a human-facing atlas - if you have the Human studies only filter on, the rodent finding is exactly the one you asked not to see. Marked \"both\" with the split stated; for human relevance, read the UP direction.",
+     "dir": "up",
+     "refs": "Human ferritin-stratified data (AJOG, S0002-9378(23)01643-5); rodent models report the opposite",
+     "note": "Up in humans when ferritin is low. Rodent models of iron deficiency report the OPPOSITE (down); human data set the arrow in a human-facing atlas, and the rodent finding is exactly what the 'Human studies only' filter exists to hide. Identifier note: the AJOG source has no PMID on file and a search for one (2026-08) returned an unrelated paper, so it stays linked by URL rather than carrying a guessed identifier.",
      "links": [
       {
        "id": "taxa_ida_4_l1",
@@ -7830,6 +7830,23 @@
      ],
      "evidence": "human-cohort",
      "population": "female"
+    },
+    {
+     "id": "cf_seed_ida_state_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "up",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is up here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_ida_state_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     },
     {
      "id": "cf_seed_ida_state_cf_roseburia_fprausnitzii_mannan_Faecalibacterium_prausnitzii",
@@ -9988,7 +10005,7 @@
      "name": "Prevotella",
      "dir": "both",
      "refs": "meta 2025 (Iavarone); metagenomics 2026 (PMID 41488762)",
-     "note": "Increased at genus level per the Iavarone review. Stage twist: in advanced / late-stage disease Prevotella (and Bacteroides) instead decrease. Cross-ref: Prevotella direction is strongly condition- and severity-dependent (↓ in autism/MS/PD). A newer, smaller case-control study (n=22 infertile endometriosis vs 13 controls, PMID 41488762) found the opposite — depleted Prevotella — reinforcing that direction is unsettled rather than resolving it. Genuine stage-dependent contradiction: a 2025 study (n=75, 39 early-stage/36 late-stage) found Bacteroides AND Prevotella decreased specifically in late-stage (Stage III/IV) disease with dysmenorrhea, while Bartonella/Snodgrassella were enriched instead (PMID 40189515) — opposite the existing 'up' citation here, which doesn't stratify by stage. 2026 gut metagenomics (n=22 paired) also found Prevotella depleted.",
+     "note": "Contested on the case-control axis: the Iavarone review reports Prevotella increased at genus level, while 2026 gut metagenomics (n=22 paired, PMID 41488762) finds it depleted. Separately and not contradicting either, it falls specifically in late-stage disease (n=75, PMID 40189515) - a within-disease gradient, a different question from patients vs controls. Cross-ref: Prevotella's direction is strongly condition-dependent (down in autism, MS, Parkinson's).",
      "links": [
       {
        "id": "seed_new_l67",
@@ -10492,7 +10509,7 @@
      "name": "Bacteroides",
      "dir": "both",
      "refs": "Nat Commun",
-     "note": "Reduced overall, part of the broader Bacteroidetes contraction seen in active CD. Genuine contradiction in the wider literature: a meta-analysis found Bacteroides significantly LOWER in active CD/UC vs. controls (and lower still in active vs. remission, PMID 27999802), while a separate 2023 global systematic review found Bacteroides INCREASED in active CD compared to controls across 8 of its included studies. Kept the existing Nat Commun 'down' citation and added both sides rather than picking one.",
+     "note": "Contested, and legitimately so: two evidence syntheses answer the SAME question and disagree. A meta-analysis finds Bacteroides significantly lower in active CD/UC vs controls (PMID 27999802); a 2023 global systematic review finds it increased in active CD across 8 studies. Same comparison, comparable design, independent - so this survives every test in RULES.MD Rule 1 and stays yellow. The Nat Commun multi-biome signature study sits on the 'down' side.",
      "links": [
       {
        "id": "new_cd_t8_l1",
@@ -10815,9 +10832,9 @@
     {
      "id": "new_uc_t5",
      "name": "Bacteroides",
-     "dir": "both",
+     "dir": "down",
      "refs": "PMC7835370",
-     "note": "Main Bacteroidaceae-family species significantly reduced in UC stool. Genuine contradiction: a separate primary study (n=48 UC/48 controls) found Bacteroides directly proportional to disease severity — i.e. elevated, not reduced — and higher baseline Bacteroides associated with worse relapse outcomes (PMID 36344781). Kept the existing Polish-cohort 'down' citation and added both sides.",
+     "note": "Main Bacteroidaceae species significantly reduced in UC stool. The apparent contradiction is a different question, not a different answer: the study reporting Bacteroides ELEVATED (n=48/48, PMID 36344781) measured it against disease SEVERITY and relapse risk within UC, not UC against controls. Both can be true - lower than healthy people, higher in the sickest patients.",
      "links": [
       {
        "id": "new_uc_t5_l1",
@@ -11096,6 +11113,23 @@
        "id": "cf_new_uc_cf_akkermansia_anaerostipes_l2",
        "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_new_uc_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
+     "name": "Phascolarctobacterium",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bacteroides is down here, and it feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_uc_cf_bacteroides_phascolarctobacterium_l1",
+       "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
       }
      ],
      "evidence": "derived",
