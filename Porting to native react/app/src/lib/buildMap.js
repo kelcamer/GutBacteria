@@ -445,7 +445,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
     if (node.type === 'cond') {
       const cond = conds[node.i]
       const taxa = (cond && cond.taxa) || []
-      const isBrain = !!(BRAIN_REGION_INFO && taxa.length && BRAIN_REGION_INFO[taxa[0].name])
+      const isBrain = !!(BRAIN_REGION_INFO && taxa.some((t) => BRAIN_REGION_INFO[t.name]))
       const trows = taxa
         .map((t) => {
           const bi = bMap[(t.name || '').trim()]
