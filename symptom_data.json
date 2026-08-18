@@ -57,12 +57,14 @@
   "Lacto-N-tetraose (LNT) supplementation",
   "Lacto-N-biose (LNB, from LNT breakdown)",
   "Galacto-N-biose (GNB, from host mucin)",
-  "Lacto-N-neotetraose (LNnT) supplementation"
+  "Lacto-N-neotetraose (LNnT) supplementation",
+  "Rumination",
+  "Difficulty with Transitions"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 47,
+   "count": 48,
    "up": [
     {
      "symptom": "Green tea / catechins",
@@ -405,6 +407,14 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9499173/",
      "evidence": "unclassified",
      "population": "unknown"
+    },
+    {
+     "symptom": "Rumination",
+     "note": "An 8-week multispecies probiotic (including Bifidobacterium) reduced rumination and cognitive reactivity to sad mood in healthy older adults (RCT, n=30) — the depletion direction here reflects that supplementation lowered rumination.",
+     "ref": "Am J Clin Nutr 2025 RCT n=30 (PMID 40222448)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40222448/",
+     "evidence": "human-rct",
+     "population": "unknown"
     }
    ],
    "both": [
@@ -737,7 +747,7 @@
   },
   {
    "name": "Roseburia",
-   "count": 43,
+   "count": 44,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -1096,6 +1106,15 @@
      "population": "n/a"
     },
     {
+     "symptom": "Rumination",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_blongum_roseburia_acetate.",
+     "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
      "symptom": "Irritability",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Akkermansia is down here, and Akkermansia feeds Roseburia (mucin O-glycans, galacto-N-biose (GNB) -> butyrate), so Roseburia is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_akkermansia_roseburia_mucin.",
@@ -1118,7 +1137,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 40,
+   "count": 41,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -1378,6 +1397,14 @@
      "ref": "PTSD antibiotic-resistance cohort 2025 (Wiad Lek; n=40 PTSD vs n=42 controls, culturomics; ↑Klebsiella pneumoniae/Enterobacter cloacae, ↓Lactobacillus casei)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41518171/",
      "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Rumination",
+     "note": "Probiotic Lactobacillus/Lactiplantibacillus supplementation significantly REDUCED rumination in RCTs — n=44 (Levilactobacillus brevis + Lactiplantibacillus plantarum, GABA/acetylcholine producers; rumination improved, p=0.006, and improved most in responders whose Lactiplantibacillus rose) and n=30 multispecies. So depletion tracks higher rumination.",
+     "ref": "Brain Behav Immun 2024 RCT n=44 (PMID 39163908); Am J Clin Nutr 2025 RCT n=30 (PMID 40222448)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39163908/",
+     "evidence": "human-rct",
      "population": "unknown"
     }
    ],
@@ -3389,7 +3416,7 @@
   },
   {
    "name": "Anaerostipes",
-   "count": 42,
+   "count": 43,
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -3741,6 +3768,15 @@
     },
     {
      "symptom": "Chronic pain",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
+     "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Rumination",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_badolescentis_lactate_utilisers.",
      "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
@@ -6569,7 +6605,7 @@
   },
   {
    "name": "Klebsiella",
-   "count": 7,
+   "count": 8,
    "up": [
     {
      "symptom": "Nausea",
@@ -6625,6 +6661,14 @@
      "ref": "2024, mSystems — infant-donor microbiota in germ-free mice",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/",
      "evidence": "animal",
+     "population": "unknown"
+    },
+    {
+     "symptom": "Difficulty with Transitions",
+     "note": "Neonatal Klebsiella abundance robustly associated with later AUTISTIC TRAITS in very-preterm children (n=73, shotgun metagenomics); difficulty with transitions (impaired cognitive/behavioural flexibility) is a core autistic-trait feature.",
+     "ref": "Gut Microbiol 2026, n=73 preterm (PMID 42465693)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42465693/",
+     "evidence": "human-cohort",
      "population": "unknown"
     }
    ],
@@ -7151,7 +7195,7 @@
   },
   {
    "name": "Eubacterium hallii",
-   "count": 42,
+   "count": 43,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -7507,6 +7551,15 @@
     },
     {
      "symptom": "Chronic pain",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
+     "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Rumination",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_infantis_ehallii.",
      "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
@@ -8162,7 +8215,7 @@
   },
   {
    "name": "Faecalibacterium prausnitzii",
-   "count": 46,
+   "count": 47,
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -8541,6 +8594,15 @@
     },
     {
      "symptom": "Overstimulation",
+     "derived": true,
+     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
+     "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "symptom": "Rumination",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bifidobacterium is down here, and Bifidobacterium feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bifidum_fprausnitzii.",
      "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
@@ -9165,6 +9227,22 @@
      "population": "unknown"
     }
    ]
+  },
+  {
+   "name": "Clostridium perfringens",
+   "count": 1,
+   "up": [
+    {
+     "symptom": "Difficulty with Transitions",
+     "note": "Neonatal Clostridium perfringens abundance associated with later EXECUTIVE FUNCTIONING and cognitive-behavioural FLEXIBILITY measures in very-preterm children (n=73), alongside gut-brain histamine/quinolinic-acid signalling modules — difficulty with transitions is a flexibility trait.",
+     "ref": "Gut Microbiol 2026, n=73 preterm shotgun metagenomics (PMID 42465693)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42465693/",
+     "evidence": "human-cohort",
+     "population": "unknown"
+    }
+   ],
+   "down": [],
+   "both": []
   }
  ]
 }
