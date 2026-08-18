@@ -75,6 +75,12 @@ function copyTipText(el, btn) {
 }
 
 export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hiddenNamesRef, symptomXrefData) {
+  // True when this is a brain-region map (taxa are brain regions, not bacteria).
+  // Used to suppress the "Genus:/Species:" rank label, which is meaningless on a
+  // brain region - reported as "Genus: parahippocampal".
+  const isBrainMap = Array.isArray(conds) && conds.some(
+    (c) => (c.taxa || []).some((t) => BRAIN_REGION_INFO && BRAIN_REGION_INFO[t.name])
+  )
   pinType = pinType || 'cond'
   const NS = 'http://www.w3.org/2000/svg'
   const W = 1000
@@ -476,6 +482,44 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
             '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.08)"><b style="color:#F1EAFF;font-size:10.5px">Likely symptom presentation</b><div style="color:#7C6BA8;font-size:9.5px;margin-bottom:2px">Synthesized from this condition\'s regions and their reported directions — not a diagnostic claim.</div><ul style="margin:2px 0 0 16px;padding:0;color:#A08FC7">' +
             symLis + '</ul></div>'
         }
+        // Closest brain-neighbours and closest opposite (protective), by
+        // shared-region agreement. Two conditions are "neighbours" when they
+        // move the same brain regions the same way, "opposite" when they move
+        // shared regions in opposite directions. Same net-tally idea the
+        // symptom map uses, applied to brain regions rather than bacteria.
+        const myDir = {}
+        taxa.forEach((t) => { if (t.dir === 'up' || t.dir === 'down') myDir[t.name] = t.dir })
+        const scores = []
+        conds.forEach((o) => {
+          if (!o || o.name === cond.name) return
+          let agree = 0, disagree = 0
+          ;(o.taxa || []).forEach((t) => {
+            const d = myDir[t.name]
+            if (!d || (t.dir !== 'up' && t.dir !== 'down')) return
+            if (t.dir === d) agree++; else disagree++
+          })
+          if (agree + disagree > 0) scores.push({ name: o.name, agree, disagree })
+        })
+        const neigh = scores.filter((x) => x.agree > x.disagree)
+          .sort((a, b) => (b.agree - b.disagree) - (a.agree - a.disagree) || a.name.localeCompare(b.name))
+          .slice(0, 5)
+        const oppo = scores.filter((x) => x.disagree > x.agree)
+          .sort((a, b) => (b.disagree - b.agree) - (a.disagree - a.agree) || a.name.localeCompare(b.name))
+          .slice(0, 5)
+        if (neigh.length) {
+          summaryHtml +=
+            '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.08)">' +
+            '<b style="color:#8FD3F4;font-size:10.5px">Closest brain neighbours</b>' +
+            '<div style="color:#7C6BA8;font-size:9.5px;margin-bottom:2px">Conditions that move the same brain regions the same way, most-shared first.</div>' +
+            esc(neigh.map((x) => x.name).join(', ')) + '</div>'
+        }
+        if (oppo.length) {
+          summaryHtml +=
+            '<div style="margin-top:5px;padding-top:5px;border-top:1px solid rgba(255,255,255,.08)">' +
+            '<b style="color:#3DDC97;font-size:10.5px">Most opposite (exploratory)</b>' +
+            '<div style="color:#7C6BA8;font-size:9.5px;margin-bottom:2px">Conditions that move shared brain regions in the OPPOSITE direction - a statistical mirror, not evidence one protects against the other.</div>' +
+            esc(oppo.map((x) => x.name).join(', ')) + '</div>'
+        }
       } else if (Object.keys(xrefBactToSymptoms).length) {
         // New (no minified-source equivalent): cross-references this
         // condition's own bacteria taxa against symptom_data.json - same
@@ -553,7 +597,7 @@ export function buildMap(host, tip, conds, mode, scramble, dimNodes, pinType, hi
           (upItems ? '<div style="margin-bottom:3px"><b style="color:' + dirColor('up') + '">▲ If increased:</b><ul style="margin:2px 0 0 16px;padding:0;color:#A08FC7">' + upItems + '</ul></div>' : '') +
           (downItems ? '<div style="margin-bottom:6px"><b style="color:' + dirColor('down') + '">▼ If decreased:</b><ul style="margin:2px 0 0 16px;padding:0;color:#A08FC7">' + downItems + '</ul></div>' : '')
       }
-      const rankTag = info ? '' : '<span style="font-weight:600;color:#A08FC7;font-size:11px">' + rankWord(node.name) + ': </span>'
+      const rankTag = (info || isBrainMap) ? '' : '<span style="font-weight:600;color:#A08FC7;font-size:11px">' + rankWord(node.name) + ': </span>'
       html =
         '<div style="font-weight:700;color:#F1EAFF">' + rankTag + esc(node.name) + '</div><div style="color:#A08FC7;font-size:10px;margin-bottom:3px">in ' +
         node.deg + ' condition' + (node.deg > 1 ? 's' : '') + '</div><div style="font-size:10.5px;line-height:1.5;max-height:260px;overflow-y:auto">' + infoHtml + rows + '</div>'
