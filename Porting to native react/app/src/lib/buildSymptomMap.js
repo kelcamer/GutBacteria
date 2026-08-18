@@ -626,6 +626,9 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
 
     var curr = null;
     var dragNode = null;
+    var scrollReleasedIdx = null; // node let go to the page as a scroll, still tap-rescuable
+    var touchDragArmed = false;   // long-press satisfied: this touch may drag in any direction
+    var longPressTimer = null;
     var dragIdx = null; // V-array position of dragNode, NOT dragNode.i (see onPointerDown's comment) - what selectedNodes/showConnectionsOnly/hideNode/selectByNames all actually index by.
     var isDragging = false;
     var dragStartX = 0,
@@ -644,6 +647,24 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     var SATELLITE_RISE = 84;
     var LABEL_GAP = 78,
       LABEL_ROW = 13;
+    // TOUCH gets a finger-sized decision distance. 4px is a mouse number: a
+    // thumb wobbles further than that just resting on the glass, so on a phone
+    // the drag-vs-scroll question below was being answered by noise, before the
+    // gesture had shown any intent. Reported symptom: "trouble clicking and
+    // dragging nodes on mobile" - both halves, because a wobbled tap was
+    // released to the page as a scroll and then never counted as a tap either.
+    var TOUCH_DRAG_THRESHOLD = 10;
+    // LONG-PRESS TO DRAG, the standard touch answer to "is this a drag or a
+    // scroll?". Holding still for a moment is unambiguous intent: a scroll
+    // gesture starts moving immediately, so it is unaffected. Without this,
+    // dragging a node vertically on a phone was IMPOSSIBLE by construction -
+    // the heuristic below released any predominantly-vertical touch back to
+    // the page, so a straight-up drag just scrolled. Verified over CDP: the
+    // "dragged" node and an untouched control node moved by an identical
+    // 57.0px, i.e. the page scrolled and nothing was dragged at all.
+    var LONG_PRESS_MS = 250;
+    // Movement small enough that a released gesture was still meant as a tap.
+    var TAP_SLOP = 16;
     var DRAG_THRESHOLD = 4; // px of real movement required before a click becomes a drag — real mice/trackpads almost never report exactly 0 movement between pointerdown/pointerup, so without this a plain click is misread as a drag and never registers as a selection.
     var lastClickIdx = null,
       lastClickTime = 0;
@@ -1339,6 +1360,11 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         isDragging = false;
         dragStartX = ev.clientX;
         dragStartY = ev.clientY;
+        touchDragArmed = false;
+        if (longPressTimer) clearTimeout(longPressTimer);
+        if (ev.pointerType !== "mouse") {
+          longPressTimer = setTimeout(function () { touchDragArmed = true; }, LONG_PRESS_MS);
+        }
         // New: pointer capture is deferred to onPointerMove now, not
         // claimed here - see that comment for why. Reported mobile bug:
         // touching down ON a node (e.g. ADHD, sitting right where a thumb
@@ -1363,7 +1389,9 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           var jitterDx = ev.clientX - dragStartX,
             jitterDy = ev.clientY - dragStartY;
           var jitterDist = Math.hypot(jitterDx, jitterDy);
-          if (jitterDist < DRAG_THRESHOLD) return; // still just a click, not a drag yet
+          var threshold = ev.pointerType === "mouse" ? DRAG_THRESHOLD : TOUCH_DRAG_THRESHOLD;
+          if (jitterDist < threshold) return; // still just a click, not a drag yet
+          if (longPressTimer) { clearTimeout(longPressTimer); longPressTimer = null; }
           // TOUCH ONLY: predominantly VERTICAL movement past the threshold
           // reads as "trying to scroll the page," not "trying to drag this
           // node" - this SVG's own touch-action already permits vertical
@@ -1384,7 +1412,14 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           // released mid-gesture and never moved at all, and the abandoned
           // gesture became a browser text-selection drag that autoscrolled
           // the page instead (see the userSelect note in the SVG setup).
-          if (ev.pointerType !== "mouse" && Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
+          if (!touchDragArmed && ev.pointerType !== "mouse" &&
+              Math.abs(jitterDy) > Math.abs(jitterDx) * 1.5) {
+            // Released to the page as a scroll - but remember which node it
+            // was. If the finger lifts having barely moved, the user meant to
+            // tap it, and onPointerUp rescues that below. Without this the tap
+            // vanished entirely: the click branch lives behind `if (dragNode)`,
+            // and dragNode had just been nulled.
+            scrollReleasedIdx = dragIdx;
             dragNode = null;
             return;
           }
@@ -1434,6 +1469,8 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     }
 
     function onPointerUp(ev) {
+      if (longPressTimer) { clearTimeout(longPressTimer); longPressTimer = null; }
+      touchDragArmed = false;
       if (dragNode) {
         // Pointer capture is now only claimed once a real drag is
         // confirmed (see onPointerMove) - a plain tap that never crossed
@@ -1455,41 +1492,53 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
           dragNode.vy = 0;
         }
         if (!isDragging) {
-          // Popups open only on double-click — detected here by matching node
+          handleTap(dragIdx);
+        }
+        dragNode = null;
+        isDragging = false;
+      } else if (scrollReleasedIdx != null) {
+        // The gesture was let go to the page as a scroll. If the finger barely
+        // moved, it was a tap after all - honour it rather than dropping it.
+        var upDx = ev.clientX - dragStartX, upDy = ev.clientY - dragStartY;
+        if (Math.hypot(upDx, upDy) < TAP_SLOP) handleTap(scrollReleasedIdx);
+      }
+      scrollReleasedIdx = null;
+    }
+
+    // Tap / double-tap on a node. Extracted so the normal path and the
+    // scroll-release rescue in onPointerUp cannot drift apart.
+    function handleTap(clickedIdx) {
+      if (clickedIdx == null) return;
+      // Popups open only on double-click — detected here by matching node
           // INDEX within a short time window, not by the browser's native
           // dblclick event (which didn't fire reliably: its target-matching
           // gets thrown off by a few px of cursor drift between clicks, or by
           // the node itself drifting under force-directed physics, both of
           // which are easy to trigger on a real click of a small node). A
           // plain click still selects/deselects the node (drives the
-          // highlight plus the Show Connections / Hide Isolated filters).
-          var clickedIdx = dragIdx;
-          var now = Date.now();
-          var isDoubleClick = lastClickIdx === clickedIdx && (now - lastClickTime) < DBLCLICK_WINDOW;
-          if (isDoubleClick) {
-            lastClickIdx = null;
-            lastClickTime = 0; // consumed — a 3rd quick click starts fresh, not a chained toggle
-            if (pinnedEls[String(clickedIdx)]) {
-              closePinned(clickedIdx);
-            } else {
-              selectedNodes.add(clickedIdx);
-              showPinned(clickedIdx);
-              hidePreview();
-            }
-          } else {
-            lastClickIdx = clickedIdx;
-            lastClickTime = now;
-            if (selectedNodes.has(clickedIdx)) {
-              selectedNodes.delete(clickedIdx);
-            } else {
-              selectedNodes.add(clickedIdx);
-            }
-          }
-          setHi(curr);
+      // highlight plus the Show Connections / Hide Isolated filters).
+      var now = Date.now();
+      var isDoubleClick = lastClickIdx === clickedIdx && (now - lastClickTime) < DBLCLICK_WINDOW;
+      if (isDoubleClick) {
+        lastClickIdx = null;
+        lastClickTime = 0; // consumed — a 3rd quick click starts fresh, not a chained toggle
+        if (pinnedEls[String(clickedIdx)]) {
+          closePinned(clickedIdx);
+        } else {
+          selectedNodes.add(clickedIdx);
+          showPinned(clickedIdx);
+          hidePreview();
         }
-        dragNode = null;
-        isDragging = false;
+      } else {
+        lastClickIdx = clickedIdx;
+        lastClickTime = now;
+        if (selectedNodes.has(clickedIdx)) {
+          selectedNodes.delete(clickedIdx);
+        } else {
+          selectedNodes.add(clickedIdx);
+        }
       }
+      setHi(curr);
       // A press on the map's BACKGROUND is now deliberately inert. It used to
       // close every pinned popup AND fire onBackgroundClick, which SymptomTab
       // wired to "reset the picker to show everything" - so one stray click on
@@ -1513,6 +1562,9 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
     // unknown, so this just resets transient state without treating it as
     // any kind of click.
     function onPointerCancel(ev) {
+      if (longPressTimer) { clearTimeout(longPressTimer); longPressTimer = null; }
+      touchDragArmed = false;
+      scrollReleasedIdx = null; // the browser took the gesture; it was not a tap
       if (dragNode) {
         try { svg.releasePointerCapture(ev.pointerId); } catch { /* already released/invalid, harmless */ }
       }
@@ -1650,6 +1702,16 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         hideNode(+el.dataset.i);
       }
     }
+
+    // While a long-press drag is armed, the page must not scroll underneath the
+    // finger - otherwise the node follows the touch AND the map slides away.
+    // pointermove's preventDefault cannot do this on its own: with touch-action
+    // permitting pan-y, Chrome hands the gesture to the compositor and the
+    // pointer events arrive non-cancelable. A NON-PASSIVE touchmove listener is
+    // the one hook that still stops it.
+    svg.addEventListener("touchmove", function (ev) {
+      if (touchDragArmed && dragNode && ev.cancelable) ev.preventDefault();
+    }, { passive: false });
 
     svg.addEventListener("pointerdown", onPointerDown);
     svg.addEventListener("pointermove", onPointerMove);
