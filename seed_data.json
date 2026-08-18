@@ -7387,13 +7387,18 @@
      "id": "seed_451",
      "name": "Agathobacter",
      "dir": "down",
-     "refs": "Fan 2023; Prochazkova 2021",
-     "note": "Enriched in healthy controls vs AN.",
+     "refs": "Fan 2023; Prochazkova 2021; corroborated PMID 42208205",
+     "note": "Enriched in healthy controls vs AN. Corroborated in a 2026 eating-disorder cohort that separated anorexia from bulimia and binge-eating.",
      "links": [
       {
        "id": "seed_452",
        "label": "Fan 2023 (Nat Microbiol; faecal metagenomics + FMT into germ-free mice transfers phenotype: Bacteroidota/Actinobacteriota ↓, Christensenellaceae ↑)",
        "url": "https://www.nature.com/articles/s41564-023-01355-5"
+      },
+      {
+       "id": "seed_451_l2",
+       "label": "16S 2026 (Clin Nutr; anorexia vs healthy and vs other eating disorders: ↓Agathobacter, ↓Romboutsia, ↑Pseudomonas specifically in anorexia; PMID 42208205)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42208205/"
       }
      ],
      "evidence": "animal",
@@ -7610,17 +7615,22 @@
     {
      "id": "seed_589",
      "name": "Akkermansia muciniphila",
-     "dir": "up",
-     "refs": "J Psychosom Res 2025 (16S, implicit-learning pilot study, n=16 AN vs n=14 HC; ↑Akkermansia muciniphila in AN, ↑Roseburia/Agathobacter/Faecalibacterium in HC)",
-     "note": "Increased abundance (LEfSe) in AN patients (n=16) vs healthy controls (n=14), while SCFA-producing species (Roseburia, Agathobacter, Faecalibacterium — all already tracked here) were more prevalent in controls.",
+     "dir": "down",
+     "refs": "Systematic review, 80 studies (PMID 41710156); dissent: J Psychosom Res 2025 pilot, n=16 AN vs 14 HC",
+     "note": "FLIPPED to down. An 80-study systematic review (2,691 participants) reports complete loss of Akkermansia in 100% of anorexia and binge-eating patients. The previous 'up' came from a 16-vs-14 LEfSe pilot — the same shape of evidence as the small-subgroup indicator tests this atlas has been burned by before. Caveat on the review: it pools anorexia with binge-eating disorder, so a separated cohort could refine it.",
      "links": [
       {
        "id": "seed_590",
        "label": "J Psychosom Res 2025 (16S, implicit-learning pilot study, n=16 AN vs n=14 HC; ↑Akkermansia muciniphila in AN, ↑Roseburia/Agathobacter/Faecalibacterium in HC)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/40424967/"
+      },
+      {
+       "id": "seed_589_l2",
+       "label": "Systematic review 2026 (Front Neurosci; 80 studies, 2,691 participants — anorexia and binge-eating disorder show ↓Lactobacillus and complete loss of Akkermansia in 100% of patients; PMID 41710156)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/41710156/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -7654,6 +7664,28 @@
      ],
      "evidence": "human-cohort",
      "population": "unknown"
+    },
+    {
+     "id": "cf_seed_424_cf_badolescentis_lactate_utilisers_Anaerostipes",
+     "name": "Anaerostipes",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
+     "links": [
+      {
+       "id": "cf_seed_424_cf_badolescentis_lactate_utilisers_l1",
+       "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
+      },
+      {
+       "id": "cf_seed_424_cf_akkermansia_anaerostipes_l2",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -11704,16 +11736,21 @@
      "id": "new_ra_t1",
      "name": "Prevotella copri",
      "dir": "up",
-     "refs": "eLife",
-     "note": "The signature RA finding: expanded in new-onset untreated RA, correlates with disease, and colonizing mice increases susceptibility to arthritis via Th17 induction.",
+     "refs": "eLife; sample-site caveat PMID 33450018",
+     "note": "The signature RA finding: expanded in new-onset untreated RA, correlates with disease, and colonizing mice increases susceptibility to arthritis via Th17 induction. SAMPLE-SITE CAVEAT: the 26-study review does find Prevotella increased in RA, but in the ORAL CAVITY, not the gut. That does not corroborate a gut claim (Rule 4) — it may be a separate phenomenon.",
      "links": [
       {
        "id": "new_ra_t1_l1",
        "label": "Scher et al. 2013",
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3816614/"
+      },
+      {
+       "id": "new_ra_t1_l2",
+       "label": "Systematic review 2021 (Rheumatology Oxford; 26 case-control studies. GUT: ≥3 studies report Faecalibacterium decreased in early-RA/RA. ORAL CAVITY separately: Prevotella increased, Streptococcus and Haemophilus decreased; PMID 33450018)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33450018/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -11736,16 +11773,21 @@
      "id": "new_ra_t3",
      "name": "Bifidobacterium",
      "dir": "down",
-     "refs": "PMC9499173",
-     "note": "Reduced in early/established RA — loss of a barrier-supportive, generally anti-inflammatory genus.",
+     "refs": "PMC9499173; dissent PMID 31662859",
+     "note": "Reduced in early/established RA — loss of a barrier-supportive, generally anti-inflammatory genus. Dissent recorded: an 80-study review of rheumatic and inflammatory bowel disease found Bifidobacterium INCREASED. Weaker for RA specifically because it pools RA with IBD cohorts, so the arrow stays down.",
      "links": [
       {
        "id": "new_ra_t3_l1",
        "label": "Gut microbiota and RA review",
        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9499173/"
+      },
+      {
+       "id": "new_ra_t3_l2",
+       "label": "Systematic review 2020 (United European Gastroenterol J; 80 studies, 1,084 rheumatic-disease patients plus IBD cohorts: ↑Bifidobacterium/Staphylococcus/Enterococcus/Lactobacillus/Klebsiella/Proteus, ↓Faecalibacterium/Roseburia/Verrucomicrobia/Fusobacteria; PMID 31662859)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31662859/"
       }
      ],
-     "evidence": "review",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -11768,16 +11810,21 @@
      "id": "new_ra_t5",
      "name": "Enterococcus",
      "dir": "up",
-     "refs": "PMID 32272752",
-     "note": "Increased in established RA cohorts.",
+     "refs": "PMID 32272752; corroborated PMID 31662859",
+     "note": "Increased in established RA cohorts. Corroborated by an 80-study review.",
      "links": [
       {
        "id": "new_ra_t5_l1",
        "label": "Chen et al. 2020, expansion of rare/harmful lineages in RA",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32272752/"
+      },
+      {
+       "id": "new_ra_t5_l2",
+       "label": "Systematic review 2020 (United European Gastroenterol J; 80 studies, 1,084 rheumatic-disease patients plus IBD cohorts: ↑Bifidobacterium/Staphylococcus/Enterococcus/Lactobacillus/Klebsiella/Proteus, ↓Faecalibacterium/Roseburia/Verrucomicrobia/Fusobacteria; PMID 31662859)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31662859/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -11912,16 +11959,26 @@
      "id": "seed_723",
      "name": "Faecalibacterium",
      "dir": "down",
-     "refs": "Zhen Ci Yan Jiu 2026 (16S, pre-treatment baseline, n=65 RA vs 30 HC; ↓Bacteroidota/Faecalibacterium/Bacteroides/Bifidobacterium, ↑F/B ratio, Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella)",
-     "note": "Genus-level: significantly lower in RA patients (n=65, pre-treatment baseline) vs 30 healthy controls, alongside Bacteroidota/Bacteroides/Bifidobacterium (the latter already tracked here as down); opportunistic taxa (Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella) were elevated.",
+     "refs": "Zhen Ci Yan Jiu 2026 (16S, pre-treatment baseline, n=65 RA vs 30 HC; ↓Bacteroidota/Faecalibacterium/Bacteroides/Bifidobacterium, ↑F/B ratio, Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella); corroborated PMID 33450018, PMID 31662859",
+     "note": "Genus-level: significantly lower in RA patients (n=65, pre-treatment baseline) vs 30 healthy controls, alongside Bacteroidota/Bacteroides/Bifidobacterium (the latter already tracked here as down); opportunistic taxa (Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella) were elevated. Corroborated twice, and it is the most reproducible gut finding in RA: at least 3 studies within a 26-study review, plus an 80-study review.",
      "links": [
       {
        "id": "seed_724",
        "label": "Zhen Ci Yan Jiu 2026 (16S, pre-treatment baseline, n=65 RA vs 30 HC; ↓Bacteroidota/Faecalibacterium/Bacteroides/Bifidobacterium, ↑F/B ratio, Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42482584/"
+      },
+      {
+       "id": "seed_723_l2",
+       "label": "Systematic review 2021 (Rheumatology Oxford; 26 case-control studies. GUT: ≥3 studies report Faecalibacterium decreased in early-RA/RA. ORAL CAVITY separately: Prevotella increased, Streptococcus and Haemophilus decreased; PMID 33450018)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33450018/"
+      },
+      {
+       "id": "seed_723_l3",
+       "label": "Systematic review 2020 (United European Gastroenterol J; 80 studies, 1,084 rheumatic-disease patients plus IBD cohorts: ↑Bifidobacterium/Staphylococcus/Enterococcus/Lactobacillus/Klebsiella/Proteus, ↓Faecalibacterium/Roseburia/Verrucomicrobia/Fusobacteria; PMID 31662859)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31662859/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -11960,16 +12017,21 @@
      "id": "seed_729",
      "name": "Klebsiella",
      "dir": "up",
-     "refs": "Zhen Ci Yan Jiu 2026 (16S, pre-treatment baseline, n=65 RA vs 30 HC; ↑Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella)",
-     "note": "Significantly higher in RA patients (n=65, pre-treatment baseline) vs 30 healthy controls, among a broader opportunistic-pathogen signature.",
+     "refs": "Zhen Ci Yan Jiu 2026 (16S, pre-treatment baseline, n=65 RA vs 30 HC; ↑Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella); corroborated PMID 31662859",
+     "note": "Significantly higher in RA patients (n=65, pre-treatment baseline) vs 30 healthy controls, among a broader opportunistic-pathogen signature. Corroborated by an 80-study review.",
      "links": [
       {
        "id": "seed_730",
        "label": "Zhen Ci Yan Jiu 2026 (16S, pre-treatment baseline, n=65 RA vs 30 HC; ↑Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/42482584/"
+      },
+      {
+       "id": "seed_729_l2",
+       "label": "Systematic review 2020 (United European Gastroenterol J; 80 studies, 1,084 rheumatic-disease patients plus IBD cohorts: ↑Bifidobacterium/Staphylococcus/Enterococcus/Lactobacillus/Klebsiella/Proteus, ↓Faecalibacterium/Roseburia/Verrucomicrobia/Fusobacteria; PMID 31662859)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31662859/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -12008,16 +12070,21 @@
      "id": "new_ra_t20",
      "name": "Streptococcus",
      "dir": "up",
-     "refs": "n=29 RA/30 controls (PMID 34670873)",
-     "note": "Significantly elevated relative abundance in RA patients vs. controls (3.5% vs. 0.8%, P=0.0013) — one of 97 genera found more abundant in the RA group.",
+     "refs": "n=29 RA/30 controls (PMID 34670873); contradicted at another site PMID 33450018",
+     "note": "Significantly elevated relative abundance in RA patients vs. controls (3.5% vs. 0.8%, P=0.0013) — one of 97 genera found more abundant in the RA group. Different site, opposite direction: the same review reports Streptococcus DECREASED in the oral cavity of RA patients. Not a contradiction of this gut entry, but worth knowing the mouth and gut disagree here.",
      "links": [
       {
        "id": "new_ra_t20_l1",
        "label": "n=29/30, biomarker study (PMID 34670873)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/34670873/"
+      },
+      {
+       "id": "new_ra_t20_l2",
+       "label": "Systematic review 2021 (Rheumatology Oxford; 26 case-control studies. GUT: ≥3 studies report Faecalibacterium decreased in early-RA/RA. ORAL CAVITY separately: Prevotella increased, Streptococcus and Haemophilus decreased; PMID 33450018)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33450018/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -12056,16 +12123,21 @@
      "id": "audit_RA_Akkermansia_muciniphila",
      "name": "Akkermansia muciniphila",
      "dir": "up",
-     "refs": "n=128 RA/20 healthy controls (PMID 31652955)",
-     "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients.",
+     "refs": "n=128 RA/20 healthy controls (PMID 31652955); dissent one rank up PMID 31662859",
+     "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients. Dissent one rank up: the same 80-study review found Verrucomicrobia — the phylum this species belongs to — DECREASED across rheumatic and IBD patients.",
      "links": [
       {
        "id": "audit_RA_Akkermansia_muciniphila_l1",
        "label": "PMID 31652955",
        "url": "https://pubmed.ncbi.nlm.nih.gov/31652955/"
+      },
+      {
+       "id": "audit_RA_Akkermansia_muciniphila_l2",
+       "label": "Systematic review 2020 (United European Gastroenterol J; 80 studies, 1,084 rheumatic-disease patients plus IBD cohorts: ↑Bifidobacterium/Staphylococcus/Enterococcus/Lactobacillus/Klebsiella/Proteus, ↓Faecalibacterium/Roseburia/Verrucomicrobia/Fusobacteria; PMID 31662859)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31662859/"
       }
      ],
-     "evidence": "human-cohort",
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
