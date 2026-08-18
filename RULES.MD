@@ -108,32 +108,54 @@ Rules for the checks themselves:
   all 1,530 entries and compared. If they disagree, one of them is lying.
 - **Pin every fixed bug with a test**, so it cannot come back quietly.
 
-## Rule 4 — Check three axes before believing two studies disagree
+## Rule 4 — Capture every connection you read, not just the one asked about
+
+If a paper you are reading names a taxon in a condition, add that connection to
+that condition - even when it is nothing to do with the question that sent you
+to the paper. The research has already been done and the abstract already read;
+letting the other nine findings evaporate because you were only asked about the
+tenth is pure waste.
+
+This does not override Rule 2. Apply judgement:
+
+- **Real gut flora only.** A 16S study often lists environmental or oral taxa
+  (Sphingomonas, Chloroflexi, Rothia, sometimes Acinetobacter) that are
+  contamination or the wrong body site, not gut residents. Skip those, and say
+  in the commit why.
+- **Carry the direction the paper reports**, and the caveats with it - a single
+  confounded cohort is added as a single confounded cohort (Rules 1, 8).
+- **Rank discipline still applies** (Rule 5): add the taxon at the rank the
+  study measured it.
+- It is fine to add a taxon that only appears once. Rule 8 records the searches
+  that found nothing; this records the findings that a narrow question would
+  have thrown away.
+
+## Rule 5 — Check three axes before believing two studies disagree
 
 Rank (genus vs species), sample site (stool vs mucosa vs milk), nomenclature
 era. Four FUT2 "contradictions" dissolved this way in one sitting, including
 one where a pregnancy cohort sitting on the *Clostridium* node turned out to be
 corroborating a *Lachnospiraceae* claim.
 
-## Rule 5 — Never cite a paper you have not read the abstract of
+## Rule 6 — Never cite a paper you have not read the abstract of
 
 In one 12-candidate batch, 4 were unusable: porcine milk oligosaccharides in
 pigs, a Parkinson's trial not using the compound at all, a vitamin-D milk paper,
 and an unrelated NEC study. All four would have looked fine in a citation list.
 Verification is the work; searching is the easy part.
 
-## Rule 6 — Popup notes are read on a phone
+## Rule 7 — Popup notes are read on a phone
 
 Median note is 120 characters. Verdict first, one or two caveats, citations in
 the `ref` field, long reasoning in the commit message.
 
-## Rule 7 — An unsourced claim does not outrank a sourced one
+## Rule 8 — An unsourced claim does not outrank a sourced one
 
 If the only thing behind a direction is an orphaned bibliography number or a
 legacy entry, and a real citation says the opposite, the real citation wins.
 Do not mark it yellow to be polite.
 
-## Rule 8 — Record the searches that found nothing
+## Rule 9 — Record the searches that found nothing
 
 If a taxon has one source and a search turns up no second one, say so in the
 note with the date. That is a result, and it stops the next person repeating

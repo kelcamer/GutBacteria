@@ -14630,6 +14630,102 @@
      "population": "female"
     },
     {
+     "id": "new_perimeno_paraprev",
+     "name": "Paraprevotella",
+     "dir": "up",
+     "refs": "perimenopause vs youth 16S (PMID 39991125)",
+     "note": "Increased in perimenopausal vs younger women (16S; p<0.05). One 16S cohort of perimenopausal vs younger women, and the comparison is confounded by physical activity (the perimenopausal group was also less active), so some of this shift may be activity rather than hormones. Added under the rule that a connection read should not be discarded just because it wasn't the question.",
+     "links": [
+      {
+       "id": "new_perimeno_paraprev_l1",
+       "label": "Perimenopausal vs youth women, 16S (PMID 39991125)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39991125/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "id": "new_perimeno_flavo",
+     "name": "Flavonifractor",
+     "dir": "up",
+     "refs": "perimenopause vs youth 16S (PMID 39991125)",
+     "note": "Increased in perimenopausal vs younger women (16S; p<0.05). One 16S cohort of perimenopausal vs younger women, and the comparison is confounded by physical activity (the perimenopausal group was also less active), so some of this shift may be activity rather than hormones. Added under the rule that a connection read should not be discarded just because it wasn't the question.",
+     "links": [
+      {
+       "id": "new_perimeno_flavo_l1",
+       "label": "Perimenopausal vs youth women, 16S (PMID 39991125)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39991125/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "id": "new_perimeno_intesti",
+     "name": "Intestinimonas",
+     "dir": "up",
+     "refs": "perimenopause vs youth 16S (PMID 39991125)",
+     "note": "Increased in perimenopausal vs younger women (16S; p<0.05). One 16S cohort of perimenopausal vs younger women, and the comparison is confounded by physical activity (the perimenopausal group was also less active), so some of this shift may be activity rather than hormones. Added under the rule that a connection read should not be discarded just because it wasn't the question.",
+     "links": [
+      {
+       "id": "new_perimeno_intesti_l1",
+       "label": "Perimenopausal vs youth women, 16S (PMID 39991125)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39991125/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "id": "new_perimeno_collin",
+     "name": "Collinsella",
+     "dir": "down",
+     "refs": "perimenopause vs youth 16S (PMID 39991125)",
+     "note": "Decreased in perimenopausal vs younger women (16S; p<0.05). One 16S cohort of perimenopausal vs younger women, and the comparison is confounded by physical activity (the perimenopausal group was also less active), so some of this shift may be activity rather than hormones. Added under the rule that a connection read should not be discarded just because it wasn't the question.",
+     "links": [
+      {
+       "id": "new_perimeno_collin_l1",
+       "label": "Perimenopausal vs youth women, 16S (PMID 39991125)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39991125/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "id": "new_perimeno_rgnavus",
+     "name": "Ruminococcus gnavus",
+     "dir": "down",
+     "refs": "perimenopause vs youth 16S (PMID 39991125)",
+     "note": "Decreased in perimenopausal vs younger women (16S; p<0.05). One 16S cohort of perimenopausal vs younger women, and the comparison is confounded by physical activity (the perimenopausal group was also less active), so some of this shift may be activity rather than hormones. Added under the rule that a connection read should not be discarded just because it wasn't the question.",
+     "links": [
+      {
+       "id": "new_perimeno_rgnavus_l1",
+       "label": "Perimenopausal vs youth women, 16S (PMID 39991125)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39991125/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
+     "id": "new_perimeno_lactococ",
+     "name": "Lactococcus",
+     "dir": "down",
+     "refs": "perimenopause vs youth 16S (PMID 39991125)",
+     "note": "Decreased in perimenopausal vs younger women (16S; p<0.05). One 16S cohort of perimenopausal vs younger women, and the comparison is confounded by physical activity (the perimenopausal group was also less active), so some of this shift may be activity rather than hormones. Added under the rule that a connection read should not be discarded just because it wasn't the question.",
+     "links": [
+      {
+       "id": "new_perimeno_lactococ_l1",
+       "label": "Perimenopausal vs youth women, 16S (PMID 39991125)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39991125/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "female"
+    },
+    {
      "id": "cf_new_perimeno_cf_bifidum_fprausnitzii_Faecalibacterium_prausnitzii",
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",

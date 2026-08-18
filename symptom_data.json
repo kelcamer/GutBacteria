@@ -1908,7 +1908,7 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 20,
+   "count": 21,
    "up": [
     {
      "symptom": "Antibiotics",
@@ -2071,6 +2071,16 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/40339805/",
      "evidence": "human-cohort",
      "population": "unknown"
+    }
+   ],
+   "both": [
+    {
+     "symptom": "2'-Fucosyllactose (HMO) supplementation",
+     "note": "Context-dependent, so 'both'. In DISEASE and in-vitro adult models 2'-FL REDUCES it — cut in adult fecal fermentation (PMID 41133096) and in two mouse E. coli diarrhoea models (PMID 41097176, 40548525). In a HEALTHY growing-mouse study 2'-FL ENRICHED Enterobacteriaceae/Escherichia instead (PMID 40944225). The mechanism explains the split: E. coli and B. bifidum cooperatively degrade 2'-FL (E. coli supplies cysteine, then feeds on the freed sugars, PMID 42020426), so 2'-FL can partly FEED E. coli in a healthy gut while the SCFA shift crowds it out under pathogen challenge. Mostly mouse/in-vitro. See also the phylum-level 2'-FL → Proteobacteria [down] already here.",
+     "ref": "Reduced: in-vitro adult (PMID 41133096), mouse EPEC (PMID 41097176, 40548525). Increased: healthy mouse (PMID 40944225). Mechanism: cooperative degradation (PMID 42020426)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42020426/",
+     "evidence": "in-vitro",
+     "population": "n/a"
     }
    ]
   },
