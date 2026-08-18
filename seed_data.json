@@ -2636,13 +2636,18 @@
      "id": "audit_Alzh_Bacteroidetes",
      "name": "Bacteroidetes",
      "dir": "up",
-     "refs": "Vogt 2017 (Sci Rep): Bacteroidetes raised in AD alongside Firmicutes depletion.",
+     "refs": "Vogt 2017 (Sci Rep): Bacteroidetes raised in AD alongside Firmicutes depletion.; PMID 29051531",
      "note": "Vogt 2017 (Sci Rep): Bacteroidetes raised in AD alongside Firmicutes depletion.",
      "links": [
       {
        "id": "audit_Alzh_Bacteroidetes_l1",
        "label": "Vogt 2017 (Sci Rep): Bacteroidetes raised in AD alongside Firmicutes depletion.",
        "url": "https://www.nature.com/articles/s41598-017-13601-y"
+      },
+      {
+       "id": "audit_Alzh_Bacteroidetes_l2",
+       "label": "Vogt et al. 2017, Sci Rep (PMID 29051531)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/29051531/"
       }
      ],
      "evidence": "unclassified",
@@ -2652,13 +2657,18 @@
      "id": "audit_Alzh_Firmicutes",
      "name": "Firmicutes",
      "dir": "down",
-     "refs": "Vogt 2017 (Sci Rep): Firmicutes depleted in AD alongside Bacteroidetes rise.",
+     "refs": "Vogt 2017 (Sci Rep): Firmicutes depleted in AD alongside Bacteroidetes rise.; PMID 29051531",
      "note": "Vogt 2017 (Sci Rep): Firmicutes depleted in AD alongside Bacteroidetes rise.",
      "links": [
       {
        "id": "audit_Alzh_Firmicutes_l1",
        "label": "Vogt 2017 (Sci Rep): Firmicutes depleted in AD alongside Bacteroidetes rise.",
        "url": "https://www.nature.com/articles/s41598-017-13601-y"
+      },
+      {
+       "id": "audit_Alzh_Firmicutes_l2",
+       "label": "Vogt et al. 2017, Sci Rep (PMID 29051531)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/29051531/"
       }
      ],
      "evidence": "unclassified",
@@ -7525,13 +7535,18 @@
      "id": "seed_437",
      "name": "Bacteroidetes",
      "dir": "down",
-     "refs": "Fan 2023",
+     "refs": "Fan 2023; PMID 37069399",
      "note": "Phylum-level reduction (Bacteroidota).",
      "links": [
       {
        "id": "seed_438",
        "label": "Fan 2023 (Nat Microbiol; faecal metagenomics + FMT into germ-free mice transfers phenotype: Bacteroidota/Actinobacteriota ↓, Christensenellaceae ↑)",
        "url": "https://www.nature.com/articles/s41564-023-01355-5"
+      },
+      {
+       "id": "seed_437_l2",
+       "label": "Fan et al. 2023, Nat Microbiol (PMID 37069399)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37069399/"
       }
      ],
      "evidence": "animal",
@@ -7541,13 +7556,18 @@
      "id": "seed_439",
      "name": "Actinobacteria",
      "dir": "down",
-     "refs": "Fan 2023",
+     "refs": "Fan 2023; PMID 37069399",
      "note": "Phylum-level reduction (Actinobacteriota).",
      "links": [
       {
        "id": "seed_440",
        "label": "Fan 2023 (Nat Microbiol; faecal metagenomics + FMT into germ-free mice transfers phenotype: Bacteroidota/Actinobacteriota ↓, Christensenellaceae ↑)",
        "url": "https://www.nature.com/articles/s41564-023-01355-5"
+      },
+      {
+       "id": "seed_439_l2",
+       "label": "Fan et al. 2023, Nat Microbiol (PMID 37069399)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37069399/"
       }
      ],
      "evidence": "animal",
