@@ -90,7 +90,28 @@ def tier(ref, note, derived):
     return "unclassified"
 
 
-def population(text, t):
+# Conditions that are single-sex BY DEFINITION. The text classifier cannot get
+# these right: a PCOS abstract rarely bothers to say "women", so 19 of 19 PCOS
+# entries were tagged `unknown` and the app's "female participants" filter could
+# not see the one condition that is female by definition. Endometriosis was
+# worse - five entries read `mixed`, which is not a thing that exists.
+# Definitional facts belong in a table, not in a keyword guess.
+FEMALE_ONLY = {
+    "Endometriosis", "Polycystic Ovary Syndrome (PCOS)",
+    "Premenstrual Disorders (PMS/PMDD)", "Menopause (transition)", "Perimenopause",
+}
+FEMALE_ONLY_SYMPTOMS = {
+    "Endometriosis", "PCOS", "Menopause (transition)", "Perimenopause",
+    "Premenstrual Disorders (PMS/PMDD)", "Menstrual cramps", "Heavy periods",
+}
+
+
+def population(text, t, group=None):
+    # A definitionally single-sex condition overrides the text guess entirely -
+    # except for lab work, which has no participants to have a sex.
+    if group in FEMALE_ONLY or group in FEMALE_ONLY_SYMPTOMS:
+        if t not in ("in-vitro", "derived"):
+            return "female"
     # Only meaningful for studies with subjects.
     if t in ("in-vitro", "derived"):
         return "n/a"
@@ -119,7 +140,7 @@ def main(write):
             ref = blob(t.get("refs"), json.dumps(t.get("links") or []))
             note = blob(t.get("note"))
             ev = t["evidence"] if t.get("evidence_source") == "hand-classified" else tier(ref, note, t.get("derived"))
-            po = population(ref + " " + note, ev)
+            po = population(ref + " " + note, ev, c.get("name"))
             t["evidence"], t["population"] = ev, po
             tiers[ev] += 1
             pops[po] += 1
@@ -142,7 +163,7 @@ def main(write):
                 # someone has actually read the paper and knows the design.
                 ev = (e["evidence"] if e.get("evidence_source") == "hand-classified"
                       else tier(ref, note, e.get("derived")))
-                po = population(ref + " " + note, ev)
+                po = population(ref + " " + note, ev, e.get("symptom"))
                 e["evidence"], e["population"] = ev, po
                 tiers[ev] += 1
                 pops[po] += 1

@@ -9797,7 +9797,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t2",
@@ -9818,7 +9818,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t3",
@@ -9839,7 +9839,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t4",
@@ -9865,7 +9865,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown",
+     "population": "female",
      "evidence_source": "hand-classified"
     },
     {
@@ -9897,7 +9897,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t6",
@@ -9928,7 +9928,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t7",
@@ -9959,7 +9959,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t8",
@@ -9980,7 +9980,7 @@
       }
      ],
      "evidence": "review",
-     "population": "unknown",
+     "population": "female",
      "evidence_source": "hand-classified"
     },
     {
@@ -10012,7 +10012,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t10",
@@ -10043,7 +10043,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t11",
@@ -10064,7 +10064,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown",
+     "population": "female",
      "evidence_source": "hand-classified"
     },
     {
@@ -10091,7 +10091,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown",
+     "population": "female",
      "evidence_source": "hand-classified"
     },
     {
@@ -10118,7 +10118,7 @@
       }
      ],
      "evidence": "mendelian",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t14",
@@ -10139,7 +10139,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown",
+     "population": "female",
      "evidence_source": "hand-classified"
     },
     {
@@ -10161,7 +10161,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_endo_t16",
@@ -10182,7 +10182,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_659",
@@ -10198,7 +10198,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "mixed"
+     "population": "female"
     },
     {
      "id": "seed_661",
@@ -10214,7 +10214,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "mixed"
+     "population": "female"
     },
     {
      "id": "seed_663",
@@ -10230,7 +10230,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "mixed"
+     "population": "female"
     },
     {
      "id": "seed_665",
@@ -10246,7 +10246,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "mixed"
+     "population": "female"
     },
     {
      "id": "seed_667",
@@ -10262,7 +10262,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "mixed"
+     "population": "female"
     },
     {
      "id": "seed_669",
@@ -10283,7 +10283,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_671",
@@ -10299,7 +10299,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "seed_673",
@@ -10325,7 +10325,7 @@
       }
      ],
      "evidence": "mendelian",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "cf_seed_endo_cf_bacteroides_phascolarctobacterium_Phascolarctobacterium",
@@ -13463,7 +13463,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t2",
@@ -13479,7 +13479,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t3",
@@ -13495,7 +13495,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t4",
@@ -13511,7 +13511,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t5",
@@ -13527,7 +13527,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t6",
@@ -13543,7 +13543,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t7",
@@ -13559,7 +13559,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t8",
@@ -13575,7 +13575,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t9",
@@ -13591,7 +13591,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t10",
@@ -13607,7 +13607,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t11",
@@ -13623,7 +13623,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t12",
@@ -13639,7 +13639,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t13",
@@ -13655,7 +13655,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t14",
@@ -13671,7 +13671,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t15",
@@ -13687,7 +13687,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pcos_t16",
@@ -13703,7 +13703,7 @@
       }
      ],
      "evidence": "meta-analysis",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "audit_PCOS_Faecalibacterium",
@@ -13719,7 +13719,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "audit_PCOS_Streptococcus_thermophilus",
@@ -13735,7 +13735,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "audit_PCOS_Bifidobacterium",
@@ -13751,7 +13751,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "cf_new_pcos_1_cf_infantis_ehallii_Eubacterium_hallii",
@@ -13834,7 +13834,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pmdd_t2",
@@ -13850,7 +13850,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pmdd_t3",
@@ -13866,7 +13866,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pmdd_t4",
@@ -13882,7 +13882,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_pmdd_t5",
@@ -13898,7 +13898,7 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "unknown"
+     "population": "female"
     }
    ]
   },
@@ -14295,7 +14295,7 @@
       }
      ],
      "evidence": "review",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "new_perimeno_t3",
@@ -14311,7 +14311,7 @@
       }
      ],
      "evidence": "review",
-     "population": "unknown"
+     "population": "female"
     },
     {
      "id": "cf_new_perimeno_cf_bifidum_fprausnitzii_Faecalibacterium_prausnitzii",
