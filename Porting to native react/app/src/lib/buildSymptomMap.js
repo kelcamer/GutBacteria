@@ -1481,13 +1481,25 @@ export function buildSymptomMap(host, tip, data, mode, pinType, forceAllLabels, 
         // that behavior everywhere.
         try { svg.releasePointerCapture(ev.pointerId); } catch { /* not captured, harmless */ }
         if (isDragging) {
-          // A manually-dragged node sticks where you dropped it instead of the
-          // springs immediately pulling it back to its computed position —
-          // otherwise a drag looks like it silently does nothing.
-          // Deliberately NOT setting manualPin any more. Sticking a dragged node
-          // froze it out of the forces, so the magnetism people like visibly
-          // switched off for whatever they had just touched. It now rejoins the
-          // simulation from wherever you dropped it.
+          // A manually-dragged node stays where you dropped it. Reported bug:
+          // "if I move Bacteroides and then move Clostridium, it moves
+          // Bacteroides back" - dropping a node left it in the simulation, and
+          // the next drag tops alpha back up (see onPointerMove), which springs
+          // every un-pinned node toward its computed position again. Placing a
+          // node and watching it crawl away is not a layout, it is a fight.
+          //
+          // This restores manualPin, which the rest of this file already
+          // honours in three places (force accumulation, overlap resolution,
+          // and row flattening) and which buildMap.js has always set on its own
+          // maps - so the two were behaving differently for no stated reason.
+          //
+          // It was removed once, on the grounds that pinning "switched the
+          // magnetism off" for the node just touched. That reading was wrong:
+          // link forces are still applied to BOTH endpoints, and only the
+          // pinned node's own velocity is zeroed - so neighbours still move
+          // toward a node you have parked. What stops is the parked node
+          // drifting, which is the entire point of parking it.
+          dragNode.manualPin = true;
           dragNode.vx = 0;
           dragNode.vy = 0;
         }
