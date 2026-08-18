@@ -101,6 +101,7 @@ export const PDF_LINKS = {
   "https://pubmed.ncbi.nlm.nih.gov/30718848/": "https://www.sciencedirect.com/science/article/pii/S0889159115001105/pdf",
   "https://pubmed.ncbi.nlm.nih.gov/30775438/": "https://advances.sciencemag.org/content/advances/5/2/eaau8317.full.pdf",
   "https://pubmed.ncbi.nlm.nih.gov/30829919/": "https://www.frontiersin.org/articles/10.3389/fmicb.2018.01600/pdf",
+  "https://pubmed.ncbi.nlm.nih.gov/30894059/": "https://www.tandfonline.com/doi/pdf/10.1080/19490976.2019.1580097?needAccess=true",
   "https://pubmed.ncbi.nlm.nih.gov/30940469/": "https://www.ncbi.nlm.nih.gov/pmc/articles/7612624",
   "https://pubmed.ncbi.nlm.nih.gov/30940523/": "https://www.mdpi.com/2077-0383/12/7/2558/pdf?version=1680068121",
   "https://pubmed.ncbi.nlm.nih.gov/30995472/": "http://www.cell.com/article/S221112471930405X/pdf",

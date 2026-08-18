@@ -9419,7 +9419,7 @@
    "name": "Ehlers-Danlos (hypermobile)",
    "abbr": "EDS",
    "color": "#C792EA",
-   "note": "Heritable connective-tissue disorder (defects in collagen / ECM). Gut involvement is real and common — chronic GI symptoms in ~80% — but it is a story of dysmotility, small intestinal bacterial overgrowth (SIBO) and overlap with IBS/POTS/MCAS, NOT a characterised fecal taxon signature. There is currently no validated microbial biomarker for hEDS, so the entries here are deliberately sparse and flagged as indirect. Included because Kelsey's rheumatologist context makes the EDS/hypermobility axis relevant and because it cross-links strongly to IBS and fibromyalgia.",
+   "note": "Heritable connective-tissue disorder (defects in collagen / ECM). Gut involvement is real and common — chronic GI symptoms in ~80% — but it is a story of dysmotility, small intestinal bacterial overgrowth (SIBO) and overlap with IBS/POTS/MCAS, NOT a characterised fecal taxon signature. There is currently no validated microbial biomarker for hEDS, so the entries here are deliberately sparse and flagged as indirect. Included because Kelsey's rheumatologist context makes the EDS/hypermobility axis relevant and because it cross-links strongly to IBS and fibromyalgia. Searched 2026-08 for hEDS/hypermobility gut 16S data: essentially none exists — PubMed returns 0 taxonomic case-control studies, which is why this condition rests on SIBO and reduced-diversity findings rather than named taxa.",
    "links": [
     {
      "id": "seed_new_l32",
@@ -13065,6 +13065,54 @@
      ],
      "evidence": "human-cohort",
      "population": "male"
+    },
+    {
+     "id": "new_aud_sutterella",
+     "name": "Sutterella",
+     "dir": "up",
+     "refs": "Case-control 16S, 24 long-term overconsumers/18 controls (PMID 30894059)",
+     "note": "Higher in patients with >10 years alcohol overconsumption vs low/no-intake controls, alongside lower butyrate.",
+     "links": [
+      {
+       "id": "new_aud_sutterella_l1",
+       "label": "Case-control 16S, 24 long-term overconsumers/18 controls (PMID 30894059)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30894059/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "id": "new_aud_holdemania",
+     "name": "Holdemania",
+     "dir": "up",
+     "refs": "Case-control 16S, 24 long-term overconsumers/18 controls (PMID 30894059)",
+     "note": "Higher in patients with >10 years alcohol overconsumption vs controls.",
+     "links": [
+      {
+       "id": "new_aud_holdemania_l1",
+       "label": "Case-control 16S, 24 long-term overconsumers/18 controls (PMID 30894059)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30894059/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
+    },
+    {
+     "id": "new_aud_clostridium",
+     "name": "Clostridium",
+     "dir": "up",
+     "refs": "Case-control 16S, 24 long-term overconsumers/18 controls (PMID 30894059)",
+     "note": "Higher in patients with >10 years alcohol overconsumption vs controls; the profile skews pro-inflammatory (↑Proteobacteria, ↓Faecalibacterium already tracked here).",
+     "links": [
+      {
+       "id": "new_aud_clostridium_l1",
+       "label": "Case-control 16S, 24 long-term overconsumers/18 controls (PMID 30894059)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/30894059/"
+      }
+     ],
+     "evidence": "human-cohort",
+     "population": "unknown"
     },
     {
      "id": "cf_new_aud_cf_infantis_ehallii_Eubacterium_hallii",
