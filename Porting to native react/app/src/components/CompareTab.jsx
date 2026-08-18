@@ -8,6 +8,7 @@ import { Italic } from './Italic'
 import { isIntervention } from '../lib/interventions'
 import { PickerSection } from './PickerSection'
 import { filterSymptomData, filterConditions } from '../lib/studyFilters'
+import { groupConditionsByGenus } from '../lib/groupConditionsByGenus'
 
 // Ported from `jm` in gut-flora-atlas.readable.html (~line 28986-29601,
 // 616 lines) - the Compare-two tab: pick any two conditions OR symptoms
@@ -34,7 +35,11 @@ export function CompareTab({ conditions, loose, aId, bId, setAId, setBId, filter
     [filters]
   )
   const combined = useMemo(
-    () => [...filterConditions(conditions, filters), ...symptomPseudo],
+    () => {
+      const gc = filters?.groupGenus !== false
+      const conds = gc ? groupConditionsByGenus(filterConditions(conditions, filters)) : filterConditions(conditions, filters)
+      return [...conds, ...symptomPseudo]
+    },
     [conditions, symptomPseudo, filters]
   )
   // Double-clicking either picker jumps straight down to the Full

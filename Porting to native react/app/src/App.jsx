@@ -451,7 +451,7 @@ export default function App() {
         {activeTab === 'glossary' && <Glossary />}
         {activeTab === 'b2s' && <SymptomTab pinType="bact" initialSelection={symptomSelectionRequest} filters={filters} onFiltersChange={setFilters} />}
         {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} filters={filters} onFiltersChange={setFilters} />}
-        {activeTab === 'brain' && <BrainTab pinType="cond" focusRegion={brainRegionFocusRequest} />}
+        {activeTab === 'brain' && <BrainTab pinType="cond" focusRegion={brainRegionFocusRequest} filters={filters} />}
         {activeTab === 'brain_r2c' && <BrainTab pinType="bact" />}
         {activeTab === 'compare' && (
           <CompareTab

@@ -8,6 +8,7 @@ import { Italic } from './Italic'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
 import { filterSymptomData } from '../lib/studyFilters'
+import { groupByGenus } from '../lib/groupByGenus'
 
 // New component (no minified-source equivalent), same shape as
 // ConditionMap.jsx (the per-condition scoped map) but inverted: given the
@@ -26,7 +27,10 @@ export function BacteriumFocusMap({ label, names, onClose, filters }) {
 
   const data = useMemo(() => buildBacteriumFocusData(names), [names])
 
-  const shownData = filterSymptomData(data, filters)
+  const filtered = filterSymptomData(data, filters)
+  const shownData = filters?.groupGenus !== false
+    ? filterSymptomData(groupByGenus(filtered).data, filters)
+    : filtered
 
   useEffect(() => {
     if (!hostRef.current || !tipRef.current || !data.bacteria.length) return

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
 import { symptomData } from '../data'
 import { buildMap } from '../lib/buildMap'
+import { groupConditionsByGenus } from '../lib/groupConditionsByGenus'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
 import { MapControls } from './MapControls'
@@ -30,7 +31,7 @@ export function ConditionsMap({ conditions, focusNames, filters }) {
     if (!hostRef.current || !tipRef.current) return
     let stop
     try {
-      stop = buildMap(hostRef.current, tipRef.current, filterConditions(conditions, filters), mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, filterSymptomData(symptomData, filters))
+      stop = buildMap(hostRef.current, tipRef.current, (filters?.groupGenus !== false ? groupConditionsByGenus(filterConditions(conditions, filters)) : filterConditions(conditions, filters)), mode, layoutState.scramble, undefined, undefined, hiddenNamesRef, filterSymptomData(symptomData, filters))
       graphRef.current = stop
     } catch {
       if (hostRef.current) {

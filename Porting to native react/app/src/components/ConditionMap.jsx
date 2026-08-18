@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { theme } from '../theme'
 import { conditionSymptomData } from '../lib/conditionSymptomData'
+import { groupConditionsByGenus } from '../lib/groupConditionsByGenus'
 import { buildSymptomMap } from '../lib/buildSymptomMap'
 import { useZoom } from '../lib/useZoom'
 import { ZoomButtons } from './ZoomButtons'
@@ -20,7 +21,7 @@ export function ConditionMap({ condition, filters }) {
   const [layoutState, setLayoutState] = useState({ key: 0, scramble: false })
 
   const data = useMemo(
-    () => conditionSymptomData(filterConditions(condition, filters)),
+    () => conditionSymptomData(filters?.groupGenus !== false ? groupConditionsByGenus(filterConditions(condition, filters)) : filterConditions(condition, filters)),
     [condition, filters]
   )
 
