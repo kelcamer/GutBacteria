@@ -2643,11 +2643,12 @@
    "up": [
     {
      "symptom": "Green tea / catechins",
-     "note": "Green tea and EGCG encouraged Akkermansia growth, with EGCG-fed mice showing increased Akkermansia alongside raised butyrate production. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
+     "note": "Green tea and EGCG encouraged Akkermansia growth, with EGCG-fed mice showing increased Akkermansia alongside raised butyrate production. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea. EVIDENCE TIER CORRECTED to animal: Jeong 2020 is EGCG-fed MICE; the human 12-week RCT in the note found NO effect, so this UP rests on animal work — so 'Human studies only' now hides it.",
      "ref": "Jeong et al. 2020, Journal of Medicinal Food - Green Tea Encourages Growth of Akkermansia muciniphila",
      "url": "https://journals.sagepub.com/doi/full/10.1089/jmf.2019.4662",
-     "evidence": "human-rct",
-     "population": "unknown"
+     "evidence": "animal",
+     "population": "unknown",
+     "evidence_source": "hand-classified"
     },
     {
      "symptom": "Exercise-associated microbiota changes",
@@ -7154,11 +7155,12 @@
    "up": [
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
-     "note": "INDIRECT / cross-fed, not a direct effect. Bifidobacterium infantis metabolises 2'-FL and releases acetate, lactate and 1,2-propanediol; E. hallii consumes those to produce butyrate. The syntrophy is structure- and strain-specific — it depends on which fucosylated HMO and which B. infantis strain is present. Shown in in-vitro co-culture and a modelled microbiome, not measured in a human supplementation trial. Notably, one study found the B. adolescentis to A. hallii to butyrate link only in ADULTS, so this cross-feeding route may matter more in adults than infants.",
+     "note": "INDIRECT / cross-fed, not a direct effect. Bifidobacterium infantis metabolises 2'-FL and releases acetate, lactate and 1,2-propanediol; E. hallii consumes those to produce butyrate. The syntrophy is structure- and strain-specific — it depends on which fucosylated HMO and which B. infantis strain is present. Shown in in-vitro co-culture and a modelled microbiome, not measured in a human supplementation trial. Notably, one study found the B. adolescentis to A. hallii to butyrate link only in ADULTS, so this cross-feeding route may matter more in adults than infants. EVIDENCE TIER CORRECTED to in-vitro: B. infantis/E. hallii syntrophy is an in-vitro co-culture study (PMID 36938958), not a human measurement — so 'Human studies only' now hides it.",
      "ref": "Mol Nutr Food Res 2023 — B. infantis/E. hallii syntrophy on 2'FL (PMID 36938958)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/",
-     "evidence": "human-cohort",
-     "population": "unknown"
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "evidence_source": "hand-classified"
     },
     {
      "symptom": "Sleep disturbance",
