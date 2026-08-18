@@ -211,6 +211,7 @@ export const PDF_LINKS = {
   "https://pubmed.ncbi.nlm.nih.gov/38795705/": "http://www.cell.com/article/S0092867424005142/pdf",
   "https://pubmed.ncbi.nlm.nih.gov/38846751/": "https://peerj.com/articles/17517.pdf",
   "https://pubmed.ncbi.nlm.nih.gov/38896583/": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0020113&type=printable",
+  "https://pubmed.ncbi.nlm.nih.gov/38897955/": "https://www.jstage.jst.go.jp/article/bst/18/3/18_2024.01123/_pdf",
   "https://pubmed.ncbi.nlm.nih.gov/38990031/": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-023-02975-8",
   "https://pubmed.ncbi.nlm.nih.gov/39006241/": "https://www.dovepress.com/article/download/94136",
   "https://pubmed.ncbi.nlm.nih.gov/39085949/": "https://genomemedicine.biomedcentral.com/counter/pdf/10.1186/s13073-024-01364-x",

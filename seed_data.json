@@ -1533,6 +1533,118 @@
      "population": "unknown"
     },
     {
+     "id": "seed_29_dorea",
+     "name": "Dorea",
+     "dir": "up",
+     "refs": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+     "note": "Elevated in ASD (28-study meta-analysis) (leave-one-out stable across the meta-analysis).",
+     "links": [
+      {
+       "id": "seed_29_dorea_l1",
+       "label": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38897955/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_29_catenibacterium",
+     "name": "Catenibacterium",
+     "dir": "up",
+     "refs": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+     "note": "Elevated in ASD (28-study meta-analysis) (leave-one-out stable across the meta-analysis).",
+     "links": [
+      {
+       "id": "seed_29_catenibacterium_l1",
+       "label": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38897955/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_29_barnesiella",
+     "name": "Barnesiella",
+     "dir": "down",
+     "refs": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+     "note": "Reduced in ASD (28-study meta-analysis).",
+     "links": [
+      {
+       "id": "seed_29_barnesiella_l1",
+       "label": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38897955/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_29_odoribacter",
+     "name": "Odoribacter",
+     "dir": "down",
+     "refs": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+     "note": "Reduced in ASD (28-study meta-analysis) (leave-one-out stable across the meta-analysis).",
+     "links": [
+      {
+       "id": "seed_29_odoribacter_l1",
+       "label": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38897955/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_29_paraprevotella",
+     "name": "Paraprevotella",
+     "dir": "down",
+     "refs": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+     "note": "Reduced in ASD (28-study meta-analysis).",
+     "links": [
+      {
+       "id": "seed_29_paraprevotella_l1",
+       "label": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38897955/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_29_lachnospira",
+     "name": "Lachnospira",
+     "dir": "down",
+     "refs": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+     "note": "Reduced in ASD (28-study meta-analysis).",
+     "links": [
+      {
+       "id": "seed_29_lachnospira_l1",
+       "label": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38897955/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_29_parasutterella",
+     "name": "Parasutterella",
+     "dir": "down",
+     "refs": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+     "note": "Reduced in ASD (28-study meta-analysis).",
+     "links": [
+      {
+       "id": "seed_29_parasutterella_l1",
+       "label": "Meta-analysis, 28 studies, 1256 ASD/1042 controls (PMID 38897955)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/38897955/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
      "id": "cf_seed_29_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
