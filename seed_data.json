@@ -620,6 +620,102 @@
      "population": "unknown"
     },
     {
+     "id": "seed_1_oscillibacter",
+     "name": "Oscillibacter",
+     "dir": "up",
+     "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
+     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "links": [
+      {
+       "id": "seed_1_oscillibacter_l1",
+       "label": "Systematic review 2020, 9 studies (PMID 32587537)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_1_turicibacter",
+     "name": "Turicibacter",
+     "dir": "up",
+     "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
+     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "links": [
+      {
+       "id": "seed_1_turicibacter_l1",
+       "label": "Systematic review 2020, 9 studies (PMID 32587537)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_1_parabacteroides",
+     "name": "Parabacteroides",
+     "dir": "up",
+     "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
+     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "links": [
+      {
+       "id": "seed_1_parabacteroides_l1",
+       "label": "Systematic review 2020, 9 studies (PMID 32587537)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_1_paraprevotella",
+     "name": "Paraprevotella",
+     "dir": "up",
+     "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
+     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "links": [
+      {
+       "id": "seed_1_paraprevotella_l1",
+       "label": "Systematic review 2020, 9 studies (PMID 32587537)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_1_parasutterella",
+     "name": "Parasutterella",
+     "dir": "up",
+     "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
+     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "links": [
+      {
+       "id": "seed_1_parasutterella_l1",
+       "label": "Systematic review 2020, 9 studies (PMID 32587537)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_1_sutterella",
+     "name": "Sutterella",
+     "dir": "down",
+     "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
+     "note": "Lower abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "links": [
+      {
+       "id": "seed_1_sutterella_l1",
+       "label": "Systematic review 2020, 9 studies (PMID 32587537)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32587537/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
      "id": "cf_seed_1_cf_badolescentis_lactate_utilisers_Anaerostipes",
      "name": "Anaerostipes",
      "dir": "down",
@@ -5713,6 +5809,38 @@
      "population": "unknown"
     },
     {
+     "id": "seed_286_megasphaera",
+     "name": "Megasphaera",
+     "dir": "up",
+     "refs": "Pooled 16S meta, 10 studies/1703 subjects (PMID 34844021); case-control n=59/65 (PMID 42576570)",
+     "note": "Increased in PD in a phylogenetic-placement meta-analysis pooling 10 studies (1,703 subjects), after adjusting for between-study variation.",
+     "links": [
+      {
+       "id": "seed_286_megasphaera_l1",
+       "label": "Pooled 16S meta, 10 studies/1703 subjects (PMID 34844021); case-control n=59/65 (PMID 42576570)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34844021/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_286_enterococcus",
+     "name": "Enterococcus",
+     "dir": "up",
+     "refs": "Pooled 16S meta, 10 studies/1703 subjects (PMID 34844021); case-control n=59/65 (PMID 42576570)",
+     "note": "Increased in PD (n=96 vs 74 case-control, controlling for sex/race/age/platform; PMID 36442206).",
+     "links": [
+      {
+       "id": "seed_286_enterococcus_l1",
+       "label": "Pooled 16S meta, 10 studies/1703 subjects (PMID 34844021); case-control n=59/65 (PMID 42576570)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34844021/"
+      }
+     ],
+     "evidence": "meta-analysis",
+     "population": "unknown"
+    },
+    {
      "id": "cf_seed_286_cf_infantis_ehallii_Eubacterium_hallii",
      "name": "Eubacterium hallii",
      "dir": "up",
@@ -9086,6 +9214,22 @@
       }
      ],
      "evidence": "unclassified",
+     "population": "unknown"
+    },
+    {
+     "id": "seed_ms_actinomyces",
+     "name": "Actinomyces",
+     "dir": "up",
+     "refs": "16S meta-analysis, 7 studies/524 subjects (PMID 39085949)",
+     "note": "Reproducibly increased in MS across 7 geographically diverse studies (257 MS/267 controls) in a 16S meta-analysis, alongside reproducibly lower Faecalibacterium. Usually an oral genus, so this is flagged — but a pooled meta-analysis naming it in gut samples outweighs the generic sample-site heuristic.",
+     "links": [
+      {
+       "id": "seed_ms_actinomyces_l1",
+       "label": "16S meta-analysis, 7 studies/524 subjects (PMID 39085949)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39085949/"
+      }
+     ],
+     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
