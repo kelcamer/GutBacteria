@@ -77,7 +77,7 @@ export function groupByGenus(data) {
       }
     }
 
-    const node = { name: genus, count: 0, up: [], down: [], both: [] }
+    const node = { name: genus, count: 0, up: [], down: [], both: [], none: [] }
     let conflicted = 0
     const memberList = members.map((m) => m.name).join(', ')
 

@@ -190,7 +190,14 @@ export function SymptomTab({ pinType = 'bact', initialSelection, filters, onFilt
   // from evidence that survived them - otherwise a hidden animal study could
   // reappear inside a genus node.
   const grouped = groupGenus ? groupByGenus(filteredData) : null
-  const shownData = grouped ? grouped.data : filteredData
+  // Re-apply the filters AFTER grouping. Grouping a genus whose species disagree
+  // creates a NEW contested ('both') edge that no stored entry had, so it slipped
+  // past the pre-group filter - which is why turning "Show contested" off used to
+  // leave yellow links on the map. Filtering the grouped output too catches those
+  // emergent contested/null edges. Evidence filters already ran pre-group and are
+  // idempotent here, so this only removes the emergent direction edges the toggle
+  // asks to hide.
+  const shownData = grouped ? filterSymptomData(grouped.data, filters) : filteredData
   // Count what the filters removed, so an empty map can explain itself rather
   // than looking broken - see FilteredEmptyState.
   const rawLinks = (mapData.bacteria || []).reduce(
