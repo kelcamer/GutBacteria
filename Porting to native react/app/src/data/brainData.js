@@ -4530,7 +4530,7 @@ export const BRAIN_DATA = [
       "name": "Progesterone",
       "abbr": "P4",
       "color": "#F97316",
-      "note": "Not a diagnosed condition like this map's other entries — matches this app's gut-flora Progesterone condition (Conditions tab), and honestly smaller for the same underlying reason: less human-neuroimaging literature exists here than for Estrogen or Testosterone. What does exist centers on progesterone's neuroactive metabolites (allopregnanolone, pregnanolone) as GABA-A positive allosteric modulators acting on amygdala and hippocampus - the same mechanism implicated in this app's PMDD brain entry (see Amygdala/ACC/dlPFC findings there), since PMDD is fundamentally a progesterone-withdrawal-sensitivity condition.",
+      "note": "Not a diagnosed condition; matches this app's gut-flora Progesterone condition. Two threads: progesterone's neuroactive metabolites (allopregnanolone, pregnanolone) act as GABA-A modulators on amygdala and hippocampus (the PMDD-withdrawal-sensitivity mechanism), and newer within-cycle and postpartum structural MRI ties progesterone level to gray-matter morphology across cerebellum, fusiform, frontal and occipital regions and the putamen. Expanded from 2 to 7 regions as that structural literature matured.",
       "links": [
         {
           "id": "brain_prog_l1",
@@ -4579,6 +4579,77 @@ export const BRAIN_DATA = [
               "id": "brain_prog_t2_l2",
               "label": "2023, Aging (Albany NY) — rodent PMDD model, GABAA-Rα4",
               "url": "https://pubmed.ncbi.nlm.nih.gov/36842096/"
+            }
+          ]
+        }
+,
+        {
+          "id": "brain_prog_t3",
+          "name": "Superior frontal gyrus",
+          "dir": "down",
+          "refs": "PMID 40959147",
+          "note": "Progesterone level was negatively correlated with superior-frontal-gyrus gray-matter volume specifically in young women with comorbid anxiety-depression (n=53), where the SFG was also thinner than in anxiety-only or controls - implicating rising progesterone in the structural signature of worsening mood.",
+          "links": [
+            {
+              "id": "brain_prog_t3_l1",
+              "label": "Depress Anxiety 2025, 53 young women, structural MRI (PMID 40959147)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40959147/"
+            }
+          ]
+        },
+        {
+          "id": "brain_prog_t4",
+          "name": "Middle occipital gyrus",
+          "dir": "down",
+          "refs": "PMID 40959147",
+          "note": "Progesterone negatively correlated with middle-occipital-gyrus gray-matter volume in the same comorbid anxiety-depression cohort - reduced GMV alongside the superior frontal gyrus.",
+          "links": [
+            {
+              "id": "brain_prog_t4_l1",
+              "label": "Depress Anxiety 2025, structural MRI (PMID 40959147)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/40959147/"
+            }
+          ]
+        },
+        {
+          "id": "brain_prog_t5",
+          "name": "Cerebellum",
+          "dir": "both",
+          "refs": "PMID 41722525",
+          "note": "Progesterone emerged as a KEY modulator of brain morphology in a within-cycle structural MRI study (32 women, periovulatory vs menstruation): P4 showed robust phase-dependent associations with cerebellar volume, strongest where progesterone-receptor density is highest. Direction is phase-dependent, so marked contested rather than a single arrow.",
+          "links": [
+            {
+              "id": "brain_prog_t5_l1",
+              "label": "EBioMedicine 2026, within-cycle structural MRI, n=32 (PMID 41722525)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41722525/"
+            }
+          ]
+        },
+        {
+          "id": "brain_prog_t6",
+          "name": "Fusiform gyrus",
+          "dir": "both",
+          "refs": "PMID 41722525",
+          "note": "Progesterone associated with fusiform-gyrus volume in the periovulatory phase (within-cycle structural MRI, n=32), colocalized with progesterone-receptor density. Phase-dependent, hence contested.",
+          "links": [
+            {
+              "id": "brain_prog_t6_l1",
+              "label": "EBioMedicine 2026, within-cycle structural MRI (PMID 41722525)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41722525/"
+            }
+          ]
+        },
+        {
+          "id": "brain_prog_t7",
+          "name": "Putamen",
+          "dir": "down",
+          "refs": "PMID 42173858",
+          "note": "Postpartum women showed persistently SMALLER putamen gray-matter volume vs nulliparous controls across 24 weeks, in regions co-localized with progesterone (and estradiol/cortisol) receptor systems - the maternal-brain remodeling tied structurally to the progesterone receptor map (longitudinal MRI, 24 women).",
+          "links": [
+            {
+              "id": "brain_prog_t7_l1",
+              "label": "Transl Psychiatry 2026, postpartum longitudinal MRI (PMID 42173858)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42173858/"
             }
           ]
         }
