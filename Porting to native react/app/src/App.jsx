@@ -505,6 +505,9 @@ export default function App() {
           'sources',
           'data',
           'research',
+          'crossfeed',
+          'settings',
+          'hormones',
         ].includes(activeTab) && (
           <TabPlaceholder tab={activeTab} conditionCount={conditions.length} researchTargetId={researchTargetId} />
         )}
