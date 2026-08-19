@@ -13,6 +13,7 @@ import { SymptomTab } from './components/SymptomTab'
 import { BrainTab } from './components/BrainTab'
 import { CompareTab } from './components/CompareTab'
 import { CrossFeedingTab } from './components/CrossFeedingTab'
+import { HormoneTab } from './components/HormoneTab'
 import { SettingsTab } from './components/SettingsTab'
 import { DEFAULT_FILTERS, filterConditions } from './lib/studyFilters'
 import { BacteriaIndex } from './components/BacteriaIndex'
@@ -453,6 +454,7 @@ export default function App() {
         {activeTab === 's2b' && <SymptomTab pinType="symptom" initialSelection={symptomSelectionRequest} filters={filters} onFiltersChange={setFilters} />}
         {activeTab === 'brain' && <BrainTab pinType="cond" focusRegion={brainRegionFocusRequest} filters={filters} />}
         {activeTab === 'brain_r2c' && <BrainTab pinType="bact" />}
+        {activeTab === 'hormones' && <HormoneTab />}
         {activeTab === 'compare' && (
           <CompareTab
             filters={filters}

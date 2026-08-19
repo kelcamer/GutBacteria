@@ -18,6 +18,7 @@ export const NAV_ITEMS = [
   { id: 'settings', label: 'Settings', icon: Activity },
   { id: 'brain', label: 'Condition to Brain Region', icon: Activity },
   { id: 'brain_r2c', label: 'Brain Region to Condition', icon: Activity },
+  { id: 'hormones', label: 'Hormonal Interactions', icon: Activity },
   { id: 'sources', label: 'Sources', icon: Link2 },
   { id: 'glossary', label: 'Glossary', icon: Link2 },
   { id: 'data', label: 'Backup', icon: Settings },
