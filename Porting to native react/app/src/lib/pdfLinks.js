@@ -366,6 +366,7 @@ export const PDF_LINKS = {
   "https://pubmed.ncbi.nlm.nih.gov/42519007/": "https://doi.org/10.1016/j.isci.2026.116622",
   "https://pubmed.ncbi.nlm.nih.gov/42564147/": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2026.1688918/pdf",
   "https://pubmed.ncbi.nlm.nih.gov/42575094/": "https://doi.org/10.1016/j.xcrm.2026.102974",
+  "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(23)00021-5": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10353054/pdf/nihms-1863919.pdf",
   "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2019.00470/full": "https://link.springer.com/content/pdf/10.1007/s13760-025-02779-y.pdf",
   "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2022.733992/full": "https://www.frontiersin.org/articles/10.3389/fcimb.2022.733992/pdf",
   "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2022.986591/full": "https://doi.org/10.3389/fncom.2022.986591",
