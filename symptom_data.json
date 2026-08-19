@@ -653,7 +653,7 @@
     {
      "symptom": "Poor working memory",
      "note": "From this app's ADHD condition data.",
-     "ref": "63",
+     "ref": "PMID 32132899",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -661,7 +661,7 @@
     {
      "symptom": "Lack of impulse control",
      "note": "From this app's ADHD condition data.",
-     "ref": "63",
+     "ref": "PMID 32132899",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32132899/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -693,7 +693,7 @@
     {
      "symptom": "Fatigue",
      "note": "From this app's Depression condition data.",
-     "ref": "19–22",
+     "ref": "PMID 30718848",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30718848/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -1246,7 +1246,7 @@
     {
      "symptom": "Poor working memory",
      "note": "From this app's Alzheimer's condition data.",
-     "ref": "115",
+     "ref": "PMID 35027502",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -1628,7 +1628,7 @@
     {
      "symptom": "Anxiety",
      "note": "From this app's Anxiety condition data.",
-     "ref": "168",
+     "ref": "PMID 31437702",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -1644,7 +1644,7 @@
     {
      "symptom": "Reduced socializing",
      "note": "Prevotella significantly lower in autistic children (16S pyrosequencing, n=20/20); reduced socializing is an autism-associated trait.",
-     "ref": "57,58",
+     "ref": "PMID 23844187",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -1652,7 +1652,7 @@
     {
      "symptom": "Overstimulation",
      "note": "Prevotella significantly lower in autistic children (16S pyrosequencing, n=20/20); overstimulation is an autism-associated trait.",
-     "ref": "57,58",
+     "ref": "PMID 23844187",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -1660,7 +1660,7 @@
     {
      "symptom": "Understimulation",
      "note": "Prevotella significantly lower in autistic children (16S pyrosequencing, n=20/20); understimulation is an autism-associated trait.",
-     "ref": "57,58",
+     "ref": "PMID 23844187",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -1668,7 +1668,7 @@
     {
      "symptom": "Panic attack",
      "note": "From this app's Anxiety condition data.",
-     "ref": "168",
+     "ref": "PMID 31437702",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31437702/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -1684,7 +1684,7 @@
     {
      "symptom": "Acne / skin flares",
      "note": "5 studies found decreased vs. 1 found increased — majority direction used, minority noted rather than hidden.",
-     "ref": "37559119",
+     "ref": "PMID 37559119",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "meta-analysis",
      "population": "unknown"
@@ -2052,7 +2052,7 @@
     {
      "symptom": "Acne / skin flares",
      "note": "Increased across 5 studies.",
-     "ref": "37559119",
+     "ref": "PMID 37559119",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "meta-analysis",
      "population": "unknown"
@@ -2060,7 +2060,7 @@
     {
      "symptom": "Hair loss",
      "note": "Increased across 5 studies.",
-     "ref": "37559119",
+     "ref": "PMID 37559119",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "meta-analysis",
      "population": "unknown"
@@ -2170,7 +2170,7 @@
     {
      "symptom": "Anxiety",
      "note": "",
-     "ref": "168,169",
+     "ref": "PMID 30029052",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -2509,7 +2509,7 @@
     {
      "symptom": "Metabolic dysregulation",
      "note": "Decreased in PCOS vs. controls.",
-     "ref": "37559119",
+     "ref": "PMID 37559119",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -2541,7 +2541,7 @@
     {
      "symptom": "Acne / skin flares",
      "note": "Decreased in PCOS vs. controls.",
-     "ref": "37559119",
+     "ref": "PMID 37559119",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -3962,7 +3962,7 @@
     {
      "symptom": "Anxiety",
      "note": "",
-     "ref": "168",
+     "ref": "PMID 30029052",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -4119,7 +4119,7 @@
     {
      "symptom": "Anxiety",
      "note": "",
-     "ref": "168",
+     "ref": "PMID 30029052",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -4437,7 +4437,7 @@
     {
      "symptom": "Intrusive thoughts",
      "note": "From this app's OCD condition data.",
-     "ref": "220",
+     "ref": "PMID 35087123",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -4559,7 +4559,7 @@
     {
      "symptom": "Depressed mood",
      "note": "Altered in both directions across studies with no overall tendency, per a systematic review — partly age-related, with reduced abundance more consistently reported in middle-aged MDD cohorts specifically.",
-     "ref": "20–22",
+     "ref": "PMID 35010912",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/",
      "evidence": "meta-analysis",
      "population": "unknown"
@@ -4575,7 +4575,7 @@
     {
      "symptom": "Fatigue",
      "note": "Altered in both directions across studies with no overall tendency, per a systematic review — partly age-related, with reduced abundance more consistently reported in middle-aged MDD cohorts specifically.",
-     "ref": "20–22",
+     "ref": "PMID 35010912",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/",
      "evidence": "meta-analysis",
      "population": "unknown"
@@ -4583,7 +4583,7 @@
     {
      "symptom": "Sleep disturbance",
      "note": "Altered in both directions across studies with no overall tendency, per a systematic review — partly age-related, with reduced abundance more consistently reported in middle-aged MDD cohorts specifically.",
-     "ref": "20–22",
+     "ref": "PMID 35010912",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35010912/",
      "evidence": "meta-analysis",
      "population": "unknown"
@@ -8308,7 +8308,7 @@
     {
      "symptom": "Metabolic dysregulation",
      "note": "Decreased in PCOS vs. controls.",
-     "ref": "37559119",
+     "ref": "PMID 37559119",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -8332,7 +8332,7 @@
     {
      "symptom": "Acne / skin flares",
      "note": "Decreased in PCOS vs. controls.",
-     "ref": "37559119",
+     "ref": "PMID 37559119",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37559119/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -8554,7 +8554,7 @@
     {
      "symptom": "Anxiety",
      "note": "From this app's Anxiety condition data.",
-     "ref": "168,169",
+     "ref": "PMID 30029052",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -8634,7 +8634,7 @@
     {
      "symptom": "Sleep disturbance",
      "note": "From this app's Anxiety condition data.",
-     "ref": "168,169",
+     "ref": "PMID 30029052",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -8755,7 +8755,7 @@
     {
      "symptom": "Brain fog",
      "note": "From this app's Alzheimer's condition data.",
-     "ref": "115",
+     "ref": "PMID 35027502",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -8779,7 +8779,7 @@
     {
      "symptom": "Poor working memory",
      "note": "From this app's Alzheimer's condition data.",
-     "ref": "115",
+     "ref": "PMID 35027502",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35027502/",
      "evidence": "unclassified",
      "population": "unknown"

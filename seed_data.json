@@ -166,7 +166,7 @@
      "id": "seed_7",
      "name": "Enterobacteriaceae",
      "dir": "up",
-     "refs": "19,22",
+     "refs": "Jiang 2015 (Brain Behav Immun; Enterobacteriaceae & Alistipes ↑, Faecalibacterium ↓ in MDD) (PMID 25882912)",
      "note": "",
      "links": [
       {
@@ -182,7 +182,7 @@
      "id": "seed_14",
      "name": "Faecalibacterium",
      "dir": "down",
-     "refs": "19–22",
+     "refs": "Valles-Colomer 2019 (Nat Microbiol; Coprococcus & Dialister ↓, Faecalibacterium & QoL) (PMID 30718848; PMID 25882912)",
      "note": "",
      "links": [
       {
@@ -203,7 +203,7 @@
      "id": "seed_17",
      "name": "Prevotellaceae",
      "dir": "both",
-     "refs": "20–22",
+     "refs": "Kelly et al. 2021 systematic review, Nutrients (PMID 35010912)",
      "note": "Altered in both directions across studies with no overall tendency, per a systematic review — partly age-related, with reduced abundance more consistently reported in middle-aged MDD cohorts specifically.",
      "links": [
       {
@@ -219,7 +219,7 @@
      "id": "seed_18",
      "name": "Coprococcus",
      "dir": "down",
-     "refs": "20–22",
+     "refs": "Valles-Colomer 2019 (Nat Microbiol; Coprococcus & Dialister ↓, Faecalibacterium & QoL) (PMID 30718848)",
      "note": "",
      "links": [
       {
@@ -235,7 +235,7 @@
      "id": "seed_20",
      "name": "Roseburia",
      "dir": "down",
-     "refs": "20–22",
+     "refs": "Valles-Colomer 2019 (Nat Microbiol; Coprococcus & Dialister ↓, Faecalibacterium & QoL) (PMID 30718848)",
      "note": "Roseburia decreased in Depression.",
      "links": [
       {
@@ -878,7 +878,7 @@
      "id": "seed_40",
      "name": "Ruminococcaceae",
      "dir": "up",
-     "refs": "58",
+     "refs": "Ruminococcaceae ↔ OCD severity (PMC6933684)",
      "note": "",
      "links": [
       {
@@ -899,7 +899,7 @@
      "id": "seed_43",
      "name": "Collinsella",
      "dir": "both",
-     "refs": "57",
+     "refs": "PMC6933684",
      "note": "Conflicting evidence: one source (ref 57) reports Collinsella elevated in autism, while another (PMC6933684) reports it depleted. Kept as \"both\" rather than picking a side.",
      "links": [
       {
@@ -915,7 +915,7 @@
      "id": "seed_44",
      "name": "Lachnoclostridium",
      "dir": "both",
-     "refs": "57",
+     "refs": "PMC6933684",
      "note": "Conflicting evidence: one source (ref 57) reports Lachnoclostridium elevated in autism, while another (PMC6933684) reports it depleted. Kept as \"both\" rather than picking a side.",
      "links": [
       {
@@ -931,7 +931,7 @@
      "id": "seed_45",
      "name": "Bifidobacterium",
      "dir": "down",
-     "refs": "56,57",
+     "refs": "Kang 2013 (PLoS ONE; ↓Prevotella, Coprococcus, unclassified Veillonellaceae in ASD) (PMID 23844187)",
      "note": "Bifidobacterium decreased in Autism (ASD).",
      "links": [
       {
@@ -947,7 +947,7 @@
      "id": "seed_47",
      "name": "Prevotella",
      "dir": "down",
-     "refs": "57,58",
+     "refs": "Kang 2013 (PLoS ONE; ↓Prevotella, Coprococcus, unclassified Veillonellaceae in ASD) (PMID 23844187)",
      "note": "",
      "links": [
       {
@@ -1780,7 +1780,7 @@
      "id": "seed_86",
      "name": "Faecalibacterium",
      "dir": "down",
-     "refs": "63",
+     "refs": "Wan 2020 (Front Neurosci; ↓Faecalibacterium & Veillonellaceae in pediatric ADHD) (PMID 32132899; PMID 29580894)",
      "note": "",
      "links": [
       {
@@ -2413,7 +2413,7 @@
      "id": "seed_99",
      "name": "Escherichia",
      "dir": "up",
-     "refs": "116",
+     "refs": "Cattaneo 2017 (Neurobiol Aging; ↑Escherichia/Shigella, ↓Eubacterium rectale in amyloid+) (PMID 27776263)",
      "note": "",
      "links": [
       {
@@ -2429,7 +2429,7 @@
      "id": "seed_101",
      "name": "Shigella",
      "dir": "up",
-     "refs": "116",
+     "refs": "Cattaneo 2017 (Neurobiol Aging; ↑Escherichia/Shigella, ↓Eubacterium rectale in amyloid+) (PMID 27776263)",
      "note": "",
      "links": [
       {
@@ -2445,7 +2445,7 @@
      "id": "seed_103",
      "name": "Phascolarctobacterium",
      "dir": "up",
-     "refs": "115",
+     "refs": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD) (PMID 35027502)",
      "note": "",
      "links": [
       {
@@ -2461,7 +2461,7 @@
      "id": "seed_105",
      "name": "Lactobacillus",
      "dir": "up",
-     "refs": "115",
+     "refs": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD) (PMID 35027502)",
      "note": "",
      "links": [
       {
@@ -2477,7 +2477,7 @@
      "id": "seed_107",
      "name": "Akkermansia muciniphila",
      "dir": "up",
-     "refs": "115",
+     "refs": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD) (PMID 35027502)",
      "note": "",
      "links": [
       {
@@ -2493,7 +2493,7 @@
      "id": "seed_109",
      "name": "Eubacterium",
      "dir": "down",
-     "refs": "116",
+     "refs": "Cattaneo 2017 (Neurobiol Aging; ↑Escherichia/Shigella, ↓Eubacterium rectale in amyloid+) (PMID 27776263)",
      "note": "",
      "links": [
       {
@@ -2509,7 +2509,7 @@
      "id": "seed_111",
      "name": "Lachnospiraceae",
      "dir": "down",
-     "refs": "117",
+     "refs": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD) (PMID 35027502)",
      "note": "Lachnospiraceae decreased in Alzheimer's.",
      "links": [
       {
@@ -2525,7 +2525,7 @@
      "id": "seed_113",
      "name": "Faecalibacterium",
      "dir": "down",
-     "refs": "115",
+     "refs": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD) (PMID 35027502)",
      "note": "",
      "links": [
       {
@@ -2562,7 +2562,7 @@
      "id": "seed_117",
      "name": "Roseburia",
      "dir": "down",
-     "refs": "115",
+     "refs": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD) (PMID 35027502)",
      "note": "",
      "links": [
       {
@@ -2578,7 +2578,7 @@
      "id": "seed_119",
      "name": "Lachnospira",
      "dir": "down",
-     "refs": "115",
+     "refs": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD) (PMID 35027502)",
      "note": "",
      "links": [
       {
@@ -2594,7 +2594,7 @@
      "id": "seed_121",
      "name": "Lachnoclostridium",
      "dir": "down",
-     "refs": "115",
+     "refs": "Ling 2022 (Aging; meta-analysis: ↑Phascolarctobacterium, Lactobacillus, Akkermansia; ↓Faecalibacterium, Dialister, Roseburia, Lachnospira, Lachnoclostridium in AD) (PMID 35027502)",
      "note": "",
      "links": [
       {
@@ -3343,7 +3343,7 @@
      "id": "seed_153",
      "name": "Escherichia/Shigella",
      "dir": "up",
-     "refs": "168,169",
+     "refs": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers) (PMID 30029052)",
      "note": "",
      "links": [
       {
@@ -3359,7 +3359,7 @@
      "id": "seed_156",
      "name": "Firmicutes",
      "dir": "down",
-     "refs": "168,169",
+     "refs": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers) (PMID 30029052)",
      "note": "Firmicutes decreased in Anxiety.",
      "links": [
       {
@@ -3375,7 +3375,7 @@
      "id": "seed_159",
      "name": "Prevotella 9",
      "dir": "down",
-     "refs": "168",
+     "refs": "Chen 2019 (J Affect Disord; GAD severity: ↓Bifidobacterium, Prevotella, Roseburia) (PMID 31437702)",
      "note": " Not mirrored onto the symptom map: Prevotella 9 is a SILVA-specific genus split, distinct from the Prevotella node already there, and giving it its own node would imply a resolution the rest of the map does not use.",
      "links": [
       {
@@ -3391,7 +3391,7 @@
      "id": "seed_161",
      "name": "Dialister",
      "dir": "down",
-     "refs": "168",
+     "refs": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers) (PMID 30029052)",
      "note": "Dialister decreased in Anxiety.",
      "links": [
       {
@@ -3407,7 +3407,7 @@
      "id": "seed_163",
      "name": "Subdoligranulum",
      "dir": "down",
-     "refs": "168",
+     "refs": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers) (PMID 30029052; PMC9656367)",
      "note": "Subdoligranulum decreased in Anxiety.",
      "links": [
       {
@@ -3428,7 +3428,7 @@
      "id": "seed_165",
      "name": "Agathobacter",
      "dir": "down",
-     "refs": "168",
+     "refs": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers) (PMID 30029052)",
      "note": "Agathobacter decreased in Anxiety.",
      "links": [
       {
@@ -3444,7 +3444,7 @@
      "id": "seed_167",
      "name": "Roseburia",
      "dir": "down",
-     "refs": "169",
+     "refs": "Chen 2019 (J Affect Disord; GAD severity: ↓Bifidobacterium, Prevotella, Roseburia) (PMID 31437702; PMC9656367)",
      "note": "",
      "links": [
       {
@@ -3465,7 +3465,7 @@
      "id": "seed_169",
      "name": "Bifidobacterium",
      "dir": "down",
-     "refs": "169",
+     "refs": "Chen 2019 (J Affect Disord; GAD severity: ↓Bifidobacterium, Prevotella, Roseburia) (PMID 31437702)",
      "note": "",
      "links": [
       {
@@ -3757,7 +3757,7 @@
      "id": "seed_189",
      "name": "Rikenellaceae",
      "dir": "up",
-     "refs": "220",
+     "refs": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "note": "",
      "links": [
       {
@@ -3773,7 +3773,7 @@
      "id": "seed_191",
      "name": "Alistipes",
      "dir": "up",
-     "refs": "220",
+     "refs": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "note": "",
      "links": [
       {
@@ -3789,7 +3789,7 @@
      "id": "seed_193",
      "name": "Oscillospira",
      "dir": "down",
-     "refs": "219",
+     "refs": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes) (PMID 32307692)",
      "note": "",
      "links": [
       {
@@ -3805,7 +3805,7 @@
      "id": "seed_195",
      "name": "Odoribacter",
      "dir": "down",
-     "refs": "219",
+     "refs": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes) (PMID 32307692)",
      "note": "",
      "links": [
       {
@@ -3821,7 +3821,7 @@
      "id": "seed_197",
      "name": "Anaerostipes",
      "dir": "down",
-     "refs": "219",
+     "refs": "Turna 2020 (Acta Psychiatr Scand; OCD pilot: ↓Oscillospira, Odoribacter, Anaerostipes) (PMID 32307692)",
      "note": "",
      "links": [
       {
@@ -3837,7 +3837,7 @@
      "id": "seed_199",
      "name": "Prevotellaceae",
      "dir": "down",
-     "refs": "220",
+     "refs": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "note": "",
      "links": [
       {
@@ -3911,7 +3911,7 @@
      "id": "seed_203",
      "name": "Agathobacter",
      "dir": "down",
-     "refs": "220",
+     "refs": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "note": "",
      "links": [
       {
@@ -3927,7 +3927,7 @@
      "id": "seed_205",
      "name": "Coprococcus",
      "dir": "down",
-     "refs": "220",
+     "refs": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "note": "",
      "links": [
       {
@@ -14117,7 +14117,7 @@
      "id": "new_pcos_t2",
      "name": "Parabacteroides",
      "dir": "up",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Genus-level increase across included studies.",
      "links": [
       {
@@ -14133,7 +14133,7 @@
      "id": "new_pcos_t3",
      "name": "Lactobacillus",
      "dir": "both",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Genuine split: 3 studies found increased, 2 found decreased.",
      "links": [
       {
@@ -14149,7 +14149,7 @@
      "id": "new_pcos_t4",
      "name": "Fusobacterium",
      "dir": "up",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Increased across 3 studies.",
      "links": [
       {
@@ -14165,7 +14165,7 @@
      "id": "new_pcos_t5",
      "name": "Bilophila",
      "dir": "up",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Increased across included studies.",
      "links": [
       {
@@ -14259,7 +14259,7 @@
      "id": "new_pcos_t9",
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Decreased in PCOS vs. controls.",
      "links": [
       {
@@ -14275,7 +14275,7 @@
      "id": "new_pcos_t10",
      "name": "Coprococcus",
      "dir": "down",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Decreased in PCOS vs. controls.",
      "links": [
       {
@@ -14291,7 +14291,7 @@
      "id": "new_pcos_t11",
      "name": "Clostridium",
      "dir": "down",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Decreased in PCOS vs. controls.",
      "links": [
       {
@@ -14307,7 +14307,7 @@
      "id": "new_pcos_t12",
      "name": "Desulfovibrio",
      "dir": "down",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Decreased in PCOS vs. controls — notably opposite the \"up\" direction this genus shows in many other conditions tracked in this app.",
      "links": [
       {
@@ -14386,7 +14386,7 @@
      "id": "new_pcos_t16",
      "name": "Alloprevotella",
      "dir": "down",
-     "refs": "37559119",
+     "refs": "Systematic review + meta-analysis, 28 studies, n=1,022 PCOS/928 controls (PMID 37559119)",
      "note": "Decreased in PCOS vs. controls.",
      "links": [
       {
