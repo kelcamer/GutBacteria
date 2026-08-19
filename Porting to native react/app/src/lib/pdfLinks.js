@@ -219,7 +219,6 @@ export const PDF_LINKS = {
   "https://pubmed.ncbi.nlm.nih.gov/39085949/": "https://genomemedicine.biomedcentral.com/counter/pdf/10.1186/s13073-024-01364-x",
   "https://pubmed.ncbi.nlm.nih.gov/39163908/": "https://doi.org/10.1016/j.bbi.2024.08.029",
   "https://pubmed.ncbi.nlm.nih.gov/39175809/": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0285346&type=printable",
-  "https://pubmed.ncbi.nlm.nih.gov/39184374/": "https://doi.org/10.1016/j.bbih.2024.100829",
   "https://pubmed.ncbi.nlm.nih.gov/39314611/": "https://www.ncbi.nlm.nih.gov/pmc/articles/2575488",
   "https://pubmed.ncbi.nlm.nih.gov/39408965/": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-023-02975-8",
   "https://pubmed.ncbi.nlm.nih.gov/39496242/": "https://doi.org/10.1159/000542220",

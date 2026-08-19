@@ -2256,22 +2256,6 @@
      "population": "unknown"
     },
     {
-     "id": "audit_ADHD_Akkermansia",
-     "name": "Akkermansia",
-     "dir": "down",
-     "refs": "n=42 ADHD/31 controls (PMID 39184374)",
-     "note": "Verrucomicrobia phylum and genus Akkermansia significantly higher (more abundant) in the healthy control group than in ADHD cases.",
-     "links": [
-      {
-       "id": "audit_ADHD_Akkermansia_l1",
-       "label": "PMID 39184374",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/39184374/"
-      }
-     ],
-     "evidence": "human-cohort",
-     "population": "unknown"
-    },
-    {
      "id": "seed_76_lactobacillus_inconsistent",
      "name": "Lactobacillus",
      "dir": "both",
@@ -2297,18 +2281,13 @@
      "name": "Eubacterium hallii",
      "dir": "down",
      "derived": true,
-     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958) | derived via cf_akkermansia_eubacterium_hall - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Eubacterium hallii (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_eubacterium_hall).",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_76_cf_infantis_ehallii_l1",
        "label": "Inferred source: Mol Nutr Food Res 2023 (PMID 36938958)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/"
-      },
-      {
-       "id": "cf_seed_76_cf_akkermansia_eubacterium_hall_l2",
-       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
      ],
      "evidence": "derived",
@@ -2319,18 +2298,13 @@
      "name": "Anaerostipes",
      "dir": "down",
      "derived": true,
-     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507) | derived via cf_akkermansia_anaerostipes - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. INDEPENDENTLY CORROBORATED: 2 separate feeding routes imply the same direction here - also Akkermansia -> Anaerostipes (mucus-derived oligosaccharides, acetate, 1,2-propanediol, in-vitro-coculture, cf_akkermansia_anaerostipes).",
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is down here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
      "links": [
       {
        "id": "cf_seed_76_cf_badolescentis_lactate_utilisers_l1",
        "label": "Inferred source: Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/16672507/"
-      },
-      {
-       "id": "cf_seed_76_cf_akkermansia_anaerostipes_l2",
-       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
-       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
       }
      ],
      "evidence": "derived",
@@ -9667,13 +9641,13 @@
      "id": "seed_ibs_t7",
      "name": "Ruminococcus",
      "dir": "up",
-     "refs": "Frontiers review 2019",
-     "note": "Increased in several IBS cohorts (Firmicutes). Direction is not universal.",
+     "refs": "277 IBS patients vs 84 controls, fecal metagenomics (PMID 39023095)",
+     "note": "Ruminococcus gnavus enriched in IBS patients (metagenomics, n=277 vs 84 controls); a pro-inflammatory member of the genus.",
      "links": [
       {
        "id": "seed_new_l45",
-       "label": "Frontiers review 2019 (IBS microbiome pathophysiology)",
-       "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2019.01136/full"
+       "label": "277 IBS patients vs 84 controls, fecal metagenomics (PMID 39023095)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/39023095/"
       }
      ],
      "evidence": "human-cohort",
@@ -9699,16 +9673,16 @@
      "id": "seed_ibs_t9",
      "name": "Escherichia coli",
      "dir": "up",
-     "refs": "meta 23 studies",
-     "note": "Elevated (with Enterobacter) in the 23-study meta-analysis. Cross-ref: Escherichia-Shigella is ↑ in autism and endometriosis too.",
+     "refs": "treatment-naive IBS vs controls, 16S (PMID 40481885)",
+     "note": "Enterobacteriaceae (the family Escherichia coli belongs to) increased in treatment-naive IBS patients vs controls.",
      "links": [
       {
        "id": "seed_new_l47",
-       "label": "Meta-analysis, 23 studies / 1340 subjects (comprehensive review)",
-       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10095554/"
+       "label": "treatment-naive IBS vs controls, 16S (PMID 40481885)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40481885/"
       }
      ],
-     "evidence": "meta-analysis",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
