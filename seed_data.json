@@ -49,7 +49,7 @@
      "id": "seed_dep_t1",
      "name": "Eggerthella",
      "dir": "up",
-     "refs": "Nature",
+     "refs": "Radjabzadeh 2022 (Nat Commun; gut microbiome-wide association of depressive symptoms, Rotterdam/HELIUS) (PMID 36473852)",
      "note": "Standout. Came up independently in 12/12 reporting studies and Rotterdam/HELIUS GWAS.",
      "links": [
       {
@@ -5546,7 +5546,7 @@
      "id": "seed_298",
      "name": "Streptococcus",
      "dir": "up",
-     "refs": "Wang 2022",
+     "refs": "Wang 2022 (PMID 36564391)",
      "note": "",
      "links": [
       {
@@ -5695,7 +5695,7 @@
      "id": "seed_321",
      "name": "Prevotella",
      "dir": "down",
-     "refs": "Wang 2022",
+     "refs": "Wang 2022 (PMID 36564391)",
      "note": "Decreased Prevotella linked to faster progression (Aho).",
      "links": [
       {
@@ -5711,7 +5711,7 @@
      "id": "seed_323",
      "name": "Lachnospira",
      "dir": "down",
-     "refs": "Wang 2022",
+     "refs": "Wang 2022 (PMID 36564391)",
      "note": "",
      "links": [
       {
