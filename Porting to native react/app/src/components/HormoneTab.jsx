@@ -29,6 +29,23 @@ function DirBadge({ direction }) {
 function Card({ x }) {
   return (
     <div style={{ border: `1px solid ${theme.line}`, borderRadius: 14, padding: 16, marginBottom: 12 }}>
+      {x.tldr && (
+        <div
+          style={{
+            fontSize: 13,
+            fontWeight: 700,
+            color: theme.text,
+            background: theme.ink3,
+            border: `1px solid ${theme.line}`,
+            borderRadius: 10,
+            padding: '8px 12px',
+            marginBottom: 10,
+            lineHeight: 1.45,
+          }}
+        >
+          {x.tldr}
+        </div>
+      )}
       <div className="flex items-center flex-wrap gap-2" style={{ marginBottom: 6 }}>
         <span style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 16, color: theme.text }}>
           {x.taxon}

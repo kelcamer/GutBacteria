@@ -1,8 +1,8 @@
 {
  "_about": [
-  "Bidirectional interactions between host SEX HORMONES (estradiol, progesterone)",
-  "and bacteria - a dimension neither seed_data.json (condition -> taxon) nor",
-  "cross_feeding.json (bacterium -> bacterium) captures.",
+  "Bidirectional interactions between host SEX HORMONES (estradiol, progesterone,",
+  "testosterone) and bacteria - a dimension neither seed_data.json (condition ->",
+  "taxon) nor cross_feeding.json (bacterium -> bacterium) captures.",
   "",
   "The mind-blowing idea: this is not a one-way street. Bacteria do not merely",
   "respond to host hormone levels; some USE host steroids as growth factors,",
@@ -10,22 +10,27 @@
   "editor of the host's hormonal state. The cross-talk is strongest in mucosal",
   "environments (oral cavity, gut).",
   "",
+  "NATURAL vs SYNTHETIC matters (see hi_natural_vs_synthetic): gut bacteria",
+  "rapidly metabolize the body's own bioidentical steroids but largely resist",
+  "synthetic analogues (progestins, ethinylestradiol, 17-alkylated androgens),",
+  "so an effect shown for a natural hormone should NOT be assumed for its",
+  "synthetic drug form.",
+  "",
   "direction field:",
   "  hormone->bacterium : the host steroid changes the bacterium (growth, biofilm)",
   "  bacterium->hormone : the bacterium chemically changes the steroid (catabolism)",
   "",
   "site field: where the interaction is demonstrated - oral cavity vs gut matters,",
-  "the same rank/site discipline the rest of this atlas uses. Most Prevotella-",
-  "hormone work is ORAL (periodontal/gingival); the steroid-reductase work is GUT.",
+  "the same rank/site discipline the rest of this atlas uses.",
   "",
   "IMPORTANT SCOPE NOTE: much of the Prevotella evidence is in-vitro at",
-  "supraphysiological (often 100x physiological) hormone concentrations, and some",
-  "in-vitro oral-biofilm work found NO compositional change - see per-entry notes.",
-  "Read this as a mechanistic map of what CAN happen, not proof it dominates in vivo."
+  "supraphysiological hormone concentrations. Read this as a mechanistic map of",
+  "what CAN happen, not proof it dominates in vivo."
  ],
  "interactions": [
   {
    "id": "hi_prevotella_vitk_substitution",
+   "tldr": "TLDR: oral Prevotella can use your estrogen and progesterone as a growth 'vitamin' (vitamin-K substitute).",
    "taxon": "Prevotella intermedia",
    "hormones": ["estradiol", "progesterone"],
    "direction": "hormone->bacterium",
@@ -39,6 +44,7 @@
   },
   {
    "id": "hi_prevotella_biofilm_growth",
+   "tldr": "TLDR: estrogen and progesterone can thicken Prevotella's biofilm and boost its growth.",
    "taxon": "Prevotella intermedia",
    "hormones": ["estradiol", "progesterone"],
    "direction": "hormone->bacterium",
@@ -52,6 +58,7 @@
   },
   {
    "id": "hi_prevotella_steroid_catabolism",
+   "tldr": "TLDR: Prevotella can break your progesterone and estrogen down, clearing them locally.",
    "taxon": "Prevotella",
    "hormones": ["progesterone", "pregnenolone", "estradiol"],
    "direction": "bacterium->hormone",
@@ -65,6 +72,7 @@
   },
   {
    "id": "hi_gut_reductases_progesterone",
+   "tldr": "TLDR: gut bacteria chemically convert your progesterone (e.g. into 5-beta-dihydroprogesterone) - and these enzymes are commoner in women.",
    "taxon": "gut bacteria (multiple genera)",
    "hormones": ["progesterone"],
    "direction": "bacterium->hormone",
@@ -75,11 +83,26 @@
    "note": "Broadens the Prevotella-specific picture to the whole gut community: the microbiome is a genuine node in steroid metabolism, not just a bystander. Notably these enzymes are ENRICHED IN FEMALES over males in metagenomes - a possible microbial contributor to sex differences in steroid handling. Connects to this app's Progesterone condition (Gordonibacter/Eggerthella producing progestins from glucocorticoids, PMID 38795705) - production and reduction are two ends of the same microbial steroid-metabolism axis.",
    "ref": "Identification of gut bacteria reductases that biotransform steroid hormones, Nature Communications 2025 (PMID 40628728)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/40628728/"
+  },
+  {
+   "id": "hi_natural_vs_synthetic",
+   "tldr": "TLDR: gut bacteria digest your body's OWN (bioidentical) hormones fast, but mostly ignore synthetic drug versions - so a microbiome effect proven for natural hormone may not carry over to the pill.",
+   "taxon": "gut bacteria (multiple genera)",
+   "hormones": ["progesterone", "estradiol", "testosterone"],
+   "direction": "bacterium->hormone",
+   "mechanism": "natural vs synthetic: differential bacterial metabolism",
+   "effect": "Gut bacteria rapidly metabolize NATURAL/bioidentical steroids but RESIST synthetic analogues. Natural progesterone was completely degraded in ~2 h (half-life 28 min), while the synthetic progestins medroxyprogesterone acetate (half-life 644 min; >12% intact at 24 h) and levonorgestrel (half-life 240 min) resisted degradation ~10-fold. Structural modifications (C17 acetylation, C6 methyl, ethinyl groups) make synthetics poor substrates for microbial enzymes. Synthetic estrogen (ethinylestradiol) is likewise structurally hardened versus natural estradiol, and 17-alkylated synthetic androgens resist metabolism versus natural testosterone (the 'testobolome').",
+   "site": "gut",
+   "evidence": "in-vitro",
+   "note": "WHY IT MATTERS for this app: the progesterone->Bifidobacterium boost, the Prevotella growth effects, and the reductase biotransformations above were all demonstrated with NATURAL hormones, which bacteria actually engage with. Synthetic progestins/estrogens/androgens largely pass the microbiome by, so those effects should NOT be assumed for the drug forms. This is a mechanism (differential metabolism), not a head-to-head microbiome-outcome trial - nobody has directly compared, say, bioidentical progesterone vs a progestin on Bifidobacterium abundance, so 'synthetic doesn't boost Bifidobacterium' is a well-grounded expectation, not a measured fact.",
+   "ref": "Progestogens Are Metabolized by the Gut Microbiota, Pharmaceutics 2020 (PMID 32806503); estrogen: OCs shift gut microbiota, Nutrients 2025 (PMID 40871620); testosterone: the testobolome, npj Biofilms Microbiomes 2025 (PMID 41513699)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32806503/"
   }
  ],
  "related_condition_entries": [
   "seed_data.json Progesterone -> Prevotella intermedia (up, oral): the hormone->bacterium growth effect, entered as a condition->taxon row",
   "seed_data.json Progesterone -> Bacteroides (up, oral): same vitamin-K-substitution mechanism",
-  "seed_data.json Progesterone -> Gordonibacter/Eggerthella (up): bacterium->hormone PRODUCTION (glucocorticoids -> progestins), the counterpart to reduction/catabolism here"
+  "seed_data.json Progesterone -> Gordonibacter/Eggerthella (up): bacterium->hormone PRODUCTION (glucocorticoids -> progestins), the counterpart to reduction/catabolism here",
+  "seed_data.json Progesterone/Estrogen/Testosterone condition notes: natural vs synthetic differentiation (see hi_natural_vs_synthetic)"
  ]
 }
