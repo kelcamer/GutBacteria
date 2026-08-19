@@ -59,12 +59,15 @@
   "Galacto-N-biose (GNB, from host mucin)",
   "Lacto-N-neotetraose (LNnT) supplementation",
   "Rumination",
-  "Difficulty with Transitions"
+  "Difficulty with Transitions",
+  "Synthetic Estrogen",
+  "Synthetic Progesterone",
+  "Synthetic Testosterone"
  ],
  "bacteria": [
   {
    "name": "Bifidobacterium",
-   "count": 48,
+   "count": 51,
    "up": [
     {
      "symptom": "Green tea / catechins",
@@ -415,6 +418,14 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/40222448/",
      "evidence": "human-rct",
      "population": "unknown"
+    },
+    {
+     "symptom": "Synthetic Estrogen",
+     "note": "Ethinylestradiol (the synthetic estrogen in most combined oral contraceptives) REDUCED Bifidobacterium longum growth ~2 logs in vitro and raised its biofilm - the opposite direction from the physiological/natural-hormone Bifidobacterium boost. Unlike bioidentical estradiol, ethinylestradiol is structurally hardened and resists bacterial metabolism. See this app's Natural Estrogen condition.",
+     "ref": "Hammouda et al. 2023, Front Cell Infect Microbiol - hormonal drugs vs gut microbiota, in vitro (PMID 36992682)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36992682/",
+     "evidence": "in-vitro",
+     "population": "female"
     }
    ],
    "both": [
@@ -457,6 +468,24 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/",
      "evidence": "human-cohort",
      "population": "unknown"
+    }
+   ],
+   "none": [
+    {
+     "symptom": "Synthetic Progesterone",
+     "note": "Synthetic progestins (medroxyprogesterone acetate, levonorgestrel) RESIST gut-bacterial metabolism ~10x versus bioidentical progesterone (half-life 240-644 vs ~28 min; PMID 32806503) and largely bypass the microbiome. They have NOT been shown to raise Bifidobacterium - the natural-progesterone boost should not be assumed for progestin pills/HRT. Recorded as none/untested. See this app's Natural Progesterone condition.",
+     "ref": "Progestogens Are Metabolized by the Gut Microbiota, Pharmaceutics 2020 (PMID 32806503)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32806503/",
+     "evidence": "unclassified",
+     "population": "female"
+    },
+    {
+     "symptom": "Synthetic Testosterone",
+     "note": "Synthetic anabolic-androgenic steroids are typically 17-alpha-alkylated to resist metabolism (the same structural trick that lets synthetic progestins evade gut bacteria), so their microbiome interaction is expected to differ from endogenous testosterone (the 'testobolome'; PMID 41513699). Direct microbiome data for synthetic androgens are essentially absent - untested. See this app's Natural Testosterone condition.",
+     "ref": "The testobolome in microbial testosterone metabolism, npj Biofilms Microbiomes 2025 (PMID 41513699)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41513699/",
+     "evidence": "unclassified",
+     "population": "female"
     }
    ]
   },
@@ -1137,7 +1166,7 @@
   },
   {
    "name": "Lactobacillus",
-   "count": 41,
+   "count": 42,
    "up": [
     {
      "symptom": "Dizziness / orthostatic intolerance",
@@ -1268,6 +1297,14 @@
      "evidence": "in-vitro",
      "population": "n/a",
      "evidence_source": "hand-classified"
+    },
+    {
+     "symptom": "Synthetic Estrogen",
+     "note": "Ethinylestradiol INCREASED Lactobacillus reuteri growth ~2-3 logs in vitro (Hammouda 2023). Synthetic estrogen, in-vitro at intestinal concentrations - not a human abundance finding.",
+     "ref": "Hammouda et al. 2023, Front Cell Infect Microbiol (PMID 36992682)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36992682/",
+     "evidence": "in-vitro",
+     "population": "female"
     }
    ],
    "down": [
@@ -5429,7 +5466,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 36,
+   "count": 37,
    "up": [
     {
      "symptom": "Oral iron supplementation",
@@ -5542,6 +5579,14 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/32369976/",
      "evidence": "human-cohort",
      "population": "unknown"
+    },
+    {
+     "symptom": "Synthetic Estrogen",
+     "note": "Ethinylestradiol INCREASED Bacteroides fragilis growth ~1-2 logs in vitro (Hammouda 2023). In vivo, combined oral contraceptives shift gut-microbiota composition over weeks of use (PMID 40871620).",
+     "ref": "Hammouda et al. 2023 (PMID 36992682); OCs shift gut microbiota, Nutrients 2025 (PMID 40871620)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36992682/",
+     "evidence": "in-vitro",
+     "population": "female"
     }
    ],
    "down": [

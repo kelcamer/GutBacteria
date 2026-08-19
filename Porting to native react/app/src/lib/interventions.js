@@ -50,6 +50,16 @@ export const INTERVENTION_NAMES = [
   'Smoking-related dysbiosis',
   'Green tea / catechins',
   'Antibiotics',
+  // Synthetic sex hormones - drugs a person TAKES (contraceptives, HRT,
+  // anabolic steroids), so they belong here. Their bioidentical/endogenous
+  // counterparts stay under CONDITIONS as "Natural Progesterone/Estrogen/
+  // Testosterone" (host hormone-level states you HAVE, not take). The split
+  // is the point: synthetics are structurally hardened and largely resist the
+  // gut-bacterial metabolism the natural hormones undergo, so their microbiome
+  // effect is a distinct - and mostly untested - question.
+  'Synthetic Estrogen',
+  'Synthetic Progesterone',
+  'Synthetic Testosterone',
 ]
 
 const INTERVENTION_SET = new Set(INTERVENTION_NAMES)
