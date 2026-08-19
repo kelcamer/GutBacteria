@@ -61,15 +61,46 @@ def resolve_source(measured, src):
 
     Returns a direction only when every matching entry AGREES. Mixed
     directions across species are ambiguous, so nothing is inferred.
+
+    The reverse rank gap matters just as much. An edge whose SOURCE is a species
+    (Faecalibacterium prausnitzii feeds Desulfovibrio) must still fire when a
+    condition measured only the GENUS (Faecalibacterium down). Without this,
+    FUT2 - which names the species - got the Desulfovibrio inference while ADHD -
+    which names the genus, same organism, same down direction - got nothing. Same
+    biology, different inference, purely because of which rank each condition
+    happened to record. A genus measurement speaks for its species here, exactly
+    as already_covered() lets a genus measurement cover a species on the target
+    side; keeping only one half of that symmetry is the bug.
     """
     if src in measured:
         d = measured[src]
+        return None if d == "both" else d
+    g = genus_of(src)
+    if g != src and g in measured:
+        d = measured[g]
         return None if d == "both" else d
     dirs = {d for n, d in measured.items() if genus_of(n) == src}
     if len(dirs) == 1:
         only = dirs.pop()
         return None if only == "both" else only
     return None
+
+
+def feeder_phrase(measured, src):
+    """Name the feeder in a note, honest about the rank actually measured.
+
+    When the edge's feeder is a species (Faecalibacterium prausnitzii) but the
+    condition recorded only the genus (Faecalibacterium down), the note must not
+    assert 'Faecalibacterium prausnitzii is down here' beside data that never
+    named the species. resolve_source() lets that genus measurement drive the
+    inference; this keeps the sentence truthful about what was observed.
+    """
+    if src in measured:
+        return src
+    g = genus_of(src)
+    if g != src and g in measured:
+        return f"{src} (measured here only at genus level, as {g})"
+    return src
 
 
 def already_covered(measured, dst):
@@ -389,6 +420,8 @@ def propagate_conditions(cf, args):
     n = 0
     for cond, dst, direction, edges_for in proposals:
         e = edges_for[0]
+        have = {t["name"]: t.get("dir") for t in cond.get("taxa", []) if not t.get("derived")}
+        feeder = feeder_phrase(have, e["from"])
         conf = ("lower confidence - the reverse direction was not tested"
                 if direction == "down" else "same direction as the demonstrated cross-feed")
         cond["taxa"].append(collections.OrderedDict([
@@ -401,7 +434,7 @@ def propagate_conditions(cf, args):
                       + " | ".join(f"derived via {x['id']} - {x['ref']}" for x in edges_for)),
             ("note",
              f"FROM CROSS-FEEDING - inferred, not measured in this condition. "
-             f"{e['from']} is {direction} here, and it feeds {dst} "
+             f"{feeder} is {direction} here, and it feeds {dst} "
              f"({', '.join(e['metabolites'])} -> {e['product']}), so {dst} is expected "
              f"to follow. {conf.capitalize()}. The feeding relationship itself is real "
              f"({e['evidence']}); its presence in THIS condition is an inference."

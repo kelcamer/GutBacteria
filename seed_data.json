@@ -753,6 +753,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_seed_1_cf_fprausnitzii_dpiger_Desulfovibrio",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii (measured here only at genus level, as Faecalibacterium) is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_1_cf_fprausnitzii_dpiger_l1",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -2309,6 +2326,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_seed_76_cf_fprausnitzii_dpiger_Desulfovibrio",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii (measured here only at genus level, as Faecalibacterium) is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_76_cf_fprausnitzii_dpiger_l1",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -3702,6 +3736,23 @@
        "id": "cf_seed_147_cf_bacteroides_phascolarctobacterium_l1",
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_seed_147_cf_fprausnitzii_dpiger_Desulfovibrio",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii (measured here only at genus level, as Faecalibacterium) is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_147_cf_fprausnitzii_dpiger_l1",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
      ],
      "evidence": "derived",
@@ -5292,6 +5343,23 @@
      ],
      "evidence": "human-cohort",
      "population": "unknown"
+    },
+    {
+     "id": "cf_seed_223_cf_ehallii_akkermansia_b12_Akkermansia",
+     "name": "Akkermansia",
+     "dir": "up",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_ehallii_akkermansia_b12 - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Eubacterium hallii (measured here only at genus level, as Eubacterium) is up here, and it feeds Akkermansia (pseudovitamin B12 -> propionate), so Akkermansia is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_223_cf_ehallii_akkermansia_b12_l1",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -7037,6 +7105,23 @@
        "id": "cf_seed_380_cf_bacteroides_phascolarctobacterium_l1",
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_seed_380_cf_fprausnitzii_dpiger_Desulfovibrio",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii (measured here only at genus level, as Faecalibacterium) is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_seed_380_cf_fprausnitzii_dpiger_l1",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
      ],
      "evidence": "derived",
@@ -12416,6 +12501,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_new_ra_cf_fprausnitzii_dpiger_Desulfovibrio",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii (measured here only at genus level, as Faecalibacterium) is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_ra_cf_fprausnitzii_dpiger_l1",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -13168,6 +13270,23 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "cf_new_aud_cf_fprausnitzii_dpiger_Desulfovibrio",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii (measured here only at genus level, as Faecalibacterium) is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_aud_cf_fprausnitzii_dpiger_l1",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -13766,6 +13885,23 @@
      ],
      "evidence": "human-cohort",
      "population": "unknown"
+    },
+    {
+     "id": "cf_new_tbi_cf_ehallii_akkermansia_b12_Akkermansia",
+     "name": "Akkermansia",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_ehallii_akkermansia_b12 - Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Eubacterium hallii (measured here only at genus level, as Eubacterium) is down here, and it feeds Akkermansia (pseudovitamin B12 -> propionate), so Akkermansia is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_tbi_cf_ehallii_akkermansia_b12_l1",
+       "label": "Inferred source: Belzer et al. 2017, mBio - A. muciniphila co-cultured with A. caccae, E. hallii and F. prausnitzii (PMID 28928206)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28928206/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
     }
    ]
   },
@@ -14066,6 +14202,23 @@
        "id": "cf_new_t1d_cf_bacteroides_phascolarctobacterium_l1",
        "label": "Inferred source: Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_new_t1d_cf_fprausnitzii_dpiger_Desulfovibrio",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii (measured here only at genus level, as Faecalibacterium) is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_t1d_cf_fprausnitzii_dpiger_l1",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
      ],
      "evidence": "derived",
@@ -16113,6 +16266,23 @@
        "id": "cf_new_lupus_cf_blongum_roseburia_acetate_l1",
        "label": "Inferred source: Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/17056678/"
+      }
+     ],
+     "evidence": "derived",
+     "population": "n/a"
+    },
+    {
+     "id": "cf_new_lupus_cf_fprausnitzii_dpiger_Desulfovibrio",
+     "name": "Desulfovibrio",
+     "dir": "down",
+     "derived": true,
+     "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_fprausnitzii_dpiger - Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Faecalibacterium prausnitzii (measured here only at genus level, as Faecalibacterium) is down here, and it feeds Desulfovibrio (lactate (as electron donor) -> acetate; supports D. piger growth), so Desulfovibrio is expected to follow. Lower confidence - the reverse direction was not tested. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "links": [
+      {
+       "id": "cf_new_lupus_cf_fprausnitzii_dpiger_l1",
+       "label": "Inferred source: Khan et al. 2023, Nature - co-isolated F. prausnitzii and D. piger, cross-feeding for growth and butyrate production (PMID 37532933)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/37532933/"
       }
      ],
      "evidence": "derived",
