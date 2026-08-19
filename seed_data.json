@@ -1732,7 +1732,7 @@
      "id": "seed_adhd_t2",
      "name": "Eisenbergiella",
      "dir": "up",
-     "refs": "ScienceDirect",
+     "refs": "ScienceDirect 2024 meta (Eur Neuropsychopharmacol; adult ADHD) (PMID 39121711)",
      "note": "Flagged higher in adult ADHD.",
      "links": [
       {
@@ -1748,7 +1748,7 @@
      "id": "seed_adhd_t3",
      "name": "Ruminococcus torques group",
      "dir": "up",
-     "refs": "ScienceDirect",
+     "refs": "ScienceDirect 2024 meta (Eur Neuropsychopharmacol; adult ADHD) (PMID 39121711)",
      "note": "Flagged higher in adult ADHD.",
      "links": [
       {
@@ -1764,7 +1764,7 @@
      "id": "seed_adhd_t4",
      "name": "Eubacterium xylanophilum group",
      "dir": "down",
-     "refs": "ScienceDirect",
+     "refs": "ScienceDirect 2024 meta (Eur Neuropsychopharmacol; adult ADHD) (PMID 39121711)",
      "note": "Flagged lower in adult ADHD.",
      "links": [
       {
@@ -2906,7 +2906,7 @@
      "id": "seed_scz_t2",
      "name": "Fusicatenibacter",
      "dir": "down",
-     "refs": "ScienceDirect",
+     "refs": "Zhu 2025 (Neurosci Biobehav Rev; gut microbiome across schizophrenia-spectrum stages) (PMID 40250540)",
      "note": "",
      "links": [
       {
