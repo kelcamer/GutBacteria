@@ -15907,7 +15907,7 @@
      "name": "Bifidobacterium",
      "dir": "up",
      "refs": "PMID 30995472 [human data + animal mechanistic arm]",
-     "note": "Progesterone administration increased Bifidobacterium relative abundance during late pregnancy (human cohort + mouse mechanistic follow-up in the same paper).",
+     "note": "Progesterone increased Bifidobacterium relative abundance SPECIFICALLY in LATE PREGNANCY (human cohort + mouse mechanistic follow-up, Nuriel-Ohayon 2019). CONTEXT-LOCKED: this late-pregnancy cohort is the only human evidence behind the progesterone->Bifidobacterium link, so it must not be read as a general non-pregnant progesterone effect. The butyrate-producer cross-feeding inferences below descend from this entry and inherit the same pregnancy limit.",
      "links": [
       {
        "id": "new_prog_t1_l1",
@@ -15916,7 +15916,8 @@
       }
      ],
      "evidence": "human-cohort",
-     "population": "female"
+     "population": "pregnant women (late gestation)",
+     "context": "pregnancy"
     },
     {
      "id": "new_prog_t2",
@@ -15951,12 +15952,79 @@
      "population": "unknown"
     },
     {
+     "id": "new_prog_t4",
+     "name": "Bacteroides",
+     "dir": "up",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) — citing Kornman & Loesche 1982, Infect Immun (PMID 6119293)",
+     "note": "Progesterone STIMULATES GROWTH OF ORAL Bacteroides species; mechanism is vitamin-K substitution (Kornman & Loesche 1982 showed B. melaninogenicus subsp. intermedius and B. melaninogenicus subsp. melaninogenicus can use progesterone as a substitute for vitamin K, an essential growth factor). **SITE-SPECIFIC**: this is oral cavity bacteriology, not gut. Siddiqui 2022 review cites this as an effect of progesterone on oral microbiota in the context of female oral health.",
+     "links": [
+      {
+       "id": "new_prog_t4_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      },
+      {
+       "id": "new_prog_t4_l2",
+       "label": "Kornman & Loesche 1982, Infect Immun — vitamin K substitution (PMID 6119293)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/6119293/"
+      }
+     ],
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "context": "oral cavity"
+    },
+    {
+     "id": "new_prog_t5",
+     "name": "Prevotella intermedia",
+     "dir": "up",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) — citing Kornman & Loesche 1982, Infect Immun (PMID 6119293)",
+     "note": "Progesterone STIMULATES GROWTH OF ORAL Prevotella intermedius (formerly B. melaninogenicus subsp. intermedius); same vitamin-K-substitution mechanism as Bacteroides above (Kornman & Loesche 1982). **SITE-SPECIFIC**: oral cavity, not gut. Siddiqui 2022 review cites this as an effect of progesterone on oral microbiota in the context of female oral health.",
+     "links": [
+      {
+       "id": "new_prog_t5_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      },
+      {
+       "id": "new_prog_t5_l2",
+       "label": "Kornman & Loesche 1982, Infect Immun — vitamin K substitution (PMID 6119293)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/6119293/"
+      }
+     ],
+     "evidence": "in-vitro",
+     "population": "n/a",
+     "context": "oral cavity"
+    },
+    {
+     "id": "new_prog_t6",
+     "name": "Lactobacillus reuteri",
+     "dir": "up",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) — citing progesterone↔L. reuteri mouse behavioral study (PMID 31022413)",
+     "note": "Progesterone INCREASES Lactobacillus reuteri population in the gut microbiota (ovariectomized mouse model) and this increase ameliorates depression and anxiety-like behaviors; the effect is antibiotic-sensitive, indicating it is mediated through the microbiota-behavioral axis. **ANIMAL MODEL**: findings are from mice, not humans. Siddiqui 2022 review cites this as part of the progesterone-microbiota link to behavioral/psychiatric outcomes, especially during premenstrual, postpartum, and perimenopausal periods when progesterone levels fluctuate or decline.",
+     "links": [
+      {
+       "id": "new_prog_t6_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      },
+      {
+       "id": "new_prog_t6_l2",
+       "label": "Ovarian progesterone suppresses depression/anxiety-like behaviors by increasing Lactobacillus reuteri (PMID 31022413)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31022413/"
+      }
+     ],
+     "evidence": "animal",
+     "population": "n/a",
+     "context": "mouse, ovariectomized"
+    },
+    {
      "id": "cf_new_prog_cf_bifidum_fprausnitzii_Faecalibacterium_prausnitzii",
      "name": "Faecalibacterium prausnitzii",
      "dir": "up",
      "derived": true,
      "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_bifidum_fprausnitzii - Microorganisms 2025 (PMID 40732214)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Faecalibacterium prausnitzii (constituent sugars from HMO degradation, acetate, lactate -> butyrate), so Faecalibacterium prausnitzii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. **INHERITS CONTEXT from source**: the Bifidobacterium abundance it depends on was measured specifically in LATE PREGNANCY (Nuriel-Ohayon 2019), so this inference is locked to pregnancy context and must not be read as a general non-pregnant progesterone effect.",
+     "context": "pregnancy",
      "links": [
       {
        "id": "cf_new_prog_cf_bifidum_fprausnitzii_l1",
@@ -15973,7 +16041,8 @@
      "dir": "up",
      "derived": true,
      "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_infantis_ehallii - Mol Nutr Food Res 2023 (PMID 36938958)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Eubacterium hallii (acetate, lactate, 1,2-propanediol -> butyrate), so Eubacterium hallii is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. **INHERITS CONTEXT from source**: the Bifidobacterium abundance it depends on was measured specifically in LATE PREGNANCY (Nuriel-Ohayon 2019), so this inference is locked to pregnancy context and must not be read as a general non-pregnant progesterone effect.",
+     "context": "pregnancy",
      "links": [
       {
        "id": "cf_new_prog_cf_infantis_ehallii_l1",
@@ -15990,7 +16059,8 @@
      "dir": "up",
      "derived": true,
      "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_badolescentis_lactate_utilisers - Two routes of metabolic cross-feeding between Bifidobacterium adolescentis and butyrate-producing anaerobes (PMID 16672507)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Anaerostipes (lactate -> butyrate), so Anaerostipes is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. **INHERITS CONTEXT from source**: the Bifidobacterium abundance it depends on was measured specifically in LATE PREGNANCY (Nuriel-Ohayon 2019), so this inference is locked to pregnancy context and must not be read as a general non-pregnant progesterone effect.",
+     "context": "pregnancy",
      "links": [
       {
        "id": "cf_new_prog_cf_badolescentis_lactate_utilisers_l1",
@@ -16007,7 +16077,8 @@
      "dir": "up",
      "derived": true,
      "refs": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this condition - nobody measured this taxon here): derived via cf_blongum_roseburia_acetate - Falony et al. 2006, Appl Environ Microbiol - B. longum BB536 cocultured with R. intestinalis DSM 14610 and A. caccae DSM 14662 on oligofructose (PMID 17056678); acetate-dependence mechanism: Duncan et al. 2004, J Bacteriol - butyryl-CoA:acetate CoA-transferase detected in 38/38 strains (PMID 15028695)",
-     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference.",
+     "note": "FROM CROSS-FEEDING - inferred, not measured in this condition. Bifidobacterium is up here, and it feeds Roseburia (acetate -> butyrate), so Roseburia is expected to follow. Same direction as the demonstrated cross-feed. The feeding relationship itself is real (in-vitro-coculture); its presence in THIS condition is an inference. **INHERITS CONTEXT from source**: the Bifidobacterium abundance it depends on was measured specifically in LATE PREGNANCY (Nuriel-Ohayon 2019), so this inference is locked to pregnancy context and must not be read as a general non-pregnant progesterone effect.",
+     "context": "pregnancy",
      "links": [
       {
        "id": "cf_new_prog_cf_blongum_roseburia_acetate_l1",

@@ -111,4 +111,10 @@ fi
 # them, not months later during a lucky audit. Runs against STAGED content.
 (cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_claim_source_match.py" --counts) >&2 || true
 
+# Context generalization check: surface findings measured in narrow contexts
+# (pregnancy, oral cavity, animal, in-vitro) that could silently generalize to
+# broader claims, and cross-feeding inferences that cascade from them.
+# REPORT ONLY - never blocks, just makes scope concerns visible at commit time.
+(cd "$TMPDIR" && python3 "$REPO_ROOT/scripts/check_context_generalization.py") >&2 || true
+
 exit 0
