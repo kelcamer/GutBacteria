@@ -69,6 +69,18 @@ def citation_text(claim):
     return " \n".join([claim.ref_text] + [t for t in claim.other_text if t])
 
 
+# Capitalised words that ride in on non-taxon "taxa" (e.g. "Reduced microbial
+# diversity", "Family XIII", "Small intestinal bacterial overgrowth (SIBO)") or
+# are bare rank/descriptor words. They are never a specific organism, so keeping
+# them in the vocabulary makes names-others-not-this fire on any note that uses
+# the ordinary English word - pure false positives.
+VOCAB_STOPWORDS = {
+    "Reduced", "Family", "Small", "Intestinal", "Bacterial", "Microbial",
+    "Diversity", "Overgrowth", "Multiple", "Order", "Class", "Group", "Other",
+    "Genus", "Species", "Uncultured", "Unclassified", "Incertae", "Sedis",
+}
+
+
 def taxon_vocabulary(claims):
     """Every taxon name in the dataset, longest first so 'Bacteroides vulgatus'
     is matched before 'Bacteroides'."""
@@ -76,7 +88,7 @@ def taxon_vocabulary(claims):
     words = set()
     for n in names:
         for part in re.split(r"[/\s]+", n):
-            if len(part) > 4 and part[0].isupper():
+            if len(part) > 4 and part[0].isupper() and part not in VOCAB_STOPWORDS:
                 words.add(part)
     return sorted(words, key=len, reverse=True)
 
