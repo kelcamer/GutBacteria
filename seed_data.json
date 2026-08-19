@@ -357,7 +357,7 @@
      "id": "audit_Depr_Dialister",
      "name": "Dialister",
      "dir": "down",
-     "refs": "Valles-Colomer 2019 (Nat Microbiol): Dialister depleted alongside Coprococcus, tracking quality of life.",
+     "refs": "Valles-Colomer 2019 (Nat Microbiol): Dialister depleted alongside Coprococcus, tracking quality of life. (PMID 30718848)",
      "note": "Valles-Colomer 2019 (Nat Microbiol): Dialister depleted alongside Coprococcus, tracking quality of life.",
      "links": [
       {
@@ -3943,7 +3943,7 @@
      "id": "seed_207",
      "name": "Lachnospira",
      "dir": "down",
-     "refs": "Domenech 2022; Law 2023",
+     "refs": "Domenech 2022; Law 2023 (PMID 35087123)",
      "note": "Depletion of Lachnospira pectinoschiza correlated with OCD obsession-subscale severity (Domenech 2022); ↓ in the Law 2023 synthesis.",
      "links": [
       {
@@ -7072,7 +7072,7 @@
      "id": "seed_ptsd_t1",
      "name": "Lachnospiraceae",
      "dir": "down",
-     "refs": "AURORA 2023",
+     "refs": "AURORA 2023 (PMID 37980332)",
      "note": "Depletion of SCFA-producing families.",
      "links": [
       {
@@ -7088,7 +7088,7 @@
      "id": "seed_ptsd_t2",
      "name": "Ruminococcaceae",
      "dir": "down",
-     "refs": "AURORA 2023",
+     "refs": "AURORA 2023 (PMID 37980332)",
      "note": "",
      "links": [
       {
@@ -7461,7 +7461,7 @@
      "id": "seed_431",
      "name": "Christensenellaceae",
      "dir": "up",
-     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm]",
+     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm] (PMID 37069399)",
      "note": "Most significantly enriched family in AN (Fan).",
      "links": [
       {
@@ -7684,7 +7684,7 @@
      "id": "seed_457",
      "name": "Coprococcus",
      "dir": "down",
-     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm]",
+     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm] (PMID 37069399)",
      "note": "Coprococcus: Enriched in healthy controls vs AN.",
      "links": [
       {
@@ -7700,7 +7700,7 @@
      "id": "seed_459",
      "name": "Gemmiger",
      "dir": "down",
-     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm]",
+     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm] (PMID 37069399)",
      "note": "Gemmiger: Enriched in healthy controls vs AN.",
      "links": [
       {

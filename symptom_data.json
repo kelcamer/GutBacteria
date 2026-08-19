@@ -69,7 +69,7 @@
     {
      "symptom": "Green tea / catechins",
      "note": "Green tea consumption improved the Bifidobacterium-to-Enterobacteriaceae ratio and raised the proportion of Bifidobacterium in faecal samples; B. adolescentis specifically increased with EGCG supplementation. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
-     "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies [human + animal review]",
+     "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies [human + animal review] (PMID 31623411)",
      "url": "https://www.mdpi.com/2072-6643/11/10/2364",
      "evidence": "human-rct",
      "population": "unknown"
@@ -1972,7 +1972,7 @@
     {
      "symptom": "Anxiety",
      "note": "Significantly elevated in generalized anxiety disorder cohorts.",
-     "ref": "Baske et al. 2024, J Affect Disord systematic review",
+     "ref": "Baske et al. 2024, J Affect Disord systematic review (PMID 38499070)",
      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165032724005111",
      "evidence": "meta-analysis",
      "population": "unknown"
@@ -2136,7 +2136,7 @@
     {
      "symptom": "Green tea / catechins",
      "note": "EGCG reduced Firmicutes abundance. Worth noting it also reduced overall alpha-diversity in the same work - a lower Firmicutes/Bacteroidetes ratio is often read as favourable, but diversity loss is not. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
-     "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies [human + animal review]",
+     "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies [human + animal review] (PMID 31623411)",
      "url": "https://www.mdpi.com/2072-6643/11/10/2364",
      "evidence": "human-rct",
      "population": "unknown"
@@ -2309,7 +2309,7 @@
     {
      "symptom": "Depressed mood",
      "note": "Coprococcus: Depleted alongside Dialister in populations with lower quality of life and depression (Flemish Gut Flora Project).",
-     "ref": "Nat Microbiol s41564-018-0337-x",
+     "ref": "Nat Microbiol s41564-018-0337-x (PMID 30718848)",
      "url": "https://www.nature.com/articles/s41564-018-0337-x",
      "evidence": "unclassified",
      "population": "unknown"
@@ -2317,7 +2317,7 @@
     {
      "symptom": "Fatigue",
      "note": "Butyrate-producing genus; loss tracks with low-energy, low-mood states.",
-     "ref": "Nat Microbiol s41564-018-0337-x",
+     "ref": "Nat Microbiol s41564-018-0337-x (PMID 30718848)",
      "url": "https://www.nature.com/articles/s41564-018-0337-x",
      "evidence": "unclassified",
      "population": "unknown"
@@ -2325,7 +2325,7 @@
     {
      "symptom": "OCD symptoms",
      "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -2840,7 +2840,7 @@
     {
      "symptom": "OCD symptoms",
      "note": "Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae — the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
-     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) [human data + animal mechanistic arm]",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) [human data + animal mechanistic arm] (PMID 35087123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "animal",
      "population": "unknown"
@@ -3301,7 +3301,7 @@
     {
      "symptom": "OCD symptoms",
      "note": "Part of the OCD gut-microbiome profile: increased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -3954,7 +3954,7 @@
     {
      "symptom": "Depressed mood",
      "note": "Dialister: Depleted in depression alongside Coprococcus in large population cohort microbiome studies.",
-     "ref": "Nat Microbiol s41564-018-0337-x",
+     "ref": "Nat Microbiol s41564-018-0337-x (PMID 30718848)",
      "url": "https://www.nature.com/articles/s41564-018-0337-x",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -4111,7 +4111,7 @@
     {
      "symptom": "OCD symptoms",
      "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -4381,7 +4381,7 @@
     {
      "symptom": "OCD symptoms",
      "note": "Part of the OCD gut-microbiome profile: decreased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -5096,7 +5096,7 @@
     {
      "symptom": "Brain fog",
      "note": "Can remove dopamine's hydroxyl group, lowering dopamine and plausibly affecting cognition/mood.",
-     "ref": "Nat Rev Microbiol s41579-026-01344-5",
+     "ref": "Nat Rev Microbiol s41579-026-01344-5 (DOI 10.1038/s41579-026-01344-5)",
      "url": "https://www.nature.com/articles/s41579-026-01344-5",
      "evidence": "unclassified",
      "population": "unknown"
@@ -5222,7 +5222,7 @@
     {
      "symptom": "Reduced socializing",
      "note": "Same genus grouping as Sutterella; linked to social-reciprocity outcomes in autism-behavior microbiome research.",
-     "ref": "Sci Rep s41598-020-72386-9",
+     "ref": "Sci Rep s41598-020-72386-9 (PMID 32968156)",
      "url": "https://www.nature.com/articles/s41598-020-72386-9",
      "evidence": "unclassified",
      "population": "unknown"
@@ -6248,7 +6248,7 @@
     {
      "symptom": "OCD symptoms",
      "note": "Part of the OCD gut-microbiome profile: increased abundance, per Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus).",
-     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) (PMID 35087123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "unclassified",
      "population": "unknown"
@@ -6456,7 +6456,7 @@
     {
      "symptom": "Systemic inflammation",
      "note": "Elevated in NAFLD patients alongside intestinal inflammation and impaired mucosal immune function; evidence is mixed across other conditions (protective association reported in sepsis) — treat as suggestive, not conclusive.",
-     "ref": "Sci Rep srep08096",
+     "ref": "Sci Rep srep08096 (PMID 25644696)",
      "url": "https://www.nature.com/articles/srep08096",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -6637,7 +6637,7 @@
     {
      "symptom": "Reduced socializing",
      "note": "Sutterella abundance was associated with social reciprocity scale scores in a prospective infant gut-microbiome study.",
-     "ref": "Sci Rep s41598-020-72386-9",
+     "ref": "Sci Rep s41598-020-72386-9 (PMID 32968156)",
      "url": "https://www.nature.com/articles/s41598-020-72386-9",
      "evidence": "unclassified",
      "population": "unknown"
