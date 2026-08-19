@@ -124,7 +124,7 @@
     },
     {
      "symptom": "Acne / skin flares",
-     "note": "Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio.",
+     "note": "Bifidobacterium: Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio.",
      "ref": "n=23 PCOS/24 non-PCOS controls (PMID 41882707)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/",
      "evidence": "human-cohort",
@@ -242,7 +242,7 @@
     },
     {
      "symptom": "FUT2 (Non-secretor) status",
-     "note": "The classic, most-cited FUT2 finding: non-secretors lack the fucosylated glycans Bifidobacteria feed on, genus-level abundance/diversity reduced accordingly (species-level detail - B. bifidum, adolescentis, pseudocatenulatum - tracked separately elsewhere in this app). Also the bacterium most consistently depleted in a FUT2-deficient mouse model specifically under alcohol exposure, alongside Akkermansia - direct mechanistic evidence FUT2 loss is a RISK factor for alcohol-related dysbiosis, not protective against it.",
+     "note": "Bifidobacterium: The classic, most-cited FUT2 finding: non-secretors lack the fucosylated glycans Bifidobacteria feed on, genus-level abundance/diversity reduced accordingly (species-level detail - B. bifidum, adolescentis, pseudocatenulatum - tracked separately elsewhere in this app). Also the bacterium most consistently depleted in a FUT2-deficient mouse model specifically under alcohol exposure, alongside Akkermansia - direct mechanistic evidence FUT2 loss is a RISK factor for alcohol-related dysbiosis, not protective against it.",
      "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598); genus-level support in infants of non-secretor mothers (PMID 30214024); TWAS association (PMID 34922623); HMP whole-genome sequencing ties secretor status to B. longum specifically (PMID 29378630); two infant cohorts found NO association (PMID 38838470, 37741856) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/",
      "evidence": "human-cohort",
@@ -338,7 +338,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Rheumatoid arthritis: Reduced in early/established RA — loss of a barrier-supportive, generally anti-inflammatory genus. (down) | Psoriasis: Underrepresented alongside Lactobacillus and F. prausnitzii. (down)",
+     "note": "Bifidobacterium: Rheumatoid arthritis: Reduced in early/established RA — loss of a barrier-supportive, generally anti-inflammatory genus. (down) | Psoriasis: Underrepresented alongside Lactobacillus and F. prausnitzii. (down)",
      "ref": "Multiple sources across Psoriasis, Rheumatoid arthritis — see individual condition entries",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9499173/",
      "evidence": "unclassified",
@@ -452,7 +452,7 @@
     },
     {
      "symptom": "Hair loss",
-     "note": "Polycystic Ovary Syndrome (PCOS): Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio. (up) | Anorexia nervosa: Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model. (down)",
+     "note": "Bifidobacterium: Polycystic Ovary Syndrome (PCOS): Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio. (up) | Anorexia nervosa: Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model. (down)",
      "ref": "Multiple sources across Anorexia nervosa, Polycystic Ovary Syndrome (PCOS) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/",
      "evidence": "human-cohort",
@@ -484,7 +484,7 @@
    "down": [
     {
      "symptom": "Antibiotics",
-     "note": "Reduced at the end of ciprofloxacin treatment, alongside Oscillospira, Ruminococcus and Dialister. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
+     "note": "Faecalibacterium: Reduced at the end of ciprofloxacin treatment, alongside Oscillospira, Ruminococcus and Dialister. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
      "ref": "Culture-free gut microbiota analysis, ciprofloxacin vs nitrofurantoin in outpatients with UTI, Clin Microbiol Infect",
      "url": "https://www.sciencedirect.com/science/article/pii/S1198743X14001025",
      "evidence": "human-cohort",
@@ -564,7 +564,7 @@
     },
     {
      "symptom": "Brain fog",
-     "note": "Butyrate-producing genus whose abundance positively correlates with cognitive-function scores and negatively correlates with inflammatory cytokines in AUD; used as a predictive indicator of cognitive impairment alongside Gemmiger and Escherichia.",
+     "note": "Faecalibacterium: Butyrate-producing genus whose abundance positively correlates with cognitive-function scores and negatively correlates with inflammatory cytokines in AUD; used as a predictive indicator of cognitive impairment alongside Gemmiger and Escherichia.",
      "ref": "PMC9814012",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9814012/",
      "evidence": "unclassified",
@@ -612,7 +612,7 @@
     },
     {
      "symptom": "Urinary tract infections (UTI)",
-     "note": "High relative abundance associated with lower risk of Enterobacteriaceae bacteriuria in kidney transplant recipients (HR 0.3, 95% CI 0.1-0.7, P=.01); combined with Romboutsia, HR 0.2 (95% CI 0.1-0.7, P=.008).",
+     "note": "Faecalibacterium: High relative abundance associated with lower risk of Enterobacteriaceae bacteriuria in kidney transplant recipients (HR 0.3, 95% CI 0.1-0.7, P=.01); combined with Romboutsia, HR 0.2 (95% CI 0.1-0.7, P=.008).",
      "ref": "Magruder et al. 2019, Am J Transplant (PMID 32865119), 168 kidney transplant recipients",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32865119/",
      "evidence": "unclassified",
@@ -636,7 +636,7 @@
     },
     {
      "symptom": "Immune dysregulation",
-     "note": "Rheumatoid arthritis: Genus-level: significantly lower in RA patients (n=65, pre-treatment baseline) vs 30 healthy controls, alongside Bacteroidota/Bacteroides/Bifidobacterium (the latter already tracked here as down); opportunistic taxa (Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella) were elevated. (down) | Type 1 Diabetes: Significantly lower relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability). (down)",
+     "note": "Faecalibacterium: Rheumatoid arthritis: Genus-level: significantly lower in RA patients (n=65, pre-treatment baseline) vs 30 healthy controls, alongside Bacteroidota/Bacteroides/Bifidobacterium (the latter already tracked here as down); opportunistic taxa (Firmicutes/Prevotella/Proteobacteria/Actinobacteriota/Escherichia-Shigella/Klebsiella) were elevated. (down) | Type 1 Diabetes: Significantly lower relative abundance vs. healthy children; correlated with increased serum zonulin (gut permeability). (down)",
      "ref": "Multiple sources across Rheumatoid arthritis, Type 1 Diabetes — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42482584/",
      "evidence": "human-cohort",
@@ -684,7 +684,7 @@
     },
     {
      "symptom": "Panic attack",
-     "note": "From this app's Anxiety condition data.",
+     "note": "Faecalibacterium: From this app's Anxiety condition data.",
      "ref": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
      "evidence": "unclassified",
@@ -736,7 +736,7 @@
    "none": [
     {
      "symptom": "FUT2 (Non-secretor) status",
-     "note": "Tested, no reliable effect. The best-powered study - 1,190 healthy people - found no association between secretor status and composition at all, and in 81 genotyped IBD patients Escherichia was the only abundant genus that moved. The species-level stool finding (F. prausnitzii tracking the secretor allele) is the one directional result, and it is a secondary observation.",
+     "note": "Faecalibacterium: Tested, no reliable effect. The best-powered study - 1,190 healthy people - found no association between secretor status and composition at all, and in 81 genotyped IBD patients Escherichia was the only abundant genus that moved. The species-level stool finding (F. prausnitzii tracking the secretor allele) is the one directional result, and it is a secondary observation.",
      "ref": "n=1,190 null (PMID 29533703); 81 genotyped IBD patients (PMID 34419617); GWAS association without direction (PMID 33462482, PMID 41688638); species-level stool finding (PMID 36922975); strain-level effect (PMID 38172637)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/22068912/",
      "evidence": "human-cohort",
@@ -1521,7 +1521,7 @@
     },
     {
      "symptom": "Metabolic dysregulation",
-     "note": "Increased abundance associated with dyslipidemia in a cross-sectional cardiometabolic-risk study of 100 adults with obesity (same study also found reduced Lachnospiraceae linked to metabolic syndrome and lower Faecalibacterium linked to hypertension).",
+     "note": "Prevotella: Increased abundance associated with dyslipidemia in a cross-sectional cardiometabolic-risk study of 100 adults with obesity (same study also found reduced Lachnospiraceae linked to metabolic syndrome and lower Faecalibacterium linked to hypertension).",
      "ref": "Cross-sectional cardiometabolic study, n=100 (PMID 41599966)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41599966/",
      "evidence": "human-cohort",
@@ -1611,7 +1611,7 @@
     },
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Decreased in alcohol-dependent patients (n=33) vs. controls (n=21, male); Bacteroides and Fusobacterium increased instead — pro-inflammatory compositional shift.",
+     "note": "Prevotella: Decreased in alcohol-dependent patients (n=33) vs. controls (n=21, male); Bacteroides and Fusobacterium increased instead — pro-inflammatory compositional shift.",
      "ref": "n=33/21, male patients (PMID 37577447)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37577447/",
      "evidence": "human-cohort",
@@ -1619,7 +1619,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Crohn's disease: Depleted alongside other Bacteroidetes genera in CD cohorts. (down) | Ulcerative colitis: Reduced, part of the general loss of fiber-fermenting Bacteroidetes. (down)",
+     "note": "Prevotella: Crohn's disease: Depleted alongside other Bacteroidetes genera in CD cohorts. (down) | Ulcerative colitis: Reduced, part of the general loss of fiber-fermenting Bacteroidetes. (down)",
      "ref": "Multiple sources across Crohn's disease, Ulcerative colitis — see individual condition entries",
      "url": "https://www.nature.com/articles/s41467-024-54797-8",
      "evidence": "human-cohort",
@@ -1755,7 +1755,7 @@
    "up": [
     {
      "symptom": "Overstimulation",
-     "note": "Elevated alongside Eggerthella and Sutterella in children with migraine, a condition defined by sensory hypersensitivity (photophobia/phonophobia) that clinically co-occurs with misophonia (comorbidity evidence, not a direct bacteria-misophonia study).",
+     "note": "Eubacterium: Elevated alongside Eggerthella and Sutterella in children with migraine, a condition defined by sensory hypersensitivity (photophobia/phonophobia) that clinically co-occurs with misophonia (comorbidity evidence, not a direct bacteria-misophonia study).",
      "ref": "PMC7001586 / PMC12308847",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001586/",
      "evidence": "human-cohort",
@@ -1843,7 +1843,7 @@
     },
     {
      "symptom": "Anxiety",
-     "note": "Significant overgrowth (alongside Streptococcus, Romboutsia) in high-trait-anxiety young adults vs. controls.",
+     "note": "Blautia: Significant overgrowth (alongside Streptococcus, Romboutsia) in high-trait-anxiety young adults vs. controls.",
      "ref": "n=21 high-trait-anxiety/29 controls (PMID 35281444)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35281444/",
      "evidence": "human-cohort",
@@ -1939,7 +1939,7 @@
    "up": [
     {
      "symptom": "Antibiotics",
-     "note": "Expanded alongside the broader Enterobacteriaceae bloom after antibiotic exposure. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
+     "note": "Escherichia/Shigella: Expanded alongside the broader Enterobacteriaceae bloom after antibiotic exposure. CLASS MATTERS: this entry aggregates across antibiotic classes, which is a simplification. Ciprofloxacin, beta-lactams and vancomycin do not produce the same profile, and the direction for some taxa flips between them.",
      "ref": "Early-life beta-lactam exposure and the developing microbiome, Microorganisms 2026 (PMID 41753726)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41753726/",
      "evidence": "unclassified",
@@ -2003,7 +2003,7 @@
     },
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Increased at the genus level in AUD patients relative to healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
+     "note": "Escherichia/Shigella: Increased at the genus level in AUD patients relative to healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
      "ref": "Frontiers Psychiatry",
      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1054685/full",
      "evidence": "human-cohort",
@@ -2035,7 +2035,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Consistently increased in active UC alongside other Enterobacteriaceae.",
+     "note": "Escherichia/Shigella: Consistently increased in active UC alongside other Enterobacteriaceae.",
      "ref": "PMC7835370",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/",
      "evidence": "unclassified",
@@ -2043,7 +2043,7 @@
     },
     {
      "symptom": "Immune dysregulation",
-     "note": "Consistently increased in active UC alongside other Enterobacteriaceae.",
+     "note": "Escherichia/Shigella: Consistently increased in active UC alongside other Enterobacteriaceae.",
      "ref": "PMC7835370",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835370/",
      "evidence": "unclassified",
@@ -2210,7 +2210,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Family containing Escherichia/Shigella/Klebsiella; blooms are a recognized dysbiosis/endotoxemia signature.",
+     "note": "Enterobacteriaceae: Family containing Escherichia/Shigella/Klebsiella; blooms are a recognized dysbiosis/endotoxemia signature.",
      "ref": "PMC9769903",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9769903/",
      "evidence": "unclassified",
@@ -2308,7 +2308,7 @@
    "down": [
     {
      "symptom": "Depressed mood",
-     "note": "Depleted alongside Dialister in populations with lower quality of life and depression (Flemish Gut Flora Project).",
+     "note": "Coprococcus: Depleted alongside Dialister in populations with lower quality of life and depression (Flemish Gut Flora Project).",
      "ref": "Nat Microbiol s41564-018-0337-x",
      "url": "https://www.nature.com/articles/s41564-018-0337-x",
      "evidence": "unclassified",
@@ -2378,7 +2378,7 @@
     },
     {
      "symptom": "Sleep disturbance",
-     "note": "Genus-level enrichment across 2 case-control studies.",
+     "note": "Clostridium: Genus-level enrichment across 2 case-control studies.",
      "ref": "Wang et al. 2025 systematic review, Life — 15 case-control studies, 603 insomnia vs. 718 controls (PMID 40724588)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40724588/",
      "evidence": "meta-analysis",
@@ -2410,7 +2410,7 @@
     },
     {
      "symptom": "Depressed mood",
-     "note": "Depression: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up) | Bipolar Disorder: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
+     "note": "Clostridium: Depression: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up) | Bipolar Disorder: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
      "ref": "Multiple sources across Bipolar Disorder, Depression — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/",
      "evidence": "unclassified",
@@ -2426,7 +2426,7 @@
     },
     {
      "symptom": "Irritability",
-     "note": "ADHD: Higher abundance in the same processed-food-diet/ADHD-symptom subgroup. (up) | Bipolar Disorder: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
+     "note": "Clostridium: ADHD: Higher abundance in the same processed-food-diet/ADHD-symptom subgroup. (up) | Bipolar Disorder: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
      "ref": "Multiple sources across ADHD, Bipolar Disorder — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36178961/",
      "evidence": "unclassified",
@@ -2434,7 +2434,7 @@
     },
     {
      "symptom": "Reduced socializing",
-     "note": "Schizophrenia: Increased abundance identified in the same synthesis. (up) | Depression: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
+     "note": "Clostridium: Schizophrenia: Increased abundance identified in the same synthesis. (up) | Depression: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter). (up)",
      "ref": "Multiple sources across Depression, Schizophrenia — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40944763/",
      "evidence": "unclassified",
@@ -2492,7 +2492,7 @@
     },
     {
      "symptom": "Allergies",
-     "note": "Decreased in allergic rhinitis patients across 3 independent studies. Note: the family-level Clostridiaceae is reported INCREASED in the broader allergic-sensitization/eczema/asthma literature — a genuine rank-level split, kept as two separate entries rather than merged.",
+     "note": "Clostridium: Decreased in allergic rhinitis patients across 3 independent studies. Note: the family-level Clostridiaceae is reported INCREASED in the broader allergic-sensitization/eczema/asthma literature — a genuine rank-level split, kept as two separate entries rather than merged.",
      "ref": "Systematic review, gut+nasal microbiota in allergic rhinitis, 17 studies, n=1,044 AR/954 controls (PMID 39006241)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39006241/",
      "evidence": "meta-analysis",
@@ -2550,7 +2550,7 @@
    "both": [
     {
      "symptom": "FUT2 (Non-secretor) status",
-     "note": "Contested because the genus spans clades that genuinely differ, not because anyone is wrong. One cohort found C. sphenoides et rel. higher in non-secretors; another found the C. coccoides group (cluster XIVa) decreased in them. Those are different organisms sharing an obsolete genus label - and the cluster XIVa half is modern Lachnospiraceae, where it now corroborates that entry's 'down'. Read the Lachnospiraceae node for that half.",
+     "note": "Clostridium: Contested because the genus spans clades that genuinely differ, not because anyone is wrong. One cohort found C. sphenoides et rel. higher in non-secretors; another found the C. coccoides group (cluster XIVa) decreased in them. Those are different organisms sharing an obsolete genus label - and the cluster XIVa half is modern Lachnospiraceae, where it now corroborates that entry's 'down'. Read the Lachnospiraceae node for that half.",
      "ref": "2015, PLOS ONE — secretor status in pregnancy (n=123); Wacklin et al. 2014, PLOS ONE — 71 adults, HITChip (PMID 24733310); Wacklin et al. 2015, PLOS ONE — secretor status in pregnancy, n=123 (PMID 26231005)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/24733310/",
      "evidence": "human-cohort",
@@ -2558,7 +2558,7 @@
     },
     {
      "symptom": "Sleep disturbance",
-     "note": "Corrected from an uncited 'up' placeholder: a large GMrepo cross-sectional analysis (PD n=378 vs healthy n=293) found Escherichia-Shigella significantly decreased in PD, alongside Faecalibacterium/Agathobacterium/Prevotella — all already tracked as down here.",
+     "note": "Clostridium: Corrected from an uncited 'up' placeholder: a large GMrepo cross-sectional analysis (PD n=378 vs healthy n=293) found Escherichia-Shigella significantly decreased in PD, alongside Faecalibacterium/Agathobacterium/Prevotella — all already tracked as down here.",
      "ref": "Cheng 2026 (Front Cell Infect Microbiol; GMrepo n=378 PD vs n=293 healthy; ↑Bacteroides/Akkermansia/Parabacteroides/Phascolarctobacterium/Bifidobacterium, ↓Escherichia-Shigella/Faecalibacterium/Prevotella in PD)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42564147/",
      "evidence": "human-cohort",
@@ -2968,7 +2968,7 @@
     },
     {
      "symptom": "Anxiety",
-     "note": "",
+     "note": "Lachnospira down — associated with Anxiety.",
      "ref": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30029052/",
      "evidence": "unclassified",
@@ -3025,7 +3025,7 @@
     },
     {
      "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
-     "note": "Same trial, same phylum-level increase; LNnT was given alone and mixed with 2'FL. ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean. As above, this is Bifidobacterium counted at phylum rank.",
+     "note": "Actinobacteria: Same trial, same phylum-level increase; LNnT was given alone and mixed with 2'FL. ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean. As above, this is Bifidobacterium counted at phylum rank.",
      "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
      "evidence": "human-rct",
@@ -3036,7 +3036,7 @@
    "down": [
     {
      "symptom": "Immune dysregulation",
-     "note": "Phylum containing Bifidobacterium/Collinsella/Eggerthella; broad depletion tracks with reduced mucosal immune modulation.",
+     "note": "Actinobacteria: Phylum containing Bifidobacterium/Collinsella/Eggerthella; broad depletion tracks with reduced mucosal immune modulation.",
      "ref": "Binda et al. 2018, Dig Liver Dis",
      "url": "https://www.sciencedirect.com/science/article/abs/pii/S159086581830210X",
      "evidence": "unclassified",
@@ -3044,7 +3044,7 @@
     },
     {
      "symptom": "Smoking-related dysbiosis",
-     "note": "Lower in current smokers; increased after smoking cessation, the same pattern as Firmicutes.",
+     "note": "Actinobacteria: Lower in current smokers; increased after smoking cessation, the same pattern as Firmicutes.",
      "ref": "PMC3597605",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3597605/",
      "evidence": "unclassified",
@@ -3340,7 +3340,7 @@
    "up": [
     {
      "symptom": "Exercise-associated microbiota changes",
-     "note": "SCFA-producing Firmicutes genus with increased abundance after exercise intervention, positively correlated with insulin sensitivity and cardiorespiratory fitness.",
+     "note": "Anaerostipes: SCFA-producing Firmicutes genus with increased abundance after exercise intervention, positively correlated with insulin sensitivity and cardiorespiratory fitness.",
      "ref": "Meta-analysis, 25 RCT/crossover studies, n=1,044 adults (PMID 38613103)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38613103/",
      "evidence": "meta-analysis",
@@ -3843,7 +3843,7 @@
    "down": [
     {
      "symptom": "Intrusive thoughts",
-     "note": "Causal protective factor for OCD in a two-sample Mendelian randomization analysis (OR=0.545, 95%CI 0.345-0.855, P=0.008) — a broader OCD-wide finding, not specific to the obsessions subscale like the Lachnospira pectinoschiza entry above.",
+     "note": "Proteobacteria: Causal protective factor for OCD in a two-sample Mendelian randomization analysis (OR=0.545, 95%CI 0.345-0.855, P=0.008) — a broader OCD-wide finding, not specific to the obsessions subscale like the Lachnospira pectinoschiza entry above.",
      "ref": "He et al. 2025, J Affect Disord — two-sample Mendelian randomization, gut microbiota GWAS n=18,340 / OCD GWAS n=199,169 (PMID 40056996)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/",
      "evidence": "mendelian",
@@ -3897,7 +3897,7 @@
    "none": [
     {
      "symptom": "FUT2 (Non-secretor) status",
-     "note": "Tested, nothing reliable at this rank. No phylum-level study of FUT2 exists, and this phylum's own members disagree here: Escherichia/Shigella down, Enterobacteriaceae, Klebsiella and Sutterella up. Read those nodes instead - a phylum average over organisms moving in opposite directions is not a finding.",
+     "note": "Proteobacteria: Tested, nothing reliable at this rank. No phylum-level study of FUT2 exists, and this phylum's own members disagree here: Escherichia/Shigella down, Enterobacteriaceae, Klebsiella and Sutterella up. Read those nodes instead - a phylum average over organisms moving in opposite directions is not a finding.",
      "ref": "No phylum-level source exists. Nearest real evidence is genus level: Escherichia decreased in non-secretors, 81 genotyped IBD patients (PMID 34419617)",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5463037/",
      "evidence": "human-cohort",
@@ -3953,7 +3953,7 @@
    "down": [
     {
      "symptom": "Depressed mood",
-     "note": "Depleted in depression alongside Coprococcus in large population cohort microbiome studies.",
+     "note": "Dialister: Depleted in depression alongside Coprococcus in large population cohort microbiome studies.",
      "ref": "Nat Microbiol s41564-018-0337-x",
      "url": "https://www.nature.com/articles/s41564-018-0337-x",
      "evidence": "human-cohort",
@@ -4206,7 +4206,7 @@
    "down": [
     {
      "symptom": "Restlessness",
-     "note": "Significantly reduced in RLS vs. both healthy controls and insomnia patients — same study already cited for Lachnoclostridium above, the only two genera that met significance thresholds.",
+     "note": "Flavonifractor: Significantly reduced in RLS vs. both healthy controls and insomnia patients — same study already cited for Lachnoclostridium above, the only two genera that met significance thresholds.",
      "ref": "2025/2026, SLEEP (Oxford Academic) — RLS metagenomic signature study (PMID 41378921)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41378921/",
      "evidence": "human-cohort",
@@ -4244,7 +4244,7 @@
     },
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Expanded alongside Proteobacteria and Veillonella as part of the pro-inflammatory taxa bloom in alcohol use disorder.",
+     "note": "Enterococcus: Expanded alongside Proteobacteria and Veillonella as part of the pro-inflammatory taxa bloom in alcohol use disorder.",
      "ref": "PMID 41011331",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41011331/",
      "evidence": "unclassified",
@@ -4346,7 +4346,7 @@
     },
     {
      "symptom": "Reduced socializing",
-     "note": "Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
+     "note": "Prevotellaceae: Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
      "ref": "PMID 41465974",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41465974/",
      "evidence": "unclassified",
@@ -4354,7 +4354,7 @@
     },
     {
      "symptom": "Overstimulation",
-     "note": "Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
+     "note": "Prevotellaceae: Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
      "ref": "PMID 41465974",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41465974/",
      "evidence": "unclassified",
@@ -4362,7 +4362,7 @@
     },
     {
      "symptom": "Understimulation",
-     "note": "Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
+     "note": "Prevotellaceae: Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
      "ref": "PMID 41465974",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41465974/",
      "evidence": "unclassified",
@@ -4372,7 +4372,7 @@
    "down": [
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
+     "note": "Prevotellaceae: Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
      "ref": "PMC7504034",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/",
      "evidence": "unclassified",
@@ -4404,7 +4404,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
+     "note": "Prevotellaceae: Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
      "ref": "PMC7504034",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504034/",
      "evidence": "unclassified",
@@ -4566,7 +4566,7 @@
     },
     {
      "symptom": "Irritability",
-     "note": "ADHD: Lower in unmedicated ADHD children vs. healthy controls, distinct from the already-tracked genus-level Prevotella entry. (down) | Autism (ASD): Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment. (up)",
+     "note": "Dorea: ADHD: Lower in unmedicated ADHD children vs. healthy controls, distinct from the already-tracked genus-level Prevotella entry. (down) | Autism (ASD): Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment. (up)",
      "ref": "Multiple sources across ADHD, Autism (ASD) — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39856212/",
      "evidence": "human-cohort",
@@ -4865,7 +4865,7 @@
    "down": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Phylum containing Akkermansia; depletion tracks mucus-layer thinning.",
+     "note": "Verrucomicrobia: Phylum containing Akkermansia; depletion tracks mucus-layer thinning.",
      "ref": "Tandfonline 2024, Gut Microbes/Virulence review",
      "url": "https://www.tandfonline.com/doi/full/10.1080/21505594.2024.2375555",
      "evidence": "review",
@@ -4873,7 +4873,7 @@
     },
     {
      "symptom": "Metabolic dysregulation",
-     "note": "Phylum-level signal mirrors Akkermansia's metabolic associations.",
+     "note": "Verrucomicrobia: Phylum-level signal mirrors Akkermansia's metabolic associations.",
      "ref": "PMC12691757",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12691757/",
      "evidence": "unclassified",
@@ -5007,7 +5007,7 @@
     },
     {
      "symptom": "Panic attack",
-     "note": "PTSD: Enriched among individuals who went on to develop worse adverse post-traumatic neuropsychiatric sequelae (APNS) in the AURORA trauma cohort (n=51 stool metagenomics), alongside Flavonifractor plautii and Bifidobacterium species. (up) | Anxiety: From this app's Anxiety condition data. (up)",
+     "note": "Ruminococcus gnavus: PTSD: Enriched among individuals who went on to develop worse adverse post-traumatic neuropsychiatric sequelae (APNS) in the AURORA trauma cohort (n=51 stool metagenomics), alongside Flavonifractor plautii and Bifidobacterium species. (up) | Anxiety: From this app's Anxiety condition data. (up)",
      "ref": "Multiple sources across Anxiety, PTSD — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37980332/",
      "evidence": "human-cohort",
@@ -5433,7 +5433,7 @@
    "up": [
     {
      "symptom": "Oral iron supplementation",
-     "note": "Increased under oral iron in some studies - and, like Lactobacillus, this is opposite to the direction seen in the untreated iron-deficiency state.",
+     "note": "Bacteroides: Increased under oral iron in some studies - and, like Lactobacillus, this is opposite to the direction seen in the untreated iron-deficiency state.",
      "ref": "Cambodian women of reproductive age, 12-week double-blind RCT, secondary analysis of 172 stool samples (PMID 37199608)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/37199608/",
      "evidence": "human-rct",
@@ -5441,7 +5441,7 @@
     },
     {
      "symptom": "Metabolic dysregulation",
-     "note": "Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies — treat as weak evidence.",
+     "note": "Bacteroides: Phylum-level ratio shifts (Firmicutes/Bacteroidetes) are widely studied in obesity/metabolic disease, though Sze & Schloss's meta-analysis (mBio, 2016) found no consistent phylum-level signal across studies — treat as weak evidence.",
      "ref": "PMID 27529273",
      "url": "https://pubmed.ncbi.nlm.nih.gov/27529273/",
      "evidence": "meta-analysis",
@@ -5473,7 +5473,7 @@
     },
     {
      "symptom": "Headache / migraine",
-     "note": "Elevated in pediatric migraine patients (n=126) vs. age-matched healthy controls (n=50), alongside reduced Bifidobacterium longum.",
+     "note": "Bacteroides: Elevated in pediatric migraine patients (n=126) vs. age-matched healthy controls (n=50), alongside reduced Bifidobacterium longum.",
      "ref": "PMID 41454664",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41454664/",
      "evidence": "human-cohort",
@@ -5481,7 +5481,7 @@
     },
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Increased in AUD patients vs. matched controls (n=36 vs 36); combined with decreased Akkermansia, identifies AUD patients with 93.4% diagnostic accuracy.",
+     "note": "Bacteroides: Increased in AUD patients vs. matched controls (n=36 vs 36); combined with decreased Akkermansia, identifies AUD patients with 93.4% diagnostic accuracy.",
      "ref": "Liver Int 2020 (PMID 31951082)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31951082/",
      "evidence": "human-cohort",
@@ -5603,7 +5603,7 @@
     },
     {
      "symptom": "Poor working memory",
-     "note": "Decreased in ADHD children vs. controls in the same 16S case-control study.",
+     "note": "Bacteroides: Decreased in ADHD children vs. controls in the same 16S case-control study.",
      "ref": "PMID 31119393",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
@@ -5611,7 +5611,7 @@
     },
     {
      "symptom": "Lack of impulse control",
-     "note": "Decreased in ADHD children vs. controls in the same 16S case-control study.",
+     "note": "Bacteroides: Decreased in ADHD children vs. controls in the same 16S case-control study.",
      "ref": "PMID 31119393",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
@@ -5693,7 +5693,7 @@
     },
     {
      "symptom": "Restlessness",
-     "note": "Iron deficiency (state): ↓ in rodent models; human data show it higher when ferritin is low. (down) | ADHD: Decreased in ADHD children vs. controls in the same 16S case-control study. (down) | Tourette syndrome: ↑ in drug-naive TD (B. plebeius); some species (B. thetaiotaomicron, B. eggerthii, B. dorei) correlate positively with tic severity (YGTSS) despite being GABA producers. (up) | Anxiety: Abundance positively associated with anxiety severity in GAD patients. (up)",
+     "note": "Bacteroides: Iron deficiency (state): ↓ in rodent models; human data show it higher when ferritin is low. (down) | ADHD: Decreased in ADHD children vs. controls in the same 16S case-control study. (down) | Tourette syndrome: ↑ in drug-naive TD (B. plebeius); some species (B. thetaiotaomicron, B. eggerthii, B. dorei) correlate positively with tic severity (YGTSS) despite being GABA producers. (up) | Anxiety: Abundance positively associated with anxiety severity in GAD patients. (up)",
      "ref": "Multiple sources across ADHD, Anxiety, Iron deficiency (state), Tourette syndrome — see individual condition entries",
      "url": "https://www.ajog.org/article/S0002-9378(23)01643-5/fulltext",
      "evidence": "human-cohort",
@@ -5701,7 +5701,7 @@
     },
     {
      "symptom": "Poor working memory",
-     "note": "Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side.",
+     "note": "Bacteroides: Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side.",
      "ref": "PMID 41075498",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41075498/",
      "evidence": "human-cohort",
@@ -5709,7 +5709,7 @@
     },
     {
      "symptom": "Lack of impulse control",
-     "note": "Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side.",
+     "note": "Bacteroides: Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side.",
      "ref": "PMID 41075498",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41075498/",
      "evidence": "human-cohort",
@@ -5717,7 +5717,7 @@
     },
     {
      "symptom": "Restlessness",
-     "note": "ADHD: Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side. (both) | Anxiety: From this app's Anxiety condition data. (up)",
+     "note": "Bacteroides: ADHD: Higher relative abundance identified across multiple included studies. Genuine contradiction: a separate case-control study (n=17 ADHD/17 controls) found Ruminococcus gnavus significantly REDUCED in the ADHD group (P<0.05, PMID 32132899) — opposite the systematic-review 'up' finding above. Kept both rather than pick a side. (both) | Anxiety: From this app's Anxiety condition data. (up)",
      "ref": "Multiple sources across ADHD, Anxiety — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41075498/",
      "evidence": "human-cohort",
@@ -6022,7 +6022,7 @@
     },
     {
      "symptom": "Smoking-related dysbiosis",
-     "note": "Reduced by cigarette smoke exposure alongside Clostridium.",
+     "note": "Turicibacter: Reduced by cigarette smoke exposure alongside Clostridium.",
      "ref": "PMC11658948",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/",
      "evidence": "unclassified",
@@ -6060,7 +6060,7 @@
     },
     {
      "symptom": "Smoking-related dysbiosis",
-     "note": "LPS-bearing pathobiont increased alongside Desulfovibrio in smokers.",
+     "note": "Bilophila: LPS-bearing pathobiont increased alongside Desulfovibrio in smokers.",
      "ref": "PMC11658948",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11658948/",
      "evidence": "unclassified",
@@ -6239,7 +6239,7 @@
    "up": [
     {
      "symptom": "Anxiety",
-     "note": "Family containing Alistipes; broad signal mirrors Alistipes mood associations.",
+     "note": "Rikenellaceae: Family containing Alistipes; broad signal mirrors Alistipes mood associations.",
      "ref": "PMC12270276 (Alistipes)",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12270276/",
      "evidence": "unclassified",
@@ -6311,7 +6311,7 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "Gut Streptococcus abundance positively associated with circulating systemic-inflammation biomarkers and subclinical coronary atherosclerosis (SCAPIS cohort, n=8,973).",
+     "note": "Streptococcaceae: Gut Streptococcus abundance positively associated with circulating systemic-inflammation biomarkers and subclinical coronary atherosclerosis (SCAPIS cohort, n=8,973).",
      "ref": "PMC10399955",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10399955/",
      "evidence": "human-cohort",
@@ -6518,7 +6518,7 @@
     },
     {
      "symptom": "FUT2 (Non-secretor) status",
-     "note": "Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia.",
+     "note": "Klebsiella: Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia.",
      "ref": "2024, mSystems — infant-donor microbiota in germ-free mice",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38530054/",
      "evidence": "animal",
@@ -7469,7 +7469,7 @@
    "up": [
     {
      "symptom": "Allergies",
-     "note": "Family-level increase associated with development of allergic sensitization, eczema, or asthma. Note: at the genus level, bare Clostridium is reported DECREASED in allergic rhinitis specifically (3 studies) — a genuine rank-level split kept as two separate entries rather than merged.",
+     "note": "Clostridiaceae: Family-level increase associated with development of allergic sensitization, eczema, or asthma. Note: at the genus level, bare Clostridium is reported DECREASED in allergic rhinitis specifically (3 studies) — a genuine rank-level split kept as two separate entries rather than merged.",
      "ref": "Systematic review, intestinal microbiota and allergic sensitization/eczema/asthma (PMID 30600099)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30600099/",
      "evidence": "meta-analysis",
@@ -7558,7 +7558,7 @@
    "down": [
     {
      "symptom": "Urinary tract infections (UTI)",
-     "note": "Combined with Faecalibacterium, high relative abundance associated with lower risk of future Enterobacteriaceae bacteriuria (HR 0.2, 95% CI 0.1-0.7, P=.008) in kidney transplant recipients.",
+     "note": "Romboutsia: Combined with Faecalibacterium, high relative abundance associated with lower risk of future Enterobacteriaceae bacteriuria (HR 0.2, 95% CI 0.1-0.7, P=.008) in kidney transplant recipients.",
      "ref": "Magruder et al. 2019, Am J Transplant (PMID 32865119), 168 kidney transplant recipients",
      "url": "https://pubmed.ncbi.nlm.nih.gov/32865119/",
      "evidence": "unclassified",
@@ -7743,7 +7743,7 @@
     },
     {
      "symptom": "Mania",
-     "note": "Depleted in untreated BD (Hu 2019).",
+     "note": "Ruminococcus: Depleted in untreated BD (Hu 2019).",
      "ref": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/",
      "evidence": "unclassified",
@@ -7751,7 +7751,7 @@
     },
     {
      "symptom": "Loss of appetite",
-     "note": "Reduced (note: some studies report Ruminococcaceae up — heterogeneous).",
+     "note": "Ruminococcus: Reduced (note: some studies report Ruminococcaceae up — heterogeneous).",
      "ref": "Borgo 2017",
      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179739",
      "evidence": "unclassified",
@@ -7759,7 +7759,7 @@
     },
     {
      "symptom": "Sleep disturbance",
-     "note": "Bipolar Disorder: Depleted in untreated BD (Hu 2019). (down) | Depression: Depleted in Thai MDD patients (n=32) vs. healthy controls (n=37); enriched in controls, proposed as a putative biomarker for MDD, consistent with 5 other independent case-control studies finding the same depletion. (down) | Parkinson's disease: Putative cellulose-degrading/butyrate-related genus significantly decreased in PD (n=24) vs. healthy controls (n=14), P=0.019, alongside Blautia and Faecalibacterium; disease severity and PD duration negatively correlated with these degraders. (down)",
+     "note": "Ruminococcus: Bipolar Disorder: Depleted in untreated BD (Hu 2019). (down) | Depression: Depleted in Thai MDD patients (n=32) vs. healthy controls (n=37); enriched in controls, proposed as a putative biomarker for MDD, consistent with 5 other independent case-control studies finding the same depletion. (down) | Parkinson's disease: Putative cellulose-degrading/butyrate-related genus significantly decreased in PD (n=24) vs. healthy controls (n=14), P=0.019, alongside Blautia and Faecalibacterium; disease severity and PD duration negatively correlated with these degraders. (down)",
      "ref": "Multiple sources across Bipolar Disorder, Depression, Parkinson's disease — see individual condition entries",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/",
      "evidence": "human-cohort",
@@ -7783,7 +7783,7 @@
     },
     {
      "symptom": "Anxiety",
-     "note": "Depleted in untreated BD (Hu 2019).",
+     "note": "Ruminococcus: Depleted in untreated BD (Hu 2019).",
      "ref": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31380217/",
      "evidence": "unclassified",
@@ -8187,7 +8187,7 @@
     },
     {
      "symptom": "Fatigue",
-     "note": "Reduced in ME/CFS patients along with Eubacterium rectale, contributing to deficient microbial butyrate-synthesis capacity; abundance inversely associated with fatigue severity.",
+     "note": "Faecalibacterium prausnitzii: Reduced in ME/CFS patients along with Eubacterium rectale, contributing to deficient microbial butyrate-synthesis capacity; abundance inversely associated with fatigue severity.",
      "ref": "Guo et al. 2023, Cell Host & Microbe (PMID 36758522)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36758522/",
      "evidence": "human-cohort",
@@ -8211,7 +8211,7 @@
     },
     {
      "symptom": "OCD symptoms",
-     "note": "FDR-significant decrease in drug-naive OCD patients (n=32/32) alongside Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius; functional profiling showed reduced butyrate biosynthesis, elevated LPS biosynthesis.",
+     "note": "Faecalibacterium prausnitzii: FDR-significant decrease in drug-naive OCD patients (n=32/32) alongside Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius; functional profiling showed reduced butyrate biosynthesis, elevated LPS biosynthesis.",
      "ref": "Zhang et al. 2024, cited in systematic review (PMID 41157257)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41157257/",
      "evidence": "meta-analysis",
@@ -8315,7 +8315,7 @@
     },
     {
      "symptom": "Intrusive thoughts",
-     "note": "FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
+     "note": "Faecalibacterium prausnitzii: FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
      "ref": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41157257/",
      "evidence": "meta-analysis",
@@ -8497,7 +8497,7 @@
     },
     {
      "symptom": "Alcohol-related dysbiosis",
-     "note": "Increased at the genus level in AUD patients vs. healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
+     "note": "Escherichia: Increased at the genus level in AUD patients vs. healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
      "ref": "Diversity of intestinal microbiota in AUD and its relationship to consumption/cognition, Front Psychiatry",
      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.1054685/full",
      "evidence": "human-cohort",
@@ -8513,7 +8513,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "Overrepresented alongside other potentially pathogenic species (Salmonella, Campylobacter, Helicobacter).",
+     "note": "Escherichia: Overrepresented alongside other potentially pathogenic species (Salmonella, Campylobacter, Helicobacter).",
      "ref": "PMC8646027",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8646027/",
      "evidence": "unclassified",
@@ -8820,7 +8820,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "Crohn's disease: Mucin-degrading, barrier-protective species depleted in CD alongside other Verrucomicrobia. (down) | Ulcerative colitis: Mucus-layer specialist depleted alongside broader Verrucomicrobia loss, consistent with the mucosal barrier breakdown seen in UC. (down)",
+     "note": "Akkermansia muciniphila: Crohn's disease: Mucin-degrading, barrier-protective species depleted in CD alongside other Verrucomicrobia. (down) | Ulcerative colitis: Mucus-layer specialist depleted alongside broader Verrucomicrobia loss, consistent with the mucosal barrier breakdown seen in UC. (down)",
      "ref": "Multiple sources across Crohn's disease, Ulcerative colitis — see individual condition entries",
      "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2022.733992/full",
      "evidence": "unclassified",
@@ -9073,7 +9073,7 @@
    "down": [
     {
      "symptom": "Metabolic dysregulation",
-     "note": "Associated with DECREASED faecal and plasma cholesterol across 1,429 Framingham Heart Study participants, so depletion tracks with higher cholesterol. The mechanism is encoded rather than incidental: these organisms carry conserved cholesterol-metabolising capacity, taking cholesterol up and transforming it via glycosylation and dehydrogenation into cholestenone, glycosylated cholesterol and hydroxycholesterol. Kept as its own node rather than folded into this app's Oscillospira entry — they are distinct genera, both in Oscillospiraceae, and merging them would misattribute the finding.",
+     "note": "Oscillibacter: Associated with DECREASED faecal and plasma cholesterol across 1,429 Framingham Heart Study participants, so depletion tracks with higher cholesterol. The mechanism is encoded rather than incidental: these organisms carry conserved cholesterol-metabolising capacity, taking cholesterol up and transforming it via glycosylation and dehydrogenation into cholestenone, glycosylated cholesterol and hydroxycholesterol. Kept as its own node rather than folded into this app's Oscillospira entry — they are distinct genera, both in Oscillospiraceae, and merging them would misattribute the finding.",
      "ref": "Cell 2024 — Framingham Heart Study, n=1,429 (PMID 38569543)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38569543/",
      "evidence": "human-cohort",

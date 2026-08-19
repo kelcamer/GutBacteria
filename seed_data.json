@@ -236,7 +236,7 @@
      "name": "Roseburia",
      "dir": "down",
      "refs": "20–22",
-     "note": "",
+     "note": "Roseburia decreased in Depression.",
      "links": [
       {
        "id": "seed_21",
@@ -592,7 +592,7 @@
      "name": "Clostridium",
      "dir": "up",
      "refs": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
-     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
+     "note": "Clostridium: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
      "links": [
       {
        "id": "seed_dep_t36_l1",
@@ -863,7 +863,7 @@
      "name": "Clostridiales",
      "dir": "up",
      "refs": "Early-Life Microbiome and Neurodevelopmental Disorders: systematic review and meta-analysis, 19 studies (PMID 40442917)",
-     "note": "Re-sourced during the citation audit. Order-level counterpart to the Clostridium finding in the same review.",
+     "note": "Clostridiales: Re-sourced during the citation audit. Order-level counterpart to the Clostridium finding in the same review.",
      "links": [
       {
        "id": "aud_seed_38_l1",
@@ -932,7 +932,7 @@
      "name": "Bifidobacterium",
      "dir": "down",
      "refs": "56,57",
-     "note": "",
+     "note": "Bifidobacterium decreased in Autism (ASD).",
      "links": [
       {
        "id": "seed_46",
@@ -1303,7 +1303,7 @@
      "name": "Fusicatenibacter",
      "dir": "up",
      "refs": "Lewandowska-Pietruszka 2023",
-     "note": "Elevated (with Dialister and Turicibacter) in ASD children who have GI functional disorders (2023 review).",
+     "note": "Fusicatenibacter: Elevated (with Dialister and Turicibacter) in ASD children who have GI functional disorders (2023 review).",
      "links": [
       {
        "id": "seed_new_l84",
@@ -1436,7 +1436,7 @@
      "name": "Prevotellaceae",
      "dir": "up",
      "refs": "PMID 41465974",
-     "note": "Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
+     "note": "Prevotellaceae: Family-level risk factor for ASD (OR 1.29) that remained significant even after adjusting for neurotransmitter/amino-acid metabolites — one of only two taxa (with Lachnospiraceae) that survived that adjustment.",
      "links": [
       {
        "id": "seed_29_fp4_l1",
@@ -1850,7 +1850,7 @@
      "name": "Actinobacteria",
      "dir": "down",
      "refs": "PMID 40828192",
-     "note": "Lower in ADHD children vs. neurotypical controls (5.78% vs 4.89%, p<0.001); consistent with a separate 15-pair study (PMID 40604388) finding the phylum, and Bifidobacterium within it, reduced. An older, smaller study (Aarts et al. 2017, PMID 28863139, uncorrected p-values, described by its own authors as \"marginally significant\") found the opposite direction (14.08% controls vs. 22.14% ADHD) — not prioritized here given the much larger, more recent pooled meta-analysis above.",
+     "note": "Actinobacteria: Lower in ADHD children vs. neurotypical controls (5.78% vs 4.89%, p<0.001); consistent with a separate 15-pair study (PMID 40604388) finding the phylum, and Bifidobacterium within it, reduced. An older, smaller study (Aarts et al. 2017, PMID 28863139, uncorrected p-values, described by its own authors as \"marginally significant\") found the opposite direction (14.08% controls vs. 22.14% ADHD) — not prioritized here given the much larger, more recent pooled meta-analysis above.",
      "links": [
       {
        "id": "seed_76_fp3_l1",
@@ -1983,7 +1983,7 @@
      "name": "Tyzzerella",
      "dir": "down",
      "refs": "PMID 39856212",
-     "note": "Lower in unmedicated ADHD children vs. healthy controls, alongside Prevotellaceae.",
+     "note": "Tyzzerella: Lower in unmedicated ADHD children vs. healthy controls, alongside Prevotellaceae.",
      "links": [
       {
        "id": "seed_76_fp11_l1",
@@ -2212,7 +2212,7 @@
      "name": "Megamonas",
      "dir": "up",
      "refs": "PMID 34238926",
-     "note": "Higher genus-level abundance in 100 medication-naive adults with ADHD vs. 100 sex-matched healthy controls; part of a 4-genus signature (with Dialister, Anaerotaenia, Gracilibacter) explaining 15% of ADHD variance (74% sensitivity, 71% specificity).",
+     "note": "Megamonas: Higher genus-level abundance in 100 medication-naive adults with ADHD vs. 100 sex-matched healthy controls; part of a 4-genus signature (with Dialister, Anaerotaenia, Gracilibacter) explaining 15% of ADHD variance (74% sensitivity, 71% specificity).",
      "links": [
       {
        "id": "seed_76_fp25_l1",
@@ -2510,7 +2510,7 @@
      "name": "Lachnospiraceae",
      "dir": "down",
      "refs": "117",
-     "note": "",
+     "note": "Lachnospiraceae decreased in Alzheimer's.",
      "links": [
       {
        "id": "seed_112",
@@ -2669,7 +2669,7 @@
      "name": "Eggerthella",
      "dir": "up",
      "refs": "PMID 40764790",
-     "note": "Enriched specifically in APOE ε4 carriers, alongside Lachnoclostridium, as part of a pro-inflammatory signature.",
+     "note": "Eggerthella: Enriched specifically in APOE ε4 carriers, alongside Lachnoclostridium, as part of a pro-inflammatory signature.",
      "links": [
       {
        "id": "seed_94_fp2_l1",
@@ -2791,7 +2791,7 @@
      "name": "Enterococcus",
      "dir": "down",
      "refs": "n=30 AD/47 controls (PMID 33732104)",
-     "note": "More abundant in cognitively healthy controls than AD patients (P<0.05) — i.e. depleted in AD, alongside Megamonas and Anaerostipes. From an APOE-epsilon4 carrier-status study.",
+     "note": "Enterococcus: More abundant in cognitively healthy controls than AD patients (P<0.05) — i.e. depleted in AD, alongside Megamonas and Anaerostipes. From an APOE-epsilon4 carrier-status study.",
      "links": [
       {
        "id": "seed_ad_t27_l1",
@@ -2923,7 +2923,7 @@
      "name": "Actinobacteria",
      "dir": "up",
      "refs": "150–153 [human data + animal mechanistic arm]",
-     "note": "",
+     "note": "Actinobacteria increased in Schizophrenia.",
      "links": [
       {
        "id": "seed_128",
@@ -2955,7 +2955,7 @@
      "name": "Lactobacillus",
      "dir": "up",
      "refs": "150,153 [human data + animal mechanistic arm]",
-     "note": "",
+     "note": "Lactobacillus increased in Schizophrenia.",
      "links": [
       {
        "id": "seed_132",
@@ -2971,7 +2971,7 @@
      "name": "Enterobacteriaceae",
      "dir": "up",
      "refs": "153 [human data + animal mechanistic arm]",
-     "note": "",
+     "note": "Enterobacteriaceae increased in Schizophrenia.",
      "links": [
       {
        "id": "seed_135",
@@ -2987,7 +2987,7 @@
      "name": "Firmicutes",
      "dir": "down",
      "refs": "150–153 [human data + animal mechanistic arm]",
-     "note": "",
+     "note": "Firmicutes decreased in Schizophrenia.",
      "links": [
       {
        "id": "seed_137",
@@ -3003,7 +3003,7 @@
      "name": "Roseburia",
      "dir": "down",
      "refs": "153 [human data + animal mechanistic arm]",
-     "note": "",
+     "note": "Roseburia decreased in Schizophrenia.",
      "links": [
       {
        "id": "seed_140",
@@ -3019,7 +3019,7 @@
      "name": "Coprococcus",
      "dir": "down",
      "refs": "153 [human data + animal mechanistic arm]",
-     "note": "",
+     "note": "Coprococcus decreased in Schizophrenia.",
      "links": [
       {
        "id": "seed_142",
@@ -3035,7 +3035,7 @@
      "name": "Faecalibacterium",
      "dir": "down",
      "refs": "150 [human data + animal mechanistic arm]",
-     "note": "",
+     "note": "Faecalibacterium decreased in Schizophrenia.",
      "links": [
       {
        "id": "seed_144",
@@ -3360,7 +3360,7 @@
      "name": "Firmicutes",
      "dir": "down",
      "refs": "168,169",
-     "note": "",
+     "note": "Firmicutes decreased in Anxiety.",
      "links": [
       {
        "id": "seed_157",
@@ -3392,7 +3392,7 @@
      "name": "Dialister",
      "dir": "down",
      "refs": "168",
-     "note": "",
+     "note": "Dialister decreased in Anxiety.",
      "links": [
       {
        "id": "seed_162",
@@ -3408,7 +3408,7 @@
      "name": "Subdoligranulum",
      "dir": "down",
      "refs": "168",
-     "note": "",
+     "note": "Subdoligranulum decreased in Anxiety.",
      "links": [
       {
        "id": "seed_164",
@@ -3429,7 +3429,7 @@
      "name": "Agathobacter",
      "dir": "down",
      "refs": "168",
-     "note": "",
+     "note": "Agathobacter decreased in Anxiety.",
      "links": [
       {
        "id": "seed_166",
@@ -3545,7 +3545,7 @@
      "name": "Faecalibacterium",
      "dir": "down",
      "refs": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
-     "note": "",
+     "note": "Faecalibacterium decreased in Anxiety.",
      "links": [
       {
        "id": "seed_177",
@@ -3587,7 +3587,7 @@
      "name": "Lachnospira",
      "dir": "down",
      "refs": "Jiang 2018 (J Psychiatr Res; GAD: ↑Escherichia-Shigella, Fusobacterium, Ruminococcus gnavus; ↓SCFA-producers)",
-     "note": "",
+     "note": "Lachnospira decreased in Anxiety.",
      "links": [
       {
        "id": "seed_181",
@@ -3645,7 +3645,7 @@
      "name": "Blautia",
      "dir": "up",
      "refs": "n=21 high-trait-anxiety/29 controls (PMID 35281444)",
-     "note": "Significant overgrowth (alongside Streptococcus, Romboutsia) in high-trait-anxiety young adults vs. controls.",
+     "note": "Blautia: Significant overgrowth (alongside Streptococcus, Romboutsia) in high-trait-anxiety young adults vs. controls.",
      "links": [
       {
        "id": "seed_anx_t23_l1",
@@ -3981,7 +3981,7 @@
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
      "refs": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257) [human data + animal mechanistic arm]",
-     "note": "FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
+     "note": "Faecalibacterium prausnitzii: FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
      "links": [
       {
        "id": "seed_208_l1",
@@ -4172,7 +4172,7 @@
      "name": "Proteobacteria",
      "dir": "none",
      "refs": "No phylum-level source exists. Nearest real evidence is genus level: Escherichia decreased in non-secretors, 81 genotyped IBD patients (PMID 34419617)",
-     "note": "Tested, nothing reliable at this rank. No phylum-level study of FUT2 exists, and this phylum's own members disagree here: Escherichia/Shigella down, Enterobacteriaceae, Klebsiella and Sutterella up. Read those nodes instead - a phylum average over organisms moving in opposite directions is not a finding.",
+     "note": "Proteobacteria: Tested, nothing reliable at this rank. No phylum-level study of FUT2 exists, and this phylum's own members disagree here: Escherichia/Shigella down, Enterobacteriaceae, Klebsiella and Sutterella up. Read those nodes instead - a phylum average over organisms moving in opposite directions is not a finding.",
      "links": [
       {
        "id": "seed_209_proteo_l1",
@@ -4312,7 +4312,7 @@
      "name": "Klebsiella",
      "dir": "up",
      "refs": "PMID 38530054 [animal model]",
-     "note": "Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia. Mouse-only. Searched 2026-08: no second study reports this taxon by secretor status.",
+     "note": "Klebsiella: Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia. Mouse-only. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
        "id": "seed_209_fp4_l1",
@@ -4360,7 +4360,7 @@
      "name": "Faecalibacterium",
      "dir": "none",
      "refs": "n=1,190 null (PMID 29533703); 81 genotyped IBD patients (PMID 34419617); GWAS association without direction (PMID 33462482, PMID 41688638); species-level stool finding (PMID 36922975); strain-level effect (PMID 38172637)",
-     "note": "Tested, no reliable effect. The best-powered study - 1,190 healthy people - found no association between secretor status and composition at all, and in 81 genotyped IBD patients Escherichia was the only abundant genus that moved. The species-level stool finding (F. prausnitzii tracking the secretor allele) is the one directional result, and it is a secondary observation.",
+     "note": "Faecalibacterium: Tested, no reliable effect. The best-powered study - 1,190 healthy people - found no association between secretor status and composition at all, and in 81 genotyped IBD patients Escherichia was the only abundant genus that moved. The species-level stool finding (F. prausnitzii tracking the secretor allele) is the one directional result, and it is a secondary observation.",
      "links": [
       {
        "id": "seed_209_fp7_l2",
@@ -4478,7 +4478,7 @@
      "name": "Clostridium",
      "dir": "both",
      "refs": "PMID 26231005",
-     "note": "Contested because the genus spans clades that genuinely differ, not because anyone is wrong. One cohort found C. sphenoides et rel. higher in non-secretors; another found the C. coccoides group (cluster XIVa) decreased in them. Those are different organisms sharing an obsolete genus label - and the cluster XIVa half is modern Lachnospiraceae, where it now corroborates that entry's 'down'. Read the Lachnospiraceae node for that half.",
+     "note": "Clostridium: Contested because the genus spans clades that genuinely differ, not because anyone is wrong. One cohort found C. sphenoides et rel. higher in non-secretors; another found the C. coccoides group (cluster XIVa) decreased in them. Those are different organisms sharing an obsolete genus label - and the cluster XIVa half is modern Lachnospiraceae, where it now corroborates that entry's 'down'. Read the Lachnospiraceae node for that half.",
      "links": [
       {
        "id": "seed_209_fp12_l1",
@@ -4831,7 +4831,7 @@
      "name": "Coriobacteriia",
      "dir": "up",
      "refs": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
-     "note": "Class-level LEfSe increase; parent of Collinsella. Painold 2019.",
+     "note": "Coriobacteriia: Class-level LEfSe increase; parent of Collinsella. Painold 2019.",
      "links": [
       {
        "id": "seed_233",
@@ -4953,7 +4953,7 @@
      "name": "Enterobacteriaceae",
      "dir": "up",
      "refs": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
-     "note": "Correlates with severity of depressive symptoms within BD (Painold 2019).",
+     "note": "Enterobacteriaceae: Correlates with severity of depressive symptoms within BD (Painold 2019).",
      "links": [
       {
        "id": "seed_247",
@@ -4969,7 +4969,7 @@
      "name": "Eubacterium",
      "dir": "up",
      "refs": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
-     "note": "Associated with markers of oxidative stress within BD (Painold 2019).",
+     "note": "Eubacterium: Associated with markers of oxidative stress within BD (Painold 2019).",
      "links": [
       {
        "id": "seed_249",
@@ -4985,7 +4985,7 @@
      "name": "Lactobacillales",
      "dir": "up",
      "refs": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
-     "note": "Elevated in BD subjects with elevated IL-6 (Painold 2019).",
+     "note": "Lactobacillales: Elevated in BD subjects with elevated IL-6 (Painold 2019).",
      "links": [
       {
        "id": "seed_251",
@@ -5001,7 +5001,7 @@
      "name": "Streptococcaceae",
      "dir": "up",
      "refs": "Painold 2019 (Bipolar Disord; ↑Actinobacteria/Coriobacteria, ↓Ruminococcaceae/Faecalibacterium; state = depressive episode)",
-     "note": "Elevated in BD subjects with elevated IL-6 (Painold 2019).",
+     "note": "Streptococcaceae: Elevated in BD subjects with elevated IL-6 (Painold 2019).",
      "links": [
       {
        "id": "seed_253",
@@ -5090,7 +5090,7 @@
      "name": "Ruminococcus",
      "dir": "down",
      "refs": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
-     "note": "Depleted in untreated BD (Hu 2019).",
+     "note": "Ruminococcus: Depleted in untreated BD (Hu 2019).",
      "links": [
       {
        "id": "seed_263",
@@ -5138,7 +5138,7 @@
      "name": "Parasutterella",
      "dir": "down",
      "refs": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
-     "note": "Depleted in untreated BD depression (Hu 2019).",
+     "note": "Parasutterella: Depleted in untreated BD depression (Hu 2019).",
      "links": [
       {
        "id": "seed_269",
@@ -5154,7 +5154,7 @@
      "name": "Gemmiger",
      "dir": "down",
      "refs": "Hu 2019 (Adv Sci; bipolar depression: ↑Bacteroidetes/Parabacteroides/Bacteroides; ↓Firmicutes/Roseburia/Faecalibacterium/Coprococcus)",
-     "note": "Depleted in untreated BD depression (Hu 2019).",
+     "note": "Gemmiger: Depleted in untreated BD depression (Hu 2019).",
      "links": [
       {
        "id": "seed_271",
@@ -5282,7 +5282,7 @@
      "name": "Clostridium",
      "dir": "up",
      "refs": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
-     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
+     "note": "Clostridium: One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
      "links": [
       {
        "id": "seed_231_l1",
@@ -5563,7 +5563,7 @@
      "name": "Hungatella",
      "dir": "up",
      "refs": "Romano 2021",
-     "note": "",
+     "note": "Hungatella increased in Parkinson's disease.",
      "links": [
       {
        "id": "seed_301",
@@ -5648,7 +5648,7 @@
      "name": "Blautia",
      "dir": "down",
      "refs": "Romano 2021",
-     "note": "",
+     "note": "Blautia decreased in Parkinson's disease.",
      "links": [
       {
        "id": "seed_316",
@@ -5664,7 +5664,7 @@
      "name": "Fusicatenibacter",
      "dir": "down",
      "refs": "Romano 2021",
-     "note": "Depletion predicts rapid 2-yr progression.",
+     "note": "Fusicatenibacter: Depletion predicts rapid 2-yr progression.",
      "links": [
       {
        "id": "seed_318",
@@ -5680,7 +5680,7 @@
      "name": "Anaerostipes",
      "dir": "down",
      "refs": "Romano 2021",
-     "note": "",
+     "note": "Anaerostipes decreased in Parkinson's disease.",
      "links": [
       {
        "id": "seed_320",
@@ -5861,7 +5861,7 @@
      "name": "Ruminococcus",
      "dir": "down",
      "refs": "Sci China Life Sci 2017, PMID 28536926",
-     "note": "Putative cellulose-degrading/butyrate-related genus significantly decreased in PD (n=24) vs. healthy controls (n=14), P=0.019, alongside Blautia and Faecalibacterium; disease severity and PD duration negatively correlated with these degraders.",
+     "note": "Ruminococcus: Putative cellulose-degrading/butyrate-related genus significantly decreased in PD (n=24) vs. healthy controls (n=14), P=0.019, alongside Blautia and Faecalibacterium; disease severity and PD duration negatively correlated with these degraders.",
      "links": [
       {
        "id": "seed_pd_t28_l1",
@@ -5877,7 +5877,7 @@
      "name": "Actinobacteria",
      "dir": "up",
      "refs": "PMID 40461531",
-     "note": "Phylum-level upregulation (including its class Coriobacteriia) across a meta-analysis of 5 homogenous case-control studies, 1,007 fecal samples pooled from Japan, Malaysia, Italy, South Korea, and China (ANCOM-BC, FDR<0.05); Bifidobacterium within the phylum was consistently upregulated at every taxonomic level from species to phylum.",
+     "note": "Actinobacteria: Phylum-level upregulation (including its class Coriobacteriia) across a meta-analysis of 5 homogenous case-control studies, 1,007 fecal samples pooled from Japan, Malaysia, Italy, South Korea, and China (ANCOM-BC, FDR<0.05); Bifidobacterium within the phylum was consistently upregulated at every taxonomic level from species to phylum.",
      "links": [
       {
        "id": "seed_pd_t29_l1",
@@ -6037,7 +6037,7 @@
      "name": "Bifidobacterium",
      "dir": "down",
      "refs": "review 2024",
-     "note": "",
+     "note": "Bifidobacterium decreased in ME/CFS.",
      "links": [
       {
        "id": "seed_338",
@@ -6122,7 +6122,7 @@
      "name": "Hungatella hathewayi",
      "dir": "up",
      "refs": "review 2024",
-     "note": "Opportunistic pathobiont.",
+     "note": "Hungatella hathewayi: Opportunistic pathobiont.",
      "links": [
       {
        "id": "seed_348",
@@ -6138,7 +6138,7 @@
      "name": "Eggerthella lenta",
      "dir": "up",
      "refs": "review 2024",
-     "note": "",
+     "note": "Eggerthella lenta increased in ME/CFS.",
      "links": [
       {
        "id": "seed_350",
@@ -6154,7 +6154,7 @@
      "name": "Erysipelatoclostridium ramosum",
      "dir": "up",
      "refs": "review 2024",
-     "note": "",
+     "note": "Erysipelatoclostridium ramosum increased in ME/CFS.",
      "links": [
       {
        "id": "seed_352",
@@ -6884,7 +6884,7 @@
      "name": "Bifidobacterium adolescentis",
      "dir": "down",
      "refs": "Chen 2019",
-     "note": "",
+     "note": "Bifidobacterium adolescentis decreased in Migraine.",
      "links": [
       {
        "id": "seed_400",
@@ -6900,7 +6900,7 @@
      "name": "Methanobrevibacter smithii",
      "dir": "down",
      "refs": "Chen 2019",
-     "note": "",
+     "note": "Methanobrevibacter smithii decreased in Migraine.",
      "links": [
       {
        "id": "seed_402",
@@ -7137,7 +7137,7 @@
      "name": "Verrucomicrobia",
      "dir": "down",
      "refs": "Hemmings 2017",
-     "note": "Phylum; includes barrier-supporting Akkermansia. CONFLICT FLAGGED: a larger 2024 study (probable PTSD n=24 vs trauma-exposed controls n=24, PMID 38914163) found Verrucomicrobiota INCREASED in probable PTSD, opposite this exploratory 2017 study's direction — not overridden here since the two use different control populations (general vs trauma-exposed), but worth a closer look.",
+     "note": "Verrucomicrobia: Phylum; includes barrier-supporting Akkermansia. CONFLICT FLAGGED: a larger 2024 study (probable PTSD n=24 vs trauma-exposed controls n=24, PMID 38914163) found Verrucomicrobiota INCREASED in probable PTSD, opposite this exploratory 2017 study's direction — not overridden here since the two use different control populations (general vs trauma-exposed), but worth a closer look.",
      "links": [
       {
        "id": "seed_413",
@@ -7510,7 +7510,7 @@
      "name": "Bacteroidetes",
      "dir": "down",
      "refs": "Fan 2023; PMID 37069399 [human cohort; germ-free mouse validation arm]",
-     "note": "Phylum-level reduction (Bacteroidota).",
+     "note": "Bacteroidetes: Phylum-level reduction (Bacteroidota).",
      "links": [
       {
        "id": "seed_438",
@@ -7531,7 +7531,7 @@
      "name": "Actinobacteria",
      "dir": "down",
      "refs": "Fan 2023; PMID 37069399 [human cohort; germ-free mouse validation arm]",
-     "note": "Phylum-level reduction (Actinobacteriota).",
+     "note": "Actinobacteria: Phylum-level reduction (Actinobacteriota).",
      "links": [
       {
        "id": "seed_440",
@@ -7584,7 +7584,7 @@
      "name": "Eubacterium",
      "dir": "down",
      "refs": "Friend-or-Foe 2020",
-     "note": "Carbohydrate-fermenting Firmicutes, underrepresented.",
+     "note": "Eubacterium: Carbohydrate-fermenting Firmicutes, underrepresented.",
      "links": [
       {
        "id": "seed_446",
@@ -7685,7 +7685,7 @@
      "name": "Coprococcus",
      "dir": "down",
      "refs": "Fan 2023 [human cohort; germ-free mouse validation arm]",
-     "note": "Enriched in healthy controls vs AN.",
+     "note": "Coprococcus: Enriched in healthy controls vs AN.",
      "links": [
       {
        "id": "seed_458",
@@ -7701,7 +7701,7 @@
      "name": "Gemmiger",
      "dir": "down",
      "refs": "Fan 2023 [human cohort; germ-free mouse validation arm]",
-     "note": "Enriched in healthy controls vs AN.",
+     "note": "Gemmiger: Enriched in healthy controls vs AN.",
      "links": [
       {
        "id": "seed_460",
@@ -8395,7 +8395,7 @@
      "name": "Bacteroides",
      "dir": "up",
      "refs": "Xi 2021; review",
-     "note": "↑ in drug-naive TD (B. plebeius); some species (B. thetaiotaomicron, B. eggerthii, B. dorei) correlate positively with tic severity (YGTSS) despite being GABA producers.",
+     "note": "Bacteroides: ↑ in drug-naive TD (B. plebeius); some species (B. thetaiotaomicron, B. eggerthii, B. dorei) correlate positively with tic severity (YGTSS) despite being GABA producers.",
      "links": [
       {
        "id": "seed_486",
@@ -8539,7 +8539,7 @@
      "name": "Eubacterium",
      "dir": "down",
      "refs": "Xi 2021; review",
-     "note": "↓ in TD; GABA producer, inversely correlated with severity.",
+     "note": "Eubacterium: ↓ in TD; GABA producer, inversely correlated with severity.",
      "links": [
       {
        "id": "seed_504",
@@ -8555,7 +8555,7 @@
      "name": "Akkermansia muciniphila",
      "dir": "down",
      "refs": "Xi 2021",
-     "note": "GABA producer; abundance inversely correlated with tic severity (YGTSS).",
+     "note": "Akkermansia muciniphila: GABA producer; abundance inversely correlated with tic severity (YGTSS).",
      "links": [
       {
        "id": "seed_506",
@@ -9263,7 +9263,7 @@
      "name": "Lachnoclostridium",
      "dir": "up",
      "refs": "PMID 40258140 [human data + animal mechanistic arm]",
-     "note": "Identified as one of two likely CAUSAL organisms (alongside Eisenbergiella tayi, tracked separately above) in a 2025 PNAS study: ileal microbiota from the MS-affected twin in identical-twin pairs induced EAE (the standard MS mouse model) in germ-free mice at substantially higher rates than microbiota from the healthy co-twin. Note this genus-level finding runs opposite this app's own Lachnospiraceae (family-level, down) entry for MS — both are real, from different studies at different taxonomic resolutions, not a data error; family-level aggregates can move one way while a specific member genus moves the other.",
+     "note": "Lachnoclostridium: Identified as one of two likely CAUSAL organisms (alongside Eisenbergiella tayi, tracked separately above) in a 2025 PNAS study: ileal microbiota from the MS-affected twin in identical-twin pairs induced EAE (the standard MS mouse model) in germ-free mice at substantially higher rates than microbiota from the healthy co-twin. Note this genus-level finding runs opposite this app's own Lachnospiraceae (family-level, down) entry for MS — both are real, from different studies at different taxonomic resolutions, not a data error; family-level aggregates can move one way while a specific member genus moves the other.",
      "links": [
       {
        "id": "new_ms_t28_l1",
@@ -9295,7 +9295,7 @@
      "name": "Copromonas",
      "dir": "up",
      "refs": "PMID 40258140",
-     "note": "Newly identified as increased in the MS-affected twin in the same twin-pair study — among the majority of differentially-abundant taxa in this study that fell within Firmicutes.",
+     "note": "Copromonas: Newly identified as increased in the MS-affected twin in the same twin-pair study — among the majority of differentially-abundant taxa in this study that fell within Firmicutes.",
      "links": [
       {
        "id": "new_ms_t30_l1",
@@ -9327,7 +9327,7 @@
      "name": "Actinomyces",
      "dir": "up",
      "refs": "16S meta-analysis, 7 studies/524 subjects (PMID 39085949)",
-     "note": "Reproducibly increased in MS across 7 geographically diverse studies (257 MS/267 controls) in a 16S meta-analysis, alongside reproducibly lower Faecalibacterium. Usually an oral genus, so this is flagged — but a pooled meta-analysis naming it in gut samples outweighs the generic sample-site heuristic.",
+     "note": "Actinomyces: Reproducibly increased in MS across 7 geographically diverse studies (257 MS/267 controls) in a 16S meta-analysis, alongside reproducibly lower Faecalibacterium. Usually an oral genus, so this is flagged — but a pooled meta-analysis naming it in gut samples outweighs the generic sample-site heuristic.",
      "links": [
       {
        "id": "seed_ms_actinomyces_l1",
@@ -9526,7 +9526,7 @@
      "name": "Enterobacteriaceae",
      "dir": "up",
      "refs": "Pittayanon 2019",
-     "note": "Family-level enrichment (Proteobacteria) — facultative anaerobes favoured by inflammation and altered motility. One of the most reproducible IBS findings. Cross-ref: also ↑ in depression and (via SIBO) EDS.",
+     "note": "Enterobacteriaceae: Family-level enrichment (Proteobacteria) — facultative anaerobes favoured by inflammation and altered motility. One of the most reproducible IBS findings. Cross-ref: also ↑ in depression and (via SIBO) EDS.",
      "links": [
       {
        "id": "seed_new_l35",
@@ -9605,7 +9605,7 @@
      "name": "Lactobacillaceae",
      "dir": "up",
      "refs": "Pittayanon 2019",
-     "note": "Family increased in IBS in the systematic review. Contrast: species-level Lactobacillus is often ↓ by qPCR in other meta-analyses — a level-of-resolution disagreement.",
+     "note": "Lactobacillaceae: Family increased in IBS in the systematic review. Contrast: species-level Lactobacillus is often ↓ by qPCR in other meta-analyses — a level-of-resolution disagreement.",
      "links": [
       {
        "id": "seed_new_l42",
@@ -9690,7 +9690,7 @@
      "name": "Enterocloster",
      "dir": "up",
      "refs": "Integrated analysis 2023",
-     "note": "IBS-enriched genus (formerly within Clostridium) in the integrated multicentre analysis.",
+     "note": "Enterocloster: IBS-enriched genus (formerly within Clostridium) in the integrated multicentre analysis.",
      "links": [
       {
        "id": "seed_new_l48",
@@ -10134,7 +10134,7 @@
      "name": "Verrucomicrobia",
      "dir": "up",
      "refs": "2019 review; Shan 2020",
-     "note": "Phylum higher in the endometriosis gut (includes Akkermansia).",
+     "note": "Verrucomicrobia: Phylum higher in the endometriosis gut (includes Akkermansia).",
      "links": [
       {
        "id": "seed_new_l57",
@@ -10783,7 +10783,7 @@
      "name": "Coprococcus",
      "dir": "down",
      "refs": "Nat Commun",
-     "note": "Depleted alongside Roseburia and F. prausnitzii in ileal CD.",
+     "note": "Coprococcus: Depleted alongside Roseburia and F. prausnitzii in ileal CD.",
      "links": [
       {
        "id": "new_cd_t5_l1",
@@ -10815,7 +10815,7 @@
      "name": "Akkermansia muciniphila",
      "dir": "down",
      "refs": "Frontiers Microbiol",
-     "note": "Mucin-degrading, barrier-protective species depleted in CD alongside other Verrucomicrobia.",
+     "note": "Akkermansia muciniphila: Mucin-degrading, barrier-protective species depleted in CD alongside other Verrucomicrobia.",
      "links": [
       {
        "id": "new_cd_t7_l1",
@@ -10857,7 +10857,7 @@
      "name": "Prevotella",
      "dir": "down",
      "refs": "Nat Commun",
-     "note": "Depleted alongside other Bacteroidetes genera in CD cohorts.",
+     "note": "Prevotella: Depleted alongside other Bacteroidetes genera in CD cohorts.",
      "links": [
       {
        "id": "new_cd_t9_l1",
@@ -11016,7 +11016,7 @@
      "name": "Blautia faecis",
      "dir": "down",
      "refs": "PMID 26789999",
-     "note": "Species-level: significantly reduced in CD alongside other butyrate-producing species (Roseburia inulinivorans, Ruminococcus torques, Clostridium lavalense, Bacteroides uniformis, Faecalibacterium prausnitzii).",
+     "note": "Blautia faecis: Species-level: significantly reduced in CD alongside other butyrate-producing species (Roseburia inulinivorans, Ruminococcus torques, Clostridium lavalense, Bacteroides uniformis, Faecalibacterium prausnitzii).",
      "links": [
       {
        "id": "new_cd_t18_l1",
@@ -11032,7 +11032,7 @@
      "name": "Eubacterium",
      "dir": "down",
      "refs": "Takahashi et al. 2016 (PMID 26789999)",
-     "note": "Significantly decreased in CD vs. controls, alongside Bacteroides, Faecalibacterium, and Ruminococcus — same source already used for this app's Blautia faecis entry here.",
+     "note": "Eubacterium: Significantly decreased in CD vs. controls, alongside Bacteroides, Faecalibacterium, and Ruminococcus — same source already used for this app's Blautia faecis entry here.",
      "links": [
       {
        "id": "new_cd_t19_l1",
@@ -11123,7 +11123,7 @@
      "name": "Escherichia/Shigella",
      "dir": "up",
      "refs": "PMC7835370",
-     "note": "Consistently increased in active UC alongside other Enterobacteriaceae.",
+     "note": "Escherichia/Shigella: Consistently increased in active UC alongside other Enterobacteriaceae.",
      "links": [
       {
        "id": "new_uc_t2_l1",
@@ -11208,7 +11208,7 @@
      "name": "Collinsella",
      "dir": "down",
      "refs": "PMC7835370",
-     "note": "Actinobacteria-phylum genus depleted in UC cohorts.",
+     "note": "Collinsella: Actinobacteria-phylum genus depleted in UC cohorts.",
      "links": [
       {
        "id": "new_uc_t7_l1",
@@ -11224,7 +11224,7 @@
      "name": "Akkermansia muciniphila",
      "dir": "down",
      "refs": "Nat Commun",
-     "note": "Mucus-layer specialist depleted alongside broader Verrucomicrobia loss, consistent with the mucosal barrier breakdown seen in UC.",
+     "note": "Akkermansia muciniphila: Mucus-layer specialist depleted alongside broader Verrucomicrobia loss, consistent with the mucosal barrier breakdown seen in UC.",
      "links": [
       {
        "id": "new_uc_t8_l1",
@@ -11240,7 +11240,7 @@
      "name": "Prevotella",
      "dir": "down",
      "refs": "PMC7835370",
-     "note": "Reduced, part of the general loss of fiber-fermenting Bacteroidetes.",
+     "note": "Prevotella: Reduced, part of the general loss of fiber-fermenting Bacteroidetes.",
      "links": [
       {
        "id": "new_uc_t9_l1",
@@ -11813,7 +11813,7 @@
      "name": "Collinsella",
      "dir": "up",
      "refs": "Systematic review, 18 studies (PMID 36046745)",
-     "note": "Increased abundance in prediabetes/newly-diagnosed T2D vs. normal glucose tolerance, reported in at least 2 of 18 included studies (alongside Lactobacillus, Streptococcus, Escherichia, Veillonella).",
+     "note": "Collinsella: Increased abundance in prediabetes/newly-diagnosed T2D vs. normal glucose tolerance, reported in at least 2 of 18 included studies (alongside Lactobacillus, Streptococcus, Escherichia, Veillonella).",
      "links": [
       {
        "id": "new_t2d_t14_l1",
@@ -12055,7 +12055,7 @@
      "name": "Eubacterium rectale",
      "dir": "down",
      "refs": "PMC9499173",
-     "note": "Reduced at an early stage of RA alongside the Prevotella copri expansion.",
+     "note": "Eubacterium rectale: Reduced at an early stage of RA alongside the Prevotella copri expansion.",
      "links": [
       {
        "id": "new_ra_t4_l1",
@@ -12352,7 +12352,7 @@
      "name": "Bacteroidetes",
      "dir": "down",
      "refs": "n=29 RA/30 controls (PMID 34670873)",
-     "note": "Significantly decreased phylum-level relative abundance in RA vs. controls, while Verrucomicrobia and Proteobacteria were increased — same source already used for this app's RA Streptococcus entry.",
+     "note": "Bacteroidetes: Significantly decreased phylum-level relative abundance in RA vs. controls, while Verrucomicrobia and Proteobacteria were increased — same source already used for this app's RA Streptococcus entry.",
      "links": [
       {
        "id": "new_ra_t21_l1",
@@ -12384,7 +12384,7 @@
      "name": "Akkermansia muciniphila",
      "dir": "up",
      "refs": "n=128 RA/20 healthy controls (PMID 31652955); dissent one rank up PMID 31662859",
-     "note": "The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients. Dissent one rank up: the same 80-study review found Verrucomicrobia — the phylum this species belongs to — DECREASED across rheumatic and IBD patients.",
+     "note": "Akkermansia muciniphila: The genus with the highest abundance within phylum Verrucomicrobiae in RA patients compared with healthy controls; active RA patients also had higher relative abundance than inactive RA patients. Dissent one rank up: the same 80-study review found Verrucomicrobia — the phylum this species belongs to — DECREASED across rheumatic and IBD patients.",
      "links": [
       {
        "id": "audit_RA_Akkermansia_muciniphila_l1",
@@ -12459,7 +12459,7 @@
      "name": "Bifidobacterium",
      "dir": "down",
      "refs": "PMC8646027",
-     "note": "Underrepresented alongside Lactobacillus and F. prausnitzii.",
+     "note": "Bifidobacterium: Underrepresented alongside Lactobacillus and F. prausnitzii.",
      "links": [
       {
        "id": "new_pso_t2_l1",
@@ -12491,7 +12491,7 @@
      "name": "Escherichia coli",
      "dir": "up",
      "refs": "PMC8646027",
-     "note": "Overrepresented alongside other potentially pathogenic species (Salmonella, Campylobacter, Helicobacter).",
+     "note": "Escherichia coli: Overrepresented alongside other potentially pathogenic species (Salmonella, Campylobacter, Helicobacter).",
      "links": [
       {
        "id": "new_pso_t4_l1",
@@ -12586,7 +12586,7 @@
      "name": "Bacteroides plebeius",
      "dir": "up",
      "refs": "n=36 psoriasis/24 healthy controls (PMID 41421479)",
-     "note": "Species-level finding from a cross-sectional 16S study: higher abundance in psoriasis patients vs. controls (p<0.05), alongside higher Subdoligranulum/Lactobacillus and lower Ruminococcus (already tracked here as \"both\").",
+     "note": "Bacteroides plebeius: Species-level finding from a cross-sectional 16S study: higher abundance in psoriasis patients vs. controls (p<0.05), alongside higher Subdoligranulum/Lactobacillus and lower Ruminococcus (already tracked here as \"both\").",
      "links": [
       {
        "id": "audit_Psoriasis_Bacteroides_plebeius_l1",
@@ -12905,7 +12905,7 @@
      "name": "Enterococcus",
      "dir": "up",
      "refs": "PMID 41011331",
-     "note": "Expanded alongside Proteobacteria and Veillonella as part of the pro-inflammatory taxa bloom.",
+     "note": "Enterococcus: Expanded alongside Proteobacteria and Veillonella as part of the pro-inflammatory taxa bloom.",
      "links": [
       {
        "id": "new_aud_t6_l1",
@@ -12953,7 +12953,7 @@
      "name": "Escherichia",
      "dir": "up",
      "refs": "Frontiers Psychiatry",
-     "note": "Increased at the genus level in AUD patients relative to healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
+     "note": "Escherichia: Increased at the genus level in AUD patients relative to healthy controls, alongside Megamonas, Clostridium, Gemella and Rothia.",
      "links": [
       {
        "id": "new_aud_t9_l1",
@@ -12985,7 +12985,7 @@
      "name": "Prevotellaceae",
      "dir": "down",
      "refs": "PMC7504034",
-     "note": "Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
+     "note": "Prevotellaceae: Commensal family showing relative decrease in heavy alcohol consumers, alongside Lachnospiraceae.",
      "links": [
       {
        "id": "new_aud_t11_l1",
@@ -13049,7 +13049,7 @@
      "name": "Prevotella",
      "dir": "down",
      "refs": "n=33 AD/21 controls, male patients (PMID 37577447)",
-     "note": "Decreased in the gut microbiota of alcohol-dependent patients vs. controls; Bacteroides and Fusobacterium increased instead — pro-inflammatory compositional shift.",
+     "note": "Prevotella: Decreased in the gut microbiota of alcohol-dependent patients vs. controls; Bacteroides and Fusobacterium increased instead — pro-inflammatory compositional shift.",
      "links": [
       {
        "id": "new_aud_t15_l1",
@@ -13097,7 +13097,7 @@
      "name": "Clostridium",
      "dir": "up",
      "refs": "Case-control 16S, 24 long-term overconsumers/18 controls (PMID 30894059)",
-     "note": "Higher in patients with >10 years alcohol overconsumption vs controls; the profile skews pro-inflammatory (↑Proteobacteria, ↓Faecalibacterium already tracked here).",
+     "note": "Clostridium: Higher in patients with >10 years alcohol overconsumption vs controls; the profile skews pro-inflammatory (↑Proteobacteria, ↓Faecalibacterium already tracked here).",
      "links": [
       {
        "id": "new_aud_clostridium_l1",
@@ -13216,7 +13216,7 @@
      "name": "Bilophila",
      "dir": "up",
      "refs": "PMC11658948",
-     "note": "LPS-bearing pathobiont increased alongside Desulfovibrio in smokers.",
+     "note": "Bilophila: LPS-bearing pathobiont increased alongside Desulfovibrio in smokers.",
      "links": [
       {
        "id": "new_smk_t2_l1",
@@ -13312,7 +13312,7 @@
      "name": "Actinobacteria",
      "dir": "down",
      "refs": "PMC3597605",
-     "note": "Lower in current smokers; increased after smoking cessation, the same pattern as Firmicutes.",
+     "note": "Actinobacteria: Lower in current smokers; increased after smoking cessation, the same pattern as Firmicutes.",
      "links": [
       {
        "id": "new_smk_t8_l1",
@@ -13692,7 +13692,7 @@
      "name": "Agathobacter",
      "dir": "down",
      "refs": "PMID 41551652",
-     "note": "Depleted SCFA-producing genus in the same antibiotic-naive TBI cohort, alongside Eubacterium.",
+     "note": "Agathobacter: Depleted SCFA-producing genus in the same antibiotic-naive TBI cohort, alongside Eubacterium.",
      "links": [
       {
        "id": "new_tbi_t2_l1",
@@ -13740,7 +13740,7 @@
      "name": "Faecalibacillus intestinalis",
      "dir": "down",
      "refs": "PMID 41551652",
-     "note": "Depleted SCFA-producing species in the antibiotic-naive TBI cohort, alongside Eubacterium and Agathobacter.",
+     "note": "Faecalibacillus intestinalis: Depleted SCFA-producing species in the antibiotic-naive TBI cohort, alongside Eubacterium and Agathobacter.",
      "links": [
       {
        "id": "new_tbi_t5_l1",
@@ -14324,7 +14324,7 @@
      "name": "Streptococcaceae",
      "dir": "up",
      "refs": "37559119; supported one rank down PMID 39408965",
-     "note": "Family-level increase across included studies. Support is one rank down: Streptococcus spp. overgrew in a 69-vs-18 case-control. A genus result does not strictly corroborate a family claim.",
+     "note": "Streptococcaceae: Family-level increase across included studies. Support is one rank down: Streptococcus spp. overgrew in a 69-vs-18 case-control. A genus result does not strictly corroborate a family claim.",
      "links": [
       {
        "id": "new_pcos_t13_l1",
@@ -15102,7 +15102,7 @@
      "name": "Bifidobacterium",
      "dir": "down",
      "refs": "PMID 36421397",
-     "note": "Named as markedly reduced during perimenopause specifically, alongside Lactobacillus, in the same review.",
+     "note": "Bifidobacterium: Named as markedly reduced during perimenopause specifically, alongside Lactobacillus, in the same review.",
      "links": [
       {
        "id": "new_perimeno_t3_l1",
@@ -15402,7 +15402,7 @@
      "name": "Bacteroides",
      "dir": "down",
      "refs": "PMID 25211668",
-     "note": "Negatively correlated with the ratio of estrogen metabolites to parent estrogens in postmenopausal women (r=-0.30, P=.03) — the inverse of the Ruminococcus finding above, same cohort.",
+     "note": "Bacteroides: Negatively correlated with the ratio of estrogen metabolites to parent estrogens in postmenopausal women (r=-0.30, P=.03) — the inverse of the Ruminococcus finding above, same cohort.",
      "links": [
       {
        "id": "new_estro_t4_l1",
