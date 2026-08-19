@@ -624,7 +624,7 @@
      "name": "Oscillibacter",
      "dir": "up",
      "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
-     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "note": "Oscillibacter reported at higher abundance in depression across a PRISMA systematic review (9 human studies).",
      "links": [
       {
        "id": "seed_1_oscillibacter_l1",
@@ -640,7 +640,7 @@
      "name": "Turicibacter",
      "dir": "up",
      "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
-     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "note": "Turicibacter reported at higher abundance in depression across a PRISMA systematic review (9 human studies).",
      "links": [
       {
        "id": "seed_1_turicibacter_l1",
@@ -656,7 +656,7 @@
      "name": "Parabacteroides",
      "dir": "up",
      "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
-     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "note": "Parabacteroides reported at higher abundance in depression across a PRISMA systematic review (9 human studies).",
      "links": [
       {
        "id": "seed_1_parabacteroides_l1",
@@ -672,7 +672,7 @@
      "name": "Paraprevotella",
      "dir": "up",
      "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
-     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "note": "Paraprevotella reported at higher abundance in depression across a PRISMA systematic review (9 human studies).",
      "links": [
       {
        "id": "seed_1_paraprevotella_l1",
@@ -688,7 +688,7 @@
      "name": "Parasutterella",
      "dir": "up",
      "refs": "Systematic review 2020, 9 studies (PMID 32587537)",
-     "note": "Higher abundance in depression per a 9-study systematic review. Systematic review of depression microbiota (PMID 32587537); the review itself flags inconsistent abundance across studies, so treat as a single-review signal.",
+     "note": "Parasutterella reported at higher abundance in depression across a PRISMA systematic review (9 human studies).",
      "links": [
       {
        "id": "seed_1_parasutterella_l1",
@@ -815,7 +815,7 @@
      "name": "Akkermansia muciniphila",
      "dir": "down",
      "refs": "Frontiers",
-     "note": "Among the most consistent ASD signatures.",
+     "note": "Akkermansia muciniphila is among the most consistently reduced taxa in ASD across a 2016-2026 review synthesis.",
      "links": [
       {
        "id": "seed_asd_t1_l1",
@@ -823,7 +823,7 @@
        "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -2031,7 +2031,7 @@
      "name": "Bacteroides uniformis",
      "dir": "up",
      "refs": "PMID 31119393",
-     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "note": "Bacteroides uniformis increased in ADHD children vs controls (n=30/30, 16S V3V4, LEfSe).",
      "links": [
       {
        "id": "seed_76_fp14_l1",
@@ -9684,7 +9684,7 @@
      "name": "Streptococcus",
      "dir": "up",
      "refs": "Integrated analysis 2023",
-     "note": "IBS-enriched genus in the multicentre integrated analysis. Cross-ref: also enriched in endometriosis gut.",
+     "note": "Streptococcus enriched in IBS vs controls (GMrepo, propensity-matched n=354/354).",
      "links": [
       {
        "id": "seed_new_l46",
@@ -9692,7 +9692,7 @@
        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9921069/"
       }
      ],
-     "evidence": "unclassified",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -14808,7 +14808,7 @@
      "name": "Escherichia coli",
      "dir": "down",
      "refs": "PMID 35675542",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Escherichia coli-Shigella depleted in postmenopausal vs premenopausal women (shotgun metagenomics, n=2,300).",
      "links": [
       {
        "id": "new_meno_t4_l1",
@@ -14840,7 +14840,7 @@
      "name": "Akkermansia muciniphila",
      "dir": "down",
      "refs": "PMID 35675542",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Akkermansia muciniphila depleted in postmenopausal vs premenopausal women (shotgun metagenomics, n=2,300).",
      "links": [
       {
        "id": "new_meno_t6_l1",
@@ -14856,7 +14856,7 @@
      "name": "Clostridium lactatifermentans",
      "dir": "down",
      "refs": "PMID 35675542",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Clostridium lactatifermentans depleted in postmenopausal vs premenopausal women (shotgun metagenomics, n=2,300).",
      "links": [
       {
        "id": "new_meno_t7_l1",
@@ -14872,7 +14872,7 @@
      "name": "Parabacteroides johnsonii",
      "dir": "down",
      "refs": "PMID 35675542",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Parabacteroides johnsonii depleted in postmenopausal vs premenopausal women (shotgun metagenomics, n=2,300).",
      "links": [
       {
        "id": "new_meno_t8_l1",
@@ -14888,7 +14888,7 @@
      "name": "Veillonella seminalis",
      "dir": "down",
      "refs": "PMID 35675542",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Veillonella seminalis depleted in postmenopausal vs premenopausal women (shotgun metagenomics, n=2,300).",
      "links": [
       {
        "id": "new_meno_t9_l1",

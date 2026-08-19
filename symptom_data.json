@@ -370,10 +370,10 @@
     },
     {
      "symptom": "Reduced socializing",
-     "note": "From this app's Autism (ASD) condition data.",
-     "ref": "56,57",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
-     "evidence": "unclassified",
+     "note": "Bifidobacterium among the most consistently reduced taxa in ASD (review synthesis); reduced socializing is an autism-associated trait.",
+     "ref": "2016-2026 ASD gut-microbiome review synthesis (PMID 42582282)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42582282/",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -394,10 +394,10 @@
     },
     {
      "symptom": "Overstimulation",
-     "note": "From this app's Autism (ASD) condition data.",
-     "ref": "56,57",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
-     "evidence": "unclassified",
+     "note": "Bifidobacterium among the most consistently reduced taxa in ASD (review synthesis); overstimulation is an autism-associated trait.",
+     "ref": "2016-2026 ASD gut-microbiome review synthesis (PMID 42582282)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42582282/",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -1643,26 +1643,26 @@
     },
     {
      "symptom": "Reduced socializing",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Prevotella significantly lower in autistic children (16S pyrosequencing, n=20/20); reduced socializing is an autism-associated trait.",
      "ref": "57,58",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
-     "evidence": "unclassified",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Overstimulation",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Prevotella significantly lower in autistic children (16S pyrosequencing, n=20/20); overstimulation is an autism-associated trait.",
      "ref": "57,58",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
-     "evidence": "unclassified",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Understimulation",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Prevotella significantly lower in autistic children (16S pyrosequencing, n=20/20); understimulation is an autism-associated trait.",
      "ref": "57,58",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23844187/",
-     "evidence": "unclassified",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -1935,7 +1935,7 @@
   },
   {
    "name": "Escherichia/Shigella",
-   "count": 21,
+   "count": 20,
    "up": [
     {
      "symptom": "Antibiotics",
@@ -2015,14 +2015,6 @@
      "ref": "Chen et al. 2026 narrative review, Frontiers in Microbiology — causal evidence incl. Mendelian randomization studies",
      "url": "https://doi.org/10.3389/fmicb.2026.1817279",
      "evidence": "mendelian",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Depressed mood",
-     "note": "Consistently higher in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/",
-     "evidence": "meta-analysis",
      "population": "unknown"
     },
     {
@@ -2366,7 +2358,7 @@
   },
   {
    "name": "Clostridium",
-   "count": 27,
+   "count": 25,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -2414,14 +2406,6 @@
      "ref": "J Microbiol Biotechnol 2026 (integrated plasma/urinary metabolomics + 16S; ↑Christensenellaceae R-7 group/Clostridium sensu stricto 1/Negativibacillus in IBS)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41581896/",
      "evidence": "unclassified",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Mania",
-     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
-     "ref": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/",
-     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -2482,15 +2466,7 @@
     },
     {
      "symptom": "Fatigue",
-     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
-     "ref": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/",
-     "evidence": "human-cohort",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Anxiety",
-     "note": "One of the top 4 most significantly enriched genera in BOTH MDD and bipolar depression vs. healthy controls (alongside Bacteroides, Bifidobacterium, Oscillibacter).",
+     "note": "Clostridium enriched in MDD and bipolar depression (PMID 30927646, shotgun metagenomics); fatigue is a core depressive symptom.",
      "ref": "n=31 MDD/30 BPD/30 controls, shotgun metagenomics (PMID 30927646)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30927646/",
      "evidence": "human-cohort",
@@ -2556,11 +2532,11 @@
     },
     {
      "symptom": "Hair loss",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Clostridium lactatifermentans depleted postmenopause (shotgun metagenomics, n=2,300); hair loss is a menopause-associated symptom.",
      "ref": "PMID 35675542",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/",
      "evidence": "human-cohort",
-     "population": "female"
+     "population": "unknown"
     },
     {
      "symptom": "Acne / skin flares",
@@ -3134,7 +3110,7 @@
   },
   {
    "name": "Streptococcus",
-   "count": 27,
+   "count": 24,
    "up": [
     {
      "symptom": "Brain fog",
@@ -3162,7 +3138,7 @@
     },
     {
      "symptom": "Depressed mood",
-     "note": "Consistently higher in depression across a 44-study meta-analysis.",
+     "note": "Streptococcus enriched in depression (Gao 2023 meta-analysis, 44 studies); part of the pro-inflammatory shift in depressed mood.",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/",
      "evidence": "meta-analysis",
@@ -3210,34 +3186,34 @@
     },
     {
      "symptom": "Bloating & gas",
-     "note": "IBS-enriched genus in the multicentre integrated analysis. Cross-ref: also enriched in endometriosis gut.",
+     "note": "Streptococcus enriched in IBS (propensity-matched n=354/354); bloating & gas is a core IBS symptom.",
      "ref": "Integrated analysis 2023",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9921069/",
-     "evidence": "unclassified",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Abdominal pain",
-     "note": "IBS-enriched genus in the multicentre integrated analysis. Cross-ref: also enriched in endometriosis gut.",
+     "note": "Streptococcus enriched in IBS (propensity-matched n=354/354); abdominal pain is a core IBS symptom.",
      "ref": "Integrated analysis 2023",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9921069/",
-     "evidence": "unclassified",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Diarrhea",
-     "note": "IBS-enriched genus in the multicentre integrated analysis. Cross-ref: also enriched in endometriosis gut.",
+     "note": "Streptococcus enriched in IBS (propensity-matched n=354/354); diarrhea is a core IBS symptom.",
      "ref": "Integrated analysis 2023",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9921069/",
-     "evidence": "unclassified",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "symptom": "Constipation",
-     "note": "IBS-enriched genus in the multicentre integrated analysis. Cross-ref: also enriched in endometriosis gut.",
+     "note": "Streptococcus enriched in IBS (propensity-matched n=354/354); constipation is a core IBS symptom.",
      "ref": "Integrated analysis 2023",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9921069/",
-     "evidence": "unclassified",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -3304,30 +3280,6 @@
      "ref": "PMID 41927536",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41927536/",
      "evidence": "human-cohort",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Reduced socializing",
-     "note": "From this app's Autism (ASD) condition data.",
-     "ref": "PMC6933684",
-     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
-     "evidence": "unclassified",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Overstimulation",
-     "note": "From this app's Autism (ASD) condition data.",
-     "ref": "PMC6933684",
-     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
-     "evidence": "unclassified",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Understimulation",
-     "note": "From this app's Autism (ASD) condition data.",
-     "ref": "PMC6933684",
-     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
-     "evidence": "unclassified",
      "population": "unknown"
     },
     {
@@ -3988,7 +3940,7 @@
   },
   {
    "name": "Lachnoclostridium",
-   "count": 5,
+   "count": 4,
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
@@ -4004,14 +3956,6 @@
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Depressed mood",
-     "note": "Consistently higher in depression across a 44-study meta-analysis.",
-     "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/",
-     "evidence": "meta-analysis",
      "population": "unknown"
     }
    ],
@@ -4284,7 +4228,7 @@
     },
     {
      "symptom": "Depressed mood",
-     "note": "Consistently higher in depression across a 44-study meta-analysis.",
+     "note": "Flavonifractor enriched in depression (Gao 2023 meta-analysis, 44 studies); a pro-inflammatory genus consistently raised in depressed mood.",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/",
      "evidence": "meta-analysis",
@@ -4340,7 +4284,7 @@
     },
     {
      "symptom": "Depressed mood",
-     "note": "Consistently higher in depression across a 44-study meta-analysis.",
+     "note": "Enterococcus enriched in depression (Gao 2023 meta-analysis, 44 studies); a pro-inflammatory genus consistently raised in depressed mood.",
      "ref": "Gao et al. 2023 meta-analysis, Translational Psychiatry — 44 studies, 2,091 depression patients vs. 2,792 controls (PMID 38065935)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38065935/",
      "evidence": "meta-analysis",
@@ -4711,7 +4655,7 @@
   },
   {
    "name": "Phascolarctobacterium",
-   "count": 28,
+   "count": 25,
    "up": [
     {
      "symptom": "FUT2 (Non-secretor) status",
@@ -4910,33 +4854,6 @@
     },
     {
      "symptom": "Dizziness / orthostatic intolerance",
-     "derived": true,
-     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
-     "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/",
-     "evidence": "derived",
-     "population": "n/a"
-    },
-    {
-     "symptom": "Reduced socializing",
-     "derived": true,
-     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
-     "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/",
-     "evidence": "derived",
-     "population": "n/a"
-    },
-    {
-     "symptom": "Overstimulation",
-     "derived": true,
-     "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
-     "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/32856395/",
-     "evidence": "derived",
-     "population": "n/a"
-    },
-    {
-     "symptom": "Understimulation",
      "derived": true,
      "note": "FROM CROSS-FEEDING - inferred, not measured for this entry. Bacteroides is down here, and Bacteroides feeds Phascolarctobacterium (succinate -> propionate), so Phascolarctobacterium is expected to follow. Lower confidence - the reverse direction was not tested. The underlying feeding relationship is real (in-vitro-coculture); its presence in THIS condition/symptom is an inference. Source edge: cf_bacteroides_phascolarctobacterium.",
      "ref": "Inferred source (evidence for the FEEDING RELATIONSHIP, not for this symptom/condition - nobody measured this taxon here): derived via cf_bacteroides_phascolarctobacterium - Ikeyama et al. 2020, MicrobiologyOpen - B. thetaiotaomicron/P. faecium co-culture + RNA-Seq (PMID 32856395)",
@@ -5544,7 +5461,7 @@
   },
   {
    "name": "Bacteroides",
-   "count": 39,
+   "count": 36,
    "up": [
     {
      "symptom": "Oral iron supplementation",
@@ -5717,14 +5634,6 @@
      "population": "unknown"
     },
     {
-     "symptom": "Reduced socializing",
-     "note": "From this app's Autism (ASD) condition data.",
-     "ref": "PMC6933684",
-     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
-     "evidence": "unclassified",
-     "population": "unknown"
-    },
-    {
      "symptom": "Poor working memory",
      "note": "Decreased in ADHD children vs. controls in the same 16S case-control study.",
      "ref": "PMID 31119393",
@@ -5738,22 +5647,6 @@
      "ref": "PMID 31119393",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Overstimulation",
-     "note": "From this app's Autism (ASD) condition data.",
-     "ref": "PMC6933684",
-     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
-     "evidence": "unclassified",
-     "population": "unknown"
-    },
-    {
-     "symptom": "Understimulation",
-     "note": "From this app's Autism (ASD) condition data.",
-     "ref": "PMC6933684",
-     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933684/",
-     "evidence": "unclassified",
      "population": "unknown"
     },
     {
@@ -6944,7 +6837,7 @@
    "up": [
     {
      "symptom": "Irritability",
-     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "note": "Bacteroides uniformis elevated in ADHD children (n=30/30, LEfSe); irritability is a core ADHD symptom.",
      "ref": "PMID 31119393",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
@@ -6952,7 +6845,7 @@
     },
     {
      "symptom": "Poor working memory",
-     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "note": "Bacteroides uniformis elevated in ADHD children (n=30/30, LEfSe); poor working memory is a core ADHD symptom.",
      "ref": "PMID 31119393",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
@@ -6960,7 +6853,7 @@
     },
     {
      "symptom": "Lack of impulse control",
-     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "note": "Bacteroides uniformis elevated in ADHD children (n=30/30, LEfSe); lack of impulse control is a core ADHD symptom.",
      "ref": "PMID 31119393",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
@@ -6968,7 +6861,7 @@
     },
     {
      "symptom": "Restlessness",
-     "note": "Increased in ADHD children vs. controls (n=30/30, 16S rRNA V3V4 sequencing, LEfSe).",
+     "note": "Bacteroides uniformis elevated in ADHD children (n=30/30, LEfSe); restlessness is a core ADHD symptom.",
      "ref": "PMID 31119393",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
@@ -8822,11 +8715,11 @@
    "down": [
     {
      "symptom": "Hair loss",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Escherichia coli-Shigella depleted postmenopause (shotgun metagenomics, n=2,300); hair loss is a menopause-associated symptom.",
      "ref": "PMID 35675542",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/",
      "evidence": "human-cohort",
-     "population": "female"
+     "population": "unknown"
     }
    ],
    "both": []
@@ -8967,34 +8860,34 @@
     },
     {
      "symptom": "Reduced socializing",
-     "note": "Among the most consistent ASD signatures.",
+     "note": "Akkermansia muciniphila reduced in ASD (2016-2026 review synthesis); reduced socializing is an autism-associated trait.",
      "ref": "Frontiers",
      "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Irritability",
-     "note": "Among the most consistent ASD signatures.",
+     "note": "Akkermansia muciniphila reduced in ASD (2016-2026 review synthesis); irritability is an autism-associated trait.",
      "ref": "Frontiers",
      "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Overstimulation",
-     "note": "Among the most consistent ASD signatures.",
+     "note": "Akkermansia muciniphila reduced in ASD (2016-2026 review synthesis); overstimulation is an autism-associated trait.",
      "ref": "Frontiers",
      "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
      "symptom": "Understimulation",
-     "note": "Among the most consistent ASD signatures.",
+     "note": "Akkermansia muciniphila reduced in ASD (2016-2026 review synthesis); understimulation is an autism-associated trait.",
      "ref": "Frontiers",
      "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1873864/full",
-     "evidence": "unclassified",
+     "evidence": "review",
      "population": "unknown"
     },
     {
@@ -9007,19 +8900,19 @@
     },
     {
      "symptom": "Hair loss",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Akkermansia muciniphila depleted postmenopause (shotgun metagenomics, n=2,300); hair loss is a menopause-associated symptom.",
      "ref": "PMID 35675542",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/",
      "evidence": "human-cohort",
-     "population": "female"
+     "population": "unknown"
     },
     {
      "symptom": "Sleep disturbance",
-     "note": "Depleted in postmenopausal vs. premenopausal women.",
+     "note": "Akkermansia muciniphila depleted postmenopause (shotgun metagenomics, n=2,300); sleep disturbance is a menopause-associated symptom.",
      "ref": "PMID 35675542",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35675542/",
      "evidence": "human-cohort",
-     "population": "female"
+     "population": "unknown"
     }
    ],
    "both": [
