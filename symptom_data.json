@@ -69,7 +69,7 @@
     {
      "symptom": "Green tea / catechins",
      "note": "Green tea consumption improved the Bifidobacterium-to-Enterobacteriaceae ratio and raised the proportion of Bifidobacterium in faecal samples; B. adolescentis specifically increased with EGCG supplementation. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
-     "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies",
+     "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies [human + animal review]",
      "url": "https://www.mdpi.com/2072-6643/11/10/2364",
      "evidence": "human-rct",
      "population": "unknown"
@@ -77,7 +77,7 @@
     {
      "symptom": "Psilocybin / Psychedelics",
      "note": "IN VITRO, but human-derived and genus-level. A single dose of Psilocybe cubensis extract (35 mg/L) was fermented in the SHIME colonic model using faecal microbiota from people with severe anxiety. Bifidobacterium - the predominant genus in these samples - increased markedly after 20 h and again between 3 and 15 days; family-level Bifidobacteriaceae rose from 39.73% to 43.88% at 20 h and from 43.93% to 48.70% over 3-12 days. Critically for the cross-feeding question, SCFAs rose in parallel: acetic 2.26-fold, propionic 2.69-fold and BUTYRIC 2.21-fold at 20 h. Psilocybin and psilocin themselves were depleted during fermentation, i.e. the microbiota metabolises them. Two further metabolic effects: ammonia production fell 19-25% (ammonia is a gut irritant, so a reduction is favourable), while GABA levels DECREASED - counterintuitive for an anxiety-donor microbiota. Caveats: a fermentation vessel has no host, no absorption and no immune system; alpha-diversity fell slightly; and the authors are explicit that the cytokine and intestinal-barrier responses reflected a COMPLEX IMMUNOMODULATORY PATTERN rather than a uniform anti-inflammatory effect. They state plainly that these in vitro findings do not establish clinical benefit for intestinal or mental health.",
-     "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046)",
+     "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046) [in vitro]",
      "url": "https://doi.org/10.3390/ddc5030046",
      "evidence": "in-vitro",
      "population": "n/a"
@@ -168,7 +168,7 @@
     {
      "symptom": "Lacto-N-neotetraose (LNnT) supplementation",
      "note": "The bifidogenic effect is the best-replicated HMO result in adults: a 100-person RCT (relative abundance of Bifidobacterium rose substantially), a SHIME fermentation model where 2'FL, LNnT and their mix all raised bifidobacteria with a rise in SCFAs, and a randomised IBS trial where a 2'FL/LNnT mix raised fecal bifidobacteria without worsening overall GI symptoms. LNnT has more human data behind it than LNT, LNB and GNB combined - and note it is a DIFFERENT molecule from LNT (beta1-4 vs beta1-3 linkage, different bacterial enzymes). ATTRIBUTION CAVEAT: the trial gave 2'FL and LNnT alone and in mixes at several doses and reports the pooled HMO effect, so the split between the two molecules is not clean.",
-     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686); Suligoj et al. 2020, Nutrients - SHIME (PMID 32933181); Iribarren et al. 2020, Neurogastroenterol Motil - randomised IBS trial, 2'FL/LNnT (PMID 32536023)",
+     "ref": "Elison et al. 2016, Br J Nutr - randomised, double-blind, placebo-controlled, 100 healthy adults, 2'FL and/or LNnT up to 20 g/day for 2 weeks (PMID 27719686); Suligoj et al. 2020, Nutrients - SHIME (PMID 32933181); Iribarren et al. 2020, Neurogastroenterol Motil - randomised IBS trial, 2'FL/LNnT (PMID 32536023) [human RCT + SHIME model]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/27719686/",
      "evidence": "human-rct",
      "evidence_source": "hand-classified",
@@ -243,7 +243,7 @@
     {
      "symptom": "FUT2 (Non-secretor) status",
      "note": "The classic, most-cited FUT2 finding: non-secretors lack the fucosylated glycans Bifidobacteria feed on, genus-level abundance/diversity reduced accordingly (species-level detail - B. bifidum, adolescentis, pseudocatenulatum - tracked separately elsewhere in this app). Also the bacterium most consistently depleted in a FUT2-deficient mouse model specifically under alcohol exposure, alongside Akkermansia - direct mechanistic evidence FUT2 loss is a RISK factor for alcohol-related dysbiosis, not protective against it.",
-     "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598); genus-level support in infants of non-secretor mothers (PMID 30214024); TWAS association (PMID 34922623); HMP whole-genome sequencing ties secretor status to B. longum specifically (PMID 29378630); two infant cohorts found NO association (PMID 38838470, 37741856)",
+     "ref": "Wacklin et al. 2011, PLoS ONE (PMID 21625510); Chen et al. 2025, Clin Transl Med (PMID 40817598); genus-level support in infants of non-secretor mothers (PMID 30214024); TWAS association (PMID 34922623); HMP whole-genome sequencing ties secretor status to B. longum specifically (PMID 29378630); two infant cohorts found NO association (PMID 38838470, 37741856) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/21625510/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -379,7 +379,7 @@
     {
      "symptom": "Loss of appetite",
      "note": "Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model.",
-     "ref": "Neuroscience 2025 (117 children: ASD/ADHD/AN vs healthy; common ↓Bifidobacterium across all three conditions)",
+     "ref": "Neuroscience 2025 (117 children: ASD/ADHD/AN vs healthy; common ↓Bifidobacterium across all three conditions) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40846210/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -453,7 +453,7 @@
     {
      "symptom": "Hair loss",
      "note": "Polycystic Ovary Syndrome (PCOS): Counterintuitive vs. its usual \"beneficial/depleted-in-disease\" role elsewhere in this app: increased abundance observed in PCOS subjects alongside Roseburia and Lactobacillus (both also up), and a higher Firmicutes/Bacteroidetes ratio. (up) | Anorexia nervosa: Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model. (down)",
-     "ref": "Multiple sources across Anorexia nervosa, Polycystic Ovary Syndrome (PCOS)",
+     "ref": "Multiple sources across Anorexia nervosa, Polycystic Ovary Syndrome (PCOS) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41882707/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -501,7 +501,7 @@
     {
      "symptom": "Systemic inflammation",
      "note": "Induces IL-10 anti-inflammatory signaling; supernatant lowers tissue cytokines & intestinal permeability in mouse colitis models.",
-     "ref": "PMID 25888448",
+     "ref": "PMID 25888448 [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/25888448/",
      "evidence": "animal",
      "population": "unknown"
@@ -517,7 +517,7 @@
     {
      "symptom": "Chronic pain",
      "note": "Minerbi et al. 2019: depleted in fibromyalgia; FMT from fibromyalgia patients into mice induced pain sensitivity.",
-     "ref": "Minerbi 2019 / PMC11671092",
+     "ref": "Minerbi 2019 / PMC11671092 [human data + animal mechanistic arm]",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11671092/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -861,7 +861,7 @@
     {
      "symptom": "Sensory processing issues",
      "note": "Mechanistic anchor for gut-to-sensory signalling: R. intestinalis-derived butyrate activates vagal neurons via GPR41 and suppresses processing in the nucleus tractus solitarius and central amygdala, with the effect abolished in Gpr41-knockout vagal neurons. The NTS feeds the parabrachial nucleus and then the insula - the interoceptive pathway. Measured endpoint was neuropathic PAIN in mice, not sensory processing, so this is the mechanism rather than the outcome.",
-     "ref": "Roseburia intestinalis-derived butyrate alleviates neuropathic pain, Cell Host & Microbe 2025 (PMID 39706182)",
+     "ref": "Roseburia intestinalis-derived butyrate alleviates neuropathic pain, Cell Host & Microbe 2025 (PMID 39706182) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39706182/",
      "evidence": "animal",
      "population": "unknown"
@@ -869,7 +869,7 @@
     {
      "symptom": "Chronic pain",
      "note": "Shingles/postherpetic-neuralgia patients showed altered microbiota, and transferring their faecal samples into mice raised pain sensitivity — while administering R. intestinalis reduced nerve-injury pain. The mechanism is specific: R. intestinalis-derived butyrate activates vagal neurons via GPR41, suppressing pain processing in the nucleus tractus solitarius and central amygdala. Deleting Gpr41 from vagal neurons abolished the effect entirely. Human microbiota plus causal mouse work, so treat the human side as correlational and the mechanism as animal-established.",
-     "ref": "Cell Host & Microbe 2025 (PMID 39706182)",
+     "ref": "Cell Host & Microbe 2025 (PMID 39706182) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39706182/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -877,7 +877,7 @@
     {
      "symptom": "Paresthesia / numbness",
      "note": "Same postherpetic-neuralgia work: R. intestinalis-derived butyrate alleviated nerve-injury-induced neuropathic pain in mice via vagal GPR41 signalling, with the effect lost in Gpr41-knockout vagal neurons. Recorded here because postherpetic neuralgia is a nerve-injury syndrome presenting with abnormal sensation, not only pain.",
-     "ref": "Cell Host & Microbe 2025 (PMID 39706182)",
+     "ref": "Cell Host & Microbe 2025 (PMID 39706182) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39706182/",
      "evidence": "animal",
      "population": "unknown"
@@ -1412,7 +1412,7 @@
     {
      "symptom": "Psilocybin / Psychedelics",
      "note": "GENUINELY CONFLICTING between models. In the SHIME in-vitro system seeded with human faecal microbiota from anxious donors, Lactobacillus increased markedly after 20 h and showed a further marked rise by 15 days of fermentation. But chronic psilocybin in live mice REDUCED Lactobacillus murinus and L. animalis (male wild-type only, PMID 40849086). In vitro human-derived community versus live animal host is exactly the kind of split where neither result supersedes the other - the fermentation model isolates direct microbial effects, while the mouse retains host serotonin signalling and immune feedback that could push the other way. Genus caveat: 'Lactobacillus' was split into 25 genera in 2020, so studies either side of that split can be counting different organisms - expect contradictions until results are reported at species level.",
-     "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046) vs. Neuropharmacology 2025 (PMID 40849086); genus heterogeneity: PMID 32293557",
+     "ref": "Salgaco et al. 2026, Drugs and Drug Candidates - SHIME colonic fermentation, faecal microbiota from individuals with severe anxiety, P. cubensis extract 35 mg/L (DOI 10.3390/ddc5030046) vs. Neuropharmacology 2025 (PMID 40849086); genus heterogeneity: PMID 32293557 [in vitro]",
      "url": "https://doi.org/10.3390/ddc5030046",
      "evidence": "in-vitro",
      "population": "n/a"
@@ -1562,7 +1562,7 @@
     {
      "symptom": "Immune dysregulation",
      "note": "The signature RA finding: expanded in new-onset untreated RA, correlates with disease, and colonizing mice increases susceptibility to arthritis via Th17 induction.",
-     "ref": "eLife",
+     "ref": "eLife [human data + animal mechanistic arm]",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3816614/",
      "evidence": "animal",
      "population": "unknown"
@@ -1836,7 +1836,7 @@
     {
      "symptom": "Coffee / Stimulants",
      "note": "In-vitro anaerobic fecal fermentation model, not a live human consumption study - flagged as such, weaker than an observational cohort: chlorogenic acid (coffee's main polyphenol) significantly increased growth of the \"Clostridium coccoides-Eubacterium rectale group\" (P<.05), an older taxonomic grouping largely reclassified into genus Blautia today. High-chlorogenic-acid coffee itself also drove a significant Bifidobacterium increase in the same experiment.",
-     "ref": "Mills et al. 2015, Br J Nutr — in-vitro fermentation model (PMID 25809126)",
+     "ref": "Mills et al. 2015, Br J Nutr — in-vitro fermentation model (PMID 25809126) [in vitro]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/25809126/",
      "evidence": "in-vitro",
      "population": "n/a"
@@ -2136,7 +2136,7 @@
     {
      "symptom": "Green tea / catechins",
      "note": "EGCG reduced Firmicutes abundance. Worth noting it also reduced overall alpha-diversity in the same work - a lower Firmicutes/Bacteroidetes ratio is often read as favourable, but diversity loss is not. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea.",
-     "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies",
+     "ref": "Bond & Derbyshire 2019, Nutrients - Tea Compounds and the Gut Microbiome: Findings from Trials and Mechanistic Studies [human + animal review]",
      "url": "https://www.mdpi.com/2072-6643/11/10/2364",
      "evidence": "human-rct",
      "population": "unknown"
@@ -2633,7 +2633,7 @@
     {
      "symptom": "OCD symptoms",
      "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD — i.e. lower levels causally linked to higher OCD risk. Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae — the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
-     "ref": "Causal link between gut microbiota and OCD: MR analysis (2025)",
+     "ref": "Causal link between gut microbiota and OCD: MR analysis (2025) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40056996/",
      "evidence": "mendelian",
      "population": "unknown"
@@ -2647,7 +2647,7 @@
     {
      "symptom": "Green tea / catechins",
      "note": "Green tea and EGCG encouraged Akkermansia growth, with EGCG-fed mice showing increased Akkermansia alongside raised butyrate production. IMPORTANT COUNTERWEIGHT: a 12-week randomised trial delivering >1.35 g catechins and >0.56 g EGCG found NO effect on gut microbiota composition at all. Human results are inconsistent, and much of the positive signal comes from mouse and in-vitro work at doses hard to reach by drinking tea. EVIDENCE TIER CORRECTED to animal: Jeong 2020 is EGCG-fed MICE; the human 12-week RCT in the note found NO effect, so this UP rests on animal work — so 'Human studies only' now hides it.",
-     "ref": "Jeong et al. 2020, Journal of Medicinal Food - Green Tea Encourages Growth of Akkermansia muciniphila",
+     "ref": "Jeong et al. 2020, Journal of Medicinal Food - Green Tea Encourages Growth of Akkermansia muciniphila [animal model]",
      "url": "https://journals.sagepub.com/doi/full/10.1089/jmf.2019.4662",
      "evidence": "animal",
      "population": "unknown",
@@ -2840,7 +2840,7 @@
     {
      "symptom": "OCD symptoms",
      "note": "Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae — the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
-     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus)",
+     "ref": "Domènech 2022 (Sci Rep; OCD: ↑Rikenellaceae/Alistipes, ↓Prevotellaceae, Agathobacter, Coprococcus) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "animal",
      "population": "unknown"
@@ -3009,10 +3009,10 @@
     {
      "symptom": "Psilocybin / Psychedelics",
      "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (PMID 38846751). Read this alongside the genus-level SHIME result now recorded on Bifidobacterium: a 2026 in-vitro study using human faecal microbiota found Bifidobacterium - an Actinobacteria member - rising markedly under psilocybin, with butyrate up 2.21-fold. So the phylum signal in rats is at least consistent with a Bifidobacterium-driven increase, though the rat study itself did not resolve to genus and Actinobacteria also contains Collinsella, Eggerthella and Atopobium.",
-     "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
+     "ref": "Xu et al. 2024, PeerJ (PMID 38846751) [animal model]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/",
-     "evidence": "in-vitro",
-     "population": "n/a"
+     "evidence": "animal",
+     "population": "male"
     },
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
@@ -3860,7 +3860,7 @@
     {
      "symptom": "Psilocybin / Psychedelics",
      "note": "Dose- and time-dependent phylum-level decrease in male rats given oral psilocybin or norbaeocystin (fecal 16S rRNA at 1 and 3 weeks). Preliminary, rat/animal-only data — no human gut-microbiome studies of psilocybin were found in the literature searched.",
-     "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
+     "ref": "Xu et al. 2024, PeerJ (PMID 38846751) [animal model]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/",
      "evidence": "animal",
      "population": "male"
@@ -4002,7 +4002,7 @@
     {
      "symptom": "Metabolic dysregulation",
      "note": "P. distasonis produces succinate/secondary bile acids that improve insulin sensitivity; depletion tracks with metabolic disease in mouse & cohort studies.",
-     "ref": "PMID 30605678",
+     "ref": "PMID 30605678 [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30605678/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -4856,7 +4856,7 @@
     {
      "symptom": "Psilocybin / Psychedelics",
      "note": "Dose- and time-dependent phylum-level increase in male rats given oral psilocybin or norbaeocystin (fecal 16S rRNA at 1 and 3 weeks). Preliminary, rat/animal-only data — no human gut-microbiome studies of psilocybin were found in the literature searched.",
-     "ref": "Xu et al. 2024, PeerJ (PMID 38846751)",
+     "ref": "Xu et al. 2024, PeerJ (PMID 38846751) [animal model]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/38846751/",
      "evidence": "animal",
      "population": "male"
@@ -5262,7 +5262,7 @@
     {
      "symptom": "Exercise-associated microbiota changes",
      "note": "Increased in marathon runners after the marathon, and mechanistically explained rather than merely correlated: V. atypica metabolises lactate into propionate, and serum lactate was shown to cross the epithelial barrier into the gut lumen — giving the genus a substrate that exercise itself produces. Causal in mice: inoculating V. atypica significantly increased exhaustive treadmill run time, and intrarectal propionate alone reproduced that performance gain. One of the cleanest lactate-to-SCFA host-benefit loops described so far.",
-     "ref": "Scheiman et al. 2019, Nature Medicine (PMID 31235964)",
+     "ref": "Scheiman et al. 2019, Nature Medicine (PMID 31235964) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31235964/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -6511,7 +6511,7 @@
     {
      "symptom": "Histamine reactions",
      "note": "K. aerogenes strains carrying a histidine-decarboxylase gene variant were identified as major gut histamine producers, highly abundant in 3 independent IBS cohorts; colonizing germ-free mice with high-histamine IBS microbiota caused visceral hyperalgesia via histamine-4-receptor signalling.",
-     "ref": "PMID 35895832",
+     "ref": "PMID 35895832 [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35895832/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -6847,7 +6847,7 @@
     },
     {
      "symptom": "Chronic pain",
-     "note": "Found depleted in the Minerbi et al. 2019 fibromyalgia microbiome signature — this is a species-specific finding, kept separate from the bare Bacteroides genus node.",
+     "note": "Bacteroides uniformis specifically depleted in the Minerbi et al. 2019 fibromyalgia microbiome signature - a species-level finding, kept separate from the bare Bacteroides genus node.",
      "ref": "Minerbi 2019 / PMC11671092",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11671092/",
      "evidence": "unclassified",
@@ -6903,7 +6903,7 @@
     {
      "symptom": "Lack of impulse control",
      "note": "Negatively associated with the UPPS-urgency facet of trait impulsivity in the same n=913 cohort; separately reported as reduced in human and mouse depression studies.",
-     "ref": "Translational Psychiatry 2025 (PMID 40753077)",
+     "ref": "Translational Psychiatry 2025 (PMID 40753077) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40753077/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -7004,7 +7004,7 @@
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
      "note": "Species level: B. bifidum is one of the two species repeatedly shown to use human milk oligosaccharides as a sole carbon source in vitro (with B. longum subsp. infantis), which is why it is among the species a 2'-FL supplement can actually feed. Contrast the B. adolescentis picture noted on the genus entry - the genus-level 'up' hides real species-by-species differences.",
-     "ref": "Ruiz-Moyano et al. 2013, Appl Environ Microbiol - HMO consumption across infant-gut Bifidobacterium strains (PMID 23892749)",
+     "ref": "Ruiz-Moyano et al. 2013, Appl Environ Microbiol - HMO consumption across infant-gut Bifidobacterium strains (PMID 23892749) [in vitro]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/23892749/",
      "evidence": "in-vitro",
      "evidence_source": "hand-classified",
@@ -7061,7 +7061,7 @@
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
      "note": "INDIRECT / cross-fed, not a direct effect. Bifidobacterium infantis metabolises 2'-FL and releases acetate, lactate and 1,2-propanediol; E. hallii consumes those to produce butyrate. The syntrophy is structure- and strain-specific — it depends on which fucosylated HMO and which B. infantis strain is present. Shown in in-vitro co-culture and a modelled microbiome, not measured in a human supplementation trial. Notably, one study found the B. adolescentis to A. hallii to butyrate link only in ADULTS, so this cross-feeding route may matter more in adults than infants. EVIDENCE TIER CORRECTED to in-vitro: B. infantis/E. hallii syntrophy is an in-vitro co-culture study (PMID 36938958), not a human measurement — so 'Human studies only' now hides it.",
-     "ref": "Mol Nutr Food Res 2023 — B. infantis/E. hallii syntrophy on 2'FL (PMID 36938958)",
+     "ref": "Mol Nutr Food Res 2023 — B. infantis/E. hallii syntrophy on 2'FL (PMID 36938958) [in vitro]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/36938958/",
      "evidence": "in-vitro",
      "population": "n/a",
@@ -7510,7 +7510,7 @@
    "down": [
     {
      "symptom": "Intrusive thoughts",
-     "note": "Depletion correlated with greater obsession severity on the Y-BOCS obsessions subscale (r=-0.420) in OCD patients — species-level finding, distinct from the genus-level Lachnospira already tracked elsewhere in this app.",
+     "note": "Lachnospira pectinoschiza depletion correlated with greater obsession severity on the Y-BOCS obsessions subscale (r=-0.420) in OCD patients (Domenech 2022) - a species-level finding, distinct from the genus-level Lachnospira tracked elsewhere.",
      "ref": "Domènech et al. 2022, Scientific Reports — 32 OCD patients/33 controls, stool + oropharyngeal microbiome (PMID 35087123)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/35087123/",
      "evidence": "human-cohort",
@@ -8051,7 +8051,7 @@
     {
      "symptom": "Irritability",
      "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
-     "ref": "PMID 31119393",
+     "ref": "PMID 31119393 [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -8059,7 +8059,7 @@
     {
      "symptom": "Lack of impulse control",
      "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
-     "ref": "PMID 31119393",
+     "ref": "PMID 31119393 [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -8067,7 +8067,7 @@
     {
      "symptom": "Restlessness",
      "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
-     "ref": "PMID 31119393",
+     "ref": "PMID 31119393 [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/31119393/",
      "evidence": "human-cohort",
      "population": "unknown"
@@ -8081,7 +8081,7 @@
     {
      "symptom": "2'-Fucosyllactose (HMO) supplementation",
      "note": "INDIRECT / cross-fed, not a direct effect. 2'-FL is not consumed by F. prausnitzii itself — Bifidobacterium bifidum degrades the HMO and releases the constituent sugars plus acetate and lactate, which F. prausnitzii then converts to butyrate. Demonstrated in in-vitro co-culture, so this is a mechanism established in the lab rather than a measured outcome in people; the human 2'-FL RCTs in this app only reported Bifidobacterium itself. Worth noting the cross-feeding chain is the reason a bifidogenic prebiotic can raise butyrate without directly feeding any butyrate producer. DOSE OF REALISM from the same head-to-head study: F. prausnitzii in monoculture reached a LOWER cell density on the HMOs than on glucose, and in coculture with B. longum subsp. infantis it was 6'-sialyllactose rather than 2'-FL that promoted growth. The cross-feeding route is real but 2'-FL is not obviously the best substrate for driving it (PMID 33193162).",
-     "ref": "Microorganisms 2025 — B. bifidum/F. prausnitzii co-culture (PMID 40732214); Front Microbiol 2020, HMO growth panel + coculture (PMID 33193162)",
+     "ref": "Microorganisms 2025 — B. bifidum/F. prausnitzii co-culture (PMID 40732214); Front Microbiol 2020, HMO growth panel + coculture (PMID 33193162) [in vitro]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/40732214/",
      "evidence": "in-vitro",
      "population": "n/a"
@@ -8316,7 +8316,7 @@
     {
      "symptom": "Intrusive thoughts",
      "note": "FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
-     "ref": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257)",
+     "ref": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/41157257/",
      "evidence": "meta-analysis",
      "population": "unknown"
@@ -8813,7 +8813,7 @@
     {
      "symptom": "Metabolic dysregulation",
      "note": "Consistently negatively associated with T2D across cohorts; mechanistic mouse/human work ties its loss to insulin resistance via ghrelin signalling. Now backed by a randomised controlled trial: 90 adults with overweight/obesity did an 8-week low-energy diet then 24 weeks of daily pasteurised A. muciniphila MucT or placebo — the MucT group regained far less weight (1.2 kg vs. 3.2 kg) and held greater net loss from baseline, with no serious adverse events. Baseline Akkermansia abundance predicted cardiometabolic response, i.e. it worked best in those who started with least.",
-     "ref": "PMC12343160; Mount et al. 2026, Nature Medicine — RCT, n=90 (PMID 42120725)",
+     "ref": "PMC12343160; Mount et al. 2026, Nature Medicine — RCT, n=90 (PMID 42120725) [human data + animal mechanistic arm]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42120725/",
      "evidence": "human-rct",
      "population": "unknown"
@@ -9020,10 +9020,10 @@
     {
      "symptom": "Coffee / Stimulants",
      "note": "The single strongest, most reproducible coffee-microbiome finding in the literature: a massive multi-cohort, multi-omic analysis (22,867 participants with detailed diet data, integrated with public data from 211 further cohorts, 233 total) found coffee consumption's link to the gut microbiome is driven largely by this one species (AUC=0.89 across populations). In-vitro experiments confirmed coffee directly stimulates its growth; plasma quinic acid and derivatives are the proposed biochemical link.",
-     "ref": "Manghi et al. 2024, Nat Microbiol, n=22,867 + 211 cohorts (PMID 39558133)",
+     "ref": "Manghi et al. 2024, Nat Microbiol, n=22,867 + 211 cohorts (PMID 39558133) [human multi-cohort; in-vitro validation]",
      "url": "https://pubmed.ncbi.nlm.nih.gov/39558133/",
-     "evidence": "human-cohort",
-     "population": "unknown"
+     "evidence": "in-vitro",
+     "population": "n/a"
     }
    ],
    "down": []

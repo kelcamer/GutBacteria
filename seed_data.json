@@ -2046,7 +2046,7 @@
      "id": "seed_76_fp15",
      "name": "Bacteroides ovatus",
      "dir": "both",
-     "refs": "PMID 31119393",
+     "refs": "PMID 31119393 [human data + animal mechanistic arm]",
      "note": "A genuine cross-study contradiction, not resolved here: increased in ADHD children and positively correlated with symptom severity in a 16S case-control study (Wang et al. 2020), but depleted specifically in the combined-presentation (C-ADHD) subtype in a larger metagenomic study — and when the depleted strain was transplanted into ADHD rats, it *ameliorated* spatial working-memory deficits and increased hippocampal CA1 activation (Li et al. 2022). The two studies may be picking up different ADHD subtypes/populations rather than a simple up-or-down effect.",
      "links": [
       {
@@ -2541,7 +2541,7 @@
      "id": "seed_115",
      "name": "Dialister",
      "dir": "both",
-     "refs": "PMID 35027502; PMID 37849234",
+     "refs": "PMID 35027502; PMID 37849234 [human data + animal mechanistic arm]",
      "note": "Genuine cross-study contradiction, not resolved here in either direction: a 2022 meta-analysis found Dialister DECREASED in AD, but a 2023 causal fecal-transplant study (human AD donors + recipient rats) found it INCREASED in AD patients and inversely correlated with cognitive (MMSE) score. Flagged as \"both\" rather than picking a side.",
      "links": [
       {
@@ -2806,7 +2806,7 @@
      "id": "seed_ad_t28",
      "name": "Desulfovibrio",
      "dir": "up",
-     "refs": "PMID 37849234",
+     "refs": "PMID 37849234 [human data + animal mechanistic arm]",
      "note": "The strongest finding in a causal fecal-microbiota-transplant study: increased in Alzheimer's patients vs. healthy controls (a pathobiont genus) AND inversely correlated with cognitive (MMSE) score in the human donors — then specifically replicated in the rats that received those patients' transplanted microbiota, the first evidence AD-associated gut dysbiosis itself (not just correlation) can transfer cognitive/neurogenesis deficits to a healthy recipient.",
      "links": [
       {
@@ -2922,7 +2922,7 @@
      "id": "seed_127",
      "name": "Actinobacteria",
      "dir": "up",
-     "refs": "150–153",
+     "refs": "150–153 [human data + animal mechanistic arm]",
      "note": "",
      "links": [
       {
@@ -2954,7 +2954,7 @@
      "id": "seed_131",
      "name": "Lactobacillus",
      "dir": "up",
-     "refs": "150,153",
+     "refs": "150,153 [human data + animal mechanistic arm]",
      "note": "",
      "links": [
       {
@@ -2970,7 +2970,7 @@
      "id": "seed_134",
      "name": "Enterobacteriaceae",
      "dir": "up",
-     "refs": "153",
+     "refs": "153 [human data + animal mechanistic arm]",
      "note": "",
      "links": [
       {
@@ -2986,7 +2986,7 @@
      "id": "seed_136",
      "name": "Firmicutes",
      "dir": "down",
-     "refs": "150–153",
+     "refs": "150–153 [human data + animal mechanistic arm]",
      "note": "",
      "links": [
       {
@@ -3002,7 +3002,7 @@
      "id": "seed_139",
      "name": "Roseburia",
      "dir": "down",
-     "refs": "153",
+     "refs": "153 [human data + animal mechanistic arm]",
      "note": "",
      "links": [
       {
@@ -3018,7 +3018,7 @@
      "id": "seed_141",
      "name": "Coprococcus",
      "dir": "down",
-     "refs": "153",
+     "refs": "153 [human data + animal mechanistic arm]",
      "note": "",
      "links": [
       {
@@ -3034,7 +3034,7 @@
      "id": "seed_143",
      "name": "Faecalibacterium",
      "dir": "down",
-     "refs": "150",
+     "refs": "150 [human data + animal mechanistic arm]",
      "note": "",
      "links": [
       {
@@ -3853,7 +3853,7 @@
      "id": "seed_201",
      "name": "Lachnospiraceae",
      "dir": "both",
-     "refs": "220",
+     "refs": "220 [human data + animal mechanistic arm]",
      "note": "Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae — the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
      "links": [
       {
@@ -3874,7 +3874,7 @@
      "id": "seed_ocd_rumino",
      "name": "Ruminococcaceae",
      "dir": "both",
-     "refs": "Causal link between gut microbiota and OCD: MR analysis (2025)",
+     "refs": "Causal link between gut microbiota and OCD: MR analysis (2025) [human data + animal mechanistic arm]",
      "note": "2025 two-sample Mendelian randomization analysis found Ruminococcaceae has a protective causal effect against OCD — i.e. lower levels causally linked to higher OCD risk. Preclinical contradiction: in the quinpirole-induced rat model of compulsive checking (a proposed OCD animal model), the development of compulsive behavior was accompanied by significant increases in both Lachnospiraceae and Ruminococcaceae — the opposite direction from the human clinical studies above. Marked \"both\" since this is animal vs. human evidence, not necessarily a resolved contradiction.",
      "links": [
       {
@@ -3980,7 +3980,7 @@
      "id": "seed_208",
      "name": "Faecalibacterium prausnitzii",
      "dir": "down",
-     "refs": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257)",
+     "refs": "Zhang et al. 2024, shotgun metagenomics, n=32 OCD/32 controls (cited in systematic review PMID 41157257) [human data + animal mechanistic arm]",
      "note": "FDR-significant decrease in drug-naive OCD patients (along with Eubacterium rectale, Ruminococcus bromii, Roseburia faecis, Bacteroides plebeius); functional profiling showed reduced butyrate biosynthesis and tryptophan metabolism, elevated LPS biosynthesis. Causally supported: fecal microbiota transplant from OCD donors into germ-free mice increased grooming/locomotion (compulsive-like behaviors).",
      "links": [
       {
@@ -4231,7 +4231,7 @@
      "id": "seed_221",
      "name": "Bifidobacterium Bifidum",
      "dir": "down",
-     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum); genus-level support PMID 30214024; mechanistic dissent PMID 38896583",
+     "refs": "Wacklin 2011 (PLoS ONE; FUT2 secretor status & Bifidobacterium bifidum, adolescentis, pseudocatenulatum); genus-level support PMID 30214024; mechanistic dissent PMID 38896583 [human data; mouse dissent noted]",
      "note": "Species-level evidence is this one paper; corroboration exists only one rank up, at the Bifidobacterium genus (PMID 30214024). Searched 2026-08: no second study reports this taxon by secretor status. Mechanistic dissent: in Fut2KO mice only B. infantis showed FUT2-dependent persistence — B. bifidum and B. breve, which cannot internalise α1,2-fucosylated glycans, did not (PMID 38896583, mouse).",
      "links": [
       {
@@ -4295,7 +4295,7 @@
      "id": "seed_209_fp3",
      "name": "Enterocloster",
      "dir": "up",
-     "refs": "PMID 38530054",
+     "refs": "PMID 38530054 [animal model]",
      "note": "Higher in mice receiving microbiota from infants of non-secretor mothers vs. secretor mothers. Mouse-only. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
@@ -4311,7 +4311,7 @@
      "id": "seed_209_fp4",
      "name": "Klebsiella",
      "dir": "up",
-     "refs": "PMID 38530054",
+     "refs": "PMID 38530054 [animal model]",
      "note": "Higher in mice receiving microbiota from infants of non-secretor mothers, alongside Enterocloster and Akkermansia. Mouse-only. Searched 2026-08: no second study reports this taxon by secretor status.",
      "links": [
       {
@@ -4519,7 +4519,7 @@
      "id": "seed_209_fp14",
      "name": "Akkermansia",
      "dir": "down",
-     "refs": "PMID 24733310; PMID 30214024; dissent PMID 38530054",
+     "refs": "PMID 24733310; PMID 30214024; dissent PMID 38530054 [human data; mouse dissent noted]",
      "note": "Mucin-degrader trending toward lower relative abundance in non-secretors (ANOVA F=3.05, p=0.09) — a trend, not statistically significant; included with that caveat since it's directionally consistent with other mucus-associated taxa being enriched in secretors. Corroborated in infants of non-secretor mothers, caesarean-born only (PMID 30214024). Dissent, outweighed: germ-free mice colonised from non-secretor-mother infants had MORE Akkermansia (PMID 38530054) — mouse, so the human data set the arrow.",
      "links": [
       {
@@ -4545,7 +4545,7 @@
      "id": "seed_209_fp15",
      "name": "Blautia",
      "dir": "up",
-     "refs": "PMID 24733310; dissent: PMID 28710295; second dissent PMID 38530054",
+     "refs": "PMID 24733310; dissent: PMID 28710295; second dissent PMID 38530054 [human data; mouse dissent noted]",
      "note": "Blautia et rel. significantly higher in non-secretors (p<0.05), HITChip analysis. Dissent, outweighed: a 33-subject study (6 non-secretors) found Blautia higher in SECRETORS, the opposite direction - smaller, and only 6 people on the side that matters (PMID 28710295). Second dissent: those same mice had LOWER Blautia (PMID 38530054) — mouse, outweighed.",
      "links": [
       {
@@ -6562,7 +6562,7 @@
      "name": "Eisenbergiella massiliensis",
      "dir": "up",
      "refs": "Minerbi 2019",
-     "note": "Cross-ref: Eisenbergiella tayi is also ↑ in MS (iMSMS 2022), and Eisenbergiella rises in rodent depression models — a recurring 'up' signal.",
+     "note": "Eisenbergiella massiliensis is part of the Minerbi 2019 fibromyalgia signature (species-level). Cross-ref: E. tayi is also up in MS (iMSMS 2022), and Eisenbergiella rises in rodent depression models - a recurring up signal.",
      "links": [
       {
        "id": "seed_375",
@@ -7461,7 +7461,7 @@
      "id": "seed_431",
      "name": "Christensenellaceae",
      "dir": "up",
-     "refs": "Fan 2023",
+     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm]",
      "note": "Most significantly enriched family in AN (Fan).",
      "links": [
       {
@@ -7470,7 +7470,7 @@
        "url": "https://www.nature.com/articles/s41564-023-01355-5"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -7509,7 +7509,7 @@
      "id": "seed_437",
      "name": "Bacteroidetes",
      "dir": "down",
-     "refs": "Fan 2023; PMID 37069399",
+     "refs": "Fan 2023; PMID 37069399 [human cohort; germ-free mouse validation arm]",
      "note": "Phylum-level reduction (Bacteroidota).",
      "links": [
       {
@@ -7523,14 +7523,14 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/37069399/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "id": "seed_439",
      "name": "Actinobacteria",
      "dir": "down",
-     "refs": "Fan 2023; PMID 37069399",
+     "refs": "Fan 2023; PMID 37069399 [human cohort; germ-free mouse validation arm]",
      "note": "Phylum-level reduction (Actinobacteriota).",
      "links": [
       {
@@ -7544,7 +7544,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/37069399/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -7631,7 +7631,7 @@
      "id": "seed_451",
      "name": "Agathobacter",
      "dir": "down",
-     "refs": "Fan 2023; Prochazkova 2021; corroborated PMID 42208205",
+     "refs": "Fan 2023; Prochazkova 2021; corroborated PMID 42208205 [human cohort; germ-free mouse validation arm]",
      "note": "Enriched in healthy controls vs AN. Corroborated in a 2026 eating-disorder cohort that separated anorexia from bulimia and binge-eating.",
      "links": [
       {
@@ -7645,7 +7645,7 @@
        "url": "https://pubmed.ncbi.nlm.nih.gov/42208205/"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -7684,7 +7684,7 @@
      "id": "seed_457",
      "name": "Coprococcus",
      "dir": "down",
-     "refs": "Fan 2023",
+     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm]",
      "note": "Enriched in healthy controls vs AN.",
      "links": [
       {
@@ -7693,14 +7693,14 @@
        "url": "https://www.nature.com/articles/s41564-023-01355-5"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
      "id": "seed_459",
      "name": "Gemmiger",
      "dir": "down",
-     "refs": "Fan 2023",
+     "refs": "Fan 2023 [human cohort; germ-free mouse validation arm]",
      "note": "Enriched in healthy controls vs AN.",
      "links": [
       {
@@ -7709,7 +7709,7 @@
        "url": "https://www.nature.com/articles/s41564-023-01355-5"
       }
      ],
-     "evidence": "animal",
+     "evidence": "human-cohort",
      "population": "unknown"
     },
     {
@@ -7780,7 +7780,7 @@
      "id": "seed_579",
      "name": "Bifidobacterium",
      "dir": "down",
-     "refs": "Neuroscience 2025 (117 children: ASD/ADHD/AN vs healthy; common ↓Bifidobacterium across all three conditions)",
+     "refs": "Neuroscience 2025 (117 children: ASD/ADHD/AN vs healthy; common ↓Bifidobacterium across all three conditions) [human data + animal mechanistic arm]",
      "note": "Reduced abundance common across AN, ASD, and ADHD in a 117-child cohort (n=21 AN vs 52 healthy controls); also negatively correlated with reduced global brain weight in a rat AN model.",
      "links": [
       {
@@ -8837,7 +8837,7 @@
      "id": "seed_ms_t3",
      "name": "Blautia",
      "dir": "down",
-     "refs": "iMSMS 2022",
+     "refs": "iMSMS 2022 [human data + animal mechanistic arm]",
      "note": "iMSMS reports depleted Blautia species in MS; the MS-associated Blautia wexlerae drives inflammation and a lower Bifidobacterium:Akkermansia ratio in mouse transfer (PNAS 2025). Caveat: some reviews report Blautia ↑ in MS — direction is contested. Cross-ref: Blautia is ↓ in autism as well. Further reinforcing the contested picture: the largest MS microbiome meta-analysis to date (14 cohorts, n=1,493) found RRMS samples enriched in a Blautia-dominated enterotype, i.e. pointing up, not down.",
      "links": [
       {
@@ -8858,7 +8858,7 @@
      "id": "seed_ms_t4",
      "name": "Eisenbergiella tayi",
      "dir": "up",
-     "refs": "iMSMS 2022",
+     "refs": "iMSMS 2022 [human data + animal mechanistic arm]",
      "note": "Enriched in MS (iMSMS shotgun). Cross-ref: Eisenbergiella (incl. E. tayi and E. massiliensis) is also ↑ in fibromyalgia (Minerbi) and rises in rodent learned-helplessness depression models — a recurring 'up' signal across pain / neuro-inflammatory conditions. Upgraded from correlational to causal evidence by a 2025 PNAS study: ileal microbiota from the MS-affected twin in identical-twin pairs induced EAE (the standard MS mouse model) at substantially higher rates than microbiota from the healthy co-twin, and E. tayi (with Lachnoclostridium) was specifically identified as one of the likely active, disease-triggering organisms.",
      "links": [
       {
@@ -9262,7 +9262,7 @@
      "id": "new_ms_t28",
      "name": "Lachnoclostridium",
      "dir": "up",
-     "refs": "PMID 40258140",
+     "refs": "PMID 40258140 [human data + animal mechanistic arm]",
      "note": "Identified as one of two likely CAUSAL organisms (alongside Eisenbergiella tayi, tracked separately above) in a 2025 PNAS study: ileal microbiota from the MS-affected twin in identical-twin pairs induced EAE (the standard MS mouse model) in germ-free mice at substantially higher rates than microbiota from the healthy co-twin. Note this genus-level finding runs opposite this app's own Lachnospiraceae (family-level, down) entry for MS — both are real, from different studies at different taxonomic resolutions, not a data error; family-level aggregates can move one way while a specific member genus moves the other.",
      "links": [
       {
@@ -11519,7 +11519,7 @@
      "id": "new_t2d_t1",
      "name": "Akkermansia muciniphila",
      "dir": "both",
-     "refs": "PMC12343160 (cross-sectional/mechanistic) vs. PMID 42202790 (prospective cohort)",
+     "refs": "PMC12343160 (cross-sectional/mechanistic) vs. PMID 42202790 (prospective cohort) [human data + animal mechanistic arm]",
      "note": "Genuinely conflicting direction depending on study design. Cross-sectional/mechanistic mouse+human work found it depleted in established T2D, tying its loss to insulin resistance via ghrelin signalling. But a 2026 prospective Swedish cohort (n=4,685, 383 incident cases over median 5.3y) found the opposite: higher baseline abundance predicted increased future T2D risk, with a diet-dependent (fiber-modified) effect. Marked \"both\" since these measure different things (established-disease depletion vs. baseline-predicts-onset) and neither supersedes the other.",
      "links": [
       {
@@ -11996,8 +11996,8 @@
      "id": "new_ra_t1",
      "name": "Prevotella copri",
      "dir": "up",
-     "refs": "eLife; sample-site caveat PMID 33450018",
-     "note": "The signature RA finding: expanded in new-onset untreated RA, correlates with disease, and colonizing mice increases susceptibility to arthritis via Th17 induction. SAMPLE-SITE CAVEAT: the 26-study review does find Prevotella increased in RA, but in the ORAL CAVITY, not the gut. That does not corroborate a gut claim (Rule 4) — it may be a separate phenomenon.",
+     "refs": "eLife; sample-site caveat PMID 33450018 [human data + animal mechanistic arm]",
+     "note": "Prevotella copri is the signature RA finding (Scher 2013, eLife): P. copri expanded in new-onset untreated RA, correlates with disease, and colonizing mice increases arthritis susceptibility via Th17 induction. SAMPLE-SITE CAVEAT: a 26-study review finds Prevotella increased in RA but in the ORAL CAVITY, not gut (Rule 4) - may be a separate phenomenon.",
      "links": [
       {
        "id": "new_ra_t1_l1",
@@ -12017,7 +12017,7 @@
      "id": "new_ra_t2",
      "name": "Collinsella",
      "dir": "up",
-     "refs": "PMID 32272752",
+     "refs": "PMID 32272752 [human data + animal mechanistic arm]",
      "note": "Overrepresented in RA; reduces tight-junction protein expression in gut epithelium and worsens arthritis severity in a transgenic mouse model.",
      "links": [
       {
@@ -12187,7 +12187,7 @@
      "id": "seed_719",
      "name": "Ligilactobacillus",
      "dir": "down",
-     "refs": "Phytomedicine 2026 (16S, RA patients + CIA rats; RA patients: ↓Ligilactobacillus/Escherichia-Shigella, ↑Blautia)",
+     "refs": "Phytomedicine 2026 (16S, RA patients + CIA rats; RA patients: ↓Ligilactobacillus/Escherichia-Shigella, ↑Blautia) [human data + animal mechanistic arm]",
      "note": "Decreased in RA patients vs healthy controls (16S rRNA), alongside decreased Escherichia-Shigella and increased Blautia — a pattern corroborated in a parallel CIA rat model. Note: Escherichia-Shigella direction conflicts with a separate baseline comparison finding it elevated in RA (see flagged conflict).",
      "links": [
       {
@@ -12203,7 +12203,7 @@
      "id": "seed_721",
      "name": "Blautia",
      "dir": "up",
-     "refs": "Phytomedicine 2026 (16S, RA patients + CIA rats; RA patients: ↓Ligilactobacillus/Escherichia-Shigella, ↑Blautia)",
+     "refs": "Phytomedicine 2026 (16S, RA patients + CIA rats; RA patients: ↓Ligilactobacillus/Escherichia-Shigella, ↑Blautia) [human data + animal mechanistic arm]",
      "note": "Increased in RA patients vs healthy controls (16S rRNA), corroborated in a parallel CIA rat model where elevated Blautia was likewise reduced by therapeutic intervention.",
      "links": [
       {
@@ -13032,7 +13032,7 @@
      "id": "new_aud_t14",
      "name": "Roseburia",
      "dir": "down",
-     "refs": "Korean twin cohort, n=410 fecal samples/212 twins (PMID 31866426)",
+     "refs": "Korean twin cohort, n=410 fecal samples/212 twins (PMID 31866426) [human data + animal mechanistic arm]",
      "note": "Strong association between low AUDIT (alcohol use) scores and higher Roseburia abundance in a twin cohort controlling for genetics; administering Roseburia ameliorated alcoholic fatty liver in mice, partly via restoring gut barrier integrity (Occludin upregulation).",
      "links": [
       {
@@ -13755,7 +13755,7 @@
      "id": "new_tbi_t6",
      "name": "Hungatella hathewayi",
      "dir": "down",
-     "refs": "PMID 41617714",
+     "refs": "PMID 41617714 [human data + animal mechanistic arm]",
      "note": "Subgroup finding, not simple TBI-vs-healthy: within a clinical-trial cohort of mild-TBI patients, those who went on to develop cognitive impairment had lower Hungatella hathewayi than those who didn't — a rat mechanism arm in the same study supported a protective, cognition-related role.",
      "links": [
       {
@@ -13966,7 +13966,7 @@
      "id": "new_t1d_t10",
      "name": "Parabacteroides distasonis",
      "dir": "up",
-     "refs": "PMID 40823966",
+     "refs": "PMID 40823966 [NOD mouse model; human relevance untested]",
      "note": "ANIMAL MODEL, not human data — recorded because the mechanism is unusually specific. P. distasonis carries an insB9-23 mimic in its hprt protein, and colonising female NOD mice induced severe insulitis via molecular mimicry, activating insB9-23-specific T cells and accelerating diabetes onset. Notably targeted: it did NOT shift overall microbiome composition, metabolite profiles, or general immune activation, and heat-inactivated bacteria had no effect — so live organisms selectively activating diabetes-relevant autoimmunity, rather than broad inflammation. Human relevance untested.",
      "links": [
       {
@@ -15753,7 +15753,7 @@
      "id": "new_prog_t1",
      "name": "Bifidobacterium",
      "dir": "up",
-     "refs": "PMID 30995472",
+     "refs": "PMID 30995472 [human data + animal mechanistic arm]",
      "note": "Progesterone administration increased Bifidobacterium relative abundance during late pregnancy (human cohort + mouse mechanistic follow-up in the same paper).",
      "links": [
       {
