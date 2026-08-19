@@ -1197,7 +1197,7 @@
     },
     {
      "symptom": "Reduced socializing",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Lactobacillus — Reduced socializing: From this app's Autism (ASD) condition data.",
      "ref": "PMC9656367",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
      "evidence": "unclassified",
@@ -1221,7 +1221,7 @@
     },
     {
      "symptom": "Overstimulation",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Lactobacillus — Overstimulation: From this app's Autism (ASD) condition data.",
      "ref": "PMC9656367",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9656367/pdf/jir-15-6213.pdf",
      "evidence": "unclassified",
@@ -1765,7 +1765,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Eubacterium — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -1773,7 +1773,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Eubacterium — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -1781,7 +1781,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Eubacterium — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2362,7 +2362,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Clostridium — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -2370,7 +2370,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Clostridium — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -2598,7 +2598,7 @@
     },
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Ruminococcaceae — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2606,7 +2606,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Ruminococcaceae — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2614,7 +2614,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Ruminococcaceae — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2796,7 +2796,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Lachnospiraceae — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2804,7 +2804,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Lachnospiraceae — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2812,7 +2812,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Lachnospiraceae — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2928,7 +2928,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Lachnospira — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2936,7 +2936,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Lachnospira — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -2944,7 +2944,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Lachnospira — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -3449,7 +3449,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Anaerostipes — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -3457,7 +3457,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Anaerostipes — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -3465,7 +3465,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Anaerostipes — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -3731,7 +3731,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Fusicatenibacter — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -3739,7 +3739,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Fusicatenibacter — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -3747,7 +3747,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Fusicatenibacter — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -3793,7 +3793,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "note": "Proteobacteria — Systemic inflammation: INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -3801,7 +3801,7 @@
     },
     {
      "symptom": "Fatigue",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "note": "Proteobacteria — Fatigue: INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -3912,7 +3912,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Lachnoclostridium — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -3920,7 +3920,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Lachnoclostridium — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -4031,7 +4031,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Eisenbergiella — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -4039,7 +4039,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Eisenbergiella — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -4062,7 +4062,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Hungatella — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -4070,7 +4070,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Hungatella — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -4086,7 +4086,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Agathobacter — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4094,7 +4094,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Agathobacter — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4102,7 +4102,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Agathobacter — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4180,7 +4180,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Flavonifractor — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -4188,7 +4188,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Flavonifractor — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -4276,7 +4276,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Butyricicoccus — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4284,7 +4284,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Butyricicoccus — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4292,7 +4292,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Butyricicoccus — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4460,7 +4460,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Christensenellaceae — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4468,7 +4468,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Christensenellaceae — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4476,7 +4476,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Christensenellaceae — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4597,7 +4597,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Gemmiger — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4605,7 +4605,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Gemmiger — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4613,7 +4613,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Gemmiger — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4753,7 +4753,7 @@
     },
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Phascolarctobacterium — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4761,7 +4761,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Phascolarctobacterium — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4769,7 +4769,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Phascolarctobacterium — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4905,7 +4905,7 @@
     },
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Odoribacter — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4913,7 +4913,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Odoribacter — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -4921,7 +4921,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Odoribacter — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -5057,7 +5057,7 @@
    "down": [
     {
      "symptom": "Reduced socializing",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Ruminococcus gnavus — Reduced socializing: From this app's Autism (ASD) condition data.",
      "ref": "PMC7716279",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/",
      "evidence": "unclassified",
@@ -5065,7 +5065,7 @@
     },
     {
      "symptom": "Overstimulation",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Ruminococcus gnavus — Overstimulation: From this app's Autism (ASD) condition data.",
      "ref": "PMC7716279",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/",
      "evidence": "unclassified",
@@ -5073,7 +5073,7 @@
     },
     {
      "symptom": "Understimulation",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Ruminococcus gnavus — Understimulation: From this app's Autism (ASD) condition data.",
      "ref": "PMC7716279",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7716279/",
      "evidence": "unclassified",
@@ -5143,7 +5143,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Subdoligranulum — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -5151,7 +5151,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Subdoligranulum — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -5159,7 +5159,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Subdoligranulum — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -5356,7 +5356,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Erysipelatoclostridium — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -5364,7 +5364,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Erysipelatoclostridium — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -5379,7 +5379,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Enterocloster — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -5387,7 +5387,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Enterocloster — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -5410,7 +5410,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Catenibacterium — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -5418,7 +5418,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Catenibacterium — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6044,7 +6044,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "note": "Bilophila — Systemic inflammation: INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -6052,7 +6052,7 @@
     },
     {
      "symptom": "Fatigue",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "note": "Bilophila — Fatigue: INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -6109,7 +6109,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Tyzzerella — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6117,7 +6117,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Tyzzerella — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6141,7 +6141,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Anaerococcus — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6149,7 +6149,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Anaerococcus — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6164,7 +6164,7 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "note": "Succinivibrio — Systemic inflammation: INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -6172,7 +6172,7 @@
     },
     {
      "symptom": "Fatigue",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "note": "Succinivibrio — Fatigue: INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -6210,7 +6210,7 @@
    "up": [
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "note": "Haemophilus — Systemic inflammation: INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -6218,7 +6218,7 @@
     },
     {
      "symptom": "Fatigue",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "note": "Haemophilus — Fatigue: INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -6326,7 +6326,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Pseudoflavonifractor — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6334,7 +6334,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Pseudoflavonifractor — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6356,7 +6356,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Christensenella — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6364,7 +6364,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Christensenella — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6372,7 +6372,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Christensenella — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6387,7 +6387,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Intestinimonas — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6395,7 +6395,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Intestinimonas — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6403,7 +6403,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Intestinimonas — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6494,7 +6494,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
+     "note": "Klebsiella — Systemic inflammation: INFERRED from inflammation biology, not measured in this symptom. Facultative-anaerobe / LPS-bearing taxon; blooms are a recognized dysbiosis and endotoxemia signature.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -6502,7 +6502,7 @@
     },
     {
      "symptom": "Fatigue",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
+     "note": "Klebsiella — Fatigue: INFERRED from inflammation biology, not measured in this symptom. Endotoxin-driven low-grade inflammation is commonly associated with fatigue.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Biomed Res Int 2017 review of the PROTEOBACTERIA PHYLUM in disease (PMC5688358 / PMID 29230419). It does not study this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5688358/",
      "evidence": "review",
@@ -6541,7 +6541,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Coprobacillus — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6549,7 +6549,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Coprobacillus — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6590,7 +6590,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Ruthenibacterium — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6598,7 +6598,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Ruthenibacterium — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6606,7 +6606,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Ruthenibacterium — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6720,7 +6720,7 @@
    "down": [
     {
      "symptom": "Bloating & gas",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
+     "note": "Butyricimonas — Bloating & gas: INFERRED from SCFA biology, not measured in this symptom. Short-chain-fatty-acid-producing taxon; depletion impairs fiber fermentation, a recognized driver of bloating/irregularity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6728,7 +6728,7 @@
     },
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
+     "note": "Butyricimonas — Gut barrier dysfunction: INFERRED from SCFA biology, not measured in this symptom. SCFA loss weakens colonocyte energy supply and barrier integrity.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6736,7 +6736,7 @@
     },
     {
      "symptom": "Systemic inflammation",
-     "note": "INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
+     "note": "Butyricimonas — Systemic inflammation: INFERRED from SCFA biology, not measured in this symptom. Reduced SCFA output is consistently tied to low-grade inflammatory states.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Parada Venegas 2019, Front Immunol - a general review reporting that SCFA-producing bacteria are reduced in IBD (PMC6421268 / PMID 30915065). It does not measure this taxon in this symptom.",
      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6421268/",
      "evidence": "review",
@@ -6750,7 +6750,7 @@
    "up": [
     {
      "symptom": "Gut barrier dysfunction",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Erysipelotrichaceae — Gut barrier dysfunction: INFERRED from inflammation biology, not measured in this symptom. Pathobiont-leaning taxon associated with mucin degradation / barrier disruption in IBD-flare microbiome studies. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -6758,7 +6758,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
+     "note": "Erysipelotrichaceae — Abdominal pain: INFERRED from inflammation biology, not measured in this symptom. Blooms of this group co-occur with flares of GI pain and inflammation. Source is about IBD and C. difficile infection, not this symptom.",
      "ref": "MECHANISTIC INFERENCE, not a measurement: Gut Microbes 2020 review of IBD and C. difficile infection (PMC7524151 / PMID 32129694). It does not study this symptom.",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524151/",
      "evidence": "review",
@@ -8251,7 +8251,7 @@
     },
     {
      "symptom": "Bloating & gas",
-     "note": "Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.",
+     "note": "Faecalibacterium prausnitzii — Bloating & gas: Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.",
      "ref": "Pittayanon 2019",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30940523/",
      "evidence": "unclassified",
@@ -8259,7 +8259,7 @@
     },
     {
      "symptom": "Abdominal pain",
-     "note": "Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.",
+     "note": "Faecalibacterium prausnitzii — Abdominal pain: Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.",
      "ref": "Pittayanon 2019",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30940523/",
      "evidence": "unclassified",
@@ -8267,7 +8267,7 @@
     },
     {
      "symptom": "Diarrhea",
-     "note": "Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.",
+     "note": "Faecalibacterium prausnitzii — Diarrhea: Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.",
      "ref": "Pittayanon 2019",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30940523/",
      "evidence": "unclassified",
@@ -8275,7 +8275,7 @@
     },
     {
      "symptom": "Constipation",
-     "note": "Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.",
+     "note": "Faecalibacterium prausnitzii — Constipation: Anti-inflammatory butyrate producer consistently depleted in IBS; a network hub species. Cross-ref: also ↓ in fibromyalgia, MS and depression.",
      "ref": "Pittayanon 2019",
      "url": "https://pubmed.ncbi.nlm.nih.gov/30940523/",
      "evidence": "unclassified",
@@ -8561,7 +8561,7 @@
     },
     {
      "symptom": "Reduced socializing",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Escherichia — Reduced socializing: From this app's Autism (ASD) condition data.",
      "ref": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/",
      "evidence": "unclassified",
@@ -8617,7 +8617,7 @@
     },
     {
      "symptom": "Overstimulation",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Escherichia — Overstimulation: From this app's Autism (ASD) condition data.",
      "ref": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/",
      "evidence": "unclassified",
@@ -8625,7 +8625,7 @@
     },
     {
      "symptom": "Understimulation",
-     "note": "From this app's Autism (ASD) condition data.",
+     "note": "Escherichia — Understimulation: From this app's Autism (ASD) condition data.",
      "ref": "Strati 2017 (Microbiome; ↓Alistipes, Bilophila, Dialister, Parabacteroides, Veillonella; ↑Escherichia-Shigella in ASD)",
      "url": "https://pubmed.ncbi.nlm.nih.gov/28222761/",
      "evidence": "unclassified",
