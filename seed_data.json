@@ -14708,6 +14708,54 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "new_pcos_1_sid_akk",
+     "name": "Akkermansia",
+     "dir": "down",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) - narrative review of the female gut microbiome",
+     "note": "Reduced in PCOS (Siddiqui 2022 review) - lower abundance of this mucin-degrading, anti-inflammatory keystone genus is a recurrent PCOS finding.",
+     "links": [
+      {
+       "id": "new_pcos_1_sid_akk_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      }
+     ],
+     "evidence": "review",
+     "population": "female"
+    },
+    {
+     "id": "new_pcos_1_sid_rumc",
+     "name": "Ruminococcaceae",
+     "dir": "down",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) - narrative review of the female gut microbiome",
+     "note": "Reduced in PCOS (Siddiqui 2022 review) - part of the lower SCFA-producer signal in PCOS gut microbiota.",
+     "links": [
+      {
+       "id": "new_pcos_1_sid_rumc_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      }
+     ],
+     "evidence": "review",
+     "population": "female"
+    },
+    {
+     "id": "new_pcos_1_sid_bvulg",
+     "name": "Bacteroides vulgatus",
+     "dir": "up",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) - narrative review of the female gut microbiome",
+     "note": "Elevated in PCOS; B. vulgatus specifically was significantly higher than controls and negatively correlated with the bile acids GDCA/TUDCA (Siddiqui 2022 review). Species-level detail consistent with this condition's genus-level Bacteroides up.",
+     "links": [
+      {
+       "id": "new_pcos_1_sid_bvulg_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      }
+     ],
+     "evidence": "review",
+     "population": "female"
     }
    ]
   },
@@ -15156,6 +15204,54 @@
      ],
      "evidence": "derived",
      "population": "n/a"
+    },
+    {
+     "id": "new_meno_1_sid_bif",
+     "name": "Bifidobacterium",
+     "dir": "down",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) - narrative review of the female gut microbiome",
+     "note": "Reduced in postmenopausal women (Siddiqui 2022 review) - part of the shift toward fewer SCFA-producers and a more male-like gut profile after estrogen/progesterone decline.",
+     "links": [
+      {
+       "id": "new_meno_1_sid_bif_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      }
+     ],
+     "evidence": "review",
+     "population": "female"
+    },
+    {
+     "id": "new_meno_1_sid_alis",
+     "name": "Alistipes",
+     "dir": "down",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) - narrative review of the female gut microbiome",
+     "note": "Lower in postmenopausal women (Siddiqui 2022 review).",
+     "links": [
+      {
+       "id": "new_meno_1_sid_alis_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      }
+     ],
+     "evidence": "review",
+     "population": "female"
+    },
+    {
+     "id": "new_meno_1_sid_rumg",
+     "name": "Ruminococcus",
+     "dir": "down",
+     "refs": "Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397) - narrative review of the female gut microbiome",
+     "note": "Reduced in postmenopausal women (Siddiqui 2022 review).",
+     "links": [
+      {
+       "id": "new_meno_1_sid_rumg_l1",
+       "label": "Siddiqui et al. 2022, Biology - The Gut Microbiome and Female Health (PMID 36421397)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+      }
+     ],
+     "evidence": "review",
+     "population": "female"
     }
    ]
   },
@@ -15906,13 +16002,23 @@
      "id": "new_prog_t1",
      "name": "Bifidobacterium",
      "dir": "up",
-     "refs": "PMID 30995472 [human data + animal mechanistic arm]",
-     "note": "Progesterone increased Bifidobacterium relative abundance SPECIFICALLY in LATE PREGNANCY (human cohort + mouse mechanistic follow-up, Nuriel-Ohayon 2019). CONTEXT-LOCKED: this late-pregnancy cohort is the only human evidence behind the progesterone->Bifidobacterium link, so it must not be read as a general non-pregnant progesterone effect. The butyrate-producer cross-feeding inferences below descend from this entry and inherit the same pregnancy limit.",
+     "refs": "SUPPORTING: PMID 30995472 (Nuriel-Ohayon 2019, Cell Rep — human late-pregnancy cohort + mouse + IN VITRO direct effect); PMID 35764953 (Kato 2022, BMC Oral Health — pregnant vs non-pregnant saliva). DOSE-DEPENDENT DISSENT: PMID 36992682 (Hammouda 2023, Front Cell Infect Microbiol — supraphysiological oral-progesterone in vitro REDUCED B. longum ~3 logs)",
+     "note": "Progesterone→Bifidobacterium is DOSE-DEPENDENT. PHYSIOLOGICAL progesterone favours Bifidobacterium: it rose in late-pregnancy women+mice AND progesterone directly increased Bifidobacterium richness IN VITRO (a pregnancy-INDEPENDENT mechanism) - Nuriel-Ohayon 2019; and Bifidobacterium tracks progesterone in pregnant-vs-non-pregnant saliva (Kato 2022, oral). DISSENT: at supraphysiological ORAL-progesterone intestinal concentrations (~212 uM) an in-vitro study REDUCED B. longum ~3 logs with lower biofilm/SCFA (Hammouda 2023). So physiological UP, pharmacological-oral DOWN - a dose-response, not a flat contradiction. The human ABUNDANCE data are pregnancy-context; the in-vitro direct effect is the non-pregnant piece. Cross-feeding inferences below descend from the physiological up-direction and keep the pregnancy context of the human data.",
      "links": [
       {
        "id": "new_prog_t1_l1",
-       "label": "Nuriel-Ohayon et al. 2019, Cell Rep",
+       "label": "Nuriel-Ohayon et al. 2019, Cell Rep — progesterone increases Bifidobacterium in late pregnancy; in-vitro arm shows direct, pregnancy-independent effect (PMID 30995472)",
        "url": "https://pubmed.ncbi.nlm.nih.gov/30995472/"
+      },
+      {
+       "id": "new_prog_t1_l2",
+       "label": "Kato et al. 2022, BMC Oral Health — Bifidobacterium elevated in saliva of pregnant vs non-pregnant women alongside progesterone (PMID 35764953)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35764953/"
+      },
+      {
+       "id": "new_prog_t1_l3",
+       "label": "Hammouda et al. 2023, Front Cell Infect Microbiol — DISSENT: supraphysiological oral-progesterone (~212 uM) reduced B. longum ~3 logs in vitro (PMID 36992682)",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/36992682/"
       }
      ],
      "evidence": "human-cohort",

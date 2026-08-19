@@ -1,0 +1,85 @@
+{
+ "_about": [
+  "Bidirectional interactions between host SEX HORMONES (estradiol, progesterone)",
+  "and bacteria - a dimension neither seed_data.json (condition -> taxon) nor",
+  "cross_feeding.json (bacterium -> bacterium) captures.",
+  "",
+  "The mind-blowing idea: this is not a one-way street. Bacteria do not merely",
+  "respond to host hormone levels; some USE host steroids as growth factors,",
+  "and others CATABOLIZE them - so the microbiota is both an audience for and an",
+  "editor of the host's hormonal state. The cross-talk is strongest in mucosal",
+  "environments (oral cavity, gut).",
+  "",
+  "direction field:",
+  "  hormone->bacterium : the host steroid changes the bacterium (growth, biofilm)",
+  "  bacterium->hormone : the bacterium chemically changes the steroid (catabolism)",
+  "",
+  "site field: where the interaction is demonstrated - oral cavity vs gut matters,",
+  "the same rank/site discipline the rest of this atlas uses. Most Prevotella-",
+  "hormone work is ORAL (periodontal/gingival); the steroid-reductase work is GUT.",
+  "",
+  "IMPORTANT SCOPE NOTE: much of the Prevotella evidence is in-vitro at",
+  "supraphysiological (often 100x physiological) hormone concentrations, and some",
+  "in-vitro oral-biofilm work found NO compositional change - see per-entry notes.",
+  "Read this as a mechanistic map of what CAN happen, not proof it dominates in vivo."
+ ],
+ "interactions": [
+  {
+   "id": "hi_prevotella_vitk_substitution",
+   "taxon": "Prevotella intermedia",
+   "hormones": ["estradiol", "progesterone"],
+   "direction": "hormone->bacterium",
+   "mechanism": "vitamin K substitution (growth factor)",
+   "effect": "Prevotella intermedia (formerly Bacteroides melaninogenicus subsp. intermedius) requires vitamin K (naphthoquinones) for electron transport; it can substitute estradiol or progesterone for vitamin K, so host sex steroids let it grow where vitamin K is scarce.",
+   "site": "oral cavity",
+   "evidence": "in-vitro",
+   "note": "The classic result. Growth curves showed B. melaninogenicus subsp. intermedius and subsp. melaninogenicus - but NOT B. gingivalis - could substitute progesterone or estradiol for vitamin K, taking up 2.6-5.4 x 10^-4 umol of steroid per ug cell protein. This is the leading mechanistic explanation for pregnancy gingivitis: rising progesterone/estradiol feed Prevotella at the gumline.",
+   "ref": "Kornman & Loesche 1982, Infect Immun (PMID 6119293)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/6119293/"
+  },
+  {
+   "id": "hi_prevotella_biofilm_growth",
+   "taxon": "Prevotella intermedia",
+   "hormones": ["estradiol", "progesterone"],
+   "direction": "hormone->bacterium",
+   "mechanism": "biofilm / population growth stimulation",
+   "effect": "Estradiol regulates planktonic growth, coaggregation, polysaccharide production and biofilm formation of the Prevotella intermedia group (P. intermedia, P. nigrescens, P. pallens) - enhancing the physiological activity and biofilm of specific Prevotella groups.",
+   "site": "oral cavity",
+   "evidence": "in-vitro",
+   "note": "Effects differ by species and are concentration-dependent, so this is 'enhances specific groups', not a blanket 'more Prevotella'. A separate saliva-derived oral-biofilm model found progesterone and estradiol raised PROTEOLYTIC activity to levels comparable with menadione (vitamin K) supplementation - consistent with the vitamin-K-substitution mechanism operating in a mixed community - though that study found no overall shift in biofilm composition (PMID 37621393).",
+   "ref": "Yokoyama et al. 2014, Anaerobe/Arch Oral Biol - estradiol & Prevotella intermedia group biofilm (PMID 24594108)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/24594108/"
+  },
+  {
+   "id": "hi_prevotella_steroid_catabolism",
+   "taxon": "Prevotella",
+   "hormones": ["progesterone", "pregnenolone", "estradiol"],
+   "direction": "bacterium->hormone",
+   "mechanism": "steroid catabolism / breakdown",
+   "effect": "Prevotella species possess genes and hydroxysteroid dehydrogenase (HSD) enzymes that catabolize/degrade steroid hormones (progesterone, pregnenolone, estradiol), modifying their chemical structure and participating in local or systemic hormonal clearance.",
+   "site": "oral cavity and gut",
+   "evidence": "genomic / enzymatic",
+   "note": "The return leg that makes the relationship bidirectional: the same bacteria that eat host steroids for growth also chemically transform them. Balance between steroid uptake and breakdown is mediated by HSDs. This sits inside a broader gut-bacterial steroid-metabolism story (see hi_gut_reductases_progesterone).",
+   "ref": "Mechanistic context reviewed in Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397); HSD/steroid-metabolism enzymology in gut bacteria: Nature Communications 2025 (PMID 40628728)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
+  },
+  {
+   "id": "hi_gut_reductases_progesterone",
+   "taxon": "gut bacteria (multiple genera)",
+   "hormones": ["progesterone"],
+   "direction": "bacterium->hormone",
+   "mechanism": "reductase biotransformation",
+   "effect": "Common human gut bacteria encode Delta4-3-ketosteroid 5-beta-reductase, 3-beta-hydroxysteroid dehydrogenase/Delta5-4 isomerase and Delta6-3-ketosteroid reductase enzyme families; a Delta4-3-ketosteroid 5-beta-reductase reduces progesterone to 5-beta-dihydroprogesterone in the gut.",
+   "site": "gut",
+   "evidence": "genomic / enzymatic",
+   "note": "Broadens the Prevotella-specific picture to the whole gut community: the microbiome is a genuine node in steroid metabolism, not just a bystander. Notably these enzymes are ENRICHED IN FEMALES over males in metagenomes - a possible microbial contributor to sex differences in steroid handling. Connects to this app's Progesterone condition (Gordonibacter/Eggerthella producing progestins from glucocorticoids, PMID 38795705) - production and reduction are two ends of the same microbial steroid-metabolism axis.",
+   "ref": "Identification of gut bacteria reductases that biotransform steroid hormones, Nature Communications 2025 (PMID 40628728)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40628728/"
+  }
+ ],
+ "related_condition_entries": [
+  "seed_data.json Progesterone -> Prevotella intermedia (up, oral): the hormone->bacterium growth effect, entered as a condition->taxon row",
+  "seed_data.json Progesterone -> Bacteroides (up, oral): same vitamin-K-substitution mechanism",
+  "seed_data.json Progesterone -> Gordonibacter/Eggerthella (up): bacterium->hormone PRODUCTION (glucocorticoids -> progestins), the counterpart to reduction/catabolism here"
+ ]
+}
