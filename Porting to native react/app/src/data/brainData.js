@@ -178,13 +178,18 @@ export const BRAIN_DATA = [
         "id": "brain_asd_t9",
         "name": "Medial prefrontal cortex",
         "dir": "down",
-        "refs": "PMID 42017052",
-        "note": "Reduced long-range functional connectivity, part of the default mode network's 'exteroceptive level' (self-other differentiation), per a 2026 systematic review of 49 fMRI/sMRI studies.",
+        "refs": "PMID 42017052; social-deficit framing contested: PMID 32431157",
+        "note": "Reduced long-range functional connectivity, part of the default mode network's 'exteroceptive level' (self-other differentiation), per a 2026 systematic review of 49 fMRI/sMRI studies. CAVEAT on the social reading: the synthesized 'reduced social/mentalizing ability' should NOT be taken as a universal one-sided autistic deficit. Theory-of-mind difficulty is common but not universal in autism, and the 'double-empathy problem' reframes many social breakdowns as BIDIRECTIONAL mismatches between neurotypes — autistic-to-autistic communication is as effective as neurotypical-to-neurotypical (Crompton 2020). So this connectivity finding is about atypical self/other processing, not evidence of a global empathy or social-skill deficit.",
         "links": [
           {
             "id": "brain_asd_t9_l1",
             "label": "Systematic review, Psychoradiology 2026 (PMID 42017052)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/42017052/"
+          },
+          {
+            "id": "brain_asd_t9_l2",
+            "label": "Crompton et al. 2020, Autism — autistic peer-to-peer information transfer is highly effective (double-empathy evidence) (PMID 32431157)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32431157/"
           }
         ]
       },
@@ -384,8 +389,8 @@ export const BRAIN_DATA = [
         "id": "brain_asd_fusiform",
         "name": "Fusiform gyrus",
         "dir": "down",
-        "refs": "PMID 40138749; PMID 40304890",
-        "note": "Fusiform (face area) hypoactivation in ASD; underlies difficulty reading faces and emotional expressions.",
+        "refs": "PMID 40138749; PMID 40304890; interpretation contested: PMID 15750588, PMID 15219586",
+        "note": "Fusiform face-area HYPOACTIVATION is the most-replicated face-processing finding in ASD, but its interpretation is CONTESTED. It largely reflects reduced eye/gaze fixation rather than a fixed inability to process faces: right-fusiform activity NORMALIZES when autistic people are directed to fixate the eyes of a face (Dalton 2005), and the fusiform activates typically when autistic people actually attend to faces (Hadjikhani 2004). So read 'difficulty reading faces' as gaze/attention-mediated and heterogeneous — not a hardwired deficit, and face-processing draws on a distributed social-perception network, not the fusiform alone.",
         "links": [
           {
             "id": "brain_asd_fusiform_l1",
@@ -396,6 +401,16 @@ export const BRAIN_DATA = [
             "id": "brain_asd_fusiform_l2",
             "label": "FFA cortical-thickness abnormality specific to autism",
             "url": "https://pubmed.ncbi.nlm.nih.gov/40304890/"
+          },
+          {
+            "id": "brain_asd_fusiform_l3",
+            "label": "Dalton et al. 2005, Nat Neurosci — fusiform activity normalizes with eye fixation (gaze artifact) (PMID 15750588)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15750588/"
+          },
+          {
+            "id": "brain_asd_fusiform_l4",
+            "label": "Hadjikhani et al. 2004, Neuroimage — fusiform activates when autistic people attend to faces (PMID 15219586)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15219586/"
           }
         ]
       },
