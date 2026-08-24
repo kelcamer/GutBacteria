@@ -57,9 +57,9 @@ export const INTERVENTION_NAMES = [
   // is the point: synthetics are structurally hardened and largely resist the
   // gut-bacterial metabolism the natural hormones undergo, so their microbiome
   // effect is a distinct - and mostly untested - question.
-  'Synthetic Estrogen',
-  'Synthetic Progesterone',
-  'Synthetic Testosterone',
+  'Estrogen (synthetic)',
+  'Progesterone (synthetic)',
+  'Testosterone (synthetic)',
 ]
 
 const INTERVENTION_SET = new Set(INTERVENTION_NAMES)

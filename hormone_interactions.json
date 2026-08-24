@@ -32,7 +32,10 @@
    "id": "hi_prevotella_vitk_substitution",
    "tldr": "TLDR: oral Prevotella can use your estrogen and progesterone as a growth 'vitamin' (vitamin-K substitute).",
    "taxon": "Prevotella intermedia",
-   "hormones": ["estradiol", "progesterone"],
+   "hormones": [
+    "estradiol",
+    "progesterone"
+   ],
    "direction": "hormone->bacterium",
    "mechanism": "vitamin K substitution (growth factor)",
    "effect": "Prevotella intermedia (formerly Bacteroides melaninogenicus subsp. intermedius) requires vitamin K (naphthoquinones) for electron transport; it can substitute estradiol or progesterone for vitamin K, so host sex steroids let it grow where vitamin K is scarce.",
@@ -46,7 +49,10 @@
    "id": "hi_prevotella_biofilm_growth",
    "tldr": "TLDR: estrogen and progesterone can thicken Prevotella's biofilm and boost its growth.",
    "taxon": "Prevotella intermedia",
-   "hormones": ["estradiol", "progesterone"],
+   "hormones": [
+    "estradiol",
+    "progesterone"
+   ],
    "direction": "hormone->bacterium",
    "mechanism": "biofilm / population growth stimulation",
    "effect": "Estradiol regulates planktonic growth, coaggregation, polysaccharide production and biofilm formation of the Prevotella intermedia group (P. intermedia, P. nigrescens, P. pallens) - enhancing the physiological activity and biofilm of specific Prevotella groups.",
@@ -60,7 +66,11 @@
    "id": "hi_prevotella_steroid_catabolism",
    "tldr": "TLDR: Prevotella can break your progesterone and estrogen down, clearing them locally.",
    "taxon": "Prevotella",
-   "hormones": ["progesterone", "pregnenolone", "estradiol"],
+   "hormones": [
+    "progesterone",
+    "pregnenolone",
+    "estradiol"
+   ],
    "direction": "bacterium->hormone",
    "mechanism": "steroid catabolism / breakdown",
    "effect": "Prevotella species possess genes and hydroxysteroid dehydrogenase (HSD) enzymes that catabolize/degrade steroid hormones (progesterone, pregnenolone, estradiol), modifying their chemical structure and participating in local or systemic hormonal clearance.",
@@ -74,7 +84,9 @@
    "id": "hi_gut_reductases_progesterone",
    "tldr": "TLDR: gut bacteria chemically convert your progesterone (e.g. into 5-beta-dihydroprogesterone) - and these enzymes are commoner in women.",
    "taxon": "gut bacteria (multiple genera)",
-   "hormones": ["progesterone"],
+   "hormones": [
+    "progesterone"
+   ],
    "direction": "bacterium->hormone",
    "mechanism": "reductase biotransformation",
    "effect": "Common human gut bacteria encode Delta4-3-ketosteroid 5-beta-reductase, 3-beta-hydroxysteroid dehydrogenase/Delta5-4 isomerase and Delta6-3-ketosteroid reductase enzyme families; a Delta4-3-ketosteroid 5-beta-reductase reduces progesterone to 5-beta-dihydroprogesterone in the gut.",
@@ -88,7 +100,11 @@
    "id": "hi_natural_vs_synthetic",
    "tldr": "TLDR: gut bacteria digest your body's OWN (bioidentical) hormones fast, but mostly ignore synthetic drug versions - so a microbiome effect proven for natural hormone may not carry over to the pill.",
    "taxon": "gut bacteria (multiple genera)",
-   "hormones": ["progesterone", "estradiol", "testosterone"],
+   "hormones": [
+    "progesterone",
+    "estradiol",
+    "testosterone"
+   ],
    "direction": "bacterium->hormone",
    "mechanism": "natural vs synthetic: differential bacterial metabolism",
    "effect": "Gut bacteria rapidly metabolize NATURAL/bioidentical steroids but RESIST synthetic analogues. Natural progesterone was completely degraded in ~2 h (half-life 28 min), while the synthetic progestins medroxyprogesterone acetate (half-life 644 min; >12% intact at 24 h) and levonorgestrel (half-life 240 min) resisted degradation ~10-fold. Structural modifications (C17 acetylation, C6 methyl, ethinyl groups) make synthetics poor substrates for microbial enzymes. Synthetic estrogen (ethinylestradiol) is likewise structurally hardened versus natural estradiol, and 17-alkylated synthetic androgens resist metabolism versus natural testosterone (the 'testobolome').",
