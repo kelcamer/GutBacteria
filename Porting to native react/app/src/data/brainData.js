@@ -140,8 +140,8 @@ export const BRAIN_DATA = [
         "id": "brain_asd_t7",
         "name": "Amygdala",
         "dir": "both",
-        "refs": "hypo during passive face tasks: PMID 39815640, PMID 38685858; HYPER to eye fixation/direct gaze: PMID 15750588, PMID 22787032, PMID 23596190; review: PMID 35119604",
-        "note": "TASK-DEPENDENT, not uniformly low — marked 'both'. During PASSIVE facial-emotion tasks, amygdala activation is LOWER in ASD (ALE meta-analysis of 22 fMRI studies, 539 ASD/502 TD; corroborated by Tamon 2024, left amygdala x=-24,y=0,z=-12). But it is HIGHER when autistic people actually FIXATE the eyes or face direct gaze / sensory-intense stimuli: amygdala activation correlates with eye-gaze fixation in ASD but not controls (Dalton 2005), constraining eye contact drives exaggerated amygdala activation (Kliemann 2012), and elevated amygdala response tracks gaze aversion (Tottenham 2014). The leading synthesis (eye-avoidance hypothesis, 8/11 studies) is that eye avoidance REGULATES amygdala hyperarousal — so low passive-task activation and high fixation-driven activation are two sides of the same gaze story, not a contradiction. Connects to this condition's Fusiform entry: reduced gaze fixation lowers fusiform activation too.",
+        "refs": "hypo during passive face tasks: PMID 39815640, PMID 38685858; HYPER to eye fixation/direct gaze: PMID 15750588, PMID 22787032, PMID 23596190; review: PMID 35119604; structural early enlargement: PMID 19726029",
+        "note": "TASK-DEPENDENT, not uniformly low — marked 'both'. During PASSIVE facial-emotion tasks, amygdala activation is LOWER in ASD (ALE meta-analysis of 22 fMRI studies, 539 ASD/502 TD; corroborated by Tamon 2024, left amygdala x=-24,y=0,z=-12). But it is HIGHER when autistic people actually FIXATE the eyes or face direct gaze / sensory-intense stimuli: amygdala activation correlates with eye-gaze fixation in ASD but not controls (Dalton 2005), constraining eye contact drives exaggerated amygdala activation (Kliemann 2012), and elevated amygdala response tracks gaze aversion (Tottenham 2014). The leading synthesis (eye-avoidance hypothesis, 8/11 studies) is that eye avoidance REGULATES amygdala hyperarousal — so low passive-task activation and high fixation-driven activation are two sides of the same gaze story, not a contradiction. Connects to this condition's Fusiform entry: reduced gaze fixation lowers fusiform activation too. STRUCTURAL/BASELINE points a THIRD way: there is no simple 'baseline down' — the amygdala is ENLARGED in autistic toddlers (overgrowth before age 3, correlating with social/communication severity; Schumann/Nordahl), an accelerated-growth period that ends in childhood, after which volume varies by age and subgroup. Early structural overgrowth, passive-task hypoactivation, and fixation/sensory-driven hyperactivation are three distinct axes.",
         "links": [
           {
             "id": "brain_asd_t7_l1",
@@ -172,6 +172,11 @@ export const BRAIN_DATA = [
             "id": "brain_asd_t7_l6",
             "label": "Stuart et al. 2023, J Autism Dev Disord — eye-avoidance hypothesis review, 8/11 studies (PMID 35119604)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/35119604/"
+          },
+          {
+            "id": "brain_asd_t7_l7",
+            "label": "Schumann et al. 2009, Biol Psychiatry — amygdala ENLARGEMENT in autistic toddlers, tied to symptom severity (PMID 19726029)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19726029/"
           }
         ]
       },
