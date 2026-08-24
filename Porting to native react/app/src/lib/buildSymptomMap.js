@@ -34,13 +34,37 @@ function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
 }
 
+// See buildMap.js for why innerText fails on a detached clone. Same serializer
+// here so symptom/bacteria popups copy with line breaks intact.
+const TIP_BLOCK_TAGS = new Set(['DIV', 'P', 'UL', 'OL', 'LI', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'TR', 'HR', 'SECTION', 'BLOCKQUOTE'])
+function tipTextFromNode(root) {
+  let out = ''
+  const walk = (node) => {
+    node.childNodes.forEach((n) => {
+      if (n.nodeType === 3) {
+        out += n.nodeValue.replace(/\s+/g, ' ')
+      } else if (n.nodeType === 1) {
+        const tag = n.tagName
+        if (tag === 'BR' || tag === 'HR') { out += '\n'; return }
+        const block = TIP_BLOCK_TAGS.has(tag)
+        if (block && out && !out.endsWith('\n')) out += '\n'
+        if (tag === 'LI') out += '• '
+        walk(n)
+        if (block && !out.endsWith('\n')) out += '\n'
+      }
+    })
+  }
+  walk(root)
+  return out.replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').replace(/[ \t]{2,}/g, ' ').trim()
+}
+
 function copyTipText(el, btn) {
   const clone = el.cloneNode(true)
   ;['gfa-tip-drag', 'gfa-tip-resize', 'gfa-tip-close', 'gfa-tip-copy'].forEach((cls) => {
     const n = clone.querySelector('.' + cls)
     if (n && n.parentNode) n.parentNode.removeChild(n)
   })
-  const text = (clone.innerText || clone.textContent || '').replace(/\n{3,}/g, '\n\n').trim()
+  const text = tipTextFromNode(clone)
   const done = (ok) => {
     if (!btn) return
     const orig = btn.innerHTML
