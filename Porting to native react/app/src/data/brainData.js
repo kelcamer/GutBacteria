@@ -139,19 +139,39 @@ export const BRAIN_DATA = [
       {
         "id": "brain_asd_t7",
         "name": "Amygdala",
-        "dir": "down",
-        "refs": "PMID 39815640",
-        "note": "ALE meta-analysis of 22 fMRI studies (539 ASD, 502 typically-developing) found typically-developing participants showed increased left amygdala activity during facial emotion processing that ASD participants did not. A separate, larger ASD-vs-ADHD meta-analysis (Tamon et al. 2024) independently corroborates the lower-activation direction (left amygdala, x=-24,y=0,z=-12).",
+        "dir": "both",
+        "refs": "hypo during passive face tasks: PMID 39815640, PMID 38685858; HYPER to eye fixation/direct gaze: PMID 15750588, PMID 22787032, PMID 23596190; review: PMID 35119604",
+        "note": "TASK-DEPENDENT, not uniformly low — marked 'both'. During PASSIVE facial-emotion tasks, amygdala activation is LOWER in ASD (ALE meta-analysis of 22 fMRI studies, 539 ASD/502 TD; corroborated by Tamon 2024, left amygdala x=-24,y=0,z=-12). But it is HIGHER when autistic people actually FIXATE the eyes or face direct gaze / sensory-intense stimuli: amygdala activation correlates with eye-gaze fixation in ASD but not controls (Dalton 2005), constraining eye contact drives exaggerated amygdala activation (Kliemann 2012), and elevated amygdala response tracks gaze aversion (Tottenham 2014). The leading synthesis (eye-avoidance hypothesis, 8/11 studies) is that eye avoidance REGULATES amygdala hyperarousal — so low passive-task activation and high fixation-driven activation are two sides of the same gaze story, not a contradiction. Connects to this condition's Fusiform entry: reduced gaze fixation lowers fusiform activation too.",
         "links": [
           {
             "id": "brain_asd_t7_l1",
-            "label": "ALE meta-analysis, World J Biol Psychiatry 2025 (PMID 39815640)",
+            "label": "ALE meta-analysis, World J Biol Psychiatry 2025 — lower amygdala in passive face tasks (PMID 39815640)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/39815640/"
           },
           {
-            "id": "brain_asd_t7_l1",
+            "id": "brain_asd_t7_l2",
             "label": "Tamon et al. 2024, Am J Psychiatry (PMID 38685858)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/38685858/"
+          },
+          {
+            "id": "brain_asd_t7_l3",
+            "label": "Dalton et al. 2005, Nat Neurosci — amygdala activation correlates with eye-gaze fixation in ASD (PMID 15750588)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15750588/"
+          },
+          {
+            "id": "brain_asd_t7_l4",
+            "label": "Kliemann et al. 2012, J Neurosci — constrained eye fixation drives amygdala hyperactivation in ASD (PMID 22787032)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22787032/"
+          },
+          {
+            "id": "brain_asd_t7_l5",
+            "label": "Tottenham et al. 2014, Soc Cogn Affect Neurosci — elevated amygdala response to faces & gaze aversion (PMID 23596190)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23596190/"
+          },
+          {
+            "id": "brain_asd_t7_l6",
+            "label": "Stuart et al. 2023, J Autism Dev Disord — eye-avoidance hypothesis review, 8/11 studies (PMID 35119604)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35119604/"
           }
         ]
       },
