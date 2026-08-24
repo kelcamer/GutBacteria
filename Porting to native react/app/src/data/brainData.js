@@ -107,13 +107,18 @@ export const BRAIN_DATA = [
         "id": "brain_asd_t5",
         "name": "Insula",
         "dir": "down",
-        "refs": "PMID 38685858",
-        "note": "Shared lower activation in both ASD and ADHD vs controls.",
+        "refs": "PMID 38685858; interoception heterogeneity: PMID 40909407",
+        "note": "Shared lower activation in both ASD and ADHD vs controls (task-based fMRI). CAVEAT on interoception: this task-activation finding does NOT mean autistic people uniformly have 'reduced interoception.' A 2025 systematic review/meta-analysis (31 studies) found cardiac interoceptive ACCURACY intact in autistic adults, and interoceptive sensibility/awareness results MIXED across studies (reduced, increased, OR similar) with high heterogeneity — some autistic people report heightened interoception. So the synthesized 'reduced interoceptive awareness' below is ONE possibility, not a rule; interoception in autism is genuinely heterogeneous rather than uniformly low.",
         "links": [
           {
             "id": "brain_asd_t5_l1",
-            "label": "Tamon et al. 2024, Am J Psychiatry (PMID 38685858)",
+            "label": "Tamon et al. 2024, Am J Psychiatry — lower insula activation in ASD/ADHD (PMID 38685858)",
             "url": "https://pubmed.ncbi.nlm.nih.gov/38685858/"
+          },
+          {
+            "id": "brain_asd_t5_l2",
+            "label": "Klein et al. 2025, Front Psychiatry — interoception in ASD systematic review/meta-analysis: accuracy intact in adults, sensibility/awareness mixed, high heterogeneity (PMID 40909407)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40909407/"
           }
         ]
       },
