@@ -41,6 +41,7 @@
    "effect": "Prevotella intermedia (formerly Bacteroides melaninogenicus subsp. intermedius) requires vitamin K (naphthoquinones) for electron transport; it can substitute estradiol or progesterone for vitamin K, so host sex steroids let it grow where vitamin K is scarce.",
    "site": "oral cavity",
    "evidence": "in-vitro",
+   "dose": "Steroid uptake 2.6–5.4×10⁻⁴ µmol per µg cell protein; growth effect concentration-dependent (in-vitro, Kornman & Loesche 1982).",
    "note": "The classic result. Growth curves showed B. melaninogenicus subsp. intermedius and subsp. melaninogenicus - but NOT B. gingivalis - could substitute progesterone or estradiol for vitamin K, taking up 2.6-5.4 x 10^-4 umol of steroid per ug cell protein. This is the leading mechanistic explanation for pregnancy gingivitis: rising progesterone/estradiol feed Prevotella at the gumline.",
    "ref": "Kornman & Loesche 1982, Infect Immun (PMID 6119293)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/6119293/"
@@ -58,6 +59,7 @@
    "effect": "Estradiol regulates planktonic growth, coaggregation, polysaccharide production and biofilm formation of the Prevotella intermedia group (P. intermedia, P. nigrescens, P. pallens) - enhancing the physiological activity and biofilm of specific Prevotella groups.",
    "site": "oral cavity",
    "evidence": "in-vitro",
+   "dose": "Estradiol tested at up to 100× physiological concentration in the oral-biofilm model (in-vitro).",
    "note": "Effects differ by species and are concentration-dependent, so this is 'enhances specific groups', not a blanket 'more Prevotella'. A separate saliva-derived oral-biofilm model found progesterone and estradiol raised PROTEOLYTIC activity to levels comparable with menadione (vitamin K) supplementation - consistent with the vitamin-K-substitution mechanism operating in a mixed community - though that study found no overall shift in biofilm composition (PMID 37621393).",
    "ref": "Yokoyama et al. 2014, Anaerobe/Arch Oral Biol - estradiol & Prevotella intermedia group biofilm (PMID 24594108)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/24594108/"
@@ -76,6 +78,7 @@
    "effect": "Prevotella species possess genes and hydroxysteroid dehydrogenase (HSD) enzymes that catabolize/degrade steroid hormones (progesterone, pregnenolone, estradiol), modifying their chemical structure and participating in local or systemic hormonal clearance.",
    "site": "oral cavity and gut",
    "evidence": "genomic / enzymatic",
+   "dose": "Enzyme/genomic evidence — no single administered dose.",
    "note": "The return leg that makes the relationship bidirectional: the same bacteria that eat host steroids for growth also chemically transform them. Balance between steroid uptake and breakdown is mediated by HSDs. This sits inside a broader gut-bacterial steroid-metabolism story (see hi_gut_reductases_progesterone).",
    "ref": "Mechanistic context reviewed in Siddiqui et al. 2022, Biology 11(11):1683 (PMID 36421397); HSD/steroid-metabolism enzymology in gut bacteria: Nature Communications 2025 (PMID 40628728)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/36421397/"
@@ -92,6 +95,7 @@
    "effect": "Common human gut bacteria encode Delta4-3-ketosteroid 5-beta-reductase, 3-beta-hydroxysteroid dehydrogenase/Delta5-4 isomerase and Delta6-3-ketosteroid reductase enzyme families; a Delta4-3-ketosteroid 5-beta-reductase reduces progesterone to 5-beta-dihydroprogesterone in the gut.",
    "site": "gut",
    "evidence": "genomic / enzymatic",
+   "dose": "Enzyme/genomic evidence — no single administered dose.",
    "note": "Broadens the Prevotella-specific picture to the whole gut community: the microbiome is a genuine node in steroid metabolism, not just a bystander. Notably these enzymes are ENRICHED IN FEMALES over males in metagenomes - a possible microbial contributor to sex differences in steroid handling. Connects to this app's Progesterone condition (Gordonibacter/Eggerthella producing progestins from glucocorticoids, PMID 38795705) - production and reduction are two ends of the same microbial steroid-metabolism axis.",
    "ref": "Identification of gut bacteria reductases that biotransform steroid hormones, Nature Communications 2025 (PMID 40628728)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/40628728/"
@@ -110,6 +114,7 @@
    "effect": "Gut bacteria rapidly metabolize NATURAL/bioidentical steroids but RESIST synthetic analogues. Natural progesterone was completely degraded in ~2 h (half-life 28 min), while the synthetic progestins medroxyprogesterone acetate (half-life 644 min; >12% intact at 24 h) and levonorgestrel (half-life 240 min) resisted degradation ~10-fold. Structural modifications (C17 acetylation, C6 methyl, ethinyl groups) make synthetics poor substrates for microbial enzymes. Synthetic estrogen (ethinylestradiol) is likewise structurally hardened versus natural estradiol, and 17-alkylated synthetic androgens resist metabolism versus natural testosterone (the 'testobolome').",
    "site": "gut",
    "evidence": "in-vitro",
+   "dose": "In-vitro fecal-inoculum half-lives: natural progesterone 28 min vs synthetic MPA 644 min, levonorgestrel 240 min (PMID 32806503). Separately, Hammouda 2023 tested progesterone 211.99 µM and ethinylestradiol 0.562 µM at simulated intestinal concentrations.",
    "note": "WHY IT MATTERS for this app: the progesterone->Bifidobacterium boost, the Prevotella growth effects, and the reductase biotransformations above were all demonstrated with NATURAL hormones, which bacteria actually engage with. Synthetic progestins/estrogens/androgens largely pass the microbiome by, so those effects should NOT be assumed for the drug forms. This is a mechanism (differential metabolism), not a head-to-head microbiome-outcome trial - nobody has directly compared, say, bioidentical progesterone vs a progestin on Bifidobacterium abundance, so 'synthetic doesn't boost Bifidobacterium' is a well-grounded expectation, not a measured fact.",
    "ref": "Progestogens Are Metabolized by the Gut Microbiota, Pharmaceutics 2020 (PMID 32806503); estrogen: OCs shift gut microbiota, Nutrients 2025 (PMID 40871620); testosterone: the testobolome, npj Biofilms Microbiomes 2025 (PMID 41513699)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/32806503/"

@@ -60,6 +60,12 @@ function Card({ x }) {
         {` · ${x.site} · ${x.evidence}`}
       </div>
       <div style={{ color: theme.text, fontSize: 13, marginBottom: 6, lineHeight: 1.5 }}>{x.effect}</div>
+      {x.dose && (
+        <div style={{ color: theme.muted, fontSize: 12, marginBottom: 6, lineHeight: 1.5 }}>
+          <span style={{ fontWeight: 700, color: theme.text }}>Dose: </span>
+          {x.dose}
+        </div>
+      )}
       <div style={{ color: theme.muted, fontSize: 12, marginBottom: 8, lineHeight: 1.5 }}>{x.note}</div>
       <a
         href={x.url}
